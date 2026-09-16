@@ -1,0 +1,1995 @@
+{
+  "commit": "045913d59093218f553276023935871e30951191",
+  "files": [
+    {
+      "path": ".gitignore",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 64,
+      "mode": "100644",
+      "git_blob": "285d1e0ae52703327ea180fbc3d14856adc78703",
+      "sha256": "137e829921e922798ea047969c29549b7a9d9c47aaa14f8105a776a03d456ed6"
+    },
+    {
+      "path": ".mvn/maven.config",
+      "module": ".mvn",
+      "language": "other",
+      "role": "source",
+      "bytes": 14,
+      "mode": "100644",
+      "git_blob": "b79df8ca66d6673b96abf51fc5bf33de14f67cb2",
+      "sha256": "c72db16003848644a2cffd1037b4a6fe93a4f1b313adfa699887f396771e3f65"
+    },
+    {
+      "path": ".run/eblocker-lists [package,-Pupdate-lists...].run.xml",
+      "module": ".run",
+      "language": "XML",
+      "role": "source",
+      "bytes": 1232,
+      "mode": "100644",
+      "git_blob": "3ba9f7f5c3ce47b98c4ae158dc893ce03947925c",
+      "sha256": "bf7b7c1ce6e3a4f206642d3b1b1833988bb5cd6c3ecd776ae9824956b62aaecf"
+    },
+    {
+      "path": ".vscode/tasks.json",
+      "module": ".vscode",
+      "language": "JSON",
+      "role": "source",
+      "bytes": 549,
+      "mode": "100644",
+      "git_blob": "1a4bbf7c831df10c7771c82e32185a34dfa5a07d",
+      "sha256": "f0f2f68a39fed7a4c06d98299c554919cacee099b4a1709b2f7126d52847e9c9"
+    },
+    {
+      "path": "LICENSE.md",
+      "module": "root",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 13948,
+      "mode": "100644",
+      "git_blob": "b605841ba34743006a82bf3df026d4528bfcd27f",
+      "sha256": "2017b48dfe8027238f8fd8457795d23c6a2385b70ee05de9cb29a33bf93c02e1"
+    },
+    {
+      "path": "README.md",
+      "module": "root",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 5454,
+      "mode": "100644",
+      "git_blob": "835eaf3f22710e9ba2d556c674f669a390b5d0a6",
+      "sha256": "1d2b893fa4aaf2e65f1d20790bdd0f486ff5a4487a92e0924e7760cb1ffe218f"
+    },
+    {
+      "path": "lists/.gitignore",
+      "module": "lists",
+      "language": "other",
+      "role": "source",
+      "bytes": 130,
+      "mode": "100644",
+      "git_blob": "29cc08f19d57701ac91753cf479a16851c2bc7b7",
+      "sha256": "08d86ef5f95a11820e5acb4cf5d44d1033d99d63ead1a852a2fe7b1b2ec45fed"
+    },
+    {
+      "path": "lists/appModules.json",
+      "module": "lists",
+      "language": "JSON",
+      "role": "source",
+      "bytes": 186321,
+      "mode": "100644",
+      "git_blob": "6b8a267cf76e67a845baff16c9e086be739b96c9",
+      "sha256": "c9ab3da86f9e3eca83c51ea12d90114d3cabae8e930fb6c4d5b79b8bcee9dd1d"
+    },
+    {
+      "path": "lists/parentalcontrol-search-engines.json",
+      "module": "lists",
+      "language": "JSON",
+      "role": "source",
+      "bytes": 575,
+      "mode": "100644",
+      "git_blob": "fe8495a1980f90181cbbc1b35b34d8234bcf8bc6",
+      "sha256": "63b7169a932553644f3c72f20d022219422afb0af73f65390ce19a31be8dfb87"
+    },
+    {
+      "path": "lists/squidblacklist.org/.gitignore",
+      "module": "lists",
+      "language": "other",
+      "role": "source",
+      "bytes": 397,
+      "mode": "100644",
+      "git_blob": "8e8b4368c257d3c228fbaa588e286b2a31b4750d",
+      "sha256": "5e9e45a8fa83753b195e66b4162c1cb3a51a8d1c336e2cf35d05a3bf01b7c032"
+    },
+    {
+      "path": "lists_src/.gitignore",
+      "module": "lists_src",
+      "language": "other",
+      "role": "source",
+      "bytes": 118,
+      "mode": "100644",
+      "git_blob": "f4c666ee30c6fd263254b7c679eb9917a74b6849",
+      "sha256": "0a0efec0634ad0ce9d1b4716401e9db01b029065016759a4e44039dea5113565"
+    },
+    {
+      "path": "lists_src/eblocker-filter.txt_src",
+      "module": "lists_src",
+      "language": "other",
+      "role": "source",
+      "bytes": 1718,
+      "mode": "100644",
+      "git_blob": "1dc17169512732ecbaf8bf63efe48cfbd71b2618",
+      "sha256": "7741cb7963e5d03aa53654b572a451d290af2f71d59e66e52b9b066346567594"
+    },
+    {
+      "path": "lists_src/tracking-redirect.txt_src",
+      "module": "lists_src",
+      "language": "other",
+      "role": "source",
+      "bytes": 445,
+      "mode": "100644",
+      "git_blob": "2a3e087d91bd9fd94e3b76eab734d56b8e519cc9",
+      "sha256": "c3b0d2b8aeefea51db4c135bc07e936283696d7d3a5e0150cab5682eb6c8cc3b"
+    },
+    {
+      "path": "pom.xml",
+      "module": "root",
+      "language": "XML",
+      "role": "source",
+      "bytes": 21572,
+      "mode": "100644",
+      "git_blob": "449256be9cb5bd09fc3f93af842a77c94062beaa",
+      "sha256": "c41cdc3ca646791685b06666726163a83f1e4c5bb7413007c22e73f91d122236"
+    },
+    {
+      "path": "scriptlets/.gitignore",
+      "module": "scriptlets",
+      "language": "other",
+      "role": "source",
+      "bytes": 5,
+      "mode": "100644",
+      "git_blob": "a6c7c2852d068ff1fef480ac369459598a62f82e",
+      "sha256": "cf2571c2617299e67d92d3f813f403c0e0d3ddda1af0e4060e954a73bc81177e"
+    },
+    {
+      "path": "settings.xml",
+      "module": "root",
+      "language": "XML",
+      "role": "source",
+      "bytes": 872,
+      "mode": "100644",
+      "git_blob": "fb4c9423f18b30527c5420273624f2663f008fa3",
+      "sha256": "afecf01736e7ea26285138b0e9f44765a45d95596d5080fc8d0dd5f67cec959a"
+    },
+    {
+      "path": "src/deb/control/control",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 318,
+      "mode": "100644",
+      "git_blob": "965d22c4864b0a2f75d7e4bc7d76afcdbee1099c",
+      "sha256": "156a1b09cca3917fe34c343e2462ed35bb7940a0b7d36a5e168e06d43b9f2e0a"
+    },
+    {
+      "path": "src/deb/control/postinst",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 1279,
+      "mode": "100755",
+      "git_blob": "07653d7bf7e87a574d2737bc762d440559a76852",
+      "sha256": "ee0a2caee62c03cdce7ed8c8a7beac1f019d1db37f3a19099b69c473b591f28c"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/appwhitelist/AppWhitelistCheck.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 13919,
+      "mode": "100644",
+      "git_blob": "a3e7a70d91e4a7ae234184d45c8d8b8dc05b0eaf",
+      "sha256": "03e1b4716124af06f7fbefd705aa5549fb9e9003e8368dbbbbb016ea6fd79c6b"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/bpjm/BpjmModulZipException.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 912,
+      "mode": "100644",
+      "git_blob": "74c0af574f8aa68b70ce5060b3b3fe2a958f88d0",
+      "sha256": "13044bf68f4834d3a7ce7519db6e9860b24c2879fc92db195961ba56aecec4b0"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/bpjm/BpjmModulZipReader.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 5757,
+      "mode": "100644",
+      "git_blob": "e0d9b1accfe2218bbf74e6a2df5edafd72342afa",
+      "sha256": "13eb25aadf000694b91623116f662c73809d85b36fe2231333aaec02f60a77f3"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/bpjm/BpjmPatternFilterCreator.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4477,
+      "mode": "100644",
+      "git_blob": "1f3d9888e411cb4e6cc68060e6d56a36ee49d87b",
+      "sha256": "2c8d8cb2261aa69aa97d240773e42e155e9b6c85cefc7dbdb32b08b8e794f7f0"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/ChecksumValidationResult.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 927,
+      "mode": "100644",
+      "git_blob": "a6204869ff1d1154ef2daea5db019aeee46d1734",
+      "sha256": "d7221979d20a19c3916b66ae9a0f2be1388a5b80ea6739886e71f4428da274d5"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/ChecksumValidator.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4577,
+      "mode": "100644",
+      "git_blob": "04eec5b556a06706f76f60e8977f7934ce75d99a",
+      "sha256": "7bd6dfa1a60dfc6f22f44e6da65dfc0281a8baeb241281de88b3fa90a97a3cfa"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/Checksums.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1545,
+      "mode": "100644",
+      "git_blob": "e97d356f92a6a0061e9c465708fbee87754a1c0d",
+      "sha256": "debe83bd1525f9c11dd45b0e018b58f0ff5542d2e20d4ecc7b4fe6cc233ce116"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/DownloadLists.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3675,
+      "mode": "100644",
+      "git_blob": "6b5e5900022ccfc6e5d374dd89dc94667af05366",
+      "sha256": "ef4168cb5245be538863c884df07fbcb874461db7188f9dda2316e008bb9c460"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/EasyListConfiguration.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3171,
+      "mode": "100644",
+      "git_blob": "d072c8b79fd5b5f6f6a715197371dac1e979a4d7",
+      "sha256": "90c00de4b00f541e79d0ee9c517580ad10a487b020a739c51126f7a103aa9352"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/EasyListDescription.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2156,
+      "mode": "100644",
+      "git_blob": "fb97219afd3529041cafeaaa7f3a95e9a4dec6f0",
+      "sha256": "144409ffac3555fe8a24ff9557cf753765fe56a931bb1bed265b0d870580c86c"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/EasyListRuleTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3334,
+      "mode": "100644",
+      "git_blob": "df62b38f864238703e5e82211d14e0304a31a013",
+      "sha256": "c4270736e57a20a03b4640109842e64e378716adf29b9fbb4baace805ba79319"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/EasyListRuleTestResource.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1513,
+      "mode": "100644",
+      "git_blob": "0bdd37e7a9022edad407344f170285637c92545f",
+      "sha256": "56889db8ad32aec56164690553801698c7f86d83a7f83c052041606c832e2056"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/EasyListSyntaxValidator.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 5567,
+      "mode": "100644",
+      "git_blob": "63e154eab22a54b413754188366aac2ad7c2b6d5",
+      "sha256": "a5344eb3fc3d556df00b68a61e39c9b0d2877ea7df744808c1964de2b231e6e3"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/MaxAgeValidationResult.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 856,
+      "mode": "100644",
+      "git_blob": "e0b10dbb02792a6e38dcff82a53d9837b8aded6c",
+      "sha256": "46a5078c920fe7e3f7447b31245dcc55334fdc0d4d90a2d06dfb5fde7d3a35ab"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/MaxAgeValidator.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4198,
+      "mode": "100644",
+      "git_blob": "8ac5c1ee63dc8439efe1f73d057e5b540c29c739",
+      "sha256": "f69b8cf528fd978309ab012032af96bde8f7bb07e0d7b6514d4fd6aef6fca3d4"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/MaxFilterSizeValidator.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1620,
+      "mode": "100644",
+      "git_blob": "ad1dd8163b6cae5b38e3c451df95dad87edaf145",
+      "sha256": "918bda54efd60180fa2fbc91e05c40a4dc1aca3976bb9aa7f7f69147ba2a5ec3"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/DnsResolver.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 922,
+      "mode": "100644",
+      "git_blob": "8a26175ce98ab8b7dcd8d0cd6cead3c3696c77d6",
+      "sha256": "810b41b8846d930e9f87b230a3b3eb09887a52f40f3aa74ca0b5ba3f40066e93"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/DnsResolverService.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3973,
+      "mode": "100644",
+      "git_blob": "5bfd966645129e9a00dbf9cc6b2831433efd2387",
+      "sha256": "a5c567d637803fd4f5fc8a42c665db6f80c525c0050d46876df66faa3792ad35"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/FileProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1679,
+      "mode": "100644",
+      "git_blob": "9005e40e17cae82fbe508d2d2553ac97adfec85a",
+      "sha256": "da9e773af898bf76e1a896e97fd379e581c7b8dd95f0cccaf1c289edfa5121a0"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/HostPortTuple.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 820,
+      "mode": "100644",
+      "git_blob": "a1384df08a03257d1cc5079a40985e3ee34fcea7",
+      "sha256": "92f438175a8bacedade0adaf1a2519c95b1472bcf372a56612daf6fc39382dc3"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/IpPortExtractor.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3352,
+      "mode": "100644",
+      "git_blob": "827a049ac355cc20714dbd3b5a984f7009a08110",
+      "sha256": "4c581e8ebbfb300346189cfc14a33a195c185b74e15a165df6a7751373b62916"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/MalwareEntries.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2394,
+      "mode": "100644",
+      "git_blob": "357d86108259c94c2fa80b88e3c459d96b9548d7",
+      "sha256": "875ab16555f2d9c817e7b005103e0bcfd07cb844d48a59ccd42c034bc4d010a0"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/MalwareListCreator.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 5783,
+      "mode": "100644",
+      "git_blob": "ac502f8728d0a5722c241454a4d33cfbf81ed23f",
+      "sha256": "fe8ee423da872e6766e7a6e66bfa8874135dd08f95e771b88a06c55345300910"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/MalwareListException.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1001,
+      "mode": "100644",
+      "git_blob": "12472054e6c144de7b61f293074f1e9449c45d75",
+      "sha256": "0c4c59cfd4e179e328094bc16427e505aa2f5ec759be7028b36e1495ba34f623"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/MalwarePatrolDownloader.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 5467,
+      "mode": "100644",
+      "git_blob": "02d8a4e18ffa3da8e1bfe89fb195dde62beadff4",
+      "sha256": "cb908267e478b3192f8af3e6250173b24ca59c5ce7843d836403cbc20cc4e567"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/MalwarePatrolParser.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 289,
+      "mode": "100644",
+      "git_blob": "c144dfa86e44dfd16e62c560cd413e353341ed4e",
+      "sha256": "73334b235a61c76de08422733cfe715af0c811b02aa8b914910764447020c97f"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/MalwarePatrolProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2650,
+      "mode": "100644",
+      "git_blob": "876974020e9e502d6411e20f252b9361525e1d33",
+      "sha256": "655ffa36cbf73e4911e3dc2d6e05d7da09a622264009e2b149697fcbfaed17e4"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/MalwarePatrolSanitizedUrlsParser.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2467,
+      "mode": "100644",
+      "git_blob": "c74f99ae7bdf05efac6fe9e72d86c5474799fd3b",
+      "sha256": "2ef84eae127d329ace7533f6a1a78e5b0337a15422cda4f5941120a3dd9c6bf6"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/MalwarePatrolSquidGuardParser.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1150,
+      "mode": "100644",
+      "git_blob": "dca537963dc92f9190b7c9b8340457537cecbc4e",
+      "sha256": "98c04fb1f77cec4cdff28b06ba4f5fb46ea62db6fff232146052408820495ad3"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/MalwareProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 858,
+      "mode": "100644",
+      "git_blob": "83d1f038c13ce36807f22282decea3641ef883ad",
+      "sha256": "daf8c6159507c3a6ae40adeabb780806f307fd86158d136e26a038fbb6ebe322"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/NameResolutionException.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 277,
+      "mode": "100644",
+      "git_blob": "7b11e2216adc506ce7bfe0ab3675b59fe988f6f8",
+      "sha256": "d1fcaaf047cf52cdad652dd1291e4284c82c80d8939bd260e0df194c0f0a0a03"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/PhishtankDownloader.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3242,
+      "mode": "100644",
+      "git_blob": "bb91c1b63db48c0b5fee9b97ce8a516b10e1a3f5",
+      "sha256": "016ebc80c4d0551bc75dbe2a0df20e01541843d9baf3410969c343380d5021d2"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/PhishtankEntry.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1089,
+      "mode": "100644",
+      "git_blob": "96349437254aebec76744157dbfdb04dede1c3db",
+      "sha256": "a934c230138be76a9cd441e4df73c32bdd656f09872f5c711773eea32ad0cb6a"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/PhishtankProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2074,
+      "mode": "100644",
+      "git_blob": "db3bb874f34f8b82607f5cc64891702940959037",
+      "sha256": "6bf69a2f30a7b2ae3057c1cc735926809e9397d1a6ce2da67fa101fe358cbb8c"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/UrlhausDownloader.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2869,
+      "mode": "100644",
+      "git_blob": "0aa523957a27e89d239ab2b2ef15b037c3567f27",
+      "sha256": "1812fe653915b4e55a4ce8cfe41982126cd806fdd58ed727fc2c18d95cc1cbea"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/UrlhausEntry.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 455,
+      "mode": "100644",
+      "git_blob": "b8599500a7531e7d14c12b41567906c2e1774f38",
+      "sha256": "fe7994a825db6bf7f8a8cab1856383d8312d40f166e85c98ce725d7ca6456994"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/UrlhausProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1166,
+      "mode": "100644",
+      "git_blob": "b1c5da40dba40a0afc8726bc19ae4e4069e0fa06",
+      "sha256": "2f7e490a6f675a1da923ea3e43f49cb55d848648c8d9368d273d26311fc3acc9"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/Blacklist.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 932,
+      "mode": "100644",
+      "git_blob": "ae67ecabd51089a2737bc46a7399ce603a74a229",
+      "sha256": "b5d9af35d43d61462386ffb0ce24f550979eb31849613dd2efa11b99a23c4507"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/BlacklistProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 914,
+      "mode": "100644",
+      "git_blob": "d92d5b75a4f69bf1a7cd575456cb7d8e3155eb1b",
+      "sha256": "49b0c9b000194dca7af02d4eddf9263ef00bd5f780369af822022c95def3b807"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/Blacklists.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2149,
+      "mode": "100644",
+      "git_blob": "352e0101ec206ec5eadf38843176b105311fe2ca",
+      "sha256": "516b5ebf79519558181054c72b919c9b8b45200e789607c676b42b2b5c9dc612"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/BloomFilterProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 5350,
+      "mode": "100644",
+      "git_blob": "e926b41c2fd8fecb76b453b907fd8f069c9f090c",
+      "sha256": "5b7364e54d0feeb44eee25734aace648567eecc7cf06f945fb66c2cdcfa509a7"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/DomainBlacklist.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1351,
+      "mode": "100644",
+      "git_blob": "5ffb0227a55ec6c56bec84cf06213dd70bf1af57",
+      "sha256": "6bdfaa0475471fbfbafdc19cac77edf3f0b5ab116667217e8a4b3a2f8f0d0517"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/DomainFilterProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 12850,
+      "mode": "100644",
+      "git_blob": "11c1ba8c46aa16aea1462806046e6ce09c235202",
+      "sha256": "13eb138cd933cddc7940a59a1584c877497e4dfe4d111dd2250671057165c250"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/EmptyListProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 387,
+      "mode": "100644",
+      "git_blob": "105c5aea28dc0313cd3387201be477806954a730",
+      "sha256": "53dd949144fc580416d4bf12fc3c05afc3c015f137941fa3608aee0933d7256f"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/Filter.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1294,
+      "mode": "100644",
+      "git_blob": "2068e08c26a0ea4de8c9ed951d9e090e7b746db0",
+      "sha256": "bb742ea2ba097ca8c4a378d6889f6023c39536a440b15b65c19ea27adaa0b37a"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/FilterProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 939,
+      "mode": "100644",
+      "git_blob": "a42fe26b0100e017e52399d1d45c54a8ac5fc454",
+      "sha256": "eb7302a44556f40f3e79c580bb86128c1abe03a7a97d0c06245c7c1d66bef3db"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/HashBlacklist.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1560,
+      "mode": "100644",
+      "git_blob": "c823a6f36b681549b17007639559943f72a78fff",
+      "sha256": "0999652284a6e34ca7cb4d19ce315b659340981313934f5f68069da4bab36633"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/InvalidMetaDataException.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 961,
+      "mode": "100644",
+      "git_blob": "7c3ebd60c5aa2f6b0f2c93fb84b5a88f0cfbef47",
+      "sha256": "ea31ad93db797a8f48dc4fe7062d5e717df953d24624b370fb289c6a542cab71"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/ParentalControlFilterListCreator.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 11051,
+      "mode": "100644",
+      "git_blob": "c39c3cdad8f5aa29d9a843b1f954aa37cc7bbbeb",
+      "sha256": "da583e6659a7768d511daf7d2c3afc6d50e81cb71daf39d8c60296c01b540241"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/ParentalControlFilterSourceMetaData.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3114,
+      "mode": "100644",
+      "git_blob": "91cfdab7e6d883ab29094960fd070879fd4347af",
+      "sha256": "425ebb5388ec18ce2173dfb8415103ba7b3b41b1256ad864e3c21552b9a9e4b2"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/ProviderConfig.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1456,
+      "mode": "100644",
+      "git_blob": "0f4552ba4656b1c22e9ce77a881ed19bc73fe199",
+      "sha256": "b83aa88de097df6e1e78f50235f7327ebe77804801e2a11f2189e74e108035aa"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/BpjmListProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3954,
+      "mode": "100644",
+      "git_blob": "789ef715eb6f087c1bbb5118afb3a920033300c5",
+      "sha256": "c0c20ad50a1746fe907adcfb632795fa0036d2c8eff8118e6281fbb1c39b3908"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/DisconnectMeProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3485,
+      "mode": "100644",
+      "git_blob": "67a25d4db912d8917f2f55879a7db1eb7c25c3ec",
+      "sha256": "13292e0b31c1f7eaccfbfe5ddfb1f5d7ab581bdfa79906a20a14d6cb106a36c2"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/EasyListDomainProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 7950,
+      "mode": "100644",
+      "git_blob": "30959ef2d8251c88a054b205f10ec5f2c28f1dcb",
+      "sha256": "d1f1a88976e580fcc3819cd235b2f0a0884b4f1f1b9d429b7007c562f50cceae"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/FragFinnProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 5504,
+      "mode": "100644",
+      "git_blob": "b0a9adbc45f89cf267a2d74edc3ac1832184379d",
+      "sha256": "23c8ea8dc056754d2b8b7c2c4a46534bf633bde2a98f7f194b71cb887f1a63f8"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/HostsFileProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2780,
+      "mode": "100644",
+      "git_blob": "9a29f5d103c9fb68b4d3d7538d34063cef5cba76",
+      "sha256": "01d4cedb3a34c634e4defe738a10d94eba9fc5ce58cd12396da9be04449d220d"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/ListProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2521,
+      "mode": "100644",
+      "git_blob": "e2969e8bb2302b83fa4f57e765808981c3c26753",
+      "sha256": "1e9d751f5623d614aaf545963b8e1d866ff4f8b77fc5a1cf3da345632e5fef73"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/LocalListProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3675,
+      "mode": "100644",
+      "git_blob": "4271b1ded7c1efbc8d552e071362d85326f3beef",
+      "sha256": "2c1554c4b7d6fde9a6f699218c859da47bd3abedeb7041c834aecff09b87c713"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/MalwareFileDomainProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2491,
+      "mode": "100644",
+      "git_blob": "455862705537a5d77c5c03247e69361c0480b752",
+      "sha256": "ec05f502ba6ecf2e6c8631fc97d3339faaee4b3da639142530d9ac56439cd484"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/MalwarePatrolDomainProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2580,
+      "mode": "100644",
+      "git_blob": "6be744f4c02d65a88028988fe48bf5f85aa9f2a3",
+      "sha256": "f702d260a230b96c389754dc901fc03179a4c438de5aaa947f279e9435ca731c"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/PhishtankDomainProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2554,
+      "mode": "100644",
+      "git_blob": "a1ffadde4119282c7bc4c61071f691d8df62f76c",
+      "sha256": "db04b8fcfcfb0b72cd4078e65f0669931d8c1c9540fb67f5a2f1aaba641f9e01"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/SquidBlacklistProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3731,
+      "mode": "100644",
+      "git_blob": "4ebc67c1fd2d3524a98913168134833b6f46aec4",
+      "sha256": "443d9fd3cb7eb3e8d1473488da5c3c04782f733fe95148f245dc77c8f2619dee"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/TarGzProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3438,
+      "mode": "100644",
+      "git_blob": "ac655c13294f4b3804001739bcf64f6c181601a9",
+      "sha256": "af436ba4972aa69099bf61dc7ca6ce109c26e59e8d8b09aa29546a0669f2d277"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/scriptlets/Scriptlet.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2016,
+      "mode": "100644",
+      "git_blob": "786f4482dcb5151112850327b3f00f5fda816ccd",
+      "sha256": "b4023b7e92d807f97c000ee295c7dc1f1c03b9a48b855ef48092d2dd74ca3284"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/scriptlets/ScriptletsDownloader.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3912,
+      "mode": "100644",
+      "git_blob": "05d3f6f323d4264a862db883341bdcde1044e445",
+      "sha256": "f23c706d3f45b9c1cbfaa0e094e39b2fd36fb3e3b4b406e7af2688905cd85bf3"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/scriptlets/ScriptletsParser.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3820,
+      "mode": "100644",
+      "git_blob": "d27e8cdc2498d4a913aed3c15b04cafa5d2ca6c7",
+      "sha256": "b6cc0916f19c887777ab3bf82cb120a2f617c57e045e87721c1f99936ab4e774"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/tls/IntermediateCertificateListCreator.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 6692,
+      "mode": "100644",
+      "git_blob": "60680ec4053223d2c2dd9d65d0ff1f7afcf69522",
+      "sha256": "efdf696ccebd8bdc10d0fca64b0f4195dc09a51a7d22e5e1e6d6d69b8ef587c9"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/tools/EasyList2Json.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1262,
+      "mode": "100644",
+      "git_blob": "77484e5a9d00c7729b746876be6f6e13ed03c22d",
+      "sha256": "331973541568612b447954559fe837382e61bb217dd1a6443ed984367596ed0e"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/tools/EasyListChecksum.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1512,
+      "mode": "100644",
+      "git_blob": "64db6dc7471ebba0fa7ef7698c441e6c2018fe86",
+      "sha256": "c27632f382a25955de0f7d66a434d1c92a1596c214c557738139c93dd450dc06"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/tools/LazyMainRunner.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2983,
+      "mode": "100644",
+      "git_blob": "dd85d8b4bc6230b1dd2e7cecdecb4b84bc176b44",
+      "sha256": "65c72741950798608be85b110d8e013aa888f90a7e61289334e172b6b5ed7c28"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/tools/ResourceInputStream.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1178,
+      "mode": "100644",
+      "git_blob": "80ac6988a7289df2899be3f5276ced29074338da",
+      "sha256": "6e21677991a0f0dcbf863a8a9424b7c6b25a773f89e2698f2157082351ea709e"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/util/CachingHttpClient.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2115,
+      "mode": "100644",
+      "git_blob": "f6fcec560de0558e97eaa7e667320797e2340596",
+      "sha256": "787170225bbc143c4ee8292cb846b328e23049809b8388f8c4a26acf98d6ef68"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/util/DefaultHttpClient.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2725,
+      "mode": "100644",
+      "git_blob": "cf0c23f2583718382c68036694bbea891fa11243",
+      "sha256": "d59d43e04ebeca99406a5db77451aea46a203bcca937d40936a546b997c5ee2c"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/util/Digests.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1207,
+      "mode": "100644",
+      "git_blob": "6e2add53d6a566acf6eb9f5157d379360238b486",
+      "sha256": "2546cd3ebd18e2027958e1adf3a7488b07e3e2bf1b093fbbddf8fd3d9d0ec2d1"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/util/DomainSet.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4815,
+      "mode": "100644",
+      "git_blob": "67cd1bf91b7b421f431974b133cd7ad9802aa3a3",
+      "sha256": "2eb69610fbaa7bac5a02fa6acc702c075c5b19864050f363e66d69dd0c8da9df"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/util/HttpClient.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 937,
+      "mode": "100644",
+      "git_blob": "126dc8400e82d5584ab8604047c3c6eaee6fbabd",
+      "sha256": "12a1d04281593c373621fc2a7ec9376dd7ad961cde71c486066757ce2e55b7f9"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/util/HttpClientFactory.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1388,
+      "mode": "100644",
+      "git_blob": "29f401d3f84044efe41bcd27556fdbc627ff8fa1",
+      "sha256": "bda7c53697fdad4e0c63cc400fb2fec8be06daaa21b5014db326b681012d9b70"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/util/OnDiskCachingHttpClient.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2803,
+      "mode": "100644",
+      "git_blob": "68eaf8c35174acfcd4164d6591bf83ccdc8a63f0",
+      "sha256": "354454fe665f90fff0cc8b178ac3d8fa89edf0639342f73da906b17aab63d218"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/util/ProprietaryConfigurationLoader.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2130,
+      "mode": "100644",
+      "git_blob": "c36836b336d9c59f8e4e1cc74af10954853f9f56",
+      "sha256": "9c92832891a66cc075ddafdb76331dcef81601bbc8451f5d24157f7e7e90b6b8"
+    },
+    {
+      "path": "src/main/resources/app-whitelist-domains.txt",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 0,
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/main/resources/bpjm.properties",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 109,
+      "mode": "100644",
+      "git_blob": "56e0c39254e6760c70432564109631307a7be9ec",
+      "sha256": "f2857468f2225fb463e9469885e6933a143183c91c324d7ad6d700f22c78e3ac"
+    },
+    {
+      "path": "src/main/resources/eBlocker-ads-blacklist.txt",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 184,
+      "mode": "100644",
+      "git_blob": "d53d6fab0a229a2c416e7de01f123e5e74cfbe6b",
+      "sha256": "83140f613e9e3b9f41b73fd669fe57162ed31962eda98355196932bfafbe91f2"
+    },
+    {
+      "path": "src/main/resources/eBlocker-ads-whitelist.txt",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 63,
+      "mode": "100644",
+      "git_blob": "57b9cf38e345fc4ca35c2fad5afa9b057e87f2e2",
+      "sha256": "e78d107d1d82a0019eabe373328933c1eb5f099bfc72857c163d5dd2da706954"
+    },
+    {
+      "path": "src/main/resources/eBlocker-fragFINN-whitelist.txt",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 320,
+      "mode": "100644",
+      "git_blob": "9a5dad96ad50afacf95e16b98a6fb4d7ec1bb1ae",
+      "sha256": "470c78485b82792f75147bee04208cce635da734664a972d156b7502714beb1e"
+    },
+    {
+      "path": "src/main/resources/eBlocker-tracker-blacklist.txt",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 1045,
+      "mode": "100644",
+      "git_blob": "61eadcce1fe86f3baacd5734f88070cfc787f20f",
+      "sha256": "e86f494249df37bf7810e228dac077c4a80e9c8547c7e699ce64e9dd56ffb169"
+    },
+    {
+      "path": "src/main/resources/eBlocker-video-blacklist.txt",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 56,
+      "mode": "100644",
+      "git_blob": "7d346d5a53b4153cfa72a539cadf0b734d495081",
+      "sha256": "83a52fbcc168272cccf5cf5b661a7531d6170da120be1d4c187e3c84b5f8c512"
+    },
+    {
+      "path": "src/main/resources/eblocker-malware.json",
+      "module": "src",
+      "language": "JSON",
+      "role": "source",
+      "bytes": 139,
+      "mode": "100644",
+      "git_blob": "9407a80953887239c82fb6f2593363bf89dc370f",
+      "sha256": "85eb681e60c0426269d08bac27b207735234c83dc15dcc00402785a64e7da50c"
+    },
+    {
+      "path": "src/main/resources/lists.properties",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 2014,
+      "mode": "100644",
+      "git_blob": "7fef35b7ffe9f1ddcabf04d801cb82e5c5913951",
+      "sha256": "e41ae52d469159287d38f62dca83f43b72a21af7e24d36236740a38e254ccbf6"
+    },
+    {
+      "path": "src/main/resources/log4j2.xml",
+      "module": "src",
+      "language": "XML",
+      "role": "source",
+      "bytes": 453,
+      "mode": "100644",
+      "git_blob": "19f6309730035aa7f68998544daef30c8767d603",
+      "sha256": "6a62dba7c4308ebd66f25c388423bd05ee93b4ae0d14b2a10e85334b4dccbdc6"
+    },
+    {
+      "path": "src/main/resources/malware.properties",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 539,
+      "mode": "100644",
+      "git_blob": "695aab8780477ebe916f448bb52d05bce4ed250a",
+      "sha256": "11c3ea4935e0c2615b261f66626f698cfcafdcc35a274454ba55ba25492d5082"
+    },
+    {
+      "path": "src/main/resources/parentalcontrol-filter-config.json",
+      "module": "src",
+      "language": "JSON",
+      "role": "source",
+      "bytes": 13956,
+      "mode": "100644",
+      "git_blob": "c9ff2166f977719f689732e314b664fdf798d870",
+      "sha256": "cedb6681314c90466f6001cba3eef0256c7ae4627a9d133166e5e4f434ed82cc"
+    },
+    {
+      "path": "src/main/resources/rule_test_eblocker.csv",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 67,
+      "mode": "100644",
+      "git_blob": "46c5268611918d641d309fd265f05fccaae35d3b",
+      "sha256": "4c47ab08def4dcdee09ecb625b315ab3d9b8adae33534d4345380af9579ee4bf"
+    },
+    {
+      "path": "src/main/resources/rule_tests_alexa_top10_de.txt",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 19809,
+      "mode": "100644",
+      "git_blob": "09f87d7e493e4ca1910307722bda9f91dcf528a8",
+      "sha256": "f9c05f6bfbcb74eaf2d4f7da333ddbb12e007549ffa4fadbdee143814d65ff17"
+    },
+    {
+      "path": "src/main/resources/scriptlets.properties",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 203,
+      "mode": "100644",
+      "git_blob": "b1b484b3c4a2441fdab25cb6e938df0d3c7451a1",
+      "sha256": "65d8ff7de152905c3825eb556a7f145889d922b7bbec9c47d1991d28a666bfa5"
+    },
+    {
+      "path": "src/main/resources/squidblacklists.properties",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 67,
+      "mode": "100644",
+      "git_blob": "b2a22629d6c0271c2b0f4127306975e6edbb2b86",
+      "sha256": "242e42e836e9fe3df5f8cfe9dff917f92e151a497c8a56ce5db3210a52a8321b"
+    },
+    {
+      "path": "src/main/resources/tls.properties",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 267,
+      "mode": "100644",
+      "git_blob": "9535dd6b425046a75da1fdecc8e145da4590662d",
+      "sha256": "359a28f1cfb51c09ad810c4c9a8c01f35bbaa8316500053155d0f031b5dbe929"
+    },
+    {
+      "path": "src/main/resources/umbrella-easylist.txt",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 81560,
+      "mode": "100644",
+      "git_blob": "b28a27f9def3ed4657dff17bbdbdf4d619bc3c61",
+      "sha256": "083da89b65e221cc0540a03e85323223d4c23937dd608b0484d4a7a72bfd1971"
+    },
+    {
+      "path": "src/main/resources/umbrella-easylistgermany.txt",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 761,
+      "mode": "100644",
+      "git_blob": "a9929dc007ba38620130b2183f7750da06b2b54e",
+      "sha256": "1cc56a6e84d98bdd2747f43435f806723742a7de400ad0267874b43789d093bd"
+    },
+    {
+      "path": "src/main/resources/umbrella-easyprivacy.txt",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 59741,
+      "mode": "100644",
+      "git_blob": "b76d8a1b0c09919dddc69cb5fc4873d18f69a30b",
+      "sha256": "8a131484692296a8152691c25e7a2a7d98878f07e1826d47d283ad3729f5bac6"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/AppModulesTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 3763,
+      "mode": "100644",
+      "git_blob": "351dba083ec9fa01586b89740e7219fee69035dd",
+      "sha256": "6fa3abaf8d025d2e636f5a47a0c766ba5736142db7897580d7a2b8dd67e91883"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/appwhitelist/AppWhitelistCheckTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 10516,
+      "mode": "100644",
+      "git_blob": "edb111d8ab4ac886178c7d8d53b5d6997b119cd1",
+      "sha256": "a7c61b99d3470e85fb51dbdac7d2234db08ac7c2b9b64f7a52d7b7c2ed325562"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/bpjm/BpjmModulZipReaderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2232,
+      "mode": "100644",
+      "git_blob": "1b80481ee15faa641172be54779f58cfcf485cb0",
+      "sha256": "525236a511fcaa21c79056d10a6a3fb1f7b7f68a5a25750f6ba2d40eef099b7e"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/bpjm/BpjmPatternFilterCreatorTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 4691,
+      "mode": "100644",
+      "git_blob": "a7683ddb38f0bfd1d46f4ead9e2953cb296e6856",
+      "sha256": "ec21bc8680e51c28138e071cbf5809139591a9fb88403c5c4d20d02e44e4df42"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/easylist/ChecksumValidatorTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2735,
+      "mode": "100644",
+      "git_blob": "88b9dfdc9121610214bbda0e61c978e05512054f",
+      "sha256": "6876e948c3329fbb4df55f72cb80bfcd872a77275b5b20d1d3a56398a619bd36"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/easylist/EasyListSyntaxValidatorTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2343,
+      "mode": "100644",
+      "git_blob": "dd457c194e7643243ce24b6723ba02a550fb05d2",
+      "sha256": "9ceca19d5bfbdb95fc2a5ad6cd5d471fbcafe6e6c70a8ac1d3b94641d46700b6"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/easylist/FileResource.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1177,
+      "mode": "100644",
+      "git_blob": "96fd15e20a536ea947175ec921ad6d55f8ff882f",
+      "sha256": "6094e4ef7bf908a51ccc36dbd442833c80f57697e6cb2082ccb1ef6dc7e7053d"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/easylist/MaxAgeValidatorTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 3931,
+      "mode": "100644",
+      "git_blob": "2d56d5d1c540cbdafbc773d9f5658e345ab8b84a",
+      "sha256": "9e1d31761f8151de88881db1579b066debb83d89eb31c4a6b192fbb4c48e5a63"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/easylist/MaxFilterSizeValidatorTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1697,
+      "mode": "100644",
+      "git_blob": "e10c8e2f3204e78d08a26130ceb02149e0a66a4a",
+      "sha256": "6150ead1a56b3119cd879e0116de97b9f12c168acdc8d2c412859000e011a5a2"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/DnsResolverServiceTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 3104,
+      "mode": "100644",
+      "git_blob": "3e097fa349a9587ec3c315d064eab035235b8f1a",
+      "sha256": "16a9881b7e4498414705f39ce0095ad3b404e02c47be9c3b4c285bcfd552c7f7"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/FileProviderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1868,
+      "mode": "100644",
+      "git_blob": "879fc4b79b4936b462f38bc4540cefd5ed919f26",
+      "sha256": "d8d5bf1b22cddbe26f863434f216883dae637947e06af899a8e388d0d0770023"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/IpPortExtractorTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 3545,
+      "mode": "100644",
+      "git_blob": "2d29e69824599067e7a742aa828253b5b40d4c03",
+      "sha256": "9f4bffa45ea72748acaba834b018ebf99b14737028788fa6ab7b7023d55bc85d"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/MalwareEntriesTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2446,
+      "mode": "100644",
+      "git_blob": "a3cafe6d83b4f8daa50144d488e3832f869e4ad0",
+      "sha256": "98ecca83e936e92b0690d3a9ada8e7f9930c749d1be3f801c093e2a2b0a7b064"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/MalwareListCreatorTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 6632,
+      "mode": "100644",
+      "git_blob": "287f62f4223b27246dc6a9db4f3a4e0a04dfc1fc",
+      "sha256": "8ec66e917281c54b43807b7f75f84744dcf78de99e453a03a96a5489dd1e3bdb"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/MalwarePatrolDownloaderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 5018,
+      "mode": "100644",
+      "git_blob": "8045a1dc044772783356d7b35b9de34a8e98412e",
+      "sha256": "103feb50fbf6921f2528fb7bde9929fe4ce5978eaee7a5b27c90dfa2b6b50f0d"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/MalwarePatrolProviderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 3161,
+      "mode": "100644",
+      "git_blob": "fe35c99a06c1fae26f1b377138248fb43108d816",
+      "sha256": "e09d582e4044da75bbc6b51aa0b72f2231acad6f11ad5c80d6d5d313d302eeec"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/MalwarePatrolSanitizedUrlsParserTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 3203,
+      "mode": "100644",
+      "git_blob": "4eedfe5fa6b5c44d2c6b513ac405174918a96e1f",
+      "sha256": "2d14172e3e6ada5c1f4d2d80a6effb972d1978d6648ed81bb2c93da91481a6b1"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/MalwarePatrolSquidGuardParserTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1343,
+      "mode": "100644",
+      "git_blob": "769132fd6a98f52d3b870ef0367c6bb3df6a3ffd",
+      "sha256": "58b6d70c38be677619665c45aae36d9a10288a99805c341e43a6ad8c5b416df5"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/PhishtankDownloaderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 5009,
+      "mode": "100644",
+      "git_blob": "75326913a58b63bbd2b19e5bc06d02c3f839a6f2",
+      "sha256": "a7dd7092a0d63de74634d9491e181048d644faaa89f4dfc395774fc43f2a7d56"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/PhishtankProviderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2469,
+      "mode": "100644",
+      "git_blob": "3f1f5b982f6f77011892894526224ba03253b75d",
+      "sha256": "29576c0d8b8f445c95a1351e6f548db8f660240edd11b5945011ab5c0a266b1c"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/UrlhausDownloaderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2239,
+      "mode": "100644",
+      "git_blob": "10b201d92c89f503af74ab2d008f43bdedd130a0",
+      "sha256": "d412f3103dc6a89faa1c58b473c5e71983f9a5845dd02506aad68666bd19c852"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/UrlhausProviderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2508,
+      "mode": "100644",
+      "git_blob": "bf9f004a6ac30103745f512e0bfa288336783799",
+      "sha256": "4e63d801ffb992b2817a4e2afb96a6890f54c0ff5670f203465e2c25c76c0c33"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/BloomFilterProviderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 4063,
+      "mode": "100644",
+      "git_blob": "09c3666196ad0e22af373ea92ad0277b9e4d7af2",
+      "sha256": "da5848046bd6dbaba4001299fe35721b5dc8964532b32304ec0265bec35a749b"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/DomainFilterProviderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 12967,
+      "mode": "100644",
+      "git_blob": "3f9c1e37e1c6782e0fac30ed7ff0ce228fe8608c",
+      "sha256": "ea046aab8a22734fbabfec61e869ba821a7c66e9875501e544029837ff0cad68"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/ParentalControlFilterListCreatorTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 8294,
+      "mode": "100644",
+      "git_blob": "20b06f7a64310cc8dd68005f68d18fb775974bdc",
+      "sha256": "5e8ac1228d2a74b119b916e7b85b959a8635c69d273c4239ffe827546dc52b09"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/BpjmListProviderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 3378,
+      "mode": "100644",
+      "git_blob": "7c32081f241874b6d76260584bfdbcfd4b77700c",
+      "sha256": "6a04557ddb553da156a6c3f5b5ee40ae834b43ab8c0b2ba374a18f892401ef97"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/DisconnectMeProviderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2434,
+      "mode": "100644",
+      "git_blob": "bf80b47ea69b2ed43e56212e0ff8710d2794948c",
+      "sha256": "90d623a87c42e83507182edbd20c0469f9ddc573f23c2f441f3cd62576b1d64c"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/EasyListDomainProviderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2350,
+      "mode": "100644",
+      "git_blob": "7e2d37eee6b484d69d1b40e229561c6507b97dba",
+      "sha256": "f83e2b99d5aa692a5b0457a330cd14657aa13e71ffc6279c895ee1e0a468802d"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/FragFinnProviderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2669,
+      "mode": "100644",
+      "git_blob": "61dec2007a464eb42179f1e21ef3797282ab2083",
+      "sha256": "a4f2bbd0056399cb9116a96e766d01674999878a0465013801b3b8c9ff4a1cb1"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/HostsFileProviderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 3189,
+      "mode": "100644",
+      "git_blob": "8c9765eb8e5f12963b556086f2421a4279501a25",
+      "sha256": "c39f5eeabf3343ff4589872ee66e248fccd56eea058110955f9fc82b8397eff2"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/ListProviderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2124,
+      "mode": "100644",
+      "git_blob": "d7e2b37c74b55cab4027bf1dd753306a409e2301",
+      "sha256": "cb5ee572aed8ff531c6a72169fa062ea7bd55ac03625c88ced8c8720adf035d5"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/LocalListProviderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2978,
+      "mode": "100644",
+      "git_blob": "3aa96a0f18243dabf072a5fb09f1410cb04679f7",
+      "sha256": "f489b97ea8cde7f1ab7a4f0b327fa5b58b75647b8c403551e81cf004943c8618"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/MalwareFileDomainProviderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1887,
+      "mode": "100644",
+      "git_blob": "8c5454efb0045601b866ac70eb48df474a22cd86",
+      "sha256": "6492875336151eeb2cbb0205ec0af453bea59ab2ee3efb6c798945c77052fcca"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/MalwarePatrolDomainProviderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2225,
+      "mode": "100644",
+      "git_blob": "b68609210f90f268144b6f4fecbe6a50684fb66f",
+      "sha256": "8e831dcdc2e520ce6261341bd5a5021ddd97bf0f0eaccc4f1f55894442a1cf45"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/PhishtankDomainProviderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2155,
+      "mode": "100644",
+      "git_blob": "216f63f8048dd5f3e3878bdeacb4f191953929a3",
+      "sha256": "192f7e2516bb6ad77030eb9f1c1421a16b9fd2f2d9ddf663dc8dc934064536c7"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/SquidBlacklistProviderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2924,
+      "mode": "100644",
+      "git_blob": "d8291008cd45aabcf1d56f0751d1eb5a07110f15",
+      "sha256": "89765cdc15d287231c630245a769a9debdf83a4b7e0d6f4096e3a649c2a1c4fa"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/TarGzProviderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2341,
+      "mode": "100644",
+      "git_blob": "be9789c834902ca6fb00d4f514c20001f35fc9a6",
+      "sha256": "3233b3eb794dde7ec15b3e89ec4711ecaa0301a10ed6249e57237ae0e11876c6"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/scriptlets/ScriptletsParserTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1866,
+      "mode": "100644",
+      "git_blob": "de65557519eed8877bc2c5ad31582df095f9bf1a",
+      "sha256": "364689d0452d01422ba73cd44b97869d154d608a7755a7ac7c56db3bffb24c9b"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/tls/IntermediateCertificateListCreatorTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 4391,
+      "mode": "100644",
+      "git_blob": "91069c667b17511d12fa01cc4968c155ac8868ee",
+      "sha256": "9449136a842c59a06131cc65cf84437e12dc3b8220d35515d3ac2a290087487b"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/util/CachingHttpClientTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2550,
+      "mode": "100644",
+      "git_blob": "7f192b301ed11593f7838ae4f276becbafec3e3a",
+      "sha256": "77e1e0b852ba9b88645b83d5c2fd868f13a47a963d1738bcbfa3e68aae6de1cf"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/util/DefaultHttpClientTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 5044,
+      "mode": "100644",
+      "git_blob": "e6cb9d56e8b1fadddfc6cd52b9c21bc1eb71e1d1",
+      "sha256": "15324ecce30c9f355645e6a8c71fc05b8af1009a04ae666b0c44250a504cf9ed"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/util/DomainSetTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2536,
+      "mode": "100644",
+      "git_blob": "ef395c61f3a6ea9ef92cd3f69a51e93667608958",
+      "sha256": "e21975bc63a4c4ca3530486a80e6150a14eb3def145573bd8f5c90139116f40e"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/util/HttpClientFactoryTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1209,
+      "mode": "100644",
+      "git_blob": "e3b5673acfa13e53d7965e072befda0e0766e073",
+      "sha256": "7544b5af8a40fe8dafbc74579ec33e46129c33cc86a7fe7bf9b6dffc4302e482"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/util/OnDiskCachingHttpClientTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 4310,
+      "mode": "100644",
+      "git_blob": "86fe8fd438054d1be317fb9e9853ac8ba0645246",
+      "sha256": "b57f5f29dcefbc5f69ff0e63dac4ceb9921fbaf53dc7e3d5766d55306c846aba"
+    },
+    {
+      "path": "src/test/resources/bpjm-modul.zip",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 2766,
+      "mode": "100644",
+      "git_blob": "6b73fb8b350c0b53aa5f6dcfffe3e13911eef098",
+      "sha256": "074fb5b909619cb54ce6e03b7a2155fb9a385600c7e6368f87a70f05b9adfbfb"
+    },
+    {
+      "path": "src/test/resources/checksum-1.txt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 66,
+      "mode": "100644",
+      "git_blob": "cb8c449b22f772745e2bcfcf094c5fb7736d79ec",
+      "sha256": "a28b06f2643242b232db8d8b9aaf9e4fe081fa0719f52a9cfde144ea0122776e"
+    },
+    {
+      "path": "src/test/resources/checksum-2.txt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 67,
+      "mode": "100644",
+      "git_blob": "feb96d418f26f7e1f744f777a567cb5291c37d20",
+      "sha256": "e685685ce1f8005dc65766c7883efb20b84947704fde593ad90aa9206ef310df"
+    },
+    {
+      "path": "src/test/resources/checksum-3.txt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 67,
+      "mode": "100644",
+      "git_blob": "c139ea69daa962e3fbd55383bbe5ea922e768062",
+      "sha256": "4bd631f7ab1d48c7b1070f8383fdcd59ca31634536389189a382811b220f0f63"
+    },
+    {
+      "path": "src/test/resources/checksum-4.txt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 65,
+      "mode": "100644",
+      "git_blob": "b78dd683324e639db6aca03e2e5c312a1bda5def",
+      "sha256": "462b205c9bf7e4d0fb06a50067fbd9ac37873ef6ed7f7687ce897a492b2f60d2"
+    },
+    {
+      "path": "src/test/resources/checksum-5.txt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 67,
+      "mode": "100644",
+      "git_blob": "57c0216f9155e45310bc7b55390145adcce28f01",
+      "sha256": "fe349ff62b07407542918f9023b6538085402f44bc81ed269b3697dda6d326ae"
+    },
+    {
+      "path": "src/test/resources/checksum_mismatch.txt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 434,
+      "mode": "100644",
+      "git_blob": "bc42eb6650a09a84e1b823c854f3d59690efba9b",
+      "sha256": "2061dc4c28ffdbfb8cb3becf5e3e854cd53f9d3183663f58bb0879bac3e3c098"
+    },
+    {
+      "path": "src/test/resources/checksum_missing.txt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 398,
+      "mode": "100644",
+      "git_blob": "70b78f1f9e0e38cdaa5b2127cc8250cfca31869d",
+      "sha256": "c16820b5ae3b0345ce5b5e2f16ca1c522de1053f7b9ee417abccd2b44fe6c3cc"
+    },
+    {
+      "path": "src/test/resources/disconnect.me-services.json",
+      "module": "src",
+      "language": "JSON",
+      "role": "test",
+      "bytes": 868,
+      "mode": "100644",
+      "git_blob": "0543cb3b544c065b525c1e81b13e60f172dd9740",
+      "sha256": "fe52e3beb0ce0e151c9533fa2d0d8370141a64070ff2cf0c6cdce9230521602b"
+    },
+    {
+      "path": "src/test/resources/easylist-expires-missing.txt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 95,
+      "mode": "100644",
+      "git_blob": "472ba077aefc0478d70b0dcf1ac8c3eba7f453fb",
+      "sha256": "86937ef95cd8f285003a5db560082effdaa6ab5be62ea19dd6fb2371917f60ac"
+    },
+    {
+      "path": "src/test/resources/easylist-last-modified-missing.txt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 105,
+      "mode": "100644",
+      "git_blob": "a3e3568b030fa3953980c9f7242bb5894dac9098",
+      "sha256": "2da2e94b2653928faa29d806fa787ba2f2eff113e74e831e62c1440043dc5773"
+    },
+    {
+      "path": "src/test/resources/easylist-updated.txt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 140,
+      "mode": "100644",
+      "git_blob": "2637a4e959b81a84fd38e6ebf7a1551d8d4740f8",
+      "sha256": "ee236312f54eabf635f40431732c14a087e96d7a451ce1fa42ac0d55daf32767"
+    },
+    {
+      "path": "src/test/resources/easyprivacy_general.txt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 591,
+      "mode": "100644",
+      "git_blob": "3af2ac27d5d8c135679d9a7618ae1e91070856da",
+      "sha256": "9d46f7a01c5691c5b1c3cb4508fd861f5e74c2981ea9558323997fc2e63de08f"
+    },
+    {
+      "path": "src/test/resources/file-provider-test-malware.json",
+      "module": "src",
+      "language": "JSON",
+      "role": "test",
+      "bytes": 218,
+      "mode": "100644",
+      "git_blob": "c3405f39c0cb8d47bf71cdcce9c2c04c9779c00d",
+      "sha256": "9d650363259599a32e92eeab2025cfc8ea53fa68af364e48de0b400a7341786f"
+    },
+    {
+      "path": "src/test/resources/filtersourcemetadata/add.json",
+      "module": "src",
+      "language": "JSON",
+      "role": "test",
+      "bytes": 579,
+      "mode": "100644",
+      "git_blob": "2f281bfdbd4d08e0c612a53f84fd1678805ad053",
+      "sha256": "4cc1a983417f57fa0e096d95f72ab6493ec94b611401f05de9a05e2402c798ad"
+    },
+    {
+      "path": "src/test/resources/filtersourcemetadata/bloom.json",
+      "module": "src",
+      "language": "JSON",
+      "role": "test",
+      "bytes": 229,
+      "mode": "100644",
+      "git_blob": "e84d4e0e94a96040e89d723ef4c11a591b11702b",
+      "sha256": "c5001abc4b52c5616a28daaef0d9ee9d7c722ac8a35951d15bae99ea2ab71fc3"
+    },
+    {
+      "path": "src/test/resources/filtersourcemetadata/exclude.json",
+      "module": "src",
+      "language": "JSON",
+      "role": "test",
+      "bytes": 604,
+      "mode": "100644",
+      "git_blob": "c8aec609e8667cec52eae7b1dfc2704e143ca6be",
+      "sha256": "4744833c70be4473d0aee6d24be45b62abb6976545cc4a19927e7b800d51b1e1"
+    },
+    {
+      "path": "src/test/resources/filtersourcemetadata/md5.json",
+      "module": "src",
+      "language": "JSON",
+      "role": "test",
+      "bytes": 656,
+      "mode": "100644",
+      "git_blob": "91e6a992c3437648bd34ddc425d5440484fa2218",
+      "sha256": "c42370f043fe77ad1f2d5981d641e7a41fcd8fd4dcd57284cf2ee391366ad62c"
+    },
+    {
+      "path": "src/test/resources/filtersourcemetadata/sha1.json",
+      "module": "src",
+      "language": "JSON",
+      "role": "test",
+      "bytes": 657,
+      "mode": "100644",
+      "git_blob": "b89a278a186ad076529349c1e1351e585a3ec4de",
+      "sha256": "160e3d3e03c1e448d634c46843cc589c1e6763da2343cefb0f62876ad791a6e6"
+    },
+    {
+      "path": "src/test/resources/filtersourcemetadata/single.json",
+      "module": "src",
+      "language": "JSON",
+      "role": "test",
+      "bytes": 455,
+      "mode": "100644",
+      "git_blob": "f251ed89c9de778f0cc77096e699762483e80894",
+      "sha256": "03798c5d39ebc78efe328c25c1b3b2467c8b871432b9f01818cab3ba3fee11ef"
+    },
+    {
+      "path": "src/test/resources/fragfinn.xml",
+      "module": "src",
+      "language": "XML",
+      "role": "test",
+      "bytes": 616,
+      "mode": "100644",
+      "git_blob": "eea567164da1d097e2fca0f1119c46c00dddf3a4",
+      "sha256": "976c6fd37a16f543edbc248150be835efef08befdea4ef5c52c78bbfc373247d"
+    },
+    {
+      "path": "src/test/resources/intermediate-certificates.csv",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 7237,
+      "mode": "100644",
+      "git_blob": "5b3cae9a93ce96cc2f66823cc3a04e4d17d2784b",
+      "sha256": "bdf450d4a9129423b46143451862174484e23a8fda53137d1580dae9f77eccef"
+    },
+    {
+      "path": "src/test/resources/lists.properties",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 43,
+      "mode": "100644",
+      "git_blob": "dee56b70289cf3265e2d3c2343f63f4cfb8149a3",
+      "sha256": "3609ba851ec423335517999b6069d6d4e0fb4fd4a73b8d0368f37145c317283f"
+    },
+    {
+      "path": "src/test/resources/local-list.txt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 68,
+      "mode": "100644",
+      "git_blob": "98bfeb360c638ee61322cfe47198b0a064d89d25",
+      "sha256": "e75e421583a39350a110abdc0e8e5cb8deaa0567f192139584329a9446e9e84f"
+    },
+    {
+      "path": "src/test/resources/malwarepatrol-sanitized.txt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 2685,
+      "mode": "100644",
+      "git_blob": "362d4a814eaa93c7a1f8e1f6424d1310b1301d12",
+      "sha256": "cba30c6430bb6f66c87a62433a6f84dcfa2f4062654da782b108876c5ed3d881"
+    },
+    {
+      "path": "src/test/resources/malwarepatrol-squidguard.txt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 769,
+      "mode": "100644",
+      "git_blob": "95b22579b1d732b83324bc51f90a2788ff287294",
+      "sha256": "5b7cd7353ad1d30042a4dfb6e258f6a76750aaddb7553f67992dbf209d9712e3"
+    },
+    {
+      "path": "src/test/resources/phishtank-valid.json",
+      "module": "src",
+      "language": "JSON",
+      "role": "test",
+      "bytes": 5690,
+      "mode": "100644",
+      "git_blob": "d0ebde614979e20cbac74513a1d0d1e122eff0a2",
+      "sha256": "2cefadb72a55b77928c70e0ca4240f3fc645a9f270535f30b284d681babf1e7d"
+    },
+    {
+      "path": "src/test/resources/squid-urlshort.acl",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 123,
+      "mode": "100644",
+      "git_blob": "0eba3e25b3459c60e3c2139c847f612f7c86bec6",
+      "sha256": "33b9d8bc544989dd6cc36ac9417aea59663a45c9156578c85264d069bee806fd"
+    },
+    {
+      "path": "src/test/resources/test-provider.json",
+      "module": "src",
+      "language": "JSON",
+      "role": "test",
+      "bytes": 1051,
+      "mode": "100644",
+      "git_blob": "a9d3bb8989341ede745f9d1f8e03ffe6400a8923",
+      "sha256": "6ce47d496246cf1963e1650fde93bf95d9ea9c7e149ff8d4e9c418c79d3e2850"
+    },
+    {
+      "path": "src/test/resources/test-targz-provider.tar.gz",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 257,
+      "mode": "100644",
+      "git_blob": "d4b3cb5a74ef7abfba35c846f18fc23439bab914",
+      "sha256": "70aeebc1b6db33e5b95c8d2edf22916bcb77bd8af5a52018a6f37d1a07eaf77b"
+    },
+    {
+      "path": "src/test/resources/top-1m.csv.zip",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 600,
+      "mode": "100644",
+      "git_blob": "24c822bdf80f5f18fc121c5d81a044d7e9fd31c5",
+      "sha256": "658e7ccc176967f68d023a243f957dbabfee54ab0d4487022d3968489f683531"
+    },
+    {
+      "path": "src/test/resources/urlhaus-obsolete.csv",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 980,
+      "mode": "100644",
+      "git_blob": "86538cd865d2f8cda8f86a2b5e4500e5d667e95d",
+      "sha256": "e114ff0390aa9eea12f77edff2d95d0e3823c2e65318a9ea7651645ec774f630"
+    },
+    {
+      "path": "src/test/resources/urlhaus-valid.csv",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 1058,
+      "mode": "100644",
+      "git_blob": "959814593dcae6b334448aad98ac4821971f782e",
+      "sha256": "d84ebc0e6deea0c0e464b8d3a126f2994433ed1b350d166ab4cd3b695f1fd6f6"
+    },
+    {
+      "path": "tools/README.md",
+      "module": "tools",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 667,
+      "mode": "100644",
+      "git_blob": "873693e7237cf82fb5aa68bcf9c7f79eb7f19383",
+      "sha256": "780e7d178081dd26b49d5087efbb00911cd32b5627b90bdd9dd6a1b24c540aa6"
+    },
+    {
+      "path": "tools/appmod_trackers",
+      "module": "tools",
+      "language": "other",
+      "role": "source",
+      "bytes": 3081,
+      "mode": "100755",
+      "git_blob": "3ce49b5a7b6b8b46427fb7974057fd9b3c4bf78e",
+      "sha256": "9b629d8882844e15eb8883c35f5977b1599ebe04d82aae7226bf6181534e3d80"
+    },
+    {
+      "path": "tools/appmod_txt2json",
+      "module": "tools",
+      "language": "other",
+      "role": "source",
+      "bytes": 1599,
+      "mode": "100755",
+      "git_blob": "941e6e6fb18a8d3e3db8eeabe0788efed92a74bf",
+      "sha256": "69dbdea8ac5e8c05aab18167778c4eaa1814d8026e638dcd95a1eb81e39afb5b"
+    },
+    {
+      "path": "tools/mails2json.py",
+      "module": "tools",
+      "language": "Python",
+      "role": "source",
+      "bytes": 4159,
+      "mode": "100755",
+      "git_blob": "cd527011e3a1cbbf59f14f8100303a6a048e2ec8",
+      "sha256": "c970668f31ebdbf3fade1d5d8ae7232bed9622f8c197015df7df6f43ad5ec5e3"
+    },
+    {
+      "path": "tools/testjson.py",
+      "module": "tools",
+      "language": "Python",
+      "role": "source",
+      "bytes": 1231,
+      "mode": "100644",
+      "git_blob": "0872458dfab3aba725bba43179f396c464e0d3ac",
+      "sha256": "56308134dad1798930bda7e06435cc9dd4830fb7badf5ac553402c8f874aa6c8"
+    }
+  ]
+}

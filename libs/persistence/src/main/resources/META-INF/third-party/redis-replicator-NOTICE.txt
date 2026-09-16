@@ -1,0 +1,5 @@
+redis-replicator 3.11.0
+Author: Leon Chen and redis-replicator contributors.
+Source: https://github.com/leonchen83/redis-replicator/tree/v3.11.0
+License: Apache License, Version 2.0 (redis-replicator-LICENSE).
+The dependency is distributed unchanged.

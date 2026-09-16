@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "data": {
+    "readOnly": true,
+    "capabilities": {
+      "readOnly": true,
+      "operations": [
+        "health",
+        "status.read",
+        "interfaces.read",
+        "routes.read",
+        "wireguard.validate"
+      ],
+      "wireguard": {
+        "kernelFamilyRegistered": true,
+        "state": "registered",
+        "management": false,
+        "reason": "Deterministic test observation; no kernel access"
+      },
+      "limitations": [
+        "Process network namespace only",
+        "Route output is observed state, not policy-routing simulation",
+        "No firewall, route, interface, DNS or tunnel changes",
+        "WireGuard validation does not imply connectivity or kill-switch protection"
+      ]
+    },
+    "interfaces": [
+      {
+        "index": 2,
+        "name": "lan0",
+        "mtu": 1500,
+        "hardwareAddress": "02:00:00:00:00:02",
+        "up": true,
+        "running": true,
+        "loopback": false,
+        "multicast": true,
+        "addresses": [
+          {
+            "prefix": "192.0.2.2/24",
+            "family": "ipv4",
+            "scope": "global"
+          },
+          {
+            "prefix": "fe80::2/64",
+            "family": "ipv6",
+            "scope": "link"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "unassigned0",
+        "mtu": 1500,
+        "up": false,
+        "running": false,
+        "loopback": false,
+        "multicast": false,
+        "addresses": []
+      }
+    ],
+    "routes": [
+      {
+        "family": "ipv4",
+        "destination": "198.51.100.0/24",
+        "table": 100,
+        "priority": 42,
+        "protocol": 4,
+        "scope": 0,
+        "type": 6,
+        "flags": 0
+      },
+      {
+        "family": "ipv6",
+        "destination": "::/0",
+        "source": "2001:db8:1::/64",
+        "preferredSource": "2001:db8:1::2",
+        "table": 1001,
+        "priority": 4294967295,
+        "protocol": 4,
+        "scope": 0,
+        "type": 1,
+        "flags": 0,
+        "nextHops": [
+          {
+            "interfaceIndex": 2,
+            "gateway": "fe80::1",
+            "weight": 1,
+            "flags": 0
+          },
+          {
+            "interfaceIndex": 3,
+            "gateway": "2001:db8::1",
+            "weight": 256,
+            "flags": 4
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "commit": "58c782b36802b7d3f064ffe04a1bd41666324b75",
+  "files": [
+    {
+      "path": "test/java/com/strategicgains/util/date/Iso8601TimepointAdapterTest.java",
+      "lines": 436,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "test/java/com/strategicgains/util/date/TimestampAdapterTest.java",
+      "lines": 225,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "test/java/com/strategicgains/util/date/HttpHeaderTimestampAdapterTest.java",
+      "lines": 180,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/java/com/strategicgains/util/date/DateAdapter.java",
+      "lines": 150,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/java/com/strategicgains/util/date/DateFormatProcessor.java",
+      "lines": 141,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "test/java/com/strategicgains/util/date/DateFormatProcessorTest.java",
+      "lines": 123,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "test/java/com/strategicgains/util/date/DateAdapterTest.java",
+      "lines": 119,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "test/java/com/strategicgains/util/localdate/LocalDateAdapterTest.java",
+      "lines": 93,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/java/com/strategicgains/util/date/DateAdapterConstants.java",
+      "lines": 88,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/java/com/strategicgains/util/localdate/LocalDateAdapter.java",
+      "lines": 61,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/java/com/strategicgains/util/date/Iso8601TimepointCallback.java",
+      "lines": 59,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/java/com/strategicgains/util/date/HttpHeaderTimestampAdapter.java",
+      "lines": 58,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/java/com/strategicgains/util/date/Iso8601TimepointAdapter.java",
+      "lines": 35,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/java/com/strategicgains/util/TextAdapter.java",
+      "lines": 34,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/java/com/strategicgains/util/date/TimestampAdapter.java",
+      "lines": 34,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/java/com/strategicgains/util/AdapterCallback.java",
+      "lines": 27,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    }
+  ],
+  "languages": {
+    "other": 3,
+    "Markdown": 1,
+    "XML": 1,
+    "Java": 16
+  }
+}

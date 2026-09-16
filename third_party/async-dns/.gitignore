@@ -1,0 +1,14 @@
+/.bundle/
+/.yardoc
+/gems.locked
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+/spec/**/log/
+
+# rspec failure tracking
+.rspec_status

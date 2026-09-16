@@ -1,0 +1,128 @@
+#! /usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_CFLAGS_MAINT_APPEND = -Wno-error=deprecated-declarations
+export DEB_CXXFLAGS_MAINT_APPEND = -Wno-error=deprecated-declarations
+
+ifneq (,$(filter $(DEB_HOST_ARCH), armel m68k mips mipsel powerpc powerpcspe sh4))
+	DEB_LDFLAGS_MAINT_APPEND += -latomic
+endif
+export DEB_LDFLAGS_MAINT_APPEND
+
+export DEB_BUILD_PARALLEL = yes
+CXX_FOR_BUILD ?= $(CXX)
+
+INSTALLDIR := $(CURDIR)/debian/tmp
+datadir=/usr/share/squid
+
+DEB_DH_INSTALL_SOURCEDIR := $(INSTALLDIR)
+DEB_INSTALL_DOCS_squid-common := debian/copyright CONTRIBUTORS CREDITS QUICKSTART RELEASENOTES.html SPONSORS
+
+BUILDINFO := $(shell ( grep PRETTY_NAME /etc/os-release | sed -e 's/PRETTY_NAME=//' -e 's/"//g' ) 2>/dev/null )
+
+DEB_CONFIGURE_EXTRA_FLAGS := BUILDCXXFLAGS="$(CXXFLAGS) $(CPPFLAGS) $(LDFLAGS)" \
+		BUILDCXX=$(CXX_FOR_BUILD) \
+		--with-build-environment=default \
+		--enable-build-info="$(BUILDINFO)" \
+		--datadir=/usr/share/squid \
+		--sysconfdir=/etc/squid \
+		--libexecdir=/usr/lib/squid \
+		--mandir=/usr/share/man \
+		--enable-inline \
+		--disable-arch-native \
+		--enable-async-io=8 \
+		--enable-storeio="ufs,aufs,diskd,rock" \
+		--enable-removal-policies="lru,heap" \
+		--enable-delay-pools \
+		--enable-cache-digests \
+		--enable-icap-client \
+		--enable-follow-x-forwarded-for \
+		--enable-auth-basic="DB,fake,getpwnam,LDAP,NCSA,PAM,POP3,RADIUS,SASL,SMB" \
+		--enable-auth-digest="file,LDAP" \
+		--enable-auth-negotiate="kerberos,wrapper" \
+		--enable-auth-ntlm="fake" \
+		--enable-external-acl-helpers="file_userip,kerberos_ldap_group,LDAP_group,session,SQL_session,time_quota,unix_group,wbinfo_group" \
+		--enable-security-cert-validators="fake" \
+		--enable-storeid-rewrite-helpers="file" \
+		--enable-url-rewrite-helpers="fake" \
+		--enable-eui \
+		--enable-icmp \
+		--enable-zph-qos \
+		--disable-translation \
+		--with-swapdir=/var/spool/squid \
+		--with-logdir=/var/log/squid \
+		--with-pidfile=/run/squid.pid \
+		--with-filedescriptors=65536 \
+		--with-large-files \
+		--enable-ssl \
+		--enable-ssl-crtd \
+		--with-openssl \
+		--with-default-user=proxy
+
+ifeq ($(DEB_HOST_ARCH_OS), kfreebsd)
+		DEB_CONFIGURE_EXTRA_FLAGS += --enable-kqueue
+endif
+ifeq ($(DEB_HOST_ARCH_OS), linux)
+		DEB_CONFIGURE_EXTRA_FLAGS += --enable-linux-netfilter --with-systemd
+endif
+
+DEB_MAKE_CLEAN_TARGET = distclean
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- ${DEB_CONFIGURE_EXTRA_FLAGS}
+
+override_dh_installinit:
+	dh_installinit -peblocker-squid --name=squid
+
+execute_after_dh_auto_install:
+	#
+	# /etc/squid Details
+	install -m 644 $(INSTALLDIR)/etc/squid/squid.conf.documented $(INSTALLDIR)/etc/squid/default.conf
+	install -m 755 -g root -d $(INSTALLDIR)/etc/squid/conf.d
+	install -m 644 -g root debian/debian.conf $(INSTALLDIR)/etc/squid/conf.d/debian.conf
+	#
+	# FSM Paths
+	install -m 755 -g root -d debian/eblocker-squid/var/log
+	install -m 750 -o proxy -g proxy -d debian/eblocker-squid/var/log/squid
+	install -m 755 -g root -d debian/eblocker-squid/var/spool
+	install -m 750 -o proxy -g proxy -d debian/eblocker-squid/var/spool/squid
+	#
+	# apparmor Support
+	install -m 755 -g root -d $(INSTALLDIR)/etc/apparmor.d
+	install -m 755 -g root -d $(INSTALLDIR)/etc/apparmor.d/force-complain
+	install -m 755 -g root -d $(INSTALLDIR)/etc/apparmor.d/disable
+	install -m 644 -g root debian/usr.sbin.squid $(INSTALLDIR)/etc/apparmor.d
+	dh_apparmor --profile-name=usr.sbin.squid -peblocker-squid
+	#
+	# logrotate Support
+	install -m 755 -g root -d $(INSTALLDIR)/etc/logrotate.d
+	install -m 644 -g root debian/squid.logrotate $(INSTALLDIR)/etc/logrotate.d/squid
+	#
+	# resolvconf Support
+	install -m 755 -g root -d $(INSTALLDIR)/etc/resolvconf
+	install -m 755 -g root -d $(INSTALLDIR)/etc/resolvconf/update-libc.d
+	install -m 755 -g root debian/squid.resolvconf $(INSTALLDIR)/etc/resolvconf/update-libc.d/squid
+	#
+	# ufw Support
+	install -m 755 -g root -d $(INSTALLDIR)/etc/ufw/applications.d
+	install -m 644 -g root debian/squid.ufw.profile $(INSTALLDIR)/etc/ufw/applications.d/squid
+
+override_dh_install:
+	dh_install -peblocker-squid -peblocker-squid-common \
+		--sourcedir=$(INSTALLDIR)
+
+override_dh_installsystemd:
+	dh_installsystemd -peblocker-squid --name=squid
+
+override_dh_auto_clean:
+	$(RM) -r debian/build* debian/build-openssl debian/tmp*
+	dh_auto_clean
+
+# Disable dh_missing
+override_dh_missing:
+
+debian/copyright: debian/copyright.Debian CREDITS
+	cat $^ | sed -e "s/59 Temple Place.* Suite 330/51 Franklin St, Fifth Floor/" -e "s/MA  \?02111[^, ]*/MA 02110-1301/" -e "s/675 Mass Ave/51 Franklin St, Fifth Floor/" -e "s/Cambridge, MA 02139/Boston, MA 02110-1301/" > $@

@@ -1,0 +1,71 @@
+{
+  "commit": "5d5fc03db7954e048159614c18aa8db6e4baf669",
+  "files": [
+    {
+      "path": "configupdater.go",
+      "lines": 461,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "configupdater_test.go",
+      "lines": 293,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "domainfilter/domainfilter_test.go",
+      "lines": 203,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "filterstats/filterstats_test.go",
+      "lines": 198,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "domainfilter/domainfilter.go",
+      "lines": 185,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "resolverstats/resolverstats.go",
+      "lines": 182,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "filterstats/filterstats.go",
+      "lines": 179,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "resolverstats/resolverstats_test.go",
+      "lines": 163,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "eblocker-coredns.go",
+      "lines": 70,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "domainfilter/setup.go",
+      "lines": 49,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "resolverstats/setup.go",
+      "lines": 48,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "filterstats/setup.go",
+      "lines": 42,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    }
+  ],
+  "languages": {
+    "other": 14,
+    "Markdown": 5,
+    "Go": 12,
+    "JSON": 1
+  }
+}

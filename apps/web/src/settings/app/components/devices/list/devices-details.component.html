@@ -1,0 +1,112 @@
+<div class="settings-child-view">
+    <div layout-padding>
+
+        <div layout="row" layout-xs="column" layout-align-xs="center center">
+            <div layout="row" layout-align="start center" layout-align-xs="center center" style="width: 100%;">
+                <eb-back-to-table state="{{vm.backState}}" params="vm.stateParams"></eb-back-to-table>
+            </div>
+            <div layout="row" layout-align="end center" layout-align-xs="center center" style="width: 100%;">
+                <eb-details-paginator table-data="vm.tableData"
+                                      tooltip-property="displayName"
+                                      on-change="vm.onChangeDevice(entry)"
+                                      current-entry="vm.device">
+                </eb-details-paginator>
+            </div>
+        </div>
+
+        <div>
+            <md-divider></md-divider>
+        </div>
+
+        <!-- content -->
+        <div flex-gt-md="95" style="height: 100%;" layout="column">
+            <!-- Added conditional for displaying frame on eblocker or gateway-->
+            <div ng-if="vm.device.isGateway || vm.device.isEblocker" class="config-frame md-whiteframe-z1" layout="column">
+                <div ng-if="vm.device.isGateway" style="padding-left: 16px;">
+                    <p>{{ 'ADMINCONSOLE.DEVICES_LIST.DETAILS.GENERAL.LABEL_IS_GATEWAY' | translate }}</p>
+                </div>
+                <div ng-if="vm.device.isEblocker" style="padding-left: 16px;">
+                    <p>{{ 'ADMINCONSOLE.DEVICES_LIST.DETAILS.GENERAL.LABEL_IS_EBLOCKER' | translate}}</p>
+                </div>
+            </div>
+            <!-- Removed '&& vm.device.pausedOrEnabled' from ng-if to display device details in tabulated form when vm.device.paused enabled-->
+            <div ng-if="!vm.device.isGateway && !vm.device.isEblocker">
+                <h4>{{ vm.device.name }}
+                </h4>
+            </div>
+            <div class="config-frame md-whiteframe-z1" >
+                <md-tabs md-border-bottom
+                         md-swipe-content
+                         md-dynamic-height>
+
+                    <!-- Tab for  DEVICE details -->
+                    <md-tab>
+                        <md-tab-label>{{ 'ADMINCONSOLE.DEVICES_LIST.DETAILS.DEVICE.TAB_LABEL' | translate }}</md-tab-label>
+                        <md-tab-body>
+                            <ng-include src="'app/components/devices/list/devices-details-device.component.html'"></ng-include>
+                        </md-tab-body>
+                    </md-tab>
+                    <!-- Added conditional to hide tabs when eblocker not enabled for device -->
+                    <div ng-if="vm.device.pausedOrEnabled && !vm.device.isGateway && !vm.device.isEblocker">
+                    <!-- USER -->
+                        <md-tab ng-if="vm.hasFeature('FAM')">
+                            <md-tab-label>{{ 'ADMINCONSOLE.DEVICES_LIST.DETAILS.USERS.TAB_LABEL' | translate }}</md-tab-label>
+                            <md-tab-body>
+                                <ng-include src="'app/components/devices/list/devices-details-users.component.html'"></ng-include>
+                            </md-tab-body>
+                        </md-tab>
+
+                        <!-- ANONYMIZATION -->
+                            <md-tab ng-disabled="!vm.hasFeature('BAS')">
+                                <md-tab-label>{{ 'ADMINCONSOLE.DEVICES_LIST.DETAILS.ANON.TAB_LABEL' | translate }}</md-tab-label>
+                                <md-tab-body>
+                                    <ng-include src="'app/components/devices/list/devices-details-anon.component.html'"></ng-include>
+                                </md-tab-body>
+                            </md-tab>
+
+                        <!-- MOBILE -->
+                            <md-tab ng-disabled="!vm.vpnHomeStatus.isRunning || !vm.hasFeature('PRO')">
+                                <md-tab-label>{{ 'ADMINCONSOLE.DEVICES_LIST.DETAILS.MOBILE.TAB_LABEL' | translate }}</md-tab-label>
+                                <md-tab-body>
+                                    <ng-include src="'app/components/devices/list/devices-details-mobile.component.html'"></ng-include>
+                                </md-tab-body>
+                            </md-tab>
+
+                        <!-- FILTERS -->
+                        <md-tab ng-disabled="!vm.hasFeature('PRO')">
+                            <md-tab-label>{{ 'ADMINCONSOLE.DEVICES_LIST.DETAILS.FILTERS.TAB_LABEL' | translate }}</md-tab-label>
+                            <md-tab-body>
+                                <ng-include src="'app/components/devices/list/devices-details-filters.component.html'"></ng-include>
+                            </md-tab-body>
+                        </md-tab>
+
+                        <!-- HTTPS -->
+                        <md-tab ng-disabled="!vm.hasFeature('PRO')" ng-if="vm.sslGloballyEnabled">
+                            <md-tab-label>{{ 'ADMINCONSOLE.DEVICES_LIST.DETAILS.HTTPS.TAB_LABEL' | translate }}</md-tab-label>
+                            <md-tab-body>
+                                <ng-include src="'app/components/devices/list/devices-details-https.component.html'"></ng-include>
+                            </md-tab-body>
+                        </md-tab>
+
+                        <!-- ICON / CONTROLBAR -->
+                        <md-tab>
+                            <md-tab-label>{{ 'ADMINCONSOLE.DEVICES_LIST.DETAILS.ICON.TAB_LABEL' | translate }}</md-tab-label>
+                            <md-tab-body>
+                                <ng-include src="'app/components/devices/list/devices-details-icon.component.html'"></ng-include>
+                            </md-tab-body>
+                        </md-tab>
+
+                        <!-- MESSAGES -->
+                        <md-tab ng-disabled="!vm.hasFeature('BAS')">
+                            <md-tab-label>{{ 'ADMINCONSOLE.DEVICES_LIST.DETAILS.MESSAGES.TAB_LABEL' | translate }}</md-tab-label>
+                            <md-tab-body>
+                                <ng-include src="'app/components/devices/list/devices-details-messages.component.html'"></ng-include>
+                            </md-tab-body>
+                        </md-tab>
+                    </div>
+                </md-tabs>
+            </div>
+        </div>
+        <!-- Content end -->
+    </div>
+</div>

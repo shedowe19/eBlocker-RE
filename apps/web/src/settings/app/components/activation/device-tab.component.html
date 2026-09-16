@@ -1,0 +1,29 @@
+<div layout-padding layout="column">
+    <form name="vm.deviceForm" ng-submit="vm.submitDeviceForm()">
+
+        <div>
+            <div>
+                <p>{{ 'ADMINCONSOLE.ACTIVATION.TAB.DEVICE.INTRO' | translate}}</p>
+            </div>
+            <div>
+                <md-input-container md-theme="eBlockerThemeInput" style="width: 100%;">
+                    <label>{{'ADMINCONSOLE.ACTIVATION.TAB.DEVICE.EBLOCKER_DEVICE_NAME_LABEL' | translate}}</label>
+                    <input class="o-input" name="deviceName" ng-model="vm.registrationUserData.deviceName">
+                </md-input-container>
+            </div>
+        </div>
+
+
+        <div layout="row" layout-align="end center">
+            <md-button type="button" ng-click="vm.closeWizard()" class="md-raised md-secondary">
+                {{ 'ADMINCONSOLE.ACTIVATION.ACTION.CANCEL' | translate }}
+            </md-button>
+            <md-button type="button" ng-click="vm.prevStep()" class="md-raised md-secondary">
+                {{ 'ADMINCONSOLE.ACTIVATION.ACTION.BACK' | translate }}
+            </md-button>
+            <md-button type="submit" class="md-raised md-primary md-accent">
+                {{ 'ADMINCONSOLE.ACTIVATION.ACTION.CONTINUE' | translate }}
+            </md-button>
+        </div>
+    </form>
+</div>

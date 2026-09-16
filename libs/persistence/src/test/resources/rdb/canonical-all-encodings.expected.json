@@ -1,0 +1,306 @@
+{
+  "format": "eblocker-redis-logical",
+  "version": 1,
+  "capturedAtEpochMs": 1700000000000,
+  "databases": [
+    0,
+    2,
+    7
+  ],
+  "entries": [
+    {
+      "database": 0,
+      "key": "AP9rZXk=",
+      "type": "STRING",
+      "value": "AP92YWx1ZQ=="
+    },
+    {
+      "database": 0,
+      "key": "",
+      "type": "STRING",
+      "value": ""
+    },
+    {
+      "database": 0,
+      "key": "ZXhwaXJlZC1tcw==",
+      "type": "STRING",
+      "expiresAtEpochMs": 1699999999123,
+      "value": "aGlzdG9yaWNhbA=="
+    },
+    {
+      "database": 0,
+      "key": "ZXhwaXJlZC1zZWM=",
+      "type": "STRING",
+      "expiresAtEpochMs": 1699999999000,
+      "value": "aGlzdG9yaWNhbA=="
+    },
+    {
+      "database": 0,
+      "key": "ZnV0dXJl",
+      "type": "STRING",
+      "expiresAtEpochMs": 4102444800123,
+      "value": "ZnV0dXJl"
+    },
+    {
+      "database": 0,
+      "key": "aW50ZWdlcjg=",
+      "type": "STRING",
+      "value": "LTQy"
+    },
+    {
+      "database": 0,
+      "key": "aW50ZWdlcjE2",
+      "type": "STRING",
+      "value": "LTEyMzQ1"
+    },
+    {
+      "database": 0,
+      "key": "aW50ZWdlcjMy",
+      "type": "STRING",
+      "value": "LTEyMzQ1Njc4OQ=="
+    },
+    {
+      "database": 0,
+      "key": "bHpm",
+      "type": "STRING",
+      "value": "AP9jb21wcmVzc2Vk"
+    },
+    {
+      "database": 0,
+      "key": "aGFzaA==",
+      "type": "HASH",
+      "hash": [
+        {
+          "field": "",
+          "value": ""
+        },
+        {
+          "field": "AGZpZWxk",
+          "value": "/3ZhbHVl"
+        }
+      ]
+    },
+    {
+      "database": 0,
+      "key": "emlwbWFw",
+      "type": "HASH",
+      "hash": [
+        {
+          "field": "",
+          "value": ""
+        },
+        {
+          "field": "AGZpZWxk",
+          "value": "/3ZhbHVl"
+        }
+      ]
+    },
+    {
+      "database": 0,
+      "key": "aGFzaC16aXBsaXN0",
+      "type": "HASH",
+      "hash": [
+        {
+          "field": "",
+          "value": ""
+        },
+        {
+          "field": "AGZpZWxk",
+          "value": "/3ZhbHVl"
+        }
+      ]
+    },
+    {
+      "database": 0,
+      "key": "aGFzaC1saXN0cGFjaw==",
+      "type": "HASH",
+      "hash": [
+        {
+          "field": "",
+          "value": ""
+        },
+        {
+          "field": "AGZpZWxk",
+          "value": "/3ZhbHVl"
+        }
+      ]
+    },
+    {
+      "database": 0,
+      "key": "bGlzdA==",
+      "type": "LIST",
+      "list": [
+        "",
+        "AP8=",
+        "Zmlyc3Q=",
+        "Zmlyc3Q="
+      ]
+    },
+    {
+      "database": 0,
+      "key": "bGlzdC16aXBsaXN0",
+      "type": "LIST",
+      "list": [
+        "",
+        "AP8=",
+        "Zmlyc3Q=",
+        "Zmlyc3Q="
+      ]
+    },
+    {
+      "database": 0,
+      "key": "cXVpY2tsaXN0",
+      "type": "LIST",
+      "list": [
+        "",
+        "AP8=",
+        "Zmlyc3Q=",
+        "Zmlyc3Q="
+      ]
+    },
+    {
+      "database": 0,
+      "key": "cXVpY2tsaXN0Mg==",
+      "type": "LIST",
+      "list": [
+        "",
+        "AP8=",
+        "Zmlyc3Q=",
+        "Zmlyc3Q=",
+        "eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHg="
+      ]
+    },
+    {
+      "database": 0,
+      "key": "c2V0",
+      "type": "SET",
+      "set": [
+        "",
+        "AP8=",
+        "Zmlyc3Q="
+      ]
+    },
+    {
+      "database": 0,
+      "key": "c2V0LWxpc3RwYWNr",
+      "type": "SET",
+      "set": [
+        "",
+        "AP8=",
+        "Zmlyc3Q="
+      ]
+    },
+    {
+      "database": 0,
+      "key": "aW50c2V0MTY=",
+      "type": "SET",
+      "set": [
+        "LTMyNzY4",
+        "MA==",
+        "MzI3Njc="
+      ]
+    },
+    {
+      "database": 0,
+      "key": "aW50c2V0MzI=",
+      "type": "SET",
+      "set": [
+        "LTIxNDc0ODM2NDg=",
+        "MA==",
+        "MjE0NzQ4MzY0Nw=="
+      ]
+    },
+    {
+      "database": 0,
+      "key": "aW50c2V0NjQ=",
+      "type": "SET",
+      "set": [
+        "LTkyMjMzNzIwMzY4NTQ3NzU4MDg=",
+        "MA==",
+        "OTIyMzM3MjAzNjg1NDc3NTgwNw=="
+      ]
+    },
+    {
+      "database": 0,
+      "key": "enNldC10ZXh0",
+      "type": "SORTED_SET",
+      "sortedSet": [
+        {
+          "member": "bmVnYXRpdmUtemVybw==",
+          "scoreBits": "8000000000000000"
+        },
+        {
+          "member": "cHJlY2lzZQ==",
+          "scoreBits": "3ff0000000000001"
+        },
+        {
+          "member": "aW5m",
+          "scoreBits": "7ff0000000000000"
+        },
+        {
+          "member": "LWluZg==",
+          "scoreBits": "fff0000000000000"
+        }
+      ]
+    },
+    {
+      "database": 0,
+      "key": "enNldC1iaW5hcnk=",
+      "type": "SORTED_SET",
+      "sortedSet": [
+        {
+          "member": "bmVnYXRpdmUtemVybw==",
+          "scoreBits": "8000000000000000"
+        },
+        {
+          "member": "cHJlY2lzZQ==",
+          "scoreBits": "3ff0000000000001"
+        },
+        {
+          "member": "aW5m",
+          "scoreBits": "7ff0000000000000"
+        },
+        {
+          "member": "LWluZg==",
+          "scoreBits": "fff0000000000000"
+        }
+      ]
+    },
+    {
+      "database": 0,
+      "key": "enNldC16aXBsaXN0",
+      "type": "SORTED_SET",
+      "sortedSet": [
+        {
+          "member": "AP8=",
+          "scoreBits": "3ff0000000000001"
+        },
+        {
+          "member": "",
+          "scoreBits": "8000000000000000"
+        }
+      ]
+    },
+    {
+      "database": 0,
+      "key": "enNldC1saXN0cGFjaw==",
+      "type": "SORTED_SET",
+      "sortedSet": [
+        {
+          "member": "AP8=",
+          "scoreBits": "3ff0000000000001"
+        },
+        {
+          "member": "",
+          "scoreBits": "8000000000000000"
+        }
+      ]
+    },
+    {
+      "database": 2,
+      "key": "AP9rZXk=",
+      "type": "STRING",
+      "value": "ZGF0YWJhc2UtdHdv"
+    }
+  ]
+}

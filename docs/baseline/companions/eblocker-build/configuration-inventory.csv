@@ -1,0 +1,7 @@
+key,path,line,usage
+system.path.cpu.info,eblocker-vm/files/configuration-prod.properties,1,definition
+system.path.cpu.info,eblocker-vm/files/configuration-test.properties,1,definition
+registration.truststore.resource,eblocker-vm/files/configuration-test.properties,2,definition
+baseurl.apt,eblocker-vm/files/configuration-test.properties,3,definition
+baseurl.api,eblocker-vm/files/configuration-test.properties,4,definition
+baseurl.my,eblocker-vm/files/configuration-test.properties,5,definition

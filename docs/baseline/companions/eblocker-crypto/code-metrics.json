@@ -1,0 +1,246 @@
+{
+  "commit": "3b09dfa0e538d3726d019aa1ac856ae3056c4d2d",
+  "files": [
+    {
+      "path": "src/main/java/org/eblocker/crypto/pki/PKI.java",
+      "lines": 710,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/tools/PKITool.java",
+      "lines": 461,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/pki/PKITest.java",
+      "lines": 383,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/pki/ExtendedValidationOID.java",
+      "lines": 276,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/json/JsonEncryptionModuleTest.java",
+      "lines": 246,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/keys/KeyHandlerTest.java",
+      "lines": 183,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/pki/CertificationAuthorityTest.java",
+      "lines": 180,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/keys/SystemKey.java",
+      "lines": 130,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/CryptoServiceTest.java",
+      "lines": 120,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/pki/CertificationAuthorityBuilder.java",
+      "lines": 117,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/CryptoServiceImpl.java",
+      "lines": 106,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/pki/ExtendedValidation.java",
+      "lines": 106,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/json/DecryptingDeserializerModifier.java",
+      "lines": 101,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/json/EncryptingSerializerModifier.java",
+      "lines": 100,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/keys/KeyHandler.java",
+      "lines": 98,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/CryptoServiceFactory.java",
+      "lines": 97,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/openssl/OpenSslRsaKeyPairGenerator.java",
+      "lines": 94,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/pki/CertificationAuthorityClassPathTest.java",
+      "lines": 89,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/json/DecryptingDeserializer.java",
+      "lines": 86,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/util/CertificateResourceLoaderTest.java",
+      "lines": 76,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/keys/SystemKeyTest.java",
+      "lines": 73,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/json/JSONCryptoHandlerTest.java",
+      "lines": 71,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/json/EncryptingSerializer.java",
+      "lines": 70,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/pki/RevocationInfo.java",
+      "lines": 67,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/util/DateUtilTest.java",
+      "lines": 64,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/util/ResourceLoader.java",
+      "lines": 63,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/pki/CertificationAuthority.java",
+      "lines": 61,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/pki/ExtendedValidationTest.java",
+      "lines": 59,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/util/CertificateResourceLoader.java",
+      "lines": 57,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/json/EncryptingBeanPropertyWriter.java",
+      "lines": 55,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/util/EncodingUtilTest.java",
+      "lines": 55,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/json/TestEntity.java",
+      "lines": 51,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/json/JsonEncryptionModule.java",
+      "lines": 49,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/util/EncodingUtil.java",
+      "lines": 49,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/json/JSONCryptoHandler.java",
+      "lines": 46,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/openssl/OpenSslRsaKeyPairGeneratorTest.java",
+      "lines": 44,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/util/DateUtil.java",
+      "lines": 43,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/EncryptedData.java",
+      "lines": 41,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/pki/ExtendedValidationOIDTest.java",
+      "lines": 40,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/pki/CertificateAndKey.java",
+      "lines": 39,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/pki/RevocationReason.java",
+      "lines": 39,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/openssl/OpenSslRsaKeyPairGeneratorProviderTest.java",
+      "lines": 38,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/CryptoException.java",
+      "lines": 29,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/json/JsonEncrypt.java",
+      "lines": 28,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/openssl/OpenSslRsaKeyPairGeneratorProvider.java",
+      "lines": 26,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/keys/KeyWrapper.java",
+      "lines": 23,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/CryptoService.java",
+      "lines": 22,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    }
+  ],
+  "languages": {
+    "other": 34,
+    "Markdown": 1,
+    "XML": 3,
+    "Java": 47
+  }
+}

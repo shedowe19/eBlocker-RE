@@ -1,0 +1,16 @@
+category,path,line
+redis,configupdater.go,53
+redis,configupdater.go,69
+redis,configupdater.go,454
+service,debian/eblocker-coredns.service,4
+service,debian/eblocker-coredns.service,5
+service,debian/eblocker-coredns.service,6
+service,debian/eblocker-coredns.service,7
+service,debian/eblocker-coredns.service,10
+service,debian/eblocker-coredns.service,11
+service,debian/eblocker-coredns.service,12
+service,debian/eblocker-coredns.service,13
+redis,filterstats/filterstats.go,70
+redis,filterstats/filterstats.go,80
+redis,resolverstats/resolverstats.go,57
+redis,resolverstats/resolverstats.go,90

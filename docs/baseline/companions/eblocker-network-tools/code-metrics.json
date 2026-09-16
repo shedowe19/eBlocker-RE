@@ -1,0 +1,40 @@
+{
+  "commit": "820a2000ca138c0b8f33148ea8fdcf97c36512c1",
+  "files": [
+    {
+      "path": "arp_write.c",
+      "lines": 771,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "arp_read.c",
+      "lines": 465,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "dhcp_discover.c",
+      "lines": 402,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "script_wrapper.c",
+      "lines": 73,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "dhcp.h",
+      "lines": 25,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "nd_ext.h",
+      "lines": 18,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    }
+  ],
+  "languages": {
+    "other": 18,
+    "Markdown": 2,
+    "C": 6
+  }
+}

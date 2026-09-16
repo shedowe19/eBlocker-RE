@@ -1,0 +1,265 @@
+{
+  "commit": "75863e8238d860467184c3c86ca818e1dcde9ce6",
+  "files": [
+    {
+      "path": ".bundle/config",
+      "module": ".bundle",
+      "language": "other",
+      "role": "source",
+      "bytes": 93,
+      "mode": "100644",
+      "git_blob": "8e9ffc711ed5c0bbb4dd6e8ac8dba794d41749cb",
+      "sha256": "cced53f3ed63791765f6c096c61914d3ed5ce19b6548b4074e624948151f6f2b"
+    },
+    {
+      "path": "Gemfile",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 360,
+      "mode": "100644",
+      "git_blob": "7e9f6c7894e4ab8437b960ede5c2203c11a2d985",
+      "sha256": "034e31217a89df7a0316a9a53ce0a64dc9a281b534bc94f0bc5af490b58885bc"
+    },
+    {
+      "path": "Jenkinsfile",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 627,
+      "mode": "100644",
+      "git_blob": "5c3695afe2c73eb0456b4a5530a060ffd114cb69",
+      "sha256": "7c344d0d6c5412d3f0c17adbfd4b182391ecf785030b8115cbfa1d267afe9665"
+    },
+    {
+      "path": "LICENSE.md",
+      "module": "root",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 13948,
+      "mode": "100644",
+      "git_blob": "b605841ba34743006a82bf3df026d4528bfcd27f",
+      "sha256": "2017b48dfe8027238f8fd8457795d23c6a2385b70ee05de9cb29a33bf93c02e1"
+    },
+    {
+      "path": "Makefile",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 629,
+      "mode": "100644",
+      "git_blob": "70801ccb407b7606c30feb8c68eef3b83e880993",
+      "sha256": "c436620d22babc1b2f24dad340a8a66cae59d8df277345dc69eb4024e9bdc9ca"
+    },
+    {
+      "path": "README.md",
+      "module": "root",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 761,
+      "mode": "100644",
+      "git_blob": "43df558beb96c66f89680409478dbe071e0238fd",
+      "sha256": "36a08b281209dc9c03790a4cc357fe242f6a795242862576f2f08de4bff7fdd0"
+    },
+    {
+      "path": "Rakefile",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 28,
+      "mode": "100644",
+      "git_blob": "29955274e0d42e164337c411ad9144e8ffd7e46e",
+      "sha256": "5d20ab6abd8a77e0db94f9599c1ee015db492045de53207641ace9bca4862f24"
+    },
+    {
+      "path": "bin/eblocker-led",
+      "module": "bin",
+      "language": "other",
+      "role": "source",
+      "bytes": 68,
+      "mode": "100755",
+      "git_blob": "235cd0f8f22fbce81157f9ea19509d0e4c1b9906",
+      "sha256": "df83fa775c48f53dbb7fe763aa52302c9a03e999fd9434823506373324c6b294"
+    },
+    {
+      "path": "debian/changelog",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 161,
+      "mode": "100644",
+      "git_blob": "58fd03faf169348df064b8f6e50b0a79efe90b16",
+      "sha256": "8a7629f0fc96897c79fc64cf6d7f1cb843618a471acb971ac2562441a4e1944d"
+    },
+    {
+      "path": "debian/compat",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 2,
+      "mode": "100644",
+      "git_blob": "ec635144f60048986bc560c5576355344005e6e7",
+      "sha256": "2e6d31a5983a91251bfae5aefa1c0a19d8ba3cf601d0e8a706b4cfa9661a6b8a"
+    },
+    {
+      "path": "debian/control",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 397,
+      "mode": "100644",
+      "git_blob": "cef4beb95dbd42a2bd7c4488e8daf8ed97e7e569",
+      "sha256": "a89eeb579c1f7721233140bfb5526db788a27eeca7423168acecf5278ffd11e2"
+    },
+    {
+      "path": "debian/postinst",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 1077,
+      "mode": "100755",
+      "git_blob": "e751bf396148f5c98d0c29bcb60bc6bd943c2cd6",
+      "sha256": "29fac9410887fa55dc0082656e32ded1dc5f7d3197bee10eb86a3cafbdfb7811"
+    },
+    {
+      "path": "debian/postrm",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 813,
+      "mode": "100755",
+      "git_blob": "d6d5341e70fb988ad49dd78313c38ba62f5a6f25",
+      "sha256": "1d68d08fcfd8e4657623635594358f9ab25a6222031259df230fcc470754e1c6"
+    },
+    {
+      "path": "debian/preinst",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 867,
+      "mode": "100755",
+      "git_blob": "adbfc06d4ad4683cd5267fe80e175d2a21bc3416",
+      "sha256": "557f611ff00c289e70bb982ce8e540e27e40f35ca805046c5765acaff57981ff"
+    },
+    {
+      "path": "debian/prerm",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 805,
+      "mode": "100755",
+      "git_blob": "e88f62d981bc6dca7048bcbf8aeb3902b9e8fefe",
+      "sha256": "5483de47fa5f5d3c8c9541a86cd6d70447371793b400a6fdf5caabc43f085b32"
+    },
+    {
+      "path": "debian/rules",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 443,
+      "mode": "100755",
+      "git_blob": "e50e7cd851912f500cbd334efe16c519bdf9af03",
+      "sha256": "51e74e292a7aa1de91ea5ae19859a73976f5fedb3febb6b8e2ab3f93362cf2cb"
+    },
+    {
+      "path": "eblocker-led.gemspec",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 957,
+      "mode": "100644",
+      "git_blob": "56d1573bbf5f218e2a5a110f6e0a592bfc5b5841",
+      "sha256": "8b76eb19328270d907aecc80891340d19a03dd09bad520073f15120721b9fe55"
+    },
+    {
+      "path": "etc/logrotate.d/eblocker-led",
+      "module": "etc",
+      "language": "other",
+      "role": "source",
+      "bytes": 113,
+      "mode": "100644",
+      "git_blob": "62085a623919d072f75f0a9cfeda096903fdd633",
+      "sha256": "c088da39067ef1b52ed2a7be95bc6ad1ff1ae3d0772eaa7660c3c27f08276da9"
+    },
+    {
+      "path": "etc/systemd/eblocker-led.service",
+      "module": "etc",
+      "language": "other",
+      "role": "source",
+      "bytes": 475,
+      "mode": "100644",
+      "git_blob": "b92560b3b032b11bbbcfa625df3d2dfb824396da",
+      "sha256": "152505eb85692f9d4068760e0509a8149d5c897ae5d742802dd2da1326ce0489"
+    },
+    {
+      "path": "lib/eblocker/led.rb",
+      "module": "lib",
+      "language": "other",
+      "role": "source",
+      "bytes": 1393,
+      "mode": "100644",
+      "git_blob": "2d345b8101b29969101e45a74c459bca9e26aaf0",
+      "sha256": "fd06444d84919f4107ac3bf991c95e82eced124f5a6aa993aaf3b92efd1cddf5"
+    },
+    {
+      "path": "lib/eblocker/led/animation.rb",
+      "module": "lib",
+      "language": "other",
+      "role": "source",
+      "bytes": 3117,
+      "mode": "100644",
+      "git_blob": "ddf48c4ae8cda73b63577dac4f9c33494408d63c",
+      "sha256": "efbb5773f04d77d76fa5b1f2e3b82022d8ecf1b3c4ae810bb0f91af44a533234"
+    },
+    {
+      "path": "lib/eblocker/led/colors.rb",
+      "module": "lib",
+      "language": "other",
+      "role": "source",
+      "bytes": 1191,
+      "mode": "100644",
+      "git_blob": "9a0869d3107a5f113ec89236e7d490b4ccaa467c",
+      "sha256": "ebb9e0b331cc84cfef38bf8ca0397e299e4f6f8c47fd7b5da75d5e42a616f181"
+    },
+    {
+      "path": "lib/eblocker/led/server.rb",
+      "module": "lib",
+      "language": "other",
+      "role": "source",
+      "bytes": 3659,
+      "mode": "100644",
+      "git_blob": "b477d089104ff0a8ae2414724267bf6d3fc7f8b5",
+      "sha256": "08b615497888e9ad3ed987e6e1e9230a3edc36acf0a59e4a6a4bed9613ef8724"
+    },
+    {
+      "path": "lib/eblocker/led/spi.rb",
+      "module": "lib",
+      "language": "other",
+      "role": "source",
+      "bytes": 2702,
+      "mode": "100644",
+      "git_blob": "62eec1cd2c57d92954dcf5c970e778d59584e6bf",
+      "sha256": "15d55316f714bc2411f84fa4a3956bb3abcebdbc3f95ea6f4a8d8f0c550c8564"
+    },
+    {
+      "path": "lib/eblocker/led/status.rb",
+      "module": "lib",
+      "language": "other",
+      "role": "source",
+      "bytes": 2034,
+      "mode": "100644",
+      "git_blob": "26609e00636066b98e7c7509288aa4e98f76493e",
+      "sha256": "d2b5acb6a673ee8ddc7a19bd1cb5ca986bc6247c1b72ecda1dce087c0a15db16"
+    },
+    {
+      "path": "lib/eblocker/led/version.rb",
+      "module": "lib",
+      "language": "other",
+      "role": "source",
+      "bytes": 767,
+      "mode": "100644",
+      "git_blob": "28fbbb641b768e23fa66083c1064f52d868429d3",
+      "sha256": "7775a1b1c1e1cf1132350269765add398c3d05f49b071e8e92b4c90febab009c"
+    }
+  ]
+}

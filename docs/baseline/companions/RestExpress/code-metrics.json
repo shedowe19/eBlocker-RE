@@ -1,0 +1,878 @@
+{
+  "commit": "3f3ca4b3d9aac7353f1b632425e74aefe0dc5e46",
+  "files": [
+    {
+      "path": "core/src/test/java/org/restexpress/AltRestExpressServerTest.java",
+      "lines": 1036,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/RestExpress.java",
+      "lines": 962,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/RestExpressServerTest.java",
+      "lines": 891,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/Request.java",
+      "lines": 835,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/pipeline/DefaultRequestHandlerTest.java",
+      "lines": 574,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/RestExpressTest.java",
+      "lines": 566,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/pipeline/DefaultRequestHandler.java",
+      "lines": 431,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/route/RouteBuilder.java",
+      "lines": 382,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/pipeline/FileUploadHandler.java",
+      "lines": 364,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/AbstractSerializationProvider.java",
+      "lines": 330,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/route/RouteResolverTest.java",
+      "lines": 330,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/Response.java",
+      "lines": 328,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/pipeline/RawWrappedResponseTest.java",
+      "lines": 316,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/route/Route.java",
+      "lines": 301,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/RequestTest.java",
+      "lines": 300,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/url/QueryStringParser.java",
+      "lines": 299,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/ServerNoCompressionTest.java",
+      "lines": 293,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/ServerCompressionTest.java",
+      "lines": 292,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/query/QueryRange.java",
+      "lines": 283,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "common/src/test/java/org/restexpress/common/query/QueryRangeTest.java",
+      "lines": 280,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/query/QueryOrdersTest.java",
+      "lines": 280,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/pipeline/JsendWrappedResponseTest.java",
+      "lines": 275,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/url/QueryStringParserTest.java",
+      "lines": 269,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/route/RouteDeclarationTest.java",
+      "lines": 262,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/url/UrlPatternTest.java",
+      "lines": 249,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/url/UrlPattern.java",
+      "lines": 232,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/route/RouteMapping.java",
+      "lines": 226,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/util/HttpSpecificationTest.java",
+      "lines": 226,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/contenttype/MediaTypeParserTest.java",
+      "lines": 219,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/JacksonJsonProcessor.java",
+      "lines": 216,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/query/QueryFiltersTest.java",
+      "lines": 210,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/pipeline/PipelineInitializer.java",
+      "lines": 204,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/util/HttpSpecification.java",
+      "lines": 189,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/ServiceException.java",
+      "lines": 187,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/util/Environment.java",
+      "lines": 185,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/contenttype/MediaRange.java",
+      "lines": 183,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/settings/ServerSettings.java",
+      "lines": 178,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/serialization/json/GsonJsonProcessorTest.java",
+      "lines": 178,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/serialization/json/JacksonJsonProcessorTest.java",
+      "lines": 172,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/metadata/RouteMetadata.java",
+      "lines": 163,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/contenttype/MediaTypeParser.java",
+      "lines": 156,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/query/QueryRanges.java",
+      "lines": 156,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/util/RequestContext.java",
+      "lines": 153,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/preprocessor/HttpBasicAuthenticationPreprocessor.java",
+      "lines": 151,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/query/QueryFilters.java",
+      "lines": 151,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/pipeline/MessageContext.java",
+      "lines": 147,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/query/QueryRangesTest.java",
+      "lines": 141,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/domain/ResultWrapperTest.java",
+      "lines": 128,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/route/RouteDeclaration.java",
+      "lines": 124,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/response/DefaultHttpResponseWriter.java",
+      "lines": 120,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/ResponseTest.java",
+      "lines": 120,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/metadata/ServerMetadata.java",
+      "lines": 117,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/pipeline/SimpleConsoleLogMessageObserver.java",
+      "lines": 116,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/util/ObjectUtils.java",
+      "lines": 115,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/query/QueryOrders.java",
+      "lines": 113,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/GsonJsonProcessor.java",
+      "lines": 113,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/query/QueryOrder.java",
+      "lines": 112,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/ErrorResult.java",
+      "lines": 112,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/Forwarded.java",
+      "lines": 111,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/JsendResultWrapper.java",
+      "lines": 108,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/route/parameterized/ParameterizedRouteBuilder.java",
+      "lines": 108,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/AbstractSerializationProcessor.java",
+      "lines": 107,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/url/UrlRegex.java",
+      "lines": 103,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/route/parameterized/ParameterizedRoute.java",
+      "lines": 99,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/preprocessor/HttpBasicAuthenticationPreprocessorTest.java",
+      "lines": 99,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/plugin/AbstractPlugin.java",
+      "lines": 97,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/plugin/RoutePlugin.java",
+      "lines": 96,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "common/src/test/java/org/restexpress/common/util/ObjectUtilsTest.java",
+      "lines": 94,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/ServerBootstrapFactory.java",
+      "lines": 93,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/query/QueryFilter.java",
+      "lines": 92,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/MethodNotAllowedException.java",
+      "lines": 91,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/GsonDateSerializer.java",
+      "lines": 84,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/LittleO.java",
+      "lines": 84,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/route/Action.java",
+      "lines": 83,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/route/RegexRouteBuilderTest.java",
+      "lines": 79,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/GsonLocalDateSerializer.java",
+      "lines": 78,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/route/ParameterizedRouteBuilderTest.java",
+      "lines": 78,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/DefaultExceptionMapper.java",
+      "lines": 77,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/pipeline/WrappedResponseObserver.java",
+      "lines": 77,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/response/StringBufferHttpResponseWriter.java",
+      "lines": 77,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/route/RouteBuilderTest.java",
+      "lines": 77,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/url/UrlMatch.java",
+      "lines": 76,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/response/ResponseProcessor.java",
+      "lines": 73,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/pipeline/MessageObserver.java",
+      "lines": 72,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/route/regex/RegexRouteBuilder.java",
+      "lines": 71,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/NoRoutesDefinedException.java",
+      "lines": 70,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "common/src/test/java/org/restexpress/common/query/QueryOrderTest.java",
+      "lines": 69,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/metadata/UriMetadata.java",
+      "lines": 69,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/settings/SocketSettings.java",
+      "lines": 69,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/util/EnvironmentTest.java",
+      "lines": 69,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/result/SuccessResult.java",
+      "lines": 68,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/SerializationSettings.java",
+      "lines": 68,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/pipeline/WrappedResponseController.java",
+      "lines": 68,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/settings/RouteDefaults.java",
+      "lines": 67,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/query/FilterComponent.java",
+      "lines": 65,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/JacksonTimepointDeserializer.java",
+      "lines": 64,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/JacksonLocalDateDeserializer.java",
+      "lines": 63,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/route/RouteResolver.java",
+      "lines": 62,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/route/regex/RegexRoute.java",
+      "lines": 61,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/BadRequestException.java",
+      "lines": 60,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/LegacyExceptionMapper.java",
+      "lines": 60,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/util/StringUtils.java",
+      "lines": 59,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/ConflictException.java",
+      "lines": 59,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/ForbiddenException.java",
+      "lines": 59,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/NotFoundException.java",
+      "lines": 59,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/UnauthorizedException.java",
+      "lines": 59,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/exception/ConfigurationException.java",
+      "lines": 58,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/HttpSpecificationException.java",
+      "lines": 57,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/DeserializationException.java",
+      "lines": 57,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/SerializationException.java",
+      "lines": 57,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/response/ErrorResponseWrapper.java",
+      "lines": 56,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/exception/DefaultExceptionMapperTest.java",
+      "lines": 56,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/result/ResultFactory.java",
+      "lines": 55,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/serialization/KnownObject.java",
+      "lines": 55,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/JacksonTimepointSerializer.java",
+      "lines": 54,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "common/src/test/java/org/restexpress/common/query/QueryFilterTest.java",
+      "lines": 53,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/GsonEncodingStringSerializer.java",
+      "lines": 53,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/JacksonLocalDateSerializer.java",
+      "lines": 53,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/JsonSerializationProcessor.java",
+      "lines": 53,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/util/TestConfig.java",
+      "lines": 53,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/exception/ExceptionUtilsTest.java",
+      "lines": 52,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/Flags.java",
+      "lines": 51,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/UnprocessableEntityException.java",
+      "lines": 51,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/result/Result.java",
+      "lines": 50,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/pipeline/RequestURLDecoder.java",
+      "lines": 50,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/query/OrderComponent.java",
+      "lines": 49,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/NotAcceptableException.java",
+      "lines": 49,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/UnsupportedMediaTypeException.java",
+      "lines": 49,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/Parameters.java",
+      "lines": 48,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/plugin/Plugin.java",
+      "lines": 48,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/util/SslUtil.java",
+      "lines": 48,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/scripts/restexpress.sh",
+      "lines": 48,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/preprocessor/ErrorPreprocessor.java",
+      "lines": 48,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "common/src/test/java/org/restexpress/common/util/StringUtilsTest.java",
+      "lines": 47,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/response/RawResponseWrapper.java",
+      "lines": 47,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/ExceptionUtils.java",
+      "lines": 46,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/postprocessor/TestPostprocessor.java",
+      "lines": 46,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/ContentType.java",
+      "lines": 45,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/ForwardedPair.java",
+      "lines": 45,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/Format.java",
+      "lines": 44,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/JacksonEncodingStringSerializer.java",
+      "lines": 42,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/ForwardedElement.java",
+      "lines": 41,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/result/MessageResult.java",
+      "lines": 41,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/response/JsendResponseWrapper.java",
+      "lines": 41,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/util/DefaultShutdownHook.java",
+      "lines": 40,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/result/ErrorResult.java",
+      "lines": 39,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/util/RequestContextTest.java",
+      "lines": 38,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/DefaultSerializationProvider.java",
+      "lines": 36,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/GsonSerializationProvider.java",
+      "lines": 36,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/Serializer.java",
+      "lines": 35,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/GsonTimepointSerializer.java",
+      "lines": 35,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/result/FailResult.java",
+      "lines": 34,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/SerializationProvider.java",
+      "lines": 34,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/query/FilterOperator.java",
+      "lines": 33,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/NullSerializationProvider.java",
+      "lines": 33,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/query/FilterCallback.java",
+      "lines": 32,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/ForwardedParseError.java",
+      "lines": 32,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/Deserializer.java",
+      "lines": 32,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/util/Resolver.java",
+      "lines": 32,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/pipeline/Dated.java",
+      "lines": 32,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/ExceptionMapping.java",
+      "lines": 31,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/GsonSerializer.java",
+      "lines": 31,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/url/UrlMatcher.java",
+      "lines": 31,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/query/OrderCallback.java",
+      "lines": 29,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/response/ResponseWrapper.java",
+      "lines": 28,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/AliasingSerializationProcessor.java",
+      "lines": 27,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/SerializationProcessor.java",
+      "lines": 27,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/Aliasable.java",
+      "lines": 25,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/util/Callback.java",
+      "lines": 25,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/pipeline/Preprocessor.java",
+      "lines": 23,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/pipeline/Postprocessor.java",
+      "lines": 21,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/scripts/install.sh",
+      "lines": 20,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/response/HttpResponseWriter.java",
+      "lines": 17,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    }
+  ],
+  "languages": {
+    "other": 22,
+    "Markdown": 3,
+    "XML": 4,
+    "Java": 171,
+    "Shell": 2,
+    "JSON": 1
+  }
+}

@@ -1,0 +1,24 @@
+.classpath
+.project
+
+.settings
+.idea
+target
+*.iml
+.DS_Store
+*~
+*.log
+*.log.*
+
+.cache
+
+.scratch
+/.test-results
+/.workspace/
+__pycache__/
+
+# temp(old) and working files of controlbar and settings
+apps/server/src/htdocs/temp
+/eblocker-malware/
+
+apps/server/src/htdocs/stylesheets/app.css

@@ -1,0 +1,370 @@
+[
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/authentication/session",
+    "controller": "ConsoleSessionController",
+    "steps": [
+      [
+        "action",
+        "bootstrap",
+        "POST"
+      ],
+      [
+        "name",
+        "public.console.session.bootstrap"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/authentication/session/login",
+    "controller": "ConsoleSessionController",
+    "steps": [
+      [
+        "action",
+        "login",
+        "POST"
+      ],
+      [
+        "name",
+        "public.console.session.login"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/authentication/session/renew",
+    "controller": "ConsoleSessionController",
+    "steps": [
+      [
+        "action",
+        "renew",
+        "POST"
+      ],
+      [
+        "name",
+        "public.console.session.renew"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/authentication/session/logout",
+    "controller": "ConsoleSessionController",
+    "steps": [
+      [
+        "action",
+        "logout",
+        "POST"
+      ],
+      [
+        "name",
+        "public.console.session.logout"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/users/{id}/settings",
+    "controller": "FamilySettingsController",
+    "steps": [
+      [
+        "action",
+        "patchUser",
+        "PATCH"
+      ],
+      [
+        "name",
+        "adminconsole.users.settings.patch"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/userprofiles/{id}/settings",
+    "controller": "FamilySettingsController",
+    "steps": [
+      [
+        "action",
+        "patchProfile",
+        "PATCH"
+      ],
+      [
+        "name",
+        "adminconsole.userprofiles.settings.patch"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/userprofiles/managed",
+    "controller": "FamilySettingsController",
+    "steps": [
+      [
+        "action",
+        "createProfile",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.userprofiles.managed.post"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/devices/{deviceId}/assignment",
+    "controller": "FamilySettingsController",
+    "steps": [
+      [
+        "action",
+        "patchAssignment",
+        "PATCH"
+      ],
+      [
+        "name",
+        "adminconsole.devices.assignment.patch"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/devices/{deviceId}/settings",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "updateDeviceSettings",
+        "PATCH"
+      ],
+      [
+        "name",
+        "adminconsole.devices.settings.patch.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/dns/config/resolvers",
+    "controller": "NetworkSettingsController",
+    "steps": [
+      [
+        "action",
+        "patchResolvers",
+        "PATCH"
+      ],
+      [
+        "name",
+        "adminconsole.dns.resolvers.settings.patch"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/dns/config/records",
+    "controller": "NetworkSettingsController",
+    "steps": [
+      [
+        "action",
+        "patchRecords",
+        "PATCH"
+      ],
+      [
+        "name",
+        "adminconsole.dns.records.settings.patch"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/dns/status",
+    "controller": "NetworkSettingsController",
+    "steps": [
+      [
+        "action",
+        "patchStatus",
+        "PATCH"
+      ],
+      [
+        "name",
+        "adminconsole.dns.status.settings.patch"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/network",
+    "controller": "NetworkSettingsController",
+    "steps": [
+      [
+        "action",
+        "patchNetwork",
+        "PATCH"
+      ],
+      [
+        "name",
+        "adminconsole.network.settings.patch"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/network/ip6",
+    "controller": "NetworkSettingsController",
+    "steps": [
+      [
+        "action",
+        "patchIp6",
+        "PATCH"
+      ],
+      [
+        "name",
+        "adminconsole.network.ip6.settings.patch"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/network-agent/status",
+    "controller": "NetworkAgentController",
+    "steps": [
+      [
+        "action",
+        "getStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.network.agent.status.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/wireguard/validate",
+    "controller": "NetworkAgentController",
+    "steps": [
+      [
+        "action",
+        "validateWireGuard",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.wireguard.validate.post"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/wireguard/profiles",
+    "controller": "WireGuardControlController",
+    "steps": [
+      [
+        "action",
+        "listProfiles",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.wireguard.profiles.list"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/wireguard/profiles/{profileId}",
+    "controller": "WireGuardControlController",
+    "steps": [
+      [
+        "action",
+        "getProfile",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.wireguard.profiles.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/wireguard/profiles/{profileId}",
+    "controller": "WireGuardControlController",
+    "steps": [
+      [
+        "action",
+        "importProfile",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.wireguard.profiles.import"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/wireguard/profiles/{profileId}",
+    "controller": "WireGuardControlController",
+    "steps": [
+      [
+        "action",
+        "deleteProfile",
+        "DELETE"
+      ],
+      [
+        "name",
+        "adminconsole.wireguard.profiles.delete"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/wireguard/profiles/{profileId}/connect",
+    "controller": "WireGuardControlController",
+    "steps": [
+      [
+        "action",
+        "connect",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.wireguard.profiles.connect"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/wireguard/profiles/{profileId}/disconnect",
+    "controller": "WireGuardControlController",
+    "steps": [
+      [
+        "action",
+        "disconnect",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.wireguard.profiles.disconnect"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/wireguard/profiles/{profileId}/cancel",
+    "controller": "WireGuardControlController",
+    "steps": [
+      [
+        "action",
+        "cancel",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.wireguard.profiles.cancel"
+      ]
+    ]
+  }
+]

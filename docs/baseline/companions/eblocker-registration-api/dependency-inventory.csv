@@ -1,0 +1,6 @@
+path,ecosystem,kind,group,artifact,version
+pom.xml,maven,dependency,com.fasterxml.jackson.core,jackson-core,inherited
+pom.xml,maven,dependency,com.fasterxml.jackson.core,jackson-databind,inherited
+pom.xml,maven,dependency,com.fasterxml.jackson.dataformat,jackson-dataformat-xml,inherited
+pom.xml,maven,dependency,org.junit.jupiter,junit-jupiter,inherited
+pom.xml,maven,parent,org.eblocker,eblocker-top,2.4.20

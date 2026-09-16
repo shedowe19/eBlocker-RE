@@ -1,0 +1,11 @@
+Package: [[artifactId]]
+Version: [[version]]
+Section: misc
+Priority: optional
+Architecture: all
+Breaks: unattended-upgrades
+Replaces: unattended-upgrades
+Depends: default-jdk-headless (>= 2:1.17) | openjdk-17-jdk-headless, redis-server, eblocker-network-tools, eblocker-certificate-validator (>= 1.10), eblocker-ui, eblocker-squid, isc-dhcp-client, isc-dhcp-server, tshark, openvpn, ipset, sysstat, netcat, curl, traceroute, iputils-ping, procps
+Maintainer: eBlocker Open Source UG <dev@eblocker.org>
+Description: eBlocker Device - Server
+Distribution: development

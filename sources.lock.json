@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 2,
+  "baseline": "dc954e75116751dbf4c700892e943a1b933d1b5a",
+  "sources": [
+    {
+      "name": "eblocker-top",
+      "url": "https://github.com/eblocker/eblocker-top.git",
+      "commit": "dae741ad23198c6f718fa5945d0c56f2e57f62ff",
+      "role": "Maven dependency and plugin management",
+      "path": "build/parent/pom.xml",
+      "integration": "dependency management absorbed into local parent",
+      "buildSystem": "maven"
+    },
+    {
+      "name": "eblocker-crypto",
+      "url": "https://github.com/eblocker/eblocker-crypto.git",
+      "commit": "3b09dfa0e538d3726d019aa1ac856ae3056c4d2d",
+      "role": "Shared cryptography",
+      "path": "libs/crypto",
+      "integration": "in-tree source",
+      "excluded_build_metadata": [
+        ".github",
+        ".github/workflows",
+        ".github/workflows/deployPackage.yml",
+        ".github/workflows/verify.yml",
+        ".mvn",
+        ".mvn/maven.config",
+        "settings.xml"
+      ],
+      "buildSystem": "maven"
+    },
+    {
+      "name": "eblocker-registration-api",
+      "url": "https://github.com/eblocker/eblocker-registration-api.git",
+      "commit": "0a1eb8cae1e3596178057922b18b9124b7b26eca",
+      "role": "Legacy registration contracts",
+      "path": "libs/registration",
+      "integration": "in-tree source",
+      "excluded_build_metadata": [
+        ".github",
+        ".github/workflows",
+        ".github/workflows/deployPackage.yml",
+        ".github/workflows/verify.yml",
+        ".mvn",
+        ".mvn/maven.config",
+        "settings.xml"
+      ],
+      "buildSystem": "maven"
+    },
+    {
+      "name": "netty-icap",
+      "url": "https://github.com/eblocker/netty-icap.git",
+      "commit": "1dcfc336993befb5678cd4856eb14adc95c4a828",
+      "role": "ICAP protocol fork",
+      "path": "third_party/netty-icap",
+      "integration": "in-tree source",
+      "excluded_build_metadata": [
+        ".github",
+        ".github/workflows",
+        ".github/workflows/deployPackage.yml",
+        ".github/workflows/verify.yml",
+        ".mvn",
+        ".mvn/maven.config",
+        "settings.xml"
+      ],
+      "buildSystem": "maven"
+    },
+    {
+      "name": "DateAdapterJ",
+      "url": "https://github.com/tfredrich/DateAdapterJ.git",
+      "commit": "58c782b36802b7d3f064ffe04a1bd41666324b75",
+      "role": "RestExpress date serialization snapshot; pinned source replaces retired snapshot download",
+      "path": "third_party/dateadapterj",
+      "integration": "in-tree source",
+      "excluded_build_metadata": [],
+      "buildSystem": "maven"
+    },
+    {
+      "name": "RestExpress",
+      "url": "https://github.com/eblocker/RestExpress.git",
+      "commit": "3f3ca4b3d9aac7353f1b632425e74aefe0dc5e46",
+      "role": "REST transport fork",
+      "path": "third_party/restexpress",
+      "integration": "in-tree source",
+      "excluded_build_metadata": [
+        ".github",
+        ".github/workflows",
+        ".github/workflows/deployPackage.yml",
+        ".github/workflows/verify.yml",
+        ".mvn",
+        ".mvn/maven.config",
+        "settings.xml"
+      ],
+      "buildSystem": "maven"
+    },
+    {
+      "name": "eblocker-lists",
+      "url": "https://github.com/eblocker/eblocker-lists.git",
+      "commit": "045913d59093218f553276023935871e30951191",
+      "role": "Filter content generation",
+      "path": "content/filter-lists",
+      "integration": "in-tree source",
+      "excluded_build_metadata": [
+        ".mvn",
+        ".mvn/maven.config",
+        ".run",
+        ".run/eblocker-lists [package,-Pupdate-lists...].run.xml",
+        ".vscode",
+        ".vscode/tasks.json",
+        "settings.xml"
+      ],
+      "buildSystem": "maven"
+    },
+    {
+      "name": "eblocker-network-tools",
+      "url": "https://github.com/eblocker/eblocker-network-tools.git",
+      "commit": "820a2000ca138c0b8f33148ea8fdcf97c36512c1",
+      "role": "Native network tooling",
+      "path": "platform/native/network-tools",
+      "integration": "in-tree source",
+      "excluded_build_metadata": [],
+      "buildSystem": "make"
+    },
+    {
+      "name": "eblocker-bootstrap",
+      "url": "https://github.com/eblocker/eblocker-bootstrap.git",
+      "commit": "ac7b0ffe9077c6e127bf7ed9554b17c2b4a6d0f3",
+      "role": "Appliance bootstrap packages",
+      "path": "packaging/bootstrap",
+      "integration": "in-tree source",
+      "excluded_build_metadata": [],
+      "buildSystem": "maven"
+    },
+    {
+      "name": "eblocker-dns",
+      "url": "https://github.com/eblocker/eblocker-dns.git",
+      "commit": "fa0e85399e2cc6b29f25a826261feb7c32d85bae",
+      "role": "Legacy DNS service",
+      "path": "platform/native/dns",
+      "integration": "in-tree source",
+      "excluded_build_metadata": [],
+      "buildSystem": "bundler"
+    },
+    {
+      "name": "eblocker-async-redis",
+      "url": "https://github.com/eblocker/eblocker-async-redis.git",
+      "commit": "28b3ce35884017128f6f10f740948fa28b9f7940",
+      "role": "Native Redis integration",
+      "path": "platform/native/redis-client",
+      "integration": "in-tree source",
+      "excluded_build_metadata": [],
+      "buildSystem": "bundler"
+    },
+    {
+      "name": "eblocker-led",
+      "url": "https://github.com/eblocker/eblocker-led.git",
+      "commit": "75863e8238d860467184c3c86ca818e1dcde9ce6",
+      "role": "Hardware status indicators",
+      "path": "platform/native/led",
+      "integration": "in-tree source",
+      "excluded_build_metadata": [],
+      "buildSystem": "bundler"
+    },
+    {
+      "name": "eblocker-coredns",
+      "url": "https://github.com/eblocker/eblocker-coredns.git",
+      "commit": "5d5fc03db7954e048159614c18aa8db6e4baf669",
+      "role": "CoreDNS integration",
+      "path": "platform/dns/coredns",
+      "integration": "in-tree source",
+      "excluded_build_metadata": [],
+      "buildSystem": "go"
+    },
+    {
+      "name": "eblocker-dyndns",
+      "url": "https://github.com/eblocker/eblocker-dyndns.git",
+      "commit": "6badf636807b4f4c8faeb7b16ed1e4d4fb62f8d4",
+      "role": "Dynamic DNS integration",
+      "path": "platform/dns/dynamic",
+      "integration": "in-tree source",
+      "excluded_build_metadata": [],
+      "buildSystem": "go"
+    },
+    {
+      "name": "eblocker-squid",
+      "url": "https://github.com/eblocker/eblocker-squid.git",
+      "commit": "4e6eed57df61698a768a8ab408f6606bb0af94ba",
+      "role": "Squid proxy fork",
+      "path": "third_party/squid",
+      "integration": "in-tree source",
+      "excluded_build_metadata": [
+        ".vscode",
+        ".vscode/launch.json"
+      ],
+      "buildSystem": "source"
+    },
+    {
+      "name": "eblocker-build",
+      "url": "https://github.com/eblocker/eblocker-build.git",
+      "commit": "8f024ca602106ecde56f527982575b6854accb2c",
+      "role": "VM image build",
+      "path": "packaging/images",
+      "integration": "in-tree source",
+      "excluded_build_metadata": [],
+      "excluded_unsafe_or_generated_artifacts": [
+        "eblocker-vm/files/license.key",
+        "eblocker-vm/files/license.cert",
+        "eblocker-vm/files/eblocker-bootstrap_amd64_buster-prod.deb",
+        "eblocker-vm/files/eblocker-bootstrap_amd64_buster-test.deb"
+      ],
+      "buildSystem": "source"
+    },
+    {
+      "name": "eblocker-docs",
+      "url": "https://github.com/eblocker/eblocker-docs.git",
+      "commit": "12db23009ad14586bfbe4e3b68f5a8bb69cc9aef",
+      "role": "Upstream documentation",
+      "path": "docs/upstream",
+      "integration": "in-tree source",
+      "excluded_build_metadata": [],
+      "buildSystem": "make"
+    },
+    {
+      "name": "eblocker-apps",
+      "url": "https://github.com/eblocker/eblocker-apps.git",
+      "commit": "1ca5e5b538a2d8676dd87dc2997d359010710d49",
+      "role": "Application compatibility definitions",
+      "path": "content/app-compatibility",
+      "integration": "in-tree source",
+      "excluded_build_metadata": [],
+      "buildSystem": "source"
+    },
+    {
+      "name": "eblocker-environment-simulator",
+      "url": "https://github.com/eblocker/eblocker-environment-simulator.git",
+      "commit": "f0fc3074095a6c6cf23ff2006d881ed9c85f8043",
+      "role": "Environment simulation",
+      "path": "tools/environment-simulator",
+      "integration": "in-tree source",
+      "excluded_build_metadata": [],
+      "buildSystem": "go"
+    },
+    {
+      "name": "async-dns",
+      "url": "https://github.com/eblocker/async-dns.git",
+      "commit": "b6fc6d2c04b576a3659d3ef7f365439d69b60cfd",
+      "role": "Legacy Ruby runtime fork",
+      "path": "third_party/async-dns",
+      "integration": "in-tree source",
+      "buildSystem": "source"
+    },
+    {
+      "name": "async-io",
+      "url": "https://github.com/eblocker/async-io.git",
+      "commit": "f0944e4defc01182d2cc777855473bf5e8ea984a",
+      "role": "Legacy Ruby runtime fork",
+      "path": "third_party/async-io",
+      "integration": "in-tree source",
+      "buildSystem": "bundler"
+    },
+    {
+      "name": "process-daemon",
+      "url": "https://github.com/eblocker/process-daemon.git",
+      "commit": "2e7d13db4b4db8a9193278d44798e39a9a7ea852",
+      "role": "Legacy Ruby runtime fork",
+      "path": "third_party/process-daemon",
+      "integration": "in-tree source",
+      "buildSystem": "bundler"
+    }
+  ],
+  "layout": "monorepo"
+}

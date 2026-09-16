@@ -1,0 +1,9 @@
+key,path,line,usage
+device.arch,src/main/setup/etc/eblocker-device.properties,1,definition
+device.board,src/main/setup/etc/eblocker-device.properties,2,definition
+device.case,src/main/setup/etc/eblocker-device.properties,3,definition
+device.serialnumber.available,src/main/setup/etc/eblocker-device.properties,4,definition
+device.serialnumber.pattern,src/main/setup/etc/eblocker-device.properties,5,definition
+device.serialnumber.example,src/main/setup/etc/eblocker-device.properties,6,definition
+device.wifi.available,src/main/setup/etc/eblocker-device.properties,7,definition
+device.led.rgb.available,src/main/setup/etc/eblocker-device.properties,8,definition

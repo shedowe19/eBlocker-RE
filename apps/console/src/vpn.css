@@ -1,0 +1,64 @@
+/* SPDX-License-Identifier: EUPL-1.2 */
+.vpn-sections {
+    display: grid;
+    gap: 24px;
+}
+.vpn-legacy-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 22px;
+    font-size: 0.9rem;
+}
+.vpn-device-choice,
+.vpn-routing-actions label {
+    display: grid;
+    gap: 8px;
+    max-width: 30rem;
+    margin-bottom: 20px;
+}
+.vpn-routing-actions {
+    display: flex;
+    gap: 14px;
+    align-items: end;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.vpn-routing-actions label {
+    margin: 0;
+}
+.vpn-routing-actions .button {
+    white-space: normal;
+}
+.vpn-profiles {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+.vpn-profile {
+    min-width: 0;
+    padding: 20px;
+    border: 1px solid #dce6df;
+    border-radius: 10px;
+    overflow-wrap: anywhere;
+}
+.vpn-profile h3 {
+    margin-top: 0;
+}
+.vpn-profile > .system-panel {
+    padding: 0;
+    border: 0;
+    margin: 16px 0;
+}
+.vpn-profile > .system-panel > h2 {
+    font-size: 0.95rem;
+}
+.vpn-countries {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 30px;
+}
+@media (max-width: 1000px) {
+    .vpn-profiles {
+        grid-template-columns: 1fr;
+    }
+}

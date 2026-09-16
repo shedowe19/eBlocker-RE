@@ -1,0 +1,20 @@
+.diagnostics-state {
+    font-weight: 700;
+}
+.diagnostics-privacy {
+    margin-top: 1.5rem;
+}
+.diagnostics-page .protection-confirm {
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid var(--border, #c9d2d5);
+    border-radius: 0.6rem;
+}
+.diagnostics-page .protection-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+.diagnostics-page .button {
+    white-space: normal;
+}

@@ -1,0 +1,4 @@
+.idea
+*.iml
+target
+src/main/java/ch/mimo/netty/handler/codec/icap/Version.java

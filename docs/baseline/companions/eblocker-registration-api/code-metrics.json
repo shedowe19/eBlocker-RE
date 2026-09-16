@@ -1,0 +1,156 @@
+{
+  "commit": "0a1eb8cae1e3596178057922b18b9124b7b26eca",
+  "files": [
+    {
+      "path": "src/test/java/org/eblocker/registration/ProductInfoTest.java",
+      "lines": 155,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/registration/DeviceRegistrationRequestTest.java",
+      "lines": 143,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/DeviceRegistrationRequest.java",
+      "lines": 130,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/registration/error/ClientRequestErrorTest.java",
+      "lines": 128,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/DeviceRegistrationResponse.java",
+      "lines": 121,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/MobileConnectionCheck.java",
+      "lines": 104,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/ProductInfo.java",
+      "lines": 102,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/DeviceRegistrationResponseV091.java",
+      "lines": 94,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/registration/DeviceRegistrationResponseTest.java",
+      "lines": 90,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/error/ClientRequestError.java",
+      "lines": 71,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/ProductFeature.java",
+      "lines": 64,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/UpsellInfo.java",
+      "lines": 64,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/error/ClientRequestException.java",
+      "lines": 61,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/registration/MobileConnectionCheckTest.java",
+      "lines": 59,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/TosContainer.java",
+      "lines": 51,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/UpgradeProductInfo.java",
+      "lines": 50,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/registration/UpgradeProductInfoTest.java",
+      "lines": 49,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/UpdateMode.java",
+      "lines": 47,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/registration/LicenseTypeTest.java",
+      "lines": 46,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/UpsellInfoWrapper.java",
+      "lines": 45,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/LicenseType.java",
+      "lines": 43,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/DynDnsEntry.java",
+      "lines": 42,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/registration/ProductFeatureTest.java",
+      "lines": 41,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/CustomerInfo.java",
+      "lines": 39,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/registration/UpdateModeTest.java",
+      "lines": 39,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/UpgradeInfo.java",
+      "lines": 36,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/registration/RegistrationStateTest.java",
+      "lines": 36,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/DeviceRegistrationResponseBase.java",
+      "lines": 35,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/RegistrationState.java",
+      "lines": 31,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    }
+  ],
+  "languages": {
+    "other": 4,
+    "Markdown": 1,
+    "XML": 2,
+    "Java": 29
+  }
+}

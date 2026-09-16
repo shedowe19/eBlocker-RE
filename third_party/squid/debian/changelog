@@ -1,0 +1,2332 @@
+squid (7.2-2) unstable; urgency=high
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * debian/patches/0008-upstream-ab5cf0c36b538627c82b3989d6c87d1668c7e081.patch
+    - Added upstream patch fixing error on CONNECT to hosts starting with
+      digit
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu, 23 Oct 2025 19:18:11 +0200
+
+squid (7.2-1) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release 7.2 (Closes: #1080997)
+    Fixes: CVE-2025-62168. SQUID-2025:2 (Closes: #1118341)
+    Fixes: CVE-2025-59362 (Closes: #1117048)
+
+  * debian/watch
+    - remove check for files no longer provided upstream
+
+  * debian/control
+    - support libkrb5 provided by krb5-multidev package
+
+ -- Luigi Gangitano <luigi@debian.org>  Wed, 22 Oct	2025 16:58:20 +0200
+
+squid (7.1-1+eblocker1) unstable; urgency=medium
+
+  * Reduce lifetime of certificate to 46 days if origin server certificate is unkown.
+
+ -- eBlocker Open Source <dev@eblocker.org>  Mon, 27 Oct 2025 17:20:00 +0100
+
+squid (7.1-1) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release 7.1 (Closes: #1097927, #1015670)
+
+  * Drop binaries removed upstream
+    - ntlm_smb_lm_auth (Fixes: CVE-2025-21311)
+    - squid-purge
+    - squid-cgi
+    - squidclient
+
+  * Remove workaround for CVE-2024-45802, integrated upstream.
+
+  * debian/patches/
+    - refresh patches for new version
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 14 Jul 2025 10:58:20 +0200
+
+squid (6.13-2) unstable; urgency=low
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * debian/control
+    - Bumped Standards-Version to 4.7.2, no change needed
+    - Add Build-Dep on libcrypt-dev (Closes: #1106998)
+
+  * debian/squid-openssl.links
+    - Add symlink for man8 file
+
+  * debian/squid.postrm
+    - Remove no longer necessary workaround for Bug #984897
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon,  9 Jun 2025 10:35:20 +0200
+
+squid (6.13-1) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release 6.13 (Closes: #956581)
+
+  * debian/watch
+    - update for new upstream release location
+
+  * debian/squid{,-openssl}.alternatives
+    - switch alternatives priority (Closes: #1086537)
+
+  * debian/squid.tmpfile
+    - fix warning: The name debian/squid.tmpfile is deprecated
+      please use debian/squid.tmpfiles instead
+
+  * debian/NEWS
+    - fix lintian warning syntax-error-in-debian-news-file
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue, 11 Feb 2025 12:35:20 +0100
+
+squid (6.12-1) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release 6.12 (Closes: #1063877)
+
+  * Disable ESI feature support
+    Fixes: CVE-2024-45802. SQUID-2024:4
+
+  * debian/{control,rules}
+    - Migrate from lsb-release to os-release.
+    - Remove deprecated lsb-base dependency. It has been
+      replaced by sysvinit-utils in essential packages.
+    - Polish user visible package descriptions.
+    - Restructure rules special-cases for easier team maintenance.
+
+  * Use alternatives system for squid binary
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * debian/control
+    - Add Rules-Requires-Root: binary-targets
+    - Bumped Standards-Version to 4.7.0, no change needed
+
+  * debian/patches/*
+    - Refreshed patches
+    - Added description to 0006-upstream-807ae4df2164defbb5f59b99282e24010b4a0b85.patch
+
+  * debian/upstream/signing-key.asc
+    - Added Francesco Chemolli's key to the authorized keys (Closes: #1084734)
+
+  [ Sven Auhagen <sven.auhagen@voleatech.de> ]
+  * debian/squid.postinst
+    - Check if cache folder exists before using chown
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 28 Oct 2024 11:04:20 +0100
+
+squid (6.10-1) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release 6.10
+    Fixes: CVE-2024-37894. SQUID-2024:3 (Closes: #1074284)
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon,  1 Jul 2024 12:04:20 +0200
+
+squid (6.9-1) unstable; urgency=medium
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release 6.9
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue,  9 Apr 2024 15:04:20 +0200
+
+squid (6.8-1) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release 6.8
+    Fixes: CVE-2024-25111. SQUID-2024:1
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * debian/control
+    - Migrate from pkg-config to pkgconf
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon,  4 Mar 2024 18:04:20 +0100
+
+squid (6.6-1) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release 6.6
+    Fixes: CVE-2023-50269. SQUID-2023:10 (Closes: #1058721)
+    Fixes: CVE-2024-23638. SQUID-2023:11
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * debian/patches/
+    - Refreshed patches
+
+  * debian/squid-openssl.dirs
+    - Stop creating empty /lib/systemd/system directory (Closes: #1058860)
+
+  * debian/changelog
+    - Fixed typo in CVE reference
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu, 18 Jan 2024 13:04:20 +0100
+
+squid (6.5-1) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release 6.5
+    Fixes: CVE-2023-46846. SQUID-2023:1 (Closes: #1054537)
+    Fixes: CVE-2023-5824. SQUID-2023:2 (Closes: #1055249)
+    Fixes: CVE-2023-46847. SQUID-2023:3 (Closes: #1055250)
+    Fixes: CVE-2023-46724. SQUID-2023:4 (Closes: #1055252)
+    Fixes: CVE-2023-46848. SQUID-2023:5 (Closes: #1055251)
+    Fixes: CVE-2019-18860. SQUID-2023:6
+    Fixes: CVE-2023-49285. SQUID-2023:7
+    Fixes: CVE-2023-49286. SQUID-2023:8
+    Fixes: CVE-2024-25617. SQUID-2024:2
+
+  * Update debian/tests/upstream-test-suite for new version (Closes: #1053557)
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu,  9 Nov 2023 15:04:20 +0100
+
+squid (6.3-1) unstable; urgency=medium
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream version 6.3 (Closes: #1049926, #1043505)
+
+  * debian/patches/
+    - remove 0007-ftbfs-gnu-hurd.patch integrated upstream
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu, 28 Sep 2023 16:04:20 +0200
+
+squid (6.1-2) unstable; urgency=low
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * debian/patches/
+   - add 0007-ftbfs-gnu-hurd.patch to fix GNU/Hurd build
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu, 13 Jul 2023 13:04:20 +0200
+
+squid (6.1-1) unstable; urgency=medium
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * debian/{control,watch}
+    - New Upstream Release
+
+  * debian/patches/
+    - refresh for new upstream version
+    - add 0006-upstream-807ae4df2164defbb5f59b99282e24010b4a0b85.patch
+    - remove 0003-installed-binary-for-debian-ci.patch integrated upstream
+    - remove 1f13f721263a4cc75e4b798a230022561047899c.patch integrated upstream
+    - remove edad3f150de8af0aeb2f629508be3219b83369b9.patch integrated upstream
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * debian/patches/
+    - add Fordwarded tag
+
+  * debian/control
+    - Bumped Standards-Version to 4.6.2, no change needed
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 10 Jul 2023 11:04:20 +0200
+
+squid (5.7-2) unstable; urgency=medium
+
+  * Add a couple of upstream picked patches to fix some issues on 5.7
+    that upstream has fixed on 5.8.
+
+ -- Santiago Garcia Mantinan <manty@debian.org>  Fri, 28 Apr 2023 08:35:27 +0200
+
+squid (5.7-1) unstable; urgency=medium
+
+  * Urgency high due to security fixes
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * New upstream version 5.7
+
+  * Exposure of Sensitive Information in Cache Manager (CVE-2022-41317)
+    (Closes: #1020587)
+
+  * Buffer Over Read in SSPI and SMB Authentication (CVE-2022-41318)
+    (Closes: #1020586)
+
+  * debian/patches/
+    - Removed 0006-Fix-build-against-OpenSSL-3-0.patch integrated upstream
+
+  * debian/control
+    - Bumped Standards-Version to 4.6.1, no change needed
+
+  * Using new DH level format. Consequently:
+      - debian/compat: removed.
+      - debian/control:
+          - Changed from 'debhelper' to 'debhelper-compat' in Build-Depends
+            field and bumped level to 13.
+      - debian/rules:
+          - Disable dh_missing
+      - Dropped unnecessary dependencies in Build-Depends field.
+
+  * debian/salsa-ci.yml
+      - Added to provide CI tests for Salsa
+
+  * debian/upstream/metadata
+    - Created upstream metadata file
+
+  * debian/upstream/signing-key.asc
+    - Strip extra signatures from upstream key
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue,  4 Oct 2022 11:04:20 +0200
+
+squid (5.6-1) unstable; urgency=high
+
+  * Urgency high due to security fixes
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release
+    Fixes: CVE-2021-46784. Denial of Service in Gopher Processing
+
+ -- Luigi Gangitano <luigi@debian.org>  Sun, 19 Jun 2022 13:39:54 +0200
+
+squid (5.5-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+
+  [ Nicholas Guriev ]
+  * Fixing build against OpenSSL 3.0 (Closes: #1005650, LP: #1946205)
+
+  * debian/rules
+    - Do not fail on errors about deprecated declarations from OpenSSL.
+    - Remove -Wall in CFLAGS from the debian/rules file since upstream build
+      scripts already pass this flag.
+
+  * debian/patches/
+    - New 0006-Fix-build-against-OpenSSL-3-0.patch
+
+  [ Simon Deziel ]
+  * apparmor: allow reading /etc/ssl/openssl.cnf
+
+ -- Nicholas Guriev <guriev-ns@ya.ru>  Tue, 31 May 2022 23:13:38 +0300
+
+squid (5.5-1) unstable; urgency=medium
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release
+
+  * debian/patches/
+    - remove upstreamed 0004-Change-default-Makefiles-for-debian.patch
+
+ -- Luigi Gangitano <luigi@debian.org>  Fri, 15 Apr 2022 14:39:54 +0200
+
+squid (5.2-1) unstable; urgency=medium
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release (Closes: #986804, #976131)
+    Fixes: CVE-2021-28116. Out-Of-Bounds memory access in WCCPv2
+    Fixes: CVE-2021-41611. Improper Certificate Validation of TLS server
+    certificates
+
+  [ L.P.H. van Belle <belle@bazuin.nl> ]
+  * debian/rules
+    - polish override_dh_installsystemd action to match other sequences
+
+  * debian/NEWS
+    - bump version number to make Lintian happy
+
+ -- Luigi Gangitano <luigi@debian.org>  Sat,  9 Oct 2021 17:03:54 +0200
+
+squid (5.1-2) unstable; urgency=medium
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release (Closes: #984351, #943692)
+
+  * debian/control
+    - switch build-dep to libtdb-dev. libdb is deprecated
+    - Bumped Standards-Version to 4.6.0, no change needed
+
+  * debian/patches/
+    - refresh patches for new version
+    - fix 0001-Default-configuration-file-for-debian.patch (Closes: #970025)
+    - add 0004-Change-default-Makefiles-for-debian.patch
+      to fix FTBFS 'cp: cannot create regular file tests/stub_*.cc'
+
+  * debian/rules
+    - remove basic_nis_auth helper
+
+  * Drop squid3 upgrade compatibility. Debian has not contained
+    a squid3 package for at least two full release cycles.
+
+ -- Luigi Gangitano <luigi@debian.org>  Fri, 17 Sep 2021 09:27:54 +0200
+
+squid (4.13-10) unstable; urgency=medium
+
+  [ Francisco Vilmar Cardoso Ruviaro ]
+  * Add debian/patches/0007-CVE-2021-28651.patch to fix a Denial
+    of Service in URN processing. (Closes: #988893, CVE-2021-28651)
+
+  [ Santiago Garcia Mantinan ]
+  * Add patch to fix a Denial of Service in HTTP Response Processing.
+    Fixes: CVE-2021-28662. Closes: #988891.
+  * Add patch to fix a Denial of Service issue in Cache Manager.
+    Fixes: CVE-2021-28652. Closes: #988892.
+  * Add patch to fix Multiple Issues in HTTP Range header.
+    Fixes: CVE-2021-31806 CVE-2021-31807 CVE-2021-31808. Closes: #989043.
+  * Add patch to fix a Denial of Service in HTTP Response processing.
+    Fixes: GHSA-572g-rvwr-6c7f.
+
+ -- Santiago Garcia Mantinan <manty@debian.org>  Fri, 28 May 2021 12:28:20 +0200
+
+squid (4.13-9) unstable; urgency=medium
+
+  * Clarify on NEWS and scripts that we no longer remove logs on purge.
+  * Clarify on postrm script that the debhelper code was put manually.
+  * Add README.Debian to squid-openssl.
+
+ -- Santiago Garcia Mantinan <manty@debian.org>  Tue, 23 Mar 2021 00:18:11 +0100
+
+squid (4.13-8) unstable; urgency=medium
+
+  * Add SQUID-2020_11.patch to fix HTTP Request Smuggling.
+    Fixes: CVE-2020-25097. Closes: #985068.
+
+ -- Santiago Garcia Mantinan <manty@debian.org>  Sun, 21 Mar 2021 00:58:29 +0100
+
+squid (4.13-7) unstable; urgency=medium
+
+  * Add full postrm scripts while we don't solve #984897 on debhelper.
+    Closes: #984880.
+
+ -- Santiago Garcia Mantinan <manty@debian.org>  Wed, 10 Mar 2021 09:19:32 +0100
+
+squid (4.13-6) unstable; urgency=medium
+
+  * Stop removing cache and config file on postrm. Closes: #984510.
+  * Increase debhelper build dependency to 12.8 as we need that from -5.
+  * Add NEWS note on the problem with purge on previous versions.
+
+ -- Santiago Garcia Mantinan <manty@debian.org>  Thu, 04 Mar 2021 14:45:00 +0100
+
+squid (4.13-5) unstable; urgency=high
+
+  * Have a deeper look and change all dpkg-buildpackage commands
+    for similar dh ones. At least at home it works now.
+
+ -- Santiago Garcia Mantinan <manty@debian.org>  Mon, 08 Feb 2021 21:35:48 +0100
+
+squid (4.13-4) unstable; urgency=high
+
+  * Remove pre-build from upstream-test-suite.
+
+ -- Santiago Garcia Mantinan <manty@debian.org>  Mon, 08 Feb 2021 09:26:25 +0100
+
+squid (4.13-3) unstable; urgency=high
+
+  * Source only upload to allow migration to testing.
+  * At 4.13-2 we also enabled --enable-ssl-crtd. (Closes: #898307)
+  * Fix build dependencies.
+
+ -- Santiago Garcia Mantinan <manty@debian.org>  Sun, 07 Feb 2021 21:58:30 +0100
+
+squid (4.13-2) unstable; urgency=high
+
+  * Add a new brand, the new squid-openssl package compiled
+    with openssl. (Closes: #966395)
+  * Change rules to allow double building the two brands.
+  * Update Standandards-Version.
+
+ -- Santiago Garcia Mantinan <manty@debian.org>  Sun, 07 Feb 2021 01:39:45 +0100
+
+squid (4.13-1) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release
+    - Fixes security issue SQUID-2020:8 (CVE-2020-15811) (Closes: #968932)
+    - Fixes security issue SQUID-2020:9 (Closes: #968933)
+    - Fixes security issue SQUID-2020:10 (CVE-2020-15810) (Closes: #968934)
+
+  * debian/squid.rc: Fix several typos (Closes: #968101)
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 24 Aug 2020 17:27:54 +0200
+
+squid (4.12-1) unstable; urgency=high
+
+  [ Sergio Durigan Junior <sergiodj@debian.org> ]
+  * Don't restart squid by hand on postinst script.
+    When installing/upgrading squid, the service is being restarted
+    manually in the postinst script, which can break installations that
+    have the squid apparmor enabled because it will try to restart the
+    service before reloading the apparmor profile.
+    There is no reason to restart squid manually, since the restart will
+    be automatically performed later.
+
+  * Drop conffile check for squid < 2.7
+    squid 2.7 is long, long gone, so it should be safe to drop the
+    postinst code to make sure that /etc/squid/squid.conf was properly
+    upgraded.
+
+  * Fix 'pidfile' on d/t/tests-squid.py.
+    The pidfile lives under '/run/squid/', not '/run/'. (Closes: #960327)
+
+  [ Juri Grabowski <debian@jugra.de> ]
+  * add gbp.conf for squid
+
+  * New upstream version 4.12
+    - Fixes security issue SQUID-2020:5 (CVE-2020-14059)
+    - Fixes security issue SQUID-2020:6 (CVE-2020-14058)
+    - Fixes security issue SQUID-2020:7 (CVE-2020-15049)
+
+  * remove 0004-upstream-bug5041.patch - Fixed in upstream
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+
+  * Move PID file to /run (Closes: #960819)
+
+ -- Luigi Gangitano <luigi@debian.org>  Wed,  1 Jul 2020 10:52:54 +0200
+
+squid (4.11-5) unstable; urgency=medium
+
+  [ Sergio Durigan Junior <sergiodj@debian.org> ]
+  * Don't install /run/squid (use systemd's RuntimeDirectory instead).
+    Debian Policy states that /run is normally cleared at boot time, and
+    therefore packages must not install files/directories under /run.
+    Init scripts should be taught to dynamically handle /run instead.
+    This change uses systemd's RuntimeDirectory and RuntimeDirectoryMode
+    directives when starting the squid service in order to guarantee that
+    /run/squid/ will be created with the correct permission.  This has the
+    added benefit of deleting the directory when the service is stopped.
+    (Closes: #960327)
+  * Allow /run/system/notify to be accessed by squid.
+    When apparmor is enabled and the squid profile is enforced, we must
+    make sure that the daemon will be able to access the
+    /run/system/notify file (because squid's systemd service file type is
+    "notify").
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * debian/NEWS
+    - Fix unknown version of latest entry
+
+ -- Luigi Gangitano <luigi@debian.org>  Sat, 16 May 2020 12:00:54 +0200
+
+squid (4.11-4) unstable; urgency=medium
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * Fix permissions on /run/squid
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu,  7 May 2020 15:30:54 +0200
+
+squid (4.11-3) unstable; urgency=low
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * Move PID file into /run/squid (Closes: #932593)
+
+  * Mark squid-common package Multi-Arch:foreign
+
+ -- Luigi Gangitano <luigi@debian.org>  Sun,  4 May 2020 18:57:54 +0200
+
+squid (4.11-2) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * Add libsystemd-dev dependency on Linux (Closes: 958708)
+    - fixes systemd timeout failure during install
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * debian/rules
+    - Removed --as-needed flag
+
+ -- Luigi Gangitano <luigi@debian.org>  Fri, 24 Apr 2020 20:49:54 +0200
+
+squid (4.11-1) unstable; urgency=high
+
+  * Urgency high due to security fixes
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release (Closes: #957840, #929574, #910337)
+    - Fixes security issue SQUID-2019:12 (CVE-2019-12519, CVE-2019-12521)
+    - Fixes security issue SQUID-2020:4 (CVE-2020-11945)
+
+  * debian/squid3.{maintscript,postinst,postrm,preinst,rc}
+    - Remove unused and obsolete scripts
+
+  * debian/squid.{postrm,preinst}
+    - Remove obsolete script logic
+
+  * debian/squid-common.postinst
+    - Remove obsolete script
+
+  * debian/changelog
+    - Add missing historic CVE references
+
+  * debian/patches/
+    - Add upstream fix for missing Debug::Extra in systemd builds
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu, 23 Apr 2020 19:34:54 +0200
+
+squid (4.10-1) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release (Closes: #950641)
+    - Fixes security issue SQUID-2020:1 (CVE-2020-8449) (CVE-2020-8450)
+      (Closes: #950802)
+    - Fixes security issue SQUID-2020:2 (CVE-2019-12528) (Closes: #950925)
+    - Fixes security issue SQUID-2020:3 (CVE-2020-8517)
+
+  * debian/NEWS
+    - Fix syntax to make lintian happier
+
+  * debian/control
+    - Bumped Standards-Version to 4.5.0, no change needed
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * debian/control
+    - Drop squid3 transitional package (Closes: #940785)
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue, 10 Feb 2020 14:12:54 +0100
+
+squid (4.9-2) unstable; urgency=medium
+
+  [ Andreas Hasenack <andreas@canonical.com> ]
+  * debian/rules
+    - Only use -latomic with the intended architectures, instead of all of them
+
+  * debian/NEWS
+    - Rename d/NEWS.debian to d/NEWS so that dh_installchangelogs can pick it
+
+  * debian/{watch,signing-key.asc}
+    - Check upstream gpg signature
+
+  * debian/test/test-squid.py
+    - Re-enable apparmor test
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * debian/squid.rc
+    - Change to --foreground while creating cache dirs to avoid SMP bug
+
+  * debian/squid.resolvconf
+    - Merge previous check for /usr being mounted before restart
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu, 14 Nov 2019 10:12:54 +0100
+
+squid (4.9-1) unstable; urgency=high
+
+  * Urgency high due to security fixes
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release (Closes: #943692)
+    - Fixes security issue SQUID-2019:7 (CVE-2019-12526)
+    - Fixes security issue SQUID-2019:8 (CVE-2019-18676) (CVE-2019-12523)
+    - Fixes security issue SQUID-2019:9 (CVE-2019-18677)
+    - Fixes security issue SQUID-2019:10 (CVE-2019-18678)
+    - Fixes security issue SQUID-2019:11 (CVE-2019-18679)
+    - Updates fix for security issue SQUID-2019:6 (CVE-2019-13345)
+
+  * debian/control
+    - Bumped Standards-Version to 4.4.1, no change needed
+
+  * debian/tests/test-squid.py
+    - Disable Apparmor tests
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * Source only upload (Closes: #943911)
+
+  * debian/squid.resolvconf
+    - Avoid reload before squid.pid is available (Closes: #911325)
+      thanks to Michael Biebl and Wolfgang Schweer
+
+  * debian/squid.rc
+    - Make squid.rc wait for directory creation (Closes: #933295),
+      thanks to Daniel Reichelt
+
+ -- Luigi Gangitano <luigi@debian.org>  Sun, 10 Nov 2019 20:28:15 +0100
+
+squid (4.8-1) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release
+    - Fixes security issue SQUID-2019:1 (CVE-2019-12824)
+    - Fixes security issue SQUID-2019:2 (CVE-2019-12529)
+    - Fixes security issue SQUID-2019:3 (CVE-2019-12525)
+    - Fixes security issue SQUID-2019:5 (CVE-2019-12527)
+    - Fixes security issue SQUID-2019:6 (CVE-2019-13345) (Closes: #931478)
+
+  * debian/control
+    - Bumped Standards-Version to 4.4.0, no change needed
+
+  * debian/tests/test-squid.py
+    - Skip Apparmor tests when profile not installed
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu, 18 Jul 2019 22:28:15 +0200
+
+squid (4.6-2) unstable; urgency=high
+
+  [ Andreas Hasenack <andreas@canonical.com> ]
+  * Add disabled by default AppArmor profile (Closes: #923213)
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 04 Mar 2019 09:28:15 +0100
+
+squid (4.6-1) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release
+    - Fix multiple memory leak and data corruption issues
+    - Detect IPv6 loopback binding errors
+    - Do not call setsid() in --foreground mode
+    - Exit on fork() failures
+    - Fix OpenSSL builds that define OPENSSL_NO_ENGINE
+    - Fix multiple GCC-8 compile errors
+
+ -- Luigi Gangitano <luigi@debian.org>  Fri, 22 Feb 2019 14:28:15 +0100
+
+squid (4.5-2) unstable; urgency=medium
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * debian/{rules,squid.tmpfile}
+    - Add tmpfiles configuration to handle /var/run/squid at boot
+
+  * debian/squid.lintian-overrides
+    - Removed unused override file
+
+ -- Luigi Gangitano <luigi@debian.org>  Wed, 20 Feb 2019 17:28:15 +0100
+
+squid (4.5-1) unstable; urgency=medium
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release
+
+  * debian/control
+    - Bumped Standards-Version to 4.3.0, no change needed
+
+  * debian/rules
+    - Add /var/run/squid directory for SMP workers and helpers
+
+  [ Helmut Grohne <helmut@subdivi.de> ]
+  * debian/rules
+    - Pass BUILDCXX to ./configure on cross-builds
+    - use --with-build-environment=default to avoid arm64 flag issues
+
+  * debian/control
+    - Add cross-compile annotations to restrict GCC/LLVM dependency
+      (Closes: #916536)
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * debian/control
+    - Fixed dependency on winbind instead of winbindd
+
+  * debian/squid{,3}.{postinst,postrm,preinst,maintscript}
+    - Moved dpkg-maintscript-helper commands to proper DH file
+
+ -- Luigi Gangitano <luigi@debian.org>  Wed, 20 Feb 2019 11:57:15 +0100
+
+squid (4.4-1) unstable; urgency=high
+
+  * Urgency high due to security fixes
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release
+    - Fix security issue SQUID-2018:4 (CVE-2018-19131) (Closes: #912293)
+    - Fix security issue SQUID-2018:5 (CVE-2018-19132) (Closes: #912294)
+
+  [ Luigi Gangitano ]
+  * debian/squid.preinst
+    - Don't parse /etc/passwd, use getent to make lintian happy
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue, 30 Oct 2018 14:57:15 +0100
+
+squid (4.3-1) unstable; urgency=low
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release
+
+  * debian/patches/
+    - Remove upstream pr264 patch for systemd
+
+  * debian/control
+    - Bumped Standards-Version to 4.2.1, no change needed
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 08 Oct 2018 09:57:15 +0200
+
+squid (4.2-2) unstable; urgency=high
+
+  [ Adrian Bunk <bunk@debian.org> ]
+  * Add -latomic for rmel m68k mips mipsel powerpc powerpcspe sh4
+    (Closes: #907106)
+
+ -- Luigi Gangitano <luigi@debian.org>  Fri, 24 Aug 2018 08:57:15 +0200
+
+squid (4.2-1) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release
+
+  * debian/patches/
+    - Patch to use installed binary for upstream config tests
+    - Remove patches included upstream: 0011-upstream-pr172.patch
+    - Add upstream pr264 patch for systemd (Closes: #903165)
+
+  * debian/control
+    - Bumped Standards-Version to 4.2.0.0, no change needed
+
+  [ Andreas Hasenack ]
+  * Enable CDBS parallel build
+  * d/t/upstream-test-suite: also make libmem.la, needed by the tests.
+  * d/t/test-squid.py: fix apparmor profile filename
+  * debian/tests/control: add ssl-cert to the list of dependencies of the
+    squid test, as apache is configured to load
+    /etc/ssl/certs/ssl-cert-snakeoil.pem in that test.
+  * d/t/test-squid.py: fix the process name. The PID points at the parent.
+
+  [ Luigi Gangitano ]
+  * debian/control
+    - Fix Vcs-Git and Vcs-Browser URLs
+
+ -- Luigi Gangitano <luigi@debian.org>  Wed, 22 Aug 2018 13:57:15 +0200
+
+squid (4.1-1) unstable; urgency=high
+
+  * New Upstream Release (Closes: #896120)
+
+  * debian/patches/
+    - Add upstream patch to fix GCC-8 FTBFS issues
+
+  * debian/control
+    - Remove shlibs:Depends from transitional squid3 package
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue, 03 Jul 2018 18:37:15 +0200
+
+squid (4.0.24-1~exp16) experimental; urgency=medium
+
+  * debian/{control,rules}
+    - Build with TLS support from gnutls (Closes: #641944, #811014)
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 30 Apr 2018 15:37:15 +0200
+
+squid (4.0.24-1~exp15) experimental; urgency=medium
+
+  * New Upstream Release (Closes: #641944)
+    - Adds GnuTLS support for https_port (Closes: #811014)
+
+  * debian/control
+    - Add Recommends for ca-certificates to squid and squidclient to ensure
+      system Trusted CA certificates are installed.
+    - Update Vcs-* headers for Salsa migration
+    - Bumped Standards-Version to 4.1.4
+
+  * debian/{rules,install,squid.service}
+    - Convert to debhelper for systemd init script installation
+      (Closes: #889541)
+
+  * debian/squid.{postinst,postrm}
+    - Remove update-rc.d commands now done by debhelper
+
+  * debian/NEWS.debian
+    - Document surprises caused by systemd use (Closes: #896125)
+
+ -- Luigi Gangitano <luigi@debian.org>  Sun, 29 Apr 2018 18:20:24 +0200
+
+squid (4.0.23-1~exp8) experimental; urgency=medium
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release
+
+  * debian/control
+    - Bumped Standards-Version to 4.1.2, no change needed
+
+  * debian/rules
+    - clean up a bit for lintian
+    - explicitly list TLS certificate validator and Store-ID helpers built
+    - add /etc/squid/conf.d/ directory for local settings separate from
+      the default configuration.
+
+  * debian/squid.install
+    - add missing man(8) page for security_fake_certverify helper
+
+  * Add configuration file for Debian settings
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue, 23 Jan 2018 10:39:24 +0100
+
+squid (4.0.21-1~exp5) experimental; urgency=medium
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release (Closes: #853668)
+    - Adds GnuTLS support for https:// URLs (Closes: #180886)
+    - switch squid-purge to upstream man(1) manual page
+
+  * debian/patches/
+    - refresh patches for new version
+
+  * debian/{rules,squid.install}
+    - update rules to build NTLM LanMan helper
+    - install squid.service file for systemd (Closes: #855268, #871602)
+
+  * debian/control
+    - Bumped Standards-Version to 4.1.0
+    - updates Priority field for squid3 package to optional
+    - minor maintenance improvements
+    - mention compiler dependency for backport builds
+    - remove squid-dbg in favour of automatic *-dbgsym packages
+    - remove version 3.x specific text from long descriptions
+    - add 'ed' package dependency for buster
+    - remove unnecessary autotools-dev build-dependency
+
+  * debian/{watch,squid.rc}
+    - update for new major version
+
+  * debian/copyright
+    - auto generate from upstream CREDITS file
+
+  [ Christian Ehrhardt <christian.ehrhardt@canonical.com> ]
+  * Leverage squid qa regression testing code from
+    https://code.launchpad.net/qa-regression-testing as an dep8 test.
+    The tests were shrinked-to-fit and relicensed from their upstream
+    counterparts to be easier to maintain and fully functional without
+    internet access to work in infrastructures like DebCI.
+    - debian/tests/squid: basic setup of local ftp/http/https servers to be
+      used by test-squid.py
+    - debian/tests/control: add squid test and dependencies
+    - debian/tests/test-squid.py: the actual tests
+    (Closes: #710014, #859072)
+
+  [ Santiago Garcia Mantinan <manty@debian.org> ]
+  * Change source package name to squid.
+  * Clean up lintian a bit.
+  * Get it ready for an upload to experimental.
+
+ -- Santiago Garcia Mantinan <manty@debian.org>  Wed, 04 Oct 2017 23:19:36 +0200
+
+squid3 (3.5.27-1) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release
+
+  * debian/{control,rules}
+    - Add temporary dependency on gcc-6 and g++-6 to workaround FTBFS in
+      unstable
+
+  * debian/patches/
+    - Fix security issue SQUID-2018:1 (CVE-2018-1000024) (Closes: #888719)
+    - Fix security issue SQUID-2018:2 (CVE-2018-1000027) (Closes: #888720)
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * debian/control
+    - Changed priority to optional for squid3 and squid-dbg
+    - Removed unneeded Build-Dep on autotools-dev
+
+  * debian/rules
+    - Include dpkg-architecture Makefile instead of invoking the binary at
+      build time
+
+  * debian/squid.postinst
+    - Remove recursive chown calls
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue, 13 Feb 2018 15:31:24 +0100
+
+squid3 (3.5.23+eblocker10-5) unstable; urgency=medium
+
+  * [EB1-1608] increased maximal helper response size
+
+ -- Nikolas Lohmann <lohmann@eblocker.com>  Tue, 07 Jun 2018 14:42:00 +0100
+
+squid3 (3.5.23+eblocker9-5) unstable; urgency=medium
+
+  * [EB1-1541] close socket regardless of error type
+
+ -- Nikolas Lohmann <lohmann@eblocker.com>  Tue, 08 May 2018 09:14:00 +0100
+
+squid3 (3.5.23+eblocker8-5) unstable; urgency=medium
+
+  * [EB1-145] Fixed white listing domains by using ip-address to turn back
+    connection state to tunnel. This avoids terminating spliced connections due
+    to request header forgery detection.
+
+ -- Nikolas Lohmann <lohmann@eblocker.com>  Thu, 08 Mar 2018 13:49:00 +0100
+
+squid3 (3.5.23+eblocker7-5) unstable; urgency=medium
+
+  * [EB1-1376]
+    - Set KillMode to none
+    - Remove timeout setting
+
+ -- Boris Prinz <prinz@eblocker.com>  Tue, 20 Feb 2018 10:27:00 +0100
+
+squid3 (3.5.23+eblocker6-5) unstable; urgency=medium
+
+  * [EB1-1376]
+    - Set KillMode to control-group
+    - Reduce stopping timeout to 1 minute
+    - Do not abort installation if restarting the squid fails
+
+ -- Boris Prinz <prinz@eblocker.com>  Fri, 16 Feb 2018 12:11:00 +0100
+
+squid3 (3.5.23+eblocker5-5) unstable; urgency=medium
+
+  * [EB1-1362] provide default configuration but only install if necessary
+
+ -- Boris Prinz <prinz@eblocker.com>  Mon, 05 Feb 2018 17:55:00 +0100
+
+squid3 (3.5.23+eblocker4-5) unstable; urgency=medium
+
+  * [EB1-1353] updated service dependencies
+
+ -- Nikolas Lohmann <lohmann@eblocker.com>  Thu, 01 Feb 2018 13:29:00 +0100
+
+squid3 (3.5.23+eblocker3-5) unstable; urgency=medium
+
+  * [EB1-1309] base64 encode errors details
+
+ -- Nikolas Lohmann <lohmann@eblocker.com>  Wed, 31 Jan 2018 13:10:00 +0100
+
+squid3 (3.5.23+eblocker2-5) unstable; urgency=medium
+
+  * [EB1-1343] added option to disable aaaa queries
+
+ -- Nikolas Lohmann <lohmann@eblocker.com>  Tue, 30 Jan 2018 15:20:00 +0100
+
+squid3 (3.5.23+eblocker1-5) unstable; urgency=medium
+
+  * [EB1-1165] added log message for detecting ssl errors
+
+ -- Nikolas Lohmann <lohmann@eblocker.com>  Fri, 26 Jan 2018 11:30:00 +0100
+
+squid3 (3.5.23-5) unstable; urgency=medium
+
+  * Reload squid so that it uses modified config, not default one.
+
+ -- Santiago Garcia Mantinan <manty@debian.org>  Sat, 03 Jun 2017 00:36:55 +0200
+
+squid3 (3.5.23-4) unstable; urgency=medium
+
+  [ Andreas Beckmann <anbe@debian.org> ]
+  * debian/squid.postinst
+    - Fix another upgrade edge case from 2.7 default install (Closes: #801564)
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * debian/squid.logrotate
+    - Add missing piece of fix for sarg daily reports (LP: #1414754)
+
+ -- Santiago Garcia Mantinan <manty@debian.org>  Fri, 02 Jun 2017 00:19:55 +0200
+
+squid3 (3.5.23-3) unstable; urgency=medium
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * debian/squid.preinst
+    - Fix upgrade sequence from jesse squid3 package (Closes: #858556)
+
+  [ Santiago Garcia Mantinan <manty@debian.org> ]
+  * debian/squid.{preinst,postinst,postrm}
+    - Fix problems with empty squid3 dir and squid 2.7 installed
+      (use the right logic with better checks).
+    - Avoid install abortion by stopping squid3 only when it runs.
+
+  [ Eric Veiras Galisson <bugs@sietch-tabr.com> ]
+  * debian/squid.rc
+    - Fix returncode is wrong with conf file with errors (Closes: #857137)
+
+ -- Santiago Garcia Mantinan <manty@debian.org>  Sat, 08 Apr 2017 02:52:28 +0200
+
+squid3 (3.5.23-2) unstable; urgency=medium
+
+  [ Santiago Garcia Mantinan <manty@debian.org> ]
+  * debian/squid.{preinst,postinst,postrm}
+    - Fix upgrade sequence from 2.7 packages (Closes: #801564)
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * debian/control
+    - Relax dependency between squid and squid-common packages (Closes: #399489)
+    - Add squidclient Recommends on ssl-cert
+
+  [ Robie Basak <robie.basak@canonical.com> ]
+  * debian/control
+    - Add missing pre-depends on adduser
+    - Add Vcs-Browser URL
+
+ -- Santiago Garcia Mantinan <manty@debian.org>  Sun, 19 Mar 2017 23:23:57 +0100
+
+squid3 (3.5.23-1) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release (Closes: #793473, #822952)
+    - Fixes security issue SQUID-2016:10 (CVE-2016-10003) (Closes: #848491)
+    - Fixes security issue SQUID-2016:11 (CVE-2016-10002) (Closes: #848493)
+
+  * debian/patches/
+    - Remove patch included upstream
+
+  * debian/tests/
+    - Use package build-deps when testing so the make commands will work
+
+ -- Luigi Gangitano <luigi@debian.org>  Sun, 18 Dec 2016 23:39:24 +0200
+
+squid3 (3.5.22-1) unstable; urgency=medium
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release
+
+  * debian/patches
+    - Add upstream patch to fix adaptation crashes
+
+  * debian/{control, rules, squid.postinst}
+    - Accept patch to remove setuid from pinger (Closes: #822992)
+
+  [ Luigi Gangitano ]
+  * debian/compat
+    - Bump to debhelper compatibility level 10
+
+  * debian/{control,tests/}
+    - Add DEP-8 autopkgtest for upstream test suite, thanks to
+      Santiago Ruano Rincan (Closes: #829141)
+
+  * debian/rules
+    - Avoid linking with unneeded libraries, thanks to Yuriy M. Kaminskiyi
+      (Closes: #822998)
+
+ -- Luigi Gangitano <luigi@debian.org>  Sat, 29 Oct 2016 23:13:00 +0200
+
+squid3 (3.5.19-1) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release (Closes: #823968)
+    - Fixes security issue SQUID-2016:7 (CVE-2016-4553)
+    - Fixes security issue SQUID-2016:8 (CVE-2016-4554)
+    - Fixes security issue SQUID-2016:9 (CVE-2016-4555, CVE-2016-4556)
+
+  * debian/control
+    - Bumped Standards-Version to 3.9.8, no change needed
+
+  * debian/rules
+    - Send hardening CPPFLAGS to custom build tools
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue, 10 May 2016 23:43:00 +0200
+
+squid3 (3.5.17-1) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release
+    - Fixes security issue SQUID-2016:5 (CVE-2016-4051)
+    - Fixes security issue SQUID-2016:6 (CVE-2016-4052, CVE-2016-4053,
+      CVE-2016-4054)
+
+ -- Luigi Gangitano <luigi@debian.org>  Fri, 22 Apr 2016 14:43:00 +0200
+
+squid3 (3.5.16-1) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release
+    - Fixes security issue SQUID-2016:3 (CVE-2016-3947) (Closes: #819783)
+    - Fixes security issue SQUID-2016:4 (CVE-2016-3948) (Closes: #819784)
+
+  * debian/patches/
+    - Remove patch included upstream
+
+ -- Luigi Gangitano <luigi@debian.org>  Sun, 03 Apr 2016 19:57:00 +0200
+
+squid3 (3.5.15-1) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release
+    - Fixes security issues SQUID-2016:2
+      (CVE-2016-2569, CVE-2016-2570, CVE-2016-2571)
+      (Closes: #816011)
+
+  * debian/patches/03-upstream-bug4447.patch
+    - add upstream patch for their bug #4447
+
+  [ Robie Basak <robie.basak@canonical.com> ]
+  * debian/control
+    - Add lsb-release build dep. This is required for the --enable-build-info
+      line in debian/rules to work correctly.
+
+  * debian/squid.logrotate
+    - Run sarg-reports if present before rotating logs.
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * debian/control
+    - Bumped Standards-Version to 3.9.7, no change needed
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue, 01 Mar 2016 19:39:00 +0100
+
+squid3 (3.5.14-1) unstable; urgency=medium
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release (Closes: #812038)
+
+  * debian/control
+    - add Depends libdbi-perl (Closes: #807512)
+    - Fixed lintian complaint about squid3 package description
+    - Fixed Vcs-Git Header pointing anonscm.debian.org
+
+  * debian/rules
+    - build ext_time_quota_acl helper (LP: #1391159)
+
+  * debian/squid.install
+    - add missing helper man pages
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue, 16 Feb 2016 23:14:00 +0100
+
+squid3 (3.5.12-1) unstable; urgency=medium
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release
+
+  * debian/squid.postinst
+    - remove unneeded config edits for manager ACL (Closes: #801564)
+
+  * debian/patches/
+    - add upstream patch to cleanup FATAL log messages
+
+  [ Mathieu Parent ]
+  * Fix FATAL parsing before start/reload/restart (Closes: #800341)
+  * Set pidfile for systemd's sysv-generator (Closes: #800341)
+
+ -- Luigi Gangitano <luigi@debian.org>  Wed, 09 Dec 2015 19:03:47 +0100
+
+squid3 (3.5.10-1) unstable; urgency=high
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New Upstream Release (Closes: #799923, #800876)
+
+  * debian/squid.rc
+    - Grok pid_filename from squid.conf (Closes: #520736)
+    - Update SELinux context when creating directories (Closes: #798827)
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+    - Urgency high due to regression fix for CVE-2015-5400.
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 05 Oct 2015 23:28:00 +0200
+
+squid3 (3.5.7-1) unstable; urgency=medium
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New upstream release (Closes: #789602, #793400, #253777)
+
+  * debian/rules
+    - Add BUILDCXXFLAGS to use hardening flags during build
+
+  * debian/squid.links
+    - Add symlink for squid3.8 man(8) page to resolve lintian issue
+
+  * debian/squid.postinst
+    - Remove unnecessary 'squid -z' (Closes: #794639)
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * Rebuild using GCC-5 (Closes: #794536)
+
+  * debian/squid.postinst
+    - Check for squid3 initscript before we try to execute it
+
+  * debian/squid.rc
+    - Set working directory to /var/run/squid
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu,  6 Aug 2015 01:14:00 +0200
+
+squid3 (3.5.6-1) unstable; urgency=medium
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New upstream release (Closes: #760303)
+    - Fixed upstream macro issue that fail to pass reproducible builds test
+    - Fixes CVE-2015-5400: Improper Protection of Alternate Path
+      (Closes: #793128)
+
+  * Removed deprecated MSNT and MSNT-multi-domain authentication helpers
+
+  * Transition squid3 to squid
+    - Renamed squid3 package to squid (Closes: #521053, #565555, #672156)
+      (Closes: #294431, #569575, #714334, #279840, #576423, #779127)
+    - Renamed squid3-common package to squid-common
+    - Renamed squid3-dbg package to squid-dbg
+    - Add dummy transitional package squid3
+
+  * debian/patches/
+    - Removed patches included upstream and refresh others
+
+  * debian/squid3-cgi.dirs
+    - Removed old unused packaging file
+
+  * debian/control
+    - Add dependency on libgnutls28-dev for squidclient HTTPS support
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * debian/control
+    - Changed dependency on libecap3-dev (Closes: #789774)
+    - Made squid-common conflict and replace squid3-common
+    - Fixed dependencies and sections of transitional packages
+
+  * {NEWS,README}.Debian
+    - Added information on package name migration
+
+ -- Luigi Gangitano <luigi@debian.org>  Wed, 22 Jul 2015 23:24:00 +0200
+
+squid3 (3.4.8-6) unstable; urgency=medium
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * debian/patches/31-squid-3.4-13199.patch
+    - Added upstream patch fixing excessive CPU usage (Closes: #776461)
+
+  * debian/patches/32-squid-3.4-13210.patch
+    - Added upstream patch fixing excessive CPU and memory usage in
+      NTLM and Negotiate authentication helpers (Closes: #776463)
+
+  * debian/patches/33-squid-3.4-13211.patch
+    - Added upstream patch fixing a possible replay vulnerability on Digest
+      authentication (Closes: #776464)
+
+  * debian/patches/34-squid-3.4-13213.patch
+    - Added upstream patch fixing incorrect security permissions for
+      TOS/DiffServ packet marking (Closes: #776468)
+
+  * debian/patches/35-squid-3.4-13203.patch
+    - Added upstream patch fixing squidclient unable to connect to host with
+      both IPv4 and IPv6 addresses (Closes: #742425)
+
+ -- Luigi Gangitano <luigi@debian.org>  Wed, 28 Jan 2015 12:34:42 +0100
+
+squid3 (3.4.8-5) unstable; urgency=medium
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * debian/squid3.{pre,post}inst
+    - Moved ACL manager fix to postinst (Closes: #773032)
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue, 16 Dec 2014 13:43:03 +0100
+
+squid3 (3.4.8-4) unstable; urgency=medium
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * debian/squid3.preinst
+    - Revert changes on abort-upgrade
+
+ -- Luigi Gangitano <luigi@debian.org>  Fri, 05 Dec 2014 10:44:02 +0100
+
+squid3 (3.4.8-3) unstable; urgency=medium
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * debian/squid3.preinst
+    - Remove obsolete manager ACL definition from squid.conf
+      when upgrading squid3 package (Closes: #768170)
+
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * debian/squid3.preinst
+    - Fix configuration file only if needed and match any uncommented line
+
+ -- Luigi Gangitano <luigi@debian.org>  Fri,  5 Dec 2014 01:27:51 +0100
+
+squid3 (3.4.8-2) unstable; urgency=medium
+
+  [ Santiago Garcia Mantinan <manty@debian.org> ]
+  * Add patch to remove bashisms from cert_tool
+  * Add manual page for squid-purge
+  * Create run_dir needed for SMP with several workers to run. This
+    fixes #710126 (Closes: #732183, #760400)
+  * Use CONFIG instead of sq (Closes: #763867)
+  * Remove find_cache_type and use grepconf (both functions were =).
+  * Allow find_cache_dir and grepconf to have whitespace in the beginning
+    (Closes: #761209)
+  * Add config check before reload/restart, thanks Freddy (Closes: #728222)
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * debian/squid3.postinst
+    - update grepconf to support SMP macros and sub-config files
+      when locating cache_dir and effective user/group
+
+  * debian/squid3.rc
+    - remove special handling for obsolete COSS cache type
+    - change grepconf to support SMP macros and sub-config files
+
+  * debian/rules
+    - add distribution details to squid -v display output
+      this obsoletes the Ubuntu fix-distribution.patch
+
+  * debian/control
+    - bumped libecap dependency version to 0.2.0-2
+
+  * debian/squid3.resolvconf
+    - added check on /usr availability before squid3 restart (Closes: #765476)
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * debian/squid3.rc
+    - Change config check to config parse on start/reload/restart
+
+  * debian/control
+    - Fixed XS-Vcs-Git Header pointing anonscm.debian.org
+
+ -- Luigi Gangitano <luigi@debian.org>  Wed, 29 Oct 2014 15:50:51 +0100
+
+squid3 (3.4.8-1) unstable; urgency=high
+
+  * Urgency high due to security fixes
+
+  [ Amos Jeffries <amosjeffries@squid-cache.org> ]
+  * New upstream release (Closes: #737008)
+    - Fixes CVE-2014-6270: off by one in snmp subsystem (Closes: #761002)
+    - Fixes CVE-2014-CVE-2014-7141 and CVE-214-7142 (Closes: #760999)
+      + pinger remote DoS vulnerabilities
+    - Fixes CVE-2014-0128: Denial of Service in SSL-Bump (Closes: #741312)
+
+  * debian/patches/
+    - remove CVE-2014-3609.patch included upstream
+    - remove 17-pod2man-check.patch obsoleted by new version
+    - add upstream patch 21-squid-3.4-13176-memoryleak.patch:
+      memory leak in external_acl_type helper with cache=0 or ttl=0
+
+  * debian/rules
+    - add --disable-arch-native to build with portable CPU support
+
+  * debian/control
+    - libecap API support is specific to version 0.2.0
+    - use nettle for crypto library
+
+  * debian/watch
+    - updated watch pattern for upstream major series
+
+  * debian/rules
+    - Remove obsolete --enable-underscores (Closes: #693905)
+
+  [ Luigi Gangitano <luigi@debian.org> ]
+  * debian/patches/
+    - refreshed all patches to match 3.4.8
+
+  * debian/control
+    - Added dependency for missing intepreter ksh
+    - Bumped Standard-Version to 3.9.6, no change needed
+    - Added XS-Vcs-Git Header pointing to Alioth repository
+
+ -- Luigi Gangitano <luigi@debian.org>  Fri, 17 Oct 2014 00:10:00 +1300
+
+squid3 (3.3.8-1.2) unstable; urgency=high
+
+  * Non-maintainer upload by the Security Team.
+  * Add CVE-2014-3609.patch patch.
+    CVE-2014-3609: Denial of Service in Range header processing.
+    Ignore Range headers with unidentifiable byte-range values. If squid is
+    unable to determine the byte value for ranges, treat the header as
+    invalid. (Closes: #759509)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Thu, 28 Aug 2014 18:03:47 +0200
+
+squid3 (3.3.8-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix "FTBFS: cp: cannot stat
+    '/«PKGBUILDDIR»/debian/tmp/usr/share/man/man8/basic_db_auth.8': No
+    such file or directory":
+    new patch 17-pod2man-check.patch:
+    fix config.test files' check for perl and pod2man
+    (Closes: #725599)
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 23 Nov 2013 21:05:10 +0100
+
+squid3 (3.3.8-1) unstable; urgency=high
+
+  * Urgency high due to security fixes
+
+  * New upstream release
+    - Fixes security issues (Closes: #716743)
+      + Buffer overflow in HTTP request handling (Ref: SQUID-2013:2,
+        CVE-2013-4115)
+      + DoS in request processing (Ref: SQUID-2013:3, CVE-2013-4123)
+    - Includes PNG image used in error pages, with new copyright assignement
+      (Closes: #683255)
+
+  * Added /var/run/squid3 dir to host sockets in SMP configuration
+    (Closes: #710126)
+
+  * debian/control
+    - Bumped Standard-Version to 3.9.4, no change needed
+
+ -- Luigi Gangitano <luigi@debian.org>  Sun, 21 Jul 2013 18:28:36 +0200
+
+squid3 (3.3.4-1) unstable; urgency=low
+
+  * New upstream release
+    - Added support for SHA passwords in ncsa_auth (Closes: #652010)
+
+  * debian/squid3.lintian-overrides
+    - Added override for pinger setuid bin
+
+  * debian/watch
+    - Fixed pattern to skip the last dot
+
+  * debian/rules
+    - Removed reference to cppunit-basedir
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 06 May 2013 16:46:33 +0200
+
+squid3 (3.3.3-2) unstable; urgency=low
+
+  I would like to thank Amos Jeffries <squid3@treenet.co.nz> for his help
+  with this release.
+
+  * debian/control
+    - Added Build-Depend on pkg-config to solve FTBFS when ecap is enabled
+      (Closes: #706025)
+    - Fixed package descriptions
+    - Added Build-Depend on libnetfilter-conntrack-dev
+    - Added Suggests on winbindd for NTLM authentication
+
+  * debian/patches/01-cf.data.debian.patch
+    - Removed change to visible_hostname defaut value (Closes: #705983)
+    - Fixed path of ntlm_auth helper in example
+
+  * debian/rules
+    - Removed --enable-arp-acl options obsoleted by --enable-eui
+    - Fixed FTBFS on hurd due to missing netfilter support
+    - Enabled Rock store type support
+    - Added SETUID bit to pinger program
+
+  * debian/watch
+    - Fixed pattern to match all the released versions of 3.3
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue, 23 Apr 2013 15:38:39 +0200
+
+squid3 (3.3.3-1) unstable; urgency=low
+
+  * New upstream release (Closes: #694633, #701799, #702540)
+    - Removed upstream patches
+      + debian/patches/20-ipv6-fix
+      + debian/patches/30-CVE-2012-5643-CVE-2013-0189.patch
+      + debian/patches/fix-701123-regression-in-cachemgr.patch
+    - Includes upstream fix for CVE-2009-0801 (Closes: #521052)
+    - Includes upstream fix for rejection of benign request containing variants
+      of double CR (Closes: #669148)
+
+  * debian/control
+    - Added dependency on libecap2-dev
+    - Added squid-purge package
+
+  * debian/source
+    - Enabled ECAP support
+    - Fixed configure invocation to match new syntax
+    - Removed unneeded rename of helper man pages
+    - Fixed list of helpers to build, adding fake agents (Closes: #644280)
+      and negotiate wrapper (Closes: #656304)
+
+  * debian/watch
+    - Updated for 3.3
+
+  * debian/squid3.logrotate
+    - Added check for existing binary in logrotate script (Closes: #703954)
+
+ -- Luigi Gangitano <luigi@debian.org>  Sun, 21 Apr 2013 23:51:11 +0200
+
+squid3 (3.1.20-2.2) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Add fix-701123-regression-in-cachemgr.patch patch.
+    Fix missing bits in the fix for CVE-2012-5643 and CVE-2013-0189 causing
+    cachemgr.cgi crashing when authentication credentials are supplied.
+    Thanks to Amos Jeffries <amos@treenet.co.nz> (Closes: #701123)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 23 Feb 2013 13:44:48 +0100
+
+squid3 (3.1.20-2.1) unstable; urgency=high
+
+  * Non-maintainer upload
+
+  * Urgency high due to security fixes
+
+  * debian/patches/30-CVE-2012-5643-CVE-2013-0189.patch
+    - Added upstream fix for squid-cgi (cachemgr) memory leaks and denial of
+      service vulnerability (Closes: #696187)
+
+ -- Michael Stapelberg <stapelberg@debian.org>  Tue, 05 Feb 2013 23:16:27 +0100
+
+squid3 (3.1.20-2) unstable; urgency=low
+
+  * debian/patches/20-ipv6-fix
+    - Added upstream fix for squid not working when IPv6 is not loaded
+      (Closes: #660489)
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu, 06 Dec 2012 20:02:56 +0100
+
+squid3 (3.1.20-1) unstable; urgency=low
+
+  * New upstream release
+
+  * debian/control
+    - Bumped Standard-Version to 3.9.3, no change needed
+    - Added missing dependency on dpkg-dev (>= 1.16.1~)
+
+  * debian/rules
+    - Enabled hardening options (Closes: #669684)
+
+  * debian/patches/01-cf.data.debian.patch
+    - Fixed minor typos in configuration file (Closes: #670832, #673350)
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 18 Jun 2012 14:20:53 +0200
+
+squid3 (3.1.19-1) unstable; urgency=low
+
+  * New upstream release
+    - Removed patch integrated upstream
+      + 19-adaptation-compile
+
+  * debian/rules
+    - Enabled WCCPv2 support (Closes: #654877)
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue, 07 Feb 2012 16:19:12 +0100
+
+squid3 (3.1.18-1) unstable; urgency=low
+
+  * New upstream release
+
+  * debian/patches/19-adaptation-compile.patch
+    - Added upstream patch to fix compile failure
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 26 Dec 2011 22:04:28 +0100
+
+squid3 (3.1.16-1) unstable; urgency=low
+
+  * New upstream release
+
+  * Changed source format to 3.0 (quilt)
+
+  * debian/squid3.rc
+    - Added LSB compliant option to init script (Closes: #645780)
+      Thanks to Fredrik Eriksson
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu,  3 Nov 2011 13:37:17 +0100
+
+squid3 (3.1.15-1) unstable; urgency=high
+
+  * Urgency high due to security fixes
+
+  * New upstream release
+    - Fixes DoS issue in Gopher client (Closes: #639755)
+      (Ref: CVE-2011-3205, SQUID-2011:3)
+
+  * debian/control
+    - Removed hardcoded list of non-Linux architectures (Closes: #634765)
+
+ -- Luigi Gangitano <luigi@debian.org>  Fri, 02 Sep 2011 13:33:41 +0200
+
+squid3 (3.1.14-1) unstable; urgency=low
+
+  * New upstream release
+    - Fixes FTBFS with GCC 4.6 (Closes: #625405)
+    - Fixes issue with IPv4/IPv6 DNS resolution (Closes: #604566)
+    - Fixes issue with IPv6 resolution in access.log (Closes: #604832)
+
+  * debian/control
+    - Bumped Standard-Version to 3.9.2, no change needed
+
+  * debian/squid.rc
+    - Fixed init script preventing alterate cache dir from being created
+      (Closes: #623935)
+
+ -- Luigi Gangitano <luigi@debian.org>  Sat, 09 Jul 2011 17:58:46 +0200
+
+squid3 (3.1.12-1) unstable; urgency=low
+
+  * New upstream release
+    - Removed patch integrated upstream
+      + 18-gcc-4.5-fix
+    - Rebuild against libdb5.1 (Closes: #621453)
+
+  * debian/control
+    - Remove article at start of synopsis, to make lintian happy
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 11 Apr 2011 18:47:02 +0200
+
+squid3 (3.1.11-1) unstable; urgency=low
+
+  * New upstream release
+
+  * debian/patches/18-gcc-4.5-fix
+    - Added upstream fix for gcc 4.5 building (Closes: #613153)
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue, 15 Feb 2011 01:46:19 +0100
+
+squid3 (3.1.10-1) unstable; urgency=low
+
+  * New upstream release (Closes: #609881)
+    - Removed patches integrated upstream
+      + 16-CVE-2010-3072
+      + 17-CVE-2010-2951
+    - Fixes TCP DNS lookups failure on IPv6-disabled systems (Closes: #607379)
+    - Fixes HTTPS not working if IPv6 is disabled (Closes: #594713)
+
+  * debian/rules
+    - Enable ZPH feature (Closes: #597687)
+
+  * debian/squid3.ufw.profile
+    - Added UFW profile, thanks to Alessio Treglia (Closes: #605088)
+
+  * debian/control
+    - Added versioned dependency on squid-langpack
+
+ -- Luigi Gangitano <luigi@debian.org>  Fri, 21 Jan 2011 18:43:56 +0100
+
+squid3 (3.1.6-1.2) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix DoS while processing large DNS replies with no IPv6 resolver present
+    (CVE-2010-2951) (Closes: #599709)
+
+ -- Ben Hutchings <ben@decadent.org.uk>  Sat, 30 Oct 2010 17:00:55 +0200
+
+squid3 (3.1.6-1.1) unstable; urgency=high
+
+  * Non-maintainer upload by the security team
+  * Fix DoS due to wrong string handling (Closes: #596086)
+    Fixes: CVE-2010-3072
+
+ -- Steffen Joeris <white@debian.org>  Mon, 13 Sep 2010 17:07:51 +1000
+
+squid3 (3.1.6-1) unstable; urgency=low
+
+  * New upstream release
+
+  * debian/rules
+    - Removed now-default --enable-ipv6 option
+
+  * debian/control
+    - Bumped Standard-Version to 3.9.1, no change needed
+
+  * debian/patches/01-cf.data.pre
+    - Updated to match new upstream default IPv6 configuration
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 09 Aug 2010 00:59:26 +0200
+
+squid3 (3.1.5-2) unstable; urgency=low
+
+  * debian/control
+    - Added build dependency on libltdl-dev fixing FTBFS on most archs
+
+ -- Luigi Gangitano <luigi@debian.org>  Wed, 07 Jul 2010 15:21:06 +0200
+
+squid3 (3.1.5-1) unstable; urgency=low
+
+  * New upstream release
+
+  * debian/control
+    - Bumped Standard-Version to 3.9.0
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue, 06 Jul 2010 23:26:26 +0200
+
+squid3 (3.1.4-1) unstable; urgency=low
+
+  * New upstream release
+    - Fixes several issues with IPv6 socket handling (Closes: #581901, #584223)
+    - Fixes assertion in comm.cc (Closes: #572368)
+
+ -- Luigi Gangitano <luigi@debian.org>  Fri, 04 Jun 2010 14:49:32 +0200
+
+squid3 (3.1.3-2) unstable; urgency=low
+
+  * debian/rules
+    - Actually enable IPv6 (how did I miss this?)
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue, 04 May 2010 11:15:49 +0200
+
+squid3 (3.1.3-1) unstable; urgency=low
+
+  * New upstream release
+    - Fix incorrect behaviour of --enable-ipv6 (Closes: #578047)
+    - Removed patches integrated upstream
+      + 14-kfreebsd-compile
+
+ -- Luigi Gangitano <luigi@debian.org>  Sun, 02 May 2010 19:31:38 +0200
+
+squid3 (3.1.1-3) unstable; urgency=low
+
+  * debian/{squid3.install,rules}
+    - Install documented version of squid.conf as file, not directory
+      (Closes: #577615)
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu, 15 Apr 2010 11:14:08 +0200
+
+squid3 (3.1.1-2) unstable; urgency=low
+
+  * debian/watch
+    - Updated pattern to match 3.1 releases
+
+  * debian/control
+    - Excluded dependency on libcap2-dev on kfreebsd
+
+  * debian/patches/14-kfreebsd-compile
+    - Added patch to enable kfreebsd compilato, thanks to Petr Salinger
+      (Closes: #576952)
+
+  * debian/{rules,control,squid-cgi.install}
+    - Rename squid3-cgi package to squid-cgi (Closes: #489061)
+
+  * debian/patches/15-cachemgr-default-config
+    - Fix squid-cgi default configuration file path
+
+  * debian/source/format
+    - Added format specification file, still with 1.0 version
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 12 Apr 2010 11:49:01 +0200
+
+squid3 (3.1.1-1) unstable; urgency=low
+
+  * New upstream release
+
+  * debian/control
+   - Bumped Standard-Version to 3.8.4, no change needed
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu, 01 Apr 2010 00:33:21 +0200
+
+squid3 (3.1.0.18-1) UNRELEASED; urgency=low
+
+  * New upstream release
+
+  * debian/rules
+    - Fix wrong resolvconf directory (Closes: #565652)
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 15 Mar 2010 19:35:50 +0100
+
+squid3 (3.1.0.17-1) UNRELEASED; urgency=low
+
+  * New upstream release, fixes
+    - Remote Denial of Service issue in HTCP (Closes: #572554)
+      (Ref: SQUID-2010:2 CVE-2010-0639)
+
+ -- Luigi Gangitano <luigi@debian.org>  Fri, 12 Mar 2010 15:41:00 +0100
+
+squid3 (3.1.0.16-1) experimental; urgency=low
+
+  * New upstream release
+    - Adds client_ip_max_connection to avoid DoS under Slowloris attack
+      (Ref: TEMP-0533661-009115 Closes: #533664)
+    - Handle DNS header-only packets as invalid
+      (Ref: SQUID-2010:1 CVE-2010-0308)
+    - Fixes memory filling during file download (Closes: #562012)
+
+ -- Luigi Gangitano <luigi@debian.org>  Wed, 10 Feb 2010 18:53:36 +0100
+
+squid3 (3.1.0.15-1) experimental; urgency=low
+
+  * New upstream release
+    - Fixes assertion failures on malformed Content-Range response headers
+      (Closes: #541032)
+
+  * debian/README.Debian
+    - Fixed reference to RELEASENOTES.html (Closes: #561007)
+
+  * debian/README.source
+    - Added directions on source handling
+
+  * debian/control
+    - Remove duplicated informations that can be inherited from source stanza
+    - Added autotools-dev build-dependency to enable cdbs fix for ancient
+      helper files
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu, 14 Jan 2010 22:44:13 +0100
+
+squid3 (3.1.0.14-2) experimental; urgency=low
+
+  * debian/rules
+    - Enable ESI support (Closes: #506241)
+
+  * debian/control
+    - Add Build-Dep on libexpat1-dev and libxml2-dev, needed by ESI support
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue, 29 Sep 2009 19:55:23 +0200
+
+squid3 (3.1.0.14-1) experimental; urgency=low
+
+  * New upstream release
+    - Fixes FTBFS in GNU/kFreeBSD (Closes: #545965)
+    - Fixes incorrect handling of IMS (Closes: #499379)
+
+  * debian/patches/01-cf.data.debian
+    - Updated to match new upstream
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue, 29 Sep 2009 19:31:16 +0200
+
+squid3 (3.1.0.13-2) experimental; urgency=low
+
+  * debian/rules
+    - Disable language files generation
+    - Do not clean libcppunit that is not shipped with squid anymore
+
+  * debian/control
+    - Removed dependency on sharutils
+    - Added dependency on libcap2, will enable TPROXY support (Closes: 398970)
+    - Fixed squid3-common description, no more error pages
+
+  * debian/squidclient.1
+    - Removed man page integrated upstream
+
+  * debian/squid3.rc
+    - Removed obsolete -D option
+
+  * debian/patches/01-cf.data.debian
+    - Added ::1 to localhost definition in ACLs
+
+ -- Luigi Gangitano <luigi@debian.org>  Fri, 25 Sep 2009 23:02:40 +0200
+
+squid3 (3.1.0.13-1) experimental; urgency=low
+
+  * Upload to experimental
+
+  * New upstream release
+    - Fixes Follow-X-Forwarded-For support (Closes: #523943)
+    - Adds IPv6 support (Closes: #432351)
+
+  * debian/rules
+    - Removed obsolete configuration options
+    - Enable db and radius basic authentication modules
+
+  * debian/patches/01-cf.data.debian
+    - Adapted to new upstream version
+
+  * debian/patches/02-makefile-defaults
+    - Adapted to new upstream version
+
+  * debian/{squid.postinst,squid.rc,README.Debian,watch}
+    - Updated references to squid 3.1
+
+  * debian/squid3.install
+    - Install CSS file for error pages
+    - Install manual pages for new authentication modules
+
+  * debian/squid3-common.install
+    - Install documented version of configuration file in /usr/share/doc/squid3
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu, 24 Sep 2009 14:51:06 +0200
+
+squid3 (3.0.STABLE19-1) unstable; urgency=low
+
+  * New upstream release
+    - Fixes DoS in exthernal auth header parser (Ref: CVE-2009-2855)
+
+  * debian/squid.rc
+    - Fixed dependencies in init.d script, thanks to Petter Reinholdtsen
+      (Closes: #546362)
+
+  * debian/control
+   - Bumped Standard-Version to 3.8.3, no change needed
+
+ -- Luigi Gangitano <luigi@debian.org>  Sun, 20 Sep 2009 01:33:00 +0200
+
+squid3 (3.0.STABLE18-1) unstable; urgency=high
+
+  * New upstream release
+    - Removed patches integrated upstream
+      + 12-gcc44-fixes
+      + 13-signed-unsigned-fixes
+      + SQUID-2009-2
+
+  * debian/rules
+    - Enable ARP ACLs (Closes: #538023)
+    - Enable SNMP support (Closes: #537187)
+
+  * debian/control
+    - Fix dependency for squid3-dbg on squid3 =${binary:Version}
+    - Added dependency of squid3-dbg on ${misc:Depends}
+
+  * debian/squid3-common.postinst
+    - Added DEBHELPER placeholder
+
+ -- Luigi Gangitano <luigi@debian.org>  Sun, 09 Aug 2009 00:28:56 +0200
+
+squid3 (3.0.STABLE16-2.1) unstable; urgency=high
+
+  * Non-maintainer upload by the Security Team.
+  * Fix multiple possible denial of service vectors in the processing of
+    requests or responses
+    (SQUID-2009-2; CVE-2009-2622; CVE-2009-2621; 12-SQUID-2009_2.dpatch).
+
+ -- Nico Golde <nion@debian.org>  Tue, 04 Aug 2009 21:56:36 +0200
+
+squid3 (3.0.STABLE16-2) unstable; urgency=low
+
+  * debian/patches/13-signed-unsigned-fixes
+    - Added upstream patch fixing build errors on 64-bit archs
+      (Closes: #536588)
+
+  * debian/README.Debian
+    - Removed instability notice of development version
+
+  * debian/control
+    - Fixed squid3-dbg section and priority to match archive override
+
+ -- Luigi Gangitano <luigi@debian.org>  Sat, 11 Jul 2009 13:46:45 +0200
+
+squid3 (3.0.STABLE16-1) unstable; urgency=low
+
+  * New upstream release
+
+  * debian/patches/12-gcc44-fixes
+    - Added upstream patch fixing build erros with GCC 4.4 (Closes: #526672)
+
+  * debian/control
+   - Bumped Standard-Version to 3.8.2, no change needed
+
+  * debian/NEWS.Debian
+    - Fixed format of NEWS.Debian (double space at start)
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue, 07 Jul 2009 18:56:41 +0200
+
+squid3 (3.0.STABLE15-1) unstable; urgency=low
+
+  * New upstream release
+    - Fixes wrong reference to digest_pw_auth (Closes: #517528)
+
+  * debian/{control,squid3-common.{install,postinst,links},NEWS.Debian}
+    - Added dependency on squid-langpack, linked error directory to
+      /usr/share/squid-langpack (Closes: #497283)
+    - Added a notice in NEWS.Debian on customized error_directory settings
+
+  * debian/patches/01-cf.data.debian
+    - Adapted to new upstream version
+
+  * debian/control
+    - Added debug package to help bug reports
+    - Added dependency on libkrb5-dev and comerr-dev
+
+  * debian/squid3.resolvconf
+    - Use invoke-rc.d instead of directly calling init script
+
+  * debian/rules
+    - Added missing --with-large-files configure option (Closes: #534888)
+    - Enabled Kerberos Negotiate Auth support (Closes: #532064)
+
+  * debian/copyright
+    - Fixed copyright to reflect current sources, thanks to Amos Jeffries
+      (Closes: #524601)
+
+  * debian/squid3.rc
+    - Added reference to config file at startup (Closes: #517529)
+
+  * debian/squid3.postinst
+    - Removed path from command invocation and make lintian happy
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon,  6 May 2009 13:29:10 +0200
+
+squid3 (3.0.STABLE13-1) unstable; urgency=low
+
+  * New upstream release
+    - Removed patches integrated upstream
+      + 10-mgr_active_requests
+      + 11-SQUID-2009-1
+
+  * debian/patches/02-makefile-defaults
+    - Removed cachemgr configuration file fix integrated upstream
+
+  * debian/rules
+    - Disable support for coss witch is marked as unstable upstream
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 16 Feb 2009 16:18:30 +0100
+
+squid3 (3.0.STABLE8-3) unstable; urgency=high
+
+  * Urgency high due to security fixes
+
+  * debian/patches/11-SQUID-2009-1
+    - Added upstream patch fixing Denial of Service in request processing
+      (Ref: SQUID-2009-1) (CVE-2009-0478)
+
+ -- Luigi Gangitano <luigi@debian.org>  Fri, 06 Feb 2009 20:23:57 +0100
+
+squid3 (3.0.STABLE8-2) unstable; urgency=low
+
+  * debian/squid3.postinst
+    - Fixed non-POSIX option to chown (Closes: #491701)
+
+  * debian/rules
+    - Removed obsoleted configure options (Closes: 511272)
+    - Added --enable-follow-x-forwarded-for configure option
+
+  * debian/control
+    - Added dependency on ${misc:Depends} to make lintian happy
+
+  * debian/squid3.postinst
+    - Removed path from squid3 invocation to make lintian happy
+
+  * debian/control
+    - Bumped Standard-Version to 3.8.0, no change needed
+
+ -- Luigi Gangitano <luigi@debian.org>  Fri,  9 Jan 2009 00:02:48 +0200
+
+squid3 (3.0.STABLE8-1) unstable; urgency=high
+
+  * Urgency high to meet freeze deadline
+
+  * New upstream release
+
+  * debian/patches/10-mgr_active_requests
+    - Added upstream patch fixing delay_pool reporting in cachemgr.cgi
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 21 Jul 2008 09:20:31 +0200
+
+squid3 (3.0.STABLE7-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Luigi Gangitano <luigi@debian.org>  Sat, 05 Jul 2008 21:24:36 +0200
+
+squid3 (3.0.STABLE6-2) unstable; urgency=low
+
+  * debian/control
+    - Fixed suggestion on squidclient package
+
+ -- Luigi Gangitano <luigi@debian.org>  Sun, 01 Jun 2008 05:48:22 +0200
+
+squid3 (3.0.STABLE6-1) unstable; urgency=low
+
+  * New upstream release (Closes: #478695)
+
+  * debian/squid3.rc
+    - Added automatic coss file creation (Closes: #478108)
+    - Removed default blocking logging to syslog
+    - Added parsing of /etc/default/squid3 for SQUID_ARGS override
+
+  * debian/{rules,control,squidclient.install,squidclient.1}
+    - Rename squid3-client package to squidclient (Closes: #473876)
+    - Added squidclient man page from old squid package
+
+ -- Luigi Gangitano <luigi@debian.org>  Sun, 01 Jun 2008 02:43:42 +0200
+
+squid3 (3.0.STABLE5-1) UNRELEASED; urgency=low
+
+  * New upstream release (Closes: #478695)
+
+ -- Luigi Gangitano <luigi@debian.org>  Sat, 03 May 2008 18:39:36 +0200
+
+squid3 (3.0.STABLE4-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu, 03 Apr 2008 01:34:07 +0200
+
+squid3 (3.0.STABLE2-1) unstable; urgency=low
+
+  * New upstream release (Closes: #470641)
+
+  * debian/rules
+    - Fixed bashism (Closes: #468567)
+
+  * debian/control
+    - Fixed description, remove instability notice (Closes: #463347)
+
+  * debian/squid.rc
+    - Raise max open filedescriptor limit to match build time limit at
+      65535 (Closes: #470605, #470607)
+
+ -- Luigi Gangitano <luigi@debian.org>  Wed, 12 Mar 2008 13:52:21 +0100
+
+squid3 (3.0.STABLE1-2) unstable; urgency=low
+
+  * debian/rules
+    - Fixed --with-large-files option to ./configure (Closes: #459306)
+    - Added null storio option (Closes: #456889)
+
+ -- Luigi Gangitano <luigi@debian.org>  Tue, 11 Jan 2008 14:09:45 +0100
+
+squid3 (3.0.STABLE1-1) unstable; urgency=low
+
+  * New upstream release
+    - Updated debian/watch (Closes: #456470)
+    - Removed patches integrated upstream
+      + 08-resume-http
+      + 09-dos-cache-update
+
+  * debian/control
+    - Bumped Standard-Version to 3.7.3 (no change needed)
+    - Added Homepage field
+
+  * debian/patches/01-cf.data.debian
+    - Adapted to new upstream version (remove default accesso to
+      RFC1918 addresses)
+
+  * debian/squid3.{preinst,postinst,prerm,postrm}
+    - Added debhelper token
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 17 Dec 2007 11:36:57 +0100
+
+squid3 (3.0.RC1-3) unstable; urgency=high
+
+  * Urgency high due to security fixes
+
+  * debian/patches/09-dos-cache-update
+    - Added upstream patch fixing DoS in cache update reply processing
+      (Ref: CVE-2007-6239, SQUID-2007:2)
+
+ -- Luigi Gangitano <luigi@debian.org>  Fri,  7 Dec 2007 16:30:39 +0100
+
+squid3 (3.0.RC1-2) unstable; urgency=low
+
+  * debian/patches/08-resume-http.dpatch
+    - Added upstream patch fixing failure to resume downloads
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 15 Oct 2007 02:43:44 +0200
+
+squid3 (3.0.RC1-1) unstable; urgency=low
+
+  * New upstream release
+    - Updated debian watch
+
+  * debian/patches/01-cf.data.debian
+    - Updated to match upstream changes
+
+  * debian/control
+    - Updated Build-Depends to libdb 4.6
+    - Removed dependency on essential package coreutils
+    - Fixed dependency on virtual package httpd
+
+ -- Luigi Gangitano <luigi@debian.org>  Sun, 14 Oct 2007 16:07:28 +0200
+
+squid3 (3.0.PRE7-1) unstable; urgency=low
+
+  * New upstream release
+    - Fixed assertion failure when receiving TCP_RESET (Closes: #435887)
+    - Removed patches integrated upstream:
+      + debian/patches/05-helpers-typo
+      + debian/patches/06-mem-obj-reference
+      + debian/patches/07-close-icap-connections
+
+  * debian/patches/01-cf.data.debian
+    - Removed upstream-integrated patches
+
+  * debian/rules
+    - Enabled build time default user configuration
+
+ -- Luigi Gangitano <luigi@debian.org>  Fri, 31 Aug 2007 18:05:13 +0200
+
+squid3 (3.0.PRE6-2) unstable; urgency=low
+
+  * debian/control
+    - Make package binNMU safe (Closes: #432981)
+
+  * debian/rules
+    - Enabled diskd (Closes: #434621)
+    - Removed --enable-diskio option (Closes: #435230)
+
+ -- Luigi Gangitano <luigi@debian.org>  Sun, 13 May 2007 19:13:03 +0200
+
+squid3 (3.0.PRE6-1) unstable; urgency=low
+
+  * New upstream release
+    - Removed patches integrated upsteam:
+      + 04-m68k-ftbfs
+
+  * debian/rules
+    - Enable delay pools (Closes: #410785)
+    - Enable cache digests (Closes: #416631)
+    - Enable ICAP client
+    - Raised Max Filedescriptor limit to 65536
+
+  * debian/control
+    - Added real package dependency for httpd in squid3-cgi
+
+  * debian/patches/02-makefile-defaults
+    - Fix default configuration file for cachemgr.cgi (Closes: #416630)
+
+  * debian/squid3.postinst
+    - Fixed bashish in postinst (Closes: #411797)
+
+  * debian/patches/05-helpers-typo
+    - Added upstream patch fixing compilation error in src/helpers.cc
+
+  * debian/patches/06-mem-obj-reference
+    - Added upstream patch fixing a mem_obj reference in src/store.cc
+
+  * debian/patches/07-close-icap-connections
+    - Added upstream patch fixing icap connection starvation
+
+  * debian/squid3.rc
+    - Added LSB-compliant description to rc script
+
+ -- Luigi Gangitano <luigi@debian.org>  Sun, 13 May 2007 16:03:16 +0200
+
+squid3 (3.0.PRE5-5) unstable; urgency=low
+
+  * debian/control
+    - Revert dependency on libsasl2-2-dev to libsasl2-dev (Closes: #401292)
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu, 30 Nov 2006 16:27:26 +0100
+
+squid3 (3.0.PRE5-4) unstable; urgency=low
+
+  * debian/{rules,squid3-client.install}
+    - Fix path for squid3client (Closes: #400893)
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu, 30 Nov 2006 15:32:53 +0100
+
+squid3 (3.0.PRE5-3) unstable; urgency=low
+
+  * debian/rules
+    - Use the right patch for specific options on GNU/kFreeBSD (Closes: #397829)
+
+ -- Luigi Gangitano <luigi@debian.org>  Sat, 11 Nov 2006 10:32:06 +0100
+
+squid3 (3.0.PRE5-2) unstable; urgency=low
+
+  * debian/rules
+    - Added architecture specific configure options to fix
+      FTBFS on GNU/KFreeBSD (Closes: #397829)
+
+  * debian/control
+    - Updated Build-Depend to libsasl2-2-dev
+
+ -- Luigi Gangitano <luigi@debian.org>  Sat, 11 Nov 2006 00:33:31 +0100
+
+squid3 (3.0.PRE5-1) unstable; urgency=low
+
+  * New upstream release
+    - Includes fix for FTBFS with GCC 4.2 (Closes: #379969)
+    - Removed upstream-integrated patches:
+      + 03-upstream-md5-byteswap
+
+  * debian/patches/04-m68k-ftbfs.dpathc
+    - Added patch to fix FTBFS on m68k due to missing parenthesis
+      (Closes: #394220)
+
+  * debian/control
+    - Added Build-Dep on libcppunit-dev
+    - Updated Build-Dep to libdb4.4-dev
+
+  * debian/rules
+    - Added usage of already compiled libcppunit, reducing build time
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu,  9 Nov 2006 15:42:43 +0100
+
+squid3 (3.0.PRE4-5) unstable; urgency=low
+
+  * debian/rules
+    - Fixed typo in configure options (--with-filedescriptors)
+    - Added missing transparent proxy options
+
+ -- Luigi Gangitano <luigi@debian.org>  Thu, 20 Jul 2006 15:03:07 +0200
+
+squid3 (3.0.PRE4-4) unstable; urgency=low
+
+  * debian/control
+    - Removed dependency on webmin-squid for squid-cgi
+
+  * debian/rules
+    - Removed bashism (Closes: #377952)
+
+ -- Luigi Gangitano <luigi@debian.org>  Wed, 12 Jul 2006 15:56:01 +0200
+
+squid3 (3.0.PRE4-3) unstable; urgency=low
+
+  * debian/patches/03-upstream-md5-byteswap.dpatch
+    - Added upstream patch to fix FTBFS on BIGENDIAN architectures
+      (Closes: #377596)
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 10 Jul 2006 18:06:06 +0200
+
+squid3 (3.0.PRE4-2) unstable; urgency=low
+
+  * debian/copyright
+    - Added text from CREDITS with copyright and licences for all the
+      components included in squid
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon, 10 Jul 2006 00:46:10 +0200
+
+squid3 (3.0.PRE4-1) unstable; urgency=low
+
+  * New upstream release
+
+  * debian/rules
+    - Revorked to build packages that can be installed side-by-side with
+      the squid 2.x packages.
+
+  * debian/control
+    - Added dependency on dpatch
+
+ -- Luigi Gangitano <luigi@debian.org>  Mon,  3 Jul 2006 16:47:43 +0200
+
+
+squid3 (3.0.PRE3.20060422-2) unstable; urgency=low
+
+  * debian/control
+    - Added missing Build-Depends on libsasl2-dev
+
+ -- Luigi Gangitano <luigi@debian.org>  Wed, 14 Jun 2006 15:31:34 +0200
+
+squid3 (3.0.PRE3.20060422-1) unstable; urgency=low
+
+  * First package attempt
+
+ -- Luigi Gangitano <luigi@debian.org>  Sat, 22 Apr 2006 01:19:36 +0200

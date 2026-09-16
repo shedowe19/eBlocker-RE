@@ -1,0 +1,6 @@
+version=4
+opts="pgpsigurlmangle=s/$/.asc/,uversionmangle=s/_/\./g,\
+downloadurlmangle=s%archive/refs/tags/SQUID_(\d+)_(\d+)(?:_[_\d]+)?%releases/download/SQUID_$1_$2/squid-$1\.$2%" \
+ \
+ https://github.com/squid-cache/squid/tags \
+ archive/refs/tags/SQUID_(\d[\d_]*)\.(?:tar\.gz)

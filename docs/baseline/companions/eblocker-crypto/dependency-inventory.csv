@@ -1,0 +1,15 @@
+path,ecosystem,kind,group,artifact,version
+pom.xml,maven,dependency,org.bouncycastle,bcprov-jdk18on,inherited
+pom.xml,maven,dependency,org.bouncycastle,bcpkix-jdk18on,inherited
+pom.xml,maven,dependency,com.sun.xml.bind,jaxb-impl,inherited
+pom.xml,maven,dependency,com.fasterxml.jackson.core,jackson-core,inherited
+pom.xml,maven,dependency,com.fasterxml.jackson.core,jackson-databind,inherited
+pom.xml,maven,dependency,org.slf4j,slf4j-api,inherited
+pom.xml,maven,dependency,commons-codec,commons-codec,inherited
+pom.xml,maven,dependency,commons-cli,commons-cli,inherited
+pom.xml,maven,dependency,junit,junit,inherited
+pom.xml,maven,dependency,org.junit.jupiter,junit-jupiter,inherited
+pom.xml,maven,dependency,org.apache.logging.log4j,log4j-slf4j-impl,inherited
+pom.xml,maven,dependency,org.apache.logging.log4j,log4j-slf4j-impl,inherited
+pom.xml,maven,plugin,org.apache.maven.plugins,maven-assembly-plugin,inherited
+pom.xml,maven,parent,org.eblocker,eblocker-top,2.4.20

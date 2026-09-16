@@ -1,0 +1,4 @@
+Name: squid
+Link: /usr/sbin/squid
+Alternative: /usr/sbin/squid-gnutls
+Priority: 50

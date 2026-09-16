@@ -1,0 +1,1205 @@
+{
+  "commit": "1dcfc336993befb5678cd4856eb14adc95c4a828",
+  "files": [
+    {
+      "path": ".fpfilter.xml",
+      "module": "root",
+      "language": "XML",
+      "role": "source",
+      "bytes": 551,
+      "mode": "100644",
+      "git_blob": "8002e87c60dcaf0106c6db43c44983041053629a",
+      "sha256": "3c96920873acd319eaa5a94f66f6fd41ebb38a7b277560824635fc91381a8c1d"
+    },
+    {
+      "path": ".fpprefs",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 8698,
+      "mode": "100644",
+      "git_blob": "f09dbd1bb03ac3373c56fe3ecaf3ae9e4024fbfb",
+      "sha256": "0b3f4caf2a67e878399931cdbd9b6da89983f3c95a5f0f1d0e7e9f5295fcfc00"
+    },
+    {
+      "path": ".github/workflows/deployPackage.yml",
+      "module": ".github",
+      "language": "other",
+      "role": "source",
+      "bytes": 980,
+      "mode": "100644",
+      "git_blob": "b1414b80fbbadc811ac44246f26e102cebadc62b",
+      "sha256": "bc5df36c834fac876f6888eb41642497cc60fc436f5ffef0b03387a16b9a084b"
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "module": ".github",
+      "language": "other",
+      "role": "source",
+      "bytes": 1035,
+      "mode": "100644",
+      "git_blob": "49df0887cfdf7481dc5c4132893d60937a4cb4b9",
+      "sha256": "05f68f4ed98a7b5023ab8383b711f74ea12e708265f74f749ab7b2d583684dbc"
+    },
+    {
+      "path": ".gitignore",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 79,
+      "mode": "100644",
+      "git_blob": "fa948e29b7eec69c4875a9b44914f625e8e4f143",
+      "sha256": "1515aa25c2571fd3b5e13a94e41dd501befdc9e53aff27932575b05373f415c9"
+    },
+    {
+      "path": ".mvn/maven.config",
+      "module": ".mvn",
+      "language": "other",
+      "role": "source",
+      "bytes": 14,
+      "mode": "100644",
+      "git_blob": "b79df8ca66d6673b96abf51fc5bf33de14f67cb2",
+      "sha256": "c72db16003848644a2cffd1037b4a6fe93a4f1b313adfa699887f396771e3f65"
+    },
+    {
+      "path": "COPYRIGHT.txt",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 541,
+      "mode": "100644",
+      "git_blob": "5bb94c87ee250803385672d6e645697b9ac5f405",
+      "sha256": "aa29adea6b8f4a914c836741c2de8b3bcdcfafb777beb6f35e1b54e759deacfe"
+    },
+    {
+      "path": "LICENSE.txt",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 11357,
+      "mode": "100644",
+      "git_blob": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+    },
+    {
+      "path": "NOTICE.txt",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 1460,
+      "mode": "100644",
+      "git_blob": "954875114bae706182eb0da29cea97cb1c0d4474",
+      "sha256": "9ad1a4abe9fe3da64d6d7765f065b4cbd19b7f911d932a623a6176f50a769ec1"
+    },
+    {
+      "path": "README.md",
+      "module": "root",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 1028,
+      "mode": "100644",
+      "git_blob": "5a8c2ef488b4fe13a692fadffa636dd559973a74",
+      "sha256": "e744e9ef3b9e40dcaac50c891bedbebf5544f40210588bf6b015953f5e0b0e86"
+    },
+    {
+      "path": "licenses/LICENSE.felix.txt",
+      "module": "licenses",
+      "language": "other",
+      "role": "source",
+      "bytes": 10174,
+      "mode": "100644",
+      "git_blob": "66a27ec5ff940d3a9652d2948746ebac4c9d0188",
+      "sha256": "69849221bfb90053de2134ef5e6d540287b4b98062326492f1f96f5da685524b"
+    },
+    {
+      "path": "licenses/LICENSE.netty.txt",
+      "module": "licenses",
+      "language": "other",
+      "role": "source",
+      "bytes": 11357,
+      "mode": "100644",
+      "git_blob": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+    },
+    {
+      "path": "pom.xml",
+      "module": "root",
+      "language": "XML",
+      "role": "source",
+      "bytes": 20027,
+      "mode": "100644",
+      "git_blob": "08c9ad01fa9363850c4f859d927a9651d323e4a7",
+      "sha256": "c9165c1d264b1e3e455f80f0d44edd2bc6abc79aa95faee74d25a2bb1a23ce26"
+    },
+    {
+      "path": "settings.xml",
+      "module": "root",
+      "language": "XML",
+      "role": "source",
+      "bytes": 475,
+      "mode": "100644",
+      "git_blob": "0548f6f96bcd149213b0175994e5d26c4548f7d6",
+      "sha256": "9fe52a82bcb0b096c4e104a2a6c94e6e05c60bf12ebf91ba6de4175bfd969e39"
+    },
+    {
+      "path": "src/docbkx/custom.dtd",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 2579,
+      "mode": "100644",
+      "git_blob": "0c06dcb1600d395eb9c01110f89236a4cf9ca1a1",
+      "sha256": "5ae6f6689c23a7dc366b262a5d9a95433c42ac5eee3020b987931a54a8f26160"
+    },
+    {
+      "path": "src/docbkx/customization/pdf.xsl",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 9274,
+      "mode": "100644",
+      "git_blob": "a2ad50bb5fca2fd9f4db2c0cae71ac03be0eb474",
+      "sha256": "f6b92514b3c900600713c331427e05f6793cf73b9a33f1124b2b59e47d4040e9"
+    },
+    {
+      "path": "src/docbkx/icap-codec.xml",
+      "module": "src",
+      "language": "XML",
+      "role": "source",
+      "bytes": 1532,
+      "mode": "100644",
+      "git_blob": "767cd05f3211adf345738410c1e0bab251af646c",
+      "sha256": "b31fee8cad542eb76de732ee644d29ca0702fcd8eab03c95a63cce72f22957e3"
+    },
+    {
+      "path": "src/docbkx/module/preface.xml",
+      "module": "src",
+      "language": "XML",
+      "role": "source",
+      "bytes": 3648,
+      "mode": "100644",
+      "git_blob": "9c0f934444a90cd79a462e5b4bee42a86791f259",
+      "sha256": "789fa0c720ce9695421808f5008f8138165bcff6a5ac69c0c31cbe14755d7f13"
+    },
+    {
+      "path": "src/docbkx/module/release-notes.xml",
+      "module": "src",
+      "language": "XML",
+      "role": "source",
+      "bytes": 4027,
+      "mode": "100644",
+      "git_blob": "b9bc2df1ad110b2dca2508da58eb0ad67c08c879",
+      "sha256": "59fee548597b12c1a039464a924144d4de9b36a6673852c42e77d290c8335627"
+    },
+    {
+      "path": "src/docbkx/module/usage.xml",
+      "module": "src",
+      "language": "XML",
+      "role": "source",
+      "bytes": 11260,
+      "mode": "100644",
+      "git_blob": "c1a0b0796ba9750db99a826a4429ca37c7c98389",
+      "sha256": "173236be52a002151d5623bc4d7ff1c9ba61b58fec9607bd01d2f39b1e76f98a"
+    },
+    {
+      "path": "src/main/assembly/default.xml",
+      "module": "src",
+      "language": "XML",
+      "role": "source",
+      "bytes": 2303,
+      "mode": "100644",
+      "git_blob": "7a63a3f59a59be6a031ffc80dd01e661017e904d",
+      "sha256": "7a450190859302e1ddf7f641a65ed9a143c8ce28451fe0f06ca84ee928e24603"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/preview/IcapClient.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4315,
+      "mode": "100644",
+      "git_blob": "8b109059ba30213e56ae2e81de3521d3ad6a1017",
+      "sha256": "8c1f94f9a355cca7f8c1ceeeef4b212e08c107987f67f231f451b6b9b1d13bf2"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/preview/IcapClientChannelPipeline.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1448,
+      "mode": "100644",
+      "git_blob": "1b8970d9bad7fa2f860380b3d99286a03e59834d",
+      "sha256": "8b9b766efaf54ac3626ba31e366de3ab7b53c1e7ba4847b1c24eff85d2427053"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/preview/IcapClientHandler.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2051,
+      "mode": "100644",
+      "git_blob": "b86b60f4e4cd0475cdcb5ab5d9d18d0d8554a6a8",
+      "sha256": "2d613a6917b439d9fcd87380ac9598449290e20557cdcbb10afca1f0b5f2a99f"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/preview/IcapServer.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1757,
+      "mode": "100644",
+      "git_blob": "1f0abb93e914a582900dc9011e7e8030ef346dd3",
+      "sha256": "fb6cc7e4cda1636ab38c406af970fbda38c80e6689ca8993ff0e158c1d44fddc"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/preview/IcapServerChannelPipeline.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1464,
+      "mode": "100644",
+      "git_blob": "bbd4d58938e687b040d06a6fd49b3f16010a2239",
+      "sha256": "4a00d2e1bf52e3d185691d4ae2f6e07f88a8edb59b8e543c1a8c1bc4448b8def"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/preview/IcapServerHandler.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2290,
+      "mode": "100644",
+      "git_blob": "0052e8638fee67e852cdcfc3320170091058b8b6",
+      "sha256": "92854e67f8a7bf3cd8f1125b9a065d95ae9957132a3864176ececddaec3309fa"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/preview/package-info.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 874,
+      "mode": "100644",
+      "git_blob": "2f95a54ec0d809e1c5e833f1cd03fb4bfb563479",
+      "sha256": "7f508c2627c86f9868829a313cd1c640f41324868b62ee29cc17cd050c511fda"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/simple/IcapClient.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3423,
+      "mode": "100644",
+      "git_blob": "a32e0449a55b6aef0b97a0256dd87ad872ad0231",
+      "sha256": "d9c458175ec3790641451c10976f03f7e188235f7c900e9e73ec477356ce1a68"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/simple/IcapClientChannelPipeline.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1712,
+      "mode": "100644",
+      "git_blob": "7389636800937f056949af6808ce2163d6ddad73",
+      "sha256": "178f1c5357e81210a135860e74bd126878ec7746ab85e6c41dcd7ce7e2b55ffa"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/simple/IcapClientHandler.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1272,
+      "mode": "100644",
+      "git_blob": "1f611e94d6aeab59914a9a25589b3b65b6f118a2",
+      "sha256": "deeb81aad0d02630e57f81a736c846a34e2d70f1c2aa8b268a367d7454a0d8b6"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/simple/IcapServer.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1750,
+      "mode": "100644",
+      "git_blob": "0960c061b425554d3d98b39030732acceaa47091",
+      "sha256": "00ff3bb0e06d3f87c8e900e0ea58d3bec7f9307b03ed86ee8120507f03a04bbb"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/simple/IcapServerChannelPipeline.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1722,
+      "mode": "100644",
+      "git_blob": "f954ea85b2e1173e4110e6e4841b5a20101c3783",
+      "sha256": "69702baa0260333f122c89e0d4fa899fe928b1d6564f4618ecc8f925c6bbecbe"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/simple/IcapServerHandler.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3226,
+      "mode": "100644",
+      "git_blob": "abad821f6f6c829df154eff92fd7d00957194727",
+      "sha256": "d7a369f689ae7c719a1bc4f3cab61a77a0d56b47a451ca16218f3c824fdc9573"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/simple/package-info.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 873,
+      "mode": "100644",
+      "git_blob": "34c441e46fcc939ca3f6032c77892895543b67eb",
+      "sha256": "23abe3ddf8932de99b311fbd9e1c1f49f4e008ac5501201ade1107f78b4fde9a"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/squidechoserver/IcapServer.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1620,
+      "mode": "100644",
+      "git_blob": "a8fc25ad41bd4c0341ff23b3cc7430cbd8ffd6af",
+      "sha256": "01314ee136967de59adab5d091e812a9043bbada3364a0377e98ed63a48ea8b2"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/squidechoserver/IcapServerChannelPipeline.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1736,
+      "mode": "100644",
+      "git_blob": "7d1f402895a3384f25583b529bbe0ad9f1b33f51",
+      "sha256": "f2f04e1274f51ca7852ce68e8a36dbf5d60b0ec33349bae83d2db1d44a6cd081"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/squidechoserver/SquidEchoHandler.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3968,
+      "mode": "100644",
+      "git_blob": "231913ca8be35c9fe8f3ffbdba5174d0fec07948",
+      "sha256": "e163d1985d554b766b5569043e01ca0fb6af7728cc378bd3104672a6d2b00c6c"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/squidechoserver/package-info.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 909,
+      "mode": "100644",
+      "git_blob": "25a137f93dc502c66d0a255f75e9dbe71f19ee04",
+      "sha256": "e9cea71afdd191eedb0b34f7bd55bb8fc4dd4f4932d4849d0980009c84a7d83a"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/AbstractIcapMessage.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 7296,
+      "mode": "100644",
+      "git_blob": "17691f1531d64d000a947859b9b7012d4ca527a9",
+      "sha256": "bdc0729c1ca668b2c9de9efa9137551947da089842205da291083d72f03998ee"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/DecodingException.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1080,
+      "mode": "100644",
+      "git_blob": "a3d24dad5c5e22f4dbdebfb390c7911cd83ae609",
+      "sha256": "e11eb041c2b0e37c0b3ff2752c5bd8a19505da10efa2d785bb1ec3a55fd89e7c"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/DefaultIcapChunk.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1976,
+      "mode": "100644",
+      "git_blob": "4d284be7d6335685bfef555e3811a9dcbc2a7ea6",
+      "sha256": "713b3b80d609bb8d288511573e7ef2540e1d19f319e7b56e88cc74e75f8431fd"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/DefaultIcapChunkTrailer.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2659,
+      "mode": "100644",
+      "git_blob": "f78acb45cf1980bbaba19a3a921b5a66f5b1f5cf",
+      "sha256": "e805a04eece3b24e14407b1652568595993f7c0bf91e95285a923f683bfb2d34"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/DefaultIcapRequest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1997,
+      "mode": "100644",
+      "git_blob": "6a228783b359dc08c3a2904f387c5615508f6bcf",
+      "sha256": "aea8e7d2bd74f831e86a4b31c3386fd1fd9d7147cfb61fca42c543793cbe85c7"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/DefaultIcapResponse.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3123,
+      "mode": "100644",
+      "git_blob": "17f7ea854ec4cb907b6d227de9dc70413546f269",
+      "sha256": "6e9f0b536858645da2e40cbeb78ee94dba709cfb407294ea52323b69e1fa3e10"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/Encapsulated.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 8158,
+      "mode": "100644",
+      "git_blob": "2a6034cd44c6dfaa56b253e159bf0d1172554016",
+      "sha256": "a841c890a40f19dee3af280b90a476963244c36814440e17f734ec1255d39d0c"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapChunk.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1924,
+      "mode": "100644",
+      "git_blob": "45bfed7decea98072ecc474a077bcba74652649a",
+      "sha256": "ffad9e98caa2eccd869f136e737da21325227369ff80187b2f446490a50c1205"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapChunkAggregator.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 9333,
+      "mode": "100644",
+      "git_blob": "dada6de5c343ee9f2a406aec81c6d20aadd4c812",
+      "sha256": "426bb175ed0e8707209a4a0ff70c200eba3a33c924519bc41d1021a9f1d12904"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapChunkSeparator.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4987,
+      "mode": "100644",
+      "git_blob": "05efc75610616d383ff7e7b4df422a55f9c7a0f5",
+      "sha256": "0316ce42fa2900dc480e0d7d5714d68473f3127a2de3809a793ab2f14afc44b0"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapChunkTrailer.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1286,
+      "mode": "100644",
+      "git_blob": "ea77ca5781c24a50c827151c7781df02aee7f5ec",
+      "sha256": "62af007df85943fa3c8a80031d1ed1efcb1eef74be75c487a106376820b7a299"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapCodecUtil.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4956,
+      "mode": "100644",
+      "git_blob": "8fc2132d60ea65142a0a041753d6bafed478cbd3",
+      "sha256": "88166a61504562d149c35262d7522b5042e4bbc3859c93be7850c9cfa814627e"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapDecoderUtil.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 11284,
+      "mode": "100644",
+      "git_blob": "8a356da0eee12ab774af8baa0e160e6f734f9e29",
+      "sha256": "4d72b05acd41bdd3e4f25bc77320d27b15b3e240f98164d73deb39c9db6168c3"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapDecodingError.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1120,
+      "mode": "100644",
+      "git_blob": "1bf6565c6cdac4301f78054f25aea0cd571fa149",
+      "sha256": "9ca6c39222bab78bdf87eebc3663323eb17e5a92ccae91ac501a8e3ee753d511"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapHeaders.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 10297,
+      "mode": "100644",
+      "git_blob": "98fcb2da60cd544f1704d00f43406c17a171ad98",
+      "sha256": "a481337969d97e34457c71381715752f4e4e17f30f667d0719c0457e70e52f9c"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapMessage.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 5974,
+      "mode": "100644",
+      "git_blob": "09413dedfec6a889954efd6877d7fe8bc2d01aa3",
+      "sha256": "e5c3b3240bc8e66a4a86acefa298ced2d7dc98d330a607a16ede04c032427599"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapMessageDecoder.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4753,
+      "mode": "100644",
+      "git_blob": "6d0c5bda7ade8bcc38cdb7adda0ad6c4e94c53da",
+      "sha256": "c97137128cf0e9904046dfb4e1aa4b943e8a81ff77dd7516b3938992899da80a"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapMessageElementEnum.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1767,
+      "mode": "100644",
+      "git_blob": "0d3957cbecf4bf8cd9b34f91ab039a016ca84008",
+      "sha256": "6f44c422e8f85147c594640c6e52089bddc2672e7e71e7e33ae5c6324dbd66dd"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapMessageEncoder.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 6731,
+      "mode": "100644",
+      "git_blob": "110633bc8cb7f09a5f3312cedd8a5de8e8c670a4",
+      "sha256": "e43a567dec4a15c4ac721cf9163d941cb3972b1731bec58b1f6fa17155e7c462"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapMethod.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2443,
+      "mode": "100644",
+      "git_blob": "0a1507b62270fb2a55bb04ac5b720cf038e70085",
+      "sha256": "5cb59ab7a394d895648b074f8936b94be8c00484bbc2f025e6f73b7554433480"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapRequest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1616,
+      "mode": "100644",
+      "git_blob": "fc157f0e4668d7c342b23860a09bfa7cf450e027",
+      "sha256": "99dc360fdfe02affa7fe2f3d9949d693636f49c0b3ecad7d85c4d32acffb1cf6"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapRequestDecoder.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1722,
+      "mode": "100644",
+      "git_blob": "25ed2a3041d5a5c17b29e904c13ce07e7cf43c9d",
+      "sha256": "50bd180ace7dc2d83a24da4a9348fd54fa620e96fb551f39134a07dd6aebe91b"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapRequestEncoder.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1891,
+      "mode": "100644",
+      "git_blob": "95646d7570bf65f9def417e08799239134b4142a",
+      "sha256": "c6138810dd8744430bbe78d624515d5c194a346ad6aac51de3b79c66297e3983"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapResponse.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1735,
+      "mode": "100644",
+      "git_blob": "04e04e2ee999212683f9a7c53cb7a71fc622d79a",
+      "sha256": "503da1864dcd8fc954ea859028ac1e7506a8ddb9859d7e6803facad7f72d62ff"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapResponseDecoder.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1729,
+      "mode": "100644",
+      "git_blob": "56117b5c081d158e03b5d70ad01b23991b72f71e",
+      "sha256": "405d46fd1366d532a368ec63dae75ad17f6e91be26729a91a0596053e9b43867"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapResponseEncoder.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1654,
+      "mode": "100644",
+      "git_blob": "a487d2c68c3c85296748b1e0f480762090e627ad",
+      "sha256": "26ea2e880781d1f056ee05ed6b7e0166b1b8b80522c28ba7f5b45ddd1c647231"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapResponseStatus.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3897,
+      "mode": "100644",
+      "git_blob": "479639761552cdaa7dbc603b304c5a9c56544d57",
+      "sha256": "224762052a6b5e60a62f03452c1f2d58f81689dcfb1ae315baf55f97dfa954ff"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapVersion.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3537,
+      "mode": "100644",
+      "git_blob": "9a299734bbb5b3600a71c77d57ad886cfef31f58",
+      "sha256": "5defd9462a149dea2b0e1e6ac1f3c508d89b60227bff81d0cdd134abbba53720"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/ReadChunkDelimiterState.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2004,
+      "mode": "100644",
+      "git_blob": "f53c4510f194cf95bd1456cb863755bb75f2cf16",
+      "sha256": "a9f7b670a9579262cb4f95a86b15b47085d98ffc4f02fefc9611568990ed7a57"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/ReadChunkSizeState.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 6016,
+      "mode": "100644",
+      "git_blob": "09c9ebc1bb2ef5e9f9d2b20b86e2b58c1a4ef184",
+      "sha256": "276d9029b494ce81f80e036292af6f0d6eb4b7ee4dc5788e8d87ef15e475eaf9"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/ReadChunkState.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1820,
+      "mode": "100644",
+      "git_blob": "ebebe7cc7575cc328b27c0e5443f7dca92accce4",
+      "sha256": "695f94301b6c6ee9e935d2d3ab219295ea19ecc9a7a7220a41c34ed30d70c2b8"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/ReadChunkedContentAsChunksState.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2473,
+      "mode": "100644",
+      "git_blob": "07bcb8782577bc5aac689684c74a59a3f587e13a",
+      "sha256": "f626f62d30bb4639dcbba848bd99661ce03933df2dd4e53799d6f89e2dffc294"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/ReadHttpRequestInitialAndHeadersState.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3628,
+      "mode": "100644",
+      "git_blob": "733266ce7fa10551384f963db900bdd99de50a49",
+      "sha256": "57c14bcb38c13d2c5f53252c019bcfe7e36837a602b8c83b66a70f1e777393d7"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/ReadHttpResponseInitalAndHeadersState.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3623,
+      "mode": "100644",
+      "git_blob": "0b8f6a71431413eedfb2a3843fb5b116d2835abb",
+      "sha256": "ac38ba69ab893b539063a52b00fc2588dc900afd1eb16f617ec0f98a7a8066b3"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/ReadIcapHeaderState.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 6192,
+      "mode": "100644",
+      "git_blob": "fab9496903327a46074a1ebcf3d285be729a9644",
+      "sha256": "a6640305704659a42a462b17bed03edeca189a76f250eac41ab75284998215b1"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/ReadIcapInitialState.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2097,
+      "mode": "100644",
+      "git_blob": "53346d590f1e4aeaab79a6e870ace214d104324b",
+      "sha256": "5c53b440212205b4fae3a8c468be76389b8b4f760fee3c7a9199e31f4bf4140c"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/ReadTrailingHeadersState.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3550,
+      "mode": "100644",
+      "git_blob": "9891309c9c48cd32c3a00e33b85ffa1780a14341",
+      "sha256": "48c56bcc0e05f313e67e173a5faf0e29d71e9022f174dc2c82d78f4853f7c2c5"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/SizeDelimiter.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1748,
+      "mode": "100644",
+      "git_blob": "69930caf87e41cb5dd1d1d50b3ef5927a9e44f97",
+      "sha256": "814ab100d5116383109541a020fcb1c2f2be3b023ae67fc64fda4071c9bda544"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/SkipControlCharsState.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1729,
+      "mode": "100644",
+      "git_blob": "2e43b68bd22bb3585925b9893ad481ca5b598987",
+      "sha256": "bdacf1f4df3c0ab1b5efa881d9df74f7275f456685e3fce1b75142a6542ec7cd"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/State.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1881,
+      "mode": "100644",
+      "git_blob": "0d713db3c354961b65cfe08e3cc4247cb9df67f3",
+      "sha256": "a56f8313082637752dbd7e98cca2c026293ccd9a60436546a842c5200afae580"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/StateEnum.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2103,
+      "mode": "100644",
+      "git_blob": "7c0f8ce07ff9cf3cbcb2dfdc097b283822be4bd0",
+      "sha256": "e19395f1ceafd3a1193f5b8798765ff699424c3d37b4e1b0d21c25c51a682f5e"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/StateReturnValue.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2360,
+      "mode": "100644",
+      "git_blob": "cd96d3bb5172c9e5f1a6bfe338d673ebe15e1acc",
+      "sha256": "ce2fe2c0a984a3856c7e671c831116f43890b903bf09b65d3a706c66a3087b6b"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/StringUtil.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 218,
+      "mode": "100644",
+      "git_blob": "7b35c0a6f181e8b8fedfa10732371bf72693e83e",
+      "sha256": "be8b47286bb4f4388a127166834c63396c5dd98d743010cd84307684153f80f6"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/TooLongFrameException.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 412,
+      "mode": "100644",
+      "git_blob": "11ae37e65ff42fb8d9a5163216cf75b4aecf681a",
+      "sha256": "836e669253747104518b0dc3bcea1321103a48acecc82c7357a57bee325e5a64"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/package-info.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 842,
+      "mode": "100644",
+      "git_blob": "a9e4897447698de45e5ad8c6f846fceb85ae8dc8",
+      "sha256": "b89359bca53990ad9c41fd260fd28fe2462bffda36e86b665bd82c9950db5786"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/icap/container/osgi/NettyIcapBundleActivator.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1257,
+      "mode": "100644",
+      "git_blob": "2366d190e2cad96909d1656934f887c934f337ed",
+      "sha256": "4c44b185b23ef6f386e6d0bb057cb2d444c829c37dfbff0f42d970871587a3a5"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/icap/container/osgi/package-info.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 882,
+      "mode": "100644",
+      "git_blob": "675afc0459961cc7d833c75f8aca585365f6336a",
+      "sha256": "3974f06430575d338f23866733680895dbfc1aa44ac3b9b2000ccfbfe279ec0f"
+    },
+    {
+      "path": "src/main/javadoc/resources/bkg_blkheader.png",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 2834,
+      "mode": "100644",
+      "git_blob": "6bf14786360c1242c17ae98c5ede8aad2ba8d24b",
+      "sha256": "64f8c95f7127a3de441956698752549a4b4019dbc4d169677833d2fc486323aa"
+    },
+    {
+      "path": "src/main/javadoc/resources/bkg_gradient.gif",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 294,
+      "mode": "100644",
+      "git_blob": "e67f720dc605e2c739e6044224451a5e26cd2b35",
+      "sha256": "1366e38447c344962129b8293ddd9a51b4935ad5f62b3a86f83d20423533663d"
+    },
+    {
+      "path": "src/main/javadoc/resources/bkgheader.png",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 2849,
+      "mode": "100644",
+      "git_blob": "87ddf82196825046e8b21ed080cf5e6607ba4c8f",
+      "sha256": "13ba510f9170e4b3892c72531c874c17df0a308785ba82d614272f74f2f47122"
+    },
+    {
+      "path": "src/main/javadoc/resources/h1_hdr.png",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 10312,
+      "mode": "100644",
+      "git_blob": "483b8d0f7c5a18bdf3557dbe121c999b0ba2673b",
+      "sha256": "25245b7f9b700fb7e7092c427c9ac2ca065d585c3cb1df79ea20797260e29256"
+    },
+    {
+      "path": "src/main/javadoc/stylesheet.css",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 3279,
+      "mode": "100644",
+      "git_blob": "7d248880dfb4288ef228e3199e949e0573c62bd2",
+      "sha256": "1fa268b018eb020a3f34489dfd467d40bcc0187036b1328bb47ba9845e64d609"
+    },
+    {
+      "path": "src/main/xref/stylesheet.css",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 3577,
+      "mode": "100644",
+      "git_blob": "fc2285b0ff31c2f1e75b6dc1bec1e1e9d6e8e3a5",
+      "sha256": "f79cb6c3319c1f456053a74289d7793a43a90b323716a2284e51683595d012ab"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/AbstractEncoderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1786,
+      "mode": "100644",
+      "git_blob": "71da9d600f62453f706b92ea3d73520b6ff80155",
+      "sha256": "794ff3dd5741bd9df783f3fa4d1b1ce696f9857749443b7991350ce3faa060f4"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/AbstractIcapTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1533,
+      "mode": "100644",
+      "git_blob": "e93e95e1faaf6474badbc171d02557a84e9a864c",
+      "sha256": "63300e226cd0679821e95ef16ed73a5a117a887211a7bfd07e1766ddc0f8cfc4"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/AbstractJDKLoggerPreparation.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1159,
+      "mode": "100644",
+      "git_blob": "89b01498b475178f06df702746f4abba3ebc75ef",
+      "sha256": "3706db792b19ff08cab2f345dcc727121102b68320f84b4decf0a989364167ec"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/DataMockery.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 89809,
+      "mode": "100644",
+      "git_blob": "c24bde4b9f5f27045d246a9de14c7252c913aa68",
+      "sha256": "9d758036d3982b158d61db8347757a7316c4a624f80e969ea9b039102c62837f"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/EncapsulatedTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 7556,
+      "mode": "100644",
+      "git_blob": "2fd1eff5dbf1186a1ee76108de74eb6831a2f6df",
+      "sha256": "bc1d5b3168d843931641b5cd395d60dd43f11683c2b1fe45d01c272c51fcb2cb"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapChunkAggregatorTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 12138,
+      "mode": "100644",
+      "git_blob": "0b6058cdf58658210aecc26906c13c2cddf6484c",
+      "sha256": "cd0e73dfb5b4a2fab38a3ef71c4c9037d103a8a1071f47007bd719576d9e31a6"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapChunkSeparatorTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 11532,
+      "mode": "100644",
+      "git_blob": "aa56272fa142359cb6dc449953c527e27901f526",
+      "sha256": "02d35c9d733dd3352bf79414a41af76088753e47d64f5005a3bc04a3dcbf77bb"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapCodecUtilTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 4536,
+      "mode": "100644",
+      "git_blob": "dec132043a77b534d5cfc377046b1a68d0a050f5",
+      "sha256": "1bc348f328ce937aa4aef6f50a51043028c88f5e12a498e2ab5435ab10e7d16c"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapDecoderUtilTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 18241,
+      "mode": "100644",
+      "git_blob": "76f63437cdfdec866eb50bfab0e945ad52a3a009",
+      "sha256": "ec4f04104a2faa3c49be02b18fb75b9be5f3dc46b70cfc4a81c6038f78ecaa7e"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapHeaderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 13221,
+      "mode": "100644",
+      "git_blob": "701c06ffff818bacdd0cf90ae8199d81b42335fa",
+      "sha256": "5294b58c4eaf6a2d57b501f01a2ebdbbe96fe5b1154a933428d6087eb66d8e63"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapRequestDecoderPipelineTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2949,
+      "mode": "100644",
+      "git_blob": "68888acfb70fe4b05de4d9bff187bde74ee622a1",
+      "sha256": "2fc20e67d7e77cbd70b2b675dc066415467e9f0bd0cfd61d91e4ed931058d4b6"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapRequestDecoderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 19265,
+      "mode": "100644",
+      "git_blob": "97116d982ac55df7d9d4688ba700d99fe90c4c91",
+      "sha256": "a35ea4a2470967b7fc933855ab75b5a1885f63cfeaafc3aa92508b5c6fc573b3"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapRequestEncoderPipelineTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 3023,
+      "mode": "100644",
+      "git_blob": "4b4275dd2a98bed1a039587ff2d2abb42574f273",
+      "sha256": "083e9ceb38ab6faddc78cfbf59a59bca23be45eaa7e66b064fb77a0e5c4c2cdc"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapRequestEncoderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 7433,
+      "mode": "100644",
+      "git_blob": "8ad6abc1f805033183960a393e9e721985ed5662",
+      "sha256": "eb3550717cfc3989b16680e9c6a25851fb4654e03dadaae5c0fe234e7e423459"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapResponseDecoderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 7615,
+      "mode": "100644",
+      "git_blob": "426ee96eaa261fcef7a1882d2cf9c58ddbab818c",
+      "sha256": "3cf1ff32d6f06d4389885262ae8b704be57e0f303b3eeddb3ae58fc6a343e91c"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapResponseEncoderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 7100,
+      "mode": "100644",
+      "git_blob": "a9e55d0fa4d524601798a67d692f4c75b7a92edc",
+      "sha256": "33bf75134f5a016ebb9db34a0693bd41ce93c126c3be64ad3a60d998d6053952"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapVersionTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1480,
+      "mode": "100644",
+      "git_blob": "40fb8035607a206329200c0a2d87fe712b39c7ea",
+      "sha256": "f3cceffe1e3fa735355b927756ca548cd98c85287470dd791800d626907b261d"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/JDKLoggerConfiguration.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1853,
+      "mode": "100644",
+      "git_blob": "36f815a36c64c0a7872d76e0f05e31309af57ba7",
+      "sha256": "06c322d50ef6758ea4632d8f8a1ee7cbd7f355fc0645920cea1ad723cf060854"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/socket/AbstractHandler.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1829,
+      "mode": "100644",
+      "git_blob": "dd11b1abaa5658d2852dafe32416cee34ddd0139",
+      "sha256": "70081fa506e0a038ef5176da1d150706009a282f93177cb5a660d8cbee8d7577"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/socket/AbstractSocketTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 11092,
+      "mode": "100644",
+      "git_blob": "3e531b11aa0cf89bafbb2e4ff0b2e967e66211e5",
+      "sha256": "e67f60cd68e588987a81d83aa3b02e357b833e01f18fcfa9cf3400392b3e039e"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/socket/Handler.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 976,
+      "mode": "100644",
+      "git_blob": "64def19fc35a8f32eee832c37822f88370dfb611",
+      "sha256": "af146add09ee9ee972bf513d82b737c795b0108f129f64a3293ee58ee39bf2f4"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/socket/MessageHandler.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 863,
+      "mode": "100644",
+      "git_blob": "8b4611ba9b1ed6aa6275fb7498de0348919bf273",
+      "sha256": "9fea323a2a681be543841f03de145635ee95727ffabdca8a0fef0a7a9cac4d52"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/socket/NioNioSocketTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1918,
+      "mode": "100644",
+      "git_blob": "0e0bc281a33c872bb90d4678030e9f07dc86083d",
+      "sha256": "4148b0dfda2af462844c47642bd707ab33c0a53d0258dc73d1ebb579919ac5ed"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/socket/NioOioSocketTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1921,
+      "mode": "100644",
+      "git_blob": "55d9db60b684885e85f8181e4f7a8687b903eaa2",
+      "sha256": "3c6e1df756b3bfbcb2874d3fed8799a9e5b55f9ad05dfc632f2ab793b6d1b240"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/socket/OioNioSocketTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1976,
+      "mode": "100644",
+      "git_blob": "c1cf7f32c57777ec688cd4a7af2c26d00503bcf3",
+      "sha256": "f934915f3d74706e4fffff2d197f1e6ec7a5260ae90e66ee9afbf21bee7ace88"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/socket/OioOioSocketTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1928,
+      "mode": "100644",
+      "git_blob": "6549aff5473edac7f4ba62276e992f5db745a69c",
+      "sha256": "d77cb34e692a6c7f3c50fed56e5fea81476e54a10fb976c515531454e96d0bd1"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/socket/SocketTests.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 18341,
+      "mode": "100644",
+      "git_blob": "2788d77468f18ab824ef77ef02ab49df694caac2",
+      "sha256": "291a7711d29d724e59522b5b31ed0ac1953346a15d4a6bc5de2c4a2e1b4f64ca"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/socket/TrickleDownstreamHandler.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1884,
+      "mode": "100644",
+      "git_blob": "5cdad7ff28e2f5058681f7be7da79066b9ef3ab3",
+      "sha256": "dbadc76ea785cfc0b6783fcf227c3fd8e6049b3ae204a953b8a1e896b981a7df"
+    }
+  ]
+}

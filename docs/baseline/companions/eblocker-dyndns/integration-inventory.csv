@@ -1,0 +1,9 @@
+category,path,line
+service,debian/eblocker-dyndns.service,4
+service,debian/eblocker-dyndns.service,7
+service,debian/eblocker-dyndns.service,9
+service,debian/eblocker-dyndns.service,10
+redis,redisdyndns/redisdyndns.go,40
+redis,redisdyndns/redisdyndns.go,55
+redis,redisdyndns/redisdyndns.go,123
+redis,redisdyndns/redisdyndns_test.go,62

@@ -1,0 +1,41 @@
+<eb-card
+    icon="/img/icons/ic_settings.svg"
+    card-title="{{'CONSOLE.CARD.TITLE' | translate}}"
+    tooltip="CONSOLE.CARD.TOOLTIP"
+    card-id="{{ vm.cardId }}"
+    >
+
+    <eb-card-content>
+
+        <div layout="column">
+            <div layout="row" style="height: 38px;">
+                <span flex="40">{{ 'CONSOLE.CARD.NETWORK.EBLOCKER_IP' | translate}}</span>
+                <span flex="60" style="font-weight: bold;">{{vm.eblocker}}</span>
+            </div>
+            <div layout="row" style="height: 38px;">
+                <span flex="40">{{ 'CONSOLE.CARD.NETWORK.GATEWAY_IP' | translate}}</span>
+                <span flex="60" style="font-weight: bold;">{{vm.gateway}}</span>
+            </div>
+            <div layout="row" style="height: 38px;">
+                <span flex="40">{{ 'CONSOLE.CARD.NETWORK.DEVICE_IP' | translate}}</span>
+                <span flex="60" md-truncate class="md-ellipsis" style="font-weight: bold;">{{vm.device}}</span>
+            </div>
+            <div layout="row" style="height: 38px;" ng-if="vm.otherIps.length>0">
+                <span flex="40"></span>
+                <span flex="60">
+                    <md-button style="margin:0;" class="md-primary" ng-click="vm.toggleOtherAddresses()">
+                        + {{'CONSOLE.CARD.NETWORK.MORE_ADDRESSES' | translate:{count:vm.otherIps.length}:'messageformat'}}
+                    </md-button>
+                </span>
+            </div>
+            <div layout="column" style="margin-top: 16px;" ng-if="vm.showOtherAddresses">
+                <span ng-repeat="ipAddress in vm.otherIps" style="font-weight: bold;">{{ipAddress}}</span>
+            </div>
+        </div>
+
+    </eb-card-content>
+
+    <eb-card-actions layout="row" layout-align="center center">
+        <md-button class="md-primary" ng-click="vm.openConsole()">{{'CONSOLE.CARD.BUTTON.OK' | translate}}</md-button>
+    </eb-card-actions>
+</eb-card>

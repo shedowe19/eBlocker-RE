@@ -1,0 +1,215 @@
+{
+  "commit": "58c782b36802b7d3f064ffe04a1bd41666324b75",
+  "files": [
+    {
+      "path": ".gitignore",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 48,
+      "mode": "100644",
+      "git_blob": "5bad1051532f8dfa3b3ab403868f145bfbc2706c",
+      "sha256": "951eb40f3426529b69940fd0ccc45ed8a32d744e921372b2b00e6fafafd211ad"
+    },
+    {
+      "path": "LICENSE",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 11357,
+      "mode": "100644",
+      "git_blob": "9be37e6b050669df443dccaba0f30e9b9b2c6737",
+      "sha256": "ffde91ae33720901125c58b26b4dac83bc998d69a361f91d18ac8c7dd913d27c"
+    },
+    {
+      "path": "NOTICE",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 0,
+      "mode": "100644",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "README.md",
+      "module": "root",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 6788,
+      "mode": "100644",
+      "git_blob": "986676052aaea07d8984d19eeab48d8916fed293",
+      "sha256": "325f92615efef982b4abbda108a27412423ffe8e8ecb2f6933325fac6aebedfc"
+    },
+    {
+      "path": "pom.xml",
+      "module": "root",
+      "language": "XML",
+      "role": "source",
+      "bytes": 3296,
+      "mode": "100644",
+      "git_blob": "83f2a6c655f65368c56a0d2f3de537219b3a9cc3",
+      "sha256": "fd0926a85505e91ca3f428b91e537f919d6abd5743a172f1ed271666df68f01d"
+    },
+    {
+      "path": "src/java/com/strategicgains/util/AdapterCallback.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 770,
+      "mode": "100644",
+      "git_blob": "22223c43c6d74db1f8c7561b69c0c5b7b2bf8624",
+      "sha256": "5cbc7b21dcda0881ceb54eacbaa6db73e6a3c6deefe2d04001f11f4b8b3f7dbf"
+    },
+    {
+      "path": "src/java/com/strategicgains/util/TextAdapter.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 926,
+      "mode": "100644",
+      "git_blob": "ca05bfb0d892b3924c4f9128f79e86d61b8b24c6",
+      "sha256": "dd57fe1bf318f8a4f413acdc878a6e8dac0bf8e9f8e21537531f3a44504349df"
+    },
+    {
+      "path": "src/java/com/strategicgains/util/date/DateAdapter.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3481,
+      "mode": "100644",
+      "git_blob": "23fe363c3c1c0b2be5d74024fbf6481f54eb1d47",
+      "sha256": "83adefb73b52e1d120c9a949d9d4bac5463acb51ed38fb88db82dd6531ac5eaf"
+    },
+    {
+      "path": "src/java/com/strategicgains/util/date/DateAdapterConstants.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2645,
+      "mode": "100644",
+      "git_blob": "d298a2a8dacb05fe4175eee83832b7d07d08a396",
+      "sha256": "e1912a3e4038263167f8944ca8d1a0bbd584af5be0203d53f17e012084fd5eec"
+    },
+    {
+      "path": "src/java/com/strategicgains/util/date/DateFormatProcessor.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4623,
+      "mode": "100644",
+      "git_blob": "96c9132043f8ab2ef4d0d8ce65e5705658af0a0a",
+      "sha256": "3121505a37253f4b9b83d9da5c2421e6d93ffc6b653f084b78723e1bdaa57005"
+    },
+    {
+      "path": "src/java/com/strategicgains/util/date/HttpHeaderTimestampAdapter.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2742,
+      "mode": "100644",
+      "git_blob": "1d490b2de41f08c588f0bde321b65ac34f6d4266",
+      "sha256": "33d93fe8dfc85dd7c14ce72b0aa3f64642d58189f8b8896b2e6532c883da3f43"
+    },
+    {
+      "path": "src/java/com/strategicgains/util/date/Iso8601TimepointAdapter.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1066,
+      "mode": "100644",
+      "git_blob": "ceeb2d790e887ac6326abbedb36a39ca49fddcab",
+      "sha256": "18512f429b85f1d36efdb94660f1463e6b608d7f794f60f006ab42c204104497"
+    },
+    {
+      "path": "src/java/com/strategicgains/util/date/Iso8601TimepointCallback.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1974,
+      "mode": "100644",
+      "git_blob": "4b011f605f90087329d6db844dbcd839b5ce030a",
+      "sha256": "44e34efa1536d013d16fb0feaf83fef7acddc18f01ce199806052c4a607f60b9"
+    },
+    {
+      "path": "src/java/com/strategicgains/util/date/TimestampAdapter.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1030,
+      "mode": "100644",
+      "git_blob": "865a2f0013e856d1901ece4f343f2378b11fbc6b",
+      "sha256": "b33793fce6228181fb1c09f62658a5af2578e3e7337e60a5cdf596ae81638ca7"
+    },
+    {
+      "path": "src/java/com/strategicgains/util/localdate/LocalDateAdapter.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1698,
+      "mode": "100644",
+      "git_blob": "ed87fffe3fc97e7649445c71a37908c829890a08",
+      "sha256": "27f81641176b2767c72043536805f1f06c0f7686d9acbdeae0c100b7a1c03080"
+    },
+    {
+      "path": "test/java/com/strategicgains/util/date/DateAdapterTest.java",
+      "module": "test",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3150,
+      "mode": "100644",
+      "git_blob": "5eccfead2222f7a41c9fc83a81bcae98a2be5705",
+      "sha256": "65fbbdd6cbbe9f7896a351917b0ebc9d869230afc1a0ddb41eff3e7b9acd889a"
+    },
+    {
+      "path": "test/java/com/strategicgains/util/date/DateFormatProcessorTest.java",
+      "module": "test",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3333,
+      "mode": "100644",
+      "git_blob": "a3062a96c7f4619baa901f0984909366d941546e",
+      "sha256": "6df25cd35020d520b4d3482e33a374f9ba71f99580e316d167c5cebb550fb1b4"
+    },
+    {
+      "path": "test/java/com/strategicgains/util/date/HttpHeaderTimestampAdapterTest.java",
+      "module": "test",
+      "language": "Java",
+      "role": "source",
+      "bytes": 5633,
+      "mode": "100644",
+      "git_blob": "1644d50278841619f310ce3877b87b5d0558b41d",
+      "sha256": "065f34f44a9d59c301183d05dd2a279211564c18b1481475cb2858ba9664033c"
+    },
+    {
+      "path": "test/java/com/strategicgains/util/date/Iso8601TimepointAdapterTest.java",
+      "module": "test",
+      "language": "Java",
+      "role": "source",
+      "bytes": 14297,
+      "mode": "100644",
+      "git_blob": "012bf376872fff93cb8eac310de9677e85efa5ee",
+      "sha256": "044804cf2eab0a121354ac0f52b67e75a7dc64742ade65d42018aad2cf1168bd"
+    },
+    {
+      "path": "test/java/com/strategicgains/util/date/TimestampAdapterTest.java",
+      "module": "test",
+      "language": "Java",
+      "role": "source",
+      "bytes": 7206,
+      "mode": "100644",
+      "git_blob": "55866750f92c0ee3cea6ee39354f566dde9186bb",
+      "sha256": "df1e3c3ef25aed194e09368c095b044080c1050d9f2f6f13e32a8813b047edac"
+    },
+    {
+      "path": "test/java/com/strategicgains/util/localdate/LocalDateAdapterTest.java",
+      "module": "test",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2289,
+      "mode": "100644",
+      "git_blob": "9a48328ba0edc3921cabf981b18656253e63dc0c",
+      "sha256": "0d75e0457c25ec71a0f8727db67d8dd7612bc5a8aff270b7b29b585b39506e22"
+    }
+  ]
+}

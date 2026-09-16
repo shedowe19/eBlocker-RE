@@ -1,0 +1,78 @@
+/*
+ * Copyright 2020 eBlocker Open Source UG (haftungsbeschraenkt)
+ *
+ * Licensed under the EUPL, Version 1.2 or - as soon they will be
+ * approved by the European Commission - subsequent versions of the EUPL
+ * (the "License"); You may not use this work except in compliance with
+ * the License. You may obtain a copy of the License at:
+ *
+ *   https://joinup.ec.europa.eu/page/eupl-text-11-12
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+ * implied. See the License for the specific language governing
+ * permissions and limitations under the License.
+ */
+package org.eblocker.server.http.security;
+
+import java.util.Map;
+
+public class TokenInfo {
+    static final String ADMINISTRATOR_EPOCH_CLAIM = "adminEpochV1";
+
+    private final AppContext appContext;
+
+    private final long expiresOn;
+
+    private final long tokenValiditySeconds;
+
+    private final boolean isAuthenticationValid;
+
+    private final Long administratorEpoch;
+
+    public TokenInfo(AppContext appContext, long expiresOn, long tokenValiditySeconds, boolean authenticationValid) {
+        this.appContext = appContext;
+        this.expiresOn = expiresOn;
+        this.tokenValiditySeconds = tokenValiditySeconds;
+        this.isAuthenticationValid = authenticationValid;
+        this.administratorEpoch = null;
+    }
+
+    public TokenInfo(Map<String, Object> claims) {
+        appContext = AppContext.nullSafeValue(claims.get("acx").toString());
+        expiresOn = claims.get("exp") == null ? 0 : ((Number) claims.get("exp")).longValue();
+        long iat = claims.get("iat") == null ? 0 : ((Number) claims.get("iat")).longValue();
+        // FIXME: defaults to true, perhaps should default to false?
+        isAuthenticationValid = claims.get("aut") == null ? true : ((Boolean) claims.get("aut")).booleanValue();
+        tokenValiditySeconds = expiresOn - iat;
+        Object epoch = claims.get(ADMINISTRATOR_EPOCH_CLAIM);
+        if (epoch == null) {
+            administratorEpoch = null;
+        } else if ((epoch instanceof Integer || epoch instanceof Long) && ((Number) epoch).longValue() >= 0) {
+            administratorEpoch = ((Number) epoch).longValue();
+        } else {
+            throw new IllegalArgumentException("Invalid administrator token version");
+        }
+    }
+
+    public AppContext getAppContext() {
+        return appContext;
+    }
+
+    public long getExpiresOn() {
+        return expiresOn;
+    }
+
+    public long getTokenValiditySeconds() {
+        return tokenValiditySeconds;
+    }
+
+    public boolean isAuthenticationValid() {
+        return isAuthenticationValid;
+    }
+
+    Long getAdministratorEpoch() {
+        return administratorEpoch;
+    }
+}

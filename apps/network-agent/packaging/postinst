@@ -1,0 +1,22 @@
+#!/bin/sh
+set -eu
+if [ "$1" = configure ]; then
+    if ! getent group eblocker-network-agent >/dev/null; then
+        addgroup --system eblocker-network-agent
+    fi
+    if ! getent passwd eblocker-network-agent >/dev/null; then
+        adduser --system --ingroup eblocker-network-agent --no-create-home \
+            --home /nonexistent --shell /usr/sbin/nologin eblocker-network-agent
+    fi
+    if ! getent group eblocker-network-control >/dev/null; then
+        addgroup --system eblocker-network-control
+    fi
+    if ! getent passwd eblocker-network-control >/dev/null; then
+        adduser --system --ingroup eblocker-network-control --no-create-home \
+            --home /nonexistent --shell /usr/sbin/nologin eblocker-network-control
+    fi
+    if [ -d /run/systemd/system ]; then
+        systemctl daemon-reload
+    fi
+fi
+# Activation and the server restart are explicit deployment operations.

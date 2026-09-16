@@ -1,0 +1,19 @@
+source 'https://rubygems.org'
+
+# Specify your gem's dependencies in eBlockerDNS.gemspec
+gemspec
+
+gem 'async-dns', '~>1.0.2', :path => '../../../third_party/async-dns'
+#gem 'async-dns', :path => '../../async-dns'
+
+gem 'async-io', :path => '../../../third_party/async-io'
+#gem 'async-io', :path => '../../async-io'
+
+gem 'process-daemon', :path => '../../../third_party/process-daemon'
+gem 'eblocker-async-redis', '~>0.1.2', :path => '../redis-client'
+
+gem 'redis', '~>3.2'
+gem 'nio4r', '~>1.2.1'
+gem 'rbtree'
+gem 'timers', '~>4.1.2'
+gem 'hitimes', '< 1.3.1'

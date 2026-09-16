@@ -1,0 +1,398 @@
+/* SPDX-License-Identifier: EUPL-1.2 */
+.family-page {
+    color: #18312d;
+}
+.family-editor {
+    margin: 1.5rem 0;
+    border-color: #176b5b;
+    max-width: 58rem;
+}
+.family-editor h2 {
+    margin-top: 0;
+}
+.family-editor-fields {
+    border: 0;
+    padding: 0;
+    min-width: 0;
+    display: grid;
+    gap: 1rem;
+}
+.family-editor-fields fieldset {
+    border: 1px solid #dce6df;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0;
+    min-width: 0;
+    display: grid;
+    gap: 1rem;
+}
+.family-editor-fields legend {
+    font-weight: 650;
+    padding: 0 0.35rem;
+}
+.family-editor-fields label {
+    display: grid;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+.family-editor-fields input:not([type='checkbox']),
+.family-editor-fields select,
+.family-editor-fields textarea {
+    border: 1px solid #bdcec2;
+    border-radius: 0.35rem;
+    background: #fff;
+    color: #18312d;
+    padding: 0.7rem;
+    width: 100%;
+    box-sizing: border-box;
+    font: inherit;
+}
+.family-editor-fields textarea {
+    resize: vertical;
+}
+.family-editor-fields .family-check {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+.family-check input {
+    width: 1.15rem;
+    height: 1.15rem;
+    accent-color: #176b5b;
+    flex-shrink: 0;
+}
+.family-quota-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    gap: 1rem;
+}
+.family-editor .family-window {
+    background: #f7faf7;
+}
+.family-success {
+    padding: 1rem;
+    background: #eef8ef;
+    color: #176b5b;
+    border-radius: 0.5rem;
+}
+.family-page :focus-visible {
+    outline: 3px solid #176b5b;
+    outline-offset: 3px;
+}
+.family-page button:disabled {
+    cursor: default;
+    opacity: 0.55;
+}
+.family-heading {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.family-heading h1 {
+    margin: 0.4rem 0 0.65rem;
+    font-size: clamp(1.7rem, 3vw, 2.2rem);
+    letter-spacing: -0.035em;
+}
+.family-heading p,
+.family-muted {
+    color: #526761;
+    line-height: 1.6;
+}
+.family-page h2 {
+    font-size: 1.25rem;
+    margin: 2rem 0 1rem;
+}
+.family-page h3 {
+    font-size: 1.04rem;
+    margin: 0 0 0.7rem;
+    overflow-wrap: anywhere;
+}
+.family-page h4 {
+    font-size: 0.9rem;
+    margin: 1.1rem 0 0.7rem;
+}
+.family-page a {
+    color: #176b5b;
+    text-underline-offset: 0.2em;
+}
+.family-page a:hover {
+    color: #105545;
+}
+.family-link-button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    color: #176b5b;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    text-align: left;
+    font: inherit;
+    cursor: pointer;
+}
+.family-card {
+    background: #fff;
+    border: 1px solid #dce6df;
+    border-radius: 0.75rem;
+    padding: 1.3rem;
+}
+.family-card p {
+    font-size: 0.87rem;
+}
+.family-card > a {
+    display: inline-block;
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+}
+.family-user-grid,
+.family-filter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+    gap: 1rem;
+}
+.family-filter-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.family-profiles {
+    display: grid;
+    gap: 1rem;
+}
+.family-card-heading {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: start;
+}
+.family-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+.family-tags span {
+    background: #edf2f5;
+    color: #415d6b;
+    border-radius: 0.3rem;
+    padding: 0.25rem 0.45rem;
+    font-size: 0.72rem;
+}
+.family-fields {
+    display: grid;
+    gap: 0.8rem;
+    margin: 0.8rem 0;
+}
+.family-fields dt {
+    color: #526761;
+    font-size: 0.78rem;
+    margin-bottom: 0.35rem;
+}
+.family-fields dd {
+    margin: 0;
+    font-size: 0.88rem;
+}
+.family-inline-list {
+    display: flex;
+    gap: 0.5rem 1.2rem;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0.7rem 0;
+    list-style: none;
+    font-size: 0.85rem;
+}
+.family-profile-status {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+    background: #f3f7f3;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1.1rem 0;
+}
+.family-profile-status dt {
+    font-size: 0.78rem;
+    color: #526761;
+    margin-bottom: 0.4rem;
+}
+.family-profile-status dd {
+    margin: 0;
+    font-size: 0.86rem;
+    font-weight: 600;
+}
+.family-rules {
+    border-top: 1px solid #dce6df;
+    padding-top: 1rem;
+}
+.family-rules summary {
+    cursor: pointer;
+    color: #176b5b;
+    font-size: 0.9rem;
+    font-weight: 650;
+}
+.family-rule-columns {
+    display: grid;
+    grid-template-columns: minmax(10rem, 0.8fr) minmax(0, 1.2fr);
+    gap: 1.8rem;
+}
+.family-week {
+    margin: 0;
+    font-size: 0.83rem;
+}
+.family-week > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.45rem 0;
+    border-top: 1px solid #edf0ec;
+}
+.family-week dd {
+    margin: 0;
+    text-align: right;
+}
+.family-table-scroll {
+    overflow-x: auto;
+}
+.family-page table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    font-size: 0.83rem;
+}
+.family-page table th,
+.family-page table td {
+    padding: 0.7rem;
+    vertical-align: top;
+    border-bottom: 1px solid #dce6df;
+}
+.family-page table thead th {
+    color: #526761;
+    font-size: 0.76rem;
+}
+.family-page table tbody th {
+    font-weight: 600;
+}
+.family-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8rem 1.3rem;
+    margin: 1rem 0;
+    font-size: 0.86rem;
+}
+.family-primary,
+.family-secondary {
+    border: 1px solid #dce6df;
+    border-radius: 0.5rem;
+    padding: 0.7rem 0.9rem;
+    font: inherit;
+    font-size: 0.86rem;
+    cursor: pointer;
+    font-weight: 650;
+}
+.family-primary {
+    color: #fff;
+    background: #176b5b;
+    border-color: #176b5b;
+}
+.family-secondary {
+    color: #176b5b;
+    background: #fff;
+}
+.family-primary:hover:not(:disabled) {
+    background: #105545;
+}
+.family-secondary:hover:not(:disabled) {
+    background: #f3f7f3;
+}
+.family-page button:disabled {
+    opacity: 0.58;
+    cursor: not-allowed;
+}
+.family-page button:focus-visible,
+.family-page input:focus-visible,
+.family-page summary:focus-visible,
+.family-page a:focus-visible {
+    outline: 3px solid #176b5b;
+    outline-offset: 3px;
+}
+.family-empty,
+.family-error,
+.family-success,
+.family-warning {
+    padding: 0.8rem 1rem;
+    border-radius: 0.45rem;
+    font-size: 0.87rem;
+    line-height: 1.6;
+}
+.family-empty {
+    color: #526761;
+    background: #fff;
+    border: 1px solid #dce6df;
+}
+.family-error {
+    background: #fff0ee;
+    color: #8b2520;
+    margin-top: 1rem;
+}
+.family-success {
+    background: #e5f3e9;
+    color: #155c3e;
+}
+.family-warning {
+    background: #fcf0d8;
+    color: #805416;
+}
+.family-bonus-stored {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.family-bonus-form {
+    border: 1px solid #dce6df;
+    border-radius: 0.5rem;
+    background: #f7faf6;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.family-bonus-form label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 650;
+    margin-bottom: 0.6rem;
+}
+.family-bonus-form input {
+    width: 9rem;
+    max-width: 100%;
+    border: 1px solid #dce6df;
+    border-radius: 0.4rem;
+    padding: 0.65rem 0.8rem;
+    color: #18312d;
+    font: inherit;
+}
+.family-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+@media (max-width: 680px) {
+    .family-heading,
+    .family-card-heading {
+        flex-direction: column;
+    }
+    .family-rule-columns {
+        grid-template-columns: 1fr;
+        gap: 0.7rem;
+    }
+    .family-card {
+        padding: 1rem;
+    }
+    .family-profile-status {
+        grid-template-columns: 1fr;
+    }
+}

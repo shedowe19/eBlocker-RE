@@ -1,0 +1,325 @@
+{
+  "commit": "5d5fc03db7954e048159614c18aa8db6e4baf669",
+  "files": [
+    {
+      "path": ".gitignore",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 41,
+      "mode": "100644",
+      "git_blob": "0fc6066347ee9f6d1b987b32493f09dd0ad5ffe3",
+      "sha256": "3fc936bf0a5d44940397ab2bb31155ad1a6a33cbe97ca4f9432c6fbe2701373a"
+    },
+    {
+      "path": "LICENSE.md",
+      "module": "root",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 13948,
+      "mode": "100644",
+      "git_blob": "b605841ba34743006a82bf3df026d4528bfcd27f",
+      "sha256": "2017b48dfe8027238f8fd8457795d23c6a2385b70ee05de9cb29a33bf93c02e1"
+    },
+    {
+      "path": "Makefile",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 690,
+      "mode": "100644",
+      "git_blob": "7d8171ce60ceefd935acc9ee3a08fdc7f99e94a0",
+      "sha256": "0fce6561ca52a72da54ff3272051889ef4c91271fd0062dcc004549a5e289e91"
+    },
+    {
+      "path": "README.md",
+      "module": "root",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 1099,
+      "mode": "100644",
+      "git_blob": "2285fef2ace09a9a8596cfcd2483b4b8bb75a819",
+      "sha256": "efb4d61a6b39edc9c2c9eb1b9f8cb4d408f72e73fd7431598e817d5dd4dcf109"
+    },
+    {
+      "path": "configupdater.go",
+      "module": "root",
+      "language": "Go",
+      "role": "source",
+      "bytes": 14071,
+      "mode": "100644",
+      "git_blob": "71ce75769ca486bdb85301952c7f859c87277bd5",
+      "sha256": "147cb68cc80f90c768da1e352df768897250d982637f8204185c5e80ac80051d"
+    },
+    {
+      "path": "configupdater_test.go",
+      "module": "root",
+      "language": "Go",
+      "role": "source",
+      "bytes": 8558,
+      "mode": "100644",
+      "git_blob": "6159f8b92592a3ee870a83f9f1c03f26790eb3d4",
+      "sha256": "2f20a812f1ca27cc29f2e0d25c2e43675f92e865fc00d1ee037912645a130d20"
+    },
+    {
+      "path": "debian/changelog",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 586,
+      "mode": "100644",
+      "git_blob": "2170c7e7bd515eec7287128044810386e0db92a3",
+      "sha256": "f53c205442db9948c14c47e757e776b16f20c62b5fe1efa8c6c15eb73bd591d1"
+    },
+    {
+      "path": "debian/compat",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 3,
+      "mode": "100644",
+      "git_blob": "f599e28b8ab0d8c9c57a486c89c4a5132dcbd3b2",
+      "sha256": "917df3320d778ddbaa5c5c7742bc4046bf803c36ed2b050f30844ed206783469"
+    },
+    {
+      "path": "debian/control",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 396,
+      "mode": "100644",
+      "git_blob": "31571ae8c0e880174b4769d73c229b4610fa61bb",
+      "sha256": "efc7eb99612f48ad7fa0563fa2116c3e32bfbc6439af78871dbdb68c0ed9a3c2"
+    },
+    {
+      "path": "debian/eblocker-coredns.service",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 507,
+      "mode": "100644",
+      "git_blob": "1b3f308ee79e0d3b8459a081d3c511e6c29df0a3",
+      "sha256": "153d3babf5011ae3dba12dcf6b36717bb273ab6a2743b04c2c1fcb51f04c70f8"
+    },
+    {
+      "path": "debian/postinst",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 211,
+      "mode": "100755",
+      "git_blob": "a26ff0077f5f3a91507f61c761c46e648f3cff60",
+      "sha256": "68e350dbc770d30ef03567a1cce62a062e546154dfc4ee4b3afb38a1aff5bde0"
+    },
+    {
+      "path": "debian/preinst",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 165,
+      "mode": "100755",
+      "git_blob": "5fb1b314f431ec20b43ca0cbb2715fb90e8cf2f9",
+      "sha256": "5870dd36de675b4821370cab5e6e32314e462350a26071e985a11352871629b5"
+    },
+    {
+      "path": "debian/prerm",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 166,
+      "mode": "100755",
+      "git_blob": "6f8a9c879499087952ac0e6bb558905a04acbea5",
+      "sha256": "0f9dd391c381b6318cd7ab09157223337acd8bc965ccfb84b4eec1292734caae"
+    },
+    {
+      "path": "debian/rules",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 487,
+      "mode": "100755",
+      "git_blob": "770f23519bdac46206affced29c2978416e4bc3b",
+      "sha256": "77f135a7b3ad955da85bf49797d6a2cc9787fb1eafc13716cda34417bd247ed0"
+    },
+    {
+      "path": "domainfilter/README.md",
+      "module": "domainfilter",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 1796,
+      "mode": "100644",
+      "git_blob": "3336bdb74dfcea05422ce6342327e2c35eb194e4",
+      "sha256": "2d9c19a88c569f75394f16679257fe2952d1ba9a2dbeb718bcc8090abe88d2a5"
+    },
+    {
+      "path": "domainfilter/domainfilter.go",
+      "module": "domainfilter",
+      "language": "Go",
+      "role": "source",
+      "bytes": 6026,
+      "mode": "100644",
+      "git_blob": "b9023092110070d17220348437ac3b6f77563c9b",
+      "sha256": "32d0aea82544199f6b68610c21c921b8160f07f3c9f7607456ce6878b1e3b16a"
+    },
+    {
+      "path": "domainfilter/domainfilter_test.go",
+      "module": "domainfilter",
+      "language": "Go",
+      "role": "source",
+      "bytes": 7354,
+      "mode": "100644",
+      "git_blob": "8b4aa94a149adfec9e168abc252568f4d438a56f",
+      "sha256": "71ad8f913250497f97cd406e694cf974829eaa96e9367e45b43fb85f4ed879e2"
+    },
+    {
+      "path": "domainfilter/setup.go",
+      "module": "domainfilter",
+      "language": "Go",
+      "role": "source",
+      "bytes": 1605,
+      "mode": "100644",
+      "git_blob": "fbd60c94501bae10b675808b3d5bd5d3d8b075b4",
+      "sha256": "7155e45b9edd45105c7eccdec0a81c141dc5567d1eca0734d6434eaf5ecc90ca"
+    },
+    {
+      "path": "eblocker-coredns.go",
+      "module": "root",
+      "language": "Go",
+      "role": "source",
+      "bytes": 2105,
+      "mode": "100644",
+      "git_blob": "27c6a13c6fe887e69981daa5f16b6a5a0ca5afcd",
+      "sha256": "659ca1167e4b5d2ff43439c1c1d6c6849085e9d20da24fb3d2548352e97f2de7"
+    },
+    {
+      "path": "filterstats/README.md",
+      "module": "filterstats",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 1662,
+      "mode": "100644",
+      "git_blob": "09d7a867441a8e30ed46a4838318ef9777b93a82",
+      "sha256": "a040ecc23b43f76296d0081c2530df6e5acc0de4855a3245230ff65ef06b7941"
+    },
+    {
+      "path": "filterstats/filterstats.go",
+      "module": "filterstats",
+      "language": "Go",
+      "role": "source",
+      "bytes": 5205,
+      "mode": "100644",
+      "git_blob": "305b8ef37c1527746498748acec3b091a3f5aac5",
+      "sha256": "15cd710ea3172d8fa94e279df693812136fe259e6ca247eab1b049dab6e407c6"
+    },
+    {
+      "path": "filterstats/filterstats_test.go",
+      "module": "filterstats",
+      "language": "Go",
+      "role": "source",
+      "bytes": 6140,
+      "mode": "100644",
+      "git_blob": "6947440e0437efd772118e70f871d202a931e30d",
+      "sha256": "1d57912f87e627d0edd50601028cb9e7751617497726a52415b74bf70c4caa1c"
+    },
+    {
+      "path": "filterstats/setup.go",
+      "module": "filterstats",
+      "language": "Go",
+      "role": "source",
+      "bytes": 1287,
+      "mode": "100644",
+      "git_blob": "55920fff4e54f4244d39289569b037f68cfb2332",
+      "sha256": "258849f8c60b68bb96de3e0a594db8d603e887c4ff0bacc68926d69d247226aa"
+    },
+    {
+      "path": "go.mod",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 1920,
+      "mode": "100644",
+      "git_blob": "ca3a133353036b75f8044af76dbf57732d8fcd4e",
+      "sha256": "586a1d63b5d3fe4e64b2ed7ff067a3bb78196f1626e16821121f90feda36180a"
+    },
+    {
+      "path": "go.sum",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 12293,
+      "mode": "100644",
+      "git_blob": "f1a91947965660f568bc227535565039642173f5",
+      "sha256": "bf33ae39a174ae04dd04134152eafeaafe85893538d41ccc4df07feca305312c"
+    },
+    {
+      "path": "resolverstats/README.md",
+      "module": "resolverstats",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 1815,
+      "mode": "100644",
+      "git_blob": "e65981e396a5ff4f78865f6658f43c8b19c8a7b7",
+      "sha256": "4eee6a7565aa677d702c3117f70910c43a27804ff983554a9f96a206520c4109"
+    },
+    {
+      "path": "resolverstats/resolverstats.go",
+      "module": "resolverstats",
+      "language": "Go",
+      "role": "source",
+      "bytes": 5318,
+      "mode": "100644",
+      "git_blob": "a98793a600557b65cc1df9e0f7c7648abe023aa9",
+      "sha256": "582194765a4b687a5288847a6b37dcb8418b74bf209d40e71ec551497cb7bb48"
+    },
+    {
+      "path": "resolverstats/resolverstats_test.go",
+      "module": "resolverstats",
+      "language": "Go",
+      "role": "source",
+      "bytes": 4899,
+      "mode": "100644",
+      "git_blob": "7da0925e837bd7fc7c75590aa5700ff75f0fdec6",
+      "sha256": "51de50e375fdc2bad9583dd0b33cd65daaee615933d656dd0ae62e42f2313bd4"
+    },
+    {
+      "path": "resolverstats/setup.go",
+      "module": "resolverstats",
+      "language": "Go",
+      "role": "source",
+      "bytes": 1494,
+      "mode": "100644",
+      "git_blob": "b6cf920761fecaa730355909ceeed457242f3f03",
+      "sha256": "eee0019cfbc518b019049aecd879056ea033760b1a5561538c01fc3e2edeb07e"
+    },
+    {
+      "path": "testdata/Corefile",
+      "module": "testdata",
+      "language": "other",
+      "role": "source",
+      "bytes": 1041,
+      "mode": "100644",
+      "git_blob": "f60dd5b279f69485af2228bc0269a6ea87d6c0ce",
+      "sha256": "ba53edbeef46d49d643f2d3d9f3f697998d6bbecefcc7d30d8c3b416d510d61d"
+    },
+    {
+      "path": "testdata/Corefile-default",
+      "module": "testdata",
+      "language": "other",
+      "role": "source",
+      "bytes": 226,
+      "mode": "100644",
+      "git_blob": "bde8b362f485e3728ab2b8b27ddba1cb13752b57",
+      "sha256": "b233eb93a4643c65a78c31f689629399f2c05268454f532479cd1f4e4e1a5ab2"
+    },
+    {
+      "path": "testdata/DnsServerConfig.json",
+      "module": "testdata",
+      "language": "JSON",
+      "role": "source",
+      "bytes": 2507,
+      "mode": "100644",
+      "git_blob": "f8f07e635785655fe66fb2e1b6ca77f468545165",
+      "sha256": "43f400cb12939c9e839d3084d83528c56d62cd7f1d2486aeb2124ccd207e6783"
+    }
+  ]
+}

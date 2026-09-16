@@ -1,0 +1,5851 @@
+[
+  {
+    "kind": "uri",
+    "path": "/summary/whitelist/config",
+    "controller": "FilterController",
+    "steps": [
+      [
+        "action",
+        "getConfig",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.filter.config.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/summary/whitelist/config",
+    "controller": "FilterController",
+    "steps": [
+      [
+        "action",
+        "putConfig",
+        "PUT"
+      ],
+      [
+        "name",
+        "dashboard.filter.save.config.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/devices",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "getAllDevices",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.devices.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/device/icon",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "getIconSettings",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.icon.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/device/icon",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "resetIconSettings",
+        "DELETE"
+      ],
+      [
+        "name",
+        "dashboard.icon.reset.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/device/icon",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "setIconSettings",
+        "POST"
+      ],
+      [
+        "name",
+        "dashboard.icon.set.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/device/iconpos/{iconPos}",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "setIconPosition",
+        "POST"
+      ],
+      [
+        "name",
+        "public.icon.position.set.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/redirect/{decision}/{uuid}",
+    "controller": "RedirectController",
+    "steps": [
+      [
+        "method",
+        "GET"
+      ],
+      [
+        "name",
+        "public.redirect.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/redirect/{decision}/{uuid}",
+    "controller": "RedirectController",
+    "steps": [
+      [
+        "method",
+        "PUT"
+      ],
+      [
+        "name",
+        "public.redirect.store.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/redirect-delete/{domain}",
+    "controller": "RedirectController",
+    "steps": [
+      [
+        "action",
+        "delete",
+        "GET"
+      ],
+      [
+        "name",
+        "public.redirect.delete.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/redirect/prepare",
+    "controller": "RedirectController",
+    "steps": [
+      [
+        "action",
+        "prepare",
+        "GET"
+      ],
+      [
+        "name",
+        "public.redirect.prepare.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/network/setupPageInfo",
+    "controller": "NetworkController",
+    "steps": [
+      [
+        "action",
+        "getSetupPageInfo",
+        "GET"
+      ],
+      [
+        "name",
+        "public.network.config.setuppage.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/squiderror/searchEngineConfig",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "getSearchEngineConfiguration",
+        "GET"
+      ],
+      [
+        "name",
+        "errorpage.parentalcontrol.searchEngine.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/summary/whitelist/all",
+    "controller": "DomainWhiteListController",
+    "steps": [
+      [
+        "action",
+        "getWhitelist",
+        "GET"
+      ],
+      [
+        "name",
+        "public.whitelist.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/summary/whitelist/all",
+    "controller": "DomainWhiteListController",
+    "steps": [
+      [
+        "action",
+        "setWhitelist",
+        "PUT"
+      ],
+      [
+        "name",
+        "public.whitelist.set.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/summary/whitelist/update",
+    "controller": "DomainWhiteListController",
+    "steps": [
+      [
+        "action",
+        "updateWhitelistEntry",
+        "PUT"
+      ],
+      [
+        "name",
+        "public.whitelist.update.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/registration",
+    "controller": "DeviceRegistrationController",
+    "steps": [
+      [
+        "action",
+        "registrationStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "public.registration.status.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/ssl/caCertificate.crt",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "getCACertificateByteStream",
+        "GET"
+      ],
+      [
+        "noSerialization"
+      ],
+      [
+        "name",
+        "public.ssl.root.ca.download.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/ssl/firefox/caCertificate.crt",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "getCACertificateByteStreamForFirefox",
+        "GET"
+      ],
+      [
+        "noSerialization"
+      ],
+      [
+        "name",
+        "public.ssl.root.ca.download.firefox.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/ssl/firefox/renewalCertificate.crt",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "getRenewalCertificateByteStreamForFirefox",
+        "GET"
+      ],
+      [
+        "noSerialization"
+      ],
+      [
+        "name",
+        "public.ssl.renewal.download.firefox.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/ssl/renewalCertificate.crt",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "getRenewalCertificateByteStream",
+        "GET"
+      ],
+      [
+        "noSerialization"
+      ],
+      [
+        "name",
+        "public.ssl.root.renewal.download.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/ssl/status",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "getSSLState",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.ssl.status.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/ssl/whitelist",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "addUrlToSSLWhitelist",
+        "POST"
+      ],
+      [
+        "name",
+        "errorpageExclusive.whitelist.set.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/ssl/test/{serialNumber}",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "markCertificateStatus",
+        "POST"
+      ],
+      [
+        "name",
+        "public.ssl.root.ca.test"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/ssl/device/status",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "setDeviceStatus",
+        "POST"
+      ],
+      [
+        "name",
+        "dashboard.sll.device.status.post"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/ssl/status",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "getSslDashboardStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.ssl.status.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/ssl/errors",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "getFailedConnections",
+        "GET"
+      ],
+      [
+        "name",
+        "ssl.failed.connections.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/ssl/errors",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "clearFailedConnections",
+        "DELETE"
+      ],
+      [
+        "name",
+        "ssl.failed.connections.delete"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/ssl/errors/recording",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "getErrorRecordingEnabled",
+        "GET"
+      ],
+      [
+        "name",
+        "ssl.error.recording.enabled.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/ssl/errors/recording",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "setErrorRecordingEnabled",
+        "PUT"
+      ],
+      [
+        "name",
+        "ssl.error.recording.enabled.set"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/localtimestamp",
+    "controller": "TimestampController",
+    "steps": [
+      [
+        "action",
+        "getLocalTimestamp",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.timestamp.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/messages",
+    "controller": "MessageCenterController",
+    "steps": [
+      [
+        "action",
+        "getMessages",
+        "GET"
+      ],
+      [
+        "name",
+        "public.messages.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/messages/count",
+    "controller": "MessageCenterController",
+    "steps": [
+      [
+        "action",
+        "getNumberOfMessages",
+        "GET"
+      ],
+      [
+        "name",
+        "public.messages.count.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/icon/state",
+    "controller": "ControlBarController",
+    "steps": [
+      [
+        "action",
+        "getIconState",
+        "GET"
+      ],
+      [
+        "name",
+        "public.messages.iconState.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/messages/action",
+    "controller": "MessageCenterController",
+    "steps": [
+      [
+        "action",
+        "executeMessageAction",
+        "POST"
+      ],
+      [
+        "name",
+        "public.messages.action.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/messages/hide",
+    "controller": "MessageCenterController",
+    "steps": [
+      [
+        "action",
+        "hideMessage",
+        "POST"
+      ],
+      [
+        "name",
+        "public.messages.hide.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/messages/donotshowagain",
+    "controller": "MessageCenterController",
+    "steps": [
+      [
+        "action",
+        "setDoNotShowAgain",
+        "PUT"
+      ],
+      [
+        "name",
+        "public.messages.donotshowagain.put.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/anonymous/vpn/profiles",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "getProfiles",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.vpn.profiles.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/anonymous/vpn/profiles/status/{device}",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "getVpnStatusByDevice",
+        "GET"
+      ],
+      [
+        "name",
+        "errorpage.vpn.profiles.get.status.device"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/anonymous/vpn/profile/{id}/status",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "getVpnStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.vpn.profile.get.status"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/anonymous/vpn/profile/{id}/status/{device}",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "setVpnDeviceStatus",
+        "PUT"
+      ],
+      [
+        "name",
+        "controlbar.vpn.profile.status.device.set"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/anonymous/vpn/profile/{id}/status-this",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "setVpnThisDeviceStatus",
+        "PUT"
+      ],
+      [
+        "name",
+        "errorpageExclusive.vpn.profile.status.device.set"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/filter/badge/{pageContextId}",
+    "controller": "FilterController",
+    "steps": [
+      [
+        "action",
+        "getBadge",
+        "GET"
+      ],
+      [
+        "name",
+        "public.filter.badge.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/controlbar/console/ip",
+    "controller": "ControlBarController",
+    "steps": [
+      [
+        "action",
+        "getConsoleIp",
+        "GET"
+      ],
+      [
+        "name",
+        "public.controlbar.console.ip.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/controlbar/deviceRestrictions",
+    "controller": "ControlBarController",
+    "steps": [
+      [
+        "action",
+        "getDeviceRestrictions",
+        "GET"
+      ],
+      [
+        "name",
+        "public.controlbar.device.restrictions.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/filter/stats/{pageContextId}",
+    "controller": "FilterController",
+    "steps": [
+      [
+        "action",
+        "getStats",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.filter.getStats.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/filter/config",
+    "controller": "FilterController",
+    "steps": [
+      [
+        "action",
+        "getConfig",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.filter.getConfig.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/filter/config",
+    "controller": "FilterController",
+    "steps": [
+      [
+        "action",
+        "putConfig",
+        "PUT"
+      ],
+      [
+        "name",
+        "controlbar.filter.putConfig.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/filter/blockedAds/{pageContextId}",
+    "controller": "FilterController",
+    "steps": [
+      [
+        "action",
+        "getBlockedAdsSet",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.filter.getBlockedAdsSet.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/whitelist/{pageContextId}",
+    "controller": "DomainWhiteListController",
+    "steps": [
+      [
+        "action",
+        "getDomainStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.whitelist.getDomainStatus.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/whitelist/{pageContextId}",
+    "controller": "DomainWhiteListController",
+    "steps": [
+      [
+        "method",
+        "PUT"
+      ],
+      [
+        "name",
+        "controlbar.whitelist.save.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/filter/blockedTrackings/{pageContextId}",
+    "controller": "FilterController",
+    "steps": [
+      [
+        "action",
+        "getBlockedTrackingsSet",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.filter.getBlockedTrackingsSet.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/controlbar/device",
+    "controller": "ControlBarController",
+    "steps": [
+      [
+        "action",
+        "getDevice",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.device.getDevice.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/controlbar/device/ads/{deviceId}",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "updateDeviceDnsAdsEnabledStatus",
+        "PUT"
+      ],
+      [
+        "name",
+        "controlbar.device.dns.ads.update"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/controlbar/device/trackers/{deviceId}",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "updateDeviceDnsTrackersEnabledStatus",
+        "PUT"
+      ],
+      [
+        "name",
+        "controlbar.device.dns.trackers.update"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/controlbar/users",
+    "controller": "ControlBarController",
+    "steps": [
+      [
+        "action",
+        "getUsers",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.users.getUsers.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/controlbar/users/operatinguser",
+    "controller": "ControlBarController",
+    "steps": [
+      [
+        "action",
+        "setOperatingUser",
+        "PUT"
+      ],
+      [
+        "name",
+        "controlbar.users.setOperatingUser.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/controlbar/users/{id}/changepin",
+    "controller": "UserController",
+    "steps": [
+      [
+        "action",
+        "changePin",
+        "POST"
+      ],
+      [
+        "name",
+        "controlbar.users.changePin.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/controlbar/console/ip",
+    "controller": "ControlBarController",
+    "steps": [
+      [
+        "action",
+        "getConsoleIp",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.console.getConsoleIp.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/controlbar/registration",
+    "controller": "DeviceRegistrationController",
+    "steps": [
+      [
+        "action",
+        "registrationStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.registration.status.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/vpn/profiles",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "getProfiles",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.vpn.getProfiles.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/vpn/profiles/{id}/status",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "getVpnStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.vpn.getVpnStatus.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/vpn/profiles/status/{device}",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "getVpnStatusByDevice",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.vpn.getVpnStatusByDevice.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/vpn/profiles/{id}/status/{device}",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "setVpnDeviceStatus",
+        "PUT"
+      ],
+      [
+        "name",
+        "controlbar.vpn.setVpnDeviceStatus.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/tor/config",
+    "controller": "AnonymousController",
+    "steps": [
+      [
+        "action",
+        "getConfig",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.tor.getConfig.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/tor/config",
+    "controller": "AnonymousController",
+    "steps": [
+      [
+        "action",
+        "putConfig",
+        "PUT"
+      ],
+      [
+        "name",
+        "controlbar.tor.putConfig.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/tor/device/showwarnings",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "getShowWarnings",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.tor.device.getShowWarnings.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/tor/device/showwarnings",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "postShowWarnings",
+        "POST"
+      ],
+      [
+        "name",
+        "controlbar.tor.device.postShowWarnings.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/tor/newidentity",
+    "controller": "AnonymousController",
+    "steps": [
+      [
+        "action",
+        "getNewTorIdentity",
+        "PUT"
+      ],
+      [
+        "name",
+        "controlbar.tor.getNewTorIdentity.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/useragent/list",
+    "controller": "UserAgentController",
+    "steps": [
+      [
+        "action",
+        "getAgentList",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.useragent.getAgentList.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/useragent/cloaked",
+    "controller": "UserAgentController",
+    "steps": [
+      [
+        "action",
+        "getCloakedUserAgentByDeviceId",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.useragent.getCloakedUserAgentByDeviceId.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/useragent/cloaked",
+    "controller": "UserAgentController",
+    "steps": [
+      [
+        "action",
+        "setCloakedUserAgentByDeviceId",
+        "PUT"
+      ],
+      [
+        "name",
+        "controlbar.useragent.setCloakedUserAgentByDeviceId.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/device/pauseStatus",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "getPauseCurrentDevice",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.device.get.pausestatus"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/device/pause",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "pauseCurrentDeviceIfNotYetPausing",
+        "POST"
+      ],
+      [
+        "name",
+        "controlbar.device.get.pause"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/device/dialogStatus",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "getPauseDialogStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.device.getPauseDialogStatus.pause"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/device/dialogStatus",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "updatePauseDialogStatus",
+        "POST"
+      ],
+      [
+        "name",
+        "controlbar.device.updatePauseDialogStatus.pause"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/device/dialogStatusDoNotShowAgain",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "getPauseDialogStatusDoNotShowAgain",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.device.getPauseDialogStatusShowAgain.pause"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/device/dialogStatusDoNotShowAgain",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "updatePauseDialogStatusDoNotShowAgain",
+        "POST"
+      ],
+      [
+        "name",
+        "controlbar.device.updatePauseDialogStatusDoNotShowAgain.pause"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/messages/action",
+    "controller": "MessageCenterController",
+    "steps": [
+      [
+        "action",
+        "executeMessageAction",
+        "POST"
+      ],
+      [
+        "name",
+        "controlbar.messages.action.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/messages/hide",
+    "controller": "MessageCenterController",
+    "steps": [
+      [
+        "action",
+        "hideMessage",
+        "POST"
+      ],
+      [
+        "name",
+        "controlbar.messages.hide.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/messages",
+    "controller": "MessageCenterController",
+    "steps": [
+      [
+        "action",
+        "getMessages",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.messages.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/messages/donotshowagain",
+    "controller": "MessageCenterController",
+    "steps": [
+      [
+        "action",
+        "setDoNotShowAgain",
+        "PUT"
+      ],
+      [
+        "name",
+        "controlbar.messages.donotshowagain.put.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/controlbar/localtimestamp",
+    "controller": "TimestampController",
+    "steps": [
+      [
+        "action",
+        "getLocalTimestamp",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.timestamp.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/controlbar/parentalcontrol/usage",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "startUsage",
+        "POST"
+      ],
+      [
+        "name",
+        "controlbar.parentalcontrol.usage.start"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/controlbar/parentalcontrol/usage",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "stopUsage",
+        "DELETE"
+      ],
+      [
+        "name",
+        "controlbar.parentalcontrol.usage.stop"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/controlbar/parentalcontrol/usage",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "getUsage",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.parentalcontrol.usage"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/controlbar/stats/filter",
+    "controller": "FilterStatisticsController",
+    "steps": [
+      [
+        "action",
+        "getStats",
+        "GET"
+      ],
+      [
+        "name",
+        "public.controlbar.stats.filter.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/filter/meta",
+    "controller": "ParentalControlFilterListsController",
+    "steps": [
+      [
+        "action",
+        "getFilterMetaData",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.filterlists.metadata.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/controlbar/ssl/status",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "getSslDashboardStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "controlbar.ssl.status.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/settings",
+    "controller": "SettingsController",
+    "steps": [
+      [
+        "action",
+        "getLocaleSettings",
+        "GET"
+      ],
+      [
+        "name",
+        "public.locale.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/settings",
+    "controller": "SettingsController",
+    "steps": [
+      [
+        "action",
+        "setLocale",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.locale.put.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/systemstatus/shutdown",
+    "controller": "SystemStatusController",
+    "steps": [
+      [
+        "action",
+        "shutdown",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.systemstatus.shutdown"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/systemstatus/reboot",
+    "controller": "SystemStatusController",
+    "steps": [
+      [
+        "action",
+        "reboot",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.systemstatus.reboot"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/systemstatus",
+    "controller": "SystemStatusController",
+    "steps": [
+      [
+        "action",
+        "get",
+        "GET"
+      ],
+      [
+        "name",
+        "public.adminconsole.systemstatus.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/systemstatus/shutdown/onerror",
+    "controller": "SystemStatusController",
+    "steps": [
+      [
+        "action",
+        "shutdownOnError",
+        "POST"
+      ],
+      [
+        "name",
+        "public.adminconsole.systemstatus.shutdown"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/systemstatus/reboot/onerror",
+    "controller": "SystemStatusController",
+    "steps": [
+      [
+        "action",
+        "rebootOnError",
+        "POST"
+      ],
+      [
+        "name",
+        "public.adminconsole.systemstatus.reboot"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/authentication/token/{appContext}",
+    "controller": "AuthenticationController",
+    "steps": [
+      [
+        "action",
+        "generateConsoleToken",
+        "GET"
+      ],
+      [
+        "name",
+        "public.token.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/authentication/login/{appContext}",
+    "controller": "AuthenticationController",
+    "steps": [
+      [
+        "action",
+        "login",
+        "POST"
+      ],
+      [
+        "name",
+        "public.console.authentication.login.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/authentication/renew/{appContext}",
+    "controller": "AuthenticationController",
+    "steps": [
+      [
+        "action",
+        "renewToken",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.authentication.renew.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/authentication/enable",
+    "controller": "AuthenticationController",
+    "steps": [
+      [
+        "action",
+        "enable",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.authentication.enable.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/authentication/disable",
+    "controller": "AuthenticationController",
+    "steps": [
+      [
+        "action",
+        "disable",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.authentication.disable.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/authentication/initiateReset",
+    "controller": "AuthenticationController",
+    "steps": [
+      [
+        "action",
+        "initiateReset",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.authentication.initiateReset.route"
+      ],
+      [
+        "flag",
+        "NO_AUTHENTICATION_REQUIRED"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/authentication/executeReset",
+    "controller": "AuthenticationController",
+    "steps": [
+      [
+        "action",
+        "executeReset",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.authentication.executeReset.route"
+      ],
+      [
+        "flag",
+        "NO_AUTHENTICATION_REQUIRED"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/authentication/cancelReset",
+    "controller": "AuthenticationController",
+    "steps": [
+      [
+        "action",
+        "cancelReset",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.authentication.cancelReset.route"
+      ],
+      [
+        "flag",
+        "NO_AUTHENTICATION_REQUIRED"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/authentication/wait",
+    "controller": "AuthenticationController",
+    "steps": [
+      [
+        "action",
+        "passwordEntryInSeconds",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.authentication.wait.route"
+      ],
+      [
+        "flag",
+        "NO_AUTHENTICATION_REQUIRED"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/registration",
+    "controller": "DeviceRegistrationController",
+    "steps": [
+      [
+        "action",
+        "registrationStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.registration.status.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/tos",
+    "controller": "TosController",
+    "steps": [
+      [
+        "action",
+        "getTos",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.license.get.tos.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/registration",
+    "controller": "DeviceRegistrationController",
+    "steps": [
+      [
+        "action",
+        "register",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.registration.register.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/registration",
+    "controller": "DeviceRegistrationController",
+    "steps": [
+      [
+        "action",
+        "resetRegistration",
+        "DELETE"
+      ],
+      [
+        "name",
+        "adminconsole.registration.reset.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/upsellInfo/{feature}",
+    "controller": "ProductMigrationController",
+    "steps": [
+      [
+        "action",
+        "getUpsellInfo",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.productmigration.getUpsellInfo"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/setup/info",
+    "controller": "SetupWizardController",
+    "steps": [
+      [
+        "action",
+        "getInfo",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.setup.info.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/updates/status",
+    "controller": "UpdateController",
+    "steps": [
+      [
+        "action",
+        "getUpdatingStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.updates.status.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/updates/autoupdate",
+    "controller": "UpdateController",
+    "steps": [
+      [
+        "action",
+        "getAutoUpdateInformation",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.updates.autoupdate.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/updates/automaticUpdatesStatus",
+    "controller": "UpdateController",
+    "steps": [
+      [
+        "action",
+        "setAutomaticUpdatesStatus",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.updates.autoupdate.set.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/updates/status",
+    "controller": "UpdateController",
+    "steps": [
+      [
+        "action",
+        "setUpdatingStatus",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.updates.status.set.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/updates/check",
+    "controller": "UpdateController",
+    "steps": [
+      [
+        "action",
+        "getUpdatesCheckStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.updates.check.set.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/updates/automaticUpdatesConfig",
+    "controller": "UpdateController",
+    "steps": [
+      [
+        "action",
+        "setAutomaticUpdatesConfig",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.updates.autoupdate.config.set.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/users",
+    "controller": "UserController",
+    "steps": [
+      [
+        "action",
+        "getUsers",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.get.users.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/users",
+    "controller": "UserController",
+    "steps": [
+      [
+        "action",
+        "createUser",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.parentalcontrol.store.user.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/users",
+    "controller": "UserController",
+    "steps": [
+      [
+        "action",
+        "updateUser",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.parentalcontrol.put.user.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/users/dashboard/update/{id}",
+    "controller": "UserController",
+    "steps": [
+      [
+        "action",
+        "updateUserDashboardView",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.parentalcontrol.update.user.dashboard.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/users/dashboard/updateall",
+    "controller": "UserController",
+    "steps": [
+      [
+        "action",
+        "updateDashboardViewOfAllDefaultSystemUsers",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.parentalcontrol.update.all.dashboard.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/users/{id}",
+    "controller": "UserController",
+    "steps": [
+      [
+        "action",
+        "deleteUser",
+        "DELETE"
+      ],
+      [
+        "name",
+        "adminconsole.parentalcontrol.delete.user.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/users/all",
+    "controller": "UserController",
+    "steps": [
+      [
+        "action",
+        "deleteAllUsers",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.parentalcontrol.delete.all.user.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/users/unique",
+    "controller": "UserController",
+    "steps": [
+      [
+        "action",
+        "isUnique",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.parentalcontrol.user.unique.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/users/{id}/pin",
+    "controller": "UserController",
+    "steps": [
+      [
+        "action",
+        "setPin",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.parentalcontrol.user.set.pin.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/users/{id}/pin",
+    "controller": "UserController",
+    "steps": [
+      [
+        "action",
+        "resetPin",
+        "DELETE"
+      ],
+      [
+        "name",
+        "adminconsole.parentalcontrol.user.reset.pin.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/userprofiles",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "storeNewProfile",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.store.profile.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/userprofiles",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "getProfiles",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.parentalcontrol.get.profiles.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/userprofiles",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "updateProfile",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.put.profile.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/userprofiles/{id}",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "deleteProfile",
+        "DELETE"
+      ],
+      [
+        "name",
+        "adminconsole.delete.profile.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/userprofiles/all",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "deleteAllProfiles",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.delete.all.profile.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/userprofile/bonustime/{id}",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "addOnlineTimeForToday",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.userprofile.set.bonustime.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/userprofile/bonustime/{id}",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "resetBonusTimeForToday",
+        "DELETE"
+      ],
+      [
+        "name",
+        "adminconsole.userprofile.delete.bonustime.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/devices",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "getAllDevices",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.devices.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/devices/scan",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "isScanningAvailable",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.devices.scan.available.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/devices/scan",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "scanDevices",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.devices.scan.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/devices/scanningInterval",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "getScanningInterval",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.devices.get.scanning.interval"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/devices/scanningInterval",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "setScanningInterval",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.devices.set.scanning.interval"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/devices/autoEnableNewDevices",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "isAutoEnableNewDevices",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.devices.get.auto.enable.new.devices"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/devices/autoEnableNewDevices",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "setAutoEnableNewDevices",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.devices.set.auto.enable.new.devices"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/devices/autoEnableNewDevicesAfterActivation",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "setAutoEnableNewDevicesAndResetExisting",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.devices.set.auto.enable.new.devices.after.activation"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/devices/{deviceId}",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "getDeviceById",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.device.get.by.id.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/devices/{deviceId}",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "updateDevice",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.devices.update.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/devices/{deviceId}",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "deleteDevice",
+        "DELETE"
+      ],
+      [
+        "name",
+        "adminconsole.devices.delete.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/devices/reset/{deviceId}",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "resetDevice",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.devices.reset.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/ssl/status",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "getSSLState",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.ssl.status.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/ata/status",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "setAutoTrustAppState",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.ssl.ata.status.set.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/ata/status",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "getAutoTrustAppState",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.ssl.ata.status.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/ssl/status",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "setSSLState",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.ssl.status.set.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/ssl/status/renewal",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "getSslDashboardStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.ssl.status.renewal.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/ssl/rootca",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "createNewRootCA",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.ssl.root.ca.set.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/ssl/rootca",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "getRootCaCertificate",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.ssl.root.ca.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/ssl/rootca/options",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "getDefaultCaOptions",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.ssl.root.ca.options"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/ssl/certs/status",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "areCertificatesReady",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.ssl.certs.status.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/ssl/whitelist",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "addUrlToSSLWhitelist",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.whitelist.set.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/ssl/errors",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "getFailedConnections",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.failed.connections.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/ssl/errors",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "clearFailedConnections",
+        "DELETE"
+      ],
+      [
+        "name",
+        "adminconsole.failed.connections.delete"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/ssl/errors/recording",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "getErrorRecordingEnabled",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.error.recording.enabled.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/ssl/errors/recording",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "setErrorRecordingEnabled",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.error.recording.enabled.set"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/trustedapps/id",
+    "controller": "AppWhitelistModuleController",
+    "steps": [
+      [
+        "action",
+        "create",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.app.modules.post.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/trustedapps/id/{id}",
+    "controller": "AppWhitelistModuleController",
+    "steps": [
+      [
+        "action",
+        "read",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.app.modules.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/trustedapps/id/{id}",
+    "controller": "AppWhitelistModuleController",
+    "steps": [
+      [
+        "action",
+        "update",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.app.modules.put.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/trustedapps/id/{id}",
+    "controller": "AppWhitelistModuleController",
+    "steps": [
+      [
+        "action",
+        "delete",
+        "DELETE"
+      ],
+      [
+        "name",
+        "adminconsole.app.modules.delete.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/trustedapps/all",
+    "controller": "AppWhitelistModuleController",
+    "steps": [
+      [
+        "action",
+        "getAppWhitelistModules",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.app.modules.getall.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/trustedapps/enable",
+    "controller": "AppWhitelistModuleController",
+    "steps": [
+      [
+        "action",
+        "enableAppWhitelistModule",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.app.modules.enable.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/trustedapps/unique",
+    "controller": "AppWhitelistModuleController",
+    "steps": [
+      [
+        "action",
+        "isUnique",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.app.modules.get.unique.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/trusteddomains/onlyenabled",
+    "controller": "AppWhitelistModuleController",
+    "steps": [
+      [
+        "action",
+        "getOnlyEnabledAppWhitelistModules",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.app.modules.get.enabled.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/trusteddomains/delete",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "removeWhitelistedUrl",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.ssl.whitelist.delete.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/trusteddomains/deleteall",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "removeAllWhitelistedUrl",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.ssl.whitelist.delete.all.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/dns/config/resolvers",
+    "controller": "DnsController",
+    "steps": [
+      [
+        "action",
+        "getDnsResolvers",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.dns.config.resolvers.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/dns/config/resolvers",
+    "controller": "DnsController",
+    "steps": [
+      [
+        "action",
+        "setDnsResolvers",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.dns.config.resolvers.set"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/dns/config/records",
+    "controller": "DnsController",
+    "steps": [
+      [
+        "action",
+        "getLocalDnsRecords",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.dns.config.records.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/dns/config/records",
+    "controller": "DnsController",
+    "steps": [
+      [
+        "action",
+        "setLocalDnsRecords",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.dns.config.records.set"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/dns/cache",
+    "controller": "DnsController",
+    "steps": [
+      [
+        "action",
+        "flushCache",
+        "DELETE"
+      ],
+      [
+        "name",
+        "adminconsole.dns.cache.flush"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/dns/status",
+    "controller": "DnsController",
+    "steps": [
+      [
+        "action",
+        "getStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.dns.status.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/dns/status",
+    "controller": "DnsController",
+    "steps": [
+      [
+        "action",
+        "setStatus",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.dns.status.set"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/dns/stats",
+    "controller": "DnsController",
+    "steps": [
+      [
+        "action",
+        "getResolverStats",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.dns.resolver.stats.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/webrtc",
+    "controller": "AnonymousController",
+    "steps": [
+      [
+        "action",
+        "setWebRTCBlockingState",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.anonymous.webrtc.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/webrtc",
+    "controller": "AnonymousController",
+    "steps": [
+      [
+        "action",
+        "isWebRTCBlockingEnabled",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.anonymous.webrtc.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/referrer",
+    "controller": "AnonymousController",
+    "steps": [
+      [
+        "action",
+        "setHTTPRefererRemovingState",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.anonymous.referrer.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/referrer",
+    "controller": "AnonymousController",
+    "steps": [
+      [
+        "action",
+        "isHTTPRefererRemovingEnabled",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.anonymous.referrer.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/captiveportal",
+    "controller": "AnonymousController",
+    "steps": [
+      [
+        "action",
+        "setGoogleCaptivePortalRedirectState",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.anonymous.captiveportal.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/captiveportal",
+    "controller": "AnonymousController",
+    "steps": [
+      [
+        "action",
+        "getGoogleCaptivePortalRedirectState",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.controlbar.anonymous.captiveportal.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/dnt",
+    "controller": "AnonymousController",
+    "steps": [
+      [
+        "action",
+        "getDntHeaderState",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.anonymous.dntheader.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/dnt",
+    "controller": "AnonymousController",
+    "steps": [
+      [
+        "action",
+        "setDntHeaderState",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.anonymous.dntheader.set.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/compressionmode",
+    "controller": "FeatureController",
+    "steps": [
+      [
+        "action",
+        "getCompressionMode",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.features.compressionmode"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/compressionmode",
+    "controller": "FeatureController",
+    "steps": [
+      [
+        "action",
+        "setCompressionMode",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.features.compressionmode"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/language",
+    "controller": "LanguageController",
+    "steps": [
+      [
+        "action",
+        "setLanguage",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.language.set.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/timezone/continents",
+    "controller": "TimezoneController",
+    "steps": [
+      [
+        "action",
+        "getTimezoneCategories",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.timezone.continents.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/timezone/continent/countries",
+    "controller": "TimezoneController",
+    "steps": [
+      [
+        "action",
+        "getTimeZoneStringsForCategory",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.timezone.continents.put.countries.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/events",
+    "controller": "EventController",
+    "steps": [
+      [
+        "action",
+        "getEvents",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.events.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/events/{mode}",
+    "controller": "EventController",
+    "steps": [
+      [
+        "action",
+        "deleteSeveralEvents",
+        "DELETE"
+      ],
+      [
+        "name",
+        "adminconsole.events.delete.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/diagnostics/report",
+    "controller": "DiagnosticsReportController",
+    "steps": [
+      [
+        "action",
+        "startReport",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.diagnostics.report.create.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/diagnostics/report",
+    "controller": "DiagnosticsReportController",
+    "steps": [
+      [
+        "action",
+        "getReportStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.diagnostics.report.status.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/diagnostics/download",
+    "controller": "DiagnosticsReportController",
+    "steps": [
+      [
+        "action",
+        "getReport",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.diagnostics.report.download.route"
+      ],
+      [
+        "noSerialization"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/factoryreset",
+    "controller": "FactoryResetController",
+    "steps": [
+      [
+        "action",
+        "factoryReset",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.system.factoryreset.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/filterlists",
+    "controller": "ParentalControlFilterListsController",
+    "steps": [
+      [
+        "action",
+        "getFilterLists",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.controlbar.filterlists.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/filterlists/{id}/domains",
+    "controller": "ParentalControlFilterListsController",
+    "steps": [
+      [
+        "action",
+        "getFilterListDomains",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.parentalcontrol.filterlists.getdomains.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/filterlists/{id}/update",
+    "controller": "ParentalControlFilterListsController",
+    "steps": [
+      [
+        "action",
+        "updateFilterList",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.parentalcontrol.filterlists.update.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/filterlists/{id}",
+    "controller": "ParentalControlFilterListsController",
+    "steps": [
+      [
+        "action",
+        "deleteFilterList",
+        "DELETE"
+      ],
+      [
+        "name",
+        "adminconsole.parentalcontrol.filterlists.delete.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/filterlists",
+    "controller": "ParentalControlFilterListsController",
+    "steps": [
+      [
+        "action",
+        "createFilterList",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.parentalcontrol.filterlists.create.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/filterlists/unique",
+    "controller": "ParentalControlFilterListsController",
+    "steps": [
+      [
+        "action",
+        "isUnique",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.parentalcontrol.filterlists.unique.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/filterlists/meta",
+    "controller": "ParentalControlFilterListsController",
+    "steps": [
+      [
+        "action",
+        "getFilterMetaData",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.controlbar.filterlists.metadata.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/useragent/cloaked",
+    "controller": "UserAgentController",
+    "steps": [
+      [
+        "action",
+        "getCloakedUserAgentByDeviceId",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.useragents.getCloakedUserAgentByDeviceId.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/useragent/list",
+    "controller": "UserAgentController",
+    "steps": [
+      [
+        "action",
+        "getAgentList",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.useragent.getAgentList.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/useragent/cloaked",
+    "controller": "UserAgentController",
+    "steps": [
+      [
+        "action",
+        "setCloakedUserAgentByDeviceId",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.useragent.setCloakedUserAgentByDeviceId.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/network/dhcpstate",
+    "controller": "NetworkController",
+    "steps": [
+      [
+        "action",
+        "getDHCPActive",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.network.config.get.network.state.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/network",
+    "controller": "NetworkController",
+    "steps": [
+      [
+        "action",
+        "getConfiguration",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.network.config.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/network/setupPageInfo",
+    "controller": "NetworkController",
+    "steps": [
+      [
+        "action",
+        "getSetupPageInfo",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.network.config.setuppage.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/network",
+    "controller": "NetworkController",
+    "steps": [
+      [
+        "action",
+        "updateConfiguration",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.network.config.put.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/network/dhcpservers",
+    "controller": "NetworkController",
+    "steps": [
+      [
+        "action",
+        "getDhcpServers",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.network.config.get.dhcp.servers.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/network/ip6",
+    "controller": "NetworkController",
+    "steps": [
+      [
+        "action",
+        "getConfigurationIp6",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.network.config.ip6.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/network/ip6",
+    "controller": "NetworkController",
+    "steps": [
+      [
+        "action",
+        "updateConfigurationIp6",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.network.config.ip6.put.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/vpn/profiles",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "getProfiles",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.profiles.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/vpn/profile",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "createProfile",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.profiles.create.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/vpn/profile/{id}",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "getProfile",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.profile.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/vpn/profile/{id}",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "updateProfile",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.profile.update.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/vpn/profile/{id}",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "deleteProfile",
+        "DELETE"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.profile.delete.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/vpn/profile/{id}/config",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "getProfileConfig",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.profile.get.config.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/vpn/profile/{id}/config",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "uploadProfileConfig",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.profile.create.config.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/vpn/profile/{id}/config/{option}",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "uploadProfileConfigOption",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.profile.set.config.option"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/vpn/profile/{id}/status",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "setVpnStatus",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.profile.set.status"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/vpn/profile/{id}/status",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "getVpnStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.profile.get.status"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/vpn/profile/{id}/status/{device}",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "getVpnDeviceStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.profile.status.device.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/vpn/profile/{id}/status/{device}",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "setVpnDeviceStatus",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.profile.status.device.set"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/vpn/profile/status/{device}",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "getVpnStatusByDevice",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.getVpnStatusByDevice.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/tor/countries",
+    "controller": "AnonymousController",
+    "steps": [
+      [
+        "action",
+        "getTorCountries",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.tor.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/tor/countries/selected",
+    "controller": "AnonymousController",
+    "steps": [
+      [
+        "action",
+        "setTorExitNodeCountries",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.tor.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/tor/countries/selected",
+    "controller": "AnonymousController",
+    "steps": [
+      [
+        "action",
+        "getCurrentTorExitNodeCountries",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.tor.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/tor/config/{deviceId}",
+    "controller": "AnonymousController",
+    "steps": [
+      [
+        "action",
+        "getConfigById",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.tor.getConfig.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/tor/config/{deviceId}",
+    "controller": "AnonymousController",
+    "steps": [
+      [
+        "action",
+        "putConfigById",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.tor.putConfig.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/tor/newidentity",
+    "controller": "AnonymousController",
+    "steps": [
+      [
+        "action",
+        "getNewTorIdentity",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.tor.getNewTorIdentity.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/recording/toggle",
+    "controller": "RecordingController",
+    "steps": [
+      [
+        "action",
+        "recordingStartStop",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.recording.start.stop"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/recording/status",
+    "controller": "RecordingController",
+    "steps": [
+      [
+        "action",
+        "getRecordingStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.recording.get.status"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/recording/result",
+    "controller": "RecordingController",
+    "steps": [
+      [
+        "action",
+        "getRecordedDomainList",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.recording.get.recorded.domain.list"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/openvpn/status",
+    "controller": "OpenVpnServerController",
+    "steps": [
+      [
+        "action",
+        "getOpenVpnServerStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.server.status.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/openvpn/status",
+    "controller": "OpenVpnServerController",
+    "steps": [
+      [
+        "action",
+        "setOpenVpnServerStatus",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.server.status.set"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/openvpn/status",
+    "controller": "OpenVpnServerController",
+    "steps": [
+      [
+        "action",
+        "resetOpenVpnServerStatus",
+        "DELETE"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.server.status.delete"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/openvpn/certificates",
+    "controller": "OpenVpnServerController",
+    "steps": [
+      [
+        "action",
+        "getCertificates",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.server.certificates.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/openvpn/certificates/generateDownloadUrl/{deviceId}/{deviceType}",
+    "controller": "OpenVpnServerController",
+    "steps": [
+      [
+        "action",
+        "generateDownloadUrl",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.server.certificates.generateDownloadUrl.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/openvpn/certificates/downloadClientConf/{deviceId}",
+    "controller": "OpenVpnServerController",
+    "steps": [
+      [
+        "action",
+        "downloadClientConf",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.server.certificates.downloadClientConf.get"
+      ],
+      [
+        "noSerialization"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/openvpn/enable/{deviceId}",
+    "controller": "OpenVpnServerController",
+    "steps": [
+      [
+        "action",
+        "enableDevice",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.server.enable.device.post"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/openvpn/disable/{deviceId}",
+    "controller": "OpenVpnServerController",
+    "steps": [
+      [
+        "action",
+        "disableDevice",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.server.disable.device.post"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/openvpn/privateNetworkAccess/{deviceId}",
+    "controller": "OpenVpnServerController",
+    "steps": [
+      [
+        "action",
+        "setPrivateNetworkAccess",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.server.privateNetworkAccess.device.put"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/upnpn/{port}",
+    "controller": "OpenVpnServerController",
+    "steps": [
+      [
+        "action",
+        "setPortForwarding",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.upnp.portForwarding"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/openvpn/test",
+    "controller": "MobileConnectionCheckController",
+    "steps": [
+      [
+        "action",
+        "start",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.test.start"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/openvpn/test",
+    "controller": "MobileConnectionCheckController",
+    "steps": [
+      [
+        "action",
+        "stop",
+        "DELETE"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.test.stop"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/openvpn/test",
+    "controller": "MobileConnectionCheckController",
+    "steps": [
+      [
+        "action",
+        "getStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.test.status"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/openvpn/dns",
+    "controller": "MobileDnsCheckController",
+    "steps": [
+      [
+        "action",
+        "check",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.vpn.test.dns"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/customerInfo",
+    "controller": "CustomerInfoController",
+    "steps": [
+      [
+        "action",
+        "get",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.customerInfo.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/customerInfo",
+    "controller": "CustomerInfoController",
+    "steps": [
+      [
+        "action",
+        "save",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.customerInfo.save.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/customerInfo",
+    "controller": "CustomerInfoController",
+    "steps": [
+      [
+        "action",
+        "delete",
+        "DELETE"
+      ],
+      [
+        "name",
+        "adminconsole.customerInfo.delete.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/recorder",
+    "controller": "TransactionRecorderController",
+    "steps": [
+      [
+        "action",
+        "start",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.transactionRecorder.start.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/recorder",
+    "controller": "TransactionRecorderController",
+    "steps": [
+      [
+        "action",
+        "stop",
+        "DELETE"
+      ],
+      [
+        "name",
+        "adminconsole.transactionRecorder.stop.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/recorder",
+    "controller": "TransactionRecorderController",
+    "steps": [
+      [
+        "action",
+        "info",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.transactionRecorder.info.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/recorder/results",
+    "controller": "TransactionRecorderController",
+    "steps": [
+      [
+        "action",
+        "getAll",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.transactionRecorder.getall.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/recorder/whatifmode",
+    "controller": "TransactionRecorderController",
+    "steps": [
+      [
+        "action",
+        "getWhatIfMode",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.transactionRecorder.whatifmode.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/recorder/whatifmode",
+    "controller": "TransactionRecorderController",
+    "steps": [
+      [
+        "action",
+        "setWhatIfMode",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.transactionRecorder.whatifmode.put.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/recorder/results/csv",
+    "controller": "TransactionRecorderController",
+    "steps": [
+      [
+        "action",
+        "getAllAsCSV",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.transactionRecorder.getallascsv.route"
+      ],
+      [
+        "noSerialization"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/recorder/results/{domain}",
+    "controller": "TransactionRecorderController",
+    "steps": [
+      [
+        "action",
+        "get",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.transactionRecorder.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/stats/total",
+    "controller": "FilterStatisticsController",
+    "steps": [
+      [
+        "action",
+        "getTotalStats",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.stats.total.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/stats/domain",
+    "controller": "FilterStatisticsController",
+    "steps": [
+      [
+        "action",
+        "getBlockedDomainsStats",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.blockedStats.filter.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/device/pause",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "getPauseByDeviceId",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.device.get.pause"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/device/pause",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "setPauseByDeviceId",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.device.put.pause"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/console/ip",
+    "controller": "ControlBarController",
+    "steps": [
+      [
+        "action",
+        "getConsoleIp",
+        "GET"
+      ],
+      [
+        "name",
+        "public.adminconsole.console.ip.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/splash",
+    "controller": "SplashController",
+    "steps": [
+      [
+        "action",
+        "get",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.splash.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/splash",
+    "controller": "SplashController",
+    "steps": [
+      [
+        "action",
+        "set",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.splash.update"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/tasks/log",
+    "controller": "TasksController",
+    "steps": [
+      [
+        "action",
+        "getLog",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.tasks.log"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/tasks/viewConfig",
+    "controller": "TasksController",
+    "steps": [
+      [
+        "action",
+        "getViewConfig",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.tasks.view.config.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/tasks/viewConfig",
+    "controller": "TasksController",
+    "steps": [
+      [
+        "action",
+        "setViewConfig",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.tasks.view.config.set"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/tasks/stats",
+    "controller": "TasksController",
+    "steps": [
+      [
+        "action",
+        "getPoolStats",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.tasks.stats.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/adminconsole/doctor/diagnosis",
+    "controller": "DoctorController",
+    "steps": [
+      [
+        "action",
+        "runDiagnosis",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.doctor.diagnosis.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/advice/console/ip",
+    "controller": "ControlBarController",
+    "steps": [
+      [
+        "action",
+        "getConsoleIp",
+        "GET"
+      ],
+      [
+        "name",
+        "advice.console.getConsoleIp.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/advice/registration",
+    "controller": "DeviceRegistrationController",
+    "steps": [
+      [
+        "action",
+        "registrationStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "advice.registration.status.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/advice/device",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "getCurrentDevice",
+        "GET"
+      ],
+      [
+        "name",
+        "advice.device.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/advice/device/showWelcomeFlags",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "updateShowWelcomeFlags",
+        "PUT"
+      ],
+      [
+        "name",
+        "advice.device.updateShowWelcomeFlags"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/errorpage/device/pause",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "pauseCurrentDeviceIfNotYetPausing",
+        "POST"
+      ],
+      [
+        "name",
+        "errorpage.device.set.pause"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/filterlists",
+    "controller": "ParentalControlFilterListsController",
+    "steps": [
+      [
+        "action",
+        "getFilterLists",
+        "GET"
+      ],
+      [
+        "name",
+        "public.controlbar.filterlists.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/recorder/results/csv",
+    "controller": "TransactionRecorderController",
+    "steps": [
+      [
+        "action",
+        "getAllAsCSV",
+        "GET"
+      ],
+      [
+        "name",
+        "public.transactionRecorder.getallascsv.route"
+      ],
+      [
+        "noSerialization"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/settings",
+    "controller": "SettingsController",
+    "steps": [
+      [
+        "action",
+        "getLocaleSettings",
+        "GET"
+      ],
+      [
+        "name",
+        "public.dashboard.settings.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/settings/timezone",
+    "controller": "SettingsController",
+    "steps": [
+      [
+        "action",
+        "setTimeZone",
+        "PUT"
+      ],
+      [
+        "name",
+        "dashboard.locale.put.timezone.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/token/{appContext}",
+    "controller": "AuthenticationController",
+    "steps": [
+      [
+        "action",
+        "generateToken",
+        "GET"
+      ],
+      [
+        "name",
+        "public.token.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/device/pause/{deviceId}",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "getPauseByDeviceId",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.device.get.pause"
+      ],
+      [
+        "flag",
+        "VERIFY_DEVICE_ID"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/device/pause/{deviceId}",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "setPauseByDeviceId",
+        "PUT"
+      ],
+      [
+        "name",
+        "dashboard.device.put.pause"
+      ],
+      [
+        "flag",
+        "VERIFY_DEVICE_ID"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/device/showWelcomeFlags",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "updateShowWelcomeFlags",
+        "PUT"
+      ],
+      [
+        "name",
+        "dashboard.device.updateShowWelcomeFlags"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/device",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "getCurrentDevice",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.device.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/device/{deviceId}",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "updateDeviceDashboard",
+        "PUT"
+      ],
+      [
+        "name",
+        "dashboard.device.update"
+      ],
+      [
+        "flag",
+        "VERIFY_DEVICE_ID"
+      ],
+      [
+        "flag",
+        "DENY_CHILD_ACCESS"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/operatinguser/devices",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "getOperatingUserDevices",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.operatinguser.devices.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/parentalcontrol/usage",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "startUsage",
+        "POST"
+      ],
+      [
+        "name",
+        "dashboard.parentalcontrol.usage.start"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/parentalcontrol/usage",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "stopUsage",
+        "DELETE"
+      ],
+      [
+        "name",
+        "dashboard.parentalcontrol.usage.stop"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/parentalcontrol/usage",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "getUsage",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.parentalcontrol.usage"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/parentalcontrol/usage/{id}",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "getUsageByUserId",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.parentalcontrol.usage.by.id"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/userprofiles",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "getProfiles",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.parentalcontrol.get.profiles.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/searchEngineConfig",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "getSearchEngineConfiguration",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.parentalcontrol.searchEngine.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/userprofile",
+    "controller": "ControlBarController",
+    "steps": [
+      [
+        "action",
+        "getUserProfile",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.userprofile.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/userprofile/maxusage/{id}",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "setMaxUsage",
+        "POST"
+      ],
+      [
+        "name",
+        "dashboard.userprofile.set.maxusage.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/userprofile/contentfilter/{id}",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "setContentFilter",
+        "POST"
+      ],
+      [
+        "name",
+        "dashboard.userprofile.set.contentfilter.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/userprofile/inetnetaccess/{id}",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "setInternetAccessStatus",
+        "POST"
+      ],
+      [
+        "name",
+        "dashboard.userprofile.set.internetaccess.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/userprofile/inetnetaccess/{id}",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "getInternetAccessStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.userprofile.get.internetaccess.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/userprofile/bonustime/{id}",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "addOnlineTimeForToday",
+        "POST"
+      ],
+      [
+        "name",
+        "dashboard.userprofile.set.bonustime.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/userprofile/bonustime/{id}",
+    "controller": "ParentalControlController",
+    "steps": [
+      [
+        "action",
+        "resetBonusTimeForToday",
+        "DELETE"
+      ],
+      [
+        "name",
+        "dashboard.userprofile.delete.bonustime.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/filter/stats/device/{deviceId}",
+    "controller": "FilterStatisticsController",
+    "steps": [
+      [
+        "action",
+        "getStats",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.stats.route"
+      ],
+      [
+        "flag",
+        "VERIFY_DEVICE_ID"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/filter/totalStats",
+    "controller": "FilterStatisticsController",
+    "steps": [
+      [
+        "action",
+        "getTotalStats",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.totalStats.route.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/filter/totalStats",
+    "controller": "FilterStatisticsController",
+    "steps": [
+      [
+        "action",
+        "resetTotalStats",
+        "DELETE"
+      ],
+      [
+        "name",
+        "dashboard.totalStats.route.delete"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/filter/blockeddomains/{deviceId}",
+    "controller": "FilterStatisticsController",
+    "steps": [
+      [
+        "action",
+        "getBlockedDomainsStats",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.blockedStats.filter.get"
+      ],
+      [
+        "flag",
+        "VERIFY_DEVICE_ID"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/filter/blockeddomains/{deviceId}",
+    "controller": "FilterStatisticsController",
+    "steps": [
+      [
+        "action",
+        "resetBlockedDomainsStats",
+        "DELETE"
+      ],
+      [
+        "name",
+        "dashboard.blockedStats.filter.delete"
+      ],
+      [
+        "flag",
+        "VERIFY_DEVICE_ID"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/registrationdata",
+    "controller": "DeviceRegistrationController",
+    "steps": [
+      [
+        "action",
+        "registrationStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.registration.status.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboardcard",
+    "controller": "DashboardCardController",
+    "steps": [
+      [
+        "action",
+        "getDashboardCards",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.card.get.status"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboardcard/columns",
+    "controller": "DashboardCardController",
+    "steps": [
+      [
+        "action",
+        "setDashboardColumnsView",
+        "PUT"
+      ],
+      [
+        "name",
+        "dashboard.card.save.columns"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboardcard/columns",
+    "controller": "DashboardCardController",
+    "steps": [
+      [
+        "action",
+        "getDashboardColumnsView",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.card.get.columns"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/users",
+    "controller": "UserController",
+    "steps": [
+      [
+        "action",
+        "getUsers",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.users.getUsers.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/users/operatinguser",
+    "controller": "ControlBarController",
+    "steps": [
+      [
+        "action",
+        "setOperatingUser",
+        "PUT"
+      ],
+      [
+        "name",
+        "dashboard.users.setOperatingUser.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/users/{id}/changepin",
+    "controller": "UserController",
+    "steps": [
+      [
+        "action",
+        "changePin",
+        "POST"
+      ],
+      [
+        "name",
+        "dashboard.users.changePin.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/openvpn/filename/{deviceId}/{deviceType}",
+    "controller": "OpenVpnServerController",
+    "steps": [
+      [
+        "action",
+        "getOpenVpnFileName",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.vpn.server.filename.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/openvpn/status",
+    "controller": "OpenVpnServerController",
+    "steps": [
+      [
+        "action",
+        "getOpenVpnServerStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.vpn.server.status.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/openvpn/status",
+    "controller": "OpenVpnServerController",
+    "steps": [
+      [
+        "action",
+        "setOpenVpnServerStatus",
+        "POST"
+      ],
+      [
+        "name",
+        "dashboard.vpn.server.status.set"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/openvpn/status",
+    "controller": "OpenVpnServerController",
+    "steps": [
+      [
+        "action",
+        "resetOpenVpnServerStatus",
+        "DELETE"
+      ],
+      [
+        "name",
+        "dashboard.vpn.server.status.delete"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/openvpn/certificates",
+    "controller": "OpenVpnServerController",
+    "steps": [
+      [
+        "action",
+        "getCertificates",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.vpn.server.certificates.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/openvpn/certificates/generateDownloadUrl/{deviceId}/{deviceType}",
+    "controller": "OpenVpnServerController",
+    "steps": [
+      [
+        "action",
+        "generateDownloadUrl",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.vpn.server.certificates.generateDownloadUrl.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/openvpn/certificates/downloadClientConf/{deviceId}",
+    "controller": "OpenVpnServerController",
+    "steps": [
+      [
+        "action",
+        "downloadClientConf",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.vpn.server.certificates.downloadClientConf.get"
+      ],
+      [
+        "noSerialization"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/customdomainfilter/{userId}",
+    "controller": "CustomDomainFilterConfigController",
+    "steps": [
+      [
+        "action",
+        "getFilter",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.custom.domain.filter.get"
+      ],
+      [
+        "flag",
+        "VERIFY_USER_ID"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/customdomainfilter/{userId}",
+    "controller": "CustomDomainFilterConfigController",
+    "steps": [
+      [
+        "action",
+        "setFilter",
+        "PUT"
+      ],
+      [
+        "name",
+        "dashboard.custom.domain.filter.set"
+      ],
+      [
+        "flag",
+        "VERIFY_USER_ID"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/dns/status",
+    "controller": "DnsController",
+    "steps": [
+      [
+        "action",
+        "getStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.dns.status.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/network/info",
+    "controller": "NetworkController",
+    "steps": [
+      [
+        "action",
+        "getSetupPageInfo",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.network.config.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/registration",
+    "controller": "DeviceRegistrationController",
+    "steps": [
+      [
+        "action",
+        "registrationStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.registration.status.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/vpn/profiles",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "getProfiles",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.vpn.getProfiles.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/vpn/profiles/{id}/status",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "getVpnStatus",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.vpn.getVpnStatus.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/vpn/profiles/status/{device}",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "getVpnStatusByDevice",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.vpn.getVpnStatusByDevice.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/vpn/profiles/{id}/status/{device}",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "setVpnDeviceStatus",
+        "PUT"
+      ],
+      [
+        "name",
+        "dashboard.vpn.setVpnDeviceStatus.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/vpn/profiles/{id}/status-this",
+    "controller": "OpenVpnController",
+    "steps": [
+      [
+        "action",
+        "setVpnThisDeviceStatus",
+        "PUT"
+      ],
+      [
+        "name",
+        "dashboard.vpn.profile.status.device.set"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/tor/config",
+    "controller": "AnonymousController",
+    "steps": [
+      [
+        "action",
+        "getConfig",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.tor.getConfig.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/tor/config",
+    "controller": "AnonymousController",
+    "steps": [
+      [
+        "action",
+        "putConfig",
+        "PUT"
+      ],
+      [
+        "name",
+        "dashboard.tor.putConfig.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/tor/device/showwarnings",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "getShowWarnings",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.tor.device.getShowWarnings.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/tor/device/showwarnings",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "postShowWarnings",
+        "POST"
+      ],
+      [
+        "name",
+        "dashboard.tor.device.postShowWarnings.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/tor/newidentity",
+    "controller": "AnonymousController",
+    "steps": [
+      [
+        "action",
+        "getNewTorIdentity",
+        "PUT"
+      ],
+      [
+        "name",
+        "dashboard.tor.getNewTorIdentity.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/useragent/list",
+    "controller": "UserAgentController",
+    "steps": [
+      [
+        "action",
+        "getAgentList",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.useragent.getAgentList.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/useragent/cloaked",
+    "controller": "UserAgentController",
+    "steps": [
+      [
+        "action",
+        "getCloakedUserAgentByDeviceId",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.useragent.getCloakedUserAgentByDeviceId.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/useragent/cloaked",
+    "controller": "UserAgentController",
+    "steps": [
+      [
+        "action",
+        "setCloakedUserAgentByDeviceId",
+        "PUT"
+      ],
+      [
+        "name",
+        "dashboard.useragent.setCloakedUserAgentByDeviceId.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/ssl/whitelist",
+    "controller": "SSLController",
+    "steps": [
+      [
+        "action",
+        "addUrlToSSLWhitelist",
+        "POST"
+      ],
+      [
+        "name",
+        "dashboard.whitelist.set.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/filterlists",
+    "controller": "ParentalControlFilterListsController",
+    "steps": [
+      [
+        "action",
+        "getFilterLists",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.filterlists.get.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/domain/recorder/{deviceId}",
+    "controller": "DomainRecorderController",
+    "steps": [
+      [
+        "action",
+        "getRecordedDomains",
+        "GET"
+      ],
+      [
+        "name",
+        "dashboard.domainRecorder.get.route"
+      ],
+      [
+        "flag",
+        "VERIFY_DEVICE_ID"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/dashboard/domain/recorder/{deviceId}",
+    "controller": "DomainRecorderController",
+    "steps": [
+      [
+        "action",
+        "resetRecording",
+        "DELETE"
+      ],
+      [
+        "name",
+        "dashboard.domainRecorder.reset.route"
+      ],
+      [
+        "flag",
+        "VERIFY_DEVICE_ID"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/admindashboard/devices",
+    "controller": "DeviceController",
+    "steps": [
+      [
+        "action",
+        "getAllDevices",
+        "GET"
+      ],
+      [
+        "name",
+        "admindashboard.devices.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/admindashboard/authentication/renew/{appContext}",
+    "controller": "AuthenticationController",
+    "steps": [
+      [
+        "action",
+        "renewToken",
+        "GET"
+      ],
+      [
+        "name",
+        "admindashboard.authentication.renew.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/pagecontext/{id}/top",
+    "controller": "PageContextController",
+    "steps": [
+      [
+        "action",
+        "reportTopContent",
+        "POST"
+      ],
+      [
+        "name",
+        "public.pagecontext.top"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/advice/reminder",
+    "controller": "ReminderController",
+    "steps": [
+      [
+        "action",
+        "getExpirationDate",
+        "GET"
+      ],
+      [
+        "name",
+        "advice.reminder.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/advice/reminder",
+    "controller": "ReminderController",
+    "steps": [
+      [
+        "action",
+        "setNextReminder",
+        "POST"
+      ],
+      [
+        "name",
+        "advice.reminder.post"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/configbackup/export",
+    "controller": "ConfigurationBackupController",
+    "steps": [
+      [
+        "action",
+        "exportConfiguration",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.configbackup.export"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/configbackup/download/{configBackupFileReference}",
+    "controller": "ConfigurationBackupController",
+    "steps": [
+      [
+        "action",
+        "downloadConfiguration",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.configbackup.download"
+      ],
+      [
+        "noSerialization"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/configbackup/upload",
+    "controller": "ConfigurationBackupController",
+    "steps": [
+      [
+        "action",
+        "uploadConfiguration",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.configbackup.upload"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/configbackup/verify",
+    "controller": "ConfigurationBackupController",
+    "steps": [
+      [
+        "action",
+        "verifyConfiguration",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.configbackup.verify"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/configbackup/import",
+    "controller": "ConfigurationBackupController",
+    "steps": [
+      [
+        "action",
+        "importConfiguration",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.configbackup.import"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/featuretoggle/{name}",
+    "controller": "FeatureToggleController",
+    "steps": [
+      [
+        "action",
+        "getFeatureToggle",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.featuretoggle.get"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/check/route",
+    "controller": "ConnectionCheckController",
+    "steps": [
+      [
+        "action",
+        "routingTest",
+        "GET"
+      ],
+      [
+        "name",
+        "public.connectioncheck.route"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/blockers/",
+    "controller": "BlockerController",
+    "steps": [
+      [
+        "action",
+        "getBlockers",
+        "GET"
+      ],
+      [
+        "name",
+        "adminconsole.blocker.getAll"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/blockers/",
+    "controller": "BlockerController",
+    "steps": [
+      [
+        "action",
+        "createBlocker",
+        "POST"
+      ],
+      [
+        "name",
+        "adminconsole.blocker.post"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/blockers/{id}",
+    "controller": "BlockerController",
+    "steps": [
+      [
+        "action",
+        "updateBlocker",
+        "PUT"
+      ],
+      [
+        "name",
+        "adminconsole.blocker.put"
+      ]
+    ]
+  },
+  {
+    "kind": "uri",
+    "path": "/api/blockers/{id}",
+    "controller": "BlockerController",
+    "steps": [
+      [
+        "action",
+        "removeBlocker",
+        "DELETE"
+      ],
+      [
+        "name",
+        "adminconsole.blocker.delete"
+      ]
+    ]
+  },
+  {
+    "kind": "regex",
+    "path": "/.*",
+    "controller": "StaticFileController",
+    "steps": [
+      [
+        "method",
+        "GET"
+      ],
+      [
+        "name",
+        "static.route"
+      ],
+      [
+        "noSerialization"
+      ]
+    ]
+  }
+]

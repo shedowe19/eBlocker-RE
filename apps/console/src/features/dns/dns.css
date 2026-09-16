@@ -1,0 +1,72 @@
+/* SPDX-License-Identifier: EUPL-1.2 */
+.dns-page {
+    display: grid;
+    gap: 1.25rem;
+}
+.dns-page form {
+    margin-block: 1rem;
+}
+.dns-page fieldset {
+    display: grid;
+    gap: 1rem;
+    border: 0;
+    padding: 0;
+}
+.dns-page label {
+    display: grid;
+    gap: 0.4rem;
+    margin-block: 0.75rem;
+    max-width: 44rem;
+    font-weight: 600;
+}
+.dns-page input,
+.dns-page select,
+.dns-page textarea {
+    width: 100%;
+    padding: 0.65rem;
+    border: 1px solid var(--line, #9cafaa);
+    border-radius: 0.5rem;
+    background: var(--surface, #fff);
+    color: inherit;
+    font: inherit;
+}
+.dns-page textarea {
+    min-height: 8rem;
+    resize: vertical;
+    font-family: monospace;
+}
+.dns-page textarea:focus-visible {
+    outline: 3px solid #b16b00;
+    outline-offset: 4px;
+}
+.dns-page fieldset:disabled {
+    opacity: 0.65;
+}
+.dns-page fieldset > button {
+    justify-self: start;
+}
+.dns-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.dns-table-scroll {
+    overflow-x: auto;
+    margin-block: 1rem;
+}
+.dns-page table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.9rem;
+}
+.dns-page th,
+.dns-page td {
+    padding: 0.7rem;
+    border-bottom: 1px solid var(--line, #dce6df);
+    vertical-align: top;
+    overflow-wrap: anywhere;
+}
+.dns-page td .button {
+    white-space: nowrap;
+}

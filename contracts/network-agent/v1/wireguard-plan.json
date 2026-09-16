@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "data": {
+    "interfaceAddresses": [
+      "10.20.0.2/32",
+      "fd00:20::2/128"
+    ],
+    "dns": [
+      "10.20.0.1"
+    ],
+    "listenPort": 51820,
+    "mtu": 1420,
+    "peers": [
+      {
+        "publicKey": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+        "allowedIPs": [
+          "0.0.0.0/0"
+        ],
+        "endpoint": "198.51.100.1:51820",
+        "persistentKeepalive": 25,
+        "hasPresharedKey": true
+      },
+      {
+        "publicKey": "BAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQ=",
+        "allowedIPs": [
+          "::/0"
+        ],
+        "hasPresharedKey": false
+      }
+    ],
+    "defaultRouteIPv4": true,
+    "defaultRouteIPv6": true,
+    "endpointExclusions": [
+      "198.51.100.1"
+    ],
+    "requiredCapabilities": [
+      "CAP_NET_ADMIN"
+    ],
+    "leakRisks": [
+      "no_kill_switch"
+    ],
+    "warnings": [
+      "Validation only: no tunnel, routes, DNS settings, or kill switch have been applied.",
+      "Literal endpoints covered by tunnel or connected routes require verified bypass routes through the original uplink to prevent routing loops.",
+      "A peer has no configured endpoint and requires an authenticated incoming handshake before outbound traffic can use it."
+    ],
+    "applied": false,
+    "killSwitchActive": false
+  }
+}

@@ -1,0 +1,27 @@
+Author: Amos Jeffries <amosjeffries@squid-cache.org>
+Last-Update: 2025-07-11
+Subject: Check mishandles cases where the listening port hostname does not match the request-target hostname.
+Forwarded: not-needed
+Index: pkg-squid/src/internal.cc
+===================================================================
+--- a/src/internal.cc
++++ b/src/internal.cc
+@@ -161,6 +161,8 @@ internalHostname(void)
+     return host;
+ }
+ 
++// XXX: This check mishandles cases where the listening port hostname
++//      does not match the request-target hostname.
+ bool
+ internalHostnameIs(const SBuf &arg)
+ {
+@@ -172,6 +174,9 @@ internalHostnameIs(const SBuf &arg)
+             return true;
+     }
+ 
++    if (arg.caseCmp("localhost") == 0)
++        return true;
++
+     return false;
+ }
+ 

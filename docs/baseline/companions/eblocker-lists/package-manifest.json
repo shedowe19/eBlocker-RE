@@ -1,0 +1,25 @@
+{
+  "commit": "045913d59093218f553276023935871e30951191",
+  "files": [
+    {
+      "path": "src/deb/control/control",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 318,
+      "mode": "100644",
+      "git_blob": "965d22c4864b0a2f75d7e4bc7d76afcdbee1099c",
+      "sha256": "156a1b09cca3917fe34c343e2462ed35bb7940a0b7d36a5e168e06d43b9f2e0a"
+    },
+    {
+      "path": "src/deb/control/postinst",
+      "module": "src",
+      "language": "other",
+      "role": "source",
+      "bytes": 1279,
+      "mode": "100755",
+      "git_blob": "07653d7bf7e87a574d2737bc762d440559a76852",
+      "sha256": "ee0a2caee62c03cdce7ed8c8a7beac1f019d1db37f3a19099b69c473b591f28c"
+    }
+  ]
+}

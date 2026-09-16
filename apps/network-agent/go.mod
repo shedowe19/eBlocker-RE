@@ -1,0 +1,22 @@
+module github.com/eblocker/eblocker/apps/network-agent
+
+go 1.27.1
+
+require (
+	github.com/eblocker/eblocker/libs/wireguard v0.0.0
+	github.com/google/nftables v0.3.0
+	github.com/mdlayher/genetlink v1.4.0
+	github.com/mdlayher/netlink v1.11.2
+	github.com/vishvananda/netlink v1.3.1
+	github.com/vishvananda/netns v0.0.5
+	golang.org/x/sys v0.48.0
+)
+
+require (
+	github.com/google/go-cmp v0.7.0 // indirect
+	github.com/mdlayher/socket v0.7.0 // indirect
+	golang.org/x/net v0.59.0 // indirect
+	golang.org/x/sync v0.23.0 // indirect
+)
+
+replace github.com/eblocker/eblocker/libs/wireguard => ../../libs/wireguard

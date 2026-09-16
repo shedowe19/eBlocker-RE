@@ -1,0 +1,472 @@
+[
+    {
+        "id": "devices",
+        "group": "devices",
+        "title": {
+            "de": "Geräte und Zuordnungen",
+            "en": "Devices and assignments"
+        },
+        "href": "/settings/#!/devices/list/",
+        "states": ["devices", "devicesstate", "deviceslist", "devicedetails"],
+        "modern": "/devices",
+        "visible": true
+    },
+    {
+        "id": "discovery",
+        "group": "devices",
+        "title": {
+            "de": "Gerätesuche im Netzwerk",
+            "en": "Network device discovery"
+        },
+        "href": "/settings/#!/devices/discovery",
+        "states": ["devicesdiscovery"],
+        "modern": null,
+        "visible": true
+    },
+    {
+        "id": "filters",
+        "group": "protection",
+        "title": {
+            "de": "Filterlisten und eigene Filter",
+            "en": "Filter lists and custom filters"
+        },
+        "href": "/settings/#!/filter/overview/",
+        "states": ["filter", "filterstate", "filteroverview", "FILTER_DETAILS"],
+        "modern": "/protection",
+        "visible": true
+    },
+    {
+        "id": "analysis",
+        "group": "protection",
+        "title": {
+            "de": "Blockierungsanalyse",
+            "en": "Blocking analysis"
+        },
+        "href": "/settings/#!/filter/analysis",
+        "states": ["filteranalysis", "analysisdetails"],
+        "modern": null,
+        "visible": true
+    },
+    {
+        "id": "advanced",
+        "group": "protection",
+        "title": {
+            "de": "Erweiterte Filtereinstellungen",
+            "en": "Advanced filter settings"
+        },
+        "href": "/settings/#!/filter/advanced",
+        "states": ["advancedsettings"],
+        "modern": null,
+        "visible": true
+    },
+    {
+        "id": "https-status",
+        "group": "protection",
+        "title": {
+            "de": "HTTPS-Schutz",
+            "en": "HTTPS protection"
+        },
+        "href": "/settings/#!/https/status",
+        "states": ["HTTPS", "sslstate", "sslstatus"],
+        "modern": "/https",
+        "visible": true
+    },
+    {
+        "id": "certificates",
+        "group": "protection",
+        "title": {
+            "de": "Zertifikate und Vertrauensstellung",
+            "en": "Certificates and trust"
+        },
+        "href": "/settings/#!/https/certificate",
+        "states": ["sslcertificate"],
+        "modern": "/https",
+        "visible": true
+    },
+    {
+        "id": "trusted-apps",
+        "group": "protection",
+        "title": {
+            "de": "App-Ausnahmen",
+            "en": "App exceptions"
+        },
+        "href": "/settings/#!/https/trustedapps/",
+        "states": ["trustedapps", "trustedappsdetails"],
+        "modern": "/protection",
+        "visible": true
+    },
+    {
+        "id": "trusted-domains",
+        "group": "protection",
+        "title": {
+            "de": "Domain-Ausnahmen",
+            "en": "Domain exceptions"
+        },
+        "href": "/settings/#!/https/trusteddomains",
+        "states": ["trusteddomains"],
+        "modern": null,
+        "visible": true
+    },
+    {
+        "id": "https-errors",
+        "group": "protection",
+        "title": {
+            "de": "HTTPS-Verbindungsfehler",
+            "en": "HTTPS connection errors"
+        },
+        "href": "/settings/#!/https/fails",
+        "states": ["sslfails"],
+        "modern": null,
+        "visible": true
+    },
+    {
+        "id": "recording",
+        "group": "protection",
+        "title": {
+            "de": "Verbindungen aufzeichnen",
+            "en": "Connection recording"
+        },
+        "href": "/settings/#!/https/manualrecording",
+        "states": ["manualrecording"],
+        "modern": null,
+        "visible": true
+    },
+    {
+        "id": "vpn",
+        "group": "vpn",
+        "title": {
+            "de": "OpenVPN-Verbindungen",
+            "en": "OpenVPN connections"
+        },
+        "href": "/settings/#!/anonymization/vpn/",
+        "states": ["anonymization", "anonymizationstate", "vpnconnect", "vpnconnectdetails"],
+        "modern": "/vpn",
+        "visible": true
+    },
+    {
+        "id": "tor",
+        "group": "vpn",
+        "title": {
+            "de": "Tor und Länderauswahl",
+            "en": "Tor and country selection"
+        },
+        "href": "/settings/#!/anonymization/tor",
+        "states": ["tor"],
+        "modern": "/vpn",
+        "visible": true
+    },
+    {
+        "id": "mobile",
+        "group": "vpn",
+        "title": {
+            "de": "Mobiler Fernzugriff",
+            "en": "Mobile remote access"
+        },
+        "href": "/settings/#!/mobile",
+        "states": ["mobile", "VPN_HOME_WIZARD"],
+        "modern": null,
+        "visible": true
+    },
+    {
+        "id": "family-users",
+        "group": "family",
+        "title": {
+            "de": "Familie, Geräte und Zeitregeln",
+            "en": "Family, devices and time rules"
+        },
+        "href": "/settings/#!/parentalcontrol/users/",
+        "states": ["parentalcontrol", "parentalcontrolstate", "users", "USER_DETAILS"],
+        "modern": "/family",
+        "visible": true
+    },
+    {
+        "id": "family-block",
+        "group": "family",
+        "title": {
+            "de": "Gesperrte Kategorien und Seiten",
+            "en": "Blocked categories and websites"
+        },
+        "href": "/settings/#!/parentalcontrol/blacklists/",
+        "states": ["blacklists", "blacklistdetails"],
+        "modern": "/family",
+        "visible": true
+    },
+    {
+        "id": "family-allow",
+        "group": "family",
+        "title": {
+            "de": "Erlaubte Kategorien und Seiten",
+            "en": "Allowed categories and websites"
+        },
+        "href": "/settings/#!/parentalcontrol/whitelists/",
+        "states": ["whitelists", "whitelistdetails"],
+        "modern": "/family",
+        "visible": true
+    },
+    {
+        "id": "network-ipv4",
+        "group": "network",
+        "title": {
+            "de": "Netzwerk, DHCP und Betriebsart",
+            "en": "Network, DHCP and operating mode"
+        },
+        "href": "/settings/#!/network/networksettings",
+        "states": ["network", "networksettings", "NETWORK_WIZARD"],
+        "modern": "/network",
+        "visible": true
+    },
+    {
+        "id": "network-ipv6",
+        "group": "network",
+        "title": {
+            "de": "IPv6-Konfiguration",
+            "en": "IPv6 configuration"
+        },
+        "href": "/settings/#!/network/networksettingsip6",
+        "states": ["networksettingsip6"],
+        "modern": "/network",
+        "visible": true
+    },
+    {
+        "id": "dns-status",
+        "group": "network",
+        "title": {
+            "de": "DNS-Status",
+            "en": "DNS status"
+        },
+        "href": "/settings/#!/dns/status",
+        "states": ["dns", "dnsstate", "dnsstatus"],
+        "modern": "/dns",
+        "visible": true
+    },
+    {
+        "id": "dns-local",
+        "group": "network",
+        "title": {
+            "de": "Lokale DNS-Einträge",
+            "en": "Local DNS records"
+        },
+        "href": "/settings/#!/dns/local",
+        "states": ["dnslocal"],
+        "modern": "/dns",
+        "visible": true
+    },
+    {
+        "id": "dns-servers",
+        "group": "network",
+        "title": {
+            "de": "DNS-Server",
+            "en": "DNS servers"
+        },
+        "href": "/settings/#!/dns/server",
+        "states": ["dnsserver"],
+        "modern": "/dns",
+        "visible": true
+    },
+    {
+        "id": "system-status",
+        "group": "system",
+        "title": {
+            "de": "Systemstatus, Neustart und Ausschalten",
+            "en": "System status, restart and shutdown"
+        },
+        "href": "/settings/#!/system/status",
+        "states": ["status"],
+        "modern": "/system",
+        "visible": true
+    },
+    {
+        "id": "locale",
+        "group": "system",
+        "title": {
+            "de": "Zeit, Sprache und Zeitzone",
+            "en": "Time, language and timezone"
+        },
+        "href": "/settings/#!/system/locale",
+        "states": ["system", "timeandlanguage"],
+        "modern": null,
+        "visible": true
+    },
+    {
+        "id": "password",
+        "group": "system",
+        "title": {
+            "de": "Passwortschutz",
+            "en": "Password protection"
+        },
+        "href": "/settings/#!/system/adminpassword",
+        "states": ["adminpassword"],
+        "modern": "/security",
+        "visible": true
+    },
+    {
+        "id": "backup",
+        "group": "system",
+        "title": {
+            "de": "Sicherung und Wiederherstellung",
+            "en": "Backup and restore"
+        },
+        "href": "/settings/#!/system/backup",
+        "states": ["backup"],
+        "modern": "/backup",
+        "visible": true
+    },
+    {
+        "id": "events",
+        "group": "system",
+        "title": {
+            "de": "Ereignisse",
+            "en": "Events"
+        },
+        "href": "/settings/#!/system/events",
+        "states": ["events"],
+        "modern": null,
+        "visible": true
+    },
+    {
+        "id": "diagnostics",
+        "group": "system",
+        "title": {
+            "de": "Diagnoseberichte",
+            "en": "Diagnostic reports"
+        },
+        "href": "/settings/#!/system/diagnostics",
+        "states": ["diagnostics"],
+        "modern": "/diagnostics",
+        "visible": true
+    },
+    {
+        "id": "reset",
+        "group": "system",
+        "title": {
+            "de": "Zurücksetzen",
+            "en": "Reset"
+        },
+        "href": "/settings/#!/system/reset",
+        "states": ["reset"],
+        "modern": null,
+        "visible": true
+    },
+    {
+        "id": "tasks",
+        "group": "system",
+        "title": {
+            "de": "Hintergrundaufgaben",
+            "en": "Background tasks"
+        },
+        "href": "/settings/#!/system/tasks",
+        "states": ["tasks"],
+        "modern": null,
+        "visible": false
+    },
+    {
+        "id": "license",
+        "group": "system",
+        "title": {
+            "de": "Registrierung und Lizenz",
+            "en": "Registration and license"
+        },
+        "href": "/settings/#!/home/license",
+        "states": ["HOME", "license", "DEFAULT"],
+        "modern": null,
+        "visible": true
+    },
+    {
+        "id": "updates",
+        "group": "system",
+        "title": {
+            "de": "Updates und Zeitplanung",
+            "en": "Updates and scheduling"
+        },
+        "href": "/settings/#!/home/update",
+        "states": ["update"],
+        "modern": "/updates",
+        "visible": true
+    },
+    {
+        "id": "about",
+        "group": "system",
+        "title": {
+            "de": "Über eBlocker",
+            "en": "About eBlocker"
+        },
+        "href": "/settings/#!/home/about",
+        "states": ["about"],
+        "modern": null,
+        "visible": true
+    },
+    {
+        "id": "legal",
+        "group": "system",
+        "title": {
+            "de": "Rechtliche Hinweise",
+            "en": "Legal information"
+        },
+        "href": "/settings/#!/home/legal",
+        "states": ["legal"],
+        "modern": null,
+        "visible": true
+    },
+    {
+        "id": "doctor",
+        "group": "system",
+        "title": {
+            "de": "Netzwerkdiagnose",
+            "en": "Network diagnosis"
+        },
+        "href": "/settings/#!/doctor",
+        "states": ["DOCTOR"],
+        "modern": null,
+        "visible": true
+    },
+    {
+        "id": "licenses",
+        "group": "system",
+        "title": {
+            "de": "Open-Source-Lizenzen aller Komponenten",
+            "en": "Open source licenses of all components"
+        },
+        "href": "/settings/#!/licenses",
+        "states": [
+            "OPEN_SOURCE_LICENSES",
+            "OPEN_SOURCE_LICENSES_JAVA",
+            "OPEN_SOURCE_LICENSES_CCPP",
+            "OPEN_SOURCE_LICENSES_JAVASCRIPT",
+            "OPEN_SOURCE_LICENSES_RUBY",
+            "OPEN_SOURCE_LICENSES_DEBIAN"
+        ],
+        "modern": null,
+        "visible": true
+    },
+    {
+        "id": "system-flows",
+        "group": "system",
+        "title": {
+            "de": "Einrichtung und Systemabläufe",
+            "en": "Setup and system flows"
+        },
+        "href": "/settings/#!/",
+        "states": [
+            "MAIN",
+            "SPLASH",
+            "activation",
+            "activationfinish",
+            "app",
+            "auth",
+            "booting",
+            "expired",
+            "factoryResetScreen",
+            "login",
+            "logout",
+            "nolicense",
+            "print",
+            "resetpassword",
+            "shutdown",
+            "standby",
+            "systempending",
+            "updating"
+        ],
+        "modern": null,
+        "visible": false
+    }
+]

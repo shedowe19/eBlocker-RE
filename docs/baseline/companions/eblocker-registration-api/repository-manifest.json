@@ -1,0 +1,365 @@
+{
+  "commit": "0a1eb8cae1e3596178057922b18b9124b7b26eca",
+  "files": [
+    {
+      "path": ".github/workflows/deployPackage.yml",
+      "module": ".github",
+      "language": "other",
+      "role": "source",
+      "bytes": 980,
+      "mode": "100644",
+      "git_blob": "b1414b80fbbadc811ac44246f26e102cebadc62b",
+      "sha256": "bc5df36c834fac876f6888eb41642497cc60fc436f5ffef0b03387a16b9a084b"
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "module": ".github",
+      "language": "other",
+      "role": "source",
+      "bytes": 1035,
+      "mode": "100644",
+      "git_blob": "49df0887cfdf7481dc5c4132893d60937a4cb4b9",
+      "sha256": "05f68f4ed98a7b5023ab8383b711f74ea12e708265f74f749ab7b2d583684dbc"
+    },
+    {
+      "path": ".gitignore",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 85,
+      "mode": "100644",
+      "git_blob": "1e2c8a3efc6701e43fddc29702fcf7e1e7ba6ce0",
+      "sha256": "64e57fd12dbfa781d0f16d01105cc38986d2ca78de4e8565ccd5f1d6d2d7b095"
+    },
+    {
+      "path": ".mvn/maven.config",
+      "module": ".mvn",
+      "language": "other",
+      "role": "source",
+      "bytes": 14,
+      "mode": "100644",
+      "git_blob": "b79df8ca66d6673b96abf51fc5bf33de14f67cb2",
+      "sha256": "c72db16003848644a2cffd1037b4a6fe93a4f1b313adfa699887f396771e3f65"
+    },
+    {
+      "path": "LICENSE.md",
+      "module": "root",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 13948,
+      "mode": "100644",
+      "git_blob": "b605841ba34743006a82bf3df026d4528bfcd27f",
+      "sha256": "2017b48dfe8027238f8fd8457795d23c6a2385b70ee05de9cb29a33bf93c02e1"
+    },
+    {
+      "path": "pom.xml",
+      "module": "root",
+      "language": "XML",
+      "role": "source",
+      "bytes": 1795,
+      "mode": "100644",
+      "git_blob": "303de927840a72eb6dcd730b5493a9fa74137987",
+      "sha256": "140a6d9ba98ae8c9d7eaa2edf54c5fd9a82f38353642d7c23037f9923910a7bc"
+    },
+    {
+      "path": "settings.xml",
+      "module": "root",
+      "language": "XML",
+      "role": "source",
+      "bytes": 682,
+      "mode": "100644",
+      "git_blob": "04ab4fa6dde2511ebc42a598832ff53b0fec0232",
+      "sha256": "df4c225a639ea683788024c1ca0a89487fcfa56cfc1ffccab822b319878c5329"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/CustomerInfo.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1272,
+      "mode": "100644",
+      "git_blob": "7e5d01e36e5be16f0224574ae39042678c8932d8",
+      "sha256": "a4c670018c1837a0004092f85a2dee1556ab4127a8b780e6ab2359712a4f9353"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/DeviceRegistrationRequest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4240,
+      "mode": "100644",
+      "git_blob": "7061c2364882c11f688040eeea247f2ff1b2e3cd",
+      "sha256": "baf64c179fd5ef4fab3cab4e6dd27a06aee4d9c2cca39536597c6acfec0fd0ae"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/DeviceRegistrationResponse.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3835,
+      "mode": "100644",
+      "git_blob": "8f74107e21d0d5dd4a0b46833bd046a08649ca27",
+      "sha256": "e5e20925cfbd2a5dd13e25e356e0ec3fa4d22bba2aaa659bc44535c8cf3a9ec4"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/DeviceRegistrationResponseBase.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1046,
+      "mode": "100644",
+      "git_blob": "a6e005be6bf10f6c6bab27e1a8559d3cf7ce6fda",
+      "sha256": "86633fa75b3c5a82419e8d01dadff9839cc7ec432a8aeb273fabfe83f84cb5f4"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/DeviceRegistrationResponseV091.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2784,
+      "mode": "100644",
+      "git_blob": "233ac08e8fe195fce513877bd6d5750858fa4492",
+      "sha256": "cbcd6f00143e54383c11b6f724c5674a4dbf51495bd5f4acf8e1b7a61bcad7da"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/DynDnsEntry.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1333,
+      "mode": "100644",
+      "git_blob": "42a9f8a1eeaa19981601e9666f04deb1d6e7fa00",
+      "sha256": "aaf703e0bef31cb7008161757fc3a793fd0882ce1149594256d49edc5abc6683"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/LicenseType.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1308,
+      "mode": "100644",
+      "git_blob": "c382c50fa62ded76f921f6af727b3fd80bfba5e3",
+      "sha256": "2d3c419b45f03f3ebb775e421e61a751dbdc2cc4eaae395ab758afa1560733a9"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/MobileConnectionCheck.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2824,
+      "mode": "100644",
+      "git_blob": "cdcd1b67f297484aead4d9a6d11ba452aa6f8ab2",
+      "sha256": "111886748af42c2fa7a356b8c70644bb8ad5d068ac4072c785b28134b57f0d1b"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/ProductFeature.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1798,
+      "mode": "100644",
+      "git_blob": "2b4089e16c4699b8c461b757ed8af67439edba6d",
+      "sha256": "d19e45636f92829e73a01fcbe7f1a3eb9c91fb804757cb8718fca107e976d0bb"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/ProductInfo.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3302,
+      "mode": "100644",
+      "git_blob": "5df72ab63033aec288cf1a4aa923bee4dfc5c550",
+      "sha256": "60b6764dcf71976005606d11ba8cb0cf1b7d9e754dce86f967eac25966d7e91b"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/RegistrationState.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 916,
+      "mode": "100644",
+      "git_blob": "e98f769920fa2bb9ceaeb5b408229fbd57d7f4a6",
+      "sha256": "f36f3363ae2ac6106756bf3761536a1bf69bed2095ae8d46e0c1fd2e89fcd3d1"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/TosContainer.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1533,
+      "mode": "100644",
+      "git_blob": "bdf0362d343c01d7346ba96d4871ec2968387595",
+      "sha256": "4860fe39ade3626b0bfe67d7f5322e7ebd373e9a86c321504ba8a4cc08a5161d"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/UpdateMode.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1306,
+      "mode": "100644",
+      "git_blob": "597a465b17c1675e9b47deecb2b0f44862340f6e",
+      "sha256": "91e2496f84bafe1c65608d91d5dd075443b3c7cca5eb0ea4ec834f79b65ddc97"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/UpgradeInfo.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1243,
+      "mode": "100644",
+      "git_blob": "17b50fe0032dad14c7fbd4a0b9bfe3e61c6070ff",
+      "sha256": "d42931237a60cfad2b02bc571145af63304490b30c1ee48c2e5c38da25cb82d8"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/UpgradeProductInfo.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1696,
+      "mode": "100644",
+      "git_blob": "278bb3a9fd51c347f8ed5c6b087b8b21c778bed4",
+      "sha256": "2add76de54dd8bbd53982a97e17fb0c639ec4dbe4c1ba33639a46ae0c1faf088"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/UpsellInfo.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2029,
+      "mode": "100644",
+      "git_blob": "2453752d79dc6edbf04d0e6fde573e80264e16cb",
+      "sha256": "1695c0c317895e544d85762d7b892da6a2f689ebd76cc3950d9d1e10a40cab7d"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/UpsellInfoWrapper.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1471,
+      "mode": "100644",
+      "git_blob": "26df57e66c0f8114c50695e430b9824686a8f25a",
+      "sha256": "2ac637cce9bef1f9800ac7ef6fecc47b34e8de790414332f48384e6e616eeead"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/error/ClientRequestError.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2013,
+      "mode": "100644",
+      "git_blob": "2135fb8930b2a349ef2aa6e7e9530e34297c487d",
+      "sha256": "df1fea1829043098ca4530b4e565e501fbfc43bd5d9eef9b0aeec9fe1eac584e"
+    },
+    {
+      "path": "src/main/java/org/eblocker/registration/error/ClientRequestException.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1860,
+      "mode": "100644",
+      "git_blob": "3e5430706ab0e0e3e42319155be9bb26707b43be",
+      "sha256": "2078417f1f40882c96827ea1be4da1c5a024d52b6cffd1a90b6faef139868805"
+    },
+    {
+      "path": "src/test/java/org/eblocker/registration/DeviceRegistrationRequestTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 5355,
+      "mode": "100644",
+      "git_blob": "7ffce177a5c729abfedfe57e734104314d0dfe5e",
+      "sha256": "3a8f0433f799f668b9487b5e21af0f42c76ae0dbc7fb01e27707a108c2afc683"
+    },
+    {
+      "path": "src/test/java/org/eblocker/registration/DeviceRegistrationResponseTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 3575,
+      "mode": "100644",
+      "git_blob": "be772bc23913d2a63930b69bf067e80432c3bede",
+      "sha256": "9bd7482abbe3a3c5fb2af4405f27b181aa29d566ea467f83ceac3f55d712f2c0"
+    },
+    {
+      "path": "src/test/java/org/eblocker/registration/LicenseTypeTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1907,
+      "mode": "100644",
+      "git_blob": "b1a931ce4ce574a67875b10a32a48036ddab817a",
+      "sha256": "15b75ec78ee54aef9a3d96f25933c6faa442da7e3d6c17d36309131c7a085ffa"
+    },
+    {
+      "path": "src/test/java/org/eblocker/registration/MobileConnectionCheckTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2329,
+      "mode": "100644",
+      "git_blob": "69706bd771eeb89fb1cf5a0b5b3ab085efbc59cf",
+      "sha256": "3d093d74e894ec7ef4a638fc8ee91637eaec19fa057a8858a1bd9204bbb80522"
+    },
+    {
+      "path": "src/test/java/org/eblocker/registration/ProductFeatureTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1739,
+      "mode": "100644",
+      "git_blob": "1ae629fd7112a9ac4fb5a609b44b64a428d5eb93",
+      "sha256": "65b55b594df3905fcaf69dbba845cddd59cc1eb374a2553ab4032be6b80e1df6"
+    },
+    {
+      "path": "src/test/java/org/eblocker/registration/ProductInfoTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 4774,
+      "mode": "100644",
+      "git_blob": "e5a7a07b96b83ff422e813f7666905ef7bd0602d",
+      "sha256": "66d53a8b40f7f51fc2d24e9379052727213e1a62346514808b969dbfad29ec1c"
+    },
+    {
+      "path": "src/test/java/org/eblocker/registration/RegistrationStateTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1170,
+      "mode": "100644",
+      "git_blob": "75519fc1a5919b91b5357c41b63dac2783716f0b",
+      "sha256": "a9ad80182409b772ae99e253a03bea0c5f4822de9d68b5412888f0baf42632ec"
+    },
+    {
+      "path": "src/test/java/org/eblocker/registration/UpdateModeTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1454,
+      "mode": "100644",
+      "git_blob": "190c38ce04a202416333116fc150c8be2999732d",
+      "sha256": "c66ace73e8389efa71473fc7a965612910e5b08d90d96c24faa0c983fe502c51"
+    },
+    {
+      "path": "src/test/java/org/eblocker/registration/UpgradeProductInfoTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1735,
+      "mode": "100644",
+      "git_blob": "9c2ccf5eb0f673c90b40e6418dc6636f1e9c8e4e",
+      "sha256": "952d0297ee65dfd10345aaaf3c899078df639b6fdf7850b5eef9e147f17aa9e8"
+    },
+    {
+      "path": "src/test/java/org/eblocker/registration/error/ClientRequestErrorTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 4921,
+      "mode": "100644",
+      "git_blob": "10d240704bfe2f8768c65206ef3770406c21badd",
+      "sha256": "e3043f707001c9913003001d47fb7e4f262dc8f43f8fff829b87fabfbadba659"
+    }
+  ]
+}

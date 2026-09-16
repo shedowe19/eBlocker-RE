@@ -1,0 +1,213 @@
+/* SPDX-License-Identifier: EUPL-1.2 */
+.security-page {
+    color: #18312d;
+    max-width: 60rem;
+}
+.security-heading {
+    margin-bottom: 1.8rem;
+}
+.security-heading h1 {
+    margin: 0.4rem 0 0.6rem;
+    font-size: clamp(1.7rem, 3vw, 2.2rem);
+    letter-spacing: -0.035em;
+}
+.security-heading p,
+.security-panel p {
+    color: #526761;
+    line-height: 1.6;
+}
+.security-panel {
+    padding: 1.4rem;
+    border: 1px solid #dce6df;
+    border-radius: 0.8rem;
+    background: #fff;
+    margin-bottom: 1.5rem;
+}
+.security-panel h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+}
+.security-panel p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+.security-protection {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1rem;
+}
+.security-badge {
+    display: inline-flex;
+    flex-shrink: 0;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.4rem;
+    background: #fcf0d8;
+    color: #805416;
+    font-size: 0.8rem;
+    font-weight: 650;
+}
+.security-badge--enabled {
+    background: #e5f3e9;
+    color: #155c3e;
+}
+.security-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.2rem;
+}
+.security-primary,
+.security-secondary,
+.security-danger {
+    padding: 0.75rem 1rem;
+    border: 1px solid #dce6df;
+    border-radius: 0.5rem;
+    font: inherit;
+    font-size: 0.88rem;
+    font-weight: 650;
+    cursor: pointer;
+}
+.security-primary {
+    color: #fff;
+    background: #176b5b;
+    border-color: #176b5b;
+}
+.security-secondary {
+    color: #176b5b;
+    background: #fff;
+}
+.security-danger {
+    color: #fff;
+    background: #8b2520;
+    border-color: #8b2520;
+}
+.security-primary:hover:not(:disabled) {
+    background: #105545;
+}
+.security-secondary:hover:not(:disabled) {
+    background: #f3f7f3;
+}
+.security-danger:hover:not(:disabled) {
+    background: #701d19;
+}
+.security-page button:disabled {
+    opacity: 0.58;
+    cursor: not-allowed;
+}
+.security-page button:focus-visible,
+.security-page input:focus-visible {
+    outline: 3px solid #176b5b;
+    outline-offset: 3px;
+}
+.security-form {
+    max-width: 38rem;
+    padding: 1.5rem;
+    border: 1px solid #dce6df;
+    border-radius: 0.8rem;
+    background: #fff;
+}
+.security-form h2 {
+    font-size: 1.1rem;
+    margin: 0 0 1.3rem;
+}
+.security-form fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+.security-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    margin-bottom: 1.2rem;
+}
+.security-field label {
+    font-size: 0.85rem;
+    font-weight: 650;
+}
+.security-field input {
+    padding: 0.75rem 0.85rem;
+    border: 1px solid #dce6df;
+    border-radius: 0.5rem;
+    background: #fff;
+    color: #18312d;
+    font: inherit;
+    min-width: 0;
+}
+.security-field input[aria-invalid='true'] {
+    border-color: #8b2520;
+}
+.security-help {
+    color: #526761;
+    font-size: 0.82rem;
+    line-height: 1.6;
+}
+.security-field .security-help {
+    margin: 0;
+}
+.security-confirmation {
+    padding: 1rem;
+    border: 1px solid #ead5d0;
+    border-radius: 0.5rem;
+    background: #fff6f3;
+    font-size: 0.9rem;
+    line-height: 1.65;
+    margin-bottom: 1rem;
+}
+.security-confirmation p {
+    margin: 0 0 0.8rem;
+}
+.security-confirmation label {
+    display: flex;
+    align-items: start;
+    gap: 0.65rem;
+    cursor: pointer;
+}
+.security-confirmation input {
+    flex-shrink: 0;
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-top: 0.2rem;
+    accent-color: #176b5b;
+}
+.security-error,
+.security-success,
+.security-wait {
+    padding: 0.85rem 1rem;
+    border-radius: 0.45rem;
+    font-size: 0.87rem;
+    line-height: 1.65;
+}
+.security-error {
+    color: #8b2520;
+    background: #fff0ee;
+}
+.security-success {
+    color: #155c3e;
+    background: #e5f3e9;
+}
+.security-wait {
+    color: #805416;
+    background: #fcf0d8;
+}
+.security-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+@media (max-width: 560px) {
+    .security-protection {
+        flex-direction: column;
+    }
+    .security-form {
+        padding: 1.1rem;
+    }
+}

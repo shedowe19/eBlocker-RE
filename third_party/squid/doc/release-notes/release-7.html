@@ -1,0 +1,475 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+ <META NAME="GENERATOR" CONTENT="LinuxDoc-Tools 0.9.83">
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+ <TITLE>Squid 7.2 release notes</TITLE>
+</HEAD>
+<BODY>
+<H1>Squid 7.2 release notes</H1>
+
+<H2>Squid Developers</H2>
+<P>
+<H2><A NAME="toc1">1.</A> <A HREF="#s1">Notice</A></H2>
+
+<UL>
+<LI><A NAME="toc1.1">1.1</A> <A HREF="#ss1.1">Known issues</A>
+<LI><A NAME="toc1.2">1.2</A> <A HREF="#ss1.2">Changes since earlier releases of Squid-7</A>
+</UL>
+<P>
+<H2><A NAME="toc2">2.</A> <A HREF="#s2">Major new features since Squid-6</A></H2>
+
+<UL>
+<LI><A NAME="toc2.1">2.1</A> <A HREF="#ss2.1">Cache Manager changes</A>
+<LI><A NAME="toc2.2">2.2</A> <A HREF="#ss2.2">Removed purge tool</A>
+<LI><A NAME="toc2.3">2.3</A> <A HREF="#ss2.3">Removed deprecated languages</A>
+<LI><A NAME="toc2.4">2.4</A> <A HREF="#ss2.4">Removed Ident protocol support</A>
+<LI><A NAME="toc2.5">2.5</A> <A HREF="#ss2.5">Helper changes</A>
+</UL>
+<P>
+<H2><A NAME="toc3">3.</A> <A HREF="#s3">Changes to squid.conf since Squid-6</A></H2>
+
+<UL>
+<LI><A NAME="toc3.1">3.1</A> <A HREF="#ss3.1">New directives</A>
+<LI><A NAME="toc3.2">3.2</A> <A HREF="#ss3.2">Changes to existing directives</A>
+<LI><A NAME="toc3.3">3.3</A> <A HREF="#ss3.3">Removed directives</A>
+</UL>
+<P>
+<H2><A NAME="toc4">4.</A> <A HREF="#s4">Changes to ./configure options since Squid-6</A></H2>
+
+<UL>
+<LI><A NAME="toc4.1">4.1</A> <A HREF="#ss4.1">New options</A>
+<LI><A NAME="toc4.2">4.2</A> <A HREF="#ss4.2">Changes to existing options</A>
+<LI><A NAME="toc4.3">4.3</A> <A HREF="#ss4.3">Removed options</A>
+<LI><A NAME="toc4.4">4.4</A> <A HREF="#ss4.4">Other changes</A>
+</UL>
+<P>
+<H2><A NAME="toc5">5.</A> <A HREF="#s5">Copyright</A></H2>
+
+
+<HR>
+<H2><A NAME="s1">1.</A> <A HREF="#toc1">Notice</A></H2>
+
+<P>The Squid Team are pleased to announce the release of Squid-@PACKAGE_VERSION@ for testing.</P>
+<P>This new release is available for download from 
+<A HREF="http://www.squid-cache.org/Versions/v7/">http://www.squid-cache.org/Versions/v7/</A> or the
+<A HREF="http://www.squid-cache.org/Download/http-mirrors.html">mirrors</A>.</P>
+
+<P>While this release is not deemed ready for production use, we believe it is ready for wider testing by the community.</P>
+
+<P>We welcome feedback and bug reports. If you find a bug, please see 
+<A HREF="https://wiki.squid-cache.org/SquidFaq/BugReporting">https://wiki.squid-cache.org/SquidFaq/BugReporting</A>
+for how to submit a report with a stack trace.</P>
+
+<H2><A NAME="ss1.1">1.1</A> <A HREF="#toc1.1">Known issues</A>
+</H2>
+
+<P>Although this release is deemed good enough for use in many setups, please note the existence of
+<A HREF="https://bugs.squid-cache.org/buglist.cgi?query_format=advanced&amp;product=Squid&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;version=7">open bugs against Squid-7</A>.</P>
+
+<H2><A NAME="ss1.2">1.2</A> <A HREF="#toc1.2">Changes since earlier releases of Squid-7</A>
+</H2>
+
+<P>The Squid-7 change history can be 
+<A HREF="https://github.com/squid-cache/squid/commits/v7">viewed here</A>.</P>
+
+
+<H2><A NAME="s2">2.</A> <A HREF="#toc2">Major new features since Squid-6</A></H2>
+
+<P>Squid-7 represents a new feature release above Squid-6.</P>
+
+<P>The most important of these new features are:
+<UL>
+<LI>Cache Manager changes</LI>
+<LI>Removed purge tool</LI>
+<LI>Remove deprecated languages</LI>
+<LI>Remove Ident protocol support</LI>
+<LI>Helper changes</LI>
+</UL>
+</P>
+
+<P>Most user-facing changes are reflected in squid.conf (see further below).</P>
+
+<H2><A NAME="mgr"></A> <A NAME="ss2.1">2.1</A> <A HREF="#toc2.1">Cache Manager changes</A>
+</H2>
+
+<P>For more information about the Cache Manager feature, see 
+<A HREF="https://wiki.squid-cache.org/Features/CacheManager/Index">wiki</A>.</P>
+
+<P>In order to reduce workload on the Squid development team we have chosen to stop
+providing several tools related to Cache Manager which have previously been
+bundled with Squid.</P>
+
+<H3>Removal of the <EM>squidclient</EM> tool.</H3>
+
+<P>Popular command-line tools such as <EM>curl</EM> or <EM>wget</EM>
+provide equivalent features. To access the cache manager, administrators
+can use for instance the command
+<EM>curl -u user:&lt;cachemgr_passwd&gt; http://&lt;squid_hostname:squid_port&gt;/squid-internal-mgr/&lt;section&gt;</EM>
+where <EM>section</EM> is the name of the desired cache manager report.
+To list available reports, use the report name <EM>menu</EM>.</P>
+
+<H3>Removal of the <EM>cachemgr.cgi</EM> tool.</H3>
+
+<P>Access to the Cache Manager API is available by sending HTTP(S) requests
+directly to Squid with the URL-path prefix <EM>/squid-internal-mgr/</EM>
+as described above. As Squid cache manager uses native HTTP(S),
+it is now possible to access it directly with a web browser.</P>
+
+<H3>Removal of the <EM>cache_object:</EM> URI scheme.</H3>
+
+<P>This custom scheme does not conform to RFC 3986 URI sytax. It has been replaced
+with Cache Manager access through HTTP and HTTPS URLs.</P>
+
+<H3>Removal of <EM>non_peers</EM> Report</H3>
+
+<P>Squid still ignores unexpected ICP responses but no longer remembers the
+details that comprised the removed report. The senders of these ICP messages
+are still reported to cache.log at debugging level 1 (with an exponential backoff).</P>
+
+<H2><A NAME="ss2.2">2.2</A> <A HREF="#toc2.2">Removed purge tool</A>
+</H2>
+
+<P>The <EM>purge</EM> tool (also known as <EM>squidpurge</EM>, and <EM>squid-purge</EM>)
+was limited to managing UFS/AUFS/DiskD caches and had problems parsing non-trivial squid.conf files.</P>
+
+<P>The cache contents display and search it provided can be obtained with a script
+searching the cache manager <EM>objects</EM> report.</P>
+
+<P>This tool used the custom <EM>PURGE</EM> HTTP method to remove cache
+objects. This can be performed directly on any Squid configured to allow
+the method. Like so:
+<PRE>
+    acl PURGE method PURGE
+    http_access allow localhost PURGE
+</PRE>
+
+Any HTTP client (such as curl) can then be used to evict objects from the cache, for example:
+<PRE>
+    curl -XPURGE --proxy http://127.0.0.1:3128 http://url.to/evict/
+</PRE>
+
+Alternatively the HTCP <EM>CLR</EM> mechanism can be used.</P>
+
+<H2><A NAME="ss2.3">2.3</A> <A HREF="#toc2.3">Removed deprecated languages</A>
+</H2>
+
+<P>Old Squid used full language name to refer to error page translations.
+These have been deprecated since addition of ISO-639 language codes
+and support for HTTP Accept-Language negotiation in Squid-3.x.</P>
+
+<P>As of this release Squid will no longer provide the symlinks
+needed for seamless upgrade for squid.conf containing settings such as
+<PRE>
+    error_directory English
+</PRE>
+
+All Squid installations are expected to already have them,
+or to convert to the ISO-639 equivalents. Existing symlinks are not
+affected.</P>
+
+<P>See 
+<A HREF="http://www.squid-cache.org/Versions/langpack/">http://www.squid-cache.org/Versions/langpack/</A> for the latest
+list of official Squid translations.</P>
+
+<P>See 
+<A HREF="https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes">https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes</A> for
+the full ISO-639 list. HTTP uses the 2-letter (set 1) codes.</P>
+
+<H2><A NAME="ss2.4">2.4</A> <A HREF="#toc2.4">Removed Ident protocol support</A>
+</H2>
+
+<P>Ident protocol (RFC 931 obsoleted by RFC 1413) has been considered
+seriously insecure and broken since at least 2009 when SANS issued an update
+recommending its removal from all networks. Squid Ident implementation had its
+own set of problems (that could not be addressed without significant code
+refactoring).</P>
+
+<P>Configurations using ident/ident_regex ACLs, %ui logformat codes, %IDENT
+external_acl_type format code, or ident_lookup_access/ident_timeout directives
+are now rejected, leading to fatal startup failures.</P>
+
+<P>To avoid inconveniencing admins that do <EM>not</EM> use Ident features,
+access logs with "common" and "combined" logformats now always receive a dash
+in the position of what used to be a %ui record field.</P>
+
+<P>If necessary, an external ACL helper can be written to perform Ident transactions
+and deliver the user identity to Squid through the **user=** annotation.</P>
+
+<H2><A NAME="ss2.5">2.5</A> <A HREF="#toc2.5">Helper changes</A>
+</H2>
+
+<P>Removed <EM>basic_smb_lm_auth</EM> NTLM authentication helper.
+Use the <EM>ntlm_auth</EM> helper from the Samba project instead.</P>
+
+<P>Removed <EM>ntlm_smb_lm_auth</EM> NTLM authentication helper.
+Use the <EM>ntlm_auth</EM> helper from the Samba project instead.</P>
+
+<H2><A NAME="s3">3.</A> <A HREF="#toc3">Changes to squid.conf since Squid-6</A></H2>
+
+<P>This section gives an account of those changes in three categories:</P>
+<P>
+<UL>
+<LI>
+<A HREF="#newdirectives">New directives</A></LI>
+<LI>
+<A HREF="#modifieddirectives">Changes to existing directives</A></LI>
+<LI>
+<A HREF="#removeddirectives">Removed directives</A></LI>
+</UL>
+</P>
+
+
+<H2><A NAME="newdirectives"></A> <A NAME="ss3.1">3.1</A> <A HREF="#toc3.1">New directives</A>
+</H2>
+
+<P>
+<DL>
+<P>No new directives in this version.</P>
+
+</DL>
+</P>
+
+<H2><A NAME="modifieddirectives"></A> <A NAME="ss3.2">3.2</A> <A HREF="#toc3.2">Changes to existing directives</A>
+</H2>
+
+<P>
+<DL>
+<DT><B>acl</B><DD>
+<P>Changed <EM>src</EM> to detect and handle overlapping IP and
+IP-range values. Merging where necessary.</P>
+<P>Changed <EM>dst</EM> to detect and handle overlapping IP and
+IP-range values. Merging where necessary.</P>
+<P>Changed <EM>localip</EM> to detect and handle overlapping IP and
+IP-range values. Merging where necessary.</P>
+<P>Changed <EM>ssl::server_name</EM> to detect and handle overlapping
+sub-domain and wildcard domains. Merging or ignoring where
+necessary.</P>
+<P>Changed <EM>srcdomain</EM> to detect and handle overlapping
+sub-domain and wildcard domains. Merging or ignoring where
+necessary.</P>
+<P>Changed <EM>dstdomain</EM> to detect and handle overlapping
+sub-domain and wildcard domains. Merging or ignoring where
+necessary.</P>
+<P>Changed <EM>http_status</EM> to detect and handle overlapping
+status and status-range values. Merging where necessary.</P>
+<P>Removed <EM>ident</EM> with Ident protocol support.</P>
+<P>Removed <EM>ident_regex</EM> with Ident protocol support.</P>
+
+<DT><B>buffered_logs</B><DD>
+<P>Honor the <EM>off</EM> setting in 'udp' access_log module.</P>
+
+<DT><B>cachemgr_passwd</B><DD>
+<P>Removed the <EM>non_peers</EM> action. See the Cache Manager
+<A HREF="#mgr">section</A> for details.</P>
+
+
+<DT><B>client_ip_max_connections</B><DD>
+<P>Fixed off-by-one enforcement. Squid now allows at most <EM>N</EM>
+concurrent connections per client IP (not <EM>N</EM>+1), where <EM>N</EM>
+is the configured directive value. Deployments that relied on the extra
+connection should increase the configured limit by one to preserve
+previous behavior.</P>
+
+<DT><B>dns_packet_max</B><DD>
+<P>Honor positive <EM>dns_packet_max</EM> values when sending DNS A queries
+and PTR queries containing IPv4 addresses. Prior to this change, Squid did
+not add EDNS extension (RFC 6891) to those DNS queries because 2010 tests
+revealed compatibility problems with some DNS resolvers. We hope that those
+problems are now sufficiently rare to enable this useful optimization for
+all DNS queries, as originally intended. Squid still sends EDNS extension
+with DNS AAAA queries and PTR queries containing IPv6 addresses (when
+dns_packet_max is set to a positive value). Rare deployments that must use
+buggy DNS resolvers should not set <EM>dns_packet_max</EM>.</P>
+
+<DT><B>access_log</B><DD>
+<P>Built-in <EM>common</EM> and <EM>combined</EM> logformats now always
+receive a dash character ("-") in the position of what used to be a
+<EM>%ui</EM> record field.</P>
+
+<DT><B>logformat</B><DD>
+<P>Removed <EM>%ui</EM> format code with Ident protocol support.</P>
+
+<DT><B>email_err_data</B><DD>
+<P>Since Squid-7.2, the default for this directive is <EM>off</EM>.</P>
+
+<DT><B>external_acl_type</B><DD>
+<P>Removed <EM>%IDENT</EM> format code with Ident protocol support.</P>
+
+<DT><B>collapsed_forwarding</B><DD>
+<P>Squid no longer revalidates responses to collapsed requests, treating
+all such responses as fresh. This change follows IETF HTTP Working Group
+advice (in an HTTP gray area) and prevents arguably excessive freshness
+checks for responses to collapsed requests. This change does not prevent
+freshness checks for responses that were, at the time of a hit request,
+either fully cached or still receiving response body bytes.</P>
+
+<DT><B>quick_abort_pct</B><DD>
+<P>Instead of ignoring <EM>quick_abort_pct</EM> settings that would,
+together with other conditions, abort a pending download of a 99-byte or
+smaller response, Squid now honors <EM>quick_abort_pct</EM> for all
+response sizes. Most Squids are not going to be affected by this change
+because default quick_abort_min settings (16KB) prevent aborts of 99-byte
+responses even before <EM>quick_abort_pct</EM> is checked.</P>
+<P>Due to conversion from integer to floating point math, this change may
+affect responses larger than 99 bytes as well, but these effects ought to
+be limited to cases where the decision is based on a tiny difference (e.g.,
+receiving 1% more bytes would have triggered full download). In most such
+cases, the decision could probably go either way due to response header
+size fluctuations anyway.</P>
+
+</DL>
+</P>
+
+<H2><A NAME="removeddirectives"></A> <A NAME="ss3.3">3.3</A> <A HREF="#toc3.3">Removed directives</A>
+</H2>
+
+<P>
+<DL>
+<DT><B>esi_parser</B><DD>
+<P>Edge Side Includes (ESI) protocol is no longer supported natively.</P>
+
+<DT><B>mcast_miss_addr</B><DD>
+<P>The corresponding code has not built for many years, indicating that the
+feature is unused.</P>
+
+<DT><B>mcast_miss_ttl</B><DD>
+<P>The corresponding code has not built for many years, indicating that the
+feature is unused.</P>
+
+<DT><B>mcast_miss_port</B><DD>
+<P>The corresponding code has not built for many years, indicating that the
+feature is unused.</P>
+
+<DT><B>mcast_miss_encode_key</B><DD>
+<P>The corresponding code has not built for many years, indicating that the
+feature is unused.</P>
+
+<DT><B>ident_lookup_access</B><DD>
+<P>Ident protocol is no longer supported natively.</P>
+
+<DT><B>ident_timeout</B><DD>
+<P>Ident protocol is no longer supported natively.</P>
+
+</DL>
+</P>
+
+
+<H2><A NAME="s4">4.</A> <A HREF="#toc4">Changes to ./configure options since Squid-6</A></H2>
+
+<P>This section gives an account of those changes in three categories:</P>
+<P>
+<UL>
+<LI>
+<A HREF="#newoptions">New options</A></LI>
+<LI>
+<A HREF="#modifiedoptions">Changes to existing options</A></LI>
+<LI>
+<A HREF="#removedoptions">Removed options</A></LI>
+</UL>
+</P>
+
+<H2><A NAME="newoptions"></A> <A NAME="ss4.1">4.1</A> <A HREF="#toc4.1">New options</A>
+</H2>
+
+<P>
+<DL>
+<DT><B>--without-gss</B><DD>
+<P>Renamed from <EM>--without-gnugss</EM>.</P>
+
+<DT><B>--without-psapi</B><DD>
+<P>Disable auto-detection of Windows PSAPI library.</P>
+
+<DT><B>--without-sasl</B><DD>
+<P>Disable auto-detection of Cyrus SASL (or compatible) library.</P>
+
+<DT><B>CPPFLAGS=-DINCOMING_FACTOR=</B><DD>
+<P>Control the listening sockets responsiveness with poll(2) and select(2).
+The higher the INCOMING_FACTOR, the slower the algorithm will
+respond to load spikes/increases/decreases in demand. A value
+between 3 and 8 is recommended. Default is 5.</P>
+
+</DL>
+</P>
+
+<H2><A NAME="modifiedoptions"></A> <A NAME="ss4.2">4.2</A> <A HREF="#toc4.2">Changes to existing options</A>
+</H2>
+
+<P>
+<DL>
+
+<DT><B>--enable-auth-basic=</B><DD>
+<P>Removed <EM>SMB_LM</EM> helper, in favour of the <EM>ntlm_auth</EM>
+alternative offered by the Samba project.</P>
+
+<DT><B>--enable-auth-ntlm=</B><DD>
+<P>Removed <EM>SMB_LM</EM> helper, in favour of the <EM>ntlm_auth</EM>
+alternative offered by the Samba project.</P>
+
+<DT><B>--disable-arch-native</B><DD>
+<P>The <EM>-march=native</EM> compiler option is no longer used by
+default. It is possible to enable it by using the
+<EM>--enable-arch-native</EM> option.
+Using <EM>-march=native</EM> may cause problems when Squid is
+run on a system with a different exact CPU model than the one
+it is built on, or in some containerized environments.
+The symptom is crashes with "illegal instruction" errors.
+We do not recommend enabling this optimization in virtualized environments.</P>
+
+</DL>
+</P>
+<H2><A NAME="removedoptions"></A> <A NAME="ss4.3">4.3</A> <A HREF="#toc4.3">Removed options</A>
+</H2>
+
+<P>
+<DL>
+<DT><B>--enable-cachemgr-hostname=</B><DD>
+<P>The <EM>cachemgr.cgi</EM> tool this option relates to has been removed.</P>
+
+<DT><B>--enable-esi</B><DD>
+<P>Edge Side Includes (ESI) protocol is no longer supported natively.</P>
+
+<DT><B>--without-expat</B><DD>
+<P>The ESI feature using libexpat has been removed.</P>
+
+<DT><B>--without-gnugss</B><DD>
+<P>Renamed to <EM>--without-gss</EM>.</P>
+
+<DT><B>--without-xml2</B><DD>
+<P>The ESI feature using libxml2 has been removed.</P>
+
+<DT><B>CPPFLAGS=-DHEADERS_LOG</B><DD>
+<P>The code enabled by this preprocessor macro has not built for many
+years, indicating that the feature is unused.</P>
+
+<DT><B>CPPFLAGS=-DMULTICAST_MISS_STREAM</B><DD>
+<P>The code enabled by this preprocessor macro has not built for many
+years, indicating that the feature is unused.</P>
+
+<DT><B>--disable-ident-lookups</B><DD>
+<P>The option was dropped during Ident protocol support removal.</P>
+
+</DL>
+</P>
+
+<H2><A NAME="otherchanges"></A> <A NAME="ss4.4">4.4</A> <A HREF="#toc4.4">Other changes</A>
+</H2>
+
+<P>
+<DL>
+<DT><B>Adjusted configuration and format of ext_time_quota_acl helper debugging</B><DD>
+<P>The <EM>-l</EM> option that enables <EM>ext_time_quota_acl</EM> to log debug messages
+to a custom logfile has been removed, and their format has been
+changed to be in line with Squid's cache.log format.</P>
+</DL>
+</P>
+
+<H2><A NAME="s5">5.</A> <A HREF="#toc5">Copyright</A></H2>
+
+<P>Copyright (C) 1996-2025 The Squid Software Foundation and contributors</P>
+<P>Squid software is distributed under GPLv2+ license and includes
+contributions from numerous individuals and organizations.
+Please see the COPYING and CONTRIBUTORS files for details.</P>
+
+</BODY>
+</HTML>

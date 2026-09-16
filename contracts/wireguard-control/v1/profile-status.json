@@ -1,0 +1,146 @@
+{
+  "data": {
+    "phase": "active",
+    "plan": {
+      "applied": false,
+      "defaultRouteIPv4": true,
+      "defaultRouteIPv6": true,
+      "dns": [],
+      "endpointExclusions": [
+        "198.51.100.1"
+      ],
+      "interfaceAddresses": [
+        "10.20.0.2/32"
+      ],
+      "killSwitchActive": false,
+      "leakRisks": [
+        "no_kill_switch",
+        "dns_not_configured"
+      ],
+      "peers": [
+        {
+          "allowedIPs": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
+          "endpoint": "198.51.100.1:51820",
+          "hasPresharedKey": false,
+          "publicKey": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM="
+        }
+      ],
+      "requiredCapabilities": [
+        "CAP_NET_ADMIN"
+      ],
+      "warnings": [
+        "Validation only: no tunnel, routes, DNS settings, or kill switch have been applied.",
+        "Literal endpoints covered by tunnel or connected routes require verified bypass routes through the original uplink to prevent routing loops."
+      ]
+    },
+    "profileId": "home",
+    "runtime": {
+      "killSwitchActive": true,
+      "observation": {
+        "exists": true,
+        "owned": true,
+        "peers": [
+          {
+            "lastHandshakeUnix": 1700000000,
+            "publicKey": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM=",
+            "receiveBytes": 12345,
+            "transmitBytes": 54321
+          }
+        ],
+        "policy": {
+          "digest": "ee03a4bd2626dcae80b96f39da223c7cc0ffd70cbfe1c3c662698a818394fe75",
+          "endpointsVerified": true,
+          "firewallVerified": true,
+          "ipv4PoliciesVerified": true,
+          "ipv6PoliciesVerified": true,
+          "killSwitchActive": true,
+          "markVerified": true,
+          "owner": {
+            "interfaceName": "ebwg1234567890",
+            "ownershipId": "1234567890abcdef1234567890abcdef"
+          },
+          "routingVerified": true
+        },
+        "up": true
+      },
+      "phase": "active",
+      "plan": {
+        "applied": false,
+        "defaultRouteIPv4": true,
+        "defaultRouteIPv6": true,
+        "dns": [],
+        "endpointExclusions": [
+          "198.51.100.1"
+        ],
+        "interfaceAddresses": [
+          "10.20.0.2/32"
+        ],
+        "killSwitchActive": false,
+        "leakRisks": [
+          "no_kill_switch",
+          "dns_not_configured"
+        ],
+        "peers": [
+          {
+            "allowedIPs": [
+              "0.0.0.0/0",
+              "::/0"
+            ],
+            "endpoint": "198.51.100.1:51820",
+            "hasPresharedKey": false,
+            "publicKey": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM="
+          }
+        ],
+        "requiredCapabilities": [
+          "CAP_NET_ADMIN"
+        ],
+        "warnings": [
+          "Validation only: no tunnel, routes, DNS settings, or kill switch have been applied.",
+          "Literal endpoints covered by tunnel or connected routes require verified bypass routes through the original uplink to prevent routing loops."
+        ]
+      },
+      "policy": {
+        "allowedIPs": [
+          "0.0.0.0/0",
+          "::/0"
+        ],
+        "digest": "ee03a4bd2626dcae80b96f39da223c7cc0ffd70cbfe1c3c662698a818394fe75",
+        "endpoints": [
+          {
+            "address": "198.51.100.1",
+            "interfaceName": "eth0",
+            "port": 51820
+          }
+        ],
+        "firewallMark": 3946075768,
+        "ipv4Default": true,
+        "ipv6Default": true,
+        "localInterfaces": [
+          "eth0"
+        ],
+        "localNetworks": [
+          "192.168.1.0/24"
+        ],
+        "mainRulePriority": 11000,
+        "nftTable": "ebwg_1234567890abcdef1234567890abcdef",
+        "owner": {
+          "interfaceName": "ebwg1234567890",
+          "ownershipId": "1234567890abcdef1234567890abcdef"
+        },
+        "routeTable": 3946075768,
+        "tunnelRulePriority": 11001,
+        "version": 1
+      },
+      "schemaVersion": 1,
+      "target": {
+        "interfaceName": "ebwg1234567890",
+        "ownershipId": "1234567890abcdef1234567890abcdef",
+        "profileId": "home"
+      }
+    }
+  },
+  "schemaVersion": 1
+}

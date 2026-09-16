@@ -1,0 +1,40 @@
+version: 2
+updates:
+  - package-ecosystem: maven
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+  - package-ecosystem: npm
+    directory: /apps/web
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+  - package-ecosystem: npm
+    directory: /apps/console
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+  - package-ecosystem: gomod
+    directory: /platform/dns/coredns
+    schedule:
+      interval: weekly
+  - package-ecosystem: gomod
+    directory: /platform/dns/dynamic
+    schedule:
+      interval: weekly
+  - package-ecosystem: gomod
+    directory: /libs/wireguard
+    schedule:
+      interval: weekly
+  - package-ecosystem: gomod
+    directory: /apps/network-agent
+    schedule:
+      interval: weekly
+    ignore:
+      # The placeholder version is replaced by local monorepository source.
+      - dependency-name: github.com/eblocker/eblocker/libs/wireguard

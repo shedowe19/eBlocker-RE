@@ -1,0 +1,7 @@
+key,path,line,usage
+v,src/test/resources/l1ca.properties,3,definition
+u,src/test/resources/l1ca.properties,4,definition
+v,src/test/resources/root.properties,3,definition
+u,src/test/resources/root.properties,4,definition
+v,src/test/resources/systemkey.properties,3,definition
+u,src/test/resources/systemkey.properties,4,definition

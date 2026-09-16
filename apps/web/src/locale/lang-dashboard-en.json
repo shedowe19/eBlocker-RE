@@ -1,0 +1,1066 @@
+{
+    "ANONYMIZATION" : {
+        "CARD" : {
+            "TITLE" : "Anonymization",
+            "TOOLTIP" : "Use an anonymization service to hide your identity when browsing the web."
+        }
+    },
+    "APP" : {
+        "CARDS_DROPDOWN" : {
+            "DISABLED_TOOLTIP" : "This dashboard card cannot be hidden.",
+            "LABEL" : "Show or hide dashboard cards...",
+            "TOOLTIP" : "Show or hide dashboard cards"
+        },
+        "CONTENT" : {
+            "HELP" : {
+                "LABEL" : "Help",
+                "URL" : "https://eBlocker.org/docs"
+            },
+            "EXPAND": {
+                "LABEL": "Expand all"
+            },
+            "COLLAPSE": {
+                "LABEL": "Collapse all"
+            }
+        },
+        "DEVICE_MENU" : {
+            "SELECT_LOCAL" : "This device",
+            "SELECT_OTHER" : "Other devices..."
+        },
+        "DRAG_DROP" : {
+            "TOOLTIP" : "Drag here to reorder this card."
+        },
+        "HEADER" : {
+            "TITLE" : "eBlocker Dashboard",
+            "TITLE_BLOCKER" : "Website blocked",
+            "TITLE_REDIRECT" : "Website blocked"
+        },
+        "PAUSED" : {
+            "LABEL_BOTTOM" : "PAUSED",
+            "LABEL_TOP" : "DASHBOARD"
+        },
+        "REMOTE_WARNING" : {
+            "LABEL" : "Remote device: not all dashboard cards are available."
+        },
+        "SERVER_UNAVAILABLE" : {
+            "BOOTING" : "BOOTING",
+            "DOWN" : "UNAVAILABLE",
+            "LABEL_TOP" : "EBLOCKER",
+            "OFF" : "OFF",
+            "SHUTTING_DOWN" : "SHUTTING DOWN",
+            "SHUTTING_DOWN_FOR_REBOOT" : "REBOOTING",
+            "UPDATING" : "UPDATING",
+            "ERROR": "ERROR STARTING"
+        },
+        "SETTINGS_LINK" : {
+            "TOOLTIP" : "Open Settings"
+        },
+        "TOOLBAR" : {
+            "TITLE" : "Dashboard for",
+            "TITLE_FULL" : "Dashboard for this device",
+            "USER_LOCKED" : "Locked"
+        }
+    },
+    "CONSOLE" : {
+        "CARD" : {
+            "BUTTON" : {
+                "OK" : "Open settings"
+            },
+            "NETWORK" : {
+                "DEVICE_IP" : "This device:",
+                "EBLOCKER_IP" : "eBlocker:",
+                "GATEWAY_IP" : "Gateway:",
+                "MORE_ADDRESSES" : "{count} {count, select, 1{Address} other{Addresses}}"
+            },
+            "TEXT" : "It might be necessary to provide the administrator password.",
+            "TITLE" : "Settings",
+            "TOOLTIP" : "For eBlocker settings, it might be necessary to enter the administrator password."
+        }
+    },
+    "CONNECTION_TEST" : {
+        "CARD" : {
+            "BUTTON_CHECK" : {
+                "LABEL": "eBlocker function test"
+            },
+            "BUTTON_CHECK_REPEAT" : {
+                "LABEL": "Repeat"
+            },
+            "BUTTON_CLEAR" : {
+                "LABEL": "Clear"
+            },
+            "EXPLANATION" : {
+                "RUNNING" : "eBlocker function test running..."
+            },
+            "DASHBOARD_HTTP_LINK" : {
+                "LABEL" : "Function test",
+                "LINKTEXT" : "load dashboard via HTTP"
+            },
+            "PLACEHOLDER" : {
+                "LABEL" : "No check executed yet."
+            },
+            "RESULT" : {
+                "ADSDOMAINBLOCKERTEST" : {
+                    "LABEL" : "Domain Blocker (ads)"
+                },
+                "DOMAINBLOCKERTEST" : {
+                    "LABEL" : "Domain Blocker"
+                },
+                "DNSFIREWALLTEST" : {
+                    "LABEL" : "DNS Firewall"
+                },
+                "IPV6TEST" : {
+                    "LABEL" : "IPv6 filtering"
+                },
+                "WEBFILTERINGTEST" : {
+                    "LABEL" : "Web filtering"
+                },
+                "WEBFILTERINGTEST_WITH_HTTPS" : {
+                    "LABEL" : "Web filtering with HTTPS"
+                },
+                "WEBFILTERINGTEST_HTTP" : {
+                    "LABEL" : "Web filtering (HTTP)"
+                },
+                "WEBFILTERINGTEST_HTTPS" : {
+                    "LABEL" : "Web filtering (HTTPS)"
+                },
+                "PATTERNBLOCKERTEST" : {
+                    "LABEL" : "Pattern Blocker"
+                },
+                "ROUTINGTEST" : {
+                    "LABEL" : "Device is monitored"
+                },
+                "TRACKERDOMAINBLOCKERTEST" : {
+                    "LABEL" : "Domain Blocker (trackers)"
+                },
+                "TOOLTIP": {
+                    "PROGRESS" : "Test in progress...",
+                    "OK_EXPECTED" : "Test passed",
+                    "OK_UNEXPECTED" : "",
+                    "ERROR_EXPECTED" : "",
+                    "ERROR_UNEXPECTED" : "Test failed"
+                },
+                "EXPLANATION": {
+                    "CERT_NOT_INSTALLED" : "HTTPS is active for your device but eBlocker's certificate has not been added on the device.",
+                    "CONFIGURATION_DATA_MISSING" : "The configuration could not be read. Please reload this page and start the test again.",
+                    "DHCP_LEASE_OLD" : "You have activated individual network settings on your eBlocker but this device has not been restarted.",
+                    "DNS_RESPONSE_CACHED" : "Your device uses a cached DNS response. Please start the test again in a few minutes.",
+                    "EXISTING_SSL_SESSION" : "You changed eBlocker's settings but your browser uses an existing HTTPS session. Please restart your browser.",
+                    "HEADING" : "Possible causes:",
+                    "INTERNET_CONNECTIVITY" : "The connection to your Internet provider is interrupted.",
+                    "IPV6_LEAK" : "The IPv6 connection is not protected by eBlocker.",
+                    "NO_IPV6_ON_CLIENT" : "There is no IPv6 connectivity.",
+                    "NO_IPV6_ON_EBLOCKER" : "There is no IPv6 connectivity on the eBlocker.",
+                    "ROUTING_SECOND_NETWORK" : "Your device is using a second network that is not protected by eBlocker."
+                },
+                "NOT_USED": "not used"
+            },
+            "TITLE" : "Function test",
+            "TOOLTIP" : "Test your connection"
+        }
+    },
+    "DEVICE_FIREWALL" : {
+        "CARD" : {
+            "ACTION" : {
+                "ALLOW" : "Always allow",
+                "APPLY" : "Apply",
+                "BLOCK" : "Always block",
+                "LEGEND_HIDE" : "Hide legend",
+                "LEGEND_SHOW" : "Show legend",
+                "REFRESH" : "Refresh",
+                "RESET" : "Reset"
+            },
+            "LEGEND" : {
+                "BLOCK" : "All requests were blocked.",
+                "FILTER" : "Some requests were blocked by the pattern blocker.",
+                "PASS" : "All requests to this domain were allowed."
+            },
+            "MESSAGE" : {
+                "BLOCK" : "Added {{numberOfDomains}} domain(s) to the blocker list",
+                "BLOCK_USER" : "Added {{numberOfDomains}} domain(s) to the blocker list of {{userName}}",
+                "ALLOW" : "Added {{numberOfDomains}} domain(s) to the exception list",
+                "ALLOW_USER" : "Added {{numberOfDomains}} domain(s) to the exception list of {{userName}}"
+            },
+            "RECORDING" : {
+                "DISABLED" : "Not recording",
+                "ENABLED" : "Recording (last 24h)"
+            },
+            "TITLE" : "Personal Device Firewall",
+            "TOOLTIP" : "To monitor, block or allow domains this device requests"
+        }
+    },
+    "DEVICE_STATUS" : {
+        "CARD" : {
+            "BLOCKING" : {
+                "ADS" : "Block ads",
+                "TRACKER" : "Block trackers"
+            },
+            "DEVICE" : {
+                "ENABLED" : "eBlocker enabled for this device",
+                "DISABLED" : "eBlocker disabled for this device"
+            },
+            "TITLE" : "Status",
+            "TOOLTIP" : "Status of this device"
+        }
+    },
+    "DIALOGS" : {
+        "LOGIN" : {
+            "EXPLAIN" : "Enter your administrator password to access other devices.",
+            "NO_ADMIN_PASSWORD_SET" : "No administrator password is set. If you want to access other devices in the dashboard, you must set a password first.",
+            "SELECT_DEVICE" : "Select device",
+            "SET_ADMIN_PASSWORD" : "Set administrator password"
+        },
+        "PIN" : {
+            "BUTTON" : {
+                "CANCEL" : "Cancel",
+                "LOCK" : "Lock",
+                "LOGIN" : "Change user",
+                "OK" : "OK"
+            },
+            "ERROR" : {
+                "INVALID" : "PIN is invalid.",
+                "REQUIRED" : "PIN is required."
+            },
+            "INPUT" : "PIN entry",
+            "PIN_CHANGE" : {
+                "ERROR" : {
+                    "INVALID" : "Invalid PIN",
+                    "MISMATCH" : "PINs do not match.",
+                    "REQUIRED" : "Please enter a PIN.",
+                    "TOO_LONG" : "PIN is too long.",
+                    "TOO_SHORT" : "PIN must have at least 4 characters."
+                },
+                "HEADER" : "Change PIN for user {{ name | translate }}",
+                "INPUT_CURRENT" : "Current PIN",
+                "INPUT_NEW" : "New PIN",
+                "INPUT_RENEW" : "Repeat new PIN"
+            },
+            "PIN_SET": {
+                "HEADER" : "Set PIN for user {{ name | translate }}"
+            },
+            "PIN_LOCK" : {
+                "BODY" : "Do you really want to lock Internet access for this device?",
+                "HEADER" : "Lock internet access"
+            },
+            "PIN_SELECT_USER" : {
+                "LABEL": "Select user",
+                "BODY_LOCK" : "Alternatively, you can lock Internet access for this device.",
+                "BODY_POST" : ".",
+                "BODY_PRE" : "You need the user PIN to switch to user ",
+                "USER_NAME": "{{ name | translate }}",
+                "HEADER" : "PIN entry required"
+            }
+        },
+        "WELCOME" : {
+            "ACTION" : {
+                "OK" : "Continue"
+            },
+            "ANDROID_CR_ACTION" : "Save to bookmarks",
+            "ANDROID_CR_POST" : "and then on",
+            "ANDROID_CR_PRE" : "Tap",
+            "ANDROID_FF_ACTION" : "",
+            "ANDROID_FF_POST" : "and then on",
+            "ANDROID_FF_PRE" : "Tap",
+            "BOOKMARK" : "Bookmark the Dashboard now!",
+            "BOOKMARK_XS" : "Bookmark:",
+            "IOS_FF_ACTION" : "Bookmark This Page",
+            "IOS_FF_POST" : "and then",
+            "IOS_FF_PRE" : "Tap",
+            "IOS_SAFARI_ACTION" : "Add to Home Screen",
+            "IOS_SAFARI_POST" : "and then",
+            "IOS_SAFARI_PRE" : "Tap",
+            "MAC_OS" : "+ D",
+            "NEVER_AGAIN" : "Never show again on this device",
+            "OTHER" : "Create a Bookmark for the eBlocker Dashboard now!",
+            "PAR_1" : "The eBlocker Dashboard gives you a quick overview of how the eBlocker is protecting you while you use this device.",
+            "PAR_2" : "You can also use the dashboard to adapt the protection settings to your needs.",
+            "PRESS" : "Press: ",
+            "TITLE" : "Welcome to the eBlocker dashboard",
+            "TITLE_XS" : "Bookmark the Dashboard",
+            "WIN" : "CTRL + D"
+        }
+    },
+    "DOMAIN_BLOCKLIST" : {
+        "CARD" : {
+            "SEARCH_LABEL" : "Enter domain...",
+            "TABLE" : {
+                "EMPTY_FOUND" : "No domains found",
+                "EMPTY_LIST" : "No domains blocked",
+                "MARK_DELETE" : "This domain will be removed from the list",
+                "USER_HINT" : "For all devices of"
+            },
+            "TITLE" : "Block Domains",
+            "TOOLTIP" : "Always block these domains"
+        }
+    },
+    "DOMAIN_PASSLIST" : {
+        "CARD" : {
+            "TABLE" : {
+                "EMPTY_LIST" : "No domains allowed"
+            },
+            "TITLE" : "Allow Domains",
+            "TOOLTIP" : "Always allow these domains"
+        }
+    },
+    "EXPIRED" : {
+        "CARD" : {
+            "BUTTON" : {
+                "RESUME" : "Resume"
+            },
+            "TITLE" : "Dashboard stopped"
+        }
+    },
+    "FILTER" : {
+        "CARD" : {
+            "ACTION" : {
+                "ACTIVATE_SSL" : "Activate HTTPS support",
+                "GO_TO_DNS" : "Go to Settings/DNS",
+                "GO_TO_HTTPS" : "Go to Settings/HTTPS"
+            },
+            "MALWARE" : {
+                "LABEL" : "Malware & Phishing Blocker",
+                "OFF" : "Off",
+                "ON" : "Standard"
+            },
+            "RADIO" : {
+                "AUTOMATIC" : "Automatic",
+                "LABEL" : "Trackers and Ads",
+                "NONE" : "None",
+                "PATTERN" : "Pattern Blocker",
+                "PLUG_AND_PLAY" : "Domain Blocker",
+                "RECOMMENDED" : "(Recommended)"
+            },
+            "TITLE" : "Blocker",
+            "TOOLTIP" : "Blocker settings.",
+            "WARN_DNS_1" : "The DNS server is deactivated.",
+            "WARN_DNS_2" : "Domain Blockers are not functional!",
+            "WARN_MALWARE" : "Activate the malware blockers to protect this device!",
+            "WARN_NO_FILTER" : "Activate the tracker and ad blockers to protect this device!",
+            "WARN_SSL" : "Pattern Blockers are not active on HTTPS websites.",
+            "WARN_SSL_DEVICE" : "HTTPS support is disabled for this device.",
+            "WARN_SSL_GLOABL" : "HTTPS support is disabled."
+        }
+    },
+    "DNS_STATISTICS" : {
+        "CARD" : {
+            "BIN" : {
+                "QUERIES" : {
+                    "BLOCKED_ADS" : "Ads",
+                    "BLOCKED_CUSTOM" : "Custom",
+                    "BLOCKED_TOTAL" : "Total Blocked",
+                    "BLOCKED_TRACKERS" : "Trackers"
+                }
+            },
+            "CHART" : {
+                "L18N" : {
+                    "LONG" : "MMM/D",
+                    "MIDDLE" : "ddd H:mm",
+                    "SHORT" : "H:mm"
+                },
+                "LABELS" : {
+                    "DAY" : "Day",
+                    "LAST_HOUR" : "Hour",
+                    "WEEK" : "Week"
+                },
+                "SERIES" : {
+                    "ADS" : "Ads",
+                    "CUSTOM" : "Custom blacklist",
+                    "NOT_BLOCKED" : "Allowed",
+                    "PARENTAL_CONTROL" : "Parental controls",
+                    "TRACKERS" : "Trackers",
+                    "UNKNOWN" : "Unknown/deleted list"
+                }
+            },
+            "TITLE" : "Blocker Statistics",
+            "TOOLTIP" : "Overview over DNS or Pattern blocking"
+        }
+    },
+    "BLOCKER_STATISTICS_TOTAL" : {
+        "CARD" : {
+            "BUTTONS" : {
+                "RESET_TOP_N" : "Reset"
+            },
+            "FORMAT_DATE_TIME" : "MMM D, YYYY",
+            "LABELS" : {
+                "BLOCKED_PERCENTAGE" : "Percentage blocked",
+                "CATEGORY_ADS" : "Ads",
+                "CATEGORY_CUSTOM" : "Custom",
+                "CATEGORY_PARENTAL" : "Parental Controls",
+                "CATEGORY_TRACKERS" : "Trackers",
+                "STATS_EMPTY" : "No domains blocked.",
+                "STATS_SINCE" : "Blocker statistics since {{date}} for all devices",
+                "TOP_N" : "Top {{number}} blocked domains for this device",
+                "TOTAL_BLOCKED" : "Total blocked",
+                "TOTAL_REQUESTS" : "Total requests"
+            },
+            "TITLE" : "Blocker Statistics (total)",
+            "TOOLTIP" : "Statistics for blocked domains across all devices"
+        }
+    },
+    "ICON" : {
+        "CARD" : {
+            "BUTTON" : {
+                "RESET" : "Reset to defaults"
+            },
+            "LABEL_BROWSER_ONLY" : "Show only in standard web browsers",
+            "LABEL_DISPLAY_ON" : "eBlocker Icon",
+            "LABEL_DURATION" : "Show only for 5 seconds",
+            "LABEL_ICON_HEADING" : "Position of eBlocker Icon:",
+            "LABEL_ICON_LEFT" : "Left",
+            "LABEL_ICON_RIGHT" : "Right",
+            "LABEL_NO_HTTPS_IN_MANUAL" : "Without HTTPS support, the eBlocker Icon cannot be inserted into HTTPS websites.",
+            "TITLE" : "ControlBar",
+            "TOOLTIP" : "Control how the icon is injected."
+        }
+    },
+    "IDLE" : {
+        "DIALOG" : {
+            "BUTTON" : {
+                "RESUME" : "Continue"
+            },
+            "TEXT" : "Your session expires in {countdown} {countdown, select, 1{second} other{seconds}}.",
+            "TITLE" : "Session Expires"
+        }
+    },
+    "MESSAGE" : {
+        "CARD" : {
+            "BUTTON" : {
+                "DO_NOT_SHOW_AGAIN" : "Do not show again",
+                "HIDE_DETAILS" : "Hide messages",
+                "REFRESH" : "Refresh",
+                "SHOW_DETAILS" : "Show messages"
+            },
+            "FORMAT_DATE" : "MMM D, YYYY",
+            "MESSAGES_NOTIFY_CLOSE_TOOLTIP" : "Close this message",
+            "TEXT" : {
+                "HAS_ALERT" : "You have {count} alert {count, select, 1{message} other{messages} }.",
+                "HAS_INFO" : "You have {count} info {count, select, 1{message} other{messages} }.",
+                "NO_MESSAGES" : "No system messages"
+            },
+            "TITLE" : "Messages",
+            "TOOLTIP" : "Review your messages here."
+        }
+    },
+    "MOBILE" : {
+        "CARD" : {
+            "ACTION" : {
+                "CANCEL_REVOKE" : "Cancel",
+                "CONFIRM_REVOKE" : "Yes, revoke",
+                "DOWNLOAD" : "Download",
+                "HOW_TO_START" : "How to start the VPN connection",
+                "RECOMMENDED_APPS" : "Recommended Apps",
+                "REVOKE" : "Revoke",
+                "START_WIZARD" : "Start Setup Wizard"
+            },
+            "LABEL_STEP_1" : "Step 1: Install VPN App",
+            "LABEL_STEP_2" : "Step 2: Install eBlocker Mobile configuration",
+            "LABEL_STEP_3" : "Step 3: Connect to eBlocker Mobile",
+            "LINK" : {
+                "HOW_TO_START" : "https://eBlocker.org/startvpn_en/",
+                "RECOMMENDED_APPS" : "https://eBlocker.org/en/openvpn-clients/"
+            },
+            "NOTIFICATION" : {
+                "CERTIFICATE_CREATED" : "Certificate created",
+                "CERTIFICATE_REVOKED" : "Certificate revoked",
+                "CONFIRMATION_RESET" : "Server has been reset",
+                "HOST_CHANGED" : "Public eBlocker hostname has been changed. You have to download the client configuration and import it to your device in order to apply the new settings.",
+                "HOST_MISSING" : "Please enter the public hostname or IP address of your router. The eBlocker must be accessible from the Internet.",
+                "INIT_FAILED" : "Could not initialize the OpenVPN server. Please remember to save the network settings, in case you modified the network configuration."
+            },
+            "REVOKE_CONFIRM_DIALOG" : {
+                "TEXT" : "Are you sure you want to revoke the eBlocker Mobile configuration?",
+                "TITLE" : "Revoke configuration"
+            },
+            "TITLE" : "eBlocker Mobile",
+            "TOOLTIP" : "Here you can download the eBlocker Mobile configuration for this device."
+        }
+    },
+    "ONLINE_TIME" : {
+        "CARD" : {
+            "BUTTON" : {
+                "HIDE_DETAILS" : "Close details",
+                "SHOW_DETAILS" : "Details",
+                "START" : "Start",
+                "STOP" : "Stop"
+            },
+            "LABEL": {
+                "CONTINGENTS" : "Your online times today:",
+                "NO_CONTINGENTS" : "No slots today",
+                "ONLINE": "Online",
+                "OFFLINE": "Offline",
+                "TOTAL": "Total:&nbsp;",
+                "REMAINING": "Remaining:&nbsp;",
+                "HOURS": "&nbsp;hours",
+                "MIN": "&nbsp;min",
+                "INTERNET_BLOCKED": "Internet access blocked"
+            },
+            "TITLE" : "Online Time",
+            "TOOLTIP" : "Overview of the current internet usage"
+        }
+    },
+    "PARENTAL_CONTROL_FRAG_FINN_PROFILE_NAME" : "fragFINN protection profile (GERMAN SITES ONLY)",
+    "PARENTAL_CONTROL_USER_NAME" : "{{ name }}",
+    "PARENTAL_CONTROL": {
+        "CARD" : {
+            "TOOLTIP": "Review and update all important parental controls settings",
+            "TITLE": "Parental Controls ({{param}})",
+            "BUTTON" : {
+                "EDIT": "Edit User",
+                "BLOCK_INTERNET": "Lock Internet",
+                "BLOCK_INTERNET_XS": "Lock",
+                "ALLOW_INTERNET": "Unlock Internet",
+                "ALLOW_INTERNET_XS": "Unlock",
+                "ADD_TIME": "+ 10&#8239;min",
+                "SUB_TIME": "- 10&#8239;min",
+                "RESET": "Reset statistics",
+                "RESET_BONUS": "Reset online time"
+            },
+            "LABEL": {
+                "ONLINE": "Online",
+                "OFFLINE": "Offline",
+                "LOCKED": "Locked",
+                "NO_TIME": "Stopped",
+                "SWITCH_TIME_LIMITS": "Time limits",
+                "USED_TIME": "Used time",
+                "REMAINING_TIME": "Remaining time",
+                "TIME_UNIT": "&nbsp;(h:mm)",
+                "NO_CONTINGENT_TODAY": "Internet access is not allowed today",
+                "START_TIME": "Available from",
+                "BEDTIME": "Bedtime",
+                "NO_BEDTIME": "-",
+                "SWITCH_CONTENT_FILTER": "Content filter",
+                "BLOCKED_PAGE_VIEW": "Blocked Content:",
+                "EXCEPTION_PAGE_VIEW": "Exceptions:",
+                "ALLOWED_PAGE_VIEW": "Allowed Content:"
+            }
+        }
+    },
+    "PAUSE" : {
+        "CARD" : {
+            "BUTTON" : {
+                "EXTEND" : "Extend for 5 minutes",
+                "MINUS_FIVE" : "- 5 min",
+                "PLUS_FIVE" : "+ 5 min",
+                "START" : "Pause eBlocker for this device",
+                "STOP" : "Stop Pause"
+            },
+            "TEXT" : {
+                "NOT_PAUSED" : "Pause eBlocker for this device.",
+                "PAUSED" : "eBlocker paused for:"
+            },
+            "TITLE" : "Pause",
+            "TITLE_COLLAPSED_PAUSED" : "Paused for {{sec}}",
+            "TOOLTIP" : "Pause the eBlocker for this device for a short time.",
+            "TOOLTIP_MENU" : "This card is unavailable due to parental controls settings."
+        }
+    },
+    "FRAG_FINN" : {
+        "CARD" : {
+            "TITLE" : "Search with FragFINN",
+            "TOOLTIP" : "Safely search the web with FragFINN (German sites only)",
+            "OFFLINE_TEXT": "You are currently offline."
+        }
+    },
+    "REDIRECT" : {
+        "BLOCK_OPTIONS" : {
+            "ACTION" : {
+                "BACK" : "Back to previous page",
+                "BACK_XS" : "Back",
+                "CONTINUE" : "Continue and allow data collection",
+                "CONTINUE_XS" : "Continue anyway"
+            },
+            "TEXT_1" : "eBlocker has detected a tracking link that is trying to track your page view.",
+            "TEXT_2A" : "This link leads to the known data collector ",
+            "TEXT_2B" : ".",
+            "TEXT_3" : "Unfortunately, eBlocker could not determine the target website of the link.",
+            "TITLE" : "Tracking Link Detected"
+        },
+        "REDIRECT_OPTIONS" : {
+            "ACTION" : {
+                "CONTINUE" : "Allow data collection",
+                "SHORTCUT" : "Skip tracking and go to "
+            },
+            "REMEMBER_LABEL" : "Remember my decision for similar tracking links.",
+            "TEXT_1" : "eBlocker has detected a tracking link that is trying to track your page view.",
+            "TEXT_2A" : "This link leads to the known data collector ",
+            "TEXT_2B" : ",",
+            "TEXT_3A" : "but your actual destination is probably ",
+            "TEXT_3B" : ".",
+            "TITLE" : "Tracking Link Detected"
+        }
+    },
+    "SQUID_BLOCKER" : {
+        "ACCESS_DENIED" : {
+            "ACTION" : {
+                "BACK" : "Back",
+                "CONSOLE" : "Configuration",
+                "LOGIN" : "Change user",
+                "RETRY" : "Try again",
+                "UNLOCK" : "Unlock"
+            },
+            "BLOCKED_DOMAIN_0" : "The domain ",
+            "BLOCKED_DOMAIN_1" : " is part of the restricted web page category ",
+            "BLOCKED_DOMAIN_2" : ".",
+            "DEVICE_LOCKED" : "Internet access for this device is locked.",
+            "MAX_USAGE_TIME_RESTRICTION" : "The maximum Internet usage time for today has been used.",
+            "NON_WHITELISTED_DOMAIN" : "Domain {{domain}} has not been whitelisted.",
+            "USER_0" : "Protection settings of user ",
+            "USER_1" : " are active for this device.",
+            "REASON" : "The restriction has been triggered by the following settings:",
+            "TEXT" : "The eBlocker Parental Controls have denied access to the requested URL: ",
+            "TIME_RESTRICTION" : "Internet access is not allowed at this time.",
+            "TITLE" : "Access has been denied",
+            "USAGE_DISABLED" : "Internet access is disabled",
+            "USAGE_ENABLED" : "Internet access is enabled",
+            "USAGE_REMAINING_TIME" : "Remaining time: {{ hours }}:{{ minutes }}",
+            "USAGE_TIME_DISABLED" : "The daily Internet access time is limited"
+        },
+        "BLOCKED_ADS_TRACKERS" : {
+            "ACTION" : {
+                "GO_BACK" : "Back",
+                "PAUSE_AND_CONTINUE" : "Pause eBlocker and continue",
+                "REMOVE_DOMAIN" : "Remove Domain",
+                "RETRY" : "Retry",
+                "WHITELIST_DOMAIN" : "Whitelist Domain"
+            },
+            "BLOCKED_ADS_MESSAGE" : "This domain is known as an ad server:",
+            "BLOCKED_ADS_TARGET" : "The eBlocker has blocked access to the following URL:",
+            "BLOCKED_ADS_TITLE" : "Ad detected!",
+            "BLOCKED_ADS_TRACKERS_ALREADY_WHITELISTED" : "The domain has already been added to the exception list, but access is still blocked. Please clear your DNS cache and restart your browser.",
+            "BLOCKED_TRACKERS_MESSAGE" : "If you need to access this page, you can pause the eBlocker for 5 minutes and then continue. Please note that the pause may not take effect immediately. This depends on the cache in your browser/operating system.",
+            "BLOCKED_TRACKERS_TARGET" : "The eBlocker has blocked access to the following URL:",
+            "BLOCKED_TRACKERS_TITLE" : "Tracker detected!",
+            "BLOCKED_CUSTOM_MESSAGE" : "If you need to access it, you can remove the domain from the blacklist. Depending on your browser/operating system, this may not take effect immediately.",
+            "BLOCKED_CUSTOM_TARGET" : "Your list of blocked domains has blocked access to the following URL:",
+            "BLOCKED_CUSTOM_TITLE" : "Blocked domain!",
+            "ERROR_DEVICE_PAUSE_CANNOT_EXECUTE" : "Unable to pause the eBlocker for this device.",
+            "PAUSE_AND_CONTINUE" : {
+                "BUTTON_CANCEL" : "Cancel",
+                "BUTTON_OK" : "Pause and continue",
+                "TEXT" : "Please note that, due to local caches on your device and in your browser, it can take a few minutes before the website is available.",
+                "TITLE" : "Pause eBlocker for this device for 5 minutes?"
+            },
+            "PAUSE_WAIT_FOR_REDIRECT" : "You will be redirected shortly ..."
+        },
+        "BLOCKED_MALWARE" : {
+            "ACTION" : {
+                "BACK" : "Back"
+            },
+            "MESSAGE" : "This site is known to host malware:",
+            "TARGET" : "The eBlocker malware protection has blocked access to the requested URL:",
+            "TITLE" : "Access has been blocked"
+        },
+        "BLOCKED_WHITELISTED" : {
+            "ACTION" : {
+                "BACK" : "Back",
+                "RETRY" : "Retry"
+            },
+            "MESSAGE" : "This can happen if your device still has cached DNS responses for the domain. Please wait a few minutes and try again. If this error persists, try restarting your browser and/or operating system.",
+            "TARGET" : "Your device opened the eBlocker blocking page instead of going directly to the following URL:",
+            "TITLE" : "Blocked access"
+        },
+        "SQUID_ERROR" : {
+            "ACTION" : {
+                "DISABLE_TOR_TRY_AGAIN" : "Disable IP anonymization and try again",
+                "DISABLE_VPN_TRY_AGAIN" : "Disable VPN and try again",
+                "TRY_AGAIN" : "Try again"
+            },
+            "DETAILS" : "Details",
+            "MESSAGE" : "Encountered error",
+            "MESSAGES" : {
+                "ERR_ACCESS_DENIED" : "Access denied.",
+                "ERR_CANNOT_FORWARD" : "Cannot forward the request at this time.",
+                "ERR_CONNECT_FAIL" : "Connection failed.",
+                "ERR_DNS_FAIL" : "The domain could not be resolved to an IP address.",
+                "ERR_GATEWAY_FAILURE" : "Gateway proxy error",
+                "ERR_INVALID_REQ" : "Invalid request",
+                "ERR_INVALID_RESP" : "Invalid response",
+                "ERR_INVALID_URL" : "Invalid URL.",
+                "ERR_LIFETIME_EXP" : "Connection lifetime limit reached",
+                "ERR_PRECONDITION_FAILED" : "Precondition failed.",
+                "ERR_PROTOCOL_UNKNOWN" : "Unsupported protocol",
+                "ERR_READ_ERROR" : "Read error",
+                "ERR_READ_TIMEOUT" : "Read timeout",
+                "ERR_SOCKET_FAILURE" : "Socket failure",
+                "ERR_UNSUP_HTTPVERSION" : "Unsupported HTTP version",
+                "ERR_UNSUP_REQ" : "Request method and protocol not supported",
+                "ERR_WRITE_ERROR" : "Write error",
+                "ERR_ZERO_SIZE_OBJECT" : "Empty response"
+            },
+            "POSSIBLE_REASONS" : "Possible reasons:",
+            "REASON" : {
+                "ERR_ACCESS_DENIED" : "The request was denied due to insufficient permissions.",
+                "ERR_CANNOT_FORWARD" : "The request could not be forwarded to the server.",
+                "ERR_CONNECT_FAIL" : "The server or the target network is currently unavailable.",
+                "ERR_DNS_FAIL" : "This means the eBlocker was unable to resolve the domain name found in the URL.",
+                "ERR_GATEWAY_FAILURE" : "A non-recoverable internal error or configuration prevents the request from being completed successfully.",
+                "ERR_INVALID_REQ" : "Request is too long.\nMissing Content-Length for POST or PUT requests.\nInvalid character in the domain name.\nHTTP version not supported by the server.",
+                "ERR_INVALID_RESP" : "The HTTP(S) response message received from the server was not understood or is invalid.",
+                "ERR_INVALID_URL" : "Missing or invalid protocol\nMissing domain name\nInvalid double-escape in the URL path.\nInvalid character in the domain name.",
+                "ERR_LIFETIME_EXP" : "The eBlocker terminated the request because the maximum connection time was exceeded.",
+                "ERR_PRECONDITION_FAILED" : "At least one precondition set by the HTTP(S) client was not met.",
+                "ERR_PROTOCOL_UNKNOWN" : "The eBlocker does not support the protocol used.",
+                "ERR_READ_ERROR" : "An error occurred while reading from the network.",
+                "ERR_READ_TIMEOUT" : "Timeout while waiting for data from the network. The network or server may be unavailable or overloaded.",
+                "ERR_SOCKET_FAILURE" : "The eBlocker cannot create a TCP socket - most likely due to excessive system load.",
+                "ERR_UNSUP_HTTPVERSION" : "The eBlocker does not support the requested HTTP version.",
+                "ERR_UNSUP_REQ" : "The eBlocker does not support all request methods for all protocols.",
+                "ERR_WRITE_ERROR" : "An error occurred while writing to the network.",
+                "ERR_ZERO_SIZE_OBJECT" : "The eBlocker received an empty response to its request to the server."
+            },
+            "TARGET" : "The eBlocker has failed to establish a connection to",
+            "TITLE" : "Connection error on current website",
+            "TOR" : "IP anonymization might be interrupted.",
+            "VPN" : "VPN connection might be interrupted."
+        },
+        "WHITELIST_OPTIONS" : {
+            "ACTION" : {
+                "ADD_AND_CONTINUE" : "Add to HTTPS exemption list and continue",
+                "ADD_AND_CONTINUE_SHORT" : "Add and continue",
+                "BACK" : "Back"
+            },
+            "ENTER_DOMAIN_LABEL" : "Domain",
+            "ENTER_NAME_LABEL" : "Exemption Rule Name",
+            "TEXT_1" : "The eBlocker has failed to establish an HTTPS connection to",
+            "TEXT_2" : "Encountered error",
+            "TEXT_3" : "To proceed you can add the domain to the HTTPS exemption list below.",
+            "TITLE" : "HTTPS error on current website"
+        }
+    },
+    "SSL" : {
+        "CARD" : {
+            "ACTION" : {
+                "START_WIZARD" : "Start HTTPS Wizard"
+            },
+            "CERTIFICATE" : {
+                "ADD" : {
+                    "BUTTON_LABEL" : "Add Certificate"
+                },
+                "LABEL" : "eBlocker certificate:",
+                "LABEL_EXPIRATION" : "(expires in {days} {days, select, 1{day} other{days}})",
+                "TOOLTIP" : "{{name}}, valid until {{day}}.{{month}}.{{year}}",
+                "TOOLTIP_ADD" : "Add certificate to your browser/OS. {{name}} valid until {{day}}.{{month}}.{{year}}",
+                "TOOLTIP_OUTDATED" : "A newer certificate is available"
+            },
+            "RENEWAL" : {
+                "ADD" : {
+                    "BUTTON_LABEL" : "Add Certificate"
+                },
+                "LABEL" : "Renewal certificate:",
+                "LINK_LABEL" : "What is this?",
+                "LINK_TOOLTIP" : "How to add the eBlocker certificate.",
+                "LINK_URL" : "en",
+                "TOOLTIP" : "{{name}}, valid until {{day}}.{{month}}.{{year}}",
+                "TOOLTIP_ADD" : "Add certificate to your browser/OS. {{name}} Valid until {{day}}.{{month}}.{{year}}"
+            },
+            "STATUS" : {
+                "ACTIVE" : {
+                    "BUTTON_LABEL" : "Deactivate HTTPS",
+                    "TOOLTIP" : "HTTPS support is activated for this device."
+                },
+                "INACTIVE" : {
+                    "BUTTON_LABEL" : "Activate HTTPS",
+                    "TOOLTIP" : "HTTPS support is deactivated for this device.",
+                    "TOOLTIP_GLOBAL" : "HTTPS support is globally deactivated. Go to Settings/HTTPS to activate HTTPS support."
+                },
+                "LABEL" : "HTTPS support:",
+                "RESTRICTED" : {
+                    "BUTTON_LABEL" : "Settings"
+                }
+            },
+            "TITLE" : "HTTPS support",
+            "TOOLTIP" : "Review your HTTPS settings and activate or deactivate HTTPS support for this device."
+        }
+    },
+    "USER" : {
+        "CARD" : {
+            "ACTION" : {
+                "CHANGE_PIN" : "Change PIN",
+                "SET_PIN" : "Set PIN",
+                "CHANGE_USER" : "Change user",
+                "LOCK_ACCESS" : "Lock device",
+                "UNLOCK_ACCESS" : "Unlock device"
+            },
+            "LABEL_ASSIGNED_USER" : "Device is owned by:",
+            "LABEL_LOCKED_USER" : "Internet access is locked for this device.",
+            "LABEL_OPERATING_USER" : "Device is used by:",
+            "LABEL_SELECT_USER" : "Select a user",
+            "TITLE" : "User",
+            "TOOLTIP_CARD" : "Here you can change the user of the current device, change your PIN, lock the device or return it to its actual user."
+        }
+    },
+    "WHITELIST" : {
+        "CARD" : {
+            "ACTION" : {
+                "ADD_DOMAIN" : "Add"
+            },
+            "SEARCH_LABEL" : "Enter domain...",
+            "TABLE" : {
+                "COLUMN" : {
+                    "AD" : "Ads",
+                    "ALLOW_ALL" : "all websites",
+                    "DOMAIN" : "Allow on...",
+                    "TRACKER" : "Trackers"
+                },
+                "EMPTY_FOUND" : "No domains found",
+                "EMPTY_WHITELISTED" : "No domains whitelisted",
+                "MARK_DELETE" : "eBlocker is no longer deactivated for this website. This entry will be removed from this list when reloading the dashboard."
+            },
+            "TITLE" : "Trackers and Ads",
+            "TOOLTIP" : "Review or delete whitelisted websites for this device."
+        }
+    },
+    "WIZARD" : {
+        "HTTPS" : {
+            "ACTION" : {
+                "BACK" : "Back",
+                "CANCEL" : "Cancel",
+                "CONTINUE" : "Continue",
+                "DONE" : "Done",
+                "DOWNLOAD_CERT" : "Download certificate",
+                "FINISH" : "Close",
+                "LOAD_CERT" : "Load certificate",
+                "LOAD_CERT_OS" : "Load certificate for operating system",
+                "LOAD_CERT_OS_XS" : "Load for OS",
+                "TEST" : "Test"
+            },
+            "ALREADY_INSTALLED" : {
+                "TEXT_1" : "The HTTPS certificate is already installed on your operating system. Most browsers can access this certificate now.",
+                "TEXT_2" : "If you are using Firefox, Cliqz or Seamonkey, run this HTTPS wizard there as well. These do not access certificates stored in the operating system. ",
+                "TEXT_1_FIREFOX" : "The HTTPS certificate is already installed on Firefox.",
+                "TEXT_2_FIREFOX" : "To establish a secure connection to your eBlocker from <b>other browsers</b> the HTTPS certificate has to be ",
+                "TEXT_2_FIREFOX_LINK" : "installed <b>once</b> within your operating system.",
+                "TITLE" : "HTTPS certificate in other browsers"
+            },
+            "ANDROID_ADD_CERT" : {
+                "STEP_1" : "Open the download folder and tap on the downloaded certificate",
+                "STEP_2" : "Enter your PIN if necessary",
+                "STEP_3" : "Name the certificate (e.g. My eBlocker)",
+                "STEP_4" : "Under \"Credential use\" Select \"VPN and apps\"",
+                "STEP_5" : "Confirm with OK",
+                "TITLE" : "Install HTTPS certificate (Android)"
+            },
+            "ANDROID_TEST_CERT" : {
+                "NOTE" : "The eBlocker certificate is now installed on Android. Most browsers and applications are now able to access the eBlocker certificate.",
+                "STEP_6" : "Download the certificate a second time or open the previously downloaded file again",
+                "STEP_7" : "Enter your PIN if necessary",
+                "STEP_8" : "Name the certificate (e.g. My eBlocker)",
+                "STEP_9" : "Under \"Credential use\" Select \"Wi-Fi\"",
+                "STEP_10" : "Confirm with OK",
+                "TITLE" : "HTTPS-Zertifikat hinterlegen (Android)"
+            },
+            "CERT_TEST_FAIL" : {
+                "TEXT_FAIL" : "You may have to restart your browser. You can check the status of the eBlocker certificate on the dashboard and run the HTTPS guide again.",
+                "TEXT_FAIL_SUPPORT_MAIL" : "https://eBlocker.org/community/",
+                "TEXT_FAIL_SUPPORT_POST" : "",
+                "TEXT_FAIL_SUPPORT_PRE" : "In case of problems with the HTTPS support please post a message ",
+                "TEXT_FAIL_SUPPORT_TEXT" : "in our forum."
+            },
+            "FF_ADD_CERT" : {
+                "IMAGE_1": "en/firefox-01-EN.png",
+                "STEP_1" : "Click on {{'WIZARD.HTTPS.ACTION.DOWNLOAD_CERT' | translate}} to download the eBlocker certificate for Firefox",
+                "STEP_2" : "Save the file to disk",
+                "STEP_3" : "Open the Certificate Manager at Firefox > „Options“ > „Privacy & Security“ > „Certificates“ > „View Certificates...“",
+                "STEP_4" : "Select the tab <b>Authorities</b> und klick  „Import...“",
+                "STEP_5" : "Select the previously saved certificate file",
+                "STEP_6" : "In the following dialog select „Trust this CA to identify websites“",
+                "TITLE" : "Install HTTPS certificate in Firefox"
+            },
+            "FF_ADD_OS" : {
+                "CONFIRM_INSTALL" : "Certificate is installed",
+                "EXPLAIN_1" : "Test if the eBlocker certificate has been installed correctly",
+                "EXPLAIN_2" : "To establish a secure connection to your eBlocker from <b>other browsers</b> the HTTPS certificate has to be ",
+                "EXPLAIN_2_LINK" : "installed <b>once</b> within your operating system.",
+                "TITLE" : "Install HTTPS certificate in the operating system"
+            },
+            "FINISH" : {
+                "TEXT_1" : "We recommend to import the eBlocker certificate on all devices and all browsers. Please run the HTTPS Wizard on other devices/browsers as well.",
+                "TEXT_2" : "You can start the wizard at eblocker.box/https",
+                "TITLE" : "Finished"
+            },
+            "NO_WIZARD": {
+                "TITLE" : "Please install the eBlocker certificate manually",
+                "TEXT_1" : "To install the eBlocker certificate in your operating system, please use the download button below or download the eBlocker certificate from the eBlocker settings (HTTPS -> Certificate) and install it manually."
+            },
+            "INTRO" : {
+                "EXPLAIN" : "<p>This wizard helps you to store the eBlocker HTTPS certificate on the device you are currently using. </p><p>Run it with the browser of your operating system (Edge, Internet Explorer, or Safari) AND, if in use, with Firefox.</p><p>Repeat this wizard on all standard computers (laptops, desktops, tablets and smartphones) with which you want to use functions that require HTTPS (Pattern Ad Blocker, Pattern Tracker Blocker, Device Cloaking, Do-Not-Track header, etc.). </p>",
+                "EXPLAIN_IOS" : "To install the certificate in iOS you need to use Safari. Please open the HTTPS wizard again in Safari."
+            },
+            "IOS_ADD_CERT" : {
+                "STEP_2" : "Tap „Allow“ in the alert box to allow the download of the configuration profile",
+                "STEP_3" : "Open the iOS settings and select the eBlocker profile under „General“ > „VPN & Device Management“ > „Downloaded Profile“",
+                "STEP_4" : "Tap „Install“, enter your code and confirm again with „Install“",
+                "STEP_5" : "Tap „Done“",
+                "STEP_6" : "The certificate must now be activated (Continue)",
+                "TITLE" : "Install HTTPS certificate (iOS)"
+            },
+            "IOS_TEST_CERT" : {
+                "EXPLAIN" : "The installed certificate needs to be activated",
+                "NOTE" : "The eBlocker certificate is now installed on iOS. Most browsers and applications are now able to access the eBlocker certificate.",
+                "STEP_1" : "In the iOS settings go to: „General“ > „About“ > „Certificate Trust Settings“",
+                "STEP_2" : "Move the switch next to the certificate „eBlocker...“ to the right",
+                "TITLE" : "Activate HTTPS certificate (iOS)"
+            },
+            "LABEL_CERT_FAIL" : "Certificate may not have been installed",
+            "LABEL_CERT_SUCCESS" : "Certificate successfully installed",
+            "MAC_ADD_CERT" : {
+                "CONFIRM_DOWNLOAD" : "I have downloaded the eBlocker certificate",
+                "CONFIRM_LIST" : "eBlocker certificate is contained in list",
+                "IMAGE_1": "en/macOS_04_Import_items.png",
+                "IMAGE_2": "en/macOS_03_Mac_Select_store.png",
+                "STEP_1": "Download the eBlocker certificate",
+                "STEP_2" : "Open the application \"Keychain Access\" in  the folder \"Applications/Utilities\"",
+                "STEP_3" : "On the left click on the keychain \"System\" and category \"Certificates\"",
+                "STEP_4" : "From the menu select \"File / Import Items...\"",
+                "STEP_5" : "Select the downloaded eBlocker certificate from your download folder and click on \"Open\"",
+                "STEP_6" : "You may be prompted for your administrator password",
+                "TITLE" : "Install HTTPS certificate (macOS)"
+            },
+            "MAC_TEST_CERT" : {
+                "NOTE" : "The eBlocker certificate is now installed on macOS. Most browsers and applications are now able to access the eBlocker certificate.",
+                "STEP_7" : "Double click on the imported eBlocker certificate",
+                "STEP_8" : "Go to \"Trust\" and select \"Always trust\" in the \"Secure Sockets Layer (SSL)\" selection box.",
+                "STEP_9" : "Close the window. Enter your administrator password.",
+                "STEP_10" : "Start our certificate test",
+                "TITLE" : "Install HTTPS certificate (macOS)"
+            },
+            "NOTIFICATION" : {
+                "NOTIFY_NO_CERT" : "Unable to test certificate. Certificate not found.",
+                "NOTIFY_NO_DEVICE" : "Unable to test certificate. Device not found."
+            },
+            "TITLE" : "eBlocker HTTPS Wizard",
+            "WIN_ADD_CERT" : {
+                "CONFIRM_SELECT" : "Yes, \"Trusted Root Certification Authorities\" has been selected",
+                "IMAGE_1": "en/Win_05_Browse_cert_store.png",
+                "IMAGE_2": "en/Win_06_Select_cert_store.png",
+                "STEP_1": "Download the eBlocker certificate.",
+                "STEP_2" : "Click in the appearing dialog first on \"Save\" and then on \"Open\".",
+                "STEP_2B" : "You might see a security warning from Windows. If so, click on \"Allow\".",
+                "STEP_3" : "In the next window click on \"Install certificate\".",
+                "STEP_4" : "The certificate import dialog opens, click \"Next\".",
+                "STEP_5" : "Select \"Place all certificates in the following store\" and click the \"Browse\" button.",
+                "STEP_6" : "Select the second entry \"Trusted Root Certification Authorities\" and click OK.",
+                "TITLE" : "Install HTTPS certificate (Windows)"
+            },
+            "WIN_TEST_CERT" : {
+                "NOTE" : "The eBlocker certificate is now installed on Windows. Most browsers and applications are now able to access the eBlocker certificate.",
+                "STEP_7" : "Confirm the selection with \"Next\"",
+                "STEP_8" : "Click on \"Finish\" and confirm the following security warning with \"Yes\"",
+                "STEP_9" : "Start our certificate test",
+                "TITLE" : "Install HTTPS certificate (Windows)"
+            }
+        },
+        "MOBILE" : {
+            "ACTION" : {
+                "BACK" : "Back",
+                "CANCEL" : "Cancel",
+                "CLOSE" : "Close",
+                "CONTINUE" : "Continue",
+                "DONE" : "Finish"
+            },
+            "CHOOSE_OS" : {
+                "ACTION_DOWNLOAD" : "Download App",
+                "CONFIRM_DOWNLOAD" : "App has been downloaded",
+                "LABEL_CHOICE" : "Select your operating system:",
+                "NOTIFY_NO_DEVICE" : "Unable to detect your device.",
+                "TITLE" : "1. Download OpenVPN app",
+                "VPN_URL" : {
+                    "ANDROID" : "https://play.google.com/store/apps/details?id=net.openvpn.openvpn",
+                    "IOS" : "https://itunes.apple.com/de/app/openvpn-connect/id590379981?mt=8",
+                    "MAC" : "https://tunnelblick.net/",
+                    "OTHER" : "",
+                    "WINDOWS" : "http://build.openvpn.net/downloads/releases/latest/"
+                }
+            },
+            "CONNECT_ANDROID" : {
+                "STEP_1" : "Move the switch to the right to start the connection.",
+                "STEP_2" : "After a successful connection the VPN icon will appear in the upper par of your screen and a counter will appear within the app.",
+                "TITLE" : "Connect your device with your eBlocker"
+            },
+            "CONNECT_IOS" : {
+                "STEP_1" : "Move the switch to the right to start the connection.",
+                "STEP_2" : "A green switch indicates a successful connection. A green icon will appear in the upper part of your screen.",
+                "TITLE" : "Connect your device with your eBlocker"
+            },
+            "CONNECT_MAC" : {
+                "STEP_1" : "Click on the Tunnelblick icon in the menu",
+                "STEP_2" : "Select connect \"eBlocker_Mobile_MyeBlocker\"",
+                "STEP_3" : "Your Mac is now connecting to your eBlocker",
+                "TITLE" : "Connect your device with your eBlocker"
+            },
+            "CONNECT_WIN" : {
+                "STEP_1" : "Start the OpenVPN app if it is not already started.",
+                "STEP_2" : "Select the OpenVPN icon in the taskbar.",
+                "TITLE" : "Connect your device with your eBlocker"
+            },
+            "DIALOG" : {
+                "CANCEL" : "No",
+                "CONFIRM" : "Yes, close",
+                "TEXT" : "Are you sure that you want to close the wizard?",
+                "TITLE" : "Close Wizard"
+            },
+            "DOWNLOAD_CONFIG_ANDROID" : {
+                "ACTION_DOWNLOAD" : "Download",
+                "CONFIRM_DOWNLOAD" : "Please confirm that you have installed the configuration",
+                "STEP_1" : "Download OpenVPN configuration for this device.",
+                "STEP_2" : "Confirm \"Open with OpenVPN\".",
+                "STEP_3" : "The OpenVPN app will open automatically",
+                "STEP_4" : "Confirm the file import by tapping on the green \"+\"",
+                "TITLE" : "Configuration (Android)"
+            },
+            "DOWNLOAD_CONFIG_IOS" : {
+                "ACTION_DOWNLOAD" : "Download",
+                "CONFIRM_DOWNLOAD" : "Please confirm that you have installed the configuration",
+                "STEP_1" : "Download OpenVPN configuration for this device.",
+                "STEP_2" : "Confirm \"Open File\" on the bottom of your screen",
+                "STEP_3" : "The OpenVPN app will open automatically",
+                "STEP_4" : "Press \"OK\" to confirm the file import",
+                "TITLE" : "Configuration (iOS)"
+            },
+            "DOWNLOAD_CONFIG_WIN_MAC" : {
+                "ACTION_DOWNLOAD" : "Download",
+                "CONFIRM_DOWNLOAD" : "Please confirm that you have downloaded the configuration",
+                "TEXT" : "Download OpenVPN configuration for this device.",
+                "TITLE" : "Configuration"
+            },
+            "FINISH" : {
+                "TEXT_1" : "You may disconnect the VPN connection at any time using the OpenVPN app.",
+                "TEXT_2" : "To test the VPN connection please disconnect from your home network, enter an external network, e.g. your mobile network and open the Dashboard by clicking on {{'WIZARD.MOBILE.ACTION.DONE' | translate }}.",
+                "TITLE" : "Test"
+            },
+            "INSTALL_CONFIG_MAC" : {
+                "CONFIRM_INSTALL" : "Please confirm that you have installed the configuration",
+                "STEP_1" : "Double click the downloaded OpenVPN file",
+                "STEP_2" : "Confirm the installation dialog",
+                "TITLE" : "Configuration (macOS)"
+            },
+            "INSTALL_CONFIG_WIN" : {
+                "CONFIRM_COPY" : "Please confirm that you have copied the configuration",
+                "TEXT" : "Copy the OpenVPN file into the folder for configuration files. This usually is C:\\Programm Files\\OpenVPN\\config\\",
+                "TEXT_COPY" : "Please copy the file \"{{name}}\".",
+                "TITLE" : "Configuration (Windows)"
+            },
+            "INSTALL_MAC" : {
+                "CONFIRM_INSTALL" : "Please confirm that you have installed OpenVPN",
+                "STEP_1" : "Find the downloaded OpenVPN installer in your download folder",
+                "STEP_2" : "Double click the downloaded \"Tunnelblick.dmg\"",
+                "STEP_3" : "Double click the installer contained within the .dmg file",
+                "STEP_4" : "Follow the instructions on your screen",
+                "TITLE" : "Install OpenVPN app (macOS)"
+            },
+            "INSTALL_WINDOWS" : {
+                "CONFIRM_INSTALL" : "Please confirm that you have installed OpenVPN",
+                "STEP_1" : "Find the downloaded OpenVPN installer in your download folder",
+                "STEP_2" : "Start the OpenVPN installer and follow the instructions on your screen",
+                "TITLE" : "Install OpenVPN app (Windows)"
+            },
+            "INTRO" : {
+                "EXPLAIN" : "eBlocker Mobile is based on OpenVPN. It connects this device with your eBlocker at home.",
+                "EXPLAIN_STEPS" : "Only two steps are required:",
+                "EXPLAIN_STEP_1" : "Installation of the OpenVPN app",
+                "EXPLAIN_STEP_2" : "Download and installation of the configuration to your OpenVPN app"
+            },
+            "TITLE" : "eBlocker Mobile Wizard"
+        }
+    }
+}
+

@@ -1,0 +1,88 @@
+#!/usr/bin/perl -w
+#
+# Copyright 2020 eBlocker Open Source UG (haftungsbeschraenkt)
+#
+# Licensed under the EUPL, Version 1.2 or - as soon they will be
+# approved by the European Commission - subsequent versions of the EUPL
+# (the "License"); You may not use this work except in compliance with
+# the License. You may obtain a copy of the License at:
+#
+#   https://joinup.ec.europa.eu/page/eupl-text-11-12
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" basis,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+# implied. See the License for the specific language governing
+# permissions and limitations under the License.
+#
+
+my $CONFDIR='/opt/eblocker-icap/network';
+my ($IPTABLES, $IPTABLES_RESTORE, $FIREWALL_CONF, $FIREWALL_CONF_DELTA);
+
+sub usage() {
+    die "Usage: $0 IPv4|IPv6\n";
+}
+
+usage() unless scalar(@ARGV) == 1;
+
+my $ip_version = $ARGV[0];
+
+if ($ip_version eq "IPv4") {
+    $IPTABLES='/usr/sbin/iptables';
+    $IPTABLES_RESTORE='/usr/sbin/iptables-restore';
+    $FIREWALL_CONF="$CONFDIR/firewall.conf";
+    $FIREWALL_CONF_DELTA="$CONFDIR/firewall.conf.delta";
+} elsif ($ip_version eq "IPv6") {
+    $IPTABLES='/usr/sbin/ip6tables';
+    $IPTABLES_RESTORE='/usr/sbin/ip6tables-restore';
+    $FIREWALL_CONF="$CONFDIR/firewall.ip6.conf";
+    $FIREWALL_CONF_DELTA="$CONFDIR/firewall.ip6.conf.delta";
+} else {
+    usage();
+}
+
+# This is equivalent to 'iptables-restore -n'
+# (which on Raspbian Buster sometimes ignores positions of rules to be inserted)
+sub apply_configuration_delta {
+    my ($filename) = @_;
+    open(F, $filename) or die "Could not open $filename: $!";
+    my $table;
+    while(my $line = <F>) {
+        chomp($line);
+        if ($line =~ /^\*([a-z]+)$/) {
+            $table = $1;
+        } elsif ($line eq 'COMMIT') {
+            undef $table;
+        } else {
+            my @args = split(/\s+/, $line);
+            if (scalar(@args) == 0) {
+                warn "Ignoring empty line in $filename\n";
+            } else {
+                unless (defined $table) {
+                    die "Cannot apply iptables command '$line' while table is undefined.";
+                }
+                unshift(@args, $IPTABLES, '-t', $table);
+                if (system(@args) != 0) {
+                    die "Command '".join(' ', @args)."' failed: $?";
+                }
+            }
+        }
+    }
+    close(F);
+}
+
+sub apply_configuration_full {
+    my ($filename) = @_;
+    if (system($IPTABLES_RESTORE, $filename) != 0) {
+        die "iptables-restore $filename failed: $?";
+    }
+}
+
+# Install firewall configuration
+if (-f $FIREWALL_CONF_DELTA) {
+    apply_configuration_delta($FIREWALL_CONF_DELTA);
+} elsif (-f $FIREWALL_CONF) {
+    apply_configuration_full($FIREWALL_CONF);
+} else {
+    die "Neither $FIREWALL_CONF nor $FIREWALL_CONF_DELTA exists in $CONFDIR. Cannot apply firewall configuration for $ip_version.\n";
+}

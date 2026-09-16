@@ -1,0 +1,80 @@
+#!/bin/sh
+#
+# Copyright 2020 eBlocker Open Source UG (haftungsbeschraenkt)
+#
+# Licensed under the EUPL, Version 1.2 or - as soon they will be
+# approved by the European Commission - subsequent versions of the EUPL
+# (the "License"); You may not use this work except in compliance with
+# the License. You may obtain a copy of the License at:
+#
+#   https://joinup.ec.europa.eu/page/eupl-text-11-12
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" basis,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+# implied. See the License for the specific language governing
+# permissions and limitations under the License.
+#
+
+if [ "$1" = configure ] ; then
+
+    # Network configuration
+    echo '>>> Initializing IPv4 forwarding..'
+    IFACE=eth0 /etc/network/if-up.d/ipforward
+
+    # Disable redsocks if it is installed
+    if [ -f "/lib/systemd/system/redsocks.service" ]; then
+        systemctl stop redsocks
+        systemctl disable redsocks
+    fi
+
+    ### T O R ###
+
+    # Make Tor config writable for Icap server (because of the need to reconfigure it)
+    chown icapd /etc/tor/torrc-eblocker
+
+    echo '>>> Configuring tor via systemd..'
+
+    # Stopping tor:
+    echo '>>> Stopping and disabling tor default instance via systemd..'
+    systemctl stop tor
+    systemctl disable tor
+
+    # Create tor instance (includes a user named _tor-eblocker)
+    echo '>>> Create tor instance'
+    tor-instance-create eblocker
+
+    # Deploy tor config
+    echo '>>> Provide icapservers tor config'
+    rm /etc/tor/instances/eblocker/torrc
+    touch /etc/tor/torrc-eblocker
+    ln -s /etc/tor/torrc-eblocker /etc/tor/instances/eblocker/torrc
+
+    echo '>>> Start and enable eblocker tor instance'
+    systemctl enable tor@eblocker
+    systemctl start tor@eblocker
+
+
+    # Copy issue file:
+    cp /etc/issue.eblocker /etc/issue
+
+    # Configure logrotate to be run hourly
+    dpkg-divert --divert /etc/cron.hourly/logrotate --rename /etc/cron.daily/logrotate
+
+    # Deploy iptables/rules.v4 file
+    cat >/etc/iptables/rules.v4 <<EOF
+*nat
+:PREROUTING ACCEPT [0:0]
+:INPUT ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+:POSTROUTING ACCEPT [0:0]
+-A PREROUTING -i eth0 -p tcp --dport 80 -m addrtype --dst-type LOCAL -j REDIRECT --to-ports 3000
+-A PREROUTING -i eth0 -p tcp --dport 443 -m addrtype --dst-type LOCAL -j REDIRECT --to-ports 3443
+-A PREROUTING -i tun33 -p tcp --dport 80 -m addrtype --dst-type LOCAL -j REDIRECT --to-ports 3000
+-A PREROUTING -i tun33 -p tcp --dport 443 -m addrtype --dst-type LOCAL -j REDIRECT --to-ports 3443
+COMMIT
+EOF
+fi
+
+exit 0
+

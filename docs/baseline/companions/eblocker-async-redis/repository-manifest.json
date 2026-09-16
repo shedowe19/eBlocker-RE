@@ -1,0 +1,125 @@
+{
+  "commit": "28b3ce35884017128f6f10f740948fa28b9f7940",
+  "files": [
+    {
+      "path": ".gitignore",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 91,
+      "mode": "100644",
+      "git_blob": "e719a80bc1fefb9d1054947e8b71d5485c86df0c",
+      "sha256": "5198c23a9904ed63dc420993c84743af8c67584becbf12ac2e2761db6aaae32d"
+    },
+    {
+      "path": "Gemfile",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 192,
+      "mode": "100644",
+      "git_blob": "a55e23b34220d88a917c801f61315a7ccea75c48",
+      "sha256": "cca1d747578559acc56c84e0003bb102cf7cc262faf806713a320b1662e0b017"
+    },
+    {
+      "path": "LICENSE.md",
+      "module": "root",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 13948,
+      "mode": "100644",
+      "git_blob": "b605841ba34743006a82bf3df026d4528bfcd27f",
+      "sha256": "2017b48dfe8027238f8fd8457795d23c6a2385b70ee05de9cb29a33bf93c02e1"
+    },
+    {
+      "path": "README.md",
+      "module": "root",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 645,
+      "mode": "100644",
+      "git_blob": "6d97ecff7cc805cb486fe0c719e4d26aa5a382a1",
+      "sha256": "7a6c6c5197da1a8026ffc0c83d5787314df812c8d78d30b1d3fce093d64cf223"
+    },
+    {
+      "path": "Rakefile",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 51,
+      "mode": "100644",
+      "git_blob": "43022f711e20ed55baf2470278eb8e428a04856f",
+      "sha256": "e5a2ca54c2cc0751d3cf3377c612f9db87601ab161bab68b33e527e79c292bec"
+    },
+    {
+      "path": "bin/console",
+      "module": "bin",
+      "language": "other",
+      "role": "source",
+      "bytes": 355,
+      "mode": "100755",
+      "git_blob": "3339fb2d499b88bfee55b636bef7145db1e2a1cb",
+      "sha256": "6f9195dcd40f9a607c82da66d83a1384e2dbc2d3b34c2d361fc02b1f3c0ab934"
+    },
+    {
+      "path": "bin/setup",
+      "module": "bin",
+      "language": "other",
+      "role": "source",
+      "bytes": 131,
+      "mode": "100755",
+      "git_blob": "dce67d860af47a4eb630117ce03624bae45dcf26",
+      "sha256": "e201190bc24e9f00849b3efa5fbaece2cbf069703232e50c7fa15d41c47f2ead"
+    },
+    {
+      "path": "eblocker-async-redis.gemspec",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 1372,
+      "mode": "100644",
+      "git_blob": "c4b7b4f740444d2421006b8bd9425b11de418a00",
+      "sha256": "615b86630fdd12505ac560faba03912c739f611b0399492b4476476b70e1a6b8"
+    },
+    {
+      "path": "lib/eblocker/async/redis.rb",
+      "module": "lib",
+      "language": "other",
+      "role": "source",
+      "bytes": 843,
+      "mode": "100644",
+      "git_blob": "b3d629e83794d08b87d3020b80190af1693f67ed",
+      "sha256": "c17beebbfccc6997a3dc548964d2ae54c94139a34872aabab42f7d68cd60a34d"
+    },
+    {
+      "path": "lib/eblocker/async/redis/async-io.rb",
+      "module": "lib",
+      "language": "other",
+      "role": "source",
+      "bytes": 3571,
+      "mode": "100644",
+      "git_blob": "bbd54ae09f7d9eb57c7ab1ebd0ad65e57d64eed7",
+      "sha256": "e694c80f701a73de3119dcdfcc007086d57b095ebf3beea4a23d723f5ff6a33d"
+    },
+    {
+      "path": "lib/eblocker/async/redis/pool.rb",
+      "module": "lib",
+      "language": "other",
+      "role": "source",
+      "bytes": 1553,
+      "mode": "100644",
+      "git_blob": "e04d91ddb8dba31babc70934c10c2d1f6b4fff57",
+      "sha256": "0c87d32cb44502658c56c2daa1e6952bb821e466ab1a766fe8ceb221c6323559"
+    },
+    {
+      "path": "lib/eblocker/async/redis/version.rb",
+      "module": "lib",
+      "language": "other",
+      "role": "source",
+      "bytes": 796,
+      "mode": "100644",
+      "git_blob": "2ec347e6af5d1b808e37f7ff085aa1dd45a83eb8",
+      "sha256": "546c1b53fa50da1898b6ed59da15f9a911f8944c58ecd330f67252b6ed8f18c8"
+    }
+  ]
+}

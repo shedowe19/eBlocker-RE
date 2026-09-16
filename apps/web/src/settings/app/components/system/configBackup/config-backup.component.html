@@ -1,0 +1,18 @@
+<div flex-gt-lg="50" flex-md="60" flex-lg="60" layout="column" layout-fill class="settings-child-view">
+    <div class="config-frame md-whiteframe-z1">
+        <h3>{{ 'ADMINCONSOLE.CONFIG_BACKUP.LABEL.SAVE_SETTINGS' | translate }}</h3>
+        <div layout="row" layout-align="start center">
+            <md-button ng-click="vm.startExportDialog()" class="md-raised md-accent" aria-label="{{ 'ADMINCONSOLE.CONFIG_BACKUP.ACTION.SAVE_SETTINGS' | translate}}">
+                <span translate="ADMINCONSOLE.CONFIG_BACKUP.ACTION.SAVE_SETTINGS"></span>
+            </md-button>
+        </div>
+    </div>
+    <div class="config-frame md-whiteframe-z1">
+        <h3>{{ 'ADMINCONSOLE.CONFIG_BACKUP.LABEL.RESTORE_SETTINGS' | translate }}</h3>
+        <div layout="row" layout-align="start center">
+            <md-button ng-click="vm.startImportDialog()" class="md-raised md-accent" aria-label="{{ 'ADMINCONSOLE.CONFIG_BACKUP.ACTION.RESTORE_SETTINGS' | translate}}">
+                <span translate="ADMINCONSOLE.CONFIG_BACKUP.ACTION.RESTORE_SETTINGS"></span>
+            </md-button>
+        </div>
+    </div>
+</div>

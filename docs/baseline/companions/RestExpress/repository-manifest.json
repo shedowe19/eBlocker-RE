@@ -1,0 +1,2035 @@
+{
+  "commit": "3f3ca4b3d9aac7353f1b632425e74aefe0dc5e46",
+  "files": [
+    {
+      "path": ".github/workflows/deployPackage.yml",
+      "module": ".github",
+      "language": "other",
+      "role": "source",
+      "bytes": 980,
+      "mode": "100644",
+      "git_blob": "b1414b80fbbadc811ac44246f26e102cebadc62b",
+      "sha256": "bc5df36c834fac876f6888eb41642497cc60fc436f5ffef0b03387a16b9a084b"
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "module": ".github",
+      "language": "other",
+      "role": "source",
+      "bytes": 1035,
+      "mode": "100644",
+      "git_blob": "49df0887cfdf7481dc5c4132893d60937a4cb4b9",
+      "sha256": "05f68f4ed98a7b5023ab8383b711f74ea12e708265f74f749ab7b2d583684dbc"
+    },
+    {
+      "path": ".gitignore",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 95,
+      "mode": "100644",
+      "git_blob": "59da6c76ea25b162fc79635f01a6a5534a48c1dc",
+      "sha256": "ee3a8ff3d50c1a189a5629174e1d0e694c19443cf94f1b8fb2fa023432566dea"
+    },
+    {
+      "path": ".mvn/maven.config",
+      "module": ".mvn",
+      "language": "other",
+      "role": "source",
+      "bytes": 14,
+      "mode": "100644",
+      "git_blob": "b79df8ca66d6673b96abf51fc5bf33de14f67cb2",
+      "sha256": "c72db16003848644a2cffd1037b4a6fe93a4f1b313adfa699887f396771e3f65"
+    },
+    {
+      "path": "LICENSE",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 11357,
+      "mode": "100644",
+      "git_blob": "9be37e6b050669df443dccaba0f30e9b9b2c6737",
+      "sha256": "ffde91ae33720901125c58b26b4dac83bc998d69a361f91d18ac8c7dd913d27c"
+    },
+    {
+      "path": "NOTICE",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 889,
+      "mode": "100644",
+      "git_blob": "e85fd91eee79a19e2623dbeb03e524f114a97265",
+      "sha256": "6f8eefb0f6336c972c2fc88bbcd4f284db97f8df41a8e853245672c2f631de0f"
+    },
+    {
+      "path": "README.md",
+      "module": "root",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 37730,
+      "mode": "100644",
+      "git_blob": "78b87f2ad3bee06424060d1130194c53b03ee021",
+      "sha256": "3c3789ab618e78b1eb2635ce32d15464fa99d4d6454115a0773c2118d77aa148"
+    },
+    {
+      "path": "UPDATE.md",
+      "module": "root",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 1937,
+      "mode": "100644",
+      "git_blob": "8f984b7615bd62d42e520d53446f919d6b643cfc",
+      "sha256": "cb6973d81b86960da2f3cc42d64ab6d978d67347f3493efafb8a8b5c060e5804"
+    },
+    {
+      "path": "common/.gitignore",
+      "module": "common",
+      "language": "other",
+      "role": "source",
+      "bytes": 9,
+      "mode": "100644",
+      "git_blob": "b83d22266ac8aa2f8df2edef68082c789727841d",
+      "sha256": "306fd52e74fca6746e12acc750f232de15e71da917756a1270d74c91f5eb7368"
+    },
+    {
+      "path": "common/README.md",
+      "module": "common",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 1488,
+      "mode": "100644",
+      "git_blob": "866c8e1e594689113f5b66aa5a25ea72c7055a95",
+      "sha256": "016f5a15160233debad7d2dae3b2096da3f87b587c3492546aa5c987ca592156"
+    },
+    {
+      "path": "common/pom.xml",
+      "module": "common",
+      "language": "XML",
+      "role": "source",
+      "bytes": 637,
+      "mode": "100644",
+      "git_blob": "d293f818c7def3f1138e4423fcceb5bcaad961ad",
+      "sha256": "471aa8c690e946007b83781ebf14571cdaf19b55c0f6ce5aea457067e02f982c"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/exception/ConfigurationException.java",
+      "module": "common",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1220,
+      "mode": "100644",
+      "git_blob": "2aae124561ac05190681eaa6fee530e05e91cf73",
+      "sha256": "32018c1b085aa0d6bc73e4d1e2d3c0f929a418822f2d7f1486fae597a6269ead"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/query/FilterCallback.java",
+      "module": "common",
+      "language": "Java",
+      "role": "source",
+      "bytes": 985,
+      "mode": "100644",
+      "git_blob": "3ee409364fd8bff7684ef4568193368c38b9e2bc",
+      "sha256": "24081e7729d9a64210f96c407e180f5a717de3fd094d55b77881255c7d5ebf0a"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/query/FilterComponent.java",
+      "module": "common",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1325,
+      "mode": "100644",
+      "git_blob": "34795c8733a1a21dea50fd786d17da5e0ab398f7",
+      "sha256": "fa54f96be1189db02fde06c7207597220eaf18d258ce71871b560316febd577b"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/query/FilterOperator.java",
+      "module": "common",
+      "language": "Java",
+      "role": "source",
+      "bytes": 826,
+      "mode": "100644",
+      "git_blob": "a7b3505444748568e39f16719f4d6032a46bb9df",
+      "sha256": "ef5120344561dcf519ba9be3afb46317e09be0a4d2a0394338fc5e107db0ee0b"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/query/OrderCallback.java",
+      "module": "common",
+      "language": "Java",
+      "role": "source",
+      "bytes": 937,
+      "mode": "100644",
+      "git_blob": "56192811a4e6651eb789086d7f2ea11b59bbf7cb",
+      "sha256": "cd1dafd1d5e2ae60b1bc5caff9a044098dd93f22525492cc480522a32dd71e47"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/query/OrderComponent.java",
+      "module": "common",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1116,
+      "mode": "100644",
+      "git_blob": "9eea0358d83aec7cc46b29be9d0b19050e4fdf4c",
+      "sha256": "6950bea9f9e56ab264a329dbc70b884e2977cf82332f59ece3895d85c2d8aa72"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/query/QueryFilter.java",
+      "module": "common",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2504,
+      "mode": "100644",
+      "git_blob": "49ab28549db7c66f243a54f36555caa9cacce337",
+      "sha256": "9f60b573c1e5aef0e2ac9400f622f4b3006ea338b1884ccc948c35620e82b4c5"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/query/QueryOrder.java",
+      "module": "common",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2917,
+      "mode": "100644",
+      "git_blob": "e3381479ab27380c0671065241fd008c38bdd925",
+      "sha256": "a53214164ee57c67d9c446c852d3343e4405525ab1d0231d040d2fca8cfc997c"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/query/QueryRange.java",
+      "module": "common",
+      "language": "Java",
+      "role": "source",
+      "bytes": 6854,
+      "mode": "100644",
+      "git_blob": "e0806df0e78b0692da3c259317c194e35da3890d",
+      "sha256": "35f066322a4d512a26b4301b108730dc1458bd69c5ce59f15161e58a02a9e916"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/util/ObjectUtils.java",
+      "module": "common",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3202,
+      "mode": "100644",
+      "git_blob": "83901378249d592549b612681ea7d1bdc7b5c0e0",
+      "sha256": "31d73a9e6e86bf9feb043d1818c78c5c40a4d519a14e665794603dd011a7d189"
+    },
+    {
+      "path": "common/src/main/java/org/restexpress/common/util/StringUtils.java",
+      "module": "common",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1451,
+      "mode": "100644",
+      "git_blob": "e01db4b4e71bdce250188a274d4d2630a3ffa137",
+      "sha256": "2cc8129cc2305826abe43cb8f8e4d74ffc860bcf39699b9fef8bb0c7f74346a0"
+    },
+    {
+      "path": "common/src/test/java/org/restexpress/common/query/QueryFilterTest.java",
+      "module": "common",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1498,
+      "mode": "100644",
+      "git_blob": "f163c6dcc7f7b1633e81dc010adc4d07f571a365",
+      "sha256": "f4aaff658533f6a54a12cc44c6da055851c946f2da676689d399912b5a9fe283"
+    },
+    {
+      "path": "common/src/test/java/org/restexpress/common/query/QueryOrderTest.java",
+      "module": "common",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1670,
+      "mode": "100644",
+      "git_blob": "19d5a8024eecef75da13840b1ea12b92325307b0",
+      "sha256": "da7f2b3a7a1358e3a9eda01ab4083c88787057df5970d85e85209b679c13fa15"
+    },
+    {
+      "path": "common/src/test/java/org/restexpress/common/query/QueryRangeTest.java",
+      "module": "common",
+      "language": "Java",
+      "role": "test",
+      "bytes": 7411,
+      "mode": "100644",
+      "git_blob": "ede4f97ff6a022f820cda3b113d27750a5b22b77",
+      "sha256": "aeb833f2b293834cfccbc396afdbf62b980d41a70efb3d7d942d3eca82e3ae81"
+    },
+    {
+      "path": "common/src/test/java/org/restexpress/common/util/ObjectUtilsTest.java",
+      "module": "common",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2194,
+      "mode": "100644",
+      "git_blob": "1ebf4d734f009625d5eca7f84e0527c37cda6d72",
+      "sha256": "69824e6c72121f77c9247cd55304af9520c7dead4a190a49b77a5b26040bc0f6"
+    },
+    {
+      "path": "common/src/test/java/org/restexpress/common/util/StringUtilsTest.java",
+      "module": "common",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1267,
+      "mode": "100644",
+      "git_blob": "3faa97d29ab88895d68792e604f386e249e41b3d",
+      "sha256": "de6c848c74f95b573503270ed377692654e1e617767c2ac25a15cbacda7b2192"
+    },
+    {
+      "path": "core/pom.xml",
+      "module": "core",
+      "language": "XML",
+      "role": "source",
+      "bytes": 2286,
+      "mode": "100644",
+      "git_blob": "f380648c4777e5c06134d7a45655c6e722f1b05c",
+      "sha256": "02a592cd083c61ebfa2761ae226cdf77f3149a78d0edee5873e0f6d24d57d6fe"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/ContentType.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1753,
+      "mode": "100644",
+      "git_blob": "1add12c55d21440b4c0b81b4efdffcf034da0c54",
+      "sha256": "27c46c906a4d28df38aa7b8d128394b5a773c22aa96de0f963c060b487d22742"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/Flags.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1430,
+      "mode": "100644",
+      "git_blob": "9dd56958cbf064955e4ab495322e7a2df6d7e285",
+      "sha256": "926fef26e627690f8a06ae4e62219d51b9d743d356fb953d68d7fb0370a42165"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/Format.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1204,
+      "mode": "100644",
+      "git_blob": "a01a386e736a609aa5f7841a2aa0f7cd16283f24",
+      "sha256": "24ea156c387e063354db6289148b7c3deef4f949d4c8f4c9d788791d2b38d675"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/Parameters.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1351,
+      "mode": "100644",
+      "git_blob": "1cdd2b3a1793881c1e1249d9531a0e0df00a89d2",
+      "sha256": "62e10a1fd7a2c7c60171f2af877c508d196642bf28d7529e1d4aaa87fa6fb7ae"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/Request.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 22947,
+      "mode": "100644",
+      "git_blob": "464ccbf6542c115470f09e5a8baaf69dd3fe2cf5",
+      "sha256": "16571c33f906c48c17c0f95b1809e6b377771974dfd2c453e7c82abd88b2f061"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/Response.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 6639,
+      "mode": "100644",
+      "git_blob": "8edef6a7d336a07f185e3700e18491ca24ee177a",
+      "sha256": "56351fa35895bb36fc59e14c9ce404ac0c45c693393483fb0bc0b4c5f5b43356"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/RestExpress.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 26593,
+      "mode": "100644",
+      "git_blob": "a2d340ac372b0192e4475ef6b607cdaaaa4ac0b9",
+      "sha256": "8e98472f1a7bd70b4594a6b5405334fe5a2b283ee41242858908e5266c001a03"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/ServerBootstrapFactory.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2541,
+      "mode": "100644",
+      "git_blob": "f72857f794233a8605a25c6599836f291dedfcad",
+      "sha256": "20aa609dbc276e8944090caf58f8c6d6c45d14e277829058649f966c38c681b2"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/contenttype/MediaRange.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4067,
+      "mode": "100644",
+      "git_blob": "58b5248c4bfb52bbd73ceb264b3ac1be97f22516",
+      "sha256": "30f7b7ceaa17d30ba75f8354ca6f71df90e8d5313d4fb6ee426e8981645baa0d"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/contenttype/MediaTypeParser.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4130,
+      "mode": "100644",
+      "git_blob": "2b54c022f68201f371198544aab9c06862a2380c",
+      "sha256": "8fdd417ea210a262eb33a7fd287630ae70c89cc5791835f978cace26c681c4d9"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/ErrorResult.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3097,
+      "mode": "100644",
+      "git_blob": "8f8e04fdb95eff9f4496d8ca6f2aa876830e165d",
+      "sha256": "2fb18b42014c8bd818c30f4b6fe49e0a380814f89740c032bcea98947a51e35d"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/Forwarded.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2339,
+      "mode": "100644",
+      "git_blob": "b19aca8ea33be1631daa93c3dc0f68b34cca3c2f",
+      "sha256": "a297f0d3864b5aea7133bb037e7bf287329a90c2fe4c4b5f66a7e7b48ad174cc"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/ForwardedElement.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 738,
+      "mode": "100644",
+      "git_blob": "77628f2dc2be367e23af281ed6233967bf90bcd8",
+      "sha256": "16f6961788b02437744da1dea3dc27d0c190a8776695b48af1d073bee8fb5de0"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/ForwardedPair.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 932,
+      "mode": "100644",
+      "git_blob": "fa4c3ed893dba21e6d87b19bebcd25895e812370",
+      "sha256": "8fc4355ac6c0bfa5ed1c7195129d11d1572d5425528d610ff7330c5efbe673d2"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/ForwardedParseError.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 622,
+      "mode": "100644",
+      "git_blob": "2abca9d7d5be374c9e32e38989aa78a77c155bf1",
+      "sha256": "e8bb270d7ae7733663898607519548540fbc08627d990a03f067711d00267594"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/JsendResultWrapper.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3122,
+      "mode": "100644",
+      "git_blob": "5451ee9d4993a854831c9de04ce487753ff98675",
+      "sha256": "6f3d83fcfaa82c14bbcdcd8d15b31a6f52d8fdc04d355173e6d01545a3eafdaf"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/metadata/RouteMetadata.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3112,
+      "mode": "100644",
+      "git_blob": "a6b5ed5e53bf3b0920f979f8c833bdaf843f106d",
+      "sha256": "1a3955c30e2ada4b4504fd323909ba54fdb0c15034f6ca2ab388597f881b516d"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/metadata/ServerMetadata.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2328,
+      "mode": "100644",
+      "git_blob": "1815a627626f9e6e8a1255c5ae6f68b8716d3238",
+      "sha256": "33f8318efa04f89b79aa3d95b9e1f74f701959e26bf33c9272a14b78787de198"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/metadata/UriMetadata.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1412,
+      "mode": "100644",
+      "git_blob": "b75aad5eae211a047ce0d210ea9e33d4ea163952",
+      "sha256": "f5347d23e058b7bc50af2a3fe0445060e8b8628d045c046b39695310eea1b38f"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/result/ErrorResult.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1137,
+      "mode": "100644",
+      "git_blob": "0cbdbc4b8b6a98909284ec5b11e06a704b8f3886",
+      "sha256": "96757e603864bd1d75cbefab238f1ebfbcdb9e655b074c4ca691ebcb9abc6812"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/result/FailResult.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1012,
+      "mode": "100644",
+      "git_blob": "cc5f79ad58178072fd02f8039d7330c4ff2291b1",
+      "sha256": "48995d7cc0ea09998143593b14443d20af6593cd34df1ba2839ada319df8b26e"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/result/MessageResult.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1014,
+      "mode": "100644",
+      "git_blob": "2940e8e7e2fd5f6da512a0e3fb904fc16765e1a7",
+      "sha256": "cf5efdf70099a5e190f9e356aa0308dbcf8c12c83ab0d3b1786432b736479190"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/result/Result.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1052,
+      "mode": "100644",
+      "git_blob": "43cddf9f5050405edbf425e644848d2cfa561819",
+      "sha256": "ce1ecf14ed86a49a51fd8ae0686523a18454b5f97efe0c97aaba39895dfa2c5d"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/result/ResultFactory.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1375,
+      "mode": "100644",
+      "git_blob": "7b480c96f120e6fc8f704ddf44eb686d9dbd596e",
+      "sha256": "72bc9c7375632521f1ece6dcfb95e9b4306e942a8b712b113e91e77ddbd66081"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/domain/result/SuccessResult.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1548,
+      "mode": "100644",
+      "git_blob": "0b8fb3324c8df57cfe227ee5e658d54f9933f446",
+      "sha256": "1bd20666eb485c264cf42ec0b620a07e85493947bbe619888ba47d4dd66f103b"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/BadRequestException.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1389,
+      "mode": "100644",
+      "git_blob": "43173459d84a44643927f124505b4bfa1343edd8",
+      "sha256": "30f255f274b2ae47a114dce759c5b5878aff8bc02334438dca967edae11541aa"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/ConflictException.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1332,
+      "mode": "100644",
+      "git_blob": "622d77819c376093817beb660de25ca71996ad56",
+      "sha256": "6e4b47c93a4728c7b38297be317800f50caafed622f9de6b64d92767e560505e"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/DefaultExceptionMapper.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2224,
+      "mode": "100644",
+      "git_blob": "cd3fea8120c8407cea34fbf2698933ac739577f0",
+      "sha256": "35c8422044aba3e301085b09b2fecfc0f43e9eac727435ddbaec465f0b10606a"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/ExceptionMapping.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1130,
+      "mode": "100644",
+      "git_blob": "bf718d04beedaf87288ef40e41d32cfcac48860a",
+      "sha256": "2ea0abdb2a229f57654101368b8510ede9a25d363eac33130716a0823bb6daf8"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/ExceptionUtils.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1171,
+      "mode": "100644",
+      "git_blob": "f216c53aa5ec6f2706befb8d8bc1909726099678",
+      "sha256": "aa8cecd31f70a1fe75928ea0111973580dba7622b66b7f6015c27cc5308955be"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/ForbiddenException.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1338,
+      "mode": "100644",
+      "git_blob": "0b810d124d78d21cd08d31eeee6360e5742204e9",
+      "sha256": "845d9724ea57dbc513a3a8a51de0d46c091996d0f9f9c1c4e3a8c6e60d8dad86"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/HttpSpecificationException.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1211,
+      "mode": "100644",
+      "git_blob": "81c2f22461fb4c4f56b6661f9a192dd041705a17",
+      "sha256": "74fc05ca81bcc53a004ccb3db537aadc013ce6154726df54a6c101d9d0d92fe4"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/LegacyExceptionMapper.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1935,
+      "mode": "100644",
+      "git_blob": "03a7216977d37a6e2cb1df83f61f4107ad15d9f6",
+      "sha256": "beed30a17daedcfba2101b37b2140c6eb5502cadb37f568bc27a8f11627a563a"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/MethodNotAllowedException.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2366,
+      "mode": "100644",
+      "git_blob": "c63b722de6a6e9786184ae8bf7c000350987070e",
+      "sha256": "8da6958f58b9a6217211036508e6a85f283345c26286dc4c21549ceb917ae16b"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/NoRoutesDefinedException.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1658,
+      "mode": "100644",
+      "git_blob": "940c49500dd7a91ec6f75cabc2e681d729e2f59c",
+      "sha256": "bf72d1ac4da2c3546e00b6de505ab6a304490860fbcf846ed7b3261dfc692fdd"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/NotAcceptableException.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1300,
+      "mode": "100644",
+      "git_blob": "332e02a0b2a0d13a56d436e89392dde01f23814b",
+      "sha256": "f0e50f4b21b0c699ea30dcdfa1888007dfc99b2a9e678ddde741f39c1bcc905e"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/NotFoundException.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1333,
+      "mode": "100644",
+      "git_blob": "54425c5560516d46279a63f4d8dce4d2bff5ec35",
+      "sha256": "77f25b1088cca6c2f6313e540e29c528366afe83e32b125bf9b25ecb2065fb07"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/ServiceException.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3634,
+      "mode": "100644",
+      "git_blob": "4e4e83bb0fa2a98a1f7e343ce28baf1380c6b70d",
+      "sha256": "c94068607d3669a8fdb79e40dc5809ca23c4a8d6e9bd4112b28f38e71d7b841b"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/UnauthorizedException.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1359,
+      "mode": "100644",
+      "git_blob": "cad7ec4a3cd26e51e9bd543a18ba78d7fbcf3dbc",
+      "sha256": "79976af770a944b250ddaddfc49a0b516238dea672c92ee55a47995cd193949a"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/UnprocessableEntityException.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1355,
+      "mode": "100644",
+      "git_blob": "2592cc4fd35e1c48651f207df8800d6e58600e2c",
+      "sha256": "abd2b3b30a79a742d90a87d865100a0331845dd289091d6c5d9c85808604a96c"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/exception/UnsupportedMediaTypeException.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1340,
+      "mode": "100644",
+      "git_blob": "3835e5835e293c473e56b4b54c09e706a54e70f0",
+      "sha256": "cdad4ef7dab681c6372fbf78b89fc7d0828472d7f7da1d69b950934f8aaa4940"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/pipeline/DefaultRequestHandler.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 11496,
+      "mode": "100644",
+      "git_blob": "bb91542fa43978bf6b94650b4aac46b9c72c9db8",
+      "sha256": "a43bd75194c582cc33cf78dbe359c9a25fda9dff54ccc0462e4b1aa2cfb2713d"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/pipeline/FileUploadHandler.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 10298,
+      "mode": "100644",
+      "git_blob": "1fc56f1ae78c6d7a77f374abad814b5578cafb51",
+      "sha256": "dbf4a6bb8c194cb06165e43eaf77a38ba9638efaf5054f2ba829b00e3016017a"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/pipeline/MessageContext.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3344,
+      "mode": "100644",
+      "git_blob": "4930394ca0df1abfb9295009ac159f4ca12d26a9",
+      "sha256": "76c99129c4884dfefa4167c2f5ed178682cd5f16bf06406eeb1aebb5e080f4bb"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/pipeline/MessageObserver.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1887,
+      "mode": "100644",
+      "git_blob": "c471b1ab68a13efb2c3f28556ceb1d2e4fc737da",
+      "sha256": "a13513cfca810951710ab8519788530fac98091ea5c17b5c0cb44143ffbfb26a"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/pipeline/PipelineInitializer.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 5412,
+      "mode": "100644",
+      "git_blob": "e57a7352fce51546a4114fb3bc045a0df98e5512",
+      "sha256": "4464fe92eb4daae45fcb1285e134bfbee8cff11c3dbb0f40b1f02dcb058a5e1c"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/pipeline/Postprocessor.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 605,
+      "mode": "100644",
+      "git_blob": "a0d1b7cd42cbbd64006192a9fe48040a41b0a23b",
+      "sha256": "69712355208df5223d18188f7829c2183fdaa0d0c176c486ca24f715a250309c"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/pipeline/Preprocessor.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 721,
+      "mode": "100644",
+      "git_blob": "0e663f887ee4837adec347955ae484fb68bcfef4",
+      "sha256": "a03f78e46e207d1d5d698acb2a789e4a7f3d6b290639c63b9bb1680ed02a113a"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/pipeline/RequestURLDecoder.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1442,
+      "mode": "100644",
+      "git_blob": "55f3cb5865c572a24a9f7f524cce63e1da884974",
+      "sha256": "63e1614c47b0a4f90a7870aa1a80414c8e11402bcc8011941df6fb5283076563"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/pipeline/SimpleConsoleLogMessageObserver.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2826,
+      "mode": "100644",
+      "git_blob": "2800c37d2117dbd90177af2426e9fe0e4ae8625e",
+      "sha256": "fbcee17c4dfb9cb814e90faa86e3b7478bca1bfd6f90e8b9ab18da3009e150f1"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/plugin/AbstractPlugin.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2117,
+      "mode": "100644",
+      "git_blob": "d0f2f6013d2f6d176ba12f59d6ca80c7f9a8a383",
+      "sha256": "2a1bebc28cc955973e0b20eeb03eee7f5876567b65018d17254b0eb7125b7240"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/plugin/Plugin.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1424,
+      "mode": "100644",
+      "git_blob": "035bcd7af7c174ffc259a0d933997b0ede5e0298",
+      "sha256": "0bd631683ddd45cb8c5412df04f7392c152443170914219d5e8a1c977ff99cb4"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/plugin/RoutePlugin.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2261,
+      "mode": "100644",
+      "git_blob": "8b29211cd504e96cb8ddbd549c2cace1d3be8b7e",
+      "sha256": "03f730cf05a370e319d8148d7348efa8bc0b2419a6f7e268f58650385dd029fb"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/preprocessor/HttpBasicAuthenticationPreprocessor.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4760,
+      "mode": "100644",
+      "git_blob": "12d3a6efba65373f04252656cb2ea68f70ade9cb",
+      "sha256": "8649a020eda6d8af6d09ca69f32c2ba000c0963863012ea91fcbb44281ed6475"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/query/QueryFilters.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4825,
+      "mode": "100644",
+      "git_blob": "bbe7e251a430caa05482821bac95fe90dcd37074",
+      "sha256": "b5d14ca400ac02cb393e0d6e184e3b389c1ea7d083dcc5d1fba96846216ec663"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/query/QueryOrders.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3296,
+      "mode": "100644",
+      "git_blob": "dbda47c97f21e3ffab88e333df8a0fd5ec05e240",
+      "sha256": "80513354e0d2f949a2300b7779b8ab4802e536d6ce34a041674d09bed75db66a"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/query/QueryRanges.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4254,
+      "mode": "100644",
+      "git_blob": "54573c34ec58670233941137ec9242ce659ef226",
+      "sha256": "b8796d16b6561659ad94c123d2c60d82a7701e8dbcf1de8320eca9878099b3e7"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/response/DefaultHttpResponseWriter.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3836,
+      "mode": "100644",
+      "git_blob": "a0a9aa233ec8e419a310d0bddcf305736bee1c3f",
+      "sha256": "d6f221c63c7da1ef17340438654eaa35f6406a8c89ebbbe0cf6f044fe4dedc7c"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/response/ErrorResponseWrapper.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1230,
+      "mode": "100644",
+      "git_blob": "34c6d0f7e1029ef2f30c4f02b8776f4c8036a516",
+      "sha256": "5850ea52ff713b2072ff123d3029963629120f68b9a5ca881406e2826bfa3a32"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/response/HttpResponseWriter.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 382,
+      "mode": "100644",
+      "git_blob": "313b42c4566a669e09c7091c4176104c7679f24f",
+      "sha256": "9275d1696ac2a6443579d161095cf53e676d42f96ef5067be36b9b0ed900532d"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/response/JsendResponseWrapper.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1070,
+      "mode": "100644",
+      "git_blob": "a1e32471fbaef076645a6bbe60978fbd254ac7c9",
+      "sha256": "2f1a352c5f7d752a66ed3f25a781720cc85a4f552bff96ec6fe54128702b8f15"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/response/RawResponseWrapper.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1215,
+      "mode": "100644",
+      "git_blob": "d3c0d708b8614b28b6eecf2b6ff16a47207dfd88",
+      "sha256": "2b6908abd4929e36d87a7c76cf2716da20d6554859942bbde4e40cf1248c6748"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/response/ResponseProcessor.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1723,
+      "mode": "100644",
+      "git_blob": "c21bb71205a27410c5f5050abd95615df29c72ca",
+      "sha256": "e39f3e3d5e87e5956551a8d3d6f1e6a3dcb50638160f3c30c875926ba0aa4024"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/response/ResponseWrapper.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 825,
+      "mode": "100644",
+      "git_blob": "ba3a4b431d4c7b68b0607b7fe02f216b2f051097",
+      "sha256": "bb8d75f6ec060a2cf070e99b05ffade0362ef01b47d43271aeac4b363004f27a"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/route/Action.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1941,
+      "mode": "100644",
+      "git_blob": "d01271d3ce88f89671d5204b7480a88e18cde851",
+      "sha256": "f93a1f815a929261e36acddef8e4624681ddd44b30ea91814a94821ba0879b63"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/route/Route.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 6429,
+      "mode": "100644",
+      "git_blob": "d78137a053bca6fb0fcf97a20f9c2740bafa4d0c",
+      "sha256": "01aa95659a885d040dd7bed321fcab7dbc2d27fe4b7c0685b685280ce4b57200"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/route/RouteBuilder.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 10335,
+      "mode": "100644",
+      "git_blob": "e336b4b2fe277dca8f3e541d8a5618a825912429",
+      "sha256": "c75e982bdf8f20842a64a9aff05043f9e6c2ac1b429d07e0c4e88cc3b31e71a5"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/route/RouteDeclaration.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3353,
+      "mode": "100644",
+      "git_blob": "553d9ea3fe5829558931536aa676604dae48672f",
+      "sha256": "b278be74b759e63f7051f18fd58890afe2064211583a02cf4985011bbb4360f2"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/route/RouteMapping.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 5766,
+      "mode": "100644",
+      "git_blob": "9349195ee3fc78654833fc4c4dc1c18fc957d898",
+      "sha256": "b21458417e574d10d00fda8efd73ccfcc65377f07550e3a6341b2860a66a1c41"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/route/RouteResolver.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1718,
+      "mode": "100644",
+      "git_blob": "dbff804f819d5533dcdf84c568ac3f9c9608c169",
+      "sha256": "6f7c240755855a57f402f7f74f3d6a869c53404a0f7d692f5ab4ed5e5d1c0002"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/route/parameterized/ParameterizedRoute.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2806,
+      "mode": "100644",
+      "git_blob": "e7153f17a3075026b0fb94784745ac3ae61ca4a4",
+      "sha256": "8343b90c752f59993c3a6dd01c673fa45c8573c9b40b29596402b38f899f285b"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/route/parameterized/ParameterizedRouteBuilder.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2830,
+      "mode": "100644",
+      "git_blob": "2ac21d05682632a4fed6bea48c4628fe43118cfb",
+      "sha256": "2682fe5c51301e964dd2538e819213774afe855a28edbf964da5c7d1be02db99"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/route/regex/RegexRoute.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2113,
+      "mode": "100644",
+      "git_blob": "a7f09cb3d271474fcda40f797c333d05fe192311",
+      "sha256": "a1e20a02bf27bc7ccfe055a90eb309607c0962fe7c1838e4acd4732e4b59b2e1"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/route/regex/RegexRouteBuilder.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2111,
+      "mode": "100644",
+      "git_blob": "ac4ce382aa5072c004c64db49a4d60560006b225",
+      "sha256": "d0d1cd57a8618539f226b5cc7df4d7d2a4d6f136e978fd45cb8745e5d67213e6"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/AbstractSerializationProcessor.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2766,
+      "mode": "100644",
+      "git_blob": "73c112986a47644d9d2ce007332e262c7f719b08",
+      "sha256": "ae593000b357e5a3c5cfe6bcb033aab3d64a5c7f8ef0bd3f0ea57ce7dba3b944"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/AbstractSerializationProvider.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 8581,
+      "mode": "100644",
+      "git_blob": "a3d872ff3c1daa980b14fd576a3d6fe95f7824f6",
+      "sha256": "13e5e73775762e62155f08ba823377cb3e5bbb3d190d9fe3e9b78337b3d33081"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/Aliasable.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 750,
+      "mode": "100644",
+      "git_blob": "7387454c4b1aa75feb4f14b1adf5c5de62da6e53",
+      "sha256": "5b42d8991ca1ed5710e518526d77de36ee7a267edfdc27f84115805a6827556f"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/AliasingSerializationProcessor.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 837,
+      "mode": "100644",
+      "git_blob": "eb4b95c6417ba9715f64309049402280c1dfe4f3",
+      "sha256": "c76202c39edc859fb81d877d2fc4a0d4647e90b7726d94a7b7474d8f04b5e95d"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/DefaultSerializationProvider.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1118,
+      "mode": "100644",
+      "git_blob": "b79d5c16a0ee5a30bdb1238c22eb3b043bd78613",
+      "sha256": "e90fc8d7a94b6e6c4564e0d273b125f02f898f7ebb4555126e641fe62c1c8d4d"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/DeserializationException.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1225,
+      "mode": "100644",
+      "git_blob": "369488b02bbda366675afcbef3964596a2a69078",
+      "sha256": "87d15e0da5af44569ba7c16f1e60d7481c4fe9aed385fb15b090d8427a86f80a"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/Deserializer.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 882,
+      "mode": "100644",
+      "git_blob": "a77d464a5c7866e04d3321447a6180b0a7d7e5c2",
+      "sha256": "369f7f25a467bba6c5ece95e002356991dc258e058f8659eabf0b2c673f7175b"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/GsonSerializationProvider.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1097,
+      "mode": "100644",
+      "git_blob": "6a7336248d93c632a33a26f8bd99f25fe01fc87b",
+      "sha256": "adfc051f673bdb8b729d3f4737c2edeba20bd443baee0d82c707edf22317246c"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/NullSerializationProvider.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 929,
+      "mode": "100644",
+      "git_blob": "0d9b152cb43e16e2652bb20c8e9fccda362a56b0",
+      "sha256": "e484c03cd301041817f3ffef2521835957f72faf620963686790078eaea1514e"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/SerializationException.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1216,
+      "mode": "100644",
+      "git_blob": "6a895b72b4f6f0beb8fe149dd18d93b72e8cb38a",
+      "sha256": "73294c40bdc0cf972a8bef121984e9477a758576f7f9b3293767f66664be7045"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/SerializationProcessor.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 775,
+      "mode": "100644",
+      "git_blob": "24bdbb898bf1f0daf824085d2b4a7acaf4b886d4",
+      "sha256": "9946a48b187fc1ec5b13d1bf550580ebb13801c9c781d7f2787b7f9292415b92"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/SerializationProvider.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1232,
+      "mode": "100644",
+      "git_blob": "16b3a86fefd28133134cc29f795a37b704bb7f32",
+      "sha256": "6baf997224e98948b0313acf70c1764ff66768c100fedb8f1f5f82a7199d3475"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/SerializationSettings.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1732,
+      "mode": "100644",
+      "git_blob": "2f70da9409d4788ae7e1516e8066c4b03d71b507",
+      "sha256": "bd4099f07aa5160373c73127dcac269a18b6ea8ad9563e1eface8418f6c9a39f"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/Serializer.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 972,
+      "mode": "100644",
+      "git_blob": "c0dc48cc00e979d7512e68c5569989a236a0678d",
+      "sha256": "40a5eff36a7e6c061a5dba6d929ea4a59ad62f31e1e95b8f65436b528909f7aa"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/GsonDateSerializer.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2242,
+      "mode": "100644",
+      "git_blob": "8d76f824942e93857f96581426659136bd009447",
+      "sha256": "e34df65eac881d03e56fe2fe7bd02eb6a391b48f85bdb637325766d15112da17"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/GsonEncodingStringSerializer.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1505,
+      "mode": "100644",
+      "git_blob": "2b2cb1447038321c6b1f6d0e7bb0f415e1735354",
+      "sha256": "6ca868976696ca3ab66349ab924e390d9ef3b8699b57cb9cc359aabee5523dcc"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/GsonJsonProcessor.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3308,
+      "mode": "100644",
+      "git_blob": "679643b15741a67967082c0ee9e1b5362b08173e",
+      "sha256": "98c0e063f6def30bbfb8d77a5ffc5c190b20bf624298412276c3c3a0ad2941e3"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/GsonLocalDateSerializer.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2120,
+      "mode": "100644",
+      "git_blob": "e1ec847afc9e9a8a6e232974743b24cd29f5caac",
+      "sha256": "518ad1fb532b7bc6c00b11ef9b9dbae2574f480bb4240d5572199d35d70a4d42"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/GsonSerializer.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 930,
+      "mode": "100644",
+      "git_blob": "ae0abf8441aff30f1678467bb1342ad0c9598c6d",
+      "sha256": "92c63216666591443a3ef7081ec11684bc41485944e6b0220cafd954774660f9"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/GsonTimepointSerializer.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1022,
+      "mode": "100644",
+      "git_blob": "8e9bcb5658df1211e757f821efb2af07ce37f172",
+      "sha256": "6dbc2324f13755e7748a86996d430c038fa43cda31ee0f5a402abfcd478618c2"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/JacksonEncodingStringSerializer.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1351,
+      "mode": "100644",
+      "git_blob": "3a0fec7e2ac4268592bc56387010486a2c687092",
+      "sha256": "1303947a27e54b9adb7b884f7c8a6b319c4ce72c251ed7deae7fe82594a08e9b"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/JacksonJsonProcessor.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 6219,
+      "mode": "100644",
+      "git_blob": "36051f1209f318e2d3e373a096f7febdc4201eb2",
+      "sha256": "db13cb764dab055423acc8cf1e9e007af9658a84db04aea390e5215e609b3dff"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/JacksonLocalDateDeserializer.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1743,
+      "mode": "100644",
+      "git_blob": "1d5384eb3d142be6bb699a079c5eb619056e4f5f",
+      "sha256": "1a68b65cb8fe42e881015224ef0db628e1c57f4f3c372288d4796dcf2db0fc8d"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/JacksonLocalDateSerializer.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1500,
+      "mode": "100644",
+      "git_blob": "3a8fdb4aed0b10057ea7492684123d6edbf477d4",
+      "sha256": "0195360bd4adc1acd2566137bb6a94179339564b191b76609a84a6871b259512"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/JacksonTimepointDeserializer.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1781,
+      "mode": "100644",
+      "git_blob": "aa9ed8f991d23eef13b12d3a13e02a1292261146",
+      "sha256": "324e3ac0d1c8d845066ee8c00caaf4c9d014b9ac5c7b529bc42602b8341c9299"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/JacksonTimepointSerializer.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1524,
+      "mode": "100644",
+      "git_blob": "50733a4c7fd6048e886393b728e508b1bc093ac4",
+      "sha256": "cbcd992ca7c3f2618c0515b42131f51002044229dc686d8673503c25c1d41fa2"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/serialization/json/JsonSerializationProcessor.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1502,
+      "mode": "100644",
+      "git_blob": "c51f179f668c73b71f1aa5c7e00c50464d3da5be",
+      "sha256": "918db6a490df859d1dc20f6b74dcf4fbc40671e846529baae028fd82c7b9dd31"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/settings/RouteDefaults.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1637,
+      "mode": "100644",
+      "git_blob": "e1da31e068777df7cd6e554b3ec98a52a237d608",
+      "sha256": "2126271c16302084b93d4c853a9dcf74d07860b3a5ab8f6cbdc254904bf8c8df"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/settings/ServerSettings.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3797,
+      "mode": "100644",
+      "git_blob": "00f8e04ebd35de7376ed5fbd874b6f7e5cafae1e",
+      "sha256": "afac64065e8231eec1e95b45d4c0795452fd47c2668099345435e6331b3efdcc"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/settings/SocketSettings.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1568,
+      "mode": "100644",
+      "git_blob": "a099c61de94695bc60c3c5bc745ba585328c53ea",
+      "sha256": "5d5b3d548b412f418c845b2fc304963f3df5f440bb251bed6523f1a81983f972"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/url/QueryStringParser.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 7172,
+      "mode": "100644",
+      "git_blob": "1d90fc36b1a0c4fb1ea6dd69dd230b3b5f0d09d8",
+      "sha256": "8f11c35592fb6c0d4bf79476651dafb56f5973e3d470f5ed7d93c93dc51f37ac"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/url/UrlMatch.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1856,
+      "mode": "100644",
+      "git_blob": "d3e9c371a7faa6ad0d1057b6df4b2f3d762b8369",
+      "sha256": "191a3139da730ebd0165bf057c6f9658f8c680e9de6a1b61e6d95b55dc1b03a2"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/url/UrlMatcher.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 860,
+      "mode": "100644",
+      "git_blob": "cc36d525ebd2ae6b97372d994b87face3a2e020e",
+      "sha256": "f86c62e8437a7f1ff8ce5daddae3648f1f6feeae8cd93a75e5979416ed74f781"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/url/UrlPattern.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 7326,
+      "mode": "100644",
+      "git_blob": "53674c93fb509052deb72fc6f117cc92814e273f",
+      "sha256": "89280a0952c837798b7b292f887663c48ce973d61f3494d7db91836ded57fc97"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/url/UrlRegex.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2148,
+      "mode": "100644",
+      "git_blob": "687b1723d0baa58be45c5527d1182e9d09fce87b",
+      "sha256": "3a1f8a928130a239a35034ef7e39d90804af68bb6d042614b736cf4252fbc8f0"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/util/Callback.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 723,
+      "mode": "100644",
+      "git_blob": "0aa3ad29c21f472b673eb321f9852435d1822f2b",
+      "sha256": "80e7443d15464e5a858279ab0973e58bf14b7889ec5959b3694fcc46c449d75d"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/util/DefaultShutdownHook.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 990,
+      "mode": "100644",
+      "git_blob": "c473420f7b6193cdecf50b5f7f6b1d04d39a3e51",
+      "sha256": "80ce2427f8ad0bc4ac568937d2110e151a73e11f2e2b241fd3dec54c25776612"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/util/Environment.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4126,
+      "mode": "100644",
+      "git_blob": "10a0e386858ad9b131a4e0a0904ead7a3df58f58",
+      "sha256": "14e73bc1db5013739dbf8e6d58e9814267d13c00f1e5084b995a8c2c6b40a322"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/util/HttpSpecification.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4708,
+      "mode": "100644",
+      "git_blob": "976d9d535e884a4e86cd78590054cb6ea904cb6c",
+      "sha256": "78a392f08f3c6aa443a29d4090a3139e0ad3c0aa5b117126aa1a507e6223edff"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/util/RequestContext.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3414,
+      "mode": "100644",
+      "git_blob": "1ef56e03b6057009607dd46509e42b6f1dbe3a7f",
+      "sha256": "766f26d82f7e26b4628b369ff305b1e61fee172c202ef773644a499fbdb245ac"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/util/Resolver.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 890,
+      "mode": "100644",
+      "git_blob": "805b0c9823739150d84692ab24f315058d8a1ee3",
+      "sha256": "4664e7fe624185a656488810aa4644f467319b8ed1048c1e1798e51170c94e02"
+    },
+    {
+      "path": "core/src/main/java/org/restexpress/util/SslUtil.java",
+      "module": "core",
+      "language": "Java",
+      "role": "source",
+      "bytes": 945,
+      "mode": "100644",
+      "git_blob": "c809a89fee2b60d7975406cf06a375f064eb70e5",
+      "sha256": "ff0e826804e061069ed00a0a8dc4515670cfb53b3ee9dbc1521e4c57fecbda65"
+    },
+    {
+      "path": "core/src/scripts/install.sh",
+      "module": "core",
+      "language": "Shell",
+      "role": "source",
+      "bytes": 564,
+      "mode": "100755",
+      "git_blob": "ae39bd8d5afdd33e56d65c442ec0edd7016859df",
+      "sha256": "7bc916b41bf35c6c731ba664c2da0d5567b316ff82caf50f898d9de88b29849f"
+    },
+    {
+      "path": "core/src/scripts/restexpress.sh",
+      "module": "core",
+      "language": "Shell",
+      "role": "source",
+      "bytes": 1727,
+      "mode": "100755",
+      "git_blob": "6ef7c15b619b09c3c5355481553890d2b0c0a37e",
+      "sha256": "f0414089066975dedfde03d8c00f3760790f90c650158c8da6f3adf891ad9b20"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/AltRestExpressServerTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 34289,
+      "mode": "100644",
+      "git_blob": "e5fbb8f1e80129107a93df7e8171fba0182be15d",
+      "sha256": "cb66bf50aeaee177d7355c76935f0c6c92dbcb6c523a05c8cabf39f188829e8c"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/LittleO.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1523,
+      "mode": "100644",
+      "git_blob": "eebea369b4d3345d865a0032e081a58a89bc949a",
+      "sha256": "e47bde161e4eb362f4d2a820d9e1b4bd274be370aadcf4fbbdd229d71dc9cf38"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/RequestTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 10518,
+      "mode": "100644",
+      "git_blob": "7e0dc6f7f071ecde4d5a982382fa394e8dc87fbf",
+      "sha256": "4e66b6d738e20b368faf9560486c2bc6dd6a204b47912b8bc6253e02b02d3752"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/ResponseTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 4321,
+      "mode": "100644",
+      "git_blob": "4cc31d05e237b6aa71cac8642834d4409fb64b47",
+      "sha256": "40defa6c7ca57f259fac2b99c50776b749172ac347a026c832bb0a177106dbf2"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/RestExpressServerTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 28008,
+      "mode": "100644",
+      "git_blob": "8a79b5fbad18002000b6ca21c82d757c987a70cd",
+      "sha256": "e563a210fe7efc3d5b54732ccbcf4fbcf4cd7c6eecf30fd4c64d5ba8fdae92c7"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/RestExpressTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 14104,
+      "mode": "100644",
+      "git_blob": "2385b4081ce10dde6a5f6a30d21d43449747389b",
+      "sha256": "74ee04002aaf72ad9cd2b71f5887bbc3a610d6949089a632bf3be7fb3a19533d"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/ServerCompressionTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 8480,
+      "mode": "100644",
+      "git_blob": "3d18445ad9969406df161bc15ff5a097a5f68eae",
+      "sha256": "bdfb5eec34bd8c1133cc7ca32b7e76df18d8c6e2c8d37c26c9db1f5ad1429679"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/ServerNoCompressionTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 8406,
+      "mode": "100644",
+      "git_blob": "623923afccc7e6c9e73b0777a832077d3f6fab0e",
+      "sha256": "3ec81f2ab1dae4176c7e1c2f8c0592652f25f611778601c0ac6797e6fc8ec0db"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/contenttype/MediaTypeParserTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 7847,
+      "mode": "100644",
+      "git_blob": "4811733eb3e49ab82b200a19792a9ea383ef0c1d",
+      "sha256": "b489680b510cf399cfe9f12e2602de651dc02787e1857357e6ce7c42541214a4"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/domain/ResultWrapperTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 3882,
+      "mode": "100644",
+      "git_blob": "dfb4d3aeb8e576d834b434858e636c1b653f150c",
+      "sha256": "b705fbd771ccb9acff1431d771ffa322f5058d6314adaed259f6be15c13f393d"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/exception/DefaultExceptionMapperTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1698,
+      "mode": "100644",
+      "git_blob": "04c635d1cb042d6b842189be36d1e844e568c1fb",
+      "sha256": "c06f441d917ee2f74eb5d3a9e1780141baa8eb8a7573001933c5eb7ff9447aaf"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/exception/ExceptionUtilsTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1393,
+      "mode": "100644",
+      "git_blob": "a0025af6690767b6e596c7e83c2d95614364f98e",
+      "sha256": "570977708f3ab266d543014eb47f58781c49536ee21572792cf02d09c7e8256d"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/pipeline/Dated.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 769,
+      "mode": "100644",
+      "git_blob": "b8572be168eeb6f9208dd1775cd828434c50246f",
+      "sha256": "c5057b4545ea5068902594fddb2f90073a4ed4aeb846e3d517be52091c5d0a09"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/pipeline/DefaultRequestHandlerTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 19372,
+      "mode": "100644",
+      "git_blob": "6cd56378b6b982fa221ee3c3ddd4a1be4f35b7d5",
+      "sha256": "822e7e8b9b9865a85b0bb2cf430671bd30c4115fcb2f86d1dadff07caa68d586"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/pipeline/JsendWrappedResponseTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 10770,
+      "mode": "100644",
+      "git_blob": "9110db7f14fc9467f02b64a2543013faa6b8018d",
+      "sha256": "e19f98198e342d8a7ef36080fb72cdd212ee75d2b1c24b66f1ff705bfde44ab4"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/pipeline/RawWrappedResponseTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 11428,
+      "mode": "100644",
+      "git_blob": "1a33cb4b7566876ec336b6fdc7fdbc6641219e59",
+      "sha256": "f07ffad580f4e85157252dcc98ae7d50002a539dca8135afde067923eac0eb2f"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/pipeline/WrappedResponseController.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1779,
+      "mode": "100644",
+      "git_blob": "4f08ff67d0d7b76a76f89e4fdcd6c47924aadfa4",
+      "sha256": "cf54bd31c7653957f53e0ca6e22528ce76faa15d426e7730099decd6aefe731c"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/pipeline/WrappedResponseObserver.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1711,
+      "mode": "100644",
+      "git_blob": "db5a16b972e062512994514bc0c551e350a625d8",
+      "sha256": "bb4697d2d8fcf6ab551eccf16ca86ce8d618ea2b6ca33b993291b97c1065a3cc"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/postprocessor/TestPostprocessor.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1067,
+      "mode": "100644",
+      "git_blob": "f6c4a034be9914210d052ba77db358545c455209",
+      "sha256": "b4621c368364abda678a4a1cbb3c156e1920aa8e29b32129518f33e3dafdab65"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/preprocessor/ErrorPreprocessor.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1109,
+      "mode": "100644",
+      "git_blob": "cf294b1c306f56ce6b76653c22e7feda6fcf316a",
+      "sha256": "d89863b1e687dfc6cb179ff010509c89a97b199079b7b71431f38e88bf3c4943"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/preprocessor/HttpBasicAuthenticationPreprocessorTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 3205,
+      "mode": "100644",
+      "git_blob": "3c7a4a04b8a4bab6546a76074ed45421ff73435c",
+      "sha256": "28f7bc9df60e20da9d49939f4dcf45997871d4761ea99d8a381f472e5aa6563b"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/query/QueryFiltersTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 8701,
+      "mode": "100644",
+      "git_blob": "fff8015eaba9e82db79448f72cbf0f2cbface891",
+      "sha256": "6f91e5887f8581d53c1b60bd3b7b7026a9e45b2f884b860d39ef454adf67e712"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/query/QueryOrdersTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 9587,
+      "mode": "100644",
+      "git_blob": "618c715f959c6dcf58e482a82e612c55cd1f4a13",
+      "sha256": "adabf86eb91c4db2463d0d5c6883615272d1215230bce9978fcaef6386258024"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/query/QueryRangesTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 5320,
+      "mode": "100644",
+      "git_blob": "cb237c417b45d49d6b134efc972ef89d4b50aa38",
+      "sha256": "a85dd561c5f1db0ecc7b8d94835482237aeeefce81be5e0b8616c694f1e13ae8"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/response/StringBufferHttpResponseWriter.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1954,
+      "mode": "100644",
+      "git_blob": "af356dd836371b57789dd4258281e93dd0102250",
+      "sha256": "e98ceeb0bf39a24299421012908c04255d35561845c18225e577ad259665ce41"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/route/ParameterizedRouteBuilderTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2128,
+      "mode": "100644",
+      "git_blob": "b5cb394015b307a9a3eb7a010f6f3042bc598d14",
+      "sha256": "00f339611a43e29790f80ac20c1debcbae951dbdbeb79e254c44bb886e688375"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/route/RegexRouteBuilderTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2101,
+      "mode": "100644",
+      "git_blob": "0b8da8e25ed7e30e19940a0a1f35ae116b055fde",
+      "sha256": "c315282a42933b2effe35ad0ecc131bc5c350f88b7e91d75969510313709bb6b"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/route/RouteBuilderTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2132,
+      "mode": "100644",
+      "git_blob": "3eb2edcd2d8207487e531ae32cfcd0d58e58ce85",
+      "sha256": "27b009550665f75e48a90b4b8ca13184e519680bc8738fdca3c2c0240de55803"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/route/RouteDeclarationTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 6348,
+      "mode": "100644",
+      "git_blob": "ddad7eed4dd636d6fc3a07c8ceca23d66866e368",
+      "sha256": "aeeedd38f5b9c0fd24810dafe7095be3942c9bb46e8834cb89c0b2a6b7e36e2f"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/route/RouteResolverTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 11327,
+      "mode": "100644",
+      "git_blob": "5da99ca06e4a7cd9f6c4556331b9acfcd37a909d",
+      "sha256": "755915f76415e56e8f67f30b2b41c29ff00dbe8c277b604469418c8d0e0a96d2"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/serialization/KnownObject.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1458,
+      "mode": "100644",
+      "git_blob": "7e7bade4c72203c393b0690737e06299da6477f7",
+      "sha256": "c5c5b64990b77f87448b451849640aa8ba96e27588efa383eb60e585bac81177"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/serialization/json/GsonJsonProcessorTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 5859,
+      "mode": "100644",
+      "git_blob": "23a46abbacf8d42e38cf75c08e838aee173275d2",
+      "sha256": "8f6d99304798501abb4e8285ff89b23db7036ea6341a02e24fe76705125822a0"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/serialization/json/JacksonJsonProcessorTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 5741,
+      "mode": "100644",
+      "git_blob": "3c6fd953d4138ee4393720e2831ad7db3a44f8ca",
+      "sha256": "1cb4df0af0a2476e3697cf4a6a3da03cea46554debaeb23f21d408d381348fba"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/url/QueryStringParserTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 9256,
+      "mode": "100644",
+      "git_blob": "0556c6c0941da6e2936c2ee8faa2a0f9f056efa4",
+      "sha256": "66e756f8d3f7b6c64cbbfd301cd638a7016883ba001e37a6ef2666125aa73784"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/url/UrlPatternTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 8793,
+      "mode": "100644",
+      "git_blob": "ba942a2567925837a6a69e1e251d822a3dd5894a",
+      "sha256": "4173a25bcc6745ae28d82c46adefbaa3cee0699fda2e9d9e218c85afbb6937ae"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/util/EnvironmentTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1652,
+      "mode": "100644",
+      "git_blob": "baa386067d86a39e859846131234dd21ba2970be",
+      "sha256": "219ae432aedb21bc8242665ba57973fdc3d692cbaeb6ff09446333dbd5fb876f"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/util/HttpSpecificationTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 7397,
+      "mode": "100644",
+      "git_blob": "2ec7db5e3caab4ef073efb6982077bcff22c51ca",
+      "sha256": "5d222e0508a04bb8d33fbf9f5bcc6b080a432d1edc2e88cf4fcb9e638d3ea251"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/util/RequestContextTest.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 681,
+      "mode": "100644",
+      "git_blob": "fef52bd7fc64a494b82935d2e3b65f45294891d0",
+      "sha256": "194ba9c409aa0412f7e0fe4cc87d027755cb3fd1f6df7c5cb449f7ba22c144aa"
+    },
+    {
+      "path": "core/src/test/java/org/restexpress/util/TestConfig.java",
+      "module": "core",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1162,
+      "mode": "100644",
+      "git_blob": "c91787b85f52f6c38b8f7620f4f9575f5862b092",
+      "sha256": "02ff482f6ca80dee7da065cb09e814b639a211fd27ceaa63c6e953ba28fa2d82"
+    },
+    {
+      "path": "core/src/test/json/unicode-chinese.json",
+      "module": "core",
+      "language": "JSON",
+      "role": "test",
+      "bytes": 56,
+      "mode": "100644",
+      "git_blob": "c37cfafa130424ec714337afad1ed792d202a460",
+      "sha256": "25afe894a132ba8e1638182233fdd19af6a5dca3f7e701c985796ad396de59d8"
+    },
+    {
+      "path": "core/src/test/resources/config/dev/environment.properties",
+      "module": "core",
+      "language": "other",
+      "role": "test",
+      "bytes": 18,
+      "mode": "100644",
+      "git_blob": "16c32f2593c817b0a71b14b3871cb2ea4647e06c",
+      "sha256": "4e2422aa3b921f237138af3e6a4a19b8739376c2c79ad24040617a748acc2aea"
+    },
+    {
+      "path": "docs/IOFlow.png",
+      "module": "docs",
+      "language": "other",
+      "role": "source",
+      "bytes": 189297,
+      "mode": "100644",
+      "git_blob": "1257840a3345b7b73c3a2b7ec23e46a30c5aa21d",
+      "sha256": "0c9dee2ec7bb55d5891fafb98da990c954e653f1e32095c756a8582f97c4b0a3"
+    },
+    {
+      "path": "docs/RestExpress Developers Guide.odt",
+      "module": "docs",
+      "language": "other",
+      "role": "source",
+      "bytes": 25977,
+      "mode": "100644",
+      "git_blob": "140de141132f125727c29b937476225800f0bdeb",
+      "sha256": "db7e056aca2e41cf91e3752ed230c96e98e09d7cff7546e1e9840ae2801b47cf"
+    },
+    {
+      "path": "docs/RestExpressDSL.odt",
+      "module": "docs",
+      "language": "other",
+      "role": "source",
+      "bytes": 41731,
+      "mode": "100644",
+      "git_blob": "d075ecaea0b2d0574f558b8f431442e84f02679f",
+      "sha256": "d168e7fdd646bac915fd7a11eb3e48e1d47f3502423e4d67a613d80d6072c72b"
+    },
+    {
+      "path": "docs/RestExpressDSL.pdf",
+      "module": "docs",
+      "language": "other",
+      "role": "source",
+      "bytes": 113996,
+      "mode": "100644",
+      "git_blob": "f9f93e1b75d58706b971ae1fc9b6cd85bb4421ae",
+      "sha256": "17645e86393fee921392b4c49a156c4d00d34db1c5a1a4e185656dafb74ad43e"
+    },
+    {
+      "path": "docs/RestExpressFrameworkComponents.png",
+      "module": "docs",
+      "language": "other",
+      "role": "source",
+      "bytes": 229118,
+      "mode": "100644",
+      "git_blob": "30235516fabf1cfa0ce0fefcd748c98609e3e398",
+      "sha256": "85ca072384309f2dfd5a35eb5a50cb10ce136ddb76385271299aca98206499e5"
+    },
+    {
+      "path": "docs/RestExpressRequestResponseLifeCycle.pdf",
+      "module": "docs",
+      "language": "other",
+      "role": "source",
+      "bytes": 141636,
+      "mode": "100644",
+      "git_blob": "40fc1245094780a53517658c9dd326131f3770b9",
+      "sha256": "9d30af54410bd40b1edd51f88d86cc55348c5b7db1a9eb1b38a43feee9a6fb86"
+    },
+    {
+      "path": "docs/RestExpressRequestResponseLifeCycle.png",
+      "module": "docs",
+      "language": "other",
+      "role": "source",
+      "bytes": 296547,
+      "mode": "100644",
+      "git_blob": "078ea38eeaf12e04a7d2b5910cf0c218e63ee7de",
+      "sha256": "45d94a03958da7e3bde82e740338264123092b2b4591a3a5dff806534bbada45"
+    },
+    {
+      "path": "docs/presentations/TechStack_Bootcamp_2013.pdf",
+      "module": "docs",
+      "language": "other",
+      "role": "source",
+      "bytes": 6343092,
+      "mode": "100644",
+      "git_blob": "3b56ae7bca7faec26728869dc7d10ac60ee1b0f7",
+      "sha256": "afd07ea9e525e80cb2d192914d10c81ad5cf6ad1ffeacc470784e45ad03b7008"
+    },
+    {
+      "path": "docs/presentations/TechStack_Bootcamp_2013.pptx",
+      "module": "docs",
+      "language": "other",
+      "role": "source",
+      "bytes": 5442574,
+      "mode": "100644",
+      "git_blob": "d47e5d730cfeac0fa5f3c2fffa5dbbd3bea71ee6",
+      "sha256": "f93cbb6dabe660af3acd1784b643e5c2a00fdc1941d8c54023a5f888ea2025cf"
+    },
+    {
+      "path": "docs/presentations/TechSummit_2012_Instant_REST_Services.pdf",
+      "module": "docs",
+      "language": "other",
+      "role": "source",
+      "bytes": 7117022,
+      "mode": "100644",
+      "git_blob": "69993a4e00b02f4e419ee694ed2a6f1c6d72500b",
+      "sha256": "6a8c1d11c1d968595c0edd79cc2c5247e51f1ce8591f65bfeaff216cae5d0400"
+    },
+    {
+      "path": "docs/presentations/TechSummit_2012_Instant_REST_Services.pptx",
+      "module": "docs",
+      "language": "other",
+      "role": "source",
+      "bytes": 6839680,
+      "mode": "100644",
+      "git_blob": "7f8e3a250215eb77c1c1987a16ca64aea44611fb",
+      "sha256": "0ef2146f83af963cdc3e9ed8eccee4d40681a60617e5327f13ce5b3149dc2bbf"
+    },
+    {
+      "path": "images/RESTExpress-logoOnly-large.png",
+      "module": "images",
+      "language": "other",
+      "role": "source",
+      "bytes": 3695,
+      "mode": "100644",
+      "git_blob": "6f33169d414763d78ca88767ca3df52cd2b5121c",
+      "sha256": "00f5b305ed11e52fccce07987427d9af11aba954c993a4fa5b8a786ab4ea6e80"
+    },
+    {
+      "path": "images/RESTExpress-pwdBy-large.png",
+      "module": "images",
+      "language": "other",
+      "role": "source",
+      "bytes": 3398,
+      "mode": "100644",
+      "git_blob": "32e1ba06433d82a7ae92885acaf54b202ac339d7",
+      "sha256": "5e28c587f119918494849bb7d03602f54aab51f0b44f6573a6f548328b1277da"
+    },
+    {
+      "path": "images/RESTExpress-pwdBy-small.png",
+      "module": "images",
+      "language": "other",
+      "role": "source",
+      "bytes": 1576,
+      "mode": "100644",
+      "git_blob": "fbec79167619e682fca130667b7f9564f2e797b5",
+      "sha256": "bf55c76509d63211f198f8c83247bfeaa8bed1dad4a6aee84fee7e7e7a75687a"
+    },
+    {
+      "path": "pom.xml",
+      "module": "root",
+      "language": "XML",
+      "role": "source",
+      "bytes": 3932,
+      "mode": "100644",
+      "git_blob": "d485661cac71d08f6736aeeafb51954ffd2670ea",
+      "sha256": "c68a8a985b6ebd5ee2f12bfaf1b61a07da46c50eab357d0102173098d6040b7c"
+    },
+    {
+      "path": "settings.xml",
+      "module": "root",
+      "language": "XML",
+      "role": "source",
+      "bytes": 476,
+      "mode": "100644",
+      "git_blob": "2d0653de51b01cc18f9807e47e5b62d59dff6e2d",
+      "sha256": "edbbe799210fd0665094d0f307cb8e6454cb15d790b6a2fab3fa24a6d56a8519"
+    }
+  ]
+}

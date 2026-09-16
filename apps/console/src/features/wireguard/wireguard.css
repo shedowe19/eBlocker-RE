@@ -1,0 +1,177 @@
+/* SPDX-License-Identifier: EUPL-1.2 */
+.wireguard-panel {
+    margin-top: 24px;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #dce6df;
+    border-radius: 12px;
+}
+.wireguard-management-heading {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.wireguard-management-heading .wireguard-actions {
+    margin-top: 0;
+}
+.wireguard-help {
+    color: #526860;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+.wireguard-profile-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+.wireguard-profile-list li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    border-bottom: 1px solid #dce6df;
+    padding: 1rem 0;
+}
+.wireguard-profile-list span {
+    display: block;
+    color: #526860;
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+}
+.wireguard-import,
+.wireguard-confirmation,
+.wireguard-runtime {
+    border-top: 1px solid #dce6df;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+}
+.wireguard-import fieldset {
+    border: 0;
+    padding: 0;
+    min-width: 0;
+}
+.wireguard-import label {
+    display: grid;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+.wireguard-import input:not([type='checkbox']) {
+    font: inherit;
+    padding: 0.75rem;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #9cafaa;
+    border-radius: 0.5rem;
+    color: #18312d;
+}
+.wireguard-panel .wireguard-check {
+    display: flex;
+    gap: 0.65rem;
+    align-items: center;
+}
+.wireguard-check input {
+    accent-color: #176b5b;
+    flex-shrink: 0;
+    height: 1.15rem;
+    width: 1.15rem;
+}
+.wireguard-success {
+    background: #eef8ef;
+    color: #176b5b;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.wireguard-state {
+    font-weight: 650;
+}
+.wireguard-panel :focus-visible {
+    outline: 3px solid #176b5b;
+    outline-offset: 3px;
+}
+.wireguard-panel h2 {
+    font-size: 1.2rem;
+}
+.wireguard-panel h3 {
+    font-size: 1rem;
+    margin-top: 22px;
+}
+.wireguard-panel textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+    min-height: 180px;
+    background: #f7faf7;
+    border: 1px solid #9cafaa;
+    border-radius: 8px;
+    padding: 14px;
+    font:
+        0.85rem/1.5 ui-monospace,
+        monospace;
+    color: #18312d;
+}
+.wireguard-panel textarea:focus-visible {
+    outline: 3px solid #b16b00;
+    outline-offset: 3px;
+}
+.wireguard-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+}
+.wireguard-fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+.wireguard-fields dt,
+.wireguard-peer dt {
+    font-size: 0.8rem;
+    color: #526860;
+}
+.wireguard-fields dd,
+.wireguard-peer dd {
+    margin: 4px 0 12px;
+    overflow-wrap: anywhere;
+}
+.wireguard-peer {
+    padding: 16px;
+    background: #f5f8f5;
+    border-radius: 8px;
+}
+.wireguard-interfaces {
+    padding: 0;
+    list-style: none;
+}
+.wireguard-interfaces li {
+    display: grid;
+    grid-template-columns: minmax(70px, 1fr) 70px 3fr;
+    gap: 16px;
+    border-top: 1px solid #dce6df;
+    padding: 12px 0;
+    overflow-wrap: anywhere;
+}
+.wireguard-panel details {
+    margin-top: 24px;
+    font-size: 0.84rem;
+}
+.wireguard-panel summary {
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    .wireguard-panel {
+        padding: 18px;
+    }
+    .wireguard-fields {
+        grid-template-columns: 1fr;
+    }
+    .wireguard-interfaces li {
+        grid-template-columns: 1fr 1fr;
+    }
+    .wireguard-interfaces li span:last-child {
+        grid-column: 1/-1;
+    }
+}

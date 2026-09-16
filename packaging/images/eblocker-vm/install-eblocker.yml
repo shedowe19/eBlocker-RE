@@ -1,0 +1,83 @@
+---
+- name: Install eBlocker software on eBlocker VM
+  hosts: all
+  become: true
+  become_method: su
+  environment:
+    PATH: /usr/sbin:/usr/bin
+  vars:
+    eblocker_env: 'prod'
+    files_base: 'files'
+    conf_base: '/opt/eblocker-icap/conf'
+
+  tasks:
+    - name: Require an explicitly built bootstrap package
+      ansible.builtin.assert:
+        that:
+          - bootstrap_package is defined
+          - (license_key_file is defined) == (license_certificate_file is defined)
+        fail_msg: Supply bootstrap_package and, only if needed, both credential files.
+
+    - name: Create configuration directory
+      ansible.builtin.file:
+        path: "{{conf_base}}"
+        state: directory
+        mode: '0755'
+
+    - name: Copy eBlocker configuration properties
+      ansible.builtin.copy:
+        src: "{{files_base}}/configuration-{{eblocker_env}}.properties"
+        dest: "{{conf_base}}/configuration.properties"
+
+    - name: Copy CPU info
+      ansible.builtin.copy:
+        src: "{{files_base}}/cpuinfo.txt"
+        dest: "{{conf_base}}/cpuinfo.txt"
+
+    - name: Install apt-transport-https
+      ansible.builtin.apt:
+        update_cache: true
+        name: apt-transport-https
+
+    - name: Copy eBlocker bootstrap package
+      ansible.builtin.copy:
+        src: "{{ bootstrap_package }}"
+        dest: /tmp/eblocker-bootstrap.deb
+
+    - name: Install eBlocker bootstrap package
+      ansible.builtin.apt:
+        deb: /tmp/eblocker-bootstrap.deb
+
+    - name: Clean up eBlocker bootstrap package file
+      ansible.builtin.file:
+        path: /tmp/eblocker-bootstrap.deb
+        state: absent
+
+    - name: Copy license key
+      when: license_key_file is defined
+      no_log: true
+      ansible.builtin.copy:
+        src: "{{ license_key_file }}"
+        dest: /opt/eblocker-icap/keys/license.key
+        mode: '0600'
+
+    - name: Copy license certificate
+      when: license_certificate_file is defined
+      no_log: true
+      ansible.builtin.copy:
+        src: "{{ license_certificate_file }}"
+        dest: /opt/eblocker-icap/keys/license.cert
+        mode: '0600'
+
+    - name: Install VM tools
+      ansible.builtin.apt:
+        update_cache: true
+        name: open-vm-tools, qemu-guest-agent
+
+    - name: Upgrade distribution
+      ansible.builtin.apt:
+        upgrade: dist
+
+    - name: Install eBlocker software
+      ansible.builtin.apt:
+        name: eblocker-baseconfig, eblocker-lists

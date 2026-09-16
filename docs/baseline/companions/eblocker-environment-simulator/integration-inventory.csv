@@ -1,0 +1,12 @@
+category,path,line
+redis,cmd/simulator/main.go,26
+redis,cmd/simulator/main.go,37
+redis,cmd/simulator/main.go,49
+redis,cmd/simulator/main.go,50
+redis,cmd/simulator/main.go,66
+redis,cmd/simulator/main.go,89
+redis,cmd/simulator/main.go,110
+redis,cmd/simulator/main.go,112
+redis,cmd/simulator/main.go,128
+redis,cmd/simulator/main.go,141
+redis,cmd/simulator_script_wrapper/main.go,26

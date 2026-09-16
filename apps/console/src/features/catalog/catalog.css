@@ -1,0 +1,41 @@
+.catalog-search {
+    display: grid;
+    gap: 0.5rem;
+    max-width: 35rem;
+    font-weight: 600;
+}
+.catalog-search input {
+    padding: 0.8rem;
+    border: 1px solid #dce5df;
+    border-radius: 0.6rem;
+    background: white;
+    color: #18312d;
+}
+.catalog-grid {
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+    gap: 1rem;
+}
+.catalog-grid li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    padding: 1.2rem;
+    background: white;
+    border: 1px solid #dce5df;
+    border-radius: 0.85rem;
+}
+.catalog-grid h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1rem;
+}
+.catalog-grid a {
+    color: #176b5b;
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+.feature-catalog > section {
+    margin-top: 2rem;
+}

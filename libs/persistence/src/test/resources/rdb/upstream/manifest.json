@@ -1,0 +1,124 @@
+{
+  "source": "https://github.com/leonchen83/redis-replicator/tree/v3.11.0/src/test/resources",
+  "files": [
+    {
+      "file": "dumpV6.rdb",
+      "sha256": "aad5136fbac04f6fd6f69f55dc6e196828a4ececed9e4a3f715a8af35b4329e7",
+      "bytes": 14114,
+      "captureTimeArgument": 1700000000000
+    },
+    {
+      "file": "dumpV7.rdb",
+      "sha256": "7d316d1b68679178e5ecf0c1059c9d9b8639f0e1f350605b7fc33da6f89242c4",
+      "bytes": 754,
+      "captureTimeArgument": null
+    },
+    {
+      "file": "dumpV9.rdb",
+      "sha256": "658dfad44fbfcaf47d5faf36d54330f2635db02b414e7a21c26b5a21c41ee2ed",
+      "bytes": 202,
+      "captureTimeArgument": null
+    },
+    {
+      "file": "dumpV10.rdb",
+      "sha256": "31faa8ecb3a231c96ab1a5b7ae1ebc9a11c8835c2c1ebd8d84255a662f9ed35c",
+      "bytes": 8825,
+      "captureTimeArgument": null
+    },
+    {
+      "file": "dumpV11.rdb",
+      "sha256": "e5b17ea09744e9653b3c925b5093cdeb34939ee9b0ebc6d757336b24f464c4d8",
+      "bytes": 770,
+      "captureTimeArgument": null
+    },
+    {
+      "file": "binarydump.rdb",
+      "sha256": "1e282a7c6105321179a3388cb779cde42060c0dc4708dfb13eea08a154e062f2",
+      "bytes": 635,
+      "captureTimeArgument": null
+    },
+    {
+      "file": "non_ascii_values.rdb",
+      "sha256": "ae0f43ac09019585d63b955081077d72802ab6d822ab50bc9d7dd39626321320",
+      "bytes": 202,
+      "captureTimeArgument": null
+    },
+    {
+      "file": "rdb_version_5_with_checksum.rdb",
+      "sha256": "010c02ed1ab39c640bffeff80df18085f106baa637c580bdd5ba97f7dbafc6f2",
+      "bytes": 128,
+      "captureTimeArgument": 1700000000000
+    },
+    {
+      "file": "rdb_version_8_with_64b_length_and_scores.rdb",
+      "sha256": "4ea2c42de4d0f7b0c8872beb6436562d6e04ad5c42e2e9fd62a076720ba45b0e",
+      "bytes": 32305,
+      "captureTimeArgument": null
+    },
+    {
+      "file": "ziplist_with_integers.rdb",
+      "sha256": "f1782eaefbfcaf496808bab9084f7aa2040b6ae166f55f4cbaffa7c89db1a168",
+      "bytes": 130,
+      "captureTimeArgument": 1700000000000
+    },
+    {
+      "file": "zipmap_with_big_values.rdb",
+      "sha256": "f2101a62b11ea64c7dc53a7b70392af393727248fa81448ce09d22c1926267aa",
+      "bytes": 20923,
+      "captureTimeArgument": 1700000000000
+    },
+    {
+      "file": "listpack-bug.rdb",
+      "sha256": "3ede3b161a4449e251dc65b587a01d4ede53e138c5227af789e3fe29c193cbf9",
+      "bytes": 292709,
+      "captureTimeArgument": null
+    },
+    {
+      "file": "dump-stream.rdb",
+      "sha256": "78d913127fa802d13ce34cf4616a02d4f6a61d8649b991c206ac35b3bd60fdad",
+      "bytes": 5441,
+      "captureTimeArgument": null
+    },
+    {
+      "file": "dump-module-2.rdb",
+      "sha256": "a8b912160140396c7503f23b730028dbdd6955f6d44f652940f4d582920a679c",
+      "bytes": 148,
+      "captureTimeArgument": null
+    },
+    {
+      "file": "dump-ttlhash.rdb",
+      "sha256": "e1743cbae878d3d6cafd8f18c29db281631b4bf5bc314c503140824b81b0d038",
+      "bytes": 12222,
+      "captureTimeArgument": null
+    },
+    {
+      "file": "function2.rdb",
+      "sha256": "9408b3b179997687efe268197feb6b11d7359b3150df61e6f5829999766f6f7e",
+      "bytes": 182,
+      "captureTimeArgument": null
+    },
+    {
+      "file": "dump-slot.rdb",
+      "sha256": "f2c28e1258f6380ad5fff4200510c4bad63b02109761b1b6131212c3a34aedbd",
+      "bytes": 255,
+      "captureTimeArgument": null
+    },
+    {
+      "file": "dump-lfu.rdb",
+      "sha256": "fa169babd39117f7ba7f066025c6dfcaa793fac745cfa128096c8317b73bfe28",
+      "bytes": 140,
+      "captureTimeArgument": null
+    },
+    {
+      "file": "dump-lru.rdb",
+      "sha256": "0deac5d31627fa836d18567148ef728fe181026083708db745fecbe020be0d7e",
+      "bytes": 144,
+      "captureTimeArgument": null
+    }
+  ],
+  "licenses": [
+    "MIT",
+    "Apache-2.0"
+  ],
+  "licenseNotes": "The upstream fixture directory carries the MIT license by Sripathi Krishnan; the redis-replicator project carries Apache-2.0. Both original notices are retained."
+}

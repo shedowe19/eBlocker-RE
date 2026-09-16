@@ -1,0 +1,7398 @@
+[
+  {
+    "name": "INTERNAL_TEMP_MODULE",
+    "description": {
+      "en": "INTERNAL_TEMP_MODULE",
+      "de": "INTERNAL_TEMP_MODULE"
+    },
+    "whitelistedDomains": [],
+    "id": 0,
+    "enabledPerDefault": false,
+    "builtin": true,
+    "hidden": true
+  },
+  {
+    "name": "German Banks",
+    "description": {
+      "en": "German Banks",
+      "de": "Deutsche Banken"
+    },
+    "whitelistedDomains": [
+      "bundesbank.de",
+      "ecb.europa.eu",
+      "bayernlb.de",
+      "commerzbank.com",
+      "commerzbank.de",
+      "consorsbank.de",
+      "kfw.de",
+      "dzbank.de",
+      "hypovereinsbank.de",
+      "lbbw-business.de",
+      "lbbw-markets.de",
+      "nordlb.de",
+      "helaba.de",
+      "postbank.de",
+      "haspa.de",
+      "nrwbank.de",
+      "ing-diba.de",
+      "ing.de",
+      "deka.de",
+      "internetbanking.hsh-nordbank-banking.de",
+      "asp2.paybillag.com",
+      "wgzbank.de",
+      "rentenbank.de",
+      "pfandbriefbank.com",
+      "hypothekenbankfrankfurt.com",
+      "dkb.de",
+      "l-bank.de",
+      "s-fints-pt-dkb.de",
+      "s-fints-pt-bw.de",
+      "s-fints-pt-by.de",
+      "s-fints-pt-be.de",
+      "s-fints-pt-bb.de",
+      "s-fints-pt-hb.de",
+      "s-fints-pt-hh.de",
+      "s-fints-pt-he.de",
+      "s-fints-pt-nv.de",
+      "s-fints-pt-ni.de",
+      "s-fints-pt-nw.de",
+      "s-fints-pt-rl.de",
+      "s-fints-pt-rp.de",
+      "s-fints-pt-sl.de",
+      "s-fints-pt-sn.de",
+      "s-fints-pt-st.de",
+      "s-fints-pt-sh.de",
+      "s-fints-pt-th.de",
+      "s-fints-pt-hs.de",
+      "s-fints-pt-wl.de",
+      "s-pushtan-bw01.de",
+      "s-pushtan-bw02.de",
+      "s-pushtan-bw03.de",
+      "s-pushtan-bw04.de",
+      "s-pushtan-bw05.de",
+      "s-pushtan-bw06.de",
+      "s-pushtan-by01.de",
+      "s-pushtan-by02.de",
+      "s-pushtan-by03.de",
+      "s-pushtan-by04.de",
+      "s-pushtan-by05.de",
+      "s-pushtan-by06.de",
+      "s-pushtan-by07.de",
+      "s-pushtan-by08.de",
+      "s-pushtan-hh07.de",
+      "s-pushtan-hs01.de",
+      "s-pushtan-hs02.de",
+      "s-pushtan-hs03.de",
+      "s-pushtan-hs04.de",
+      "s-pushtan-hs05.de",
+      "s-pushtan-hs06.de",
+      "s-pushtan-hs07.de",
+      "s-pushtan-ni01.de",
+      "s-pushtan-ni02.de",
+      "s-pushtan-ni03.de",
+      "s-pushtan-ni04.de",
+      "s-pushtan-rp01.de",
+      "s-pushtan-rp02.de",
+      "s-pushtan-rp03.de",
+      "s-pushtan-rp04.de",
+      "s-pushtan-sh01.de",
+      "s-pushtan-sh02.de",
+      "s-pushtan-sh03.de",
+      "s-pushtan-sh04.de",
+      "s-pushtan-wl01.de",
+      "s-pushtan-wl02.de",
+      "s-pushtan-wl03.de",
+      "s-pushtan-wl04.de",
+      "s-pushtan-wl05.de",
+      "s-pushtan-wl06.de",
+      "s-pushtan-wl07.de",
+      "fints.norisbank.de",
+      "kreditkarten-banking.lbb.de",
+      "deutsche-bank.de",
+      "fints.comdirect.de",
+      "fiducia.de",
+      "vr-bankingapp.de",
+      "gad.de",
+      "sparda.de",
+      "sparda-bw.de",
+      "rabodirect.de",
+      "lbs.de",
+      "sparkassen-chat.de",
+      "sparkasse.de",
+      "ksk-koeln.de",
+      "spkhb.de",
+      "volkswagenbank.de",
+      "ikb.de",
+      "moneyou.de",
+      "pluscard.de",
+      "gls-online-filiale.de",
+      "gls.de"
+    ],
+    "labels": {
+      "bundesbank.de": "Deutsche Bundesbank",
+      "ecb.europa.eu": "European Central Bank",
+      "bayernlb.de": "Bayern LB",
+      "commerzbank.com": "Commerzbank AG",
+      "commerzbank.de": "Commerzbank AG (deutsch)",
+      "consorsbank.de": "Consorsbank",
+      "kfw.de": "Kreditanstalt für Wiederaufbau",
+      "dzbank.de": "DZ Bank",
+      "hypovereinsbank.de": "Hypovereinsbank",
+      "lbbw-business.de": "Landesbank Baden Württemberg Business Portal",
+      "lbbw-markets.de": "Landesbank Baden Württemberg Market Portal",
+      "nordlb.de": "Nord LB",
+      "helaba.de": "Helaba Invest",
+      "postbank.de": "Postbank",
+      "haspa.de": "Hamburger Sparkasse",
+      "nrwbank.de": "NRW Bank",
+      "ing.de": "ING",
+      "ing-diba.de": "ING DiBa",
+      "deka.de": "DekaBank",
+      "internetbanking.hsh-nordbank-banking.de": "HSH Nordbank Internetbanking",
+      "asp2.paybillag.com": "HSH Nordbank Kreditkartenbanking",
+      "wgzbank.de": "WGZ Bank",
+      "rentenbank.de": "Landwirtschaftliche Rentenbank",
+      "pfandbriefbank.com": "Deutsche Pfandbriefbank",
+      "hypothekenbankfrankfurt.com": "Hypothekenbank Frankfurt",
+      "dkb.de": "Deutsche Kreditbank",
+      "l-bank.de": "Landeskreditbank Baden-Württemberg - Förderbank",
+      "s-fints-pt-dkb.de": "Deutsche Kreditbank",
+      "s-fints-pt-bw.de": "Financial Transaction Services",
+      "s-fints-pt-by.de": "Financial Transaction Services",
+      "s-fints-pt-be.de": "Financial Transaction Services",
+      "s-fints-pt-bb.de": "Financial Transaction Services",
+      "s-fints-pt-hb.de": "Financial Transaction Services",
+      "s-fints-pt-hh.de": "Financial Transaction Services",
+      "s-fints-pt-he.de": "Financial Transaction Services",
+      "s-fints-pt-nv.de": "Financial Transaction Services",
+      "s-fints-pt-ni.de": "Financial Transaction Services",
+      "s-fints-pt-nw.de": "Financial Transaction Services",
+      "s-fints-pt-rl.de": "Financial Transaction Services",
+      "s-fints-pt-rp.de": "Financial Transaction Services",
+      "s-fints-pt-sl.de": "Financial Transaction Services",
+      "s-fints-pt-sn.de": "Financial Transaction Services",
+      "s-fints-pt-st.de": "Financial Transaction Services",
+      "s-fints-pt-sh.de": "Financial Transaction Services",
+      "s-fints-pt-th.de": "Financial Transaction Services",
+      "s-fints-pt-hs.de": "Financial Transaction Services",
+      "s-fints-pt-wl.de": "Financial Transaction Services",
+      "s-pushtan-bw01.de": "PushTAN",
+      "s-pushtan-bw02.de": "PushTAN",
+      "s-pushtan-bw03.de": "PushTAN",
+      "s-pushtan-bw04.de": "PushTAN",
+      "s-pushtan-bw05.de": "PushTAN",
+      "s-pushtan-bw06.de": "PushTAN",
+      "s-pushtan-by01.de": "PushTAN",
+      "s-pushtan-by02.de": "PushTAN",
+      "s-pushtan-by03.de": "PushTAN",
+      "s-pushtan-by04.de": "PushTAN",
+      "s-pushtan-by05.de": "PushTAN",
+      "s-pushtan-by06.de": "PushTAN",
+      "s-pushtan-by07.de": "PushTAN",
+      "s-pushtan-by08.de": "PushTAN",
+      "s-pushtan-hh07.de": "PushTAN",
+      "s-pushtan-hs01.de": "PushTAN",
+      "s-pushtan-hs02.de": "PushTAN",
+      "s-pushtan-hs03.de": "PushTAN",
+      "s-pushtan-hs04.de": "PushTAN",
+      "s-pushtan-hs05.de": "PushTAN",
+      "s-pushtan-hs06.de": "PushTAN",
+      "s-pushtan-hs07.de": "PushTAN",
+      "s-pushtan-ni01.de": "PushTAN",
+      "s-pushtan-ni02.de": "PushTAN",
+      "s-pushtan-ni03.de": "PushTAN",
+      "s-pushtan-ni04.de": "PushTAN",
+      "s-pushtan-rp01.de": "PushTAN",
+      "s-pushtan-rp02.de": "PushTAN",
+      "s-pushtan-rp03.de": "PushTAN",
+      "s-pushtan-rp04.de": "PushTAN",
+      "s-pushtan-sh01.de": "PushTAN",
+      "s-pushtan-sh02.de": "PushTAN",
+      "s-pushtan-sh03.de": "PushTAN",
+      "s-pushtan-sh04.de": "PushTAN",
+      "s-pushtan-wl01.de": "PushTAN",
+      "s-pushtan-wl02.de": "PushTAN",
+      "s-pushtan-wl03.de": "PushTAN",
+      "s-pushtan-wl04.de": "PushTAN",
+      "s-pushtan-wl05.de": "PushTAN",
+      "s-pushtan-wl06.de": "PushTAN",
+      "s-pushtan-wl07.de": "PushTAN",
+      "fints.norisbank.de": "Norisbank",
+      "kreditkarten-banking.lbb.de": "Landesbank Baden Württemberg",
+      "deutsche-bank.de": "Deutsche Bank",
+      "comdirect.de": "Comdirect",
+      "fiducia.de": "Fiducia & GAD IT AG",
+      "Atruvia.de": "ehemals Fiducia / GAD",
+      "gad.de": "Fiducia & GAD IT AG",
+      "sparda.de": "Sparda-Bank",
+      "sparda-bw.de": "Sparda-Bank",
+      "rabodirect.de": "Rabobank",
+      "lbs.de": "Bausparkasse der Sparkassen",
+      "sparkassen-chat.de": "Kundenchat System der Sparkassen",
+      "sparkasse.de": "Dachverband der Sparkassen",
+      "ksk-koeln.de": "Kreissparkasse Köln",
+      "spkhb.de": "Sparkasse Harburg-Buxtehude",
+      "volkswagenbank.de": "Volkswagen Financial Service",
+      "ikb.de": "Deutsche Indusriebank",
+      "moneyou.de": "Marke der niederländischen ABN AMRO Bank",
+      "pluscard.de": "Sparkassen Organisation",
+      "gls-online-filiale.de": "GLS Bank",
+      "gls.de": "GLS Bank"
+    },
+    "id": 9999,
+    "enabledPerDefault": true,
+    "builtin": true,
+    "hidden": false
+  },
+  {
+    "name": "leer",
+    "description": {
+      "en": "",
+      "de": ""
+    },
+    "whitelistedDomains": [],
+    "id": 1,
+    "enabledPerDefault": false,
+    "hidden": true
+  },
+  {
+    "name": "leer",
+    "description": {
+      "en": "",
+      "de": ""
+    },
+    "whitelistedDomains": [],
+    "id": 2,
+    "enabledPerDefault": false,
+    "hidden": true
+  },
+  {
+    "name": "leer",
+    "description": {
+      "en": "",
+      "de": ""
+    },
+    "whitelistedDomains": [],
+    "id": 13,
+    "enabledPerDefault": false,
+    "hidden": true
+  },
+  {
+    "name": "leer",
+    "description": {
+      "en": "",
+      "de": ""
+    },
+    "whitelistedDomains": [],
+    "whitelistedIPs": [],
+    "id": 3,
+    "enabledPerDefault": false,
+    "hidden": true
+  },
+  {
+    "name": "Adobe",
+    "description": {
+      "en": "Adobe Software contacts several servers to provide all features",
+      "de": "Adobe Programme kontaktieren einige Server, um alle Funktionen zur Verfügung zu stellen"
+    },
+    "whitelistedDomains": [
+      "adobe.com",
+      "adobedtm.com",
+      "adobeoobe.com",
+      "adobe.demdex.net",
+      "adobesc.com",
+      "adobe.io",
+      "adobelogin.com",
+      "adobeexchange.com",
+      "behance.net",
+      "typekit.com",
+      "typekit.net"
+    ],
+    "id": 4,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Avira Antivir",
+    "description": {
+      "en": "Updates for the Avira Anti Virus Scanner",
+      "de": "Updates für den Avira Anti Virus Scanner"
+    },
+    "whitelistedDomains": [
+      "avira-update.com",
+      "acns.my.avira.com",
+      "license.passwords.avira.com",
+      "offers.avira.com",
+      "ncs-ds.avira.com",
+      "sentry.avira.net",
+      "spoc.avira.com"
+    ],
+    "id": 5,
+    "enabledPerDefault": true
+  },
+  {
+    "name": "Dropbox",
+    "description": {
+      "en": "Data exchange and backup provider",
+      "de": "Datenaustausch- und Backupdienst"
+    },
+    "whitelistedDomains": [
+      "dl.dropbox.usercontent.com",
+      "dropbox.com",
+      "api.dropboxapi.com",
+      "cf.dropboxpayments.com",
+      "clientupdates.dropboxstatic.com",
+      "fonts.googleapis.com"
+    ],
+    "id": 6,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Facebook (Web App Messenger)",
+    "description": {
+      "en": "Connections required to use the Facebook App",
+      "de": "Verbindungen, die benötigt werden, um die Facebook App zu benutzen"
+    },
+    "whitelistedDomains": [
+      "facebook.com",
+      "fbcdn.net"
+    ],
+    "whitelistedIPs": [
+      "31.13.74.0/24",
+      "31.13.84.0/24",
+      "31.13.92.0/24",
+      "31.13.93.0/24"
+    ],
+    "id": 7,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Google (Books, Drive, Mail, Movie, Store, Blog)",
+    "description": {
+      "en": "Google services",
+      "de": "Google Services"
+    },
+    "whitelistedDomains": [
+      "blogblog.com",
+      "ggpht.com",
+      "gstatic.com",
+      "googledrive.com",
+      "google.com",
+      "google.de",
+      "google.co.uk",
+      "google.org",
+      "google.net",
+      "google.ie",
+      "google.fr",
+      "google.it",
+      "google.hu",
+      "google.ru",
+      "google.ro",
+      "google.se",
+      "google.pt",
+      "google.pl",
+      "google.no",
+      "google.nl",
+      "google.co.kr",
+      "google.at",
+      "google.co.nz",
+      "google.co.th",
+      "google.co.za",
+      "google.com.ar",
+      "google.com.br",
+      "google.com.hk",
+      "google.com.mx",
+      "google.com.au",
+      "google.com.ua",
+      "google.com.sg",
+      "google.com.tw",
+      "google.es",
+      "google.dk",
+      "google.fi",
+      "google.gr",
+      "google.ae",
+      "google.be",
+      "google.co.id",
+      "google.ch",
+      "google.ca",
+      "google.co.jp",
+      "google.co.in",
+      "googleapis.com",
+      "googlemaps.com",
+      "googleusercontent.com",
+      "gvt1.com",
+      "gvt2.com",
+      "gvt3.com",
+      "ytimg.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 8,
+    "enabledPerDefault": true
+  },
+  {
+    "name": "leer",
+    "description": {
+      "en": "",
+      "de": ""
+    },
+    "whitelistedDomains": [],
+    "whitelistedIPs": [],
+    "id": 9,
+    "enabledPerDefault": false,
+    "hidden": true
+  },
+  {
+    "name": "Threema",
+    "description": {
+      "en": "Instant Messaging Service",
+      "de": "Instant Messaging Dienst"
+    },
+    "whitelistedDomains": [
+      "threema.ch"
+    ],
+    "whitelistedIPs": [
+      "203.56.112.0/23"
+    ],
+    "id": 10,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "WhatsApp",
+    "description": {
+      "en": "Instant Messaging Service",
+      "de": "Instant Messaging Dienst"
+    },
+    "whitelistedDomains": [
+      "whatsapp.net",
+      "whatsapp.com",
+      "www.wa.me",
+      "www.whatsappbrand.com",
+      "www.whatsapp.cc",
+      "www.whatsapp.info",
+      "www.whatsapp.org",
+      "www.whatsapp.tv",
+      "whatsapp-plus.info",
+      "whatsapp-plus.me",
+      "whatsapp-plus.net"
+    ],
+    "id": 11,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Twitter",
+    "description": {
+      "en": "Microblogging Service / Social Network",
+      "de": "Microblogging Dienst / Soziales Netwerk"
+    },
+    "whitelistedDomains": [
+      "twimg.com",
+      "twitter.com",
+      "t.co"
+    ],
+    "id": 12,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "StarMoney + Sparkasse+",
+    "description": {
+      "en": "Banking software",
+      "de": "Online Banking Programm"
+    },
+    "whitelistedDomains": [
+      "starfinanz.de",
+      "starfinanz.com",
+      "swebkiss.mdgms.com"
+    ],
+    "id": 14,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Tutanota",
+    "description": {
+      "en": "Mail client for the e-mail-provider Tutanota",
+      "de": "Mail-Client des E-Mail-Anbieters Tutanota"
+    },
+    "whitelistedDomains": [
+      "app.tutanota.de"
+    ],
+    "id": 15,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Evernote",
+    "description": {
+      "en": "App for taking notes",
+      "de": "App für Notizen"
+    },
+    "whitelistedDomains": [
+      "evernote.com"
+    ],
+    "whitelistedIPs": [
+      "204.154.94.81"
+    ],
+    "id": 16,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Telegram",
+    "description": {
+      "en": "Instant Messaging Service",
+      "de": "Instant Messaging Dienst"
+    },
+    "whitelistedDomains": [],
+    "whitelistedIPs": [
+      "149.154.164.0/22"
+    ],
+    "id": 17,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Spotify",
+    "description": {
+      "en": "Music-on-Demand service",
+      "de": "Music-on-Demand Service"
+    },
+    "whitelistedDomains": [
+      "scdn.co",
+      "spotify.com"
+    ],
+    "whitelistedIPs": [
+      "194.132.162.0/24",
+      "194.132.196.0/22",
+      "194.132.204.0/22",
+      "151.101.12.246"
+    ],
+    "id": 18,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "7TV App iOS",
+    "description": {
+      "en": "Video-on-Demand service",
+      "de": "Video-on-Demand Service"
+    },
+    "whitelistedDomains": [
+      "sim-technik.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 19,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Acorn macOS",
+    "description": {
+      "en": "Picture and photo editor",
+      "de": "Bild- und Fotobearbeitung"
+    },
+    "whitelistedDomains": [
+      "secure.flyingmeat.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 20,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Amazon (Web, App, Video, Music, Kindle)",
+    "description": {
+      "en": "Amazon Services",
+      "de": "Amazon Services"
+    },
+    "whitelistedDomains": [
+      "amazon.de",
+      "amazon.com",
+      "amazon.co.uk",
+      "amazonaws.com",
+      "amazon.eu",
+      "audible.de",
+      "amazonvideo.com",
+      "ssl-images-amazon.com",
+      "media-amazon.com",
+      "addons.mozilla.org",
+      "addons.cdn.mozilla.net",
+      "amazonpay.com"
+    ],
+    "whitelistedIPs": [
+      "52.84.0.0/16",
+      "52.88.0.0/16",
+      "54.224.0.0/16",
+      "72.21.192.0/19",
+      "176.32.96.0/21",
+      "178.236.0.0/21",
+      "205.251.192.0/18",
+      "207.171.160.0/19"
+    ],
+    "id": 21,
+    "enabledPerDefault": true
+  },
+  {
+    "name": "AMPYA App iOS Android Web",
+    "description": {
+      "en": "Video-on-Demand service",
+      "de": "Video-on-Demand Service"
+    },
+    "whitelistedDomains": [
+      "ampya.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 22,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Apple (macOS and iOS Service)",
+    "description": {
+      "en": "Apple Inc. service IPs",
+      "de": "Apple Inc Service IPs"
+    },
+    "whitelistedDomains": [
+      "aaplimg.com",
+      "apple.com",
+      "appplemusic.com",
+      "apple-dns.net",
+      "cdn-apple.com",
+      "ichat.com",
+      "icloud.com",
+      "icloud-content.com",
+      "itunes.com",
+      "iwork.com",
+      "kts-af.net",
+      "me.com",
+      "mac.com",
+      "mzstatic.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 23,
+    "enabledPerDefault": true
+  },
+  {
+    "name": "Flightradar 24 App and Web",
+    "description": {
+      "en": "Internet-based service that shows real-time aircraft flight information on a map",
+      "de": "Online-Dienst zur Echtzeit-Positionsdarstellung von Flugzeugen."
+    },
+    "whitelistedDomains": [
+      "flightradar24.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 24,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "IMDB - Internet Movie Database App",
+    "description": {
+      "en": "Internet Movie Database the source for movie, TV and celebrity content.",
+      "de": "Internet Movie Database die Quelle für Film, TV und Informationen über Prominente."
+    },
+    "whitelistedDomains": [
+      "imdbws.com",
+      "imdb.com",
+      "media-imdb.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 25,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Inteago",
+    "description": {
+      "en": "Intego has been making security and utility software exclusively for Apple products.",
+      "de": "Intego entwickelt Sicherheits- und Dienstprogramme exklusiv für Apple-Produkte."
+    },
+    "whitelistedDomains": [
+      "intego.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 26,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Kaspersky Lab",
+    "description": {
+      "en": "Antivirus and Internet Security software",
+      "de": "Antivirus und Internet Security Software"
+    },
+    "whitelistedDomains": [
+      "kaspersky.com",
+      "kaspersky-labs.com"
+    ],
+    "whitelistedIPs": [
+      "212.73.235.0/26"
+    ],
+    "id": 27,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Kickstarter",
+    "description": {
+      "en": "Global crowdfunding platform",
+      "de": "Internetplattform zur Projektfinanzierung über Crowdfunding"
+    },
+    "whitelistedDomains": [
+      "kickstarter.com",
+      "kck.st",
+      "ksr-ugc.imgix.net",
+      "ksr-video.imgix.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 28,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Windows (Updates, Store, XBox, Live, Office 365, Outlook)",
+    "description": {
+      "en": "Microsoft services",
+      "de": "Microsoft Services"
+    },
+    "whitelistedDomains": [
+      "1drv.com",
+      "acompli.net",
+      "azurewebsites.net",
+      "bing.com",
+      "bing.net",
+      "bingapis.com",
+      "gfx.ms",
+      "hotmail.de",
+      "live.com",
+      "live.net",
+      "msedge.net",
+      "sfx.ms",
+      "microsoft.com",
+      "microsoft.net",
+      "microsoftonline.com",
+      "microsoftonline-p.com",
+      "lync.com",
+      "msn.com",
+      "msn.net",
+      "office.com",
+      "office365.com",
+      "onedrive.com",
+      "outlook.de",
+      "outlook.com",
+      "passport.com",
+      "passport.net",
+      "s-microsoft.com",
+      "s-msn.com",
+      "skype.com",
+      "skype.net",
+      "virtualearth.com",
+      "virtualearth.net",
+      "windows.com",
+      "windows.net",
+      "windowsupdate.com",
+      "xboxlive.com",
+      "xboxlive.net",
+      "windowsupdate.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 29,
+    "enabledPerDefault": true
+  },
+  {
+    "name": "Netflix",
+    "description": {
+      "en": "Video-on-Demand service",
+      "de": "Video-on-Demand Service"
+    },
+    "whitelistedDomains": [
+      "netflix.com",
+      "nflxext.com",
+      "nflximg.net",
+      "netflix.net",
+      "nflxso.net",
+      "nflxvideo.net"
+    ],
+    "whitelistedIPs": [
+      "198.38.96.0/19"
+    ],
+    "id": 30,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Opera Browser",
+    "description": {
+      "en": "Free browser",
+      "de": "Kostenloser Browser"
+    },
+    "whitelistedDomains": [
+      "opera.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 31,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Pluto TV",
+    "description": {
+      "en": "Video-on-Demand service",
+      "de": "Video-on-Demand Service"
+    },
+    "whitelistedDomains": [
+      "api.prod.pluto.tv",
+      "cdn-mobile.api.pluto.tv",
+      "api.pluto.tv",
+      "players.pluto.tv"
+    ],
+    "whitelistedIPs": [],
+    "id": 32,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Resources Android App",
+    "description": {
+      "en": "RESOURCES GAME is a location based multiplayer game.",
+      "de": "RESOURCES GAME ist eine standortbezogene Multiplayer Spiel."
+    },
+    "whitelistedDomains": [
+      "ssl2.resources-game.ch"
+    ],
+    "whitelistedIPs": [],
+    "id": 33,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Mozilla Thunderbird / Firefox",
+    "description": {
+      "en": "Free mail client / web browser",
+      "de": "Freies E-Mail-Programm / Web-Browser"
+    },
+    "whitelistedDomains": [
+      "mozilla.net",
+      "mozilla.org",
+      "mozilla.com",
+      "mozillamessaging.com",
+      "thunderbird.net"
+    ],
+    "whitelistedIPs": [
+      "63.245.208.0/20"
+    ],
+    "id": 34,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Vodafone TV App",
+    "description": {
+      "en": "TV App for Vodafone customers.",
+      "de": "TV App für Vodafone Kunden"
+    },
+    "whitelistedDomains": [
+      "iptv.kabel-deutschland.de",
+      "forum.vodafone.de",
+      "fc.vodafone.de",
+      "was.vodafone.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 35,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "ZATTOO App iOS",
+    "description": {
+      "en": "Video-on-Demand service",
+      "de": "Video-on-Demand Service"
+    },
+    "whitelistedDomains": [
+      "zattoo.com",
+      "zattic.com",
+      "zahs.tv"
+    ],
+    "whitelistedIPs": [],
+    "id": 36,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Android Update Server",
+    "description": {
+      "en": "Sony and Samsung Updateserver",
+      "de": "Sony und Samsung Updateserver"
+    },
+    "whitelistedDomains": [
+      "sonymobile.com",
+      "ospserver.net"
+    ],
+    "whitelistedIPs": [
+      "93.184.221.76",
+      "93.184.221.187",
+      "213.71.30.137"
+    ],
+    "id": 37,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Wire",
+    "description": {
+      "en": "A messenger app offering free text, voice, video, pictures, and much more.",
+      "de": "Kostenloser Instant Messenger für Smartphones"
+    },
+    "whitelistedDomains": [
+      "wire.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 38,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "WeatherProHD",
+    "description": {
+      "en": "Waether App",
+      "de": "Wetter App"
+    },
+    "whitelistedDomains": [
+      "meteogroup.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 39,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "KATWARN",
+    "description": {
+      "en": "German emergency information system",
+      "de": "Deutschlandweit einheitliches Warn- und Informationssystem"
+    },
+    "whitelistedDomains": [
+      "katwarn.de",
+      "kwrn.de",
+      "katwarn.at",
+      "kwrn.eu"
+    ],
+    "whitelistedIPs": [],
+    "id": 40,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "leer",
+    "description": {
+      "en": "",
+      "de": ""
+    },
+    "whitelistedDomains": [],
+    "whitelistedIPs": [],
+    "id": 41,
+    "enabledPerDefault": false,
+    "hidden": true
+  },
+  {
+    "name": "Sky go (DE)",
+    "description": {
+      "en": "Sky go - PayTV app (Germany)",
+      "de": "Sky go - PayTV App (Deutschland)"
+    },
+    "whitelistedDomains": [
+      "config.sky.com",
+      "id.sky.de",
+      "init.sky.com",
+      "p.sky.com",
+      "qms-content.de.skyq.sky.com",
+      "sentry-prod.nowtv.bskyb.com",
+      "skydeutschland.sc.omtrdc.net",
+      "skygo.sky.de",
+      "skyq.sky.com",
+      "wvguard.sky.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 42,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Payback (DE)",
+    "description": {
+      "en": "Paybacl app - Loyalty programm in Germany",
+      "de": "Payback App - Bonusprogramm (Deutschland)"
+    },
+    "whitelistedDomains": [
+      "payback.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 43,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Oracle VM VirtualBox",
+    "description": {
+      "en": "A free and open-source hypervisor for x86 computers from Oracle Corporation",
+      "de": "Oracle VM VirtualBox ist eine Virtualisierungssoftware"
+    },
+    "whitelistedDomains": [
+      "update.virtualbox.org"
+    ],
+    "whitelistedIPs": [],
+    "id": 44,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Steam",
+    "description": {
+      "en": "Distribution platform for games and software",
+      "de": "Vertriebsplattform für Computerspiele und Software"
+    },
+    "whitelistedDomains": [
+      "api.steampowered.com",
+      "steamcommunity-a.akamaihd.net",
+      "steamcloudams.blob.core.windows.net",
+      "test.steampowered.com",
+      "steampowered.com",
+      "cdn.akamai.steamstatic.com",
+      "store.akamai.steamstatic.com",
+      "cdn.steamstatic.com",
+      "steamserver.net",
+      "steamcommunity.com",
+      "stream-production.avcdn.net",
+      "shared.fastly.steamstatic.com",
+      "store.fastly.steamstatic.com",
+      "cdn.fastly.steamstatic.com",
+      "shared.steamstatic.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 45,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Skype",
+    "description": {
+      "en": "Instant messaging server from Microsoft",
+      "de": "Instant Messaging Dienst von Microsoft"
+    },
+    "whitelistedDomains": [
+      "skype.com",
+      "skype.net",
+      "skypeassets.com",
+      "skypesms.trafficmanager.net",
+      "bing.com",
+      "microsofttranslator.com",
+      "msn.com",
+      "hotmail.com",
+      "microsoft.com",
+      "trouter.io",
+      "live.com",
+      "live.net",
+      "lync.com",
+      "msecnd.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 46,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "leer",
+    "description": {
+      "en": "",
+      "de": ""
+    },
+    "whitelistedDomains": [],
+    "id": 47,
+    "enabledPerDefault": false,
+    "hidden": true
+  },
+  {
+    "name": "500px",
+    "description": {
+      "en": "Online Photo Community",
+      "de": "Online Foto Community"
+    },
+    "whitelistedDomains": [
+      "drscdn.500px.org",
+      "api.500px.com",
+      "mobileapi.500px.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 48,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Flickr",
+    "description": {
+      "en": "Online Photo Community",
+      "de": "Online Foto Community"
+    },
+    "whitelistedDomains": [
+      "flickr.com",
+      "staticflickr.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 49,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "HRS",
+    "description": {
+      "en": "Hotel Reservation Service",
+      "de": "Hotel-Buchungsportal im Internet"
+    },
+    "whitelistedDomains": [
+      "p-mobile-service.hrs.com",
+      "sosc.hrs.com",
+      "foto.hrsstatic.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 50,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Elster",
+    "description": {
+      "en": "German finance software",
+      "de": "Finanzverwaltung"
+    },
+    "whitelistedDomains": [
+      "elster.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 51,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Parallels",
+    "description": {
+      "en": "Software providing hardware virtualization for macOS",
+      "de": "Virtualisierungssoftware für macOS"
+    },
+    "whitelistedDomains": [
+      "adobesc.com",
+      "parallels.com",
+      "myparallels.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 52,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Propellerhead Software",
+    "description": {
+      "en": "Music software by Propellerhead, e.g. Reason",
+      "de": "Musik-Software von Propellerhead, z.B. Reason"
+    },
+    "whitelistedDomains": [
+      "authorization.propellerheads.se"
+    ],
+    "whitelistedIPs": [],
+    "id": 53,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "ZDF Mediathek",
+    "description": {
+      "en": "German TV station ZDF - video portal",
+      "de": "Videoportal des ZDF"
+    },
+    "whitelistedDomains": [
+      "cellular.de",
+      "akamaihd.net",
+      "zdf.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 54,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "car2go",
+    "description": {
+      "en": "Car sharing",
+      "de": "Carsharing"
+    },
+    "whitelistedDomains": [
+      "driver.eu.car2go.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 55,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "DriveNow",
+    "description": {
+      "en": "Car sharing",
+      "de": "Carsharing"
+    },
+    "whitelistedDomains": [
+      "prod.drive-now-content.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 56,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Trillian",
+    "description": {
+      "en": "Trillian is a proprietary multiprotocol instant messaging application.",
+      "de": "Instant Messenger des Unternehmens Cerulean Studios für verschiedene Protokolle."
+    },
+    "whitelistedDomains": [
+      "trillian.im"
+    ],
+    "whitelistedIPs": [],
+    "id": 57,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "PayPal",
+    "description": {
+      "en": "Online payments system",
+      "de": "Online-Bezahlsystems"
+    },
+    "whitelistedDomains": [
+      "paypal.com",
+      "paypalobjects.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 58,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Electronic Arts - Origin",
+    "description": {
+      "en": "Electronic Arts",
+      "de": "Electronic Arts"
+    },
+    "whitelistedDomains": [
+      "ea.com",
+      "origin.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 59,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Buhl Data - WISO",
+    "description": {
+      "en": "Buhl Data Service GmbH",
+      "de": "Buhl Data Service GmbH"
+    },
+    "whitelistedDomains": [
+      "buhl.de",
+      "buhl-data.com",
+      "buhl-data.de",
+      "buhl-finance.com",
+      "buhl-finance.de"
+    ],
+    "whitelistedIPs": [
+      "62.159.27.0/24"
+    ],
+    "id": 60,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "eBay",
+    "description": {
+      "en": "consumer-to-consumer and business-to-consumer sales services",
+      "de": "Online-Marktplatz"
+    },
+    "whitelistedDomains": [
+      "ebay.de",
+      "ebay.com",
+      "ebayimg.com",
+      "ebay-kleinanzeigen.de",
+      "ir.ebaystatic.com",
+      "p.ebaystatic.com"
+    ],
+    "whitelistedIPs": [
+      "66.135.192.0/19",
+      "66.211.172.0/22",
+      "66.211.179.0/24"
+    ],
+    "id": 61,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "SecureSafe",
+    "description": {
+      "en": "SecureSafe - Cloud Service",
+      "de": "SecureSafe - Cloud Service"
+    },
+    "whitelistedDomains": [
+      "securesafe.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 62,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "GeForce / Nvidia",
+    "description": {
+      "en": "Manufacturer of graphics processor technologies for computing",
+      "de": "Entwickler von Grafikprozessoren und Chipsätzen für Personal Computer"
+    },
+    "whitelistedDomains": [
+      "nvidia.com",
+      "geforce.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 63,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Linux Mint",
+    "description": {
+      "en": "A Linux distribution based on Ubuntu Linux",
+      "de": "Eine Linux-Distribution basierent auf Ubuntu Linux"
+    },
+    "whitelistedDomains": [
+      "linuxmint.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 64,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "My Movies (Web App)",
+    "description": {
+      "en": "My Movies is a product brand of Binnerup Consult",
+      "de": "My Movies ist ein Produkt von Binnerup Consult"
+    },
+    "whitelistedDomains": [
+      "api.mymovies.dk",
+      "movieservice.mymovies.dk",
+      "covers.mymovies.dk"
+    ],
+    "whitelistedIPs": [],
+    "id": 65,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Bitdefender",
+    "description": {
+      "en": "Bitdefender - Romanian Internet security software company",
+      "de": "Bitdefender - Rumänischer Hersteller von Antiviren-Programmpaketen"
+    },
+    "whitelistedDomains": [
+      "bitdefender.net",
+      "bitdefender.de",
+      "bitdefender.com",
+      "bitdefender.biz",
+      "bdnsrt.org",
+      "amazonaws.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 66,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Feral Interactive",
+    "description": {
+      "en": "Feral Interactive is a video games publisher",
+      "de": "Feral Interactive ist ein Videospiel-Publisher"
+    },
+    "whitelistedDomains": [
+      "feralinteractive.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 67,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Eidos Interactive Limited",
+    "description": {
+      "en": "Eidos Interactive Limited is a video games publisher",
+      "de": "Eidos Interactive Limited ist ein Videospiel-Publisher"
+    },
+    "whitelistedDomains": [
+      "eidos.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 68,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Hitman (2016) - Game (Steam PC / Linux)",
+    "description": {
+      "en": "Please activate also the exception list Feral Interactive and Steam",
+      "de": "Bitte auch die Ausnahmelisten Feral Interactive und Steam aktivieren"
+    },
+    "whitelistedDomains": [
+      "hitman.io",
+      "iohmpcprodstorage.blob.core.windows.net",
+      "iohmpcprodshard2.blob.core.windows.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 69,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "ImmobilienScout24",
+    "description": {
+      "en": "ImmobilienScout24 is a German property portal",
+      "de": "ImmobilienScout24 ist ein Immobilienportal"
+    },
+    "whitelistedDomains": [
+      "immobilienscout24.de",
+      "static-immobilienscout24.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 70,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Perfect Privacy",
+    "description": {
+      "en": "A Swiss VPN Provider",
+      "de": "Ein Schweizer VPN Anbieter"
+    },
+    "whitelistedDomains": [
+      "perfect-privacy.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 71,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Tumblr",
+    "description": {
+      "en": "Tumblr is a microblogging and social networking website.",
+      "de": "Tumblr ist eine Blogging-Plattform."
+    },
+    "whitelistedDomains": [
+      "tumblr.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 72,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Minecraft",
+    "description": {
+      "en": "Minecraft is a sandbox video game.",
+      "de": "Minecraft ist ein Indie-Open-World-Spiel."
+    },
+    "whitelistedDomains": [
+      "mojang.com",
+      "msgamestudios.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 73,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "MLB TV",
+    "description": {
+      "en": "Major League Baseball TV App",
+      "de": "Major League Baseball TV App"
+    },
+    "whitelistedDomains": [
+      "mlb.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 74,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Slack",
+    "description": {
+      "en": "Cloud-based team collaboration tool",
+      "de": "Webbasierter Instant-Messaging-Dienst"
+    },
+    "whitelistedDomains": [
+      "slack.com",
+      "slack-msgs.com",
+      "slack-files.com",
+      "slack-imgs.com",
+      "slack-edge.com",
+      "slack-core.com",
+      "slack-redir.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 75,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Twitch",
+    "description": {
+      "en": "Twitch is a live streaming video platform",
+      "de": "Twitch ist ein Live-Streaming-Videoportal"
+    },
+    "whitelistedDomains": [
+      "twitch.tv",
+      "ttvnw.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 76,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Immowelt",
+    "description": {
+      "en": "German real estate portal",
+      "de": "Deutsches Immobilienportal"
+    },
+    "whitelistedDomains": [
+      "immowelt.org",
+      "immowelt.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 77,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Overcast",
+    "description": {
+      "en": "Podcast player",
+      "de": "Podcast-Player"
+    },
+    "whitelistedDomains": [
+      "api.overcast.fm"
+    ],
+    "whitelistedIPs": [],
+    "id": 78,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Instagram",
+    "description": {
+      "en": "Internet-based photo- and video sharing application",
+      "de": "Ein kostenloser Online-Dienst zum Teilen von Fotos und Videos"
+    },
+    "whitelistedDomains": [
+      "instagram.com",
+      "cdninstagram.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 79,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "TuneIn",
+    "description": {
+      "en": "Streaming broadcast radio station and Internet radio",
+      "de": "Streaming von Radiosendern und Internetradio ermöglicht"
+    },
+    "whitelistedDomains": [
+      "tunein.com",
+      "radiotime.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 80,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Snapchat",
+    "description": {
+      "en": "Image messaging and multimedia mobile application",
+      "de": "Mobile Multimedia und Bild-Nachrichten Anwendung"
+    },
+    "whitelistedDomains": [
+      "snapchat.com",
+      "gcs.sc-cdn.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 81,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Telekom - MagentaCLOUD",
+    "description": {
+      "en": "Telekom Cloud Service",
+      "de": "Telekom Cloud Service"
+    },
+    "whitelistedDomains": [
+      "telekom.com",
+      "magentacloud.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 82,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "AVAST AVG Antivirus",
+    "description": {
+      "en": "Avast Antivirus and AVG Antivirus",
+      "de": "Avast Antivirus und AVG Antivirus"
+    },
+    "whitelistedDomains": [
+      "avast.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 83,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "ESET",
+    "description": {
+      "en": "ESET is a company that offers anti-virus and firewall products",
+      "de": "ESET ist ein Unternehmen für Sicherheitssoftware"
+    },
+    "whitelistedDomains": [
+      "eset.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 84,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "F-Secure",
+    "description": {
+      "en": "F-Secure Corporation is a cyber security and privacy company",
+      "de": "Die F-Secure Corporation ist ein Anbieter von IT-Sicherheitslösungen und Antivirenprogrammen"
+    },
+    "whitelistedDomains": [
+      "f-secure.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 85,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "G Data",
+    "description": {
+      "en": "G Data Software AG is a software company that focuses on computer security solutions",
+      "de": "Die G Data Software AG ist ein Softwarehaus mit Schwerpunkt auf IT-Sicherheitslösungen"
+    },
+    "whitelistedDomains": [
+      "gdatasecurity.de",
+      "gdatasecurity.com",
+      "gdataupdate-a.akamaihd.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 86,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "McAfee",
+    "description": {
+      "en": "McAfee Inc. is a  global computer security software company",
+      "de": "McAfee ist ein Hersteller von Antivirus-, Netzwerk-, Computersicherheitssoftware und -hardware"
+    },
+    "whitelistedDomains": [
+      "mcafee.com"
+    ],
+    "whitelistedIPs": [
+      "161.69.0.0/16"
+    ],
+    "id": 87,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Symantec",
+    "description": {
+      "en": "Symantec Corporation - An American software company headquartered in Mountain View, California - USA",
+      "de": "Symantec Corporation - Ein US-amerikanisches Softwarehaus"
+    },
+    "whitelistedDomains": [
+      "symantec.com",
+      "norton.com",
+      "nortoncdn.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 88,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "GOG GALAXY",
+    "description": {
+      "en": "The GOG gaming Client",
+      "de": "Der GOG Spiele Client"
+    },
+    "whitelistedDomains": [
+      "gog.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 89,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "SwiftKey",
+    "description": {
+      "en": "An input method for Android and iOS devices",
+      "de": "Eingabemethode für Geräte mit Touchscreens wie Smartphones und Tabletcomputer"
+    },
+    "whitelistedDomains": [
+      "swiftkey.com",
+      "swiftkey.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 90,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Congstar",
+    "description": {
+      "en": "Package delivery company and a provider of supply chain management solutions",
+      "de": "Eine Tochtergesellschaft der Telekom Deutschland"
+    },
+    "whitelistedDomains": [
+      "congstar.de",
+      "congstar-media.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 91,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "UPS",
+    "description": {
+      "en": "A subsidiary of Telekom Deutschland",
+      "de": "Ein global tätiges Kurier-Express-Paket-Dienst Unternehmen"
+    },
+    "whitelistedDomains": [
+      "ups.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 92,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Hermes",
+    "description": {
+      "en": "Parcel delivery company",
+      "de": "Paketversand Service"
+    },
+    "whitelistedDomains": [
+      "hermesworld.com",
+      "myhermes.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 93,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "DHL",
+    "description": {
+      "en": "Courier, parcel and express mail services",
+      "de": "Paket- und Brief-Express-Dienst"
+    },
+    "whitelistedDomains": [
+      "dhl.de",
+      "dhl.com",
+      "paket.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 94,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Scout24",
+    "description": {
+      "en": "Scout24 AG - Offers different online marketplaces",
+      "de": "Scout24 AG - Bietet verschiedene Online-Marktplätze an"
+    },
+    "whitelistedDomains": [
+      "scout24.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 95,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Hamburg Energie",
+    "description": {
+      "en": "A privately organized energy supply company",
+      "de": "Ein privatwirtschaftlich organisiertes Energieversorgungsunternehmen"
+    },
+    "whitelistedDomains": [
+      "hamburgenergie.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 96,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Vattenfall",
+    "description": {
+      "en": "A Swedish energy company",
+      "de": "Ein schwedisches Energieunternehmen"
+    },
+    "whitelistedDomains": [
+      "vattenfall.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 97,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "EWE AG",
+    "description": {
+      "en": "An energy and telecommunications company",
+      "de": "Ein Strom und Telekommunikations Unternehmen"
+    },
+    "whitelistedDomains": [
+      "ewe.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 98,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "engie",
+    "description": {
+      "en": "An internationally active energy supply company",
+      "de": "Ein international tätiger Energieversorgungskonzern"
+    },
+    "whitelistedDomains": [
+      "engie-deutschland.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 99,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Green City Energy",
+    "description": {
+      "en": "A German energy company",
+      "de": "Ein schwedisches Energieunternehmen"
+    },
+    "whitelistedDomains": [
+      "greencity-energy.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 100,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Ubuntu",
+    "description": {
+      "en": "A Debian-based Linux operating system",
+      "de": "Eine kostenlose Linux-Distribution, die auf Debian basiert"
+    },
+    "whitelistedDomains": [
+      "ubuntu.com",
+      "snapcraft.io"
+    ],
+    "whitelistedIPs": [],
+    "id": 101,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Fedora",
+    "description": {
+      "en": "Fedora is an operation system",
+      "de": "Fedora ist eine Linux Distribution"
+    },
+    "whitelistedDomains": [
+      "fedoraproject.org"
+    ],
+    "whitelistedIPs": [],
+    "id": 102,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "GNOME",
+    "description": {
+      "en": "GNOME is a desktop environment composed of free and open-source software that runs on Linux and most BSD derivatives",
+      "de": "GNOME ist eine Desktop-Umgebung für Unix- und Unix-ähnliche Systeme"
+    },
+    "whitelistedDomains": [
+      "gnome.org"
+    ],
+    "whitelistedIPs": [],
+    "id": 103,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Maps Linux",
+    "description": {
+      "en": "A desktop map app for GNOME",
+      "de": "Eine Kartenanwendung für GNOME"
+    },
+    "whitelistedDomains": [
+      "goverpass-api.de",
+      "tiles.mapbox.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 104,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "OnlineTVRecorder",
+    "description": {
+      "en": "OnlineTVRecorder (OTR) is a web-based online service",
+      "de": "OnlineTVRecorder (OTR) ist ein webbasierter Online-Dienst"
+    },
+    "whitelistedDomains": [
+      "onlinetvrecorder.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 105,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Swiss Banks",
+    "description": {
+      "en": "Swiss Banks",
+      "de": "Schweizer Banken"
+    },
+    "whitelistedDomains": [
+      "ubs.com",
+      "credit-suisse.com",
+      "raiffeisen.ch",
+      "zkb.ch",
+      "hsbcprivatebank.com",
+      "postfinance.ch",
+      "bnpparibas.com",
+      "juliusbaer.com",
+      "group.pictet",
+      "lombardodier.com",
+      "bcv.ch"
+    ],
+    "labels": {
+      "ubs.com": "UBS",
+      "credit-suisse.com": "Credit-Suisse",
+      "raiffeisen.ch": "Raiffeisen Schweiz",
+      "zkb.ch": "Zürcher Kantonalbank",
+      "hsbcprivatebank.com": "HSBC",
+      "postfinance.ch": "Postfinance",
+      "bnpparibas.com": "BNP Paribas",
+      "juliusbaer.com": "Julius Bär",
+      "group.pictet": "Pictet Group",
+      "lombardodier.com": "Bank Lombard Odier & Co",
+      "bcv.ch": "Banque Cantonale Vaudoise"
+    },
+    "id": 106,
+    "enabledPerDefault": true,
+    "builtin": true,
+    "hidden": false
+  },
+  {
+    "name": "RoboForm",
+    "description": {
+      "en": "A password manager for macOS, iOS, Windows and Android",
+      "de": "Ein Passwort-Manager für macOS, iOS, Windows and Android"
+    },
+    "whitelistedDomains": [
+      "roboform.com"
+    ],
+    "whitelistedIPs": [
+      "67.208.88.192/27"
+    ],
+    "id": 107,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Here Maps",
+    "description": {
+      "en": "An online geodata service and a navigation program",
+      "de": "Ein Online-Geodatendienst und ein Navigationsprogramm"
+    },
+    "whitelistedDomains": [
+      "here.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 108,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "VMware",
+    "description": {
+      "en": "Coud computing and platform virtualization software",
+      "de": "Coud-Computing und Plattform Virtualisierung Software"
+    },
+    "whitelistedDomains": [
+      "vmware.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 109,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Kachelmann Radar & Blitz HD",
+    "description": {
+      "en": "A weather app for Germany",
+      "de": "Eine Wetter App für Deutschland"
+    },
+    "whitelistedDomains": [
+      "kachelmann.link-innovation.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 110,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Navigon",
+    "description": {
+      "en": "Navigon GmbH is a German manufacturer of GPS devices and GPS navigation software",
+      "de": "Die Navigon GmbH ist ein deutscher Hersteller von GPS-Geräten und GPS-Navigationssoftware"
+    },
+    "whitelistedDomains": [
+      "navigon.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 111,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Boxcryptor",
+    "description": {
+      "en": "Boxcryptor is a software for data encryption of cloud storage",
+      "de": "Boxcryptor ist eine Software zur Datenverschlüsselung von Cloud-Speichern"
+    },
+    "whitelistedDomains": [
+      "api.boxcryptor.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 112,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "TomTom",
+    "description": {
+      "en": "Manufacturer of GPS devices and GPS navigation software",
+      "de": "Hersteller von GPS-Geräten und GPS-Navigationssoftware"
+    },
+    "whitelistedDomains": [
+      "tomtom.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 113,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Jimdo (Web & App)",
+    "description": {
+      "en": "A German web hosting service",
+      "de": "Ein deutscher Web-Hosting-Service"
+    },
+    "whitelistedDomains": [
+      "jimdo.com",
+      "jimcdn.com",
+      "jimstatic.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 114,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "AusweisApp2",
+    "description": {
+      "en": "A German electronic authentication App",
+      "de": "Eine deutsche elektronische Authentifizierung App"
+    },
+    "whitelistedDomains": [
+      "governikus-eid.de",
+      "governikus-asp.de",
+      "autentapp.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 115,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Comodo Internet Security",
+    "description": {
+      "en": "Comodo Internet Security developed and distributed by Comodo Group",
+      "de": "Comodo Internet Security von der Comodo Group"
+    },
+    "whitelistedDomains": [
+      "comodo.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 116,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Logitech Harmoney",
+    "description": {
+      "en": "Logitech remote control",
+      "de": "Logitech Fernbedienung"
+    },
+    "whitelistedDomains": [
+      "myharmony.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 117,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Telekom Kundenportal",
+    "description": {
+      "en": "Telekom Deutschland GmbH customer portal",
+      "de": "Telekom Deutschland GmbH Kundenportal"
+    },
+    "whitelistedDomains": [
+      "telekom.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 118,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Home Connect App",
+    "description": {
+      "en": "Home Connect GmbH",
+      "de": "Home Connect GmbH"
+    },
+    "whitelistedDomains": [
+      "homeconnecthca.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 119,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Finanzblick App",
+    "description": {
+      "en": "BUHL Data Service GmbH",
+      "de": "BUHL Data Service GmbH"
+    },
+    "whitelistedDomains": [
+      "homeconnecthca.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 120,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "GMX Services",
+    "description": {
+      "en": "1&1 Mail & Media GmbH - Mail service",
+      "de": "1&1 Mail & Media GmbH - Mail Service"
+    },
+    "whitelistedDomains": [
+      "gmx.net",
+      "sdthumbs.ui-static.net",
+      "storage-gmx.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 121,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Netgear Arlo",
+    "description": {
+      "en": "Netgear Inc. - A global networking company based in the USA",
+      "de": "Netgear Inc. - Ein Unternehmen mit Sitz im Silicon Valley"
+    },
+    "whitelistedDomains": [
+      "netgear.com",
+      "arlo.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 122,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Bild App",
+    "description": {
+      "en": "A German newspaper published by Axel Springer AG",
+      "de": "Eine deutsche Tageszeitung von Axel Springer AG"
+    },
+    "whitelistedDomains": [
+      "bild.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 123,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "TeamViewer",
+    "description": {
+      "en": "TeamViewer is a proprietary computer software package for remote control, desktop sharing, online meetings, web conferencing and file transfer between computers",
+      "de": "TeamViewer ist eine Fernwartungssoftware für Screen-Sharing, Videokonferenzen, Dateitransfer und VPN"
+    },
+    "whitelistedDomains": [
+      "teamviewer.com",
+      "dl.tvcdn.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 124,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Microsoft IP Addresses",
+    "description": {
+      "en": "IP addresses assigned to Microsoft",
+      "de": "IP-Adressen, die Microsoft zugeordnet sind"
+    },
+    "whitelistedDomains": [],
+    "whitelistedIPs": [
+      "40.74.0.0/16",
+      "40.75.0.0/16",
+      "40.76.0.0/16",
+      "40.77.0.0/16",
+      "40.78.0.0/16",
+      "40.79.0.0/16",
+      "40.80.0.0/16",
+      "40.81.0.0/16",
+      "40.82.0.0/16",
+      "40.83.0.0/16",
+      "40.84.0.0/16",
+      "40.85.0.0/16",
+      "40.86.0.0/16",
+      "40.87.0.0/16",
+      "40.88.0.0/16",
+      "40.89.0.0/16",
+      "40.90.0.0/16",
+      "40.91.0.0/16",
+      "40.92.0.0/16",
+      "40.93.0.0/16",
+      "40.94.0.0/16",
+      "40.95.0.0/16",
+      "40.96.0.0/16",
+      "40.97.0.0/16",
+      "40.98.0.0/16",
+      "40.99.0.0/16",
+      "40.100.0.0/16",
+      "40.101.0.0/16",
+      "40.102.0.0/16",
+      "40.103.0.0/16",
+      "40.104.0.0/16",
+      "40.105.0.0/16",
+      "40.106.0.0/16",
+      "40.107.0.0/16",
+      "40.108.0.0/16",
+      "40.109.0.0/16",
+      "40.110.0.0/16",
+      "40.111.0.0/16",
+      "40.112.0.0/16",
+      "40.113.0.0/16",
+      "40.114.0.0/16",
+      "40.115.0.0/16",
+      "40.116.0.0/16",
+      "40.117.0.0/16",
+      "40.118.0.0/16",
+      "40.119.0.0/16",
+      "40.120.0.0/16",
+      "40.121.0.0/16",
+      "40.122.0.0/16",
+      "40.123.0.0/16",
+      "40.124.0.0/16",
+      "40.125.0.0/17"
+    ],
+    "id": 125,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Aldi Talk App",
+    "description": {
+      "en": "Aldi Talk App",
+      "de": "Aldi Talk App"
+    },
+    "whitelistedDomains": [
+      "alditalk-kundenbetreuung.de",
+      "maecc.eplus.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 126,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Plex",
+    "description": {
+      "en": "Plex is a media server and media center",
+      "de": "Plex ist ein Media Server und Media Center"
+    },
+    "whitelistedDomains": [
+      "plex.tv",
+      "plex.bz"
+    ],
+    "whitelistedIPs": [],
+    "id": 127,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "n-tv App",
+    "description": {
+      "en": "n-tv is a German television news channel",
+      "de": "n-tv ist ein Deutscher Nachrichtensender"
+    },
+    "whitelistedDomains": [
+      "n-tv.de",
+      "kursdaten.teleboerse.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 128,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Trend Micro",
+    "description": {
+      "en": "A PC security package developed by the Japanese software manufacturer Trend Micro",
+      "de": "Ein PC-Sicherheitspaket, welches vom japanischen Softwarehersteller Trend Micro entwickelt wurde"
+    },
+    "whitelistedDomains": [
+      "trendmicro.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 129,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "TK App",
+    "description": {
+      "en": "Techniker Krankenkasse (TK) - German health insurance App",
+      "de": "Techniker Krankenkasse (TK)"
+    },
+    "whitelistedDomains": [
+      "tk.de",
+      "kobil.tk.de",
+      "agembi.com",
+      "sigd.egk-tsp.de",
+      "tk.ibmepa.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 130,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Pinterest",
+    "description": {
+      "en": "Pinterest is a social network in which users can attach picture collections with descriptions to virtual pin boards",
+      "de": "Pinterest ist ein soziales Netzwerk, in dem Nutzer Bilderkollektionen mit Beschreibungen an virtuelle Pinnwände heften können"
+    },
+    "whitelistedDomains": [
+      "api.pinterest.com",
+      "pinimg.com",
+      "pinterest.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 131,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Aliexpress",
+    "description": {
+      "en": "AliExpress.com is an online retail service",
+      "de": "AliExpress.com ist ein Online-Einzelhandelsservice"
+    },
+    "whitelistedDomains": [
+      "api.aliexpress.com",
+      "amdc.aliexpress.com",
+      "acs.aliexpress.com",
+      "abtest.alibaba.com",
+      "video.aliexpress-media.com",
+      "video-cdn.aliexpress-media.com",
+      "m.aliexpress.com",
+      "alicdn.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 132,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Farm Heroes (App / Website)",
+    "description": {
+      "en": "A game from King Digital Entertainment",
+      "de": "Ein Spiel von King Digital Entertainment"
+    },
+    "whitelistedDomains": [
+      "farmheroesmobile.king.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 133,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Pokemon (Niantic Labs App)",
+    "description": {
+      "en": "A game from Nicantic Labs",
+      "de": "Ein Spiel von Niantic Labs"
+    },
+    "whitelistedDomains": [
+      "pgorelease.nianticlabs.com"
+    ],
+    "whitelistedIPs": [
+      "130.211.14.80"
+    ],
+    "id": 134,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Nest Labs",
+    "description": {
+      "en": "Nest Labs Inc. is an automation company based in Palo Alto",
+      "de": "Nest Labs Inc. ist ein Automatisierungsunternehmen mit Sitz in Palo Alto"
+    },
+    "whitelistedDomains": [
+      "nest.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 135,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "GitHub",
+    "description": {
+      "en": "A web-based hosting service for version control using git. It is mostly used for computer code",
+      "de": "Ein webbasierter Online-Dienst, der Software-Entwicklungsprojekte auf seinen Servern bereitstellt (Filehosting)"
+    },
+    "whitelistedDomains": [
+      "github.com",
+      "objects.githubusercontent.com",
+      "copilot-proxy.githubusercontent.com",
+      "github-cloud.githubusercontent.com",
+      "raw.githubusercontent.com",
+      "user-images.githubusercontent.com",
+      "avatars.githubusercontent.com",
+      "camo.githubusercontent.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 136,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "CleanMyMac",
+    "description": {
+      "en": "Clean My Mac is a program for maintaining and optimizing macOS",
+      "de": "Clean My Mac ist ein Programm zur Pflege und Optimierung für macOS"
+    },
+    "whitelistedDomains": [
+      "api-lytics.macpaw.com",
+      "app.hello.devmate.com",
+      "activations.devmate.com",
+      "software.macpaw.com",
+      "updates.devmate.com",
+      "dl.devmate.com",
+      "images.macpaw.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 137,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Spritmonitor.de App",
+    "description": {
+      "en": "Web portal that provides information about the real fuel consumpion of vehicles",
+      "de": "Webportal, das Information über den wirklichen Kraftstoffverbrauch von Fahrzeugen bereitstellt"
+    },
+    "whitelistedDomains": [
+      "api.spritmonitor.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 138,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "mobile.de App",
+    "description": {
+      "en": "Used cars market",
+      "de": "Online-Fahrzeugmarkt"
+    },
+    "whitelistedDomains": [
+      "mobile.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 139,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Signal Private Messenger",
+    "description": {
+      "en": "Free encrypted communication",
+      "de": "Freie verschlüsselte Kommunikation"
+    },
+    "whitelistedDomains": [
+      "textsecure-service.whispersystems.org",
+      "signal.org"
+    ],
+    "whitelistedIPs": [],
+    "id": 140,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Samsung Bixby",
+    "description": {
+      "en": "Virtual assistant",
+      "de": "Virtueller Assistent"
+    },
+    "whitelistedDomains": [
+      "sbixby.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 141,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "OpenSUSE",
+    "description": {
+      "en": "OpenSUSE - Linux Distribution",
+      "de": "OpenSUSE - Linux Distribution"
+    },
+    "whitelistedDomains": [
+      "opensuse.org"
+    ],
+    "whitelistedIPs": [],
+    "id": 142,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "1Password",
+    "description": {
+      "en": "Password Manager",
+      "de": "Passwort-Manager"
+    },
+    "whitelistedDomains": [
+      "agilebits.com",
+      "1password.com",
+      "1password.eu",
+      "1password.ca",
+      "pwnedpasswords.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 143,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Doodle",
+    "description": {
+      "en": "Application for appointment determination",
+      "de": "Anwendung zur Terminfindung"
+    },
+    "whitelistedDomains": [
+      "api.doodle.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 144,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Welt.de",
+    "description": {
+      "en": "German news portal",
+      "de": "Deutsches Nachrichtenportal"
+    },
+    "whitelistedDomains": [
+      "mypass.de",
+      "welt.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 145,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Readly",
+    "description": {
+      "en": "Magazine flatrate app",
+      "de": "App mit Flatrate für Zeitschriften"
+    },
+    "whitelistedDomains": [
+      "appsflyer.com",
+      "d3og6tlt23zks5.cloudfront.net",
+      "d3ry4o1su9a59w.cloudfront.net",
+      "readly.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 146,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Radio.de",
+    "description": {
+      "en": "Online Radio App",
+      "de": "Online Radio App"
+    },
+    "whitelistedDomains": [
+      "radio.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 147,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Samsung Galaxy Apps",
+    "description": {
+      "en": "Samsungs App Store",
+      "de": "Samsungs App Store"
+    },
+    "whitelistedDomains": [
+      "samsungapps.com",
+      "dls.di.atlas.samsung.com",
+      "eu-auth2.samsungosp.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 148,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "AutoScout24",
+    "description": {
+      "en": "AutoScout24 GmbH is an online marketplace for the purchase and sale of new cars, used cars, motorcycles and commercial vehicles.",
+      "de": "AutoScout24 GmbH ist ein Online-Marktplatz für den Kauf und Verkauf von Neuwagen, Gebrauchtwagen, Motorrädern und Nutzfahrzeugen."
+    },
+    "whitelistedDomains": [
+      "autoscout24.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 149,
+    "enabledPerDefault": false
+  },
+  {
+    "name": "Lufthansa",
+    "description": {
+      "en": "App by Lufthansa Airline",
+      "de": "App der Fluggesellschaft Lufthansa"
+    },
+    "whitelistedDomains": [
+      "app.lufthansa.com",
+      "www.lufthansa.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 151,
+    "enabledPerDefault": false,
+    "builtin": true,
+    "hidden": false
+  },
+  {
+    "name": "SBB",
+    "description": {
+      "en": "App by Swiss Federal Railways",
+      "de": "App der Schweizerischen Bundesbahnen"
+    },
+    "whitelistedDomains": [
+      "sbb-ssl.wemfbox.ch",
+      "sbb.ch",
+      "sbbmobile.ch"
+    ],
+    "whitelistedIPs": [],
+    "id": 152,
+    "enabledPerDefault": false,
+    "builtin": true,
+    "hidden": false
+  },
+  {
+    "name": "Amazon Music on Sonos",
+    "description": {
+      "en": "Needed for amazon music to work with the sonos musicsystem",
+      "de": "Benötigt, damit Amazon Music mit dem Sonos Musiksystem zusammenarbeiten kann"
+    },
+    "whitelistedDomains": [
+      "album-art-storage-eu.s3.amazonaws.com",
+      "images-eu.ssl-images-amazon.com",
+      "s3.amazonaws.com",
+      "sonos.amazonmusic.com",
+      "sslvalidator.sonos.com",
+      "system-api.sonos.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 153,
+    "enabledPerDefault": false,
+    "builtin": true,
+    "hidden": false
+  },
+  {
+    "name": "Smartfrog",
+    "description": {
+      "en": "Smartfrog Camera and App",
+      "de": "Smartfrog Kamera und App"
+    },
+    "whitelistedDomains": [
+      "smartfrog.com",
+      "images.ctfassets.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 154,
+    "enabledPerDefault": false,
+    "builtin": true,
+    "hidden": false
+  },
+  {
+    "name": "Binary Repos",
+    "description": {
+      "en": "Binary repositories for software development",
+      "de": "Binär-Repositories für die Software-Entwicklung"
+    },
+    "whitelistedDomains": [
+      "repo.maven.apache.org",
+      "oss.sonatype.org",
+      "jcenter.bintray.com",
+      "repository.jboss.org",
+      "repo.clojars.org",
+      "packages.atlassian.com",
+      "maven.oracle.com",
+      "maven.google.com",
+      "maven-central.storage-download.googleapis.com",
+      "maven-central-eu.storage-download.googleapis.com",
+      "maven-central-asia.storage-download.googleapis.com",
+      "npmjs.org",
+      "powershellgallery.com",
+      "nuget.org",
+      "metacpan.org",
+      "pythonhosted.org"
+    ],
+    "id": 155,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "uBlock Origin",
+    "description": {
+      "en": "uBlock Origin is a free and open-source, cross-platform browser extension for content-filtering, including ad-blocking",
+      "de": "uBlock Origin ist ein freies, plattformübergreifendes Webbrowser-Plug-in zum Filtern von Webinhalten wie unter anderem beispielsweise Werbung, Webtracking oder Malvertising."
+    },
+    "whitelistedDomains": [
+      "ublock.org"
+    ],
+    "id": 156,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Docker",
+    "description": {
+      "en": "Docker is a set of platform as a service (PaaS) products that use OS-level virtualization to deliver software in packages called containers",
+      "de": "Docker ist ein Produkt, das Betriebssystem-Virtualisierung verwendet, um Software als Pakete in sogenannten Containern bereitzustellen"
+    },
+    "whitelistedDomains": [
+      "registry-1.docker.io",
+      "auth.docker.io",
+      "production.cloudflare.docker.io",
+      "production.cloudflare.docker.com"
+    ],
+    "id": 157,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Wikimedia",
+    "description": {
+      "de": "Die Wikimedia Foundation, Inc. ist eine gemeinnützige Gesellschaft nach US-amerikanischem Recht, die freies Wissen und freie Inhalte fördert.",
+      "en": "The Wikimedia Foundation, Inc. is an American non-profit and charitable organization headquartered in San Francisco, California."
+    },
+    "whitelistedDomains": [
+      "wikimedia.org"
+    ],
+    "id": 158,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "SwissCovid",
+    "description": {
+      "de": "SwissCovid ist eine COVID-19-App zur Kontaktnachverfolgung in der Schweiz",
+      "en": "SwissCovid is a COVID-19-App for contact tracing in Switzerland"
+    },
+    "whitelistedDomains": [
+      "www.pt.bfs.admin.ch"
+    ],
+    "id": 159,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Relive",
+    "description": {
+      "en": "Relive is an app for creating videos from GPS data of sportive activities",
+      "de": "Relive ist eine App um Videos basierend auf GPS-Daten von sportlichen Aktivitäten zu erstellen."
+    },
+    "whitelistedDomains": [
+      "mobile.api.relive.cc"
+    ],
+    "id": 160,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Homeway/Expedia",
+    "description": {
+      "de": "Expedia Group, Inc. ist ein US-amerikanisches Online-Reisebüro. FeWo-direkt ist eine App der Gruppe.",
+      "en": "Expedia Group is an American online travel shopping company. HomeAway is an app of the group."
+    },
+    "whitelistedDomains": [
+      "homeaway.com"
+    ],
+    "id": 161,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Sony Playstation",
+    "description": {
+      "de": "Die PlayStation ist eine stationäre Spielkonsole des japanischen Unternehmens Sony",
+      "en": "The PlayStation is a home video game console developed and marketed by Sony Computer Entertainment."
+    },
+    "whitelistedDomains": [
+      "playstation.net",
+      "playstation.com",
+      "sonyentertainmentnetwork.com",
+      "ca.account.sony.com",
+      "my.account.sony.com"
+    ],
+    "id": 162,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Little Snitch",
+    "description": {
+      "en": "Little Snitch is a host-based application firewall for macOS",
+      "de": "Little Snitch ist eine proprietäre Personal Firewall für macOS."
+    },
+    "whitelistedDomains": [
+      "obdev.at"
+    ],
+    "id": 163,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Codecheck",
+    "description": {
+      "de": "Codecheck ist eine App, die Informationen zu Inhaltsstoffen in Lebensmitteln und Kosmetik anzeigt",
+      "en": "Codecheck is an app that shows informations about ingredients in food, drinks, and cosmetics"
+    },
+    "whitelistedDomains": [
+      "codecheck.info"
+    ],
+    "id": 164,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Toppreise.ch",
+    "description": {
+      "de": "Schweizer Preisvergleich",
+      "en": "Swiss price price comparison service"
+    },
+    "whitelistedDomains": [
+      "toppreise.ch"
+    ],
+    "id": 165,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "zoom.us",
+    "description": {
+      "de": "Zoom Video Communications ist ein US-amerikanisches Softwareunternehmen, das Software für Videokonferenzen anbietet.",
+      "en": "Zoom is a videoconferencing software program developed by Zoom Video Communications."
+    },
+    "whitelistedDomains": [
+      "zoom.us"
+    ],
+    "id": 166,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Houseparty",
+    "description": {
+      "de": "Houseparty ist ein soziales Netzwerk, das Video-Gruppenchats mit mobilen und Desktop-Applikationen anbietet.",
+      "en": "Houseparty is a social networking service that enables group video chatting through mobile and desktop apps."
+    },
+    "whitelistedDomains": [
+      "thehousepartyapp.com"
+    ],
+    "id": 167,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Sky Switzerland",
+    "description": {
+      "en": "Swiss part of the Sky Group",
+      "de": "Schweizer Ableger des Pay-TV-Anbieters Sky"
+    },
+    "whitelistedDomains": [
+      "sky.ch"
+    ],
+    "id": 168,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "leer",
+    "description": {
+      "de": "",
+      "en": ""
+    },
+    "whitelistedDomains": [],
+    "id": 169,
+    "enabledPerDefault": false,
+    "hidden": true
+  },
+  {
+    "name": "Corona-Warn-App",
+    "description": {
+      "en": "The Corona-Warn-App helps track and disrupt SARS-CoV-2 infection chains.",
+      "de": "Die Corona-Warn-App hilft, Infektionsketten des SARS-CoV-2 nachzuverfolgen und zu unterbrechen."
+    },
+    "whitelistedDomains": [
+      "svc90.main.px.t-online.de",
+      "coronawarn.app"
+    ],
+    "id": 170,
+    "enabledPerDefault": true,
+    "hidden": false
+  },
+  {
+    "name": "YouTube",
+    "description": {
+      "en": "Video sharing platform owned by Google",
+      "de": "Videoplattform von Google"
+    },
+    "whitelistedDomains": [
+      "googlevideo.com",
+      "googleusercontent.com",
+      "youtube.de",
+      "youtube.com",
+      "ytimg.com",
+      "youtubegaming.com"
+    ],
+    "id": 171,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Outbank",
+    "description": {
+      "de": "Banking-App",
+      "en": "Banking app"
+    },
+    "whitelistedDomains": [
+      "client.outbankapp.com",
+      "groundcontrol4.outbankapp.com",
+      "help.outbankapp.com",
+      "macosxbeta.outbankapp.com",
+      "walt-sync.s3.eu-central-1.amazonaws.com",
+      "walt.groundcontrol.outbankapp.com",
+      "webconnect.outbankapp.com",
+      "dynamodb.eu-central-1.amazonaws.com"
+    ],
+    "id": 172,
+    "enabledPerDefault": true,
+    "hidden": false
+  },
+  {
+    "name": "BlueCode",
+    "description": {
+      "en": "BlueCode Online Payment (#eBlocker Community)",
+      "de": "BlueCode Online-Bezahlsystem (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "app.bluecode.com",
+      "arc-assets.bluecode.com",
+      "mandat.bluecode.com",
+      "sdd-api.bluecode.com",
+      "sdk-api.bluecode.com"
+    ],
+    "id": 5000,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Ecovacs Home",
+    "description": {
+      "en": "Home Vacuum Robots (#eBlocker Community)",
+      "de": "Staubsauger-Roboter (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "gl-at-api.ecovacs.com",
+      "gl-at-openapi.ecovacs.com",
+      "gl-us-pub.ecovacs.com",
+      "portal-ww.ecouser.net",
+      "portal.ecouser.net"
+    ],
+    "id": 5001,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "FreeNow / MyTaxi",
+    "description": {
+      "en": "Taxi App (#eBlocker Community)",
+      "de": "Taxi App (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "api.live.free-now.com",
+      "api.mytaxi.com"
+    ],
+    "id": 5002,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Handysignatur",
+    "description": {
+      "en": "App for digital signatures and identification (Austria) (#eBlocker Community)",
+      "de": "App für digitalen Ausweis un Unterschrift in Österreich (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "api.a-trust.at"
+    ],
+    "id": 5003,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Handyparken",
+    "description": {
+      "en": "Digital parking ticketing (Austria) (#eBlocker Community)",
+      "de": "Österreiches System für Parktickets (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "api.parkbob.com",
+      "asmp.a1.net"
+    ],
+    "id": 5004,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Worx Landroid",
+    "description": {
+      "en": "Control app for mowing robot (#eBlocker Community)",
+      "de": "Steuer-App für Mähroboter (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "api.worxlandroid.com"
+    ],
+    "id": 5005,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "OneDrive",
+    "description": {
+      "en": "Login for Microsoft OneDrive (#eBlocker Community)",
+      "de": "Login für Microsoft OneDrive (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "logincdn.msauth.net"
+    ],
+    "id": 5006,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "ProtonMail",
+    "description": {
+      "en": "Secure end-to-end email system (#eBlocker Community)",
+      "de": "Sichere Ende-zu-Ende EMail Kommunikation (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "api.protonmail.ch",
+      "api.protonvpn.ch",
+      "protonmail.com"
+    ],
+    "id": 5007,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "TripAdvisor",
+    "description": {
+      "en": "Tripadvisor booking App (#eBlocker Community)",
+      "de": "Tripadvisor Buchungs-App (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "api.tripadvisor.com",
+      "media-cdn.tripadvisor.com",
+      "osrm.maps.me",
+      "passport.maps.me",
+      "static.tacdn.com"
+    ],
+    "id": 5008,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Free2move",
+    "description": {
+      "en": "Carsharing app (formerly ShareNow, DriveNow, car2go) (#eBlocker Community)",
+      "de": "Car Sharing (war früher ShareNow, DriveNow, car2go) (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "app-gateway.pricing.carsharedev.io",
+      "app.free2move.com",
+      "app.prod.share-now.com",
+      "driver.eu.share-now.com",
+      "driver2.eu.share-now.com",
+      "pmm.car2go.com",
+      "www.car2go.com",
+      "www.share-now.com"
+    ],
+    "id": 5009,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Shpock",
+    "description": {
+      "en": "Secondhand trading app (#eBlocker Community)",
+      "de": "App zum privaten Kauf und Verkauf von Dingen (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "api.shpock.com",
+      "m1.secondhandapp.at",
+      "shubi.shpock.com"
+    ],
+    "id": 5010,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "SoundTouch",
+    "description": {
+      "en": "Bose Soundtouch wireless loudspeakers (#eBlocker Community)",
+      "de": "Bose Soundtouch kabellose Lautprecher (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "content.api.bose.io",
+      "streaming.bose.com",
+      "streamingoauth.bose.com",
+      "worldwide.bose.com"
+    ],
+    "id": 5011,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Uber",
+    "description": {
+      "en": "Taxi on demand (#eBlocker Community)",
+      "de": "Ruftaxi-System (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "cn-dc1.uber.com",
+      "cn-geo1.uber.com"
+    ],
+    "id": 5012,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Discord",
+    "description": {
+      "en": "Gaming chat platform (#eBlocker Community)",
+      "de": "Soziale Plattform für Gamer (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "discord.com",
+      "discord.gg",
+      "discord.net",
+      "discordapp.com",
+      "discordapp.net",
+      "discord.media"
+    ],
+    "id": 5013,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "EpicLauncher",
+    "description": {
+      "en": "Epic Games gaming launcher (#eBlocker Community)",
+      "de": "Epic Games Spiele-Zentrum (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "epicgames.com",
+      "unrealengine.com",
+      "api.epicgames.dev",
+      "connect.ol.epicgames.com",
+      "datarouter.ol.epicgames.com",
+      "merchantpool1.epicgames.com",
+      "store-launcher.epicgames.com",
+      "payment-website-pci.ol.epicgames.com"
+    ],
+    "id": 5014,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Glasswire",
+    "description": {
+      "en": "Personal firewall and threat protection (#eBlocker Community)",
+      "de": "Persönliche Firewall und Angriffsschutz (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "activate.glasswire.com"
+    ],
+    "id": 5015,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Sophos Products",
+    "description": {
+      "en": "Sophos cyber security products (#eBlocker Community)",
+      "de": "Sophos Cybersicherheit Produkte (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "sophos.com"
+    ],
+    "id": 5016,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Ubisoft Uplay",
+    "description": {
+      "en": "Ubisoft gaming platform (#eBlocker Community)",
+      "de": "Ubisoft Spieleplattform (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "akamai.net",
+      "akamaihd.net",
+      "akamaized.net",
+      "cloudfront.net",
+      "fastly.net",
+      "public-ubiservices.ubi.com",
+      "ubi.com",
+      "ubisoft.com"
+    ],
+    "id": 5017,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Number26",
+    "description": {
+      "en": "German direct banking provider (#eBlocker Community)",
+      "de": "Deutsche Direktbank (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "n26.com"
+    ],
+    "id": 5018,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Booking.com iPhone",
+    "description": {
+      "en": "Booking.com iPhone app (#eBlocker Community)",
+      "de": "Booking.com iPhone App (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "iphone-xml.booking.com",
+      "secure-iphone-xml.booking.com"
+    ],
+    "id": 5019,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Bethesda Game Launcher Client",
+    "description": {
+      "en": "Game Launcher from Bethesda.net (#eBlocker Community)",
+      "de": "Gaming Launcher von Bethesda.net (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "api.bethesda.net",
+      "bethesda.net",
+      "buildinfo.cdp.bethesda.net",
+      "cdn.contentful.com",
+      "store.bethesda.net"
+    ],
+    "id": 5020,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Webex Teams",
+    "description": {
+      "en": "Team meeting solution by webex.com",
+      "de": "Tool für virtuelle Teams von webex.com"
+    },
+    "whitelistedDomains": [
+      "ciscospark.com",
+      "walkme.com",
+      "wbx2.com",
+      "webex.com"
+    ],
+    "id": 5021,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "German schooling system by IServ GmbH",
+    "description": {
+      "en": "German online schooling solution by iserv.de (#eBlocker Community)",
+      "de": "Deutsche Digitalisierungsplattform für Schulen der IServ GmbH (iserv.de) (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "videoconference.iserv.eu"
+    ],
+    "id": 5022,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Miro Collaboration Tool",
+    "description": {
+      "en": "team collaboration solution by miro.com",
+      "de": "Tool für Teamarbeit von miro.com"
+    },
+    "whitelistedDomains": [
+      "miro-apps.com",
+      "miro.com",
+      "mirostatic.com",
+      "realtimeboard.com"
+    ],
+    "id": 5023,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "beatport Link",
+    "description": {
+      "en": "streaming service of the DJ music portal (#eBlocker Community)",
+      "de": "Streaming Dienst des DJ Musik-Portals (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "api.beatport.com",
+      "storage.googleapis.com"
+    ],
+    "id": 5025,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Native Instruments Updater",
+    "description": {
+      "en": "DJ software, native clients (#eBlocker Community)",
+      "de": "DJ Software, installierte Klient-Software (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "api.native-instruments.com"
+    ],
+    "id": 5026,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Ledger",
+    "description": {
+      "en": "Ledger app to access the Ledger crypto hardware (#eBlocker Community)",
+      "de": "Ledger App für Zugriff auf Ledger Krypto Hardware  (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "cdn.live.ledger.com",
+      "countervalues.live.ledger.com",
+      "scriptrunner.api.live.ledger.com"
+    ],
+    "id": 5027,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Mega.nz",
+    "description": {
+      "en": "mega.nz is a common file transfer WEB service (#eBlocker Community)",
+      "de": "mega.nz ist ein beliebter WEB Dienst zum Austauschen von Dateien (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "mega.io",
+      "mega.nz",
+      "mega.co.nz"
+    ],
+    "id": 5028,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "blick.ch",
+    "description": {
+      "en": "blick.ch is a common switzerland newspaper (#eBlocker Community)",
+      "de": "blick.ch ist die bekannte Schweizer Zeitschrift (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "api.blick.ch",
+      "auth.ws.blick.ch",
+      "bcboltringier.akamaized.net",
+      "bcovlive-a.akamaihd.net",
+      "event-service.gotthard.apgsga.ch",
+      "events.ocdn.eu",
+      "ocdn.eu",
+      "www.blick.ch"
+    ],
+    "id": 5029,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Matrix",
+    "description": {
+      "en": "Matrix is a chat program (#eBlocker Community)",
+      "de": "Matrix ist ein Chat-Programm (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "synod.im",
+      "web.synod.im"
+    ],
+    "id": 5030,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Jitsi Freifunk München",
+    "description": {
+      "en": "very popular Jitsi server system (#eBlocker Community)",
+      "de": "Sehr beliebte Server-Farm für Jitsi (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "meet.ffmuc.net"
+    ],
+    "id": 5031,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "BigBlueButton",
+    "description": {
+      "en": "Open source conferencing system (#eBlocker Community)",
+      "de": "Open Source KOnferenzsystem (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "conf.ccc-ffm.de",
+      "meeting4.franken.de",
+      "serv009.bbb.zih.tu-dresden.de",
+      "bbb.cyber4edu.org"
+    ],
+    "id": 5032,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Manjaro Linux",
+    "description": {
+      "en": "Manjaro packet sources + AUR packet sources: (#eBlocker Community)",
+      "de": "Manjaro Paket Quellen + AUR Paket Quellen (#eBlocker Community)"
+    },
+    "whitelistedDomains": [
+      "aur.archlinux.org",
+      "download.eclipse.org",
+      "registry.npmjs.org",
+      "registry.yarnpkg.com",
+      "repo.manjaro.org",
+      "ftp.gwdg.de",
+      "ftp.halifax.rwth-aachen.de",
+      "ftp.desolve.ru",
+      "buchen.github.io",
+      "manjaro.moson.eu",
+      "manjaro.moson.org",
+      "mirror.23m.com",
+      "mirror.alpix.eu",
+      "mirror.moson.org",
+      "mirror.netcologne.de",
+      "repo.maven.apache.org"
+    ],
+    "id": 5033,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Ring",
+    "description": {
+      "de": "Ring Smart-Home (#eBlocker community)",
+      "en": "Ring smart home (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "neighbors-api.ring.com",
+      "api.ring.com",
+      "eventstream.ring.com",
+      "billing.ring.com",
+      "mobile-config.ring.com",
+      "oauth.ring.com",
+      "es.ring.com",
+      "nh-mobile-config.ring.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5034,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Nuki",
+    "description": {
+      "de": "Nuki Smart-Home (#eBlocker community)",
+      "en": "Nuki smart home (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "nuki.io"
+    ],
+    "whitelistedIPs": [],
+    "id": 5035,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Waipu TV",
+    "description": {
+      "de": "Waipu TV Streaming (#eBlocker community)",
+      "en": "Waipu TV streaming (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "waipu.tv",
+      "wpstr.tv"
+    ],
+    "whitelistedIPs": [],
+    "id": 5036,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Podimo Hörbücher und Podcasts",
+    "description": {
+      "de": "Podimo Hörbücher und Podcasts (#eBlocker community)",
+      "en": "Podimo audio books and podcasts (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "podimo.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5037,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "OpenstreetMap App",
+    "description": {
+      "de": "Open Streetmap.org App (#eBlocker community)",
+      "en": "Open Streetmap.org App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "openstreetmap.org"
+    ],
+    "whitelistedIPs": [],
+    "id": 5038,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "pCloud",
+    "description": {
+      "de": "pCloud Service (#eBlocker community)",
+      "en": "pCloud service (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "pcloud.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5039,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Jitsi Meet",
+    "description": {
+      "de": "Homeschooling (Videokonferenz) (#eBlocker community)",
+      "en": "Homeschooling (Videokonferenz) (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "meet.jit.si",
+      "jitsi.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 5040,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Gardena",
+    "description": {
+      "de": "Gardena (#eBlocker community)",
+      "en": "Gardena (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "bff-api.sg.dss.husqvarnagroup.net",
+      "rt-api.sg.dss.husqvarnagroup.net",
+      "app-web-assets.sg.dss.husqvarnagroup.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 5041,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Steuertipps Online Update",
+    "description": {
+      "de": "Updater von Steuertipps von Akademische Arbeitsgemeinschaft (#eBlocker community)",
+      "en": "Updater von Steuertipps von Akademische Arbeitsgemeinschaft (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "support.steuertipps.de",
+      "www.akademische.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5042,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Deutsche Post Shop",
+    "description": {
+      "de": "Deutsche Post Shop (#eBlocker community)",
+      "en": "Deutsche Post Shop (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "shop.deutschepost.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5043,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Easee Wallbox",
+    "description": {
+      "de": "EASEE Wallbox App (#eBlocker community)",
+      "en": "EASEE Wallbox App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.easee.cloud"
+    ],
+    "whitelistedIPs": [],
+    "id": 5044,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Ernstings Family App",
+    "description": {
+      "de": "Ernstings Family App (#eBlocker community)",
+      "en": "Ernstings Family App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "www.ernstings-family.de",
+      "images.ernstings-family.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5045,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Galaxus OnlineShop",
+    "description": {
+      "de": "Galaxus OnlineShop App (#eBlocker community)",
+      "en": "Galaxus OnlineShop App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "galaxus.de",
+      "id.galaxus.eu"
+    ],
+    "whitelistedIPs": [],
+    "id": 5046,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Shell ReCharge App",
+    "description": {
+      "de": "Shell ReCharge e-Tanken App (#eBlocker community)",
+      "en": "Shell ReCharge App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.thenewmotion.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5047,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "SOMFY Tahoma",
+    "description": {
+      "de": "SOMFY Tahoma (Smart Home Steuerung) (#eBlocker community)",
+      "en": "SOMFY Tahoma (Smart Home Steuerung) (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "accounts.somfy.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5048,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Scalable Capital Broker",
+    "description": {
+      "de": "Scalable Capital Broker - Aktien- und ETF-Sparpläne (#eBlocker community)",
+      "en": "Scalable Capital Broker - Stock and ETF Savings Plans (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "scalable.capital"
+    ],
+    "whitelistedIPs": [],
+    "id": 5049,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Warnwetter",
+    "description": {
+      "de": "DWD Wetter (#eBlocker community)",
+      "en": "DWD Wetter (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "app-prod-ws.warnwetter.de",
+      "maps.dwd.de",
+      "opendata.dwd.de",
+      "www.dwd.de",
+      "app-prod-static.warnwetter.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5050,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Money wiz",
+    "description": {
+      "de": "Finanz-App für die persönliche Finanzverwaltung (#eBlocker community)",
+      "en": "App for personal finances (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "wiz.money",
+      "syncbits.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5051,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "AECS Swisscard GmbH",
+    "description": {
+      "de": "Schweizer Kreditkartenanbieter (#eBlocker community)",
+      "en": "Schweizer Kreditkartenanbieter (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "swisscard.ch",
+      "netcetera-payment.ch"
+    ],
+    "whitelistedIPs": [],
+    "id": 5052,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Neon Switzerland",
+    "description": {
+      "de": "Schweizer Fintech-Bank (#eBlocker community)",
+      "en": "Schweizer Fintech-Bank (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "neon-free.ch",
+      "hbl.ch",
+      "finsign.ch"
+    ],
+    "whitelistedIPs": [],
+    "id": 5053,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Fonterra Smart Control",
+    "description": {
+      "de": "Smarte Steuerung Heizung (#eBlocker community)",
+      "en": "Smart heating control (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "fonterra-smart-control.viega.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5054,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "MyLiebherr",
+    "description": {
+      "de": "My Liebherr App (#eBlocker community)",
+      "en": "My Liebherr App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "liebherr.com",
+      "myliebherr.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5055,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Aral Fuel & Charge App",
+    "description": {
+      "de": "Aral Fuel & Charge App (#eBlocker community)",
+      "en": "Aral Fuel & Charge e-Tankstellen App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "appservices.trafineo.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5056,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Blau.DE",
+    "description": {
+      "de": "Blau.DE App (#eBlocker community)",
+      "en": "Blau.DE App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "o2online.de",
+      "static2-blau.o9.de",
+      "blau.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5057,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Chefkoch App",
+    "description": {
+      "de": "Chefkoch App (#eBlocker community)",
+      "en": "Chefkoch App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "chefkoch.de",
+      "api.chefkoch.de",
+      "img.chefkoch-cdn.de",
+      "video.chefkoch-cdn.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5058,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "DM Drogerie App",
+    "description": {
+      "de": "DM Drogerie App (#eBlocker community)",
+      "en": "DM Drogerie App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "services.dm.de",
+      "con.mm.dm.de",
+      "cdn02.dm-static.com",
+      "products.dm.de",
+      "login.dm.de",
+      "cdn02.dm-static.com",
+      "store-data-service.services.dmtech.com",
+      "assets.dm.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5059,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "C-Infekt-Info",
+    "description": {
+      "de": "Corona-Infekt-Info App (#eBlocker community)",
+      "en": "Corona-Infekt-Info App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "endpoint.infektinfo.com",
+      "infektinfoapi.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5060,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "eHomeLife App",
+    "description": {
+      "de": "eHomeLife (Meross) Smart Home App (#eBlocker community)",
+      "en": "eHomeLife (Meross) Smart Home App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "iot.meross.com",
+      "mqtt-alter.meross.com",
+      "mqtt.meross.com",
+      "mqtt-eu-alter.meross.com",
+      "mqtt-eu.meross.com",
+      "eu-iot.meross.com",
+      "mqtt-eu-2.meross.com",
+      "iotx-eu.meross.com",
+      "mqtt-eu-3.meross.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5061,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Groupon App",
+    "description": {
+      "de": "Groupon Gutscheine und Deals App  (#eBlocker community)",
+      "en": "Groupon Vouchers and deals App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "grouponcdn.com",
+      "groupon.com",
+      "groupon.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5062,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "iBood",
+    "description": {
+      "de": "iBood App (#eBlocker community)",
+      "en": "iBood App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "images0.ibood.com",
+      "api.ibood.io",
+      "next.production.go.ibood.cloud",
+      "feeds.ibood.com",
+      "api.ibood.com",
+      "tq2.ibood.com",
+      "beta.ibood.com",
+      "www.ibood.com",
+      "my.ibood.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5063,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Macrium Reflect",
+    "description": {
+      "de": "Macrium Reflect (#eBlocker community)",
+      "en": "Macrium Reflect (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "updatesnl.macrium.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5064,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Mobilet ParkApp",
+    "description": {
+      "de": "Mobilet mobiles Parken (#eBlocker community)",
+      "en": "Mobilet mobiles Parken (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "mobilet.pl",
+      "mobilet.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5065,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "WD MyCloud App",
+    "description": {
+      "de": "MyCloud App von Western Digital (#eBlocker community)",
+      "en": "MyCloud App von Western Digital (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "mycloud.com",
+      "wdckeystone.com",
+      "auth0.accounts.westerndigital.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5066,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Foscam",
+    "description": {
+      "de": "Foscam Webcam (#eBlocker community)",
+      "en": "Foscam Webcam (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.myfoscam.cn",
+      "api.myfoscam.com",
+      "security-api.myfoscam.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5067,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Betty Bossi App",
+    "description": {
+      "de": "Beliebte, schweizer Koch-Rezept-Sammlung.  (#eBlocker community)",
+      "en": "Swiss cooking recipes (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "www.bettybossi.ch",
+      "app.bberp.ch"
+    ],
+    "whitelistedIPs": [],
+    "id": 5068,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Spond APP",
+    "description": {
+      "de": "Spond; Mannschaft organisieren (#eBlocker community)",
+      "en": "Spond; Mannschaft organisieren (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "chat.spond.com",
+      "spond.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5069,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Miele@home",
+    "description": {
+      "de": "Home Automation von Miele. (#eBlocker community)",
+      "en": "Miele home automation. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "rest.domestic.miele-iot.com",
+      "rest.qs.domestic.miele-iot.com",
+      "www.miele.com",
+      "rest-eu.domestic.miele-iot.com",
+      "cdn.api.miele.com",
+      "miele.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5070,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Zalando.nl",
+    "description": {
+      "de": "Zalando Homepage für Holland (#eBlocker community)",
+      "en": "Dutch Zalando website (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "www.zalando.nl"
+    ],
+    "whitelistedIPs": [],
+    "id": 5071,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Bol.com",
+    "description": {
+      "de": "Bol.com app (#eBlocker community)",
+      "en": "Bol.com app (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "app.bol.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5072,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "My BMW",
+    "description": {
+      "de": "BMW Auto App (#eBlocker community)",
+      "en": "BMW car app (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.countly.bmwgroup.com",
+      "cocoapi.bmwgroup.com",
+      "www.bmw.de",
+      "customer.bmwgroup.com",
+      "mybmwapp.caas.bmw"
+    ],
+    "whitelistedIPs": [],
+    "id": 5073,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Disney App",
+    "description": {
+      "de": "Disney App (iOS) (#eBlocker community)",
+      "en": "Disney App (iOS) (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "cdn.registerdisney.go.com",
+      "disney.my.sentry.io",
+      "disney.playback.edge.bamgrid.com",
+      "prod-ripcut-delivery.disney-plus.net",
+      "appconfigs.disney-plus.net",
+      "disney.content.edge.bamgrid.com",
+      "disney.api.edge.bamgrid.com",
+      "disney.connections.edge.bamgrid.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5074,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Next Bike",
+    "description": {
+      "de": "Fahrradverleih (#eBlocker community)",
+      "en": "Fahrradverleih (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.nextbike.net",
+      "my.nextbike.net",
+      "websites.nextbike.net",
+      "static.nextbike.net",
+      "webview.nextbike.net",
+      "maps.nextbike.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 5075,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Fairtiq",
+    "description": {
+      "de": "Fairtiq App für online ÖNV Ticket System (#eBlocker community)",
+      "en": "Fairtiq App ÖNV Ticket System (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.fairtiq.com",
+      "pay.datatrans.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5077,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Atom",
+    "description": {
+      "de": "Open-Source-Texteditor (#eBlocker community)",
+      "en": "Open-Source-Texteditor (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "atom.io"
+    ],
+    "whitelistedIPs": [],
+    "id": 5078,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Balena",
+    "description": {
+      "de": "Open-Source-Software für bootfähige ISO-Dateien zu erstellen. (#eBlocker community)",
+      "en": "Open-Source-Software für bootfähige ISO-Dateien zu erstellen. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "balena.io"
+    ],
+    "whitelistedIPs": [],
+    "id": 5079,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Padlet",
+    "description": {
+      "de": "Fernunterricht (#eBlocker community)",
+      "en": "Homeschooling (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "padlet.com",
+      "padletcdn.com",
+      "padlet.pics",
+      "padlet.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 5080,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "LinkedIn App",
+    "description": {
+      "de": "LinkedIn App (#eBlocker community)",
+      "en": "LinkedIn App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "media.licdn.com",
+      "linkedin.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5081,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "TikTok",
+    "description": {
+      "de": "TikTok App (#eBlocker community)",
+      "en": "TikTok App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "tiktokcdn.com",
+      "tiktokv.com",
+      "tiktok.com",
+      "tiktokcdn-us.com",
+      "tiktokcdn-eu.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5082,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "One Cumulus (Visa)",
+    "description": {
+      "de": "Visa Kreditkarte von viseca.ch (#eBlocker community)",
+      "en": "Visa credit card by viseca.ch (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "ubt.one.viseca.ch",
+      "auth.one.viseca.ch",
+      "tb-private.one.viseca.ch",
+      "tb-public.one.viseca.ch"
+    ],
+    "whitelistedIPs": [],
+    "id": 5083,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "EpicLauncher_Downloads",
+    "description": {
+      "de": "Epic Games gaming launcher - Downloads (#eBlocker community)",
+      "en": "Epic Games gaming launcher - Downloads (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "download.epicgames.com",
+      "datarouter.ol.epicgames.com",
+      "epicgames-download1.akamaized.net",
+      "fastly-download.epicgames.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5084,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Brave",
+    "description": {
+      "de": "Brave ist ein open-source Webbrowser für die Betriebssysteme Windows, macOS, Linux, Android und für Apple iOS. (#eBlocker community)",
+      "en": "Brave ist ein open-source Webbrowser für die Betriebssysteme Windows, macOS, Linux, Android und für Apple iOS. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "brave.com",
+      "updates.bravesoftware.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5085,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Asana",
+    "description": {
+      "de": "Web- und mobile Arbeitsmanagement-Plattform, die Teams bei der Organisation und Verwaltung ihrer Arbeit unterstützt. (#eBlocker community)",
+      "en": "Web- und mobile Arbeitsmanagement-Plattform, die Teams bei der Organisation und Verwaltung ihrer Arbeit unterstützt. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "asana.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5086,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Revolut",
+    "description": {
+      "de": "Fintech-App für digitale Bankdienstleistungen (#eBlocker community)",
+      "en": "Fintech-App für digitale Bankdienstleistungen (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "revolut.com",
+      "revolutlabs.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5087,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Crypto.com",
+    "description": {
+      "de": "Internationale Kryptobörse (#eBlocker community)",
+      "en": "Internationale Kryptobörse (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "crypto.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5088,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Mercedes me",
+    "description": {
+      "de": "Mercedes Me App (#eBlocker community)",
+      "en": "Keine Beschreibung vorhanden. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "mercedes-benz.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5089,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "AOK",
+    "description": {
+      "de": "AOK (#eBlocker community)",
+      "en": "AOK (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "www.aok.de",
+      "aok.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5090,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "LePro LamoUX",
+    "description": {
+      "de": "LePro LamoUX smart (#eBlocker community)",
+      "en": "LePro LamoUX smart (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "tuyaeu.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5091,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Microsoft PowerApps",
+    "description": {
+      "de": "Microsoft PowerApps  (#eBlocker community)",
+      "en": "Microsoft PowerApps (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.powerapps.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5092,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Nina Warn-App",
+    "description": {
+      "de": "Nina Warn-App  (#eBlocker community)",
+      "en": "Nina Warn-App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "bund.de",
+      "itzbund.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5093,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Generali",
+    "description": {
+      "de": "Internationaler Versicherungskonzern (#eBlocker community)",
+      "en": "International insurance group (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "nevisproxy.generali.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5095,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Zalando",
+    "description": {
+      "de": "Schuhe, Mode und Accessoires online kaufen (#eBlocker community)",
+      "en": "Shoes and Fashion Online (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "zalando.com",
+      "zalando.ch"
+    ],
+    "whitelistedIPs": [],
+    "id": 5097,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Hamburger Verkehrsverbund App",
+    "description": {
+      "de": "Hamburger Verkehrsverbund App (#eBlocker community)",
+      "en": "Hamburg transport association (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "hvv-app.hafas.de",
+      "shop.hvv.de",
+      "gti.geofox.de",
+      "api.mapbox.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5098,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Staatsloterij",
+    "description": {
+      "de": "Holländische Lotterie (#eBlocker community)",
+      "en": "Nederlandse loterij app (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "nlo-api.nederlandseloterij.nl",
+      "bff.prd.gateway.nederlandseloterij.nl",
+      "nlo-api.nederlandseloterij.nl"
+    ],
+    "whitelistedIPs": [],
+    "id": 5099,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Nest",
+    "description": {
+      "de": "Dein Smart Home mit Google Nest (#eBlocker community)",
+      "en": "Google Nest, build your connected home (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "nexusapi-eu1.dropcam.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5100,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Unifi",
+    "description": {
+      "de": "Ubiquiti UniFi - Innovatives, skalierbares LAN/WLAN (#eBlocker community)",
+      "en": "Ubiquiti UniFi - Innovative, Scalable LAN/WLAN (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "status.ui.com",
+      "sso.ui.com",
+      "config.ubnt.com",
+      "cloudaccess.svc.ubnt.com",
+      "loudaccess.svc.ubnt.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5101,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Xiaomi",
+    "description": {
+      "de": "Xiaomi API (#eBlocker community)",
+      "en": "Xiaomi API (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "de.api.io.mi.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5102,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "1822direkt",
+    "description": {
+      "de": "1822direkt - Ein Unternehmen der Frankfurter Sparkasse (#eBlocker community)",
+      "en": "1822direkt - A company of Frankfurter Sparkasse (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "1822direkt-banking.de",
+      "1822direkt.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5103,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Accor Hotels App",
+    "description": {
+      "de": "Accor Hotels App (#eBlocker community)",
+      "en": "Accor hotels app (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "cpt-static.gannettdigital.com",
+      "www.gannett-cdn.com",
+      "all.accor.com",
+      "secure.accor.com",
+      "group.accor.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5104,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "AirVPN",
+    "description": {
+      "de": "Ein auf OpenVPN und WireGuard basierendes VPN, das von Aktivisten zur Verteidigung der Netzneutralität, der Privatsphäre und gegen Zensur betrieben wird. (#eBlocker community)",
+      "en": "An OpenVPN and WireGuard based VPN operated by activists in defense of net neutrality, privacy and against censorship. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "airvpn.org",
+      "vpn.airdns.org"
+    ],
+    "whitelistedIPs": [],
+    "id": 5105,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Among Us",
+    "description": {
+      "de": "Online-Mehrspieler-Deduktionsspiel (#eBlocker community)",
+      "en": "Online-Mehrspieler-Deduktionsspiel (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "matchmaker-eu.among.us"
+    ],
+    "whitelistedIPs": [],
+    "id": 5106,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Barclays",
+    "description": {
+      "de": "Kredit Unternehmen (#eBlocker community)",
+      "en": "Kredit Unternehmen (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "barclays.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5107,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "BKK Pfaff",
+    "description": {
+      "de": "Service App Krankenkasse (#eBlocker community)",
+      "en": "German health insurance (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "appservice.bkk-pfaff.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5108,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Blitzer.de App",
+    "description": {
+      "de": "Meldungen in Europa über Blitzer, Unfälle, Pannen, Stauenden, Gefahren und Baustellen. (#eBlocker community)",
+      "en": "Europe news about speed cameras, accidents, breakdowns, traffic jams, hazards and road works. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "blitzerde-tiles.graphmasters.net",
+      "short.blitzer.de",
+      "tiles.graphmasters.net",
+      "blitzerde-bff.atudo.net",
+      "production-gm.picard.atudo.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 5109,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Cloudflare Challenges",
+    "description": {
+      "de": "CAPTCHA Lösung von Cloudflare (#eBlocker community)",
+      "en": "CAPTCHA Lösung von Cloudflare (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "challenges.cloudflare.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5111,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Zoe Schule",
+    "description": {
+      "de": "Cornelsen Schulbuchverlag (#eBlocker community)",
+      "en": "Cornelsen school books (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "id.cornelsen.de",
+      "klett.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5112,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "DAK Gesundheit App",
+    "description": {
+      "de": "DAK Krankenkasse (#eBlocker community)",
+      "en": "DAK Krankenkasse (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.dak.de",
+      "iam-bms.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5113,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Datatheorem",
+    "description": {
+      "de": "Anbieter von Anwendungssicherheit (#eBlocker community)",
+      "en": "Anbieter von Anwendungssicherheit (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "datatheorem.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5114,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "DB Streckenagent",
+    "description": {
+      "de": "DB Streckenagent App (#eBlocker community)",
+      "en": "DB Streckenagent App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.prd.mobimeo.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5115,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Deepl",
+    "description": {
+      "de": " (#eBlocker community)",
+      "en": " (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "deepl.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5116,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "DELL Support Assist",
+    "description": {
+      "de": "DELL Support Assist (Treiber, Updates, etc.) (#eBlocker community)",
+      "en": "DELL Support Assist (Drivers, updates, etc.) (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "dellupdater.dell.com",
+      "downloads.dell.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5117,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Deutsche Glasfaser",
+    "description": {
+      "de": "Deutsche Glasfaser (#eBlocker community)",
+      "en": "Deutsche Glasfaser (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "deutsche-glasfaser.de",
+      "speedtestcustom.com",
+      "speedtest.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 5118,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Deutsche Leasing App",
+    "description": {
+      "de": "Deutsche Leasing Android App (#eBlocker community)",
+      "en": "Deutsche Leasing Fleet Android App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "dl-fleet-app-prd.deutsche-leasing.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5119,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "DeviantArt",
+    "description": {
+      "de": " (#eBlocker community)",
+      "en": " (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "www.deviantart.com",
+      "e.deviantart.net",
+      "a.deviantart.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 5120,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "EasyJet",
+    "description": {
+      "de": "Fluggesellschaft (#eBlocker community)",
+      "en": "Fluggesellschaft (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "prod.ej.mttnow.com",
+      "platform.mttnow.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5122,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Ebay Kleinanzeigen",
+    "description": {
+      "de": "Ebay Kleinanzeigen (#eBlocker community)",
+      "en": "Ebay Kleinanzeigen (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "gateway.kleinanzeigen.de",
+      "api.kleinanzeigen.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5123,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Etsy",
+    "description": {
+      "de": "Online-Marktplatz für den Kauf und Verkauf von handgemachten Produkten, Vintage und Künstlerbedarf. (#eBlocker community)",
+      "en": "Online-Marktplatz für den Kauf und Verkauf von handgemachten Produkten, Vintage und Künstlerbedarf. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "openapi.etsy.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5124,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "eufy",
+    "description": {
+      "de": "Keine Beschreibung vorhanden. (#eBlocker community)",
+      "en": "Keine Beschreibung vorhanden. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "security-app-eu.eufylife.com",
+      "security-mall-eu.eufylife.com",
+      "security-mqtt-eu.eufylife.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5125,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "F-Droid Store",
+    "description": {
+      "de": "App Store (#eBlocker community)",
+      "en": "App Store (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "f-droid.org",
+      "fdroid.bromite.org",
+      "fdroid.tetaneutral.net",
+      "ftp.fau.de",
+      "cctg.codeberg.page",
+      "bubu1.eu"
+    ],
+    "whitelistedIPs": [],
+    "id": 5126,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Freeletics",
+    "description": {
+      "de": "HIIT Workouts (#eBlocker community)",
+      "en": "HIIT Workouts (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "assets.freeletics.com",
+      "tracking-api.freeletics.com",
+      "api.freeletics.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5127,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Garmin",
+    "description": {
+      "de": " (#eBlocker community)",
+      "en": " (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "pns.ciq.garmin.com",
+      "omt.garmin.com",
+      "api.gcs.garmin.com",
+      "connectapi.garmin.com",
+      "connect.garmin.com",
+      "static.garmincdn.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5128,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "IDEALO",
+    "description": {
+      "de": "IDEALO Shopping App auf Android - App geht ohne nicht, wenn HTTPS aktiviert ist (#eBlocker community)",
+      "en": "IDEALO Shopping App on Android – App does not work without, when https is enabled (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "app.idealo.de",
+      "cdn.privacy-mgmt.com",
+      "pubws.idealo.de",
+      "cdn.idealo.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5129,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "ING NL APP",
+    "description": {
+      "de": " (#eBlocker community)",
+      "en": "Dutch ING banking app (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.mobile.ing.nl",
+      "jsmon.ingbank.nl",
+      "services.ing.nl"
+    ],
+    "whitelistedIPs": [],
+    "id": 5131,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Jodel",
+    "description": {
+      "de": "Social Media APP (#eBlocker community)",
+      "en": "Social Media APP (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "jodelapis.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5132,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Kostal Solar Portal APP",
+    "description": {
+      "de": "Kostal Solar Portal für Solar Pannels (#eBlocker community)",
+      "en": "Kostal Solar Portal for solar pannels (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "kostal-api.solytic.com",
+      "news-api.kostal-solar-electric.com",
+      "www.kostal-solar-portal.de",
+      "api.solytic.com",
+      "kostal-solar-portal.com",
+      "dataservice.accuweather.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5133,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Lenovo App",
+    "description": {
+      "de": "Lenovo Software (Updates, Treiber, etc.) (#eBlocker community)",
+      "en": "Lenovo Software (Updates, drivers etc.) (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "lenovo.com",
+      "lenovomm.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5134,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "LidlPlus App",
+    "description": {
+      "de": "LidlPlus App (#eBlocker community)",
+      "en": "LidlPlus App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "appgateway.lidlplus.com",
+      "accounts.lidl.com",
+      "segments.lidlplus.com",
+      "profile.lidlplus.com",
+      "branddeals.lidlplus.com",
+      "related-products.lidlplus.com",
+      "localization.lidlplus.com",
+      "surveys.lidlplus.com",
+      "eticket.lidlplus.com",
+      "payments.lidlplus.com",
+      "home.lidlplus.com",
+      "coupons.lidlplus.com",
+      "tipcards.lidlplus.com",
+      "banners.lidlplus.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5135,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Logitech Options",
+    "description": {
+      "de": "Logitech Options (#eBlocker community)",
+      "en": "Logitech Options (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "updates.logitech.com",
+      "accounts.logi.com",
+      "optionsbackup.logitech.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5137,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Marley Spoon",
+    "description": {
+      "de": "Marley Spoon (#eBlocker community)",
+      "en": "Marley Spoon (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "marleyspoon.eu.qualtrics.com",
+      "api.marleyspoon.com",
+      "marleyspoon.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5139,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Microsoft Edge Insider",
+    "description": {
+      "de": "Microsoft Edge Insider (#eBlocker community)",
+      "en": "Microsoft Edge Insider (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "www.microsoftedgeinsider.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5141,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Tomtom Mydrive",
+    "description": {
+      "de": "Tomtom Mydrive (#eBlocker community)",
+      "en": "Tomtom Mydrive app (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "mapstyles.mydrive.tomtom.com",
+      "a.api.tomtom.com",
+      "api.navcloud.tomtom.com",
+      "api.mydrive.tomtom.com",
+      "api.tomtom.com",
+      "oauth.tomtom.com",
+      "api.mapbox.com",
+      "ajax.googleapis.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5143,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "N26",
+    "description": {
+      "de": "Deutsches Fintech Unternehmen (#eBlocker community)",
+      "en": "Deutsches Fintech Unternehmen (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "tech26.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5144,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Nanoleaf",
+    "description": {
+      "de": " (#eBlocker community)",
+      "en": " (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "collector.nanoleaf.me",
+      "firmware.nanoleaf.me",
+      "my.nanoleaf.me"
+    ],
+    "whitelistedIPs": [],
+    "id": 5145,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Nebenan.de App",
+    "description": {
+      "de": "Nebenan.de Nachbarschaftshilfe App (#eBlocker community)",
+      "en": "Nebenan.de App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.nebenan.de",
+      "images.nebenan.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5146,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Neon",
+    "description": {
+      "de": "Schweizer Fintech (#eBlocker community)",
+      "en": "Schweizer Fintech (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "hbl.ch",
+      "api.finsign.ch",
+      "status.neon-free.ch"
+    ],
+    "whitelistedIPs": [],
+    "id": 5147,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Netcetera",
+    "description": {
+      "de": "Schweizer Zahlungsökosystem für verschieden Banken und Kreditkartenanbieter (#eBlocker community)",
+      "en": "Zahlungsökosystem für verschieden Banken (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "netcetera-payment.ch"
+    ],
+    "whitelistedIPs": [],
+    "id": 5148,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Nord VPN",
+    "description": {
+      "de": "VPN-Anbieter (#eBlocker community)",
+      "en": "VPN-Anbieter (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "napps-1.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5149,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "OnePlus App",
+    "description": {
+      "de": "OnePlus Handy support URLs (#eBlocker community)",
+      "en": "OnePlus mobile phone support URLs (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "apup.1plus.io",
+      "olcfg.1plus.io",
+      "open.oneplus.net",
+      "gateway.oneplus.net",
+      "osx.oneplus.net",
+      "weather.1plus.io",
+      "otag.h2os.com",
+      "onebackend.de",
+      "otaafsg-cost.h2os.com",
+      "mdm.oneplus.net",
+      "oaf-api.1plus.io"
+    ],
+    "whitelistedIPs": [],
+    "id": 5150,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Ookla Speedtest",
+    "description": {
+      "de": "Speedtest App auf dem AppleTV (#eBlocker community)",
+      "en": "Speedtest App auf dem AppleTV (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "www.speedtest.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 5151,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Oura",
+    "description": {
+      "de": "Ouraring (#eBlocker community)",
+      "en": "Ouraring (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "www.ouraring.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5152,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Pen Up Samsung Galaxy S22 Ultra 5G",
+    "description": {
+      "de": " (#eBlocker community)",
+      "en": " (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "image.penup.com",
+      "notice.penup.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5154,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Philips HUE",
+    "description": {
+      "de": "Keine Beschreibung vorhanden. (#eBlocker community)",
+      "en": "Keine Beschreibung vorhanden. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "discovery.meethue.com",
+      "auth.meethue.com",
+      "api.account.meethue.com",
+      "labs.meethue.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5155,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Philips NutriU App",
+    "description": {
+      "de": "PHILIPS NutriU App (#eBlocker community)",
+      "en": "PHILIPS NutriU App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "accounts.philips.com",
+      "backend.ka.philips.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5156,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Ricardo App",
+    "description": {
+      "de": "Ricardo Schweiz (#eBlocker community)",
+      "en": "Ricardo Switzerland (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.ricardo.ch",
+      "img.ricardostatic.ch",
+      "www.ricardo.ch"
+    ],
+    "whitelistedIPs": [],
+    "id": 5157,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Roblox",
+    "description": {
+      "de": "Roblox Spiel (#eBlocker community)",
+      "en": "Roblox Spiel (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "roblox.com",
+      "rbxcdn.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5158,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "SaltEdge",
+    "description": {
+      "de": "API-Finanzplattform mit PSD2 und Open-Banking-Lösungen (#eBlocker community)",
+      "en": "API-Finanzplattform mit PSD2 und Open-Banking-Lösungen (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "saltedge.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5159,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "SnapKit",
+    "description": {
+      "de": "Entwicklerplatform von SnapChat (#eBlocker community)",
+      "en": "Entwicklerplatform von SnapChat (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "snapkit.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5160,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Sonect",
+    "description": {
+      "de": "Per Smartphone Bargeld abheben. (#eBlocker community)",
+      "en": "Per Smartphone Bargeld abheben. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "sonect.io"
+    ],
+    "whitelistedIPs": [],
+    "id": 5161,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Sonos",
+    "description": {
+      "de": "Soundsystem (#eBlocker community)",
+      "en": "Soundsystem (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "voiceconfig.ws.sonos.com",
+      "oauth.ws.sonos.com",
+      "service-catalog.ws.sonos.com",
+      "spotify-v5.ws.sonos.com",
+      "voiceconfig.ws.sonos.com",
+      "api.ws.sonos.com",
+      "msmetrics.ws.sonos.com",
+      "sslvalidator.sonos.com",
+      "account.ws.sonos.com",
+      "dcapps.ws.sonos.com",
+      "mnfts.ws.sonos.com",
+      "sonos-pmap.ws.sonos.com",
+      "sonos-img.ws.sonos.com",
+      "sonar.ws.sonos.com",
+      "login.sonos.com",
+      "transfer.ws.sonos.com",
+      "sonos.com",
+      "sali.sonos.radio",
+      "sonos.audible.com",
+      "sonosradio.imgix.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 5162,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Starbucks",
+    "description": {
+      "de": "Kaffehauskette (#eBlocker community)",
+      "en": "Kaffehauskette (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "openapi.starbucks.eu"
+    ],
+    "whitelistedIPs": [],
+    "id": 5163,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Stripe",
+    "description": {
+      "de": "Internationaler Zahlungsanbieter (#eBlocker community)",
+      "en": "Internationaler Zahlungsanbieter (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "stripecdn.com",
+      "stripe.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5164,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "SWR1",
+    "description": {
+      "de": "SWR1 Radio (#eBlocker community)",
+      "en": "SWR1 Radio (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "liveradio.swr.de",
+      "rndfnk.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5165,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "SyncBits",
+    "description": {
+      "de": "Sync for MoneyWiz APP (#eBlocker community)",
+      "en": "Sync for MoneyWiz APP (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "syncbits.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5166,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Taxfix",
+    "description": {
+      "de": "Elektronische Steuererklärung (#eBlocker community)",
+      "en": "Elektronische Steuererklärung (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "app.taxfix.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5167,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Trade Republic",
+    "description": {
+      "de": " (#eBlocker community)",
+      "en": " (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.traderepublic.com",
+      "assets.traderepublic.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5170,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Trezor Suite",
+    "description": {
+      "de": "Keine Beschreibung vorhanden. (#eBlocker community)",
+      "en": "Keine Beschreibung vorhanden. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "btc3.trezor.io",
+      "btc5.trezor.io",
+      "btc2.trezor.io",
+      "btc3.trezor.io",
+      "btc5.trezor.io",
+      "eth1.trezor.io",
+      "eth2.trezor.io",
+      "exchange.api.bity.com",
+      "news.trezor.io",
+      "zec1.trezor.io",
+      "zec2.trezor.io",
+      "zec3.trezor.io",
+      "zec4.trezor.io",
+      "zec5.trezor.io",
+      "s-west.ripple.com",
+      "s1.ripple.com",
+      "github-releases.githubusercontent.com",
+      "s-east.ripple.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5171,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Twinkly",
+    "description": {
+      "de": " (#eBlocker community)",
+      "en": " (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.twinkly.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5172,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Twint",
+    "description": {
+      "de": "Digitales Bargeld der Schweiz. (#eBlocker community)",
+      "en": "Digitales Bargeld der Schweiz. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "twint.ch"
+    ],
+    "whitelistedIPs": [],
+    "id": 5173,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Uphold",
+    "description": {
+      "de": "cloudbasierte Finanzdienstleistungsplattform (#eBlocker community)",
+      "en": "cloudbasierte Finanzdienstleistungsplattform (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.uphold.com",
+      "wallet.uphold.com",
+      "trends.uphold.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5174,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "ViaMichelin App",
+    "description": {
+      "de": "ViaMichelin App (#eBlocker community)",
+      "en": "ViaMichelin App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "mobile.viamichelin.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5176,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Vimeo",
+    "description": {
+      "de": "Weltweites Videoportal (#eBlocker community)",
+      "en": "Weltweites Videoportal (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "vimeo.com",
+      "vimeocdn.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5177,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Web.de",
+    "description": {
+      "de": "German Email Provider (#eBlocker community)",
+      "en": "German Email Provider (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "dl.web.de",
+      "traco.web.de",
+      "hsp.web.de",
+      "cocos-lookup.web.de",
+      "www.web.de",
+      "oauth2.web.de",
+      "smadi.web.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5178,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Wetterdienst",
+    "description": {
+      "de": "Zugriff auf auf Deutschen Wetterdienst (#eBlocker community)",
+      "en": "Keine Beschreibung vorhanden. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "wetterdienst.de",
+      "dwd.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5179,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Wise",
+    "description": {
+      "de": "Online-Geldtransfer-Service für Fremdwährungen (#eBlocker community)",
+      "en": "Online-Geldtransfer-Service für Fremdwährungen (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "wise.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5180,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Zigbee2MQTT",
+    "description": {
+      "de": "Zigbee to MQTT Service (#eBlocker community)",
+      "en": "Zigbee to MQTT Service (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "www.zigbee2mqtt.io"
+    ],
+    "whitelistedIPs": [],
+    "id": 5181,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Duolingo",
+    "description": {
+      "de": "Duolingo (#eBlocker community)",
+      "en": "Duolingo (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "duolingo.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5182,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Pocket Casts",
+    "description": {
+      "de": "Podcast Anbieter (#eBlocker community)",
+      "en": "Podcast Anbieter (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "podcast.nexx.cloud",
+      "refresh.pocketcasts.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5183,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "NPM",
+    "description": {
+      "de": "Paketmanager für die JavaScript-Laufzeitumgebung Node.js (#eBlocker community)",
+      "en": "Paketmanager für die JavaScript-Laufzeitumgebung Node.js (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "registry.npmmirror.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5184,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Klarna",
+    "description": {
+      "de": "Klarna Service (#eBlocker community)",
+      "en": "Klarna Service (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "app-api.klarna.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5185,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Keepa",
+    "description": {
+      "de": "Vergleichsportal (#eBlocker community)",
+      "en": "Vergleichsportal (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "dyn.keepa.com",
+      "push.keepa.com",
+      "cdn.keepa.com",
+      "push2.keepa.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5186,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Huawei",
+    "description": {
+      "de": "Keine Beschreibung vorhanden. (#eBlocker community)",
+      "en": "Keine Beschreibung vorhanden. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "cloud.huawei.com",
+      "cloud.huawei.com.cn",
+      "api.cloud.huawei.com",
+      "hicloud.com",
+      "cbg-app.huawei.com",
+      "connectivitycheck.cbg-app.huawei.com",
+      "huawei.com",
+      "hicloud.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5187,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Home Assistant",
+    "description": {
+      "de": "Smart Home Control (#eBlocker community)",
+      "en": "Keine Beschreibung vorhanden. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "nabu.casa",
+      "ui.nabu.casa",
+      "nabu.casa"
+    ],
+    "whitelistedIPs": [],
+    "id": 5188,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Health Sync",
+    "description": {
+      "de": "Service zum synchronisieren von Fitness-Daten zwischen verschiedenen Apps (#eBlocker community)",
+      "en": "Service zum synchronisieren von Fitness-Daten zwischen verschiedenen Apps (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "server.healthsync.app"
+    ],
+    "whitelistedIPs": [],
+    "id": 5189,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Globetrotter",
+    "description": {
+      "de": "Outdoor Shop (#eBlocker community)",
+      "en": "Outdoor Shop (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "www.globetrotter.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5190,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "DJI",
+    "description": {
+      "de": "Technologieunternehmen für u.a. Drohnen und Stabilisatoren (#eBlocker community)",
+      "en": "Technologieunternehmen für u.a. Drohnen und Stabilisatoren (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "service-adhoc.dji.com",
+      "account-api.dji.com",
+      "s.dji.com",
+      "api.djiservice.org",
+      "mydjiflight.dji.com",
+      "store.dji.com",
+      "m.dji.com",
+      "product.dji.com",
+      "account.dji.com",
+      "djicdn.com",
+      "terra-2-g.djicdn.com",
+      "djigo-hk.djiservice.org",
+      "dji-official-fe.djicdn.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5191,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Amazon (Alexa)",
+    "description": {
+      "de": "Amazon (Alexa) (#eBlocker community)",
+      "en": "Amazon (Alexa) (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.amazonalexa.com",
+      "api.eu.amazonalexa.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5192,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "About You",
+    "description": {
+      "de": "Online Handel für Mode (#eBlocker community)",
+      "en": "Online Handel für Mode (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "cdn.aboutstatic.com",
+      "m.aboutyou.de",
+      "tadarida.aboutyou.com",
+      "grips.aboutyou.com",
+      "api-cloud.aboutyou.de",
+      "cdn.aboutyou.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5193,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Kleinanzeigen",
+    "description": {
+      "de": "Marktplatz (#eBlocker community)",
+      "en": "Marktplatz (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "gateway.kleinanzeigen.de",
+      "api.kleinanzeigen.de",
+      "img.kleinanzeigen.de",
+      "gateway.ebay-kleinanzeigen.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5194,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Bank Austria UNICREDIT",
+    "description": {
+      "de": "Internet Banking Bank Austria (#eBlocker community)",
+      "en": "Internet Banking Bank Austria (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "bankaustria.at"
+    ],
+    "whitelistedIPs": [],
+    "id": 5195,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "WebUntis",
+    "description": {
+      "de": "Webuntis für Schulinformationen (#eBlocker community)",
+      "en": "Webuntis für Schulinformationen (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "webuntis.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5196,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Digitales Amt Österreich",
+    "description": {
+      "de": "Digitales Amt Österreich (#eBlocker community)",
+      "en": "Digitales Amt Österreich (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "oesterreich.gv.at"
+    ],
+    "whitelistedIPs": [],
+    "id": 5197,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Aftership",
+    "description": {
+      "de": "Anbieter zum Verfolgen mehrerer Packet Zustellungsunternehmen (#eBlocker community)",
+      "en": "Anbieter zum Verfolgen mehrerer Packet Zustellungsunternehmen (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "mobile.aftership.com",
+      "assets.aftership.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5199,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Amazon Kreditkarte",
+    "description": {
+      "de": "Amazon Kreditkarte (#eBlocker community)",
+      "en": "Amazon Kreditkarte (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "amazon.lbb.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5200,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Netatmo Wetterstation",
+    "description": {
+      "de": "Smarte Wetterstation (#eBlocker community)",
+      "en": "Smart weather station (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "netatmo.com",
+      "netatmo.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 5201,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "MyFRITZ!",
+    "description": {
+      "de": "MyFRITZ!-Webzugang (AVM Router) (#eBlocker community)",
+      "en": "MyFRITZ! web access (AVM router) (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "myfritz.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 5202,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "FRONIUS Webportal",
+    "description": {
+      "de": "Webportal PV-Anlage (FRONIUS) (#eBlocker community)",
+      "en": "Web portal PV system (FRONIUS) (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "solarweb.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5203,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "ETG24",
+    "description": {
+      "de": "Immobilienverwaltung / Eigentümerportal (#eBlocker community)",
+      "en": "Real estate management (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "etg24.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5204,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "ANTON",
+    "description": {
+      "de": "Lernplattform - Interaktives Schulbuch und Arbeitsheft (#eBlocker community)",
+      "en": "Learning platform (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "anton.app"
+    ],
+    "whitelistedIPs": [],
+    "id": 5205,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "WetterOnline",
+    "description": {
+      "de": "WetterOnline und RegenRadar",
+      "en": "WetterOnline and RegenRadar"
+    },
+    "whitelistedDomains": [
+      "wetteronline.de",
+      "wo-cloud.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5206,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Strato",
+    "description": {
+      "de": "Server Anbieter (#eBlocker community)",
+      "en": "Server Anbieter (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "strato.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5207,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Raspberry Pi Imager",
+    "description": {
+      "de": "Imager for Raspberry (#eBlocker community)",
+      "en": "Imager for Raspberry (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "downloads.raspberrypi.com",
+      "rpi-imager-stats.raspberrypi.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5208,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Otto",
+    "description": {
+      "de": "Versandhandel (#eBlocker community)",
+      "en": "Versandhandel (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "www.otto.de",
+      "i.otto.de",
+      "pxc.otto.de",
+      "tp.otto.de",
+      "te.otto.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5209,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "LeasePlan Sparen",
+    "description": {
+      "de": "App der LeasePlan-Bank (#eBlocker community)",
+      "en": "LeasePlan Bank App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "leaseplanbank.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5210,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Targo Bank",
+    "description": {
+      "de": "Targobank App (#eBlocker community)",
+      "en": "Targobank App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "targobank.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5211,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Open Weather",
+    "description": {
+      "de": "Zugriff auf die Open Weather API (#eBlocker community)",
+      "en": "Zugriff auf die Open Weather API (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.openweathermap.org"
+    ],
+    "whitelistedIPs": [],
+    "id": 5212,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Tailscale",
+    "description": {
+      "de": "VPN Mesh Netzwerk (#eBlocker community)",
+      "en": "VPN Mesh Netzwerk (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "tailscale.io",
+      "tailscale.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5213,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "E3DC",
+    "description": {
+      "de": "SystemSoftware PV-Anlage (#eBlocker community)",
+      "en": "SystemSoftware PV-Anlage (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "a.e3dc.com",
+      "e3dc.e3dc.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5214,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Fiverr",
+    "description": {
+      "de": "Fiverr (#eBlocker community)",
+      "en": "Fiverr (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "www.fiverr.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5215,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Smartbroker+",
+    "description": {
+      "de": "Smartbroker+ App (Nachfolger von Smartbroker) (#eBlocker community)",
+      "en": "Smartbroker+ App (Nachfolger von Smartbroker) (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "smartbroker-api-prod.ariva-services.de",
+      "smartbrokerplus.de",
+      "data.ariva-services.de",
+      "prodo-api.ariva-services.de",
+      "mds.ariva-services.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5216,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Echo Show 10 (Tagesschau in 100 Sekunden)",
+    "description": {
+      "de": "Diese Regel ermöglicht das Abspielen der Tagesschau in 100 Sekunden auf dem Echo Show 10 (#eBlocker community)",
+      "en": "Diese Regel ermöglicht das Abspielen der Tagesschau in 100 Sekunden auf dem Echo Show 10 (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "media.tagesschau.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5217,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "VR Secure",
+    "description": {
+      "de": "Volksbank Freigabeabfrage Starmoney Business (#eBlocker community)",
+      "en": "Volksbank Freigabeabfrage Starmoney Business (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "fints2.atruvia.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5218,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "ToxFox",
+    "description": {
+      "de": "BUND-Produktcheck (#eBlocker community)",
+      "en": "BUND-Produktcheck (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "toxcheck.info"
+    ],
+    "whitelistedIPs": [],
+    "id": 5219,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "MyVaillant",
+    "description": {
+      "de": "für Heizung (#eBlocker community)",
+      "en": "für Heizung (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "myvaillant.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5220,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "ChatGPT",
+    "description": {
+      "de": "Chat Ai (#eBlocker community)",
+      "en": "Chat Ai (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "chat.openai.com",
+      "chatgpt.com",
+      "auth0.openai.com",
+      "auth.openai.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5221,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Chess.com",
+    "description": {
+      "de": "Schachanbieter (#eBlocker community)",
+      "en": "Schachanbieter (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.chess.com",
+      "www.chess.com",
+      "images.chesscomfiles.com",
+      "bucket.chess.com",
+      "services.chess.com",
+      "analysis.chess.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5222,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "NewPipe",
+    "description": {
+      "de": "Freier Medienspieler und YouTube-Client (#eBlocker community)",
+      "en": "Keine Beschreibung vorhanden. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "youtube.com",
+      "googlevideo.com",
+      "newpipe.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 5223,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Vorwerk Thermomix",
+    "description": {
+      "de": "Cookidoo (#eBlocker community)",
+      "en": "Cookidoo (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "de.tmmobile.vorwerk-digital.com",
+      "login.vorwerk.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5224,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "Wiser Home",
+    "description": {
+      "de": "Eine App, um Ihr Zuhause zu steuern. (#eBlocker community)",
+      "en": "Eine App, um Ihr Zuhause zu steuern. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api-nl.wiserair.com",
+      "se-api.wiserhome.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5225,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "SwitchBot",
+    "description": {
+      "de": "SwitchBot ist Ihr einfacher Wechsel zu einem Smart Home. (#eBlocker community)",
+      "en": "Keine Beschreibung vorhanden. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "eu.switch-bot.com",
+      "switchbot.zendesk.com",
+      "wonderlabs.eu.api.switchbot.net",
+      "account.api.switchbot.net",
+      "publish.api.switchbot.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 5226,
+    "enabledPerDefault": false,
+    "hidden": false
+  },
+  {
+    "name": "JW Player",
+    "description": {
+      "de": "Online Video Player (#eBlocker community)",
+      "en": "Online Video Player (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "jwplayer.com",
+      "jwpsrv.com",
+      "jwpcdn.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5227
+  },
+  {
+    "name": "Swiss TXT",
+    "description": {
+      "de": "Teletext des Schweizer Fernsehens (#eBlocker community)",
+      "en": "Teletext of Swiss Television (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "m.txt.ch",
+      "txt.ch",
+      "teletext.ch"
+    ],
+    "whitelistedIPs": [],
+    "id": 5228
+  },
+  {
+    "name": "SoftMaker",
+    "description": {
+      "de": "Office Software aus Deutschland (#eBlocker community)",
+      "en": "Office Software from Germany (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "softmaker.com",
+      "softmaker.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5229
+  },
+  {
+    "name": "Infomaniak",
+    "description": {
+      "de": "Schweizer Internet-Anbieter (#eBlocker community)",
+      "en": "Swiss Internet Service Provider (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "infomaniak.com",
+      "ik.me"
+    ],
+    "whitelistedIPs": [],
+    "id": 5230
+  },
+  {
+    "name": "Facebook Video Downloader",
+    "description": {
+      "de": "Facebook Video Downloader (#eBlocker community)",
+      "en": "Facebook Video Downloader (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "fdown.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 5231
+  },
+  {
+    "name": "Washington Post",
+    "description": {
+      "de": "WashPost-app (#eBlocker community)",
+      "en": "Reading the Washington Post on its iOS-app (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "washingtonpost.com",
+      "wpdigital.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 5232
+  },
+  {
+    "name": "Schulportal Hessen",
+    "description": {
+      "de": "Schulportal für hessische Schulen (#eBlocker community)",
+      "en": "Schulportal für hessische Schulen (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "schulportal.hessen.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5233
+  },
+  {
+    "name": "Reuters",
+    "description": {
+      "de": "Reuters news app (#eBlocker community)",
+      "en": "Reuters iOS news app (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "reuters.com",
+      "reuters.tv"
+    ],
+    "whitelistedIPs": [],
+    "id": 5234
+  },
+  {
+    "name": "Malwarebytes Homepage Konto",
+    "description": {
+      "de": "Diese Regel ist für den Login bei Malwarebytes erforderlich (#eBlocker community)",
+      "en": "Diese Regel ist für den Login bei Malwarebytes erforderlich (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "holocron.mwbsys.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5235
+  },
+  {
+    "name": "BARMER Gesundheitsapp",
+    "description": {
+      "de": "App der BARMER Krankenkasse (#eBlocker community)",
+      "en": "App der BARMER Krankenkasse (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "barmer.de",
+      "www.barmer.de",
+      "ba-app.barmer-bonusprogramm.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5236
+  },
+  {
+    "name": "Amazon Kreditkarte Santander",
+    "description": {
+      "de": "Eine Regel welche ermöglicht die neue  App (Amazon Kreditkarte von Santander) auf Android zu nutzen (#eBlocker community)",
+      "en": "Eine Regel welche ermöglicht die neue  App (Amazon Kreditkarte von Santander) auf Android zu nutzen (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "customer.amazon.zinia.de",
+      "assets.prod.zinia.com",
+      "assets.zinia.com",
+      "teal.zinia.com",
+      "api.prod.cb.amazon.zinia.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5237
+  },
+  {
+    "name": "Home ID",
+    "description": {
+      "de": "Philips Friteuse (#eBlocker community)",
+      "en": "Philipps Frit (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "cdc.accounts.home.id",
+      "api.apptentive.com",
+      "www.philips.de",
+      "www.philips.com",
+      "www.backend.vbs.versuni.com",
+      "prod.eu-da.iot.versuni.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5238
+  },
+  {
+    "name": "Union Investment",
+    "description": {
+      "de": "Union Investment (#eBlocker community)",
+      "en": "Union Investment (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "www.union-investment.de",
+      "service.meindepot.union-investment.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5239
+  },
+  {
+    "name": "mehr-tanken",
+    "description": {
+      "de": "Spritpreis App (#eBlocker community)",
+      "en": "Spritpreis App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "mehr-tanken.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5240
+  },
+  {
+    "name": "IHG",
+    "description": {
+      "de": "Holiday Inn Bonusprogramm (#eBlocker community)",
+      "en": "Holiday Inn Bonusprogramm (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "accounts.ihg.com",
+      "apis.ihg.com",
+      "digital.ihg.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5241
+  },
+  {
+    "name": "Börse Frankfurt",
+    "description": {
+      "de": "Börsen App der Börse Frankfurt (#eBlocker community)",
+      "en": "Börsen App der Börse Frankfurt (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "sso.boerse-frankfurt.de",
+      "mobile-api.boerse-frankfurt.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5242
+  },
+  {
+    "name": "Bosch Flow",
+    "description": {
+      "de": "Fahrrad App (#eBlocker community)",
+      "en": "Fahrrad App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "www.bosch-ebike.com",
+      "events.mapbox.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5243
+  },
+  {
+    "name": "DB",
+    "description": {
+      "de": "DB (#eBlocker community)",
+      "en": "DB (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "www.bahn.de",
+      "www.fahrkartenshop2-bahn.de",
+      "accounts.bahn.de",
+      "app.vendo.noncd.db.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5244
+  },
+  {
+    "name": "League of Legends",
+    "description": {
+      "de": "Required for receiving Match Making Pop Ups in League of Legends (#eBlocker community)",
+      "en": "Required for receiving Match Making Pop Ups in League of Legends (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "eu.edge.rms.si.riotgames.com",
+      "ekg.riotgames.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5245
+  },
+  {
+    "name": "ALF- Banco",
+    "description": {
+      "de": "alf-banco 9 (#eBlocker community)",
+      "en": "alf-banco 9 (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "www.alf-banco.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5246
+  },
+  {
+    "name": "ADAC App",
+    "description": {
+      "de": "Dies ist eine Regel zur Nutzung der ADAC Pannen App für Android (#eBlocker community)",
+      "en": "Dies ist eine Regel zur Nutzung der ADAC Pannen App für Android (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "login.adac.de",
+      "adaconlineapim.adac.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5247
+  },
+  {
+    "name": "Refoss SmartSwitch",
+    "description": {
+      "de": "Refoss App zur Steuerung smarter Steckdosen (ehem. Meross) (#eBlocker community)",
+      "en": "Refoss App for smart devices (formerly Meross) (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "iotx-eu.refoss.net",
+      "mqtt-eu-3.refoss.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 5248
+  },
+  {
+    "name": "Reddit",
+    "description": {
+      "de": "Reddit App (#eBlocker community)",
+      "en": "Reddit App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "reddit.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5249
+  },
+  {
+    "name": "Luca App",
+    "description": {
+      "de": "Luca App (#eBlocker community)",
+      "en": "Luca App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "luca-app.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5250
+  },
+  {
+    "name": "LineAgeOS",
+    "description": {
+      "de": "LineageOS ist eine alternative Android version für Lenovo Geräte (#eBlocker community)",
+      "en": "LineageOS is an Android alternative for Lenovo devices (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "download.lineageos.org"
+    ],
+    "whitelistedIPs": [],
+    "id": 5251
+  },
+  {
+    "name": "Leo.Org",
+    "description": {
+      "de": "Leo.org Übersetzung (#eBlocker community)",
+      "en": "Leo.org Übersetzung (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "leo.org"
+    ],
+    "whitelistedIPs": [],
+    "id": 5252
+  },
+  {
+    "name": "Keeper App",
+    "description": {
+      "de": "Keeper Passwort Manager (#eBlocker community)",
+      "en": "Keeper Passwort Manager (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "keepersecurity.eu",
+      "keepersecurity.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5253
+  },
+  {
+    "name": "Just Watch",
+    "description": {
+      "de": "Just Watch App (#eBlocker community)",
+      "en": "Just Watch App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "sentry.justwatch.com",
+      "apis.justwatch.com",
+      "images.justwatch.com",
+      "www.justwatch.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5254
+  },
+  {
+    "name": "Goovee SmartHome",
+    "description": {
+      "de": "Goovee Smarte LEDs (#eBlocker community)",
+      "en": "Goovee Smarte LEDs (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "govee.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5255
+  },
+  {
+    "name": "DB Navigator",
+    "description": {
+      "de": "Deutsche Bahn Navigator (#eBlocker community)",
+      "en": "Deutsche Bahn Navigator (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "cms.services-bahn.de",
+      "reiseauskunft.bahn.de",
+      "www.bahn.de",
+      "www.img-bahn.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5256
+  },
+  {
+    "name": "Cricut Design Space",
+    "description": {
+      "de": "Cricut Design Space für Cricut Plotter (#eBlocker community)",
+      "en": "Circut Design Space for Cricut plotters (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "pyrope-apis.cricut.com",
+      "design.cricut.com",
+      "apis.cricut.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5257
+  },
+  {
+    "name": "Bett1",
+    "description": {
+      "de": "Bett1.de (#eBlocker community)",
+      "en": "Bett1.de (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "bett1.de",
+      "cdn.tms.bett1.de",
+      "img-www.bett1.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5258
+  },
+  {
+    "name": "3D Drucker Apps",
+    "description": {
+      "de": "Thingiverse Apps und Sites für den 3D Drucker (#eBlocker community)",
+      "en": "Thingiverse Apps and Sites for 3D printers (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "www.thingiverse.com",
+      "api.thingiverse.com",
+      "3dgeeks.2b.work",
+      "cdn.thingiverse.com",
+      "www.3dgeeks.app",
+      "cloud-universe.anycubic.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5259
+  },
+  {
+    "name": "17TRACK",
+    "description": {
+      "de": "17 Track Globale Paket Tracking App (#eBlocker community)",
+      "en": "17 Track Global Package Tracking App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "17track.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 5260
+  },
+  {
+    "name": "BitMoji",
+    "description": {
+      "de": "BitMoji App (#eBlocker community)",
+      "en": "BitMoji App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "images.bitmoji.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5261
+  },
+  {
+    "name": "Darf ich das App",
+    "description": {
+      "de": "Darf ich das? (#eBlocker community)",
+      "en": "Darf ich das? (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.darfichdas.info"
+    ],
+    "whitelistedIPs": [],
+    "id": 5262
+  },
+  {
+    "name": "BambuLab",
+    "description": {
+      "de": "Bambu Lab 3d print (#eBlocker community)",
+      "en": "Bambu Lab 3d print (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.bambulab.com",
+      "makerworld.bblmw.com",
+      "public-cdn.bblmw.com",
+      "makerworld.com",
+      "bblmw.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5263
+  },
+  {
+    "name": "VRChat",
+    "description": {
+      "de": "Steam Social Game (VR) (#eBlocker community)",
+      "en": "Steam Social Game (VR) (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.vrchat.cloud",
+      "pipeline.vrchat.cloud",
+      "api2.amplitude.com",
+      "files.vrchat.cloud"
+    ],
+    "whitelistedIPs": [],
+    "id": 5264
+  },
+  {
+    "name": "Senec",
+    "description": {
+      "de": "Senec Solar (#eBlocker community)",
+      "en": "Senec Solar (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "senec.com",
+      "mein-senec.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5265
+  },
+  {
+    "name": "Freestyle Libre",
+    "description": {
+      "de": "Blutzuckermessung (#eBlocker community)",
+      "en": "Blutzuckermessung (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "fsll3.freestyleserver.co",
+      "api-c-de.libreview.io",
+      "fsll3.freestyleserver.com",
+      "api-de.libreview.io"
+    ],
+    "whitelistedIPs": [],
+    "id": 5266
+  },
+  {
+    "name": "stromgedacht",
+    "description": {
+      "de": "transnetbw (#eBlocker community)",
+      "en": "transnetbw (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "statistik.transnetbw.de",
+      "app-api.stromgedacht.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5267
+  },
+  {
+    "name": "Tesla Mobile IOS",
+    "description": {
+      "de": "Tesla Mobile IOS app - remote control and wakeup (#eBlocker community)",
+      "en": "Tesla Mobile IOS app - remote control and wakeup (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "owner-api.teslamotors.com",
+      "signaling.vn.teslamotors.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5268
+  },
+  {
+    "name": "LastWar",
+    "description": {
+      "de": "Last War Game - Chat (#eBlocker community)",
+      "en": "Last War Game - Chat (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "lastwar-chat-us-gcp-ali.lastwargame.com",
+      "lastwar-chat-wss-us-ali.lastwargame.com",
+      "lastwar-serverlist-us-cf-ali.lastwarapp.com",
+      "lastwar-cdn.akamaized.net",
+      "lastwar-serverlist-us-aws-ali.lastwargame.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5269
+  },
+  {
+    "name": "tado",
+    "description": {
+      "de": "Smarte Thermostate (#eBlocker community)",
+      "en": "Smarte Thermostate (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "my.tado.com",
+      "app.tado.com",
+      "minder.tado.com",
+      "hops.tado.com",
+      "nibbler.tado.com",
+      "genie.tado.com",
+      "auth.tado.com",
+      "susi.tado.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5270
+  },
+  {
+    "name": "Grammarly",
+    "description": {
+      "de": "Free Writing Assistant in English (#eBlocker community)",
+      "en": "Free Writing Assistant in English (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "grammarly.com",
+      "f-log-extension.grammarly.io"
+    ],
+    "whitelistedIPs": [],
+    "id": 5271
+  },
+  {
+    "name": "Binance",
+    "description": {
+      "de": "Kryptobörse (#eBlocker community)",
+      "en": "Kryptobörse (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "binance.com",
+      "sensors.binance.cloud",
+      "accounts.binance.com",
+      "frontend-m.binance.cloud",
+      "stream.binance.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5272
+  },
+  {
+    "name": "Babbel",
+    "description": {
+      "de": "Übersetzungstool (#eBlocker community)",
+      "en": "Übersetzungstool (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "about.babbel.com",
+      "api.babbel.io",
+      "images.babbel.com",
+      "babbel.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5273
+  },
+  {
+    "name": "Brazil Bank",
+    "description": {
+      "de": "Banco do Brasil, Banco Inter, Itaú e Nubank. (#eBlocker community)",
+      "en": "Banco do Brasil, Banco Inter, Itaú e Nubank (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "bb.com.br",
+      "www2.bancobrasil.com.br",
+      "bancointer.com.br",
+      "itau.com.br",
+      "nubank.com.br"
+    ],
+    "whitelistedIPs": [],
+    "id": 5274
+  },
+  {
+    "name": "FENECON",
+    "description": {
+      "de": "Photovoltaic System (#eBlocker community)",
+      "en": "Photovoltaic System (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "portal.fenecon.de",
+      "status.fenecon.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5275
+  },
+  {
+    "name": "QT online installer",
+    "description": {
+      "de": "QT online Installer benötigt das um die Programmier Umgebung zu laden. (#eBlocker community)",
+      "en": " (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "iapi.qt.io",
+      "login.qt.io",
+      "licenses.qt.io",
+      "login.qt.io"
+    ],
+    "whitelistedIPs": [],
+    "id": 5276
+  },
+  {
+    "name": "Steam 2",
+    "description": {
+      "de": "Steam (#eBlocker community)",
+      "en": "Steam (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "ext2-fra2.steamserver.net",
+      "ext2-fra1.steamserver.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 5277
+  },
+  {
+    "name": "Idealo",
+    "description": {
+      "de": "Ver (#eBlocker community)",
+      "en": "Ver (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "pubws.idealo.de",
+      "app.idealo.de",
+      "www.idealo.de",
+      "cdn.idealo.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5278
+  },
+  {
+    "name": "Booking",
+    "description": {
+      "de": "Booking (#eBlocker community)",
+      "en": "Booking (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "botkit-public.prod.booking.com",
+      "account.booking.com",
+      "secure-mobile-apps.booking.com",
+      "mobile-apps.booking.com",
+      "bstatic.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5279
+  },
+  {
+    "name": "Remarkable",
+    "description": {
+      "de": "Remarkable (#eBlocker community)",
+      "en": "Remarkable (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "internal.cloud.remarkable.com",
+      "notifications-prod.cloud.remarkable.engineering",
+      "webapp-prod.cloud.remarkable.engineering"
+    ],
+    "whitelistedIPs": [],
+    "id": 5280
+  },
+  {
+    "name": "Python",
+    "description": {
+      "de": "Programmiersprache (#eBlocker community)",
+      "en": "Programmiersprache (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "pypi.org"
+    ],
+    "whitelistedIPs": [],
+    "id": 5281
+  },
+  {
+    "name": "Print Master",
+    "description": {
+      "de": "Print Device Provider (#eBlocker community)",
+      "en": "Print Device Provider (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "oss.qu-in.top"
+    ],
+    "whitelistedIPs": [],
+    "id": 5282
+  },
+  {
+    "name": "Comdirect",
+    "description": {
+      "de": "Comdirect Apps (#eBlocker community)",
+      "en": "Comdirect Apps (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.comdirect.de",
+      "mobileapp.comdirect.de",
+      "mta.comdirect.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5283
+  },
+  {
+    "name": "Klassikradio Select",
+    "description": {
+      "de": "Klassik Radio Stream (#eBlocker community)",
+      "en": "Klassik Radio Stream (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.onesignal.com",
+      "klassik-radio-premium.fra1.cdn.digitaloceanspaces.com",
+      "play.klassikradio.de",
+      "stream.klassikradio.de",
+      "klassikr.streamabc.net"
+    ],
+    "whitelistedIPs": [],
+    "id": 5284
+  },
+  {
+    "name": "American Express",
+    "description": {
+      "de": "Kreditkarten Institut (#eBlocker community)",
+      "en": "Kreditkarten Institut (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "apigateway.americanexpress.com",
+      "iwmapapi.americanexpress.com",
+      "mobileone.americanexpress.com",
+      "omns.americanexpress.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5285
+  },
+  {
+    "name": "3Stock",
+    "description": {
+      "de": "Börsen App (#eBlocker community)",
+      "en": "Börsen App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.stock3.com",
+      "charting.stock3.com",
+      "quotes-ws.boerse-go.de",
+      "status.stock3.com",
+      "ws.boerse-go.de",
+      "ws.stock3.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5286
+  },
+  {
+    "name": "Benzinpreis-Blitz",
+    "description": {
+      "de": "Die günstigsten Spritpreise in Deutschland, Österreich und 5 (#eBlocker community)",
+      "en": "Die günstigsten Spritpreise in Deutschland, Österreich und 5 (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.benzinpreis-blitz.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5287
+  },
+  {
+    "name": "Shazam",
+    "description": {
+      "de": "Shazam Musikerkennung (#eBlocker community)",
+      "en": "Shazam music recognition (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "shazam.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5288
+  },
+  {
+    "name": "WeightWatchers",
+    "description": {
+      "de": "WeightWatchers App zur Ernährungsumstellung. (#eBlocker community)",
+      "en": "WeightWatchers App zur Ernährungsumstellung. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.ww.com",
+      "chassis.weightwatchers.com",
+      "cmx.weightwatchers.de",
+      "connect-api.weightwatchers.com",
+      "www.weightwatchers.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5289
+  },
+  {
+    "name": "Viessmann Heizungssteuerung",
+    "description": {
+      "de": "Viessmann Heizungssteuerungssoftware (#eBlocker community)",
+      "en": "Viessmann Heizungssteuerungssoftware (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "iam.viessmann.com",
+      "api.viessmann.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5290
+  },
+  {
+    "name": "Sonnen Charger",
+    "description": {
+      "de": "App zur Steuerung der Wallbox der Firma Sonnen. (#eBlocker community)",
+      "en": "App zur Steuerung der Wallbox der Firma Sonnen. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "gateway.ocpp.sonnen.de",
+      "sentry.sonnenbatterie.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5291
+  },
+  {
+    "name": "Sonnen",
+    "description": {
+      "de": "App zur Steuerung der Sonnen Batterie. (#eBlocker community)",
+      "en": "App zur Steuerung der Sonnen Batterie. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "my.sonnen.de",
+      "api.sonnen.de",
+      "my-api.sonnen.de",
+      "unleash-proxy-my-sonnen-app-prod.internal.sonnen.de",
+      "sentry.sonnenbatterie.de",
+      "account.sonnen.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5292
+  },
+  {
+    "name": "Irobot Sauger",
+    "description": {
+      "de": "iRobot Staubsauger App (#eBlocker community)",
+      "en": "iRobot Staubsauger App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "7239468752805441.hostedstatus.com",
+      "socialize.us1.gigya.com",
+      "accounts.us1.gigya.com",
+      "content-prod.iot.irobotapi.com",
+      "disc-prod.iot.irobotapi.com",
+      "unauth3.prod.iot.irobotapi.com",
+      "auth2.prod.iot.irobotapi.com",
+      "auth3.prod.iot.irobotapi.com",
+      "unauth1.prod.iot.irobotapi.com",
+      "auth1.prod.iot.irobotapi.com",
+      "ecomm.prod.user-services.irobotapi.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5294
+  },
+  {
+    "name": "Abfall in guten Händen",
+    "description": {
+      "de": "Im Landkreis Dachau eine häufig benutzte App, um zu wissen, wann die Tonnen geleert werden. (#eBlocker community)",
+      "en": "Im Landkreis Dachau eine häufig benutzte App, um zu wissen, wann die Tonnen geleert werden. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "awido.cubefour.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5295
+  },
+  {
+    "name": "Samsung Shop",
+    "description": {
+      "de": "Diese App ermöglicht den Zugang zu dem Shop von Samsung (#eBlocker community)",
+      "en": "Diese App ermöglicht den Zugang zu dem Shop von Samsung (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "shop.samsung.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5296
+  },
+  {
+    "name": "RegenVorschau",
+    "description": {
+      "de": "Genaue Vorhersage für Regen und Schnee in Deutschland (#eBlocker community)",
+      "en": "Genaue Vorhersage für Regen und Schnee in Deutschland (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "regenonline.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5297
+  },
+  {
+    "name": "abfallApp BAV",
+    "description": {
+      "de": "Abfuhrkalender & Service Bergischer Abfallwirtschaftsverband (#eBlocker community)",
+      "en": "Abfuhrkalender & Service Bergischer Abfallwirtschaftsverband (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "bav-abfallapp.regioit.de",
+      "bav.verschenkmarkt.info",
+      "www.bavweb.de",
+      "geocoderproxy.appspark-services.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5298
+  },
+  {
+    "name": "SMA Energy",
+    "description": {
+      "de": "Sunny Home Manager 2.0 (#eBlocker community)",
+      "en": "Sunny Home Manager (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "forecast.smaapis.de",
+      "live.smaapis.de",
+      "privatetariffs.smaapis.de",
+      "resources.smaapis.de",
+      "smarthome.smaapis.de",
+      "status.smaapis.de",
+      "users.smaapis.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5299
+  },
+  {
+    "name": "nrc",
+    "description": {
+      "de": "Niederländische Qualitätszeitung (#eBlocker community)",
+      "en": "Dutch quality newspaper (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "images.nrc.nl",
+      "assets.nrc.nl",
+      "content2.nrc.nl",
+      "content3.nrc.nl",
+      "images.nrc.nl",
+      "klik.nrc.nl",
+      "load.sst.nrc.nl",
+      "nh-apps-backend.nrc.nl",
+      "static.nrc.nl",
+      "www.nrc.nl"
+    ],
+    "whitelistedIPs": [],
+    "id": 5300
+  },
+  {
+    "name": "Bitpanda",
+    "description": {
+      "de": "Bitpanda App (#eBlocker community)",
+      "en": "Bitpanda App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "bitpanda.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5301
+  },
+  {
+    "name": "Zoll-Portal",
+    "description": {
+      "de": "Dienstleistungen des Zolls online (#eBlocker community)",
+      "en": "Dienstleistungen des Zolls online (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "www.zoll-portal.de"
+    ],
+    "whitelistedIPs": [],
+    "id": 5302
+  },
+  {
+    "name": "Native Instruments Traktor + Beatport Steaming",
+    "description": {
+      "de": "Traktor DJ Software + Beatport Streaming (#eBlocker Community) (#eBlocker community)",
+      "en": "Traktor DJ software + Beatport Streaming (#eBlocker Community) (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "api.native-instruments.com",
+      "api.beatport.com",
+      "geo-media.beatport.com",
+      "storage.googleapis.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5303
+  },
+  {
+    "name": "Nooie camera",
+    "description": {
+      "de": "camera (#eBlocker community)",
+      "en": "Camera and camera-app from Nooie Inc. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "brain.nooie.com",
+      "eu.nooie.com",
+      "global.nooie.com",
+      "h1-eu.iot-dns.com",
+      "h2-eu.iot-dns.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5304
+  },
+  {
+    "name": "Ikea",
+    "description": {
+      "de": "Ikea App (#eBlocker community)",
+      "en": "Ikea App (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "shop.api.ingka.ikea.com",
+      "api.home-design.ikea.com",
+      "web-api.ikea.com",
+      "www.ikea.com",
+      "shop.static.ingka.ikea.com",
+      "de.accounts.ikea.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5305
+  },
+  {
+    "name": "AeroWeather",
+    "description": {
+      "de": "Software für Flug Enthusiasten (#eBlocker community)",
+      "en": "Software für Flug Enthusiasten (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "www.aviationweather.gov"
+    ],
+    "whitelistedIPs": [],
+    "id": 5306
+  },
+  {
+    "name": "Magic Earth Navigation & Maps",
+    "description": {
+      "de": "Find the best route to your destination even without an internet (#eBlocker community)",
+      "en": "Magic Earth Navigation & Maps (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "services.generalmagic.com",
+      "services.magicearthsdk.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5307
+  },
+  {
+    "name": "Bottles",
+    "description": {
+      "de": "Bottles lässt dich Windows Software auf Linux ausführen. (#eBlocker community)",
+      "en": "Bottles lässt dich Windows Software auf Linux ausführen. (#eBlocker community)"
+    },
+    "whitelistedDomains": [
+      "ping.usebottles.com",
+      "proxy.usebottles.com",
+      "download.lenovo.com"
+    ],
+    "whitelistedIPs": [],
+    "id": 5308
+  }
+]

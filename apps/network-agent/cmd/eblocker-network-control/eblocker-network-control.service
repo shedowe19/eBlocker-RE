@@ -1,0 +1,35 @@
+[Unit]
+Description=eBlocker explicit native WireGuard control service
+After=network.target
+# Installed separately and deliberately not enabled by default.
+ConditionPathExists=/etc/eblocker/network-control-enabled
+
+[Service]
+Type=simple
+User=eblocker-network-control
+Group=eblocker-network-control
+RuntimeDirectory=eblocker-network-control
+RuntimeDirectoryMode=0750
+StateDirectory=eblocker-network-control
+StateDirectoryMode=0700
+ExecStart=/usr/lib/eblocker-network-agent/eblocker-network-control --enable-native-writes --peer-user=icapd --peer-group=icapd
+UMask=0077
+CapabilityBoundingSet=CAP_NET_ADMIN
+AmbientCapabilities=CAP_NET_ADMIN
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictAddressFamilies=AF_UNIX AF_NETLINK
+LockPersonality=yes
+RestrictRealtime=yes
+RestrictSUIDSGID=yes
+SystemCallArchitectures=native
+TimeoutStopSec=12
+Restart=no
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,17 @@
+category,path,line
+service,debian/eblocker-squid.service,11
+service,debian/eblocker-squid.service,12
+service,debian/eblocker-squid.service,17
+service,debian/eblocker-squid.service,21
+service,debian/eblocker-squid.service,22
+privilege,debian/tests/test-squid.py,302
+privilege,src/ip/QosConfig.h,208
+privilege,src/tools.cc,1150
+privilege,src/tools.cc,1156
+privilege,test-suite/test-functionality.sh,87
+privilege,test-suite/test-functionality.sh,88
+privilege,test-suite/test-functionality.sh,89
+service,tools/systemd/squid.service,11
+service,tools/systemd/squid.service,16
+service,tools/systemd/squid.service,20
+service,tools/systemd/squid.service,21

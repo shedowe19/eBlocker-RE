@@ -1,0 +1,277 @@
+{
+    "CONTROLBAR" : {
+        "DIALOGS" : {
+            "CLOAKING" : {
+                "CUSTOM" : {
+                    "BODY" : "To avoid, for example, dynamic price discrimination in shops based on the device identification, you can adjust the device identification here. This information (the so-called User-Agent) is sent to the web server while you are surfing the web.",
+                    "BUTTON" : {
+                        "CANCEL" : "Cancel",
+                        "OK" : "Set User Agent"
+                    },
+                    "ERROR" : {
+                        "REQUIRED" : "Please enter a user agent string"
+                    },
+                    "INPUT" : "User-Agent String",
+                    "TITLE" : "Custom device identification"
+                }
+            },
+            "MESSAGE" : {
+                "CENTER" : {
+                    "DATE_FORMAT" : "MMM D, YYYY",
+                    "DO_NOT_SHOW_AGAIN" : "Do not show again",
+                    "MESSAGES_AVAILABLE" : "New messages available: ",
+                    "MESSAGE_NO_NEW" : "No new messages available.",
+                    "MESSAGE_NO_NEW_EXPLAIN" : "There are currently no new messages available.",
+                    "TITLE" : "eBlocker Messages",
+                    "TOOLTIP_CLOSE" : "Close this message"
+                }
+            },
+            "PAUSE" : {
+                "CONFIRMATION" : {
+                    "BODY_PART_1" : "This will pause the eBlocker for this device and close the ControlBar. The eBlocker dashboard will be opened in another tab.",
+                    "BODY_PART_2" : "From the dashboard, you can extend or end the pause at any time, as well as control other eBlocker functions.",
+                    "BUTTON" : {
+                        "CANCEL" : "Cancel",
+                        "OK" : "Activate pause"
+                    },
+                    "DO_NOT_SHOW_AGAIN" : "Do not show again",
+                    "TITLE" : "Activate pause for this device"
+                }
+            },
+            "PIN" : {
+                "BUTTON" : {
+                    "CANCEL" : "Cancel",
+                    "LOCK" : "Lock",
+                    "LOGIN" : "Change user",
+                    "OK" : "OK"
+                },
+                "ERROR" : {
+                    "INVALID" : "PIN is invalid.",
+                    "REQUIRED" : "PIN is required."
+                },
+                "INPUT" : "PIN entry",
+                "PIN_CHANGE" : {
+                    "ERROR" : {
+                        "INVALID" : "Invalid PIN",
+                        "MISMATCH" : "PINs do not match.",
+                        "REQUIRED" : "Please enter a PIN.",
+                        "TOO_LONG" : "PIN is too long.",
+                        "TOO_SHORT" : "PIN must have at least 4 characters."
+                    },
+                    "HEADER" : "Change PIN",
+                    "INPUT_CURRENT" : "Current PIN",
+                    "INPUT_NEW" : "New PIN",
+                    "INPUT_RENEW" : "Repeat new PIN"
+                },
+                "PIN_LOCK" : {
+                    "BODY" : "Do you really want to lock Internet access for this device?",
+                    "HEADER" : "Lock internet access"
+                },
+                "PIN_SELECT_USER" : {
+                    "BODY_LOCK" : "Alternatively, you can lock Internet access for this device.",
+                    "BODY_POST" : ".",
+                    "BODY_PRE" : "You need the user PIN to switch to user ",
+                    "HEADER" : "PIN Required"
+                }
+            },
+            "VPN" : {
+                "ACTIVATION" : {
+                    "BUTTON" : {
+                        "BLANK_PAGE" : "Go to blank page",
+                        "CANCEL" : "Cancel",
+                        "CONTINUE" : "Stay on this page"
+                    },
+                    "ERROR" : {
+                        "CONNECTION_FAILURE" : "Connection failed.",
+                        "CONNECTION_TIMEOUT" : "Connection timed out.",
+                        "LIST_ERRORS" : "Connection errors:"
+                    },
+                    "SUCCESS" : "Connection successfully established.",
+                    "SUCCESS_TEXT" : "If you stay on the current website, an existing session may reveal your new IP address.",
+                    "TITLE" : "Establishing connection with VPN: {{name}}"
+                }
+            }
+        },
+        "DROPDOWN_FILTERS" : {
+            "ALLOW_ON_THIS_WEBSITE" : "on this website",
+            "FOUND_ON_THIS_PAGE" : "On this website",
+            "LABEL_ENABLE_FILTERS" : "Go to settings",
+            "LABEL_FILTERS_DISABLED" : "Blockers are disabled.",
+            "LABEL_LAST_MINUTE" : "Last minute:",
+            "LABEL_TEN_MINUTE" : "Last 10 minutes:",
+            "MORE" : "More..."
+        },
+        "MENU" : {
+            "ACTIVATION" : {
+                "LABEL_REGISTER" : "Register",
+                "LABEL_RENEW" : "Renew License",
+                "TOOLTIP_REGISTER" : "Register your eBlocker to unlock all features",
+                "TOOLTIP_RENEW" : "Renew your license, so that you can continue to use all features."
+            },
+            "ADS" : {
+                "LABEL" : "Ads",
+                "MENU" : {
+                    "LABEL_ALLOW_LOCAL" : "Allow ads...",
+                    "LABEL_BLOCKED" : "Ads blocked:",
+                    "LABEL_BLOCK_GLOBAL" : "Block ads"
+                },
+                "TOOLTIP_ALLOW_GLOBAL" : "Ads are globally allowed",
+                "TOOLTIP_ALLOW_LOCAL" : "Ads are allowed on this page",
+                "TOOLTIP_BLOCK" : "{param, select, 0{No ads found on this page} 1{One ad is blocked} other{{param} ads are blocked}}",
+                "TOOLTIP_BLOCK_DNS" : "Domain blocker is active",
+                "TOOLTIP_NO_FILTER" : "Blockers are disabled. Enable blockers to protect this device."
+            },
+            "ANON" : {
+                "LABEL" : "IP-Anon",
+                "MENU" : {
+                    "ACTIONS" : {
+                        "CHECK_CONNECTION" : "Verify connection",
+                        "CONFIGURE_CONNECTION" : "Configure",
+                        "GET_NEW_TOR_ID" : "Get a new Tor identity",
+                        "START_TOR" : "Tor Network"
+                    },
+                    "LABEL" : "Anonymize via...",
+                    "LABEL_TOR" : "Tor Network",
+                    "LABEL_VPN_PREFIX" : "VPN: ",
+                    "TOOLTIP_ACTIVATE" : "Activate",
+                    "TOOLTIP_DEACTIVATE" : "Deactivate"
+                },
+                "NOTIFICATION" : {
+                    "CONNECTION_DOWN" : "VPN {{name}} is no longer in use.",
+                    "TOR_CONNECT" : "Connection to Tor network established.",
+                    "TOR_DISCONNECT" : "Tor network disconnected.",
+                    "TOR_ID_RENEW_ERROR" : "Error while getting a new Tor identity.",
+                    "TOR_ID_RENEW_SUCCESS" : "Tor identity renewed.",
+                    "VPN_CONNECT" : "VPN connection established.",
+                    "VPN_DISCONNECT" : "VPN disconnected."
+                },
+                "TOOLTIP_ACTIVATE" : "Activate IP anonymization",
+                "TOOLTIP_DEACTIVATE" : "Change or deactivate IP anonymization"
+            },
+            "CLOAKING" : {
+                "ALERT_NO_HTTPS" : "HTTPS deactivated",
+                "LABEL" : "Cloaking",
+                "MENU" : {
+                    "ACTION" : {
+                        "CUSTOM" : "Custom device"
+                    },
+                    "DISABLE" : "Not cloaked",
+                    "LABEL" : "Cloak as..."
+                },
+                "TOOLTIP" : "Cloak your device",
+                "TOOLTIP_ACTIVATE" : "Cloak as",
+                "TOOLTIP_ALERT_NO_HTTPS" : "Without HTTPS support, device cloaking is not 100% effective.",
+                "TOOLTIP_CLOAKED" : "Cloaked as {param}",
+                "TOOLTIP_DEACTIVATE" : "Stop cloaking as"
+            },
+            "DASHBOARD" : {
+                "LABEL" : "Dashboard",
+                "TOOLTIP" : "Opens the dashboard for this device"
+            },
+            "HELP" : {
+                "LABEL" : "Help",
+                "TOOLTIP" : "Go to online help"
+            },
+            "MESSAGES" : {
+                "LABEL" : "Messages",
+                "NOTIFICATION" : {
+                    "HAS_ALERT" : "You have important messages!"
+                },
+                "TOOLTIP" : "You have {param, select, 0{no} other{{param}}} {param, select, 1{message} other{messages}}"
+            },
+            "ONLINE_TIME" : {
+                "LABEL" : "Online Time",
+                "MENU" : {
+                    "ACCESS_CONTINGENTS_FOR" : "Online times:",
+                    "ACTION" : {
+                        "USAGE_START" : "Start",
+                        "USAGE_STOP" : "Stop"
+                    },
+                    "REMAINING_TIME" : {
+                        "INFIX" : " {hours, select, 1{one} other{{hours}}} {hours, select, 1{hour} other{hours}} and ",
+                        "POSTFIX" : " {min, select, 1{one} other{{min}}} {min, select, 1{minute} other{minutes}}",
+                        "PREFIX" : ""
+                    },
+                    "TOOLTIP" : {
+                        "USAGE_START" : "Start Internet usage",
+                        "USAGE_STOP" : "Stop Internet usage"
+                    }
+                },
+                "TOOLTIP" : "Manage your online times."
+            },
+            "PAUSE" : {
+                "LABEL" : "Pause",
+                "TOOLTIP" : "Pause eBlocker for this device"
+            },
+            "SETTINGS" : {
+                "LABEL" : "Settings",
+                "TOOLTIP" : "Opens the eBlocker settings"
+            },
+            "TRACKERS" : {
+                "LABEL" : "Trackers",
+                "MENU" : {
+                    "LABEL_ALLOW_LOCAL" : "Allow trackers...",
+                    "LABEL_BLOCKED" : "Trackers blocked:",
+                    "LABEL_BLOCK_GLOBAL" : "Block trackers"
+                },
+                "TOOLTIP_ALLOW_GLOBAL" : "Trackers are globally allowed",
+                "TOOLTIP_ALLOW_LOCAL" : "Trackers are allowed on this page",
+                "TOOLTIP_BLOCK" : "{param, select, 0{No trackers found on this page} 1{One tracker is blocked} other{{param} trackers are blocked}}",
+                "TOOLTIP_BLOCK_DNS" : "Domain blocker is active",
+                "TOOLTIP_NO_FILTER" : "Blockers are disabled. Enable the blockers to protect this device."
+            },
+            "USER" : {
+                "ACTIONS" : {
+                    "CHANGE_PIN" : "Change PIN",
+                    "CHANGE_USER" : "Change user:",
+                    "LOCK_INTERNET" : "Lock Internet access",
+                    "RETURN_DEVICE" : "Return device"
+                },
+                "LABEL" : "User",
+                "LABEL_NO_OP" : "Device is currently locked.",
+                "LABEL_SYSTEM" : "Locked",
+                "MENU" : {
+                    "LABEL_ASSIGNED_USER" : "This device belongs to:",
+                    "LABEL_OPERATING_USER" : "Device currently used by:"
+                },
+                "TOOLTIP" : "This device is currently used by {param}."
+            }
+        },
+        "SERVICE" : {
+            "USER" : {
+                "NOTIFICATION" : {
+                    "ERROR" : {
+                        "CHANGE_PIN_FAIL" : "PIN is incorrect.",
+                        "NOT_PERMITTED" : "This action is not permitted.",
+                        "OTHER_ERROR" : "The action could not be completed.",
+                        "PIN_INVALID" : "The PIN is invalid.",
+                        "USER_NOT_AVAILABLE" : "Could not load users."
+                    },
+                    "SUCCESS" : {
+                        "CHANGE_PIN" : "Your PIN has been changed."
+                    }
+                }
+            }
+        }
+    },
+    "EXPIRED" : {
+        "CARD" : {
+            "BUTTON" : {
+                "RESUME" : "Continue"
+            },
+            "TEXT" : "Your session expired.",
+            "TITLE" : "Session expired"
+        }
+    },
+    "IDLE" : {
+        "DIALOG" : {
+            "BUTTON" : {
+                "RESUME" : "Continue"
+            },
+            "TEXT" : "Your session expires in {countdown} {countdown, select, 1{second} other{seconds}}.",
+            "TITLE" : "Session expires"
+        }
+    },
+    "PARENTAL_CONTROL_USER_NAME" : "{{ name }}"
+}
+

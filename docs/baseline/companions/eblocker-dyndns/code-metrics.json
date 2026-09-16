@@ -1,0 +1,41 @@
+{
+  "commit": "6badf636807b4f4c8faeb7b16ed1e4d4fb62f8d4",
+  "files": [
+    {
+      "path": "redisdyndns/redisdyndns.go",
+      "lines": 158,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "redisdyndns/redisdyndns_test.go",
+      "lines": 148,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "eblocker-dyndns.go",
+      "lines": 49,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "redisdyndns/setup.go",
+      "lines": 44,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "redisdyndns/setup_test.go",
+      "lines": 41,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "scripts/test_udp_port0.py",
+      "lines": 22,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    }
+  ],
+  "languages": {
+    "other": 13,
+    "Markdown": 2,
+    "Go": 5,
+    "Python": 1
+  }
+}

@@ -1,0 +1,1711 @@
+{
+  "defaults": [
+    "/AUTH"
+  ],
+  "states": [
+    {
+      "name": "HOME",
+      "parent": "MAIN",
+      "redirectTo": "license",
+      "url": "home",
+      "showInNavbar": true,
+      "iconUrl": "/img/icons/eblocker.svg",
+      "navbarOrder": 1,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.HOME.LABEL",
+      "component": "homeComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "license",
+      "url": "/license",
+      "parent": "HOME",
+      "tabOrder": 1,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.LICENSE.LABEL",
+      "component": "licenseComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "update",
+      "url": "/update",
+      "parent": "HOME",
+      "tabOrder": 2,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.UPDATE.LABEL",
+      "component": "updateComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "adminpassword",
+      "url": "/adminpassword",
+      "parent": "system",
+      "tabOrder": 2,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.ADMIN_PASSWORD.LABEL",
+      "component": "adminPasswordComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "about",
+      "url": "/about",
+      "parent": "HOME",
+      "tabOrder": 3,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.ABOUT.LABEL",
+      "component": "aboutComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "legal",
+      "url": "/legal",
+      "parent": "HOME",
+      "tabOrder": 4,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.LEGAL.LABEL",
+      "component": "legalComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "parentalcontrol",
+      "parent": "MAIN",
+      "redirectTo": "parentalcontrolstate",
+      "url": "parentalcontrol",
+      "showInNavbar": true,
+      "iconUrl": "/img/icons/icons8-teddy-bear.svg",
+      "navbarOrder": 3,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'FAM';\n        }"
+      },
+      "resolvePolicy": {
+        "async": "WAIT",
+        "when": "LAZY"
+      },
+      "resolve": {
+        "users": [
+          "UserService",
+          {
+            "$function": "function(UserService) {\n                return UserService.getAll().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return [];\n                });\n            }"
+          }
+        ],
+        "profiles": [
+          "UserProfileService",
+          {
+            "$function": "function(UserProfileService) {\n                return UserProfileService.getAll().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return [];\n                });\n            }"
+          }
+        ],
+        "devices": [
+          "DeviceService",
+          {
+            "$function": "function(DeviceService) {\n                return DeviceService.getAll().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return [];\n                });\n            }"
+          }
+        ],
+        "dnsEnabled": [
+          "DnsService",
+          {
+            "$function": "function(DnsService) {\n                return DnsService.loadDnsStatus().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "sslEnabled": [
+          "SslService",
+          {
+            "$function": "function(SslService) {\n               return SslService.getStatus().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                   return null;\n               });\n            }"
+          }
+        ]
+      },
+      "translationKey": "ADMINCONSOLE.PARENTAL_CONTROL.LABEL",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "parentalcontrolstate",
+      "parent": "parentalcontrol",
+      "redirectTo": "users",
+      "requiredLicense": {
+        "$function": "function() {\n            return 'FAM';\n        }"
+      },
+      "component": "parentalControlComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "devices",
+      "parent": "MAIN",
+      "url": "devices",
+      "redirectTo": "devicesstate",
+      "showInNavbar": true,
+      "iconUrl": "/img/icons/ic_devices_black.svg",
+      "navbarOrder": 2,
+      "separator": true,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "resolvePolicy": {
+        "async": "WAIT",
+        "when": "LAZY"
+      },
+      "resolve": {
+        "users": [
+          "UserService",
+          {
+            "$function": "function(UserService) {\n                return UserService.getAll().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return [];\n                });\n            }"
+          }
+        ],
+        "profiles": [
+          "UserProfileService",
+          {
+            "$function": "function(UserProfileService) {\n                return UserProfileService.getAll().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return [];\n                });\n            }"
+          }
+        ],
+        "dnsEnabled": [
+          "DnsService",
+          {
+            "$function": "function(DnsService) {\n                return DnsService.loadDnsStatus().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "sslEnabled": [
+          "SslService",
+          {
+            "$function": "function(SslService) {\n                return SslService.getStatus().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "vpnHomeStatus": [
+          "VpnHomeService",
+          {
+            "$function": "function(VpnHomeService) {\n                return VpnHomeService.loadStatus().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "vpnHomeCertificates": [
+          "VpnHomeService",
+          "vpnHomeStatus",
+          {
+            "$function": "function(VpnHomeService, vpnHomeStatus) {\n                if (vpnHomeStatus.isRunning) {\n                    return VpnHomeService.loadCertificates().then(function success(response) {\n                        return response.data;\n                    }, function error() {\n                        return null;\n                    });\n                } else {\n                    return [];\n                }\n            }"
+          }
+        ]
+      },
+      "translationKey": "ADMINCONSOLE.DEVICES.LABEL",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "HTTPS",
+      "parent": "MAIN",
+      "redirectTo": "sslstate",
+      "url": "https",
+      "showInNavbar": true,
+      "iconUrl": "/img/icons/ic_lock_outline_black.svg",
+      "navbarOrder": 8,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'PRO';\n        }"
+      },
+      "resolvePolicy": {
+        "async": "WAIT",
+        "when": "LAZY"
+      },
+      "resolve": {
+        "sslEnabled": [
+          "SslService",
+          {
+            "$function": "function(SslService) {\n                return SslService.getStatus(true).then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "sslCertStatus": [
+          "SslService",
+          {
+            "$function": "function(SslService) {\n                return SslService.getSslCertStatus().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "sslSettings": [
+          "SslService",
+          {
+            "$function": "function(SslService) {\n                return SslService.getUpdatedSettingsRenewalStatus().then(function success(settings) {\n                    return settings;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "caOptions": [
+          "SslService",
+          {
+            "$function": "function(SslService) {\n                return SslService.getRootCaOptions().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "sslRecordingEnabled": [
+          "SslService",
+          {
+            "$function": "function(SslService) {\n                return SslService.getSslErrorRecordingEnabled().then(function success(response) {\n                    return response.data.enabled;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "devices": [
+          "DeviceService",
+          {
+            "$function": "function(DeviceService) {\n                return DeviceService.getAll().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ]
+      },
+      "translationKey": "ADMINCONSOLE.SSL.LABEL",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "sslstatus",
+      "url": "/status",
+      "parent": "sslstate",
+      "tabOrder": 1,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'PRO';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.SSL_STATUS.LABEL",
+      "component": "sslStatusComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "sslcertificate",
+      "url": "/certificate",
+      "parent": "sslstate",
+      "tabOrder": 2,
+      "disableWhenNoSsl": true,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'PRO';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.SSL_CERTIFICATE.LABEL",
+      "component": "sslCertificateComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "sslfails",
+      "url": "/fails",
+      "parent": "sslstate",
+      "tabOrder": 3,
+      "disableWhenNoSsl": true,
+      "showWarningWhenSuggestions": true,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'PRO';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.SSL_FAILS.LABEL",
+      "component": "sslFailsComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "trustedapps",
+      "url": "/trustedapps/:id",
+      "parent": "sslstate",
+      "tabOrder": 4,
+      "disableWhenNoSsl": true,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'PRO';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.TRUSTED_APPS.LABEL",
+      "component": "trustedAppsComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "trusteddomains",
+      "url": "/trusteddomains",
+      "parent": "sslstate",
+      "tabOrder": 5,
+      "disableWhenNoSsl": true,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'PRO';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.TRUSTED_DOMAINS.LABEL",
+      "component": "trustedDomainsComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "anonymization",
+      "parent": "MAIN",
+      "redirectTo": "anonymizationstate",
+      "url": "anonymization",
+      "showInNavbar": true,
+      "iconUrl": "/img/icons/ic_security.svg",
+      "navbarOrder": 4,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'BAS';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.IP_ANON.LABEL",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "anonymizationstate",
+      "parent": "anonymization",
+      "redirectTo": "tor",
+      "requiredLicense": {
+        "$function": "function() {\n            return 'BAS';\n        }"
+      },
+      "component": "ipAnonComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "system",
+      "parent": "MAIN",
+      "redirectTo": "timeandlanguage",
+      "url": "system",
+      "showInNavbar": true,
+      "iconUrl": "/img/icons/ic_settings.svg",
+      "navbarOrder": 9,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.SYSTEM.LABEL",
+      "component": "systemComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "network",
+      "parent": "MAIN",
+      "redirectTo": "networksettings",
+      "url": "network",
+      "showInNavbar": true,
+      "iconUrl": "/img/icons/ic_settings_ethernet_black.svg",
+      "navbarOrder": 10,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "resolvePolicy": {
+        "async": "WAIT",
+        "when": "LAZY"
+      },
+      "resolve": {
+        "configuration": [
+          "NetworkService",
+          {
+            "$function": "function(NetworkService) {\n                return NetworkService.getNetworkConfig().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "configurationIp6": [
+          "NetworkService",
+          {
+            "$function": "function(NetworkService) {\n                return NetworkService.getNetworkIp6Config().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "dnsEnabled": [
+          "DnsService",
+          {
+            "$function": "function(DnsService) {\n                return DnsService.loadDnsStatus(true).then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ]
+      },
+      "translationKey": "ADMINCONSOLE.NETWORK_SETTINGS.LABEL",
+      "component": "networkComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "networksettings",
+      "url": "/networksettings",
+      "parent": "network",
+      "tabOrder": 1,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.NETWORK_SETTINGS.LABEL",
+      "component": "networkSettingsComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "networksettingsip6",
+      "url": "/networksettingsip6",
+      "parent": "network",
+      "tabOrder": 2,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.NETWORK_SETTINGS_IP6.LABEL",
+      "component": "networkSettingsIp6Component",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "NETWORK_WIZARD",
+      "parent": "PARENT",
+      "url": "network/assistent",
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "allowActive": true,
+      "translationKey": "ADMINCONSOLE.NETWORK_WIZARD.TOOLBAR.TITLE",
+      "component": "networkWizardComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "mobile",
+      "url": "mobile",
+      "parent": "MAIN",
+      "showInNavbar": true,
+      "iconUrl": "/img/icons/ic_smartphone_black.svg",
+      "navbarOrder": 5,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'BAS';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.VPN_HOME.LABEL",
+      "component": "vpnHomeStatusComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "manualrecording",
+      "url": "/manualrecording",
+      "parent": "sslstate",
+      "tabOrder": 6,
+      "disableWhenNoSsl": true,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'PRO';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.MANUAL_RECORDING.LABEL",
+      "component": "manualRecordingComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "users",
+      "url": "/users/:id",
+      "parent": "parentalcontrolstate",
+      "tabOrder": 1,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'FAM';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.USERS.LABEL",
+      "component": "usersComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "blacklists",
+      "url": "/blacklists/:id",
+      "parent": "parentalcontrolstate",
+      "tabOrder": 3,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'FAM';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.BLACKLISTS.LABEL",
+      "component": "blacklistsComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "whitelists",
+      "url": "/whitelists/:id",
+      "parent": "parentalcontrolstate",
+      "tabOrder": 4,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'FAM';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.WHITELISTS.LABEL",
+      "component": "whitelistsComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "tor",
+      "url": "/tor",
+      "parent": "anonymizationstate",
+      "tabOrder": 1,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'BAS';\n        }"
+      },
+      "resolvePolicy": {
+        "async": "WAIT",
+        "when": "LAZY"
+      },
+      "resolve": {
+        "torCountries": [
+          "TorService",
+          {
+            "$function": "function(TorService) {\n                return TorService.getAllTorCountries().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return [];\n                });\n            }"
+          }
+        ],
+        "selectedTorCountries": [
+          "TorService",
+          {
+            "$function": "function(TorService) {\n                return TorService.getSelectedTorExitNodes().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return [];\n                });\n            }"
+          }
+        ]
+      },
+      "translationKey": "ADMINCONSOLE.TOR.LABEL",
+      "component": "torComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "vpnconnect",
+      "url": "/vpn/:id",
+      "parent": "anonymizationstate",
+      "tabOrder": 2,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'BAS';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.VPN_CONNECT.LABEL",
+      "component": "vpnConnectComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "dns",
+      "parent": "MAIN",
+      "redirectTo": "dnsstate",
+      "url": "dns",
+      "showInNavbar": true,
+      "iconUrl": "/img/icons/ic_dns_black.svg",
+      "navbarOrder": 7,
+      "resolvePolicy": {
+        "async": "WAIT",
+        "when": "LAZY"
+      },
+      "resolve": {
+        "dnsEnabled": [
+          "DnsService",
+          {
+            "$function": "function(DnsService) {\n                return DnsService.loadDnsStatus().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "configuration": [
+          "DnsService",
+          {
+            "$function": "function(DnsService) {\n                return DnsService.loadDnsConfiguration().then(function success(configuration) {\n                    return configuration;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ]
+      },
+      "requiredLicense": {
+        "$function": "function() {\n            return 'BAS';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.DNS.LABEL",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "status",
+      "url": "/status",
+      "parent": "system",
+      "tabOrder": 2,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.STATUS.LABEL",
+      "component": "statusComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "timeandlanguage",
+      "url": "/locale",
+      "parent": "system",
+      "tabOrder": 1,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.TIME_LANGUAGE.LABEL",
+      "component": "timeLanguageComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "events",
+      "url": "/events",
+      "parent": "system",
+      "tabOrder": 4,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.EVENTS.LABEL",
+      "component": "eventsComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "backup",
+      "url": "/backup",
+      "parent": "system",
+      "tabOrder": 7,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.BACKUP.LABEL",
+      "component": "backupComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "reset",
+      "url": "/reset",
+      "parent": "system",
+      "tabOrder": 8,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.RESET.LABEL",
+      "component": "resetComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "diagnostics",
+      "url": "/diagnostics",
+      "parent": "system",
+      "tabOrder": 6,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.DIAGNOSTICS.LABEL",
+      "component": "diagnosticsComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "USER_DETAILS",
+      "url": "/users/details",
+      "parent": "parentalcontrol",
+      "ignoreTab": true,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'FAM';\n        }"
+      },
+      "component": "usersDetailsComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "blacklistdetails",
+      "url": "/blacklists/details",
+      "parent": "parentalcontrol",
+      "ignoreTab": true,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'FAM';\n        }"
+      },
+      "component": "blacklistDetailsComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "whitelistdetails",
+      "url": "/whitelists/details",
+      "parent": "parentalcontrol",
+      "ignoreTab": true,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'FAM';\n        }"
+      },
+      "component": "whitelistDetailsComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "devicesstate",
+      "parent": "devices",
+      "redirectTo": "deviceslist",
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "component": "devicesComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "devicedetails",
+      "url": "/details",
+      "parent": "devices",
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "component": "devicesDetailsComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "vpnconnectdetails",
+      "url": "/vpn/details",
+      "parent": "anonymization",
+      "requiredLicense": {
+        "$function": "function() {\n            return 'BAS';\n        }"
+      },
+      "component": "vpnConnectDetailsComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "tasks",
+      "url": "/tasks",
+      "parent": "system",
+      "tabOrder": 5,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.TASKS.LABEL",
+      "component": "tasksComponent",
+      "hide": true,
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "trustedappsdetails",
+      "url": "/details",
+      "parent": "HTTPS",
+      "requiredLicense": {
+        "$function": "function() {\n            return 'PRO';\n        }"
+      },
+      "component": "trustedAppsDetailsComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "sslstate",
+      "parent": "HTTPS",
+      "redirectTo": "sslstatus",
+      "requiredLicense": {
+        "$function": "function() {\n            return 'PRO';\n        }"
+      },
+      "component": "sslComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "filter",
+      "parent": "MAIN",
+      "redirectTo": "filterstate",
+      "url": "filter",
+      "showInNavbar": true,
+      "iconUrl": "/img/icons/eblocker-blocked-24px-2.svg",
+      "navbarOrder": 6,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'PRO';\n        }"
+      },
+      "resolvePolicy": {
+        "async": "WAIT",
+        "when": "LAZY"
+      },
+      "resolve": {
+        "sslEnabled": [
+          "SslService",
+          {
+            "$function": "function(SslService) {\n                return SslService.getStatus().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ]
+      },
+      "translationKey": "ADMINCONSOLE.FILTER.LABEL",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "filterstate",
+      "parent": "filter",
+      "redirectTo": "filteroverview",
+      "requiredLicense": {
+        "$function": "function() {\n            return 'PRO';\n        }"
+      },
+      "component": "filterComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "advancedsettings",
+      "url": "/advanced",
+      "parent": "filterstate",
+      "tabOrder": 2,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'PRO';\n        }"
+      },
+      "resolvePolicy": {
+        "async": "WAIT",
+        "when": "LAZY"
+      },
+      "resolve": {
+        "captivePortal": [
+          "CaptivePortalService",
+          {
+            "$function": "function(CaptivePortalService) {\n                return CaptivePortalService.get().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "compressionMode": [
+          "CompressionService",
+          {
+            "$function": "function(CompressionService) {\n                return CompressionService.get().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "doNotTrack": [
+          "DoNotTrackService",
+          {
+            "$function": "function(DoNotTrackService) {\n                return DoNotTrackService.get().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "referrer": [
+          "ReferrerService",
+          {
+            "$function": "function(ReferrerService) {\n                return ReferrerService.get().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "webRtc": [
+          "WebRtcService",
+          {
+            "$function": "function(WebRtcService) {\n                return WebRtcService.get().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ]
+      },
+      "translationKey": "ADMINCONSOLE.ADVANCED_FILTER_SETTINGS.LABEL",
+      "component": "advancedSettingsComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "VPN_HOME_WIZARD",
+      "parent": "PARENT",
+      "url": "mobile/assistent",
+      "requiredLicense": {
+        "$function": "function() {\n            return 'BAS';\n        }"
+      },
+      "allowActive": true,
+      "resolvePolicy": {
+        "async": "WAIT",
+        "when": "LAZY"
+      },
+      "resolve": {
+        "vpnHomeStatus": [
+          "VpnHomeService",
+          {
+            "$function": "function (VpnHomeService) {\n                return VpnHomeService.loadStatus().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "security": "security",
+        "token": [
+          "security",
+          {
+            "$function": "function(security) {\n                // ** security service should already be initialized\n                return security.getToken();\n            }"
+          }
+        ],
+        "registrationInfo": [
+          "token",
+          "RegistrationService",
+          {
+            "$function": "function(token, RegistrationService) {\n                // 'token' needed only indirectly for the REST call, so we wait until\n                // the token has been loaded (from storage or server). Afterwards the security\n                // service will set the default bearer header, allowing to make this call.\n                // We need to load the registration data, because wizard is out-of-app. If user reloads\n                // the browser, the app will try to re-enter wizard, w/o loading registration info, because that is\n                // done in main state. But wizard, as said, is out-of-app and not child of main state.\n                return RegistrationService.loadRegistrationInfo().then(function success(response) {\n                    return response;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ]
+      },
+      "translationKey": "ADMINCONSOLE.VPN_HOME_WIZARD.TOOLBAR.TITLE",
+      "component": "vpnHomeWizardComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "deviceslist",
+      "url": "/list/:id",
+      "parent": "devicesstate",
+      "tabOrder": 1,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.DEVICES_LIST.LABEL",
+      "component": "devicesListComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "devicesdiscovery",
+      "url": "/discovery",
+      "parent": "devicesstate",
+      "tabOrder": 2,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.DEVICES_DISCOVERY.LABEL",
+      "component": "devicesDiscoveryComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "dnsstatus",
+      "url": "/status",
+      "parent": "dnsstate",
+      "tabOrder": 1,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'BAS';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.DNS_STATUS.LABEL",
+      "component": "dnsStatusComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "dnslocal",
+      "url": "/local",
+      "parent": "dnsstate",
+      "disabledWhenNoDns": true,
+      "tabOrder": 3,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'BAS';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.DNS_LOCAL.LABEL",
+      "component": "dnsLocalComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "dnsserver",
+      "url": "/server",
+      "parent": "dnsstate",
+      "disabledWhenNoDns": true,
+      "disabledWhenNotCustom": true,
+      "tabOrder": 2,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'BAS';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.DNS_SERVER.LABEL",
+      "component": "dnsServerComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "dnsstate",
+      "parent": "dns",
+      "redirectTo": "dnsstatus",
+      "requiredLicense": {
+        "$function": "function() {\n            return 'BAS';\n        }"
+      },
+      "component": "dnsComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "filteroverview",
+      "url": "/overview/:id",
+      "parent": "filterstate",
+      "tabOrder": 1,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'PRO';\n        }"
+      },
+      "resolvePolicy": {
+        "async": "WAIT",
+        "when": "LAZY"
+      },
+      "resolve": {
+        "updateStatus": [
+          "UpdateService",
+          {
+            "$function": "function(UpdateService) {\n                return UpdateService.getStatus().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "devices": [
+          "DeviceService",
+          {
+            "$function": "function(DeviceService) {\n                return DeviceService.getAll().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return [];\n                });\n            }"
+          }
+        ],
+        "dnsEnabled": [
+          "DnsService",
+          {
+            "$function": "function(DnsService) {\n                return DnsService.loadDnsStatus().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ]
+      },
+      "translationKey": "ADMINCONSOLE.FILTER_OVERVIEW.LABEL",
+      "component": "filterOverviewComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "filteranalysis",
+      "url": "/analysis",
+      "parent": "filterstate",
+      "tabOrder": 3,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'PRO';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.FILTER_ANALYSIS.LABEL",
+      "component": "analysisComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "analysisdetails",
+      "url": "/analysis/details",
+      "parent": "filter",
+      "ignoreTab": true,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'PRO';\n        }"
+      },
+      "component": "analysisDetailsComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "DEFAULT",
+      "parent": "MAIN",
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "FILTER_DETAILS",
+      "url": "/details",
+      "parent": "filter",
+      "ignoreTab": true,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'PRO';\n        }"
+      },
+      "component": "filterDetailsComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "DOCTOR",
+      "parent": "MAIN",
+      "url": "doctor",
+      "showInNavbar": true,
+      "iconUrl": "/img/icons/ic_doctor.svg",
+      "navbarOrder": 11,
+      "requiredLicense": {
+        "$function": "function() {\n            return 'BAS';\n        }"
+      },
+      "translationKey": "ADMINCONSOLE.DOCTOR.LABEL",
+      "component": "doctorDiagnosisComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "SPLASH",
+      "parent": "PARENT",
+      "ignoreHook": true,
+      "allowActive": true,
+      "translationKey": "ADMINCONSOLE.SPLASH_SCREEN.TOOLBAR.TITLE",
+      "component": "splashScreenComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "activationfinish",
+      "parent": "PARENT",
+      "ignoreHook": true,
+      "allowActive": true,
+      "translationKey": "ADMINCONSOLE.ACTIVATION_FINISH.TOOLBAR.TITLE",
+      "component": "activationFinishComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "activation",
+      "parent": "PARENT",
+      "resolvePolicy": {
+        "async": "WAIT",
+        "when": "LAZY"
+      },
+      "resolve": {
+        "setupWizardInfo": [
+          "SetupService",
+          {
+            "$function": "function(SetupService) {\n                return SetupService.getInfo().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "regions": [
+          "TimezoneService",
+          {
+            "$function": "function(TimezoneService) {\n                return TimezoneService.getRegions().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return [];\n                });\n            }"
+          }
+        ]
+      },
+      "ignoreHook": true,
+      "allowActive": true,
+      "translationKey": "ADMINCONSOLE.ACTIVATION.TOOLBAR.TITLE",
+      "component": "activationComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "updating",
+      "parent": "systempending",
+      "url": "updating",
+      "ignoreHook": true,
+      "allowActive": true,
+      "translationKey": "ADMINCONSOLE.UPDATING.TOOLBAR.TITLE",
+      "component": "updatingComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "booting",
+      "parent": "systempending",
+      "url": "booting",
+      "ignoreHook": true,
+      "allowActive": true,
+      "translationKey": "ADMINCONSOLE.BOOTING.TOOLBAR.TITLE",
+      "component": "bootingComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "standby",
+      "parent": "systempending",
+      "url": "standby?origin",
+      "ignoreHook": true,
+      "allowActive": true,
+      "translationKey": "ADMINCONSOLE.STAND_BY.TOOLBAR.TITLE",
+      "component": "standByComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "factoryResetScreen",
+      "parent": "systempending",
+      "url": "factoryreset",
+      "ignoreHook": true,
+      "allowActive": true,
+      "translationKey": "ADMINCONSOLE.FACTORY_RESET_SCREEN.TOOLBAR.TITLE",
+      "component": "factoryResetScreenComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "print",
+      "parent": "PARENT",
+      "url": "print",
+      "ignoreHook": true,
+      "translationKey": "ADMINCONSOLE.PRINT.TOOLBAR.TITLE",
+      "component": "printComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "systempending",
+      "parent": "PARENT",
+      "ignoreHook": true,
+      "allowActive": true,
+      "translationKey": "ADMINCONSOLE.STAND_BY.TOOLBAR.TITLE",
+      "component": "systemPendingComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "shutdown",
+      "parent": "systempending",
+      "url": "shutdown",
+      "ignoreHook": true,
+      "allowActive": true,
+      "translationKey": "ADMINCONSOLE.SHUTDOWN.TOOLBAR.TITLE",
+      "component": "shutdownComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "login",
+      "parent": "PARENT",
+      "url": "login",
+      "allowActive": true,
+      "ignoreHook": true,
+      "translationKey": "ADMINCONSOLE.LOGIN.TOOLBAR.TITLE",
+      "component": "loginComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "logout",
+      "parent": "PARENT",
+      "ignoreHook": true,
+      "component": "logoutComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "resetpassword",
+      "parent": "PARENT",
+      "url": "resetpassword",
+      "allowActive": true,
+      "ignoreHook": true,
+      "component": "resetPasswordComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "nolicense",
+      "parent": "MAIN",
+      "requiredLicense": {
+        "$function": "function() {\n            return 'WOL';\n        }"
+      },
+      "component": "notLicensedComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "auth",
+      "parent": "PARENT",
+      "ignoreHook": true,
+      "url": "auth",
+      "component": "authComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "expired",
+      "parent": "PARENT",
+      "translationKey": "ADMINCONSOLE.EXPIRED.TOOLBAR.TITLE",
+      "ignoreHook": true,
+      "component": "expiredComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "MAIN",
+      "parent": "PARENT",
+      "abstract": true,
+      "component": "mainComponent",
+      "resolvePolicy": {
+        "async": "WAIT",
+        "when": "EAGER"
+      },
+      "resolve": {
+        "featureToggleIp6": [
+          "FeatureToggleService",
+          {
+            "$function": "function(FeatureToggleService) {\n                return FeatureToggleService.isFeatureEnabled('ip6').then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return false;\n                });\n            }"
+          }
+        ],
+        "security": "security",
+        "token": [
+          "security",
+          {
+            "$function": "function(security) {\n                // ** security service should already be initialized\n                return security.getToken();\n            }"
+          }
+        ],
+        "registrationInfo": [
+          "token",
+          "RegistrationService",
+          {
+            "$function": "function(token, RegistrationService) {\n                // 'token' needed only indirectly for the REST call, so we wait until\n                // the token has been loaded (from storage or server). Afterwards the security\n                // service will set the default bearer header, allowing to make this call.\n                return RegistrationService.loadRegistrationInfo().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "postRegistrationInformation": [
+          "CustomerInfoService",
+          {
+            "$function": "function(CustomerInfoService) {\n                return CustomerInfoService.getCustomerInfo().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "setupInfo": [
+          "SetupService",
+          {
+            "$function": "function(SetupService) {\n                return SetupService.getInfo().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "configSections": [
+          "StateService",
+          {
+            "$function": "function(StateService) {\n                return StateService.getStates().filter(function(state) {\n                    return state.showInNavbar;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "showSplashScreen": [
+          "SplashService",
+          {
+            "$function": "function(SplashService) {\n                return SplashService.get().then(function success(response) {\n                    return response.data;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "viewConfig": [
+          "TasksService",
+          {
+            "$function": "function(TasksService) {\n                // decide whether to show task tab or not. Must be done here, so that we can go to task-state by URL.\n                // Otherwise hide property (default is false) will prevent traversing to task state until system state\n                // is loaded and updates the property.\n                return TasksService.getConfig().then(function success(config) {\n                    tasks.hide = !config.enabled;\n                    return config;\n                }, function error() {\n                    return {};\n                });\n            }"
+          }
+        ]
+      }
+    },
+    {
+      "name": "app",
+      "url": "/",
+      "component": "settingsComponent",
+      "ignoreHook": true,
+      "resolvePolicy": {
+        "async": "WAIT",
+        "when": "EAGER"
+      },
+      "resolve": {
+        "translateReady": [
+          "$translate",
+          {
+            "$function": "function($translate) {\n                return $translate.onReady();\n            }"
+          }
+        ],
+        "states": [
+          "StateService",
+          {
+            "$function": "function(StateService) {\n                StateService.setStates(allStates);\n                return allStates;\n            }"
+          }
+        ],
+        "settings": "settings",
+        "locale": [
+          "settings",
+          {
+            "$function": "function(settings) {\n                return settings.load().then(function s(r) {\n                    return r;\n                }, function e() {\n                    return settings.getDefaultLocale();\n                });\n            }"
+          }
+        ],
+        "consoleUrl": [
+          "ConsoleService",
+          {
+            "$function": "function(ConsoleService) {\n                return ConsoleService.init().then(function success(response) {\n                    return response;\n                }, function error() {\n                    return null;\n                });\n            }"
+          }
+        ],
+        "systemStatus": [
+          "SystemService",
+          {
+            "$function": "function(SystemService) {\n                return SystemService.loadSystemStatus();\n            }"
+          }
+        ]
+      },
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "OPEN_SOURCE_LICENSES",
+      "parent": "PARENT",
+      "url": "licenses",
+      "requiredLicense": {
+        "$function": "function() {\n            return 'BAS';\n        }"
+      },
+      "ignoreHook": true,
+      "allowActive": true,
+      "translationKey": "ADMINCONSOLE.OPEN_SOURCE_LICENSES.TOOLBAR.TITLE",
+      "component": "openSourceLicensesComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "OPEN_SOURCE_LICENSES_JAVA",
+      "parent": "PARENT",
+      "url": "licenses/java",
+      "requiredLicense": {
+        "$function": "function() {\n            return 'BAS';\n        }"
+      },
+      "ignoreHook": true,
+      "allowActive": true,
+      "translationKey": "ADMINCONSOLE.OPEN_SOURCE_LICENSES.TOOLBAR.TITLE",
+      "component": "libsJavaComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "OPEN_SOURCE_LICENSES_CCPP",
+      "parent": "PARENT",
+      "url": "licenses/ccpp",
+      "requiredLicense": {
+        "$function": "function() {\n            return 'BAS';\n        }"
+      },
+      "ignoreHook": true,
+      "allowActive": true,
+      "translationKey": "ADMINCONSOLE.OPEN_SOURCE_LICENSES.TOOLBAR.TITLE",
+      "component": "libsCCppComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "OPEN_SOURCE_LICENSES_JAVASCRIPT",
+      "parent": "PARENT",
+      "url": "licenses/javascript",
+      "requiredLicense": {
+        "$function": "function() {\n            return 'BAS';\n        }"
+      },
+      "ignoreHook": true,
+      "allowActive": true,
+      "translationKey": "ADMINCONSOLE.OPEN_SOURCE_LICENSES.TOOLBAR.TITLE",
+      "component": "libsJavascriptComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "OPEN_SOURCE_LICENSES_RUBY",
+      "parent": "PARENT",
+      "url": "licenses/ruby",
+      "requiredLicense": {
+        "$function": "function() {\n            return 'BAS';\n        }"
+      },
+      "ignoreHook": true,
+      "allowActive": true,
+      "translationKey": "ADMINCONSOLE.OPEN_SOURCE_LICENSES.TOOLBAR.TITLE",
+      "component": "libsRubyComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    },
+    {
+      "name": "OPEN_SOURCE_LICENSES_DEBIAN",
+      "parent": "PARENT",
+      "url": "licenses/debian",
+      "requiredLicense": {
+        "$function": "function() {\n            return 'BAS';\n        }"
+      },
+      "ignoreHook": true,
+      "allowActive": true,
+      "translationKey": "ADMINCONSOLE.OPEN_SOURCE_LICENSES.TOOLBAR.TITLE",
+      "component": "libsDebianComponent",
+      "params": {
+        "param": null,
+        "id": null,
+        "origin": null
+      }
+    }
+  ]
+}

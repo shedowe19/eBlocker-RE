@@ -1,0 +1,25 @@
+<div flex class="column-xs" hide-xs>
+    <md-icon md-svg-src="/img/icons/ic_doctor.svg"></md-icon>
+</div>
+
+<div flex flex-gt-xs="10">
+    <md-icon ng-if="vm.templateCallback.isError(entry)" class="content-error" md-svg-src="/img/icons/ic_error.svg">
+    </md-icon>
+    <md-tooltip ng-show="vm.templateCallback.isError(entry)" md-delay="300">{{ 'ADMINCONSOLE.DOCTOR.DIAGNOSIS.TABLE.SEVERITY.ERROR' | translate }}</md-tooltip>
+    <md-icon ng-show="vm.templateCallback.isWarning(entry)" class="content-warn" md-svg-src="/img/icons/ic_warning.svg">
+    </md-icon>
+    <md-tooltip ng-show="vm.templateCallback.isWarning(entry)" md-delay="300">{{ 'ADMINCONSOLE.DOCTOR.DIAGNOSIS.TABLE.SEVERITY.WARNING' | translate }}</md-tooltip>
+    <md-icon ng-show="vm.templateCallback.isInfo(entry)" class="content-ok" md-svg-src="/img/icons/ic_info_black.svg">
+    </md-icon>
+    <md-tooltip ng-show="vm.templateCallback.isInfo(entry)" md-delay="300">{{ 'ADMINCONSOLE.DOCTOR.DIAGNOSIS.TABLE.SEVERITY.INFO' | translate }}</md-tooltip>
+    <md-icon ng-show="vm.templateCallback.isOkay(entry)" class="content-ok" md-svg-src="/img/icons/ic_check_circle.svg">
+    </md-icon>
+    <md-tooltip ng-show="vm.templateCallback.isOkay(entry)" md-delay="300">{{ 'ADMINCONSOLE.DOCTOR.DIAGNOSIS.TABLE.SEVERITY.OKAY' | translate }}</md-tooltip>
+</div>
+
+<div flex flex-gt-xs="55" style="white-space: normal">
+    {{ 'ADMINCONSOLE.DOCTOR.DIAGNOSIS.TABLE.MESSAGE.' + entry.tag | translate }}
+    {{entry.dynamicInfo}}
+    <a ng-if="vm.templateCallback.showMoreInfo(entry)" href="{{'https://eblocker.org/doctor/' + entry.tag}}" target="_blank">
+        {{'ADMINCONSOLE.DOCTOR.DIAGNOSIS.TABLE.MESSAGE.MORE_INFO' | translate}}</a>
+</div>

@@ -1,0 +1,10 @@
+category,path,line
+privilege,Jenkinsfile,6
+privilege,Jenkinsfile,11
+privilege,Jenkinsfile,16
+service,etc/systemd/eblocker-led.service,3
+service,etc/systemd/eblocker-led.service,4
+service,etc/systemd/eblocker-led.service,9
+service,etc/systemd/eblocker-led.service,12
+service,etc/systemd/eblocker-led.service,13
+service,etc/systemd/eblocker-led.service,14

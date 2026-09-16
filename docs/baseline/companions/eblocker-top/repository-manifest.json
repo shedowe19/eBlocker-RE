@@ -1,0 +1,65 @@
+{
+  "commit": "dae741ad23198c6f718fa5945d0c56f2e57f62ff",
+  "files": [
+    {
+      "path": ".github/workflows/deployPackage.yml",
+      "module": ".github",
+      "language": "other",
+      "role": "source",
+      "bytes": 944,
+      "mode": "100644",
+      "git_blob": "9521e55affc6b1b23b57219fde574dfe0e742b68",
+      "sha256": "5e94bfada48e1fb7c188d0399be1ff19cab99b8c9e62cb4db8cdbd7999611642"
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "module": ".github",
+      "language": "other",
+      "role": "source",
+      "bytes": 843,
+      "mode": "100644",
+      "git_blob": "84dd30291c1c5f42a1b252827729e3617b2f53af",
+      "sha256": "6e738b09fd2d0fedbeefc8e8a9c79ea1b59d5a8cd2148ce260bb673bad832223"
+    },
+    {
+      "path": ".gitignore",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 23,
+      "mode": "100644",
+      "git_blob": "bceabf93e4be9fb83ebfbd19476836c55c713722",
+      "sha256": "c18d5772a3d88603488ae1ad527935dbd025289ced217aab5b323ac435ba90bd"
+    },
+    {
+      "path": "LICENSE.md",
+      "module": "root",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 13948,
+      "mode": "100644",
+      "git_blob": "b605841ba34743006a82bf3df026d4528bfcd27f",
+      "sha256": "2017b48dfe8027238f8fd8457795d23c6a2385b70ee05de9cb29a33bf93c02e1"
+    },
+    {
+      "path": "README.md",
+      "module": "root",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 318,
+      "mode": "100644",
+      "git_blob": "05c663b6d057adc9e0963a3b4cb7b2abd12d3750",
+      "sha256": "2a99a990452b8dc504ae9b5d6718bd3495616e591e3a15fbc5c5e61208608159"
+    },
+    {
+      "path": "pom.xml",
+      "module": "root",
+      "language": "XML",
+      "role": "source",
+      "bytes": 23936,
+      "mode": "100644",
+      "git_blob": "559b2a83735c7fe64af065934b601d6a9f89ced1",
+      "sha256": "a7a67209c4c5069968bc6fb60f3af1ce8bac3d33874cdeecbb22d57be7043d1d"
+    }
+  ]
+}

@@ -1,0 +1,638 @@
+{
+  "commit": "045913d59093218f553276023935871e30951191",
+  "files": [
+    {
+      "path": "src/main/java/org/eblocker/lists/appwhitelist/AppWhitelistCheck.java",
+      "lines": 320,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/DomainFilterProvider.java",
+      "lines": 266,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/DomainFilterProviderTest.java",
+      "lines": 232,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/ParentalControlFilterListCreator.java",
+      "lines": 213,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/appwhitelist/AppWhitelistCheckTest.java",
+      "lines": 204,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/FragFinnProvider.java",
+      "lines": 180,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/EasyListDomainProvider.java",
+      "lines": 177,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/util/DomainSet.java",
+      "lines": 159,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/MalwareListCreatorTest.java",
+      "lines": 157,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/tls/IntermediateCertificateListCreator.java",
+      "lines": 155,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/ParentalControlFilterListCreatorTest.java",
+      "lines": 155,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/bpjm/BpjmModulZipReader.java",
+      "lines": 136,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/EasyListSyntaxValidator.java",
+      "lines": 135,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "tools/mails2json.py",
+      "lines": 135,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/util/DefaultHttpClientTest.java",
+      "lines": 134,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/MalwarePatrolDownloader.java",
+      "lines": 132,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/ChecksumValidator.java",
+      "lines": 124,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/PhishtankDownloaderTest.java",
+      "lines": 124,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/MalwareListCreator.java",
+      "lines": 122,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/BloomFilterProvider.java",
+      "lines": 120,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/EasyListRuleTest.java",
+      "lines": 117,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/ParentalControlFilterSourceMetaData.java",
+      "lines": 117,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/easylist/MaxAgeValidatorTest.java",
+      "lines": 117,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/MaxAgeValidator.java",
+      "lines": 116,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/util/OnDiskCachingHttpClientTest.java",
+      "lines": 111,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/scriptlets/ScriptletsParser.java",
+      "lines": 110,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/bpjm/BpjmPatternFilterCreator.java",
+      "lines": 109,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/bpjm/BpjmPatternFilterCreatorTest.java",
+      "lines": 109,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/AppModulesTest.java",
+      "lines": 108,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/MalwarePatrolDownloaderTest.java",
+      "lines": 108,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/tls/IntermediateCertificateListCreatorTest.java",
+      "lines": 98,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/DnsResolverService.java",
+      "lines": 95,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/DownloadLists.java",
+      "lines": 94,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/SquidBlacklistProvider.java",
+      "lines": 94,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/scriptlets/ScriptletsDownloader.java",
+      "lines": 93,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/BpjmListProvider.java",
+      "lines": 92,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/LocalListProvider.java",
+      "lines": 89,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/IpPortExtractor.java",
+      "lines": 86,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/PhishtankDownloader.java",
+      "lines": 86,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/DisconnectMeProvider.java",
+      "lines": 85,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/EasyListConfiguration.java",
+      "lines": 83,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/TarGzProvider.java",
+      "lines": 82,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/easylist/ChecksumValidatorTest.java",
+      "lines": 82,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/util/OnDiskCachingHttpClient.java",
+      "lines": 81,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/tools/LazyMainRunner.java",
+      "lines": 80,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/LocalListProviderTest.java",
+      "lines": 79,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/UrlhausDownloader.java",
+      "lines": 78,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/BloomFilterProviderTest.java",
+      "lines": 78,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/BpjmListProviderTest.java",
+      "lines": 78,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/DnsResolverServiceTest.java",
+      "lines": 76,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/MalwarePatrolSanitizedUrlsParserTest.java",
+      "lines": 76,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/EasyListDescription.java",
+      "lines": 74,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/IpPortExtractorTest.java",
+      "lines": 74,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/MalwarePatrolProviderTest.java",
+      "lines": 73,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/SquidBlacklistProviderTest.java",
+      "lines": 73,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/HostsFileProviderTest.java",
+      "lines": 72,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/MalwarePatrolProvider.java",
+      "lines": 71,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/MalwarePatrolSanitizedUrlsParser.java",
+      "lines": 71,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/util/CachingHttpClientTest.java",
+      "lines": 71,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/HostsFileProvider.java",
+      "lines": 68,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/scriptlets/Scriptlet.java",
+      "lines": 68,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/MalwareEntries.java",
+      "lines": 66,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/PhishtankProviderTest.java",
+      "lines": 66,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/ListProvider.java",
+      "lines": 65,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/UrlhausProviderTest.java",
+      "lines": 64,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/util/DomainSetTest.java",
+      "lines": 64,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/util/DefaultHttpClient.java",
+      "lines": 63,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/MalwarePatrolDomainProvider.java",
+      "lines": 62,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/PhishtankDomainProvider.java",
+      "lines": 62,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/easylist/EasyListSyntaxValidatorTest.java",
+      "lines": 62,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/FragFinnProviderTest.java",
+      "lines": 62,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/TarGzProviderTest.java",
+      "lines": 62,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/Blacklists.java",
+      "lines": 61,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/provider/MalwareFileDomainProvider.java",
+      "lines": 60,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/DisconnectMeProviderTest.java",
+      "lines": 60,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/EasyListDomainProviderTest.java",
+      "lines": 60,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/UrlhausDownloaderTest.java",
+      "lines": 58,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/util/CachingHttpClient.java",
+      "lines": 57,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/ListProviderTest.java",
+      "lines": 57,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/PhishtankProvider.java",
+      "lines": 55,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/scriptlets/ScriptletsParserTest.java",
+      "lines": 55,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/MalwareEntriesTest.java",
+      "lines": 54,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/HashBlacklist.java",
+      "lines": 52,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/MalwareFileDomainProviderTest.java",
+      "lines": 51,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/PhishtankDomainProviderTest.java",
+      "lines": 51,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/ProviderConfig.java",
+      "lines": 50,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/bpjm/BpjmModulZipReaderTest.java",
+      "lines": 50,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/parentalcontrol/provider/MalwarePatrolDomainProviderTest.java",
+      "lines": 50,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/MaxFilterSizeValidator.java",
+      "lines": 48,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "tools/testjson.py",
+      "lines": 47,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/Checksums.java",
+      "lines": 46,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/FileProvider.java",
+      "lines": 46,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/DomainBlacklist.java",
+      "lines": 46,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/util/ProprietaryConfigurationLoader.java",
+      "lines": 46,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/easylist/MaxFilterSizeValidatorTest.java",
+      "lines": 44,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/EasyListRuleTestResource.java",
+      "lines": 43,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/FileProviderTest.java",
+      "lines": 43,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/HostPortTuple.java",
+      "lines": 40,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/easylist/FileResource.java",
+      "lines": 38,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/Filter.java",
+      "lines": 37,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/tools/EasyListChecksum.java",
+      "lines": 37,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/util/HttpClientFactory.java",
+      "lines": 36,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/PhishtankEntry.java",
+      "lines": 35,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/malware/MalwarePatrolSquidGuardParserTest.java",
+      "lines": 35,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/org/eblocker/lists/util/HttpClientFactoryTest.java",
+      "lines": 35,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/tools/EasyList2Json.java",
+      "lines": 34,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/MalwarePatrolSquidGuardParser.java",
+      "lines": 33,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/UrlhausProvider.java",
+      "lines": 33,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/util/Digests.java",
+      "lines": 31,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/tools/ResourceInputStream.java",
+      "lines": 30,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/ChecksumValidationResult.java",
+      "lines": 28,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/MalwareListException.java",
+      "lines": 27,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/Blacklist.java",
+      "lines": 26,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/bpjm/BpjmModulZipException.java",
+      "lines": 25,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/UrlhausEntry.java",
+      "lines": 25,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/InvalidMetaDataException.java",
+      "lines": 25,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/easylist/MaxAgeValidationResult.java",
+      "lines": 24,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/DnsResolver.java",
+      "lines": 24,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/util/HttpClient.java",
+      "lines": 24,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/BlacklistProvider.java",
+      "lines": 23,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/FilterProvider.java",
+      "lines": 23,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/MalwareProvider.java",
+      "lines": 21,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/parentalcontrol/EmptyListProvider.java",
+      "lines": 13,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/MalwarePatrolParser.java",
+      "lines": 11,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/org/eblocker/lists/malware/NameResolutionException.java",
+      "lines": 11,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    }
+  ],
+  "languages": {
+    "other": 51,
+    "XML": 5,
+    "JSON": 15,
+    "Markdown": 3,
+    "Java": 123,
+    "Python": 2
+  }
+}

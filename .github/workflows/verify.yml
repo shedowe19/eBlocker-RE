@@ -1,0 +1,220 @@
+name: Monorepo verification
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  java:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        java: ['17', '25']
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v6
+        with:
+          java-version: ${{ matrix.java }}
+          distribution: temurin
+          cache: maven
+      - name: Test server and all in-tree Java dependencies
+        env:
+          EBLOCKER_AGENT_INTEGRATION: 'true'
+        run: ./mvnw -B -ntp -pl apps/server,apps/certificate-validator,content/filter-lists,libs/persistence -am test
+      - name: Preserve test results
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: java-${{ matrix.java }}-tests
+          path: '**/target/surefire-reports/'
+
+  web:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - name: Install locked dependencies
+        working-directory: apps/web
+        run: npm ci
+      - name: Test build lifecycle and development server
+        working-directory: apps/web
+        run: npm run test:build-tools
+      - name: Build all web applications and run browser tests
+        working-directory: apps/web
+        env:
+          CHROME_BIN: /usr/bin/google-chrome
+        run: npm run build
+      - name: Preserve browser results
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: web-tests
+          path: apps/web/report/
+
+  console:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: apps/console
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+          cache-dependency-path: apps/console/package-lock.json
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Test and build the React console
+        run: npm run check
+      - name: Install Chromium for browser tests
+        run: npx playwright install --with-deps chromium
+      - name: Verify browser flows and accessibility
+        run: npm run test:e2e
+      - name: Preserve browser results
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: console-browser-results
+          path: |
+            apps/console/playwright-report/
+            apps/console/test-results/
+
+  packages:
+    needs: [java, web, console, dns, network-agent, wireguard-native]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v6
+        with:
+          java-version: '17'
+          distribution: temurin
+          cache: maven
+      - name: Verify complete Maven reactor including Debian packages
+        run: ./mvnw -B -ntp verify
+        env:
+          CHROME_BIN: /usr/bin/google-chrome
+          EBLOCKER_AGENT_INTEGRATION: 'true'
+      - uses: actions/upload-artifact@v7
+        with:
+          name: debian-packages
+          path: |
+            **/target/*.deb
+            libs/persistence/target/*-jar-with-dependencies.jar
+          if-no-files-found: error
+
+  dns:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      matrix:
+        component: [coredns, dynamic]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version-file: .go-version
+          cache-dependency-path: platform/dns/${{ matrix.component }}/go.sum
+      - name: Test DNS plugins
+        working-directory: platform/dns/${{ matrix.component }}
+        run: go test -race ./...
+      - name: Compile Linux binaries for both appliance architectures
+        working-directory: platform/dns/${{ matrix.component }}
+        run: |
+          GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -o target/dns-linux-amd64 .
+          GOOS=linux GOARCH=arm64 CGO_ENABLED=0 go build -o target/dns-linux-arm64 .
+
+  network-agent:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version-file: .go-version
+          cache-dependency-path: apps/network-agent/go.sum
+      - name: Vet and race-test WireGuard parsing and lifecycle recovery
+        working-directory: libs/wireguard
+        run: |
+          mkdir -p ../../target/network-agent-reports
+          go vet ./...
+          go test -race -json ./... | tee ../../target/network-agent-reports/wireguard.jsonl
+      - name: Vet and race-test the agent including real Unix sockets and Netlink
+        working-directory: apps/network-agent
+        env:
+          EBLOCKER_AGENT_INTEGRATION: '1'
+        run: |
+          mkdir -p ../../target/network-agent-reports
+          go vet ./...
+          go test -race -json ./... | tee ../../target/network-agent-reports/network-agent.jsonl
+      - name: Verify private control socket and kernel peer credentials
+        working-directory: apps/network-agent
+        env:
+          EBLOCKER_CONTROL_SOCKET_TEST: '1'
+        run: go test -race -tags=controlintegration -json ./internal/controlapi | tee ../../target/network-agent-reports/control-socket.jsonl
+      - name: Build Debian packages for both appliance architectures
+        run: |
+          apps/network-agent/scripts/build-deb.sh amd64
+          apps/network-agent/scripts/build-deb.sh arm64
+      - name: Preserve agent packages and Go test reports
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: network-agent-packages-and-tests
+          path: |
+            apps/network-agent/target/*.deb
+            target/network-agent-reports/
+          if-no-files-found: error
+
+  wireguard-native:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version-file: .go-version
+          cache-dependency-path: apps/network-agent/go.sum
+      - name: Compile the native kernel integration test
+        working-directory: apps/network-agent
+        run: |
+          mkdir -p target
+          go test -race -c -o target/wgkernel.test ./internal/wgkernel
+      - name: Verify native WireGuard lifecycle in an isolated network namespace
+        working-directory: apps/network-agent
+        shell: bash
+        run: |
+          set -o pipefail
+          sudo modprobe wireguard
+          sudo modprobe nf_tables
+          sudo unshare --net -- env EBLOCKER_WIREGUARD_INTEGRATION=1 \
+            "$PWD/target/wgkernel.test" \
+            -test.run '^TestNative(Lifecycle|FullTunnel)InIsolatedNamespace$' \
+            -test.v -test.timeout=180s 2>&1 | tee target/wireguard-native.log
+      - name: Preserve native lifecycle test result
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: wireguard-native-test
+          path: apps/network-agent/target/wireguard-native.log
+          if-no-files-found: warn

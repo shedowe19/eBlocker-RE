@@ -1,0 +1,42 @@
+{
+  "data": {
+    "phase": "imported",
+    "plan": {
+      "applied": false,
+      "defaultRouteIPv4": true,
+      "defaultRouteIPv6": true,
+      "dns": [],
+      "endpointExclusions": [
+        "198.51.100.1"
+      ],
+      "interfaceAddresses": [
+        "10.20.0.2/32"
+      ],
+      "killSwitchActive": false,
+      "leakRisks": [
+        "no_kill_switch",
+        "dns_not_configured"
+      ],
+      "peers": [
+        {
+          "allowedIPs": [
+            "0.0.0.0/0",
+            "::/0"
+          ],
+          "endpoint": "198.51.100.1:51820",
+          "hasPresharedKey": false,
+          "publicKey": "AwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM="
+        }
+      ],
+      "requiredCapabilities": [
+        "CAP_NET_ADMIN"
+      ],
+      "warnings": [
+        "Validation only: no tunnel, routes, DNS settings, or kill switch have been applied.",
+        "Literal endpoints covered by tunnel or connected routes require verified bypass routes through the original uplink to prevent routing loops."
+      ]
+    },
+    "profileId": "home"
+  },
+  "schemaVersion": 1
+}

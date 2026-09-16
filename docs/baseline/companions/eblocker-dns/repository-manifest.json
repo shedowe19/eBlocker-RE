@@ -1,0 +1,285 @@
+{
+  "commit": "fa0e85399e2cc6b29f25a826261feb7c32d85bae",
+  "files": [
+    {
+      "path": ".bundle/config",
+      "module": ".bundle",
+      "language": "other",
+      "role": "source",
+      "bytes": 93,
+      "mode": "100644",
+      "git_blob": "8e9ffc711ed5c0bbb4dd6e8ac8dba794d41749cb",
+      "sha256": "cced53f3ed63791765f6c096c61914d3ed5ce19b6548b4074e624948151f6f2b"
+    },
+    {
+      "path": ".gitignore",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 232,
+      "mode": "100644",
+      "git_blob": "8d4a25f50ccc5b15f14e073c858c288b2bd1b44c",
+      "sha256": "b15b9ab00e913c7008c4ce37a475d0b8c544317aef71044628f57a5d761488e9"
+    },
+    {
+      "path": "Gemfile",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 691,
+      "mode": "100644",
+      "git_blob": "9903bad5ee34ed8857f66134bb8a4bf1ede509fd",
+      "sha256": "431fc62e5a4e48767b8c8464dd4402b1b5d3a7d104b0a554abc353a3b8450d3d"
+    },
+    {
+      "path": "Jenkinsfile",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 818,
+      "mode": "100644",
+      "git_blob": "3c9b0b7a77832d2ec86775e47f063128ceb7b2ca",
+      "sha256": "6e2e89cfbce13fd191620887a6e998e3a996f2da239fd7421210e2f05c4585b2"
+    },
+    {
+      "path": "LICENSE.md",
+      "module": "root",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 13948,
+      "mode": "100644",
+      "git_blob": "b605841ba34743006a82bf3df026d4528bfcd27f",
+      "sha256": "2017b48dfe8027238f8fd8457795d23c6a2385b70ee05de9cb29a33bf93c02e1"
+    },
+    {
+      "path": "Makefile",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 785,
+      "mode": "100644",
+      "git_blob": "28ee6e8cb0b7d460b8c6691193894a27fcf87ab5",
+      "sha256": "f9e9ec015baf841795c5fbeaad9cc582b731b64b10c9e81cd57bfd2bcf2a2668"
+    },
+    {
+      "path": "README.md",
+      "module": "root",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 949,
+      "mode": "100644",
+      "git_blob": "df1d9824d92d7bd92a591a3408ad8f8c7565ca7a",
+      "sha256": "a0730abb6f070a2ebc9051478c5e302dd8b97226c4b2f1d8fbb1c24478f370e1"
+    },
+    {
+      "path": "Rakefile",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 189,
+      "mode": "100644",
+      "git_blob": "4727ff2aa6cabc60a48f6d4b7715ecac94233632",
+      "sha256": "657782914980729e4ec67721ac78e56d44372f0bea59464c6167155e8a3864ca"
+    },
+    {
+      "path": "bin/eblocker-dns",
+      "module": "bin",
+      "language": "other",
+      "role": "source",
+      "bytes": 770,
+      "mode": "100755",
+      "git_blob": "2dc07b5c1e3bf87f1bac1c61c950f0403ea7820d",
+      "sha256": "2a80d7ec34bf108fe736a947cbff44a8129de82089a852334ebc31a3779e7939"
+    },
+    {
+      "path": "debian/changelog",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 1066,
+      "mode": "100644",
+      "git_blob": "17e10811fb68028541993bdfb416a1f715f93e39",
+      "sha256": "0a8aa17763371b12cc5e9fe04b65ecf68f2b0b5eadbfa8970b99dedd777f23ae"
+    },
+    {
+      "path": "debian/compat",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 2,
+      "mode": "100644",
+      "git_blob": "ec635144f60048986bc560c5576355344005e6e7",
+      "sha256": "2e6d31a5983a91251bfae5aefa1c0a19d8ba3cf601d0e8a706b4cfa9661a6b8a"
+    },
+    {
+      "path": "debian/control",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 388,
+      "mode": "100644",
+      "git_blob": "bc89268b414e85131829405a0ff79efb78d76bd0",
+      "sha256": "3a1fc5df4d2d4b1504550893dc64d2c90007d4524c5f2ee775fadf7115938e18"
+    },
+    {
+      "path": "debian/postinst",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 1068,
+      "mode": "100755",
+      "git_blob": "a1fff3dd88029d77bab63a5a40e34faf0678a631",
+      "sha256": "dde0d857301813f7ccbd046275cb0721252381f5d3d9a6ead086689881c2c5a7"
+    },
+    {
+      "path": "debian/postrm",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 821,
+      "mode": "100755",
+      "git_blob": "58362273919b5a776cff8e3223860047f8b89632",
+      "sha256": "2fca4a45e395e97e1d5416f02052fb9471d708705c0ad96b9422a2922716dd02"
+    },
+    {
+      "path": "debian/preinst",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 867,
+      "mode": "100755",
+      "git_blob": "fdaee4387d56ffcb5fac9d351abd53cd5aa889df",
+      "sha256": "26f0f4a8075451b16fb80cef0dcf4d605a8d75cb510102196a601e9d55a097b6"
+    },
+    {
+      "path": "debian/prerm",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 809,
+      "mode": "100755",
+      "git_blob": "dc0dfcfe276f989e317d1cd5e24e302244543eb0",
+      "sha256": "129e017b3e49182995ffb3c4fd63b9a5abf85fddead1bd72088a117e141e6502"
+    },
+    {
+      "path": "debian/rules",
+      "module": "debian",
+      "language": "other",
+      "role": "source",
+      "bytes": 443,
+      "mode": "100755",
+      "git_blob": "e50e7cd851912f500cbd334efe16c519bdf9af03",
+      "sha256": "51e74e292a7aa1de91ea5ae19859a73976f5fedb3febb6b8e2ab3f93362cf2cb"
+    },
+    {
+      "path": "eblocker-dns.gemspec",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 906,
+      "mode": "100644",
+      "git_blob": "279e53c644c2582d3a10641f72a251cc258ccaa0",
+      "sha256": "796d7196e8c868b45b447c8ef4eeff212bc55e5af7984dae52c828d40233c937"
+    },
+    {
+      "path": "etc/logrotate.d/eblocker-dns",
+      "module": "etc",
+      "language": "other",
+      "role": "source",
+      "bytes": 126,
+      "mode": "100644",
+      "git_blob": "66875dc90b6cf6278aee48d6a2f7fd9583b23da8",
+      "sha256": "dfa4e02160dcc50a71fd468f4cacb80dd93b79e9d1e2113743ca38035ddc0f6d"
+    },
+    {
+      "path": "etc/security/limits.d/eblocker-dns.conf",
+      "module": "etc",
+      "language": "other",
+      "role": "source",
+      "bytes": 355,
+      "mode": "100644",
+      "git_blob": "6ba6a084f4ab8533108c2d47955564052ee00121",
+      "sha256": "b80f02d6f5c7bd40658eb26907a012e19ea082167a21d22846333297e53022ca"
+    },
+    {
+      "path": "etc/systemd/eblocker-dns.service",
+      "module": "etc",
+      "language": "other",
+      "role": "source",
+      "bytes": 448,
+      "mode": "100644",
+      "git_blob": "24f3025dc8c8840d8279815185efcae04de6f141",
+      "sha256": "3f021c006620696110c6ae955a1fcd14b166ce2fcd3ecea8d1e2de014dc5a9be"
+    },
+    {
+      "path": "lib/eblocker/dns.rb",
+      "module": "lib",
+      "language": "other",
+      "role": "source",
+      "bytes": 1939,
+      "mode": "100755",
+      "git_blob": "7d3bbb99d1b6ee23ce9eb8f769f4c23dcede9727",
+      "sha256": "d656d7b5aa388fdc17dd7c4932c9705c8026c6edb79be6a71ac547438648d2fd"
+    },
+    {
+      "path": "lib/eblocker/dns/cache.rb",
+      "module": "lib",
+      "language": "other",
+      "role": "source",
+      "bytes": 2608,
+      "mode": "100644",
+      "git_blob": "9fe28940b5930af9dc024c927f24ea178ead9427",
+      "sha256": "37a01bd3e884088e9028b942124f03349bf1df0c5a5e2ae67be2ab9399eb80bb"
+    },
+    {
+      "path": "lib/eblocker/dns/config-listener.rb",
+      "module": "lib",
+      "language": "other",
+      "role": "source",
+      "bytes": 1953,
+      "mode": "100644",
+      "git_blob": "0ba2a0f64b0361eae7638bbd7977f55c776bcfb1",
+      "sha256": "14b4cf93588dece46fbb7d4840d78613793dcefc66584a430fa2e4d559dfa4e9"
+    },
+    {
+      "path": "lib/eblocker/dns/server.rb",
+      "module": "lib",
+      "language": "other",
+      "role": "source",
+      "bytes": 16325,
+      "mode": "100644",
+      "git_blob": "fc14923ed9e1eb59afdbc86b3a5a2c78dbb79a50",
+      "sha256": "2d0e04becc5b3a288eade0f2203ac5c8841abf2021f29be0cc91b15bbe0b45e5"
+    },
+    {
+      "path": "lib/eblocker/dns/utils.rb",
+      "module": "lib",
+      "language": "other",
+      "role": "source",
+      "bytes": 1780,
+      "mode": "100644",
+      "git_blob": "cd7c30010b06fccecedf4e03109c69247f01d032",
+      "sha256": "96d01a8aae6e32d54db293f366a79ee41759ab19c6cbf9fa1950c748dca79ef2"
+    },
+    {
+      "path": "lib/eblocker/dns/version.rb",
+      "module": "lib",
+      "language": "other",
+      "role": "source",
+      "bytes": 767,
+      "mode": "100644",
+      "git_blob": "9329cbda5f6fb24f4ec2ba06b08f86bde0cff12b",
+      "sha256": "1fed43392a6953be5ea43c03bd092b86ac37798d5cb892eb09125b3a4cd6f6e8"
+    },
+    {
+      "path": "test/eblocker/dns/utils_test.rb",
+      "module": "test",
+      "language": "other",
+      "role": "source",
+      "bytes": 1442,
+      "mode": "100644",
+      "git_blob": "e9d656ab194a0b7d576e5b88cad8ed4b4c7e27ee",
+      "sha256": "c396bc8b4b6f02324ed5470e05959307d507006641e69c2f9014d164747e19bc"
+    }
+  ]
+}

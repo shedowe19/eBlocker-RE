@@ -1,0 +1,1135 @@
+{
+  "commit": "dc954e75116751dbf4c700892e943a1b933d1b5a",
+  "files": [
+    {
+      "path": "eblocker-baseconfig/src/deb/control/control",
+      "module": "eblocker-baseconfig",
+      "language": "other",
+      "role": "source",
+      "bytes": 350,
+      "mode": "100644",
+      "git_blob": "2037e85d25631218cbb347495ebac7abb76a5fdc",
+      "sha256": "13b154678bdc29e2f3433f1bd75c945b2a735bc5aba8a95137480734ce253953"
+    },
+    {
+      "path": "eblocker-baseconfig/src/deb/control/postinst",
+      "module": "eblocker-baseconfig",
+      "language": "other",
+      "role": "source",
+      "bytes": 2631,
+      "mode": "100755",
+      "git_blob": "021f8387651c8d1be6f0c0a2b9863d0d725e3473",
+      "sha256": "046119360c30cb0cb5132bbae6a490e301b1c65138979173d4c19b7f4c663584"
+    },
+    {
+      "path": "eblocker-baseconfig/src/deb/control/prerm",
+      "module": "eblocker-baseconfig",
+      "language": "other",
+      "role": "source",
+      "bytes": 1020,
+      "mode": "100755",
+      "git_blob": "64c2e179456583104582d8e8ce8f40cbd020b462",
+      "sha256": "8d391878a8b294a26f6aa64ad12ca3d0d0cf5da8c7ebf2e146d205679a8b6649"
+    },
+    {
+      "path": "eblocker-certificate-validator/src/deb/control/control",
+      "module": "eblocker-certificate-validator",
+      "language": "other",
+      "role": "source",
+      "bytes": 270,
+      "mode": "100644",
+      "git_blob": "4450f4840a92afec58229ddaf276e1fcda382fd9",
+      "sha256": "946e1bea560066f478126e1b7b5592df5b2739c315810444b0b18a63c8f54595"
+    },
+    {
+      "path": "eblocker-certificate-validator/src/deb/control/postinst",
+      "module": "eblocker-certificate-validator",
+      "language": "other",
+      "role": "source",
+      "bytes": 847,
+      "mode": "100755",
+      "git_blob": "472451db509feb7462280e2a92d92b5332d12280",
+      "sha256": "fa27fa8d57ad95363f5bcf2b3cd032bd455bb72d6fa4018a133acdd7b958cdd9"
+    },
+    {
+      "path": "eblocker-certificate-validator/src/deb/control/postrm",
+      "module": "eblocker-certificate-validator",
+      "language": "other",
+      "role": "source",
+      "bytes": 802,
+      "mode": "100755",
+      "git_blob": "aed4d93878e77f6303f3b0626ef1aebfb18227ef",
+      "sha256": "6baf29fd03305d89e863733e49657fb303cc99d990333925582debab634266db"
+    },
+    {
+      "path": "eblocker-certificate-validator/src/deb/control/preinst",
+      "module": "eblocker-certificate-validator",
+      "language": "other",
+      "role": "source",
+      "bytes": 859,
+      "mode": "100755",
+      "git_blob": "21672bed3614e459b875881ec1c822ba0717d2a7",
+      "sha256": "07a5eadf9fc8f2e9993480db7e68b34c5d7a9c44e218848463db17d3cb3c2b05"
+    },
+    {
+      "path": "eblocker-certificate-validator/src/deb/control/prerm",
+      "module": "eblocker-certificate-validator",
+      "language": "other",
+      "role": "source",
+      "bytes": 806,
+      "mode": "100755",
+      "git_blob": "56ec800bc458e957769e68cc2977d4c81ba4b7a9",
+      "sha256": "76db8f28ac227d4a2aec80c9e29f088b139e32e0b9c5a41a001e9221fbc6fa64"
+    },
+    {
+      "path": "eblocker-certificate-validator/src/main/package/bin/certificate-validator-log4j2.xml",
+      "module": "eblocker-certificate-validator",
+      "language": "XML",
+      "role": "source",
+      "bytes": 758,
+      "mode": "100644",
+      "git_blob": "4f28fe67a0adaed0a53f5115e946fa7dd77d8265",
+      "sha256": "eb7c3f2fac6d14ab5311d18024bcc280b04af917edc34a510300a6e1c14ede54"
+    },
+    {
+      "path": "eblocker-certificate-validator/src/main/package/bin/certificate-validator.sh",
+      "module": "eblocker-certificate-validator",
+      "language": "Shell",
+      "role": "source",
+      "bytes": 1263,
+      "mode": "100644",
+      "git_blob": "9eadc84dee437fc891805bef59b7014d09adf862",
+      "sha256": "0bfb42fb64d0864d4bfc019a46d2283df039c31772f78a7b1f87ea2a93d6680e"
+    },
+    {
+      "path": "eblocker-certificate-validator/src/main/package/bin/squid-certificate-validator.sh",
+      "module": "eblocker-certificate-validator",
+      "language": "Shell",
+      "role": "source",
+      "bytes": 784,
+      "mode": "100644",
+      "git_blob": "f14308bd74e057c6ac615fe33a5d019fff3af1a4",
+      "sha256": "9f82d06e8ae234bb1cf44bd42db9b199d6f8434013987a215246f70dbfb030c8"
+    },
+    {
+      "path": "eblocker-certificate-validator/src/main/package/systemd/certvalidator.service",
+      "module": "eblocker-certificate-validator",
+      "language": "other",
+      "role": "source",
+      "bytes": 368,
+      "mode": "100644",
+      "git_blob": "d529f9a8253f68c6cb798d298e791ad9730aad4e",
+      "sha256": "10e398a653c221ee40d2545549ab8ab867ecc0141125340439b4dd758e267808"
+    },
+    {
+      "path": "eblocker-icapserver/src/deb/control/control",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 527,
+      "mode": "100644",
+      "git_blob": "718dee1744b780787088f9fc35bc082e65b5aebf",
+      "sha256": "db6fc797ee9b0cc5efd7afb63d8131ae0b10d066b50cf4552e6dd774cf4707f0"
+    },
+    {
+      "path": "eblocker-icapserver/src/deb/control/postinst",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 2456,
+      "mode": "100644",
+      "git_blob": "050ce08e0a9f85ebddc1cf036aa2552ee3abbd5e",
+      "sha256": "8109df5ef9f574a95359cbd34ab420e2687dfdf3a7952c53eefb76147d94b8d3"
+    },
+    {
+      "path": "eblocker-icapserver/src/deb/control/postrm",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 809,
+      "mode": "100644",
+      "git_blob": "1ec7d81cfbc6774ba643da83dfec7e29996f69ab",
+      "sha256": "21819e0e7d6c5312c0350059360d93a3b2693fd8e177055bb126e4f2cf8c73a5"
+    },
+    {
+      "path": "eblocker-icapserver/src/deb/control/prerm",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1146,
+      "mode": "100644",
+      "git_blob": "33ec14d729dcc15b36920a324c925e3459de26f1",
+      "sha256": "ad4c30732ef3ba35b28ca167d462cd02d5e108389c05043d79551ca7e769c97e"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/bin/eblocker-icapserver.sh",
+      "module": "eblocker-icapserver",
+      "language": "Shell",
+      "role": "source",
+      "bytes": 1428,
+      "mode": "100644",
+      "git_blob": "8d3e00811f9c890d1ab9f93e34cb9afcb8b96b31",
+      "sha256": "74f89fc907f02bd4c5bfde81a8b2f6ee6bb8ea75969d4c1045fc64959b3b34eb"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/bin/eblocker-reset.sh",
+      "module": "eblocker-icapserver",
+      "language": "Shell",
+      "role": "source",
+      "bytes": 3007,
+      "mode": "100755",
+      "git_blob": "5d9bef22ca353c2e929d27376b686569443350ef",
+      "sha256": "167263f4fa9421af5f28e427ff5cd983aa9e34aaeae77a1f414fca9309eb463e"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/bin/install-eblocker-updates.sh",
+      "module": "eblocker-icapserver",
+      "language": "Shell",
+      "role": "source",
+      "bytes": 1750,
+      "mode": "100755",
+      "git_blob": "74716bc253d467c45d88704441ac9293b24fe947",
+      "sha256": "9a1d47c987f5c16839532fcfb7b64ac48b203b67f43861ad59d08d2e690dc8b1"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/bin/network-config-import.sh",
+      "module": "eblocker-icapserver",
+      "language": "Shell",
+      "role": "source",
+      "bytes": 830,
+      "mode": "100644",
+      "git_blob": "39d24317b3247e914bb5e22b8e22ca43fc8f6ed8",
+      "sha256": "49b2ef90f3683c506f2c6d3976158b968f191e1ef28d4d2bdb25c905bd17f131"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/bin/recover-eblocker-updates.sh",
+      "module": "eblocker-icapserver",
+      "language": "Shell",
+      "role": "source",
+      "bytes": 1318,
+      "mode": "100755",
+      "git_blob": "539e8359e747ba453d2b61098df300fdbc4a0fbd",
+      "sha256": "62c5124d505d29b1237a8da76c15bd13918b43241fd9500da00e14f8364f547d"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/bin/squid-helper-connection",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 2541,
+      "mode": "100755",
+      "git_blob": "c14cc46b1216ec360e61496e904435de54d1073e",
+      "sha256": "3a4527346c1620ff0a3aaa92e2ba72e6efeaa5de0ec644f1812278cad00c9fc4"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/bin/updates-check.sh",
+      "module": "eblocker-icapserver",
+      "language": "Shell",
+      "role": "source",
+      "bytes": 1236,
+      "mode": "100755",
+      "git_blob": "48a6d4d8246f89b6cf04d6bb1412570210cf6a93",
+      "sha256": "f240c3c7b9ac6b3379d0f88f042d7ae4f87ee7e1c57601cf3e14eb98bc885a92"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/bin/updates-download.sh",
+      "module": "eblocker-icapserver",
+      "language": "Shell",
+      "role": "source",
+      "bytes": 1144,
+      "mode": "100755",
+      "git_blob": "fde6bc253e4e59b416bf73acd0fcf3c000190141",
+      "sha256": "b03db85af80f9d9a84f431a1caa133f1a5aec81b3ef27980057ce628dc8947d5"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/bin/usb-automount.sh",
+      "module": "eblocker-icapserver",
+      "language": "Shell",
+      "role": "source",
+      "bytes": 735,
+      "mode": "100644",
+      "git_blob": "6840de2e45bf4bc19a723ce100783b583caca4bb",
+      "sha256": "9450f7a20b5cafcab17a41439bc164d33e25c6bbe5790329d6fe67bf91e2b02f"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/bin/usb-autounmount.sh",
+      "module": "eblocker-icapserver",
+      "language": "Shell",
+      "role": "source",
+      "bytes": 711,
+      "mode": "100644",
+      "git_blob": "09f64caf587a89c771d08222bb439b387bf6ddd8",
+      "sha256": "034b280e5e34af3555d3db32ad73cc8d0a00cd6036487520a33c8a9677889561"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/conf/icapserver-log4j2.xml",
+      "module": "eblocker-icapserver",
+      "language": "XML",
+      "role": "source",
+      "bytes": 2082,
+      "mode": "100644",
+      "git_blob": "bb379428ecfe7e2f797adfc2579fe75e821364e4",
+      "sha256": "5200bfaf98ee7768375039ea1a917e5ff03f647db06ac8235503af837f809e2f"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/conf/iproute2.rt_tables.static",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 111,
+      "mode": "100644",
+      "git_blob": "ca47a5ba9034a5afdce93586109649e17015b1cd",
+      "sha256": "2257f81397da7da640ed8fc8abe36d7e3e9642acae64acb49b10e2ba1114a219"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/conf/openvpn-server-client.macos-template.conf",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 445,
+      "mode": "100644",
+      "git_blob": "14e543ade80f2caeacf756a114b93343499ffc5d",
+      "sha256": "4ff052cc4791aabaab7a2eea4075762467e12d024fe35a71147adc34e6f6c17b"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/conf/openvpn-server-client.unix-template.conf",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 535,
+      "mode": "100644",
+      "git_blob": "a7b8d8d12c1239442f27ec4625ad03d81e9678e0",
+      "sha256": "e8a5d74433d9f49f30dc9e96a6d524de54a8bcb0605404a9c9d6a118397f6f00"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/conf/openvpn-server-client.windows-template.conf",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 463,
+      "mode": "100644",
+      "git_blob": "193a76a8f93b4db8fae1d5d21189dd4c650862af",
+      "sha256": "f218a671e094014b70e61fd02ef0371aaf9f5cf03c58a63f5dee370b38f02d1f"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/conf/openvpn-server.conf",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1810,
+      "mode": "100644",
+      "git_blob": "03e0a60c044a9e0f2849d858ff26ac8fb776142f",
+      "sha256": "a94e7ddd4c998dbc3d8ec76ecacc00aa8594bbd3563a27b744464dc197aba1f0"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/conf/squid.no_ssl.exclusive",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 15,
+      "mode": "100644",
+      "git_blob": "27be4ff1e4b95a02a84a8ada331d3caf0afccc14",
+      "sha256": "ef8028e59cc37e97612cdaaceb8bd51611cc780a45ca78577d5a91d5b4e9d829"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/conf/squid.ssl.exclusive",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 298,
+      "mode": "100644",
+      "git_blob": "77e0cdf39841c079c27ad5ad7ee7b4df56a8edc8",
+      "sha256": "be907df88a2d0e7a03e057637de992f9d41dccfba56a1f382619ff926699b674"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/conf/squid.ssl.template",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1523,
+      "mode": "100644",
+      "git_blob": "21680808766c1a94a6f755859d6ff93c795bf6c3",
+      "sha256": "aa539dcaef18360b21286cfa8a0b90306623f032e36ce6c057bee8b53244219c"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/conf/squid.static",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 6037,
+      "mode": "100644",
+      "git_blob": "ead33dac9fa6c2557c1c8be70e471483cb8ec04c",
+      "sha256": "7cc9074f782fbc3612a37e011f278542316f74a5bc68984c8727b4ed31687f5f"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/conf/ssl-default-domain-whitelist.txt",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 897,
+      "mode": "100644",
+      "git_blob": "482206fe6142d02caf651240ce6189a9013b92df",
+      "sha256": "f34f70da3baeb44775ea771aef9e5c089de545c30904b11025a21a01605df72b"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/conf/torrc.template",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 538,
+      "mode": "100644",
+      "git_blob": "31bf5bd567e440b6271728ec3892eaae23d2ce78",
+      "sha256": "23b4f89905e025f9aba8609105afc784a9878aadbcb7342761501da02f01ec60"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/conf/useragents.properties",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 125,
+      "mode": "100644",
+      "git_blob": "fa8c305a74bce0503781cc02fa88b66404581030",
+      "sha256": "47c83e9c47ffd5e562fdb6b64dd12f57f090bef7007bfbef160a290347771e3d"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/default/eblocker-reset",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 293,
+      "mode": "100644",
+      "git_blob": "c527ca8fe4ee55aa9ee1bde87789e7ee4f767cf8",
+      "sha256": "846edfc098d84dcd92c4b67ff3b7be84fb28eb883ca3252d27ef4e6bc582bd15"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/default/isc-dhcp-server.site",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 132,
+      "mode": "100644",
+      "git_blob": "ca20de5866fd8ef8572d69581c889e0823fe529f",
+      "sha256": "2b4bc30bd1a0a2fc67a1e3cc082f08eb5ebc63b16dc71f0b71fb103caf5ec3ca"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/apply_firewall_configuration",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 2945,
+      "mode": "100644",
+      "git_blob": "ba092aa2934473d12dbc57a083e57d2558c156ad",
+      "sha256": "8182ca1b199e1c1dc3ced625df441824d75005521d45d18221a2af34d31c3bdc"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/apply_network_configuration",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1542,
+      "mode": "100755",
+      "git_blob": "98e4160732cab5da77935a40f1383fc4dc7a9464",
+      "sha256": "2894dcea46e4d09f77de65d41e1bada90fb7bebf5a8bf7a01430d577c7a38de0"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/clear_certificate_cache",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1222,
+      "mode": "100755",
+      "git_blob": "5c58280e287de0e244966f8f8e7f80907bc43324",
+      "sha256": "a03173789063cdc53d4543817cca7642e74dc7ace222a18e6d579f36f1f0bede"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/dhcp_discovery",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 762,
+      "mode": "100644",
+      "git_blob": "7f6e2a658910cea67e02aaeac55f14f1e8f47a4a",
+      "sha256": "c53ce98470a614fba390d65d14c0309a20457b135da6a9013cfe69fcc0992982"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/dhcpd-apply-config",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1528,
+      "mode": "100644",
+      "git_blob": "513dfec2ee7d10bd137df91e80b7a4b3626053a2",
+      "sha256": "4530d6e6d57a3f43595b22d94c00e1de6ca176dc704c506f382d0ed7cfe733f8"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/dhcpd-disable",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 968,
+      "mode": "100644",
+      "git_blob": "8989af0fc06bec89d853ad52e967aacce734f017",
+      "sha256": "fc13977b9ad33190a3be41917f93c0f44ed1f2e8613508ca846a7209ffc6e3de"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/dhcpd-enable",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1132,
+      "mode": "100644",
+      "git_blob": "ef619c8f7979feeb006dc02ce4528091115ba186",
+      "sha256": "5865460d737e6a6a98158988a22495bb25cadd6fe3969bce0dc22af2458e526e"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/diagnostics-report",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 7957,
+      "mode": "100644",
+      "git_blob": "f5a65ea8061b4233e39d371cb37d6da81965a493",
+      "sha256": "46bc5fe33a14feaf20969c2c83a56fdcee402f0405ab17c5931edf3d9457218a"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/dump_iptables_rules",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1049,
+      "mode": "100644",
+      "git_blob": "e4432b43906f0587ce6f14dc1d8d128ce9a0dd8f",
+      "sha256": "18b2b64131785365afbb26f8fffaa71c9ed20d2d0ab21eff568e506badc14a24"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/enable_ip6",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1270,
+      "mode": "100755",
+      "git_blob": "0e0a066924f38ce2edfa30be7dc31971875b070f",
+      "sha256": "b0f00899add5bf97953bd32080bc12341c40bb5b3fcb29e7c4d62963ae9de422"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/factory_reset",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 3800,
+      "mode": "100644",
+      "git_blob": "abb3a435e58e24dc167691486f3b268264a19265",
+      "sha256": "96aa490f745c8f3349b5fddd06c2eb0f6ee652d8f6771d998f7f86a12639a674"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/factory_reset_start",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 786,
+      "mode": "100644",
+      "git_blob": "c840de6569be2731a49e889a24f7c2e5978e3696",
+      "sha256": "adb1ada2ba1739e1e668ce4479cd5f10322f76cc33cfabc021a7754076c8ea40"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/get_gateway",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1027,
+      "mode": "100644",
+      "git_blob": "be36ff6d1603de2b494e692d05ffdb35f5bd53c3",
+      "sha256": "aaf029d828ffbd9580d70ec71fc4e5f8185234a9acb722e093b6c5d4d7e35c73"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/ip-monitor",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 831,
+      "mode": "100755",
+      "git_blob": "dae89c9201099db985d7d49d0518eefdb3b7f2c5",
+      "sha256": "13e2f62b9d79fd1740718372e6022221e6e0deefffc351975ebf6d9c2ad30001"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/iproute2_rttables_reconfigure",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1225,
+      "mode": "100644",
+      "git_blob": "2bcb7413bf9c06c284a89af3cf890483dcc5ec0d",
+      "sha256": "7b88cbd622a13bc117e03c7dafba24aa6fdf62f79cd9818d2b3c0f47452a1bdd"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/ipset-check-support",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 818,
+      "mode": "100755",
+      "git_blob": "f5ffc60df212bfae281452ed3eed6077b06a6e93",
+      "sha256": "6b5a8a832a13ce06bb41e93455adf114f8ad801e8757cbfbe5c742f658492637"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/ipset-restore",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 742,
+      "mode": "100755",
+      "git_blob": "a2fdb3c8eef7ced4e2b63a59b41d4395ca838552",
+      "sha256": "fb0aaf5fac0bb7042f8d3a47ff545fb0ec7d32ca1ccda2c8529de535f72be965"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/kill-process",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 866,
+      "mode": "100755",
+      "git_blob": "28a2a97c1b6e7c21e5211722dbd9cb9fab3422db",
+      "sha256": "27d659044e120e3a871c857261baf2b763d14b057a752ce4c531c6e42a57755d"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/led_controller",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1434,
+      "mode": "100755",
+      "git_blob": "9bdd87229910414d3502c9e743ca45852602241e",
+      "sha256": "c1a3622c152a141b90f992e15f8acee88608a53df4af9687668481720b5d17cc"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/list-block-devices",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 877,
+      "mode": "100755",
+      "git_blob": "5111d6b05c9d0714c72400cb1415db132f2330ae",
+      "sha256": "0234d460ae267fab20f1ae354d4cd4b057a1f1eb3bf1fd76501d20f5490b47bb"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/mountpoint_wait",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1358,
+      "mode": "100755",
+      "git_blob": "72f03c9f95dc060e39e7239cb234e94b6fd47fc5",
+      "sha256": "bcd64875ce3cd54f42e15372a8b0bebf6fe4b21055af43e48368de993bd2dfc8"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/network_alias_add",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 836,
+      "mode": "100644",
+      "git_blob": "26e3fea0abd7e8c40eedf067a9d01053faa28216",
+      "sha256": "0eebaa59f9529c2a0c9ce6f6daa7e3c6fe3e7a0d602749bbea1adbd89b1b545b"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/network_alias_remove",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 812,
+      "mode": "100644",
+      "git_blob": "bdb77c54486d68dc12a4663d97dc946974bd7cb6",
+      "sha256": "e098fe5a50a10c8801ad30703dda8c05fd15ac8d226bdcfe55f6e4cd1b4c3ebf"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/openvpn-server-control",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 3152,
+      "mode": "100755",
+      "git_blob": "bd4dc5aa8f25cdea0edddd361af5e029c51aa28f",
+      "sha256": "f98551b111e1734542f69218f0deb0a13c67ce6acda47b5dfe3d1ace8783fbf4"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/openvpn_clearclientroute",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1053,
+      "mode": "100644",
+      "git_blob": "ca427887162b2e1e70565675c793b590b41bbc3b",
+      "sha256": "f1f12e51020b2f40cf8857254c09f5dd654c5e6a141e7090a15a0d7ace4f7bdf"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/openvpn_down",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1202,
+      "mode": "100644",
+      "git_blob": "8c52e6838b8239e6588086c207f41496b584c9b6",
+      "sha256": "99cdad887066f92bc7cfc21580c62415cb3019aed76fe6b7cf7e788679f98c35"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/openvpn_killall",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 833,
+      "mode": "100644",
+      "git_blob": "3a0dbb03d5de5ea844ea2f8b16c50969d356eff6",
+      "sha256": "647c103db0fd9d97b747457d119a40d60068dacb8254edf4d5bce2c923a5ad84"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/openvpn_learn.sh",
+      "module": "eblocker-icapserver",
+      "language": "Shell",
+      "role": "source",
+      "bytes": 809,
+      "mode": "100644",
+      "git_blob": "74b1bd16f74028273045fc137397bfdd8d4f4d7d",
+      "sha256": "41dfe6e3876b8353ec1c166772404271a1ed439db72f412bde6bf33eb9b28c4c"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/openvpn_server_down.sh",
+      "module": "eblocker-icapserver",
+      "language": "Shell",
+      "role": "source",
+      "bytes": 809,
+      "mode": "100644",
+      "git_blob": "b5ff260c53ba4d3ae5ab110ec66242833591249a",
+      "sha256": "2ee9ad1d57dc23fce301a19d8cde08d63959ec562a1888cb27465d23a3119b0b"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/openvpn_server_up.sh",
+      "module": "eblocker-icapserver",
+      "language": "Shell",
+      "role": "source",
+      "bytes": 807,
+      "mode": "100644",
+      "git_blob": "0cb7a5a4ff112a7d68ae61e7b355d944ec23f5db",
+      "sha256": "fb833a246a164aee8599042e59525cf82f695e771df8683dafee148ef313a28f"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/openvpn_setclientroute",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 2188,
+      "mode": "100644",
+      "git_blob": "45bff8fc16b103c569446a4a0dc139e8716384e9",
+      "sha256": "cb3c2ebddcc8fea5cac4bb16d74d1da661c6568e345ad73cb67f01b392eb66a2"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/openvpn_setclientroute_ip6",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1258,
+      "mode": "100644",
+      "git_blob": "746e66088cf8992eb56eb80cdf6efc3d2b098ad7",
+      "sha256": "6e69a7e02ce16c699a2a6ae18c102a7521b4a06ce57800e50cafd797fd446649"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/openvpn_shutdown",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1331,
+      "mode": "100644",
+      "git_blob": "e99cf57c334bb3469cae56d3cb30ae2426ea12f2",
+      "sha256": "d158f5b71e71e40732f7428fef5f0c9db694acb05aadf9f998a1bf560c2680b3"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/openvpn_start",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 2087,
+      "mode": "100644",
+      "git_blob": "631148fe3fb26b107f30bc6396a63d9a8e145108",
+      "sha256": "5a9990eb4b04c60a0f15b07e36aba298bb99a93f6eb7b7587d30c0d1c99cb5a7"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/openvpn_up",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1922,
+      "mode": "100644",
+      "git_blob": "d5f69e216f499b4c6f27367ea07ca00775a843d4",
+      "sha256": "97e79c4739837b6f6404c33f5ff5b108c12e6ed921be686782185e9aee4230ac"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/pin-eblocker-lists",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 863,
+      "mode": "100644",
+      "git_blob": "65b5ba885649e91cbf670ff5c85ca22a1dc2e73f",
+      "sha256": "4c72a134eb5b79f475e5bce04e3ea0fb9c618b28ca95bfa3c8ed18cd20c814c2"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/ping",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 735,
+      "mode": "100755",
+      "git_blob": "bff7589df09063e37baade6bf45c441d278cd9f6",
+      "sha256": "1f1fdce545aceba94e49b482844031e3f0aba561e6ce2439155c1013938901b6"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/prepare-shutdown",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 771,
+      "mode": "100755",
+      "git_blob": "454915f4f1af651a761d52333f9140ca0e885b94",
+      "sha256": "25887515c3f94ec9c6dd2cea169314e7c7cf95c03ceeca31216ae56a700ecd76"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/processing-script.sh",
+      "module": "eblocker-icapserver",
+      "language": "Shell",
+      "role": "source",
+      "bytes": 1213,
+      "mode": "100755",
+      "git_blob": "c33f3e4d1fb240e9e276792f8279f86fd3418953",
+      "sha256": "097f2ad44a07013b38d4dc36ec43759cbd9c3b54c3e7ee83c2de3fe76ea2c416"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/reboot",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 723,
+      "mode": "100644",
+      "git_blob": "3fefcd1f418ce44099d16b9281f7aaacaf8f2ddd",
+      "sha256": "d1900516c5c042b0b07239033571e3e5267c3855845685538442dd4176694ed4"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/recording_start",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1242,
+      "mode": "100644",
+      "git_blob": "16093bca16b43f7676d9a32ec3975255d8a83762",
+      "sha256": "4a6d193020bc2a37003b41907dd23c844a0d134da38699877ccff401c3bc4292"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/recording_status",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1065,
+      "mode": "100644",
+      "git_blob": "7c065bf7c8895bb3dc66c9ba81b31f8ea7c92dff",
+      "sha256": "f20dd3d3b36f59b2c1589f760a75206a68902d0708e1eb17880caeb9bb30cd72"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/recording_stop",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 910,
+      "mode": "100644",
+      "git_blob": "e4b281787e65776bb370d8d036c337e8b71a80ac",
+      "sha256": "d092fa5500d189edbe79f38a72c95c9a46cc898d696c569325f42953edeeb07d"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/redis-backup",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 941,
+      "mode": "100644",
+      "git_blob": "9660ad6e9b34a6bd5d02d62e19f84f60a49ae7de",
+      "sha256": "bcf76159dc162a1da492ea402fd47e343ae3b5d85c7bbc38c22d2f4c286581cd"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/redis-check",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 849,
+      "mode": "100644",
+      "git_blob": "4b0196b9d7fb6f71c4944c87bd6f2e61edc81048",
+      "sha256": "80be3545c49ece4a92b1c5cd8046f773cddc6394403e7ada1d4a8a1d42aa5f21"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/redis-dependent-services-restart",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 807,
+      "mode": "100644",
+      "git_blob": "7afcb79623dfa2506d9c2b5d4e08e8f508244964",
+      "sha256": "fe074b1703f7d7e954eb2add60f4eae26aded5a51fed9e43593bb73347937f88"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/redis-service",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 744,
+      "mode": "100644",
+      "git_blob": "18a7630e795ab5c525feff574b19256eddce16fb",
+      "sha256": "a99397b1c21f656aa73cf32cae8dfead24ab011036fd736178931c2f270c66f2"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/set_timezone",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1197,
+      "mode": "100644",
+      "git_blob": "cede32aab57830c47fab8d1c1bca1159e7d4ba26",
+      "sha256": "2e8a5381fcd2580eea03a5578439f9606dd325e2f1fedb8aa1116fc566360aeb"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/shutdown",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 726,
+      "mode": "100644",
+      "git_blob": "71c7f55bf1e73b54eb9ebba676f6abb0f5c2c19e",
+      "sha256": "e38fa8556c855af8b4a6fd55faea73df3e2fff89f914e96f4286cda9e7a5520f"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/squid_reconfigure",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 5755,
+      "mode": "100644",
+      "git_blob": "d901cd1fd885fd364f34d9d46b126a0475edb698",
+      "sha256": "56b7a6c19d88b05d33295993741ae1e03f04d7ed88cc9f82c204e60c3a6096bf"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/unpin-eblocker-lists",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 827,
+      "mode": "100644",
+      "git_blob": "8d3cf8392449f79f2e1b2a01176ab311b64fd01e",
+      "sha256": "50b848b900e866b3a9e0725acfe5690c0db226a65e442195b3ac305a6324a415"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/updates-check",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 759,
+      "mode": "100755",
+      "git_blob": "45ac8f2f9639b14cc490d27798d751531621091c",
+      "sha256": "194977af65c937ecfa1fa54bdb5db13f69f0f129e7ec3c22c76c479a3797657b"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/updates-download-running",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 774,
+      "mode": "100644",
+      "git_blob": "ee83199604c83c41670da6a79eae2a9f79d68665",
+      "sha256": "1d97aed5c53f1bdc8b0057f123ec0d997892d7bf09e3a7119ce8ddaaf839ae1f"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/updates-download-start",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 816,
+      "mode": "100644",
+      "git_blob": "5cda2a00d557b653fec7cdba12395d40034f7947",
+      "sha256": "563ee2a789fbed8d785d1294bb73f121bd7f45eec6d8d32f9328e65381306843"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/updates-failed",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1039,
+      "mode": "100755",
+      "git_blob": "62f73087ce1a5dfb84544ea3191a100144d15571",
+      "sha256": "e7df4795cdff4725f297e98a7e43a2c597f925e32d5a20880a45f3f428bea0eb"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/updates-recovery-running",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 797,
+      "mode": "100755",
+      "git_blob": "dabf97a7890c345d4fc17bf5838d8a1c07e85b7d",
+      "sha256": "bd0baf18d0630bb68b8f69ff7cf184d186299172b75db190c10a7fcab547d5ca"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/updates-recovery-start",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 930,
+      "mode": "100755",
+      "git_blob": "8c10215b82ac023dc0c66550636e27c96b647dfb",
+      "sha256": "60c86dd7d7412b8defafca551aec69a19885211c5f087773d8b20c8ed41d40a8"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/updates-running",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 767,
+      "mode": "100644",
+      "git_blob": "3675eb72438714c072eb1995e32fe9124079b16e",
+      "sha256": "aa779695d3bfee8640463a332cf3fa37a512fd1918d2413e49239a7db8f8afa1"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/updates-running-info",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 884,
+      "mode": "100755",
+      "git_blob": "37c0e6f684fef408fd9f76b060cd18647fce1279",
+      "sha256": "6157de7105f8dd36b29bcc90e87d9b4dc1f5c80db5256351d9f53dbf1332dd1e"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/updates-start",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 760,
+      "mode": "100644",
+      "git_blob": "1ea32a7c7cecf7f891613fb726d8961e66c45963",
+      "sha256": "4f6000cb35448d04767ad8beecb6de6dbe0ff390458d6d912e6da577ea3f73b7"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/vpn_policy_reconfigure",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1648,
+      "mode": "100644",
+      "git_blob": "be6ae71887ad28340cae405cb118704529a909f5",
+      "sha256": "33539bdcaf31d0f873471b166e666b0d848ead5779929b120378adf4c3a6c3c1"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/scripts/write_startup_status_file",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 1092,
+      "mode": "100644",
+      "git_blob": "3b859941befaad77e0f19fc148082dd4c455edcb",
+      "sha256": "01eb2ab88a5a3f2a64d652e9bf77cd0b5ed46478a4739b132259f01ecf873cd4"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/systemd/eblocker-network-config-import.service",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 284,
+      "mode": "100644",
+      "git_blob": "b095412c13ad4f3df5b25313d083cf1155a1f2d2",
+      "sha256": "bd61e333dd8446f89ebbed2b473334a4fd061de31e1242c6ec092104ff40bc19"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/systemd/eblocker-reboot.service",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 151,
+      "mode": "100644",
+      "git_blob": "be79a80116c7f3cbe29276788de3354392b01110",
+      "sha256": "3b95e45488d60ad1f93d6bce9d1071aba3b705303f0efc15cd13ac5ab9ca5220"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/systemd/eblocker-reset.service",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 211,
+      "mode": "100644",
+      "git_blob": "e8354a9eed6f50096e47a58635404dcfbe86b908",
+      "sha256": "1daf05795aef9378c968d72e82c78ff99798c870123eef185d0aa9b863c495a7"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/systemd/eblocker-updater.service",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 302,
+      "mode": "100644",
+      "git_blob": "6adce9a38fbcd109ae1a1538c750af3fd9103928",
+      "sha256": "4ea2bd73d268838cfa5c12df10bb711e1c855eb4b3b803df2ce7249bde06b4be"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/systemd/eblocker-usb-automount@.service",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 264,
+      "mode": "100644",
+      "git_blob": "92587f1819a37d7527c1f72cef18d4d81e2a6700",
+      "sha256": "649b6bdeef73d4b14738194b4fa4cba969c7c6f4b32a602a667593f67733f1e6"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/systemd/icapserver.service",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 440,
+      "mode": "100644",
+      "git_blob": "b49e3ae7de5474770ea0044f3ca5a72138be926c",
+      "sha256": "9584a2bbb2408699d4188e74c424abc702418fa2c23ffc20e7f32a58d3b9615a"
+    },
+    {
+      "path": "eblocker-icapserver/src/main/package/udev-rules/90-eblocker-usb-automount.rules",
+      "module": "eblocker-icapserver",
+      "language": "other",
+      "role": "source",
+      "bytes": 605,
+      "mode": "100644",
+      "git_blob": "e86a2440a255c327567c6a7442122e8304117638",
+      "sha256": "85ca949b40047832ddef3ee6be933f512623726ed812d95af1d3de5cd7cf977f"
+    },
+    {
+      "path": "eblocker-ui/deb/control/control",
+      "module": "eblocker-ui",
+      "language": "other",
+      "role": "source",
+      "bytes": 206,
+      "mode": "100644",
+      "git_blob": "de68a224fd466156f90ccb83a63846fa4e95a656",
+      "sha256": "e35f4afa713609957131f3e7c3ab3f0506c1b6f2ec9e8b9e98761440050f022d"
+    },
+    {
+      "path": "eblocker-ui/deb/control/postinst",
+      "module": "eblocker-ui",
+      "language": "other",
+      "role": "source",
+      "bytes": 953,
+      "mode": "100755",
+      "git_blob": "03447b7d1997a953634931fa4fdddb418f540994",
+      "sha256": "c1b20ade1d465a44e9f8106a60b7a8298580570a0f1a52b317c9e4876df1cd2d"
+    },
+    {
+      "path": "eblocker-ui/deb/control/prerm",
+      "module": "eblocker-ui",
+      "language": "other",
+      "role": "source",
+      "bytes": 881,
+      "mode": "100644",
+      "git_blob": "d2a0092fe6a089333ac3120b7ef8be2e100a78c9",
+      "sha256": "589bb027d2bcc9ee7b0a3d95b2cfdc6d2b7db2c7d26cb045a33311de2b493903"
+    }
+  ]
+}

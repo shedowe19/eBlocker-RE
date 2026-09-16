@@ -1,0 +1,855 @@
+{
+  "commit": "3b09dfa0e538d3726d019aa1ac856ae3056c4d2d",
+  "files": [
+    {
+      "path": ".github/workflows/deployPackage.yml",
+      "module": ".github",
+      "language": "other",
+      "role": "source",
+      "bytes": 980,
+      "mode": "100644",
+      "git_blob": "b1414b80fbbadc811ac44246f26e102cebadc62b",
+      "sha256": "bc5df36c834fac876f6888eb41642497cc60fc436f5ffef0b03387a16b9a084b"
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "module": ".github",
+      "language": "other",
+      "role": "source",
+      "bytes": 1035,
+      "mode": "100644",
+      "git_blob": "49df0887cfdf7481dc5c4132893d60937a4cb4b9",
+      "sha256": "05f68f4ed98a7b5023ab8383b711f74ea12e708265f74f749ab7b2d583684dbc"
+    },
+    {
+      "path": ".gitignore",
+      "module": "root",
+      "language": "other",
+      "role": "source",
+      "bytes": 70,
+      "mode": "100644",
+      "git_blob": "d17b370d9a5647e29ccbb93f2d63ce267d33f8f8",
+      "sha256": "52aafa8c7e06aa3e861ddab9f99821287dbeb49309e7863671c7ba13f530883d"
+    },
+    {
+      "path": ".mvn/maven.config",
+      "module": ".mvn",
+      "language": "other",
+      "role": "source",
+      "bytes": 14,
+      "mode": "100644",
+      "git_blob": "b79df8ca66d6673b96abf51fc5bf33de14f67cb2",
+      "sha256": "c72db16003848644a2cffd1037b4a6fe93a4f1b313adfa699887f396771e3f65"
+    },
+    {
+      "path": "LICENSE.md",
+      "module": "root",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 13948,
+      "mode": "100644",
+      "git_blob": "b605841ba34743006a82bf3df026d4528bfcd27f",
+      "sha256": "2017b48dfe8027238f8fd8457795d23c6a2385b70ee05de9cb29a33bf93c02e1"
+    },
+    {
+      "path": "pom.xml",
+      "module": "root",
+      "language": "XML",
+      "role": "source",
+      "bytes": 4672,
+      "mode": "100644",
+      "git_blob": "d8341fc7f159a6aff12ac115f46637e385f86cf8",
+      "sha256": "aff3d4ee8dfbc33ec2d143d9b2223214d6209d9ac13d691d27b921ebff1ff0c6"
+    },
+    {
+      "path": "settings.xml",
+      "module": "root",
+      "language": "XML",
+      "role": "source",
+      "bytes": 672,
+      "mode": "100644",
+      "git_blob": "546f5249cbeed16e1d2c50a818466a41b615bf67",
+      "sha256": "29ed461044b1e3d632a9f1bde7b31441e06e907ef76924d8f916d928f0401382"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/CryptoException.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 981,
+      "mode": "100644",
+      "git_blob": "b5305b8f3011654a4d2dd61f7b6b793a87e38111",
+      "sha256": "89c22c3c1a2cbd5c25b9b9d5fd5f44c1017477f438a4e1f3088b6671c614b153"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/CryptoService.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 923,
+      "mode": "100644",
+      "git_blob": "3f60fcfd3c4be9b0b8dbed5bbf3a9177ab88d4af",
+      "sha256": "aee1fcfb68f2801f76d500b4763965d720c668558fe126a37280a6f46751a8a4"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/CryptoServiceFactory.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3276,
+      "mode": "100644",
+      "git_blob": "e2ecc202f28be2c708a6fdb214c4927b1509d46b",
+      "sha256": "c425366a5337a2f89cd6c55bac71bd73c6fe5ed669d12320ab069630265bf32b"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/CryptoServiceImpl.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3484,
+      "mode": "100644",
+      "git_blob": "b667d16468a303b2ab103f487af82b64cafcef9a",
+      "sha256": "c066995e9a244546c0ce707604eba00aa383a867c1e0d686b38fbd0b0ea6d240"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/EncryptedData.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1347,
+      "mode": "100644",
+      "git_blob": "95f42a91feaa0e0c7162dbde0d904f91452e37a4",
+      "sha256": "514f0e5052a123d5eab72937bf0c5a815556aa656e3c4461b484e06a87e8a794"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/json/DecryptingDeserializer.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3626,
+      "mode": "100644",
+      "git_blob": "fe03e8b4115329f14e3cb1b32d75272f8cc7f952",
+      "sha256": "fd8da80224aa490866c35d18372ad0010c9cb50e818a4dffaef561a5a502ecee"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/json/DecryptingDeserializerModifier.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 5042,
+      "mode": "100644",
+      "git_blob": "0332bdc376ed6c8983cff00534093d7da93b52f0",
+      "sha256": "c6c79a21c3954483254506ef2208f0c26925da17e03359ba57462964ac0821b7"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/json/EncryptingBeanPropertyWriter.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2128,
+      "mode": "100644",
+      "git_blob": "60cb82fbc9af9e795ca31a9f203dfbdacb28ca1f",
+      "sha256": "44a84c4322bc3fded0a1230924a3441b313ec26918ab656f6b331da8691475b8"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/json/EncryptingSerializer.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3022,
+      "mode": "100644",
+      "git_blob": "5c6c8e6812c2eab45769896f0499439f1be435c8",
+      "sha256": "e976e8b5c2076a10aa02d8f85bd69676c93ae331a48ccee32e76904f12ea4911"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/json/EncryptingSerializerModifier.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4727,
+      "mode": "100644",
+      "git_blob": "c5249220d149d771e6b7cf1487aaf210c3e3be69",
+      "sha256": "7e78bd915daa64b0c1e479ed2c966519eb2d30cc40ae29d7f03e04933d6bc244"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/json/JSONCryptoHandler.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1822,
+      "mode": "100644",
+      "git_blob": "971d8b8d93371f6d339211c49d7f17b040bfdd98",
+      "sha256": "d0f69b4317ecd53916a125d0dcff79778fefedd8a4b50040ff148b0d480e860f"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/json/JsonEncrypt.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1058,
+      "mode": "100644",
+      "git_blob": "ac446df0cafc0581a9cbaa23988c060c6a5c7b73",
+      "sha256": "8df74c0b93ed0e44836a3ec4154897d79ee7b3703b5bd6a39af61c7b5d68e8cb"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/json/JsonEncryptionModule.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1753,
+      "mode": "100644",
+      "git_blob": "0da67cf191d9f98127b9e9c6b3e103d51a12bcdf",
+      "sha256": "a0178f9aab4cc47f6d3135373f05af214f3f322632867b1c6bf2869767cbd5e6"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/keys/KeyHandler.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3504,
+      "mode": "100644",
+      "git_blob": "56e89bd24190f1ea05608832fcb0706337d30b6a",
+      "sha256": "b567184d24ffd67aeb55f588cdfd98c0c752ff41566fc9fd8959dc0ed70fccb2"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/keys/KeyWrapper.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 810,
+      "mode": "100644",
+      "git_blob": "b9e8df3eca2d6b33088c16a2d230fbb6fc68d177",
+      "sha256": "a6b8eba95e7c1e655504603b726589dabd7731a9183dc003c48a909367dcc908"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/keys/SystemKey.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4388,
+      "mode": "100644",
+      "git_blob": "fdee3db91ac91566be97faef0d645f8f28fd0d22",
+      "sha256": "8d0a2b9563ccae780079adf6a7309c6eb469783ef3c98eaadb9b9c15734770ad"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/openssl/OpenSslRsaKeyPairGenerator.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4140,
+      "mode": "100644",
+      "git_blob": "e5bd2a26f4889343ee54e187cbf8d63ab5075be1",
+      "sha256": "f835d757bd6824b54b236c31af0325de37fc5fa0643c86aa9941c022e68857ee"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/openssl/OpenSslRsaKeyPairGeneratorProvider.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1074,
+      "mode": "100644",
+      "git_blob": "d2bd39db49eed7ad7143fad1cc7a967201d4b78d",
+      "sha256": "8c2cb661cc789d2acfe12c0a3b961069ba5359901f4976c8e81f12ef1eb521f1"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/pki/CertificateAndKey.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1239,
+      "mode": "100644",
+      "git_blob": "d5b370e66e949b9f1e12e9977bcd5a71e394f694",
+      "sha256": "9f6e69150289b9386948bd1ce8881b6b96ec4957cbce0809b91f5c8b700c0d7d"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/pki/CertificationAuthority.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2202,
+      "mode": "100644",
+      "git_blob": "109bb971a66fa7f8048c5411ea3488bc8e2fc254",
+      "sha256": "9ef54bcd1b4e4aa14811624cad5e8113e5c304631750ad8fee2a3ebcbd73fcd9"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/pki/CertificationAuthorityBuilder.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 4228,
+      "mode": "100644",
+      "git_blob": "9ee33b8b0ddd56b58a19a45154d615c6b89aaeeb",
+      "sha256": "b596a52510056c5f4a9cd6f1dfc55f91d36da67cdeff8c71c30e9efc60fdc803"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/pki/ExtendedValidation.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 3704,
+      "mode": "100644",
+      "git_blob": "33bcbafb5a339fc353a6ccf7d09a15394fed168d",
+      "sha256": "7ac7e76a514e5b0b24ea1255c84e2d23d05e02766f001319d9f2f32485b7754f"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/pki/ExtendedValidationOID.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 19299,
+      "mode": "100644",
+      "git_blob": "73d72bcbbeab70525b9c3b74e145ef594b80e907",
+      "sha256": "f66e194029ec108fb79d2480c77d147acc7535215d2806615f7fbb5f7e365c00"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/pki/PKI.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 33943,
+      "mode": "100644",
+      "git_blob": "bc4dbd83aa1f9d715c8ad933550cacd88c156eca",
+      "sha256": "4fafa95dc761e2e12317f821a38e6135dcf826784e53c7a929a3081249fd74b5"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/pki/RevocationInfo.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2129,
+      "mode": "100644",
+      "git_blob": "b08f62f2b5b94fe38887400b6df794d1965bea7d",
+      "sha256": "b265794eedcf0696866b4d24c5f399fd6ed86d7cd6fbde2bbe57a240c7fec6cd"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/pki/RevocationReason.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1105,
+      "mode": "100644",
+      "git_blob": "808587f16f105e0008b81adaa32e842f7782856f",
+      "sha256": "490db9d2c51d085a9d66c2afdaba92519bb8284330a17f0bc04dfdef5a2c64fc"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/tools/PKITool.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 20569,
+      "mode": "100644",
+      "git_blob": "baefd2b5b24c193d81121ecaf506f88f850d3f0b",
+      "sha256": "46d4f723ab2dd1cd360cb15b306b0b4a28d8c0a268b89ec77ab488f1e5699929"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/util/CertificateResourceLoader.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2327,
+      "mode": "100644",
+      "git_blob": "8037e6a8cfd6a8982cdb7d57dd421915e86c08f8",
+      "sha256": "849cf9e1b1d34462ce9a67b1f0d3782045cc13608c67a3ea3a22e3fbcc222cc7"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/util/DateUtil.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1419,
+      "mode": "100644",
+      "git_blob": "4b65258c05343089f4d7f8b913a7bdcb2e493ca0",
+      "sha256": "248797ac852a7ef790f276d51b716a155b63d96ad921607a8129c631beb60a94"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/util/EncodingUtil.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 1894,
+      "mode": "100644",
+      "git_blob": "9f578068421e791b00faa5e0c16caf8b20c32f27",
+      "sha256": "92e84b4e7a7ad8c806190f33073cc068cd706549f7d2088170c1442599bac04f"
+    },
+    {
+      "path": "src/main/java/org/eblocker/crypto/util/ResourceLoader.java",
+      "module": "src",
+      "language": "Java",
+      "role": "source",
+      "bytes": 2650,
+      "mode": "100644",
+      "git_blob": "36140b776679e8c024bd071f909582db1bc413ba",
+      "sha256": "029502d81e553619c25bafe2742a6e730e8340419566d989e25a59769d44fc1b"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/CryptoServiceTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 4961,
+      "mode": "100644",
+      "git_blob": "203534518b6d1b591bf24b83752eb1783d1c1726",
+      "sha256": "2b33e0395b96ad0918ed683ae550faf82616cd5c5bd8ba6e455edbb4b2624ec2"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/json/JSONCryptoHandlerTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2639,
+      "mode": "100644",
+      "git_blob": "0ba82d29f93c310436abfbae4d07c59a54f9e113",
+      "sha256": "498cbd5cedcc42ceaaaf2262d3801a343ff219eba46ec621711866600985d07f"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/json/JsonEncryptionModuleTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 9243,
+      "mode": "100644",
+      "git_blob": "3a30785ef2d8007ef33724ecb5869e844e8ca481",
+      "sha256": "f26738f142ddf058a7a8a7a788398ce92cda5c03fd6582a3baa9733295e06435"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/json/TestEntity.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1436,
+      "mode": "100644",
+      "git_blob": "003280a4d9f99b33ca3e5a207e314c533baf26da",
+      "sha256": "93e70f7f450dc3e99025b04265d31594545c39bd96ad861ed97f33165cb7149a"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/keys/KeyHandlerTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 6061,
+      "mode": "100644",
+      "git_blob": "dcc98d114ebedb36075ffc611d86594d87684f05",
+      "sha256": "ccd474463e710aa256e1de752d01a1365fd14fb54915036b7a44f9d91be40c24"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/keys/SystemKeyTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2337,
+      "mode": "100644",
+      "git_blob": "751d49a6561c6400bd87afbd1364d49edd816dd1",
+      "sha256": "bdc688c26c6f76dcb5d4bd7a91eaa79bbced52ae77cf2b6ef44e2863f8129550"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/openssl/OpenSslRsaKeyPairGeneratorProviderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1424,
+      "mode": "100644",
+      "git_blob": "c41f750cf866bb3b0ed27bc8a741fa143dcda05c",
+      "sha256": "828c0cf6515543a51d184cb967112851608b638e0db6ea93dea224d8cd2ddc7c"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/openssl/OpenSslRsaKeyPairGeneratorTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1705,
+      "mode": "100644",
+      "git_blob": "058e3eff87f3686764123cf971f9ce9d7a1dfe6f",
+      "sha256": "3de0039e32f5896c565065e193ec41b17d1947d8d615cf8cdb4bbf1045e27622"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/pki/CertificationAuthorityClassPathTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 3265,
+      "mode": "100644",
+      "git_blob": "ff3bc28b0ce0dd180934a2627eb11ba0ccec5669",
+      "sha256": "9b4ff676ebd4133f2c06a1e4b81b28ebe14e91f5ceb90f4ec576e4cf2c57d932"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/pki/CertificationAuthorityTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 7223,
+      "mode": "100644",
+      "git_blob": "0ee9218c5daa976bf53e7d4963b9f9f6810dd492",
+      "sha256": "844bd849411597c3d3e0157796a091fb507e745f8d8f804c02be777ff0fb0b67"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/pki/ExtendedValidationOIDTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1458,
+      "mode": "100644",
+      "git_blob": "11d80f6847b44b9af06a1f264c894eb0ba764de9",
+      "sha256": "8ce64253fea6e64234b752017bdafe09532cb51b4848a6a8dc438e7a231275af"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/pki/ExtendedValidationTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2151,
+      "mode": "100644",
+      "git_blob": "03ddc762f6b8ed38f1484765782c7b4850afcc19",
+      "sha256": "3bf32a155a356f2b165e718ce3706537902f956bee5bd80c1b7bf5b041d9a0ee"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/pki/PKITest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 17372,
+      "mode": "100644",
+      "git_blob": "8dd8daed1376105767f13845734a8ee4e5e1e3fb",
+      "sha256": "c80455bde1613274a139f6b3d55e5251e6ec64df074a94f69d11b7753a3d5ea9"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/util/CertificateResourceLoaderTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 3036,
+      "mode": "100644",
+      "git_blob": "419bea04cab647232985d34901f519488d65fdf0",
+      "sha256": "74df61f7c46376d0a1607ca87322a880d9f502628e31e4d446ffefaa88c27a2c"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/util/DateUtilTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 2296,
+      "mode": "100644",
+      "git_blob": "a23cd89d7e8adf130879d9c06639e62ec21ef634",
+      "sha256": "283a9ef578a22f3c5dcd4766976e499e1d3d24e64da68e265502150e68ab3c51"
+    },
+    {
+      "path": "src/test/java/org/eblocker/crypto/util/EncodingUtilTest.java",
+      "module": "src",
+      "language": "Java",
+      "role": "test",
+      "bytes": 1780,
+      "mode": "100644",
+      "git_blob": "98255740b411b5e0abe8c4001eb909e1cc0b641f",
+      "sha256": "bdffda4bc3738b2954cc8b60e4583b18b376e031bb359687c35aa61b1a1bae49"
+    },
+    {
+      "path": "src/test/resources/crl.pem",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 776,
+      "mode": "100644",
+      "git_blob": "c8043a8df7847ea010c2a81693b377fb33bfaa42",
+      "sha256": "0804cecbecdae5718ea1fb980af8864061dd6c71873179a871dda2657bb4242b"
+    },
+    {
+      "path": "src/test/resources/extended-validation-tests/DomainFACTORY_0.crt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 1967,
+      "mode": "100644",
+      "git_blob": "9288bccf3adcc562d6c3bb3dc7fe10024079e9d6",
+      "sha256": "ba79a9b0c3439c6391e99808507a088eb81f78cc9432668ba815b05325508320"
+    },
+    {
+      "path": "src/test/resources/extended-validation-tests/DomainFACTORY_1.crt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 1121,
+      "mode": "100644",
+      "git_blob": "7ffe4b141ba655de84ad27317881a5c0c071a9cc",
+      "sha256": "24f91c0705a0a5338641b365fb0d9d9709b56297cff1857e73c02c1636d486aa"
+    },
+    {
+      "path": "src/test/resources/extended-validation-tests/DomainFACTORY_2.crt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 958,
+      "mode": "100644",
+      "git_blob": "4d937187ede7ff4298754f14e5399502f844f389",
+      "sha256": "ca42dd41745fd0b81eb902362cf9d8bf719da1bd1b1efc946f5b4c99f42c1b9e"
+    },
+    {
+      "path": "src/test/resources/extended-validation-tests/Google_0.crt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 1156,
+      "mode": "100644",
+      "git_blob": "9e556138ad8308514a5f0b926b88bc888c75d6e8",
+      "sha256": "c465aaa2eb722e66d6988ac902b1ae9c6c089d8129383b716f6c9af25a74e8b0"
+    },
+    {
+      "path": "src/test/resources/extended-validation-tests/Google_1.crt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 1012,
+      "mode": "100644",
+      "git_blob": "5ffd5d5459922fbd5779946be094d12f3b7753a4",
+      "sha256": "a4124fdaf9cac7baee1cab32e3225d746500c09f3cf3ebb253ef3fbb088afd34"
+    },
+    {
+      "path": "src/test/resources/extended-validation-tests/Google_2.crt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 897,
+      "mode": "100644",
+      "git_blob": "82e50046980abe0d6b12faaef5aacd3887766a3e",
+      "sha256": "3c35cc963eb004451323d3275d05b353235053490d9cd83729a2faf5e7ca1cc0"
+    },
+    {
+      "path": "src/test/resources/extended-validation-tests/Haspa_0.crt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 1732,
+      "mode": "100644",
+      "git_blob": "f2a3aaf23c92f8687a15b49e0024e6f4f7a6358a",
+      "sha256": "e17cef36b78844b2fd97223df3809edd3613b7678dec72200eaba7487195bf16"
+    },
+    {
+      "path": "src/test/resources/extended-validation-tests/Haspa_1.crt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 1327,
+      "mode": "100644",
+      "git_blob": "a46f79f25838584f138567acebbf52fe8f057ab8",
+      "sha256": "9e6bc5f9ecc52460e8edc02c644d1be1cb9f2316f41daf3b616a0b2058294b31"
+    },
+    {
+      "path": "src/test/resources/extended-validation-tests/Haspa_2.crt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 1239,
+      "mode": "100644",
+      "git_blob": "9818d19d00739f1370bbde9759f98e7294c6e503",
+      "sha256": "9acfab7e43c8d880d06b262a94deeee4b4659989c3d0caf19baf6405e41ab7df"
+    },
+    {
+      "path": "src/test/resources/extended-validation-tests/Postbank_0.crt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 1463,
+      "mode": "100644",
+      "git_blob": "37e1f99f9589ff5f641b4932678d248b947ed180",
+      "sha256": "bc1d7ddcbec76127d558160bb1cc92b1e1b5cbb351ec43d263f978e49393850f"
+    },
+    {
+      "path": "src/test/resources/extended-validation-tests/Postbank_1.crt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 1327,
+      "mode": "100644",
+      "git_blob": "a46f79f25838584f138567acebbf52fe8f057ab8",
+      "sha256": "9e6bc5f9ecc52460e8edc02c644d1be1cb9f2316f41daf3b616a0b2058294b31"
+    },
+    {
+      "path": "src/test/resources/extended-validation-tests/Postbank_2.crt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 1239,
+      "mode": "100644",
+      "git_blob": "9818d19d00739f1370bbde9759f98e7294c6e503",
+      "sha256": "9acfab7e43c8d880d06b262a94deeee4b4659989c3d0caf19baf6405e41ab7df"
+    },
+    {
+      "path": "src/test/resources/extended-validation-tests/eBlocker_0.crt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 1359,
+      "mode": "100644",
+      "git_blob": "368eca68f4cfc7e09138a629299b0622e37c3219",
+      "sha256": "6da4739a72e9c81258ce390a5cb6dad438371953b64c3e2ffc208e0f55e36fa1"
+    },
+    {
+      "path": "src/test/resources/extended-validation-tests/eBlocker_1.crt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 1548,
+      "mode": "100644",
+      "git_blob": "7d7e8f271e43b37257755ed76258f83533d2fc98",
+      "sha256": "02ab57e4e67a0cb48dd2ff34830e8ac40f4476fb08ca6be3f5cd846f646840f0"
+    },
+    {
+      "path": "src/test/resources/extended-validation-tests/eBlocker_2.crt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 1400,
+      "mode": "100644",
+      "git_blob": "ad75f0fc5419119a8f36aba983d42c13c6b18c82",
+      "sha256": "4f32d5dc00f715250abcc486511e37f501a899deb3bf7ea8adbbd3aef1c412da"
+    },
+    {
+      "path": "src/test/resources/l1ca.crt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 1229,
+      "mode": "100644",
+      "git_blob": "a915396d202c5c7218088712c4504153af22a889",
+      "sha256": "f4a05f8858d803a6f2b4f6618188d2751f003b2a4f5654cbfbc402a1ae3eee75"
+    },
+    {
+      "path": "src/test/resources/l1ca.jks",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 2232,
+      "mode": "100644",
+      "git_blob": "fe5286b328ddc25029d379829d7211ceb0a451cc",
+      "sha256": "9448f7be066b36a211edf4215f75e788069331e9ac78145ce5aa16418303259c"
+    },
+    {
+      "path": "src/test/resources/l1ca.properties",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 199,
+      "mode": "100644",
+      "git_blob": "1c9ba906f883d2b50b0b9ec714345491fdb603c7",
+      "sha256": "81c2353f1445bc4dc390e248b5c29fc67d6fa7657572096f25da01a273376138"
+    },
+    {
+      "path": "src/test/resources/log4j2-test.xml",
+      "module": "src",
+      "language": "XML",
+      "role": "test",
+      "bytes": 422,
+      "mode": "100644",
+      "git_blob": "a102b7112dcb92326d0cd1dc2301d63494b647e7",
+      "sha256": "4033e45957c4c3d96eac261f96fc3641a1a6f556cfffc9bf56eca95d753157fe"
+    },
+    {
+      "path": "src/test/resources/private.key",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 522,
+      "mode": "100644",
+      "git_blob": "4a8818830cc0fbba4810a369a570f11ef81526dd",
+      "sha256": "c0f96f2b6fe6afd304e5fda177da682fdeb9c8f5640db88da45c392a15f6435c"
+    },
+    {
+      "path": "src/test/resources/root.crt",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 1229,
+      "mode": "100644",
+      "git_blob": "1a35e49de7f92ae4be909f400d9580760f98f1f5",
+      "sha256": "dbca7ed3fa6c99e05f7bde44d1f80d281a133d709fc95d903abfa825880a1c54"
+    },
+    {
+      "path": "src/test/resources/root.jks",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 2235,
+      "mode": "100644",
+      "git_blob": "9b288c03ba75902586c18b1ce8cf8fc2725ab55f",
+      "sha256": "5c93a713b3881f24093d4172fec737a76b003766636ee04930e221406287d33f"
+    },
+    {
+      "path": "src/test/resources/root.properties",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 199,
+      "mode": "100644",
+      "git_blob": "e03899136baf7dc2bb496e8386437bb3bf5a8ea9",
+      "sha256": "375dc585e1afe970406667a1209011623715854c7ff44fd14a92cdf609fa5e11"
+    },
+    {
+      "path": "src/test/resources/sample-certs/MicrosoftITSSLSHA2",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 2132,
+      "mode": "100644",
+      "git_blob": "06e60760deb8af83923f86e506a68823b1849ac3",
+      "sha256": "5863818672cce90e399bce8b5a945e488fb779a1bc07371c02726322e1d78eba"
+    },
+    {
+      "path": "src/test/resources/sample-certs/Verisign_Class_1_Public_Primary_CA.pem",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 1968,
+      "mode": "100644",
+      "git_blob": "28721afe76dd9a1e077a2e93bdf78efc7851c363",
+      "sha256": "08df29b914dfeb03e0896c62c81566ebb9681f3248e551619db61953244a631f"
+    },
+    {
+      "path": "src/test/resources/sample-certs/Verisign_Class_3_EV_SSL_CA.cert",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 1854,
+      "mode": "100644",
+      "git_blob": "6858e2a5f103f8d694805b385413395878c2923d",
+      "sha256": "4321af6f53385cba42a40e52dc9c24c26af8a0051fb3c5fec34915a481162390"
+    },
+    {
+      "path": "src/test/resources/sample-certs/Verisign_Revoked.cert",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 2045,
+      "mode": "100644",
+      "git_blob": "7d85fd94a24053b672072d82d354acd6d6ba0233",
+      "sha256": "382853d22e9eb8b12cec8623bb152619409992d9839f33fb6811c07bc3449d84"
+    },
+    {
+      "path": "src/test/resources/sample-certs/certificates.pem",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 8363,
+      "mode": "100644",
+      "git_blob": "2a3fd3bbb88f6ec6bbe19275f5dba136bb5bfa6b",
+      "sha256": "6de17b096ca07863a7ca94dc91964f4cdebdf0de963d9fd60a71639bbd65f36b"
+    },
+    {
+      "path": "src/test/resources/sample-certs/www.microsoft.com",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 2404,
+      "mode": "100644",
+      "git_blob": "ed4597ca0209f80e3d4fd353c039638f92ac514e",
+      "sha256": "5b713c6aa11b05c2ebf4e60664f1240cc5a6864f6459fb21ecd21b4b007e721c"
+    },
+    {
+      "path": "src/test/resources/systemkey.properties",
+      "module": "src",
+      "language": "other",
+      "role": "test",
+      "bytes": 167,
+      "mode": "100644",
+      "git_blob": "1a51de2abae0741cfe84629536751603f99fa964",
+      "sha256": "5beb6baf3712f5ba6aced084a9d0443f9fe8e1a457179b20b716fc20f3899b52"
+    }
+  ]
+}

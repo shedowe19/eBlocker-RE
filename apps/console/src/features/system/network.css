@@ -1,0 +1,75 @@
+.network-editor {
+    display: grid;
+    gap: 1rem;
+}
+.network-editor fieldset {
+    display: grid;
+    gap: 1rem;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+}
+.network-editor label:not(.network-check) {
+    display: grid;
+    gap: 0.4rem;
+}
+.network-editor input:not([type='checkbox']),
+.network-editor select {
+    font: inherit;
+    color: inherit;
+    width: 100%;
+    min-width: 0;
+    padding: 0.7rem;
+    border-radius: 0.45rem;
+    border: 1px solid var(--border, #c9d2d5);
+    background: white;
+}
+.network-check {
+    display: flex;
+    gap: 0.65rem;
+    align-items: center;
+}
+.network-check input {
+    width: 1.1rem;
+    height: 1.1rem;
+    flex-shrink: 0;
+}
+.network-form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+    gap: 1rem;
+}
+.network-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+.network-editor .button {
+    justify-self: start;
+}
+.network-discovery,
+.network-result,
+.network-editor .protection-confirm {
+    padding: 1rem;
+    border: 1px solid var(--border, #c9d2d5);
+    border-radius: 0.6rem;
+}
+.network-editor .protection-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+@media print {
+    .network-editor button,
+    .network-editor form,
+    .network-discovery,
+    .network-actions {
+        display: none !important;
+    }
+    .network-result {
+        break-inside: avoid;
+    }
+}

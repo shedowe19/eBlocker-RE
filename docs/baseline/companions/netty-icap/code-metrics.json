@@ -1,0 +1,476 @@
+{
+  "commit": "1dcfc336993befb5678cd4856eb14adc95c4a828",
+  "files": [
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/DataMockery.java",
+      "lines": 1726,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/socket/SocketTests.java",
+      "lines": 476,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapDecoderUtilTest.java",
+      "lines": 423,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapHeaders.java",
+      "lines": 392,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapRequestDecoderTest.java",
+      "lines": 375,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapDecoderUtil.java",
+      "lines": 358,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapHeaderTest.java",
+      "lines": 346,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/socket/AbstractSocketTest.java",
+      "lines": 310,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/AbstractIcapMessage.java",
+      "lines": 299,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/Encapsulated.java",
+      "lines": 268,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapChunkAggregatorTest.java",
+      "lines": 233,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapChunkAggregator.java",
+      "lines": 228,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapChunkSeparatorTest.java",
+      "lines": 220,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapMessage.java",
+      "lines": 192,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapMessageEncoder.java",
+      "lines": 170,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapResponseDecoderTest.java",
+      "lines": 169,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/EncapsulatedTest.java",
+      "lines": 166,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapCodecUtil.java",
+      "lines": 155,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapCodecUtilTest.java",
+      "lines": 151,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapRequestEncoderTest.java",
+      "lines": 151,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/ReadChunkSizeState.java",
+      "lines": 149,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/ReadIcapHeaderState.java",
+      "lines": 144,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapResponseEncoderTest.java",
+      "lines": 143,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapMessageDecoder.java",
+      "lines": 132,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/DefaultIcapResponse.java",
+      "lines": 128,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapChunkSeparator.java",
+      "lines": 128,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapVersion.java",
+      "lines": 124,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapResponseStatus.java",
+      "lines": 106,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/preview/IcapClient.java",
+      "lines": 100,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/squidechoserver/SquidEchoHandler.java",
+      "lines": 92,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/simple/IcapServerHandler.java",
+      "lines": 90,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/DefaultIcapChunkTrailer.java",
+      "lines": 89,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/ReadHttpRequestInitialAndHeadersState.java",
+      "lines": 88,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/ReadHttpResponseInitalAndHeadersState.java",
+      "lines": 87,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/simple/IcapClient.java",
+      "lines": 86,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapMethod.java",
+      "lines": 86,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/ReadTrailingHeadersState.java",
+      "lines": 85,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/StateReturnValue.java",
+      "lines": 74,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapRequestDecoderPipelineTest.java",
+      "lines": 69,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapRequestEncoderPipelineTest.java",
+      "lines": 66,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/ReadChunkedContentAsChunksState.java",
+      "lines": 65,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/DefaultIcapChunk.java",
+      "lines": 64,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/DefaultIcapRequest.java",
+      "lines": 63,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/ReadIcapInitialState.java",
+      "lines": 61,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapChunk.java",
+      "lines": 59,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapResponse.java",
+      "lines": 59,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/State.java",
+      "lines": 59,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/ReadChunkDelimiterState.java",
+      "lines": 58,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/preview/IcapServerHandler.java",
+      "lines": 57,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/SizeDelimiter.java",
+      "lines": 57,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/socket/AbstractHandler.java",
+      "lines": 56,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/socket/NioOioSocketTest.java",
+      "lines": 56,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/socket/OioNioSocketTest.java",
+      "lines": 56,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapRequest.java",
+      "lines": 55,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/socket/NioNioSocketTest.java",
+      "lines": 55,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/socket/OioOioSocketTest.java",
+      "lines": 55,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/socket/TrickleDownstreamHandler.java",
+      "lines": 54,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapMessageElementEnum.java",
+      "lines": 53,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/AbstractEncoderTest.java",
+      "lines": 53,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/JDKLoggerConfiguration.java",
+      "lines": 52,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapRequestDecoder.java",
+      "lines": 51,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapResponseDecoder.java",
+      "lines": 51,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/ReadChunkState.java",
+      "lines": 50,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/SkipControlCharsState.java",
+      "lines": 50,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/StateEnum.java",
+      "lines": 50,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapRequestEncoder.java",
+      "lines": 48,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/IcapVersionTest.java",
+      "lines": 48,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/preview/IcapServer.java",
+      "lines": 46,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/AbstractIcapTest.java",
+      "lines": 46,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/preview/IcapClientHandler.java",
+      "lines": 45,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/simple/IcapServer.java",
+      "lines": 45,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/simple/IcapServerChannelPipeline.java",
+      "lines": 40,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/squidechoserver/IcapServer.java",
+      "lines": 40,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapResponseEncoder.java",
+      "lines": 40,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/simple/IcapClientChannelPipeline.java",
+      "lines": 39,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/squidechoserver/IcapServerChannelPipeline.java",
+      "lines": 39,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/icap/container/osgi/NettyIcapBundleActivator.java",
+      "lines": 37,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/preview/IcapServerChannelPipeline.java",
+      "lines": 36,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapChunkTrailer.java",
+      "lines": 36,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/preview/IcapClientChannelPipeline.java",
+      "lines": 35,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/simple/IcapClientHandler.java",
+      "lines": 32,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/DecodingException.java",
+      "lines": 31,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/IcapDecodingError.java",
+      "lines": 31,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/AbstractJDKLoggerPreparation.java",
+      "lines": 29,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/socket/Handler.java",
+      "lines": 27,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/preview/package-info.java",
+      "lines": 22,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/simple/package-info.java",
+      "lines": 22,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/package-info.java",
+      "lines": 22,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/icap/container/osgi/package-info.java",
+      "lines": 22,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/test/java/ch/mimo/netty/handler/codec/icap/socket/MessageHandler.java",
+      "lines": 22,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/example/icap/squidechoserver/package-info.java",
+      "lines": 21,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/TooLongFrameException.java",
+      "lines": 19,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    },
+    {
+      "path": "src/main/java/ch/mimo/netty/handler/codec/icap/StringUtil.java",
+      "lines": 9,
+      "note": "Physical lines; not cyclomatic complexity or semantic review coverage"
+    }
+  ],
+  "languages": {
+    "XML": 8,
+    "other": 18,
+    "Markdown": 1,
+    "Java": 93
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "apply_failed": {
+    "message": "Applying the profile failed; inspect the lifecycle state.",
+    "status": 503
+  },
+  "backend_unavailable": {
+    "message": "The native backend is unavailable.",
+    "status": 503
+  },
+  "busy": {
+    "message": "Another control operation is in progress.",
+    "status": 503
+  },
+  "cancelled": {
+    "message": "The operation was cancelled.",
+    "status": 409
+  },
+  "closed": {
+    "message": "Lifecycle manager is closed.",
+    "status": 503
+  },
+  "conflict": {
+    "message": "Disconnect the existing profile before changing or deleting it.",
+    "status": 409
+  },
+  "forbidden": {
+    "message": "The local peer is not authorized.",
+    "status": 403
+  },
+  "invalid_content_type": {
+    "message": "Use uncompressed application/json.",
+    "status": 415
+  },
+  "invalid_id": {
+    "message": "Profile identifier is invalid.",
+    "status": 400
+  },
+  "invalid_json": {
+    "message": "Supply one JSON object using the documented request fields.",
+    "status": 400
+  },
+  "invalid_profile": {
+    "message": "WireGuard profile is invalid.",
+    "status": 422
+  },
+  "invalid_request": {
+    "message": "Request does not match the control API contract.",
+    "status": 400
+  },
+  "invalid_schema": {
+    "message": "Only schemaVersion 1 is supported.",
+    "status": 400
+  },
+  "method_not_allowed": {
+    "message": "Method is not allowed for this operation.",
+    "status": 405
+  },
+  "not_found": {
+    "message": "Profile or operation was not found.",
+    "status": 404
+  },
+  "observation_failed": {
+    "message": "The owned interface could not be observed.",
+    "status": 503
+  },
+  "ownership_mismatch": {
+    "message": "A network resource is not owned by this profile.",
+    "status": 503
+  },
+  "policy_not_verified": {
+    "message": "Full-tunnel routing and firewall protection could not be verified.",
+    "status": 503
+  },
+  "profile_limit": {
+    "message": "The private profile store has reached its capacity.",
+    "status": 409
+  },
+  "profile_too_large": {
+    "message": "WireGuard profiles are limited to 64 KiB.",
+    "status": 413
+  },
+  "recovery_failed": {
+    "message": "Recovery is incomplete; inspect each profile before retrying.",
+    "status": 503
+  },
+  "remove_failed": {
+    "message": "Disconnect is incomplete; retry or recover before reconnecting.",
+    "status": 503
+  },
+  "request_too_large": {
+    "message": "Request body exceeds the size limit.",
+    "status": 413
+  },
+  "response_unavailable": {
+    "message": "The control response is unavailable.",
+    "status": 503
+  },
+  "rollback_failed": {
+    "message": "Rollback is incomplete; recovery is required.",
+    "status": 503
+  },
+  "storage_failed": {
+    "message": "Private lifecycle storage is unavailable.",
+    "status": 503
+  },
+  "timeout": {
+    "message": "The control operation timed out; read the profile state before retrying.",
+    "status": 504
+  },
+  "unsupported_profile": {
+    "message": "The native backend cannot safely apply this profile.",
+    "status": 422
+  }
+}

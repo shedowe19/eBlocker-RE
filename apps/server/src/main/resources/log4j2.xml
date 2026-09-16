@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{ISO8601} [%-5p] %c [%t] - %m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="CONSOLE"/>
+        </Root>
+        <Logger name="STATUS" level="info"/>
+        <Logger name="FILTER_LOG" level="info" additivity="false">
+            <AppenderRef ref="CONSOLE"/>
+        </Logger>
+        <Logger name="OPTIMIZE" level="warn"/>
+
+        <Logger name="org.eblocker.server.http.server.ExceptionLogger" level="debug"/>
+
+        <!-- Uncomment this to get Netty memory pool configuration at start up: -->
+        <!-- Logger name="io.netty.buffer.PooledByteBufAllocator" level="debug"/ -->
+
+        <Logger name="org.eblocker.server.common.network.TorController" level="error"/>
+        <Logger name="javax.jmdns" level="error"/>
+    </Loggers>
+</Configuration>

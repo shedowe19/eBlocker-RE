@@ -1,0 +1,16 @@
+category,path,line
+privilege,Jenkinsfile,6
+privilege,Jenkinsfile,11
+privilege,Jenkinsfile,16
+privilege,README.md,9
+privilege,README.md,27
+service,etc/arpread.service,3
+service,etc/arpread.service,4
+service,etc/arpread.service,5
+service,etc/arpread.service,6
+service,etc/arpread.service,10
+service,etc/arpwrite.service,3
+service,etc/arpwrite.service,4
+service,etc/arpwrite.service,5
+service,etc/arpwrite.service,6
+service,etc/arpwrite.service,10

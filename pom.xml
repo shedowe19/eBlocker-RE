@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.eblocker</groupId>
+        <artifactId>eblocker-parent</artifactId>
+        <version>4.0.3</version>
+        <relativePath>build/parent/pom.xml</relativePath>
+    </parent>
+    <artifactId>eblocker</artifactId>
+    <packaging>pom</packaging>
+    <name>eBlocker - Aggregator</name>
+    <modules>
+        <module>build/parent</module>
+        <module>libs/crypto</module>
+        <module>libs/registration</module>
+        <module>libs/persistence</module>
+        <module>third_party/netty-icap</module>
+        <module>third_party/dateadapterj</module>
+        <module>third_party/restexpress</module>
+        <module>apps/server</module>
+        <module>apps/certificate-validator</module>
+        <module>platform/baseconfig</module>
+        <module>apps/web</module>
+        <module>apps/console</module>
+        <module>content/filter-lists</module>
+    </modules>
+    <scm>
+        <developerConnection>scm:git:git@github.com:eblocker/eblocker.git</developerConnection>
+    </scm>
+    <profiles>
+        <profile>
+            <id>bootstrap</id>
+            <modules>
+                <module>packaging/bootstrap</module>
+            </modules>
+        </profile>
+    </profiles>
+</project>

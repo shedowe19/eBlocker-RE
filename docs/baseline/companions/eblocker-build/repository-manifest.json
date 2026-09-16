@@ -1,0 +1,145 @@
+{
+  "commit": "8f024ca602106ecde56f527982575b6854accb2c",
+  "files": [
+    {
+      "path": "LICENSE.md",
+      "module": "root",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 13948,
+      "mode": "100644",
+      "git_blob": "b605841ba34743006a82bf3df026d4528bfcd27f",
+      "sha256": "2017b48dfe8027238f8fd8457795d23c6a2385b70ee05de9cb29a33bf93c02e1"
+    },
+    {
+      "path": "README.md",
+      "module": "root",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 55,
+      "mode": "100644",
+      "git_blob": "6d2e490974e10e2b8591ae912eb937e5a0b891f4",
+      "sha256": "3191e82421d3234f66b1354ff58c3f6430142baaec020e4bfe6c6f3a71eaac13"
+    },
+    {
+      "path": "eblocker-vm/README.md",
+      "module": "eblocker-vm",
+      "language": "Markdown",
+      "role": "source",
+      "bytes": 2012,
+      "mode": "100644",
+      "git_blob": "6a4d3fb567a94ba672a6afdf2b365017c756664e",
+      "sha256": "e3f5c867d36e4814c6f7d3c1cc85fb169e98909ccbede1f4255d79ff9699a598"
+    },
+    {
+      "path": "eblocker-vm/cleanup.yml",
+      "module": "eblocker-vm",
+      "language": "other",
+      "role": "source",
+      "bytes": 1854,
+      "mode": "100644",
+      "git_blob": "86efafea0773a28421322f73ef41c07beae24da1",
+      "sha256": "f0bd8485b4bc2ad4699b3b165bc46c21cf2ee01a6fe301994c04c78c6f962289"
+    },
+    {
+      "path": "eblocker-vm/files/configuration-prod.properties",
+      "module": "eblocker-vm",
+      "language": "other",
+      "role": "source",
+      "bytes": 57,
+      "mode": "100644",
+      "git_blob": "1f6d2f4ece6a7d82fb02db5005ed2414ab3ccdb6",
+      "sha256": "fea00c995776f8e67ea480222ab0881796b3c09b0e55fb16ac318300356e60f4"
+    },
+    {
+      "path": "eblocker-vm/files/configuration-test.properties",
+      "module": "eblocker-vm",
+      "language": "other",
+      "role": "source",
+      "bytes": 268,
+      "mode": "100644",
+      "git_blob": "9f51b84d0b7e33cf9065ea02287a31f4329e61d9",
+      "sha256": "89da4b3ce93756506d91b61a7d474e0bf2614e6c31c861d5e0d1a53b9bd8ebb8"
+    },
+    {
+      "path": "eblocker-vm/files/cpuinfo.txt",
+      "module": "eblocker-vm",
+      "language": "other",
+      "role": "source",
+      "bytes": 25,
+      "mode": "100644",
+      "git_blob": "f1ebb51abee1f05f03f1a9544bcc8cbb977d75c8",
+      "sha256": "9883579a0506997ecbb21859d3287f3db0d5b3774c152801d7223fe8ae2f7d29"
+    },
+    {
+      "path": "eblocker-vm/files/eblocker-bootstrap_amd64_buster-prod.deb",
+      "module": "eblocker-vm",
+      "language": "other",
+      "role": "source",
+      "bytes": 5866,
+      "mode": "100644",
+      "git_blob": "4564004ad437b0657c27c909b82dca83fc4213f7",
+      "sha256": "19394191217221d55de26262353cdcedfe4dc316d3837bce0273bfa18bb339b6"
+    },
+    {
+      "path": "eblocker-vm/files/eblocker-bootstrap_amd64_buster-test.deb",
+      "module": "eblocker-vm",
+      "language": "other",
+      "role": "source",
+      "bytes": 4864,
+      "mode": "100644",
+      "git_blob": "b95684b8ff0c02fef991bec557916577218208a1",
+      "sha256": "aec7e1e618242d3772c15d6e4b1e3e9b4a9095fcaf81609d18561f152d5a63a4"
+    },
+    {
+      "path": "eblocker-vm/files/license.cert",
+      "module": "eblocker-vm",
+      "language": "other",
+      "role": "source",
+      "bytes": 1277,
+      "mode": "100644",
+      "git_blob": "c8a9542e843b49976a0ba432bcd95206bdd3d926",
+      "sha256": "374df35101bee50bdbee0a6fa68efa5652c4d74939faba2a1648c6b727836219"
+    },
+    {
+      "path": "eblocker-vm/files/license.key",
+      "module": "eblocker-vm",
+      "language": "other",
+      "role": "source",
+      "bytes": 1708,
+      "mode": "100644",
+      "git_blob": "a4f3393f7fc95c5e79860439142d18af02680f04",
+      "sha256": "aa2e55f4e255da42de3900c538e0d2244e62be01b7f3994f2d978b501fccf636"
+    },
+    {
+      "path": "eblocker-vm/hosts",
+      "module": "eblocker-vm",
+      "language": "other",
+      "role": "source",
+      "bytes": 51,
+      "mode": "100644",
+      "git_blob": "f9caddc9c5ba51e8bd7ce5316cbf5a803925eb53",
+      "sha256": "4b2013ff014671ae19e24d03145ce09f780ec32d82b451421f85cb105b21e7bb"
+    },
+    {
+      "path": "eblocker-vm/install-eblocker.yml",
+      "module": "eblocker-vm",
+      "language": "other",
+      "role": "source",
+      "bytes": 1962,
+      "mode": "100644",
+      "git_blob": "6a5d5592c8fd64165bb1bc8db46dd0a2f9f36944",
+      "sha256": "4b797471d53fad1d799c43969c65fc0ce6b6988397daf1f5f9caf9cb58eaefe5"
+    },
+    {
+      "path": "eblocker-vm/prepare-ethernet.yml",
+      "module": "eblocker-vm",
+      "language": "other",
+      "role": "source",
+      "bytes": 705,
+      "mode": "100644",
+      "git_blob": "e2a08e82566ce827cebe93ae68e79d552b76d92e",
+      "sha256": "9f828e97907abc4c320ec2d3ede92aabb2e3acc0eb8102be2de7ab0bea38e3e9"
+    }
+  ]
+}
