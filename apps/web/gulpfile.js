@@ -15,18 +15,18 @@
  * permissions and limitations under the License.
  */
 /*
- * Set this variable to true, to disable tests and uglification in production build (e.g. for testing on real eBlocker).
- * ** SHOULD BE FALSE BY DEFAULT ** We need uglification in production.
+ * Set this variable to true, to disable tests and minification in production build (e.g. for testing on real eBlocker).
+ * ** SHOULD BE FALSE BY DEFAULT ** We need minification in production.
  */
 let quickRun = false;
 
-const args = require('yargs').alias('r', 'redirectRestApi').argv;
+const args = require('yargs/yargs')(process.argv.slice(2)).alias('r', 'redirectRestApi').parse();
 const browserSync = require('browser-sync');
 const config = require('./gulp.config')();
 const del = require('del');
-const glob = require('glob');
 const gulp = require('gulp');
 const path = require('path');
+const pipeline = require('stream').pipeline;
 const $ = require('gulp-load-plugins')({ lazy: true });
 const ansiColors = require('ansi-colors');
 const _ = require('lodash');
@@ -56,7 +56,7 @@ const babel = require('babelify');
 const vinylSource = require('vinyl-source-stream');
 const vinylBuffer = require('vinyl-buffer');
 const sourcemaps = require('gulp-sourcemaps');
-const gulpUglify = require('gulp-uglify');
+const minifyJavaScript = require('./build-tools/minify-javascript');
 
 const fs = require('fs');
 const csv2json = require('csv2json');
@@ -123,7 +123,7 @@ function createTemplateCache(module) {
         // This is important, so that angular is imported before the templates are initialized. Or the angular.module
         // call will fail.
         .pipe(gulpConcat('templates.' + module + '.js'))
-        .pipe(gulpIf(!quickRun, gulpUglify()))
+        .pipe(gulpIf(!quickRun, minifyJavaScript()))
         .pipe(gulp.dest(config.temp))
         .pipe(gulpRef())
         .pipe(gulp.dest(config.build + module));
@@ -166,24 +166,9 @@ function doInject(module) {
  * Injects each JS and CSS bundle into each index.html (per module)
  */
 function injectCompiled(done) {
-    let counter = 0;
-    for (let i = 0; i < config.modules.length; i++) {
-        doInject(config.modules[i])
-            .on('end', function() {
-                counter++;
-                log('inject-compiled task ' + counter + ' is done: ' + config.modules[counter - 1]);
-                if (counter === config.modules.length) {
-                    done();
-                }
-            }).on('error', function() {
-                counter++;
-                log('inject-compiled task ' + counter + ' ended with error.');
-                if (counter === config.modules.length) {
-                    done();
-                }
-            }
-        );
-    }
+    return gulp.parallel(config.modules.map(module => function injectModule() {
+        return doInject(module);
+    }))(done);
 }
 
 function browserifyBundle(module, isDev) {
@@ -210,34 +195,31 @@ function browserifyBundle(module, isDev) {
 
     log('Starting to bundle module ' + module + ' for ' + (isDev ? 'development' : 'production') + ' ...');
 
-    let browserifyResult = browserifyInstance
-        .bundle()
-        .on('error', handleError)
-        // vinyl-source-stream makes the stream compatible with gulp.
-        .pipe(gulpIf(
-            (!isDev),
-            vinylSource(browserifyConfig.outputNameMin),
-            vinylSource(browserifyConfig.outputName)
-        ))
-        .pipe(vinylBuffer())
-        .pipe(gulpRef());
-
     if (quickRun) {
-        log('Neither uglification nor sourcemaps requested for module ' + module + ' ... ');
+        log('Neither minification nor sourcemaps requested for module ' + module + ' ... ');
     } else if (isDev) {
         log('Creating sourcemaps for module ' + module + ' ... ');
     } else {
-        log('Uglifying module ' + module + ' ... ');
+        log('Minifying module ' + module + ' ... ');
     }
 
-    browserifyResult = browserifyResult
-        .pipe(gulpIf(isDev && !quickRun, sourcemaps.init({loadMaps: true})))
-        .pipe(gulpIf(!isDev && !quickRun, gulpUglify()))
-        .pipe(gulpIf(isDev && !quickRun, sourcemaps.write('./')));
-
-    browserifyResult = browserifyResult.pipe(gulp.dest(config.build + module));
-
-    return browserifyResult;
+    // Forward errors from every stage to the returned stream. Otherwise a failed
+    // bundle can be reported as a successful task, leaving an incomplete build.
+    return pipeline(
+        browserifyInstance.bundle(),
+        vinylSource(isDev ? browserifyConfig.outputName : browserifyConfig.outputNameMin),
+        vinylBuffer(),
+        gulpRef(),
+        gulpIf(isDev && !quickRun, sourcemaps.init({loadMaps: true})),
+        gulpIf(!isDev && !quickRun, minifyJavaScript()),
+        gulpIf(isDev && !quickRun, sourcemaps.write('./')),
+        gulp.dest(config.build + module),
+        function(err) {
+            if (err) {
+                log(err.toString());
+            }
+        }
+    );
 }
 
 function browserifyDevelop(done) {
@@ -249,29 +231,9 @@ function browserifyProduction(done) {
 }
 
 function doBrowserifyBundle(isDev, done) {
-    let counter = 0;
-    // ** This is somewhat a hack. We need the return stream from browserifyBundle(..) to determine
-    // when the bundle() task is done. Otherwise the next task (in the sequence) will be executed
-    // before the file is written to the FS. Browser would reload, but no change would be visible.
-    // So here we use the on-end event and then manually notify that the task is done. The counter
-    // makes sure that all modules have been build.
-    for (let i = 0; i < config.modules.length; i++) {
-        browserifyBundle(config.modules[i], isDev)
-            .on('end', function() {
-                counter++;
-                log('Browserify task ' + counter + ' is done.');
-                if (counter === config.modules.length) {
-                    done();
-                }
-            })
-            .on('error', function() {
-                counter++;
-                log('Browserify task ' + counter + ' ended with error.');
-                if (counter === config.modules.length) {
-                    done();
-                }
-            });
-    }
+    return gulp.parallel(config.modules.map(module => function bundleModule() {
+        return browserifyBundle(module, isDev);
+    }))(done);
 }
 
 
@@ -657,7 +619,7 @@ function compressAndCopyImages() {
     log('Compressing and copying images');
 
     return gulp
-        .src(config.images)
+        .src(config.images, {encoding: false})
         .pipe(gulpImageMin([
                 gulpImageMin.optipng({optimizationLevel: 5}),
                 gulpImageMin.svgo({plugins: [
@@ -666,7 +628,7 @@ function compressAndCopyImages() {
             ])
         )
         .on('error', exitBuild)
-        .pipe(gulp.dest(config.build + 'img'));
+        .pipe(gulp.dest(config.build + 'img', {encoding: false}));
 }
 const images = gulp.series(cleanImages, compressAndCopyImages);
 

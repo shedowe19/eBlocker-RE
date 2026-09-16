@@ -86,7 +86,7 @@ export default function DropdownFiltersDirective($document, ControlbarService) {
                 ControlbarService.isDropdownOpen(scope.isOpen, scope.labelBlockGlobal);
             }
 
-            $document.bind('click', function(event) {
+            function onDocumentClick(event) {
                 let isClickedElementChildOfPopup = element
                     .find(event.target)
                     .length > 0;
@@ -108,10 +108,11 @@ export default function DropdownFiltersDirective($document, ControlbarService) {
                 }
                 setIsOpen(false);
                 scope.$apply();
-            });
+            }
 
+            $document.on('click', onDocumentClick);
             scope.$on('$destroy', function() {
-                $document.unbind('click');
+                $document.off('click', onDocumentClick);
             });
         }
     };

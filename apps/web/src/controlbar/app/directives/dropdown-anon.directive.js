@@ -65,7 +65,7 @@ export default function DropdownAnonDirective($document, ControlbarService) {
                 ControlbarService.isDropdownOpen(scope.isOpen, scope.label);
             }
 
-            $document.bind('click', function(event) {
+            function onDocumentClick(event) {
                 let isClickedElementChildOfPopup = element
                     .find(event.target)
                     .length > 0;
@@ -87,10 +87,11 @@ export default function DropdownAnonDirective($document, ControlbarService) {
                 }
                 setIsOpen(false);
                 scope.$apply();
-            });
+            }
 
+            $document.on('click', onDocumentClick);
             scope.$on('$destroy', function() {
-                $document.unbind('click');
+                $document.off('click', onDocumentClick);
             });
         }
     };

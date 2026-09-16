@@ -49,7 +49,7 @@ import '../../../node_modules/re-tree/index'; // required for ng-device-detector
 import '../../../node_modules/ua-device-detector/index';  // required for ng-device-detector
 import ngDeviceDetector from '../../../node_modules/ng-device-detector/index';
 
-import '../../../node_modules/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js';
+import '../../../node_modules/@rwap/jquery-ui-touch-punch/jquery.ui.touch-punch.js';
 
 // ** Controllers
 import ConsoleRedirectController from './consoleRedirect.controller';
