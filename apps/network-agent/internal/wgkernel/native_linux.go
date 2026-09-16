@@ -166,15 +166,65 @@ func (nativeKernel) create(ctx context.Context, name, alias string, mtu int) (li
 		return link{}, err
 	}
 	defer handle.Close()
-	item := &netlink.Wireguard{LinkAttrs: netlink.LinkAttrs{Name: name, Alias: alias, MTU: mtu}}
+	return createOwnedLink(handle, name, alias, mtu)
+}
+
+type linkCreator interface {
+	LinkAdd(netlink.Link) error
+	LinkByIndex(int) (netlink.Link, error)
+	LinkSetAlias(netlink.Link, string) error
+	LinkDel(netlink.Link) error
+}
+
+func createOwnedLink(handle linkCreator, name, alias string, mtu int) (link, error) {
+	attrs := netlink.NewLinkAttrs()
+	attrs.Name, attrs.Alias, attrs.MTU = name, alias, mtu
+	item := &netlink.Wireguard{LinkAttrs: attrs}
 	if err := handle.LinkAdd(item); err != nil {
 		return link{}, err
 	}
-	created, err := handle.LinkByName(name)
+	// Linux kernels may ignore IFLA_IFALIAS in RTM_NEWLINK. LinkAdd's successful
+	// exclusive creation and returned ifindex authorize only this new, down link
+	// to receive the marker. Never adopt an existing link by its name alone.
+	if item.Index <= 0 {
+		return link{}, manager.ErrOwnershipMismatch
+	}
+	check := func() (netlink.Link, error) {
+		actual, err := handle.LinkByIndex(item.Index)
+		if err != nil {
+			return nil, err
+		}
+		got := convertLink(actual)
+		if got.index != item.Index || got.name != name || got.kind != "wireguard" || got.up || (got.alias != "" && got.alias != alias) {
+			return nil, manager.ErrOwnershipMismatch
+		}
+		return actual, nil
+	}
+	created, err := check()
 	if err != nil {
 		return link{}, err
 	}
-	return convertLink(created), nil
+	if created.Attrs().Alias != alias {
+		if err = handle.LinkSetAlias(created, alias); err != nil {
+			// An unmarked link cannot be removed by the ordinary durable rollback.
+			// Clean up only while this invocation can prove exclusive creation and
+			// the unchanged index/name/type/down state and absent or own marker.
+			current, cleanupErr := check()
+			if cleanupErr == nil {
+				cleanupErr = handle.LinkDel(current)
+			}
+			return link{}, errors.Join(err, cleanupErr)
+		}
+	}
+	created, err = handle.LinkByIndex(item.Index)
+	if err != nil {
+		return link{}, err
+	}
+	result := convertLink(created)
+	if result.index != item.Index || result.name != name || result.kind != "wireguard" || result.alias != alias || result.up {
+		return link{}, manager.ErrOwnershipMismatch
+	}
+	return result, nil
 }
 
 func verifyLink(handle *netlink.Handle, expected link) (netlink.Link, error) {
