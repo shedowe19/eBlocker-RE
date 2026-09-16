@@ -102,7 +102,8 @@ func TestNativeFullTunnelInIsolatedNamespace(t *testing.T) {
 		if variant == "ipv6-endpoint" {
 			config = strings.Replace(config, "198.51.100.50:51820", "[2001:db8:2::50]:51820", 1)
 		}
-		m, err := manager.New(filepath.Join(t.TempDir(), "state"), New())
+		stateDirectory := filepath.Join(t.TempDir(), "state")
+		m, err := manager.New(stateDirectory, nativeTestBackend(t))
 		if err != nil {
 			t.Fatal(err)
 		}
@@ -120,6 +121,22 @@ func TestNativeFullTunnelInIsolatedNamespace(t *testing.T) {
 			t.Fatalf("%s missing native attestation", variant)
 		}
 		p := *status.Policy
+		if err = m.Close(); err != nil {
+			t.Fatal(err)
+		}
+		m, err = manager.New(stateDirectory, nativeTestBackend(t))
+		if err != nil {
+			t.Fatal(err)
+		}
+		if err = m.Recover(t.Context()); err != nil {
+			m.Close()
+			t.Fatalf("%s recovery of active full tunnel: %v", variant, err)
+		}
+		recovered, err := m.Status(t.Context(), "native")
+		if err != nil || recovered.Target != status.Target || !recovered.KillSwitchActive {
+			m.Close()
+			t.Fatalf("%s full tunnel not freshly attested after recovery: %v", variant, err)
+		}
 		item, err := h.LinkByName(status.Target.InterfaceName)
 		if err != nil {
 			m.Close()
@@ -158,9 +175,23 @@ func TestNativeFullTunnelInIsolatedNamespace(t *testing.T) {
 			m.Close()
 			t.Fatal("missing link retained protection claim")
 		}
-		if _, err = m.Disconnect(t.Context(), "native"); err != nil {
-			m.Close()
-			t.Fatal("cleanup after link loss:", err)
+		if variant == "dual-stack" {
+			if err = m.Close(); err != nil {
+				t.Fatal(err)
+			}
+			m, err = manager.New(stateDirectory, nativeTestBackend(t))
+			if err != nil {
+				t.Fatal(err)
+			}
+			if err = m.Recover(t.Context()); err != nil {
+				m.Close()
+				t.Fatal("native recovery cleanup after link loss:", err)
+			}
+		} else {
+			if _, err = m.Disconnect(t.Context(), "native"); err != nil {
+				m.Close()
+				t.Fatal("cleanup after link loss:", err)
+			}
 		}
 		if err = m.Close(); err != nil {
 			t.Fatal(err)
