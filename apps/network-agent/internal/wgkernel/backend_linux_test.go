@@ -92,7 +92,12 @@ func (f *fakeKernel) configure(context.Context, link, []byte) error {
 	return err
 }
 func (f *fakeKernel) address(context.Context, link, netip.Prefix) error { return f.record("address") }
-func (f *fakeKernel) route(context.Context, link, netip.Prefix) error   { return f.record("route") }
+func (f *fakeKernel) route(_ context.Context, _ link, prefix netip.Prefix) error {
+	if prefix.Addr().Is6() && (f.item == nil || !f.item.up) {
+		return errors.New("IPv6 nexthop device is down")
+	}
+	return f.record("route")
+}
 func (f *fakeKernel) up(context.Context, link) error {
 	if err := f.record("up"); err != nil {
 		return err
@@ -129,7 +134,7 @@ func TestOwnedSplitRouteLifecycle(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	want := []string{"create", "configure", "address", "address", "route", "route", "up"}
+	want := []string{"create", "configure", "address", "address", "up", "route", "route"}
 	if !slices.Equal(fake.mutations, want) {
 		t.Fatalf("unexpected operation order: %v", fake.mutations)
 	}
@@ -232,7 +237,7 @@ func TestLifecycleManagerRollsBackEachPartialApplyFailure(t *testing.T) {
 			if err == nil || status.Phase != manager.PhaseFailed || fake.item != nil {
 				t.Fatalf("partial kernel state survived: phase=%s error=%v item=%v", status.Phase, err, fake.item != nil)
 			}
-			if slices.Contains(fake.mutations, "up") && failure != "up" && failure != "observe" {
+			if slices.Contains(fake.mutations, "up") && failure != "up" && failure != "route" && failure != "observe" {
 				t.Fatal("interface brought up after earlier failure")
 			}
 		})

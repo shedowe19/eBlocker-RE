@@ -76,9 +76,11 @@ func TestWireGuardEncodingHasExactKernelABI(t *testing.T) {
 func observationMessage(t *testing.T, includeCounters bool) genetlink.Message {
 	t.Helper()
 	device := netlink.NewAttributeEncoder()
-	device.Uint32(deviceIndex, 19)
-	private, _ := base64.StdEncoding.DecodeString(keyOf(17))
-	device.Bytes(devicePrivateKey, private)
+	if includeCounters {
+		device.Uint32(deviceIndex, 19)
+		private, _ := base64.StdEncoding.DecodeString(keyOf(17))
+		device.Bytes(devicePrivateKey, private)
+	}
 	peer := netlink.NewAttributeEncoder()
 	public, _ := base64.StdEncoding.DecodeString(publicOf(83))
 	peer.Bytes(peerPublicKey, public)
@@ -128,6 +130,12 @@ func TestObservationMergesFragmentsAndNeverExportsSecrets(t *testing.T) {
 }
 
 func TestMalformedKernelResponsesRejected(t *testing.T) {
+	if _, err := decodePeers(19, nil); err == nil {
+		t.Fatal("missing device response accepted")
+	}
+	if _, err := decodePeers(19, []genetlink.Message{observationMessage(t, false), observationMessage(t, true)}); err == nil {
+		t.Fatal("first fragment without device identity accepted")
+	}
 	message := observationMessage(t, true)
 	if _, err := decodePeers(20, []genetlink.Message{message}); err == nil {
 		t.Fatal("wrong device index accepted")

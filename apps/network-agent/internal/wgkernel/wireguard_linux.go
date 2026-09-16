@@ -174,9 +174,12 @@ func uapiAttributes(data []byte) ([]uapiAttribute, error) {
 }
 
 func decodePeers(index int, messages []genetlink.Message) ([]manager.PeerObservation, error) {
+	if len(messages) == 0 {
+		return nil, errMalformedDevice
+	}
 	peers := map[string]manager.PeerObservation{}
 	total := 0
-	for _, message := range messages {
+	for messageIndex, message := range messages {
 		total += len(message.Data)
 		if total > 4<<20 || message.Header.Command != wgGetDevice || message.Header.Version != wgVersion {
 			return nil, errMalformedDevice
@@ -205,7 +208,11 @@ func decodePeers(index int, messages []genetlink.Message) ([]manager.PeerObserva
 				}
 			}
 		}
-		if !foundIndex {
+		// Linux emits device-level attributes only in the initial fragment.
+		// Subsequent messages continue that device's peers/AllowedIPs. Require
+		// the first fragment to identify our device, and reject any conflicting
+		// index above if a later fragment supplies one.
+		if messageIndex == 0 && !foundIndex {
 			return nil, errMalformedDevice
 		}
 	}

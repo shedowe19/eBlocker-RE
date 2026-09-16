@@ -67,6 +67,9 @@ func (f *fakeFullKernel) installRouting(context.Context, link, policy.Plan) erro
 	if !f.exists || !f.verified {
 		panic("route before guard")
 	}
+	if f.kernel.item == nil || !f.kernel.item.up {
+		return errors.New("IPv6 nexthop device is down")
+	}
 	f.routes = true
 	return f.record("routing")
 }

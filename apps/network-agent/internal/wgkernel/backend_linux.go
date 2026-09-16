@@ -219,6 +219,14 @@ func (b *Backend) Apply(ctx context.Context, target manager.Target, config wireg
 			return err
 		}
 	}
+	// IPv6 rejects routes through a down device with ENETDOWN. Addresses use
+	// NOPREFIXROUTE, so activating the configured link does not install routes.
+	if err := b.check(ctx, target, item); err != nil {
+		return err
+	}
+	if err := b.kernel.up(ctx, item); err != nil {
+		return err
+	}
 	for _, prefix := range desired.routes {
 		if err := b.check(ctx, target, item); err != nil {
 			return err
@@ -227,10 +235,7 @@ func (b *Backend) Apply(ctx context.Context, target manager.Target, config wireg
 			return err
 		}
 	}
-	if err := b.check(ctx, target, item); err != nil {
-		return err
-	}
-	return b.kernel.up(ctx, item)
+	return b.check(ctx, target, item)
 }
 
 func (b *Backend) check(ctx context.Context, target manager.Target, expected link) error {

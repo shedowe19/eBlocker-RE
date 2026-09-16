@@ -142,13 +142,19 @@ func (b *Backend) ApplyFullTunnel(ctx context.Context, target manager.Target, co
 	if err = b.requireGuard(ctx, p); err != nil {
 		return err
 	}
-	if err = b.policy.installRouting(ctx, item, p); err != nil {
-		return err
-	}
 	if err = b.check(ctx, target, item); err != nil {
 		return err
 	}
+	// IPv6 requires an up device before RouteAdd. The verified DROP guard is
+	// already active, including the exact marked endpoint exception needed for
+	// WireGuard transport, before either link activation or route installation.
 	if err = b.kernel.up(ctx, item); err != nil {
+		return err
+	}
+	if err = b.requireGuard(ctx, p); err != nil {
+		return err
+	}
+	if err = b.policy.installRouting(ctx, item, p); err != nil {
 		return err
 	}
 	_, attestation, err := b.observeFull(ctx, target, p)
