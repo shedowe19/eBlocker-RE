@@ -118,6 +118,9 @@ func TestNativeLifecycleInIsolatedNamespace(t *testing.T) {
 	if err := handle.LinkAdd(foreign); err != nil {
 		t.Fatal(err)
 	}
+	if err := handle.LinkSetAlias(foreign, "foreign"); err != nil {
+		t.Fatal(err)
+	}
 	if err := backend.Remove(t.Context(), testTarget); !errors.Is(err, manager.ErrOwnershipMismatch) {
 		t.Fatal("foreign native interface was not rejected")
 	}
@@ -144,6 +147,15 @@ func verifyNativeHandshake(t *testing.T, lifecycle *manager.Manager) {
 	if err := h.LinkSetUp(loopback); err != nil {
 		t.Fatal(err)
 	}
+	// Profile validation rejects 127/8 endpoints. A documentation address on
+	// this isolated loopback provides a valid endpoint without external traffic.
+	transportAddress, err := netlink.ParseAddr("192.0.2.1/32")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if err := h.AddrAdd(loopback, transportAddress); err != nil {
+		t.Fatal(err)
+	}
 	kernel := nativeKernel{}
 	peer, err := kernel.create(t.Context(), "ebwgaaaaaaaaaa", ownerPrefix+strings.Repeat("a", 32), 1420)
 	if err != nil {
@@ -154,7 +166,7 @@ func verifyNativeHandshake(t *testing.T, lifecycle *manager.Manager) {
 			t.Errorf("native test peer cleanup: %v", err)
 		}
 	}()
-	peerConfig := "[Interface]\nPrivateKey=" + keyOf(83) + "\nAddress=10.254.0.1/32\nListenPort=51821\n[Peer]\nPublicKey=" + publicOf(17) + "\nPresharedKey=" + keyOf(35) + "\nAllowedIPs=10.253.0.2/32,fd00:abcd::2/128\nEndpoint=127.0.0.1:51820\n"
+	peerConfig := "[Interface]\nPrivateKey=" + keyOf(83) + "\nAddress=10.254.0.1/32\nListenPort=51821\n[Peer]\nPublicKey=" + publicOf(17) + "\nPresharedKey=" + keyOf(35) + "\nAllowedIPs=10.253.0.2/32,fd00:abcd::2/128\nEndpoint=192.0.2.1:51820\n"
 	err = withProfile(t, peerConfig, func(profile wireguard.RuntimeProfile) error {
 		encoded, err := encodeDevice(peer.index, profile)
 		if err != nil {
@@ -169,11 +181,13 @@ func verifyNativeHandshake(t *testing.T, lifecycle *manager.Manager) {
 	if err := kernel.up(t.Context(), peer); err != nil {
 		t.Fatal(err)
 	}
-	config := strings.Replace(runtimeConfig(), "198.51.100.50:51820", "127.0.0.1:51821", 1)
+	config := strings.Replace(runtimeConfig(), "198.51.100.50:51820", "192.0.2.1:51821", 1)
 	if _, err := lifecycle.Connect(t.Context(), "handshake", []byte(config)); err != nil {
 		t.Fatalf("local peer connect: %v", err)
 	}
 	deadline := time.Now().Add(10 * time.Second)
+	handshakeReady := false
+	var receivedBefore, transmittedBefore uint64
 	for {
 		if err := sendNativeUDP("10.254.0.1", 53535, 0); err != nil {
 			t.Fatalf("native tunnel probe: %v", err)
@@ -186,8 +200,16 @@ func verifyNativeHandshake(t *testing.T, lifecycle *manager.Manager) {
 		if err != nil {
 			t.Fatal(err)
 		}
-		if len(observed.Observation.Peers) == 1 && len(peers) == 1 && observed.Observation.Peers[0].LastHandshakeUnix > 0 && peers[0].LastHandshakeUnix > 0 && peers[0].ReceiveBytes >= 64 && observed.Observation.Peers[0].TransmitBytes >= 64 {
-			break
+		if len(observed.Observation.Peers) == 1 && len(peers) == 1 && observed.Observation.Peers[0].LastHandshakeUnix > 0 && peers[0].LastHandshakeUnix > 0 {
+			if !handshakeReady {
+				// Handshake packets also contribute to WireGuard counters. Measure
+				// subsequent transfer separately; a 32-byte keepalive is insufficient.
+				handshakeReady = true
+				receivedBefore = peers[0].ReceiveBytes
+				transmittedBefore = observed.Observation.Peers[0].TransmitBytes
+			} else if peers[0].ReceiveBytes >= receivedBefore+64 && observed.Observation.Peers[0].TransmitBytes >= transmittedBefore+64 {
+				break
+			}
 		}
 		if time.Now().After(deadline) {
 			t.Fatal("isolated peers did not complete a handshake and authenticated payload transfer")
