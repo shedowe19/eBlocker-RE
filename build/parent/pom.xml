@@ -32,7 +32,7 @@
         <version.commons.collections>3.2.2</version.commons.collections>
         <version.commons.csv>1.14.1</version.commons.csv>
         <version.bouncycastle>1.85</version.bouncycastle>
-        <version.jersey>2.26</version.jersey>
+        <version.jersey>4.0.2</version.jersey>
         <version.java-jwt>2.2.0</version.java-jwt>
         <version.httpclient>4.5.14</version.httpclient>
         <version.junit>4.13.2</version.junit>
