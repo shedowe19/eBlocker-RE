@@ -104,7 +104,7 @@
     "vinyl-buffer": "1.0.1",
     "vinyl-source-stream": "2.0.0",
     "watchify": "4.0.0",
-    "yargs": "17.2.1"
+    "yargs": "18.1.0"
   },
   "repository": {
     "type": "git",
