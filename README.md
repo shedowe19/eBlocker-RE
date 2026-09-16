@@ -1,134 +1,104 @@
-# eBlocker – gemeinsames Repository
+# Vollständige Originalhistorie von eBlocker-RE
 
-Server, Weboberfläche, DNS, Systemwerkzeuge und Paketbau liegen in einem Checkout.
-Die Quellbasis stammt aus `feature/debian_bookworm`; die importierten Komponenten
-und ihre ursprünglichen Commit-IDs stehen in [sources.lock.json](sources.lock.json).
-Zusätzliche eBlocker-Checkouts und GitHub-Paketzugangsdaten sind für den lokalen
-Java-Build nicht erforderlich.
+Dieser Branch `archive/original-history` bewahrt das unveränderte Git-Bundle aus
+dem Übergabepaket. Die Aufteilung in 35 Dateien dient ausschließlich dem Upload.
+Die Rekonstruktion ergibt bytegenau das ursprüngliche Bundle einschließlich der
+originalen Commit-Objekte, Elternbeziehungen, Branch-Spitzen und Tags.
 
-## Orientierung
+Der Quellstand auf `main` wurde über die GitHub-Integration importiert. Dieser
+Import-Commit hat eine andere Commit-ID und enthält die Originalhistorie nicht
+als seine Elternkette. Sein Quellbaum muss dem unten angegebenen Originalbaum
+entsprechen. Das Bundle in diesem Archiv erhält zusätzlich die vollständige
+Originalhistorie; sie kann damit jederzeit nativ wiederhergestellt werden.
 
-| Verzeichnis | Inhalt |
+## Gesicherter Stand
+
+| Eigenschaft | Wert |
 | --- | --- |
-| `apps/server` | Java-Anwendung: HTTP, ICAP, Geräte, Filter, VPN, Verwaltung |
-| `apps/web` | Bestehende Webanwendungen und noch nicht migrierte Funktionen |
-| `apps/console` | React-Verwaltung mit vierzehn Bereichen und Anmeldung (DE/EN) |
-| `apps/network-agent` | Lesender Netzwerkdienst, getrennte WireGuard-Control-Schicht und native CLI |
-| `apps/certificate-validator` | Zertifikatsprüfung für Squid |
-| `libs` | Kryptografie, Registrierung, WireGuard-Parser/-Policy/-Lifecycle und Offline-RDB-/SQLite-Migration |
-| `platform/dns` | CoreDNS mit eBlocker-Plugins und dynamisches DNS |
-| `platform/native` | Netzwerkwerkzeuge sowie bisherige Ruby-Dienste |
-| `platform/baseconfig` | Betriebssystemkonfiguration |
-| `content` | Filterlisten und Anwendungskompatibilität |
-| `packaging` | Bootstrap und Image-Bau |
-| `third_party` | Benötigte angepasste Fremdquellen mit Lizenz/Herkunft |
-| `build/parent` | Gemeinsame Java-Abhängigkeiten und Build-Regeln |
-| `tools` | Entwicklungswerkzeuge und Umgebungssimulator |
-| `docs` | Architektur, Code-Landkarte, Prüfstatus und Migration |
+| Originalbranch | `codex/modernize-architecture` |
+| Original-HEAD | `b4124af67096fbdd8463fa531f6fa4824e42f5c0` |
+| Original-Dateibaum | `c84b31b3084b27dee66f351e44f62459c46481c7` |
+| Pfade im Original-Dateibaum | 8.794 |
+| Commits über alle Bundle-Referenzen | 1.141 |
+| Angekündigte Bundle-Referenzen | 77, einschließlich `HEAD` |
+| Benannte Referenzen | 76: 2 Branches, 39 Remote-Referenzen und 35 Tags |
+| Bundlegröße | 36.601.856 Bytes |
+| Teile | 35, davon 34 mit 1.048.576 Bytes und ein letzter mit 950.272 Bytes |
+| Bundleformat | Git-Bundle v2; vollständige Historie ohne Voraussetzungen |
+| SHA256 | `baa879abb7da321bd416b57a92f0a6d174cf4515a3e46e6866ad69e729393e59` |
 
-Zum Finden einer Funktion: [Code-Landkarte](docs/CODE_MAP.md).
-Technische Zusammenhänge: [Architektur](docs/ARCHITECTURE.md).
-Erledigt/offen und tatsächlich ausgeführte Tests: [Prüfstatus](docs/refactor/PROGRESS.md).
+Die 35 ursprünglichen Tags sind unveränderte Lightweight-Tags. Die vollständige
+Liste der ursprünglichen Referenzen und Objekt-IDs steht in `bundle-refs.txt`.
 
-## Entwickeln
+## Rekonstruktion und Prüfung
 
-Voraussetzungen: vollständiges JDK 17+, Python 3.10+, für die Oberfläche Node
-**24.21.0** und Chrome/Chromium, für DNS Go **1.27.1**. Der Maven-Wrapper lädt
-**3.9.16** mit festgelegter SHA-256-Prüfsumme. Internet wird zum erstmaligen
-Herunterladen öffentlicher Bibliotheken benötigt.
-
-Vom Repository-Hauptverzeichnis:
+Benötigt werden Git und Python 3.8 oder neuer. Das Archiv zuerst vollständig
+auschecken; in den folgenden Befehlen werden neue, noch nicht vorhandene
+Zielverzeichnisse und Dateien verwendet:
 
 ```sh
-make check              # Struktur, HTTP-Routenverträge und Erhalt alter UI-Funktionen prüfen
-make test               # Java-Anwendungen samt lokaler Bibliotheken testen
-make console            # Neue React-Oberfläche testen und bauen
-make web                # npm ci, UI bauen und Browser-Tests ausführen
-make dns                # Beide Go-DNS-Anwendungen testen
-make persistence        # SQLite-Migrations-CLI testen und paketieren
-make wireguard          # WireGuard-Parser und Lifecycle mit Race-Prüfung testen
-make network-agent      # Agent und nativen Backend-Vertrag prüfen
-make verify             # Maven-Reaktor prüfen und Debian-Pakete erzeugen
+git clone --single-branch --branch archive/original-history https://github.com/shedowe19/eBlocker-RE.git eblocker-original-history
+cd eblocker-original-history
+python3 reconstruct-bundle.py
 ```
 
-Ohne Make: `python3 scripts/workspace.py check|test|web|verify`.
-Mit Proxy oder privatem Mirror: `python3 scripts/workspace.py test --settings /pfad/settings.xml`.
-`CHROME_BIN` kann auf ein lokal installiertes Chromium zeigen.
+Unter Windows kann `python` statt `python3` verwendet werden. Das Skript liest
+ausschließlich die explizite, geordnete Teileliste aus `bundle-manifest.json`.
+Es prüft Dateinamen, Größen und SHA256 jedes Teils sowie Größe und SHA256 des
+Gesamtbundles. Vorhandene Zieldateien werden nicht überschrieben. Bei einem
+Prüffehler wird die vom Skript angelegte unvollständige Zieldatei entfernt.
+Mit `--output /gewünschter/pfad/original-history.bundle` ist ein anderes,
+ebenfalls noch nicht vorhandenes Ziel möglich.
 
-Frontend-Entwicklung: in `apps/web` mit `npm ci` installieren und
-`npx gulp serve-dev` starten. `npm run test:build-tools` prüft Build-Lebenszyklus,
-Entwicklungsserver und alle 85 Bildschirm-Routen ohne Browser.
-`npm run build:assets` baut ausschließlich Assets und ersetzt keinen Testlauf.
+Auf Systemen mit `sha256sum` kann zusätzlich geprüft werden:
 
-`make verify` baut die Maven-Debian-Pakete. Ein bootfähiges Appliance-Image umfasst
-zusätzlich native Pakete, Systemdienste und Hardwaretests; der historische
-Image-Bau unter `packaging/images` ist noch nicht als neuer Releaseprozess freigegeben.
+```sh
+sha256sum -c SHA256SUMS
+git bundle verify original-history.bundle
+git bundle list-heads original-history.bundle
+```
 
-## Stand der Modernisierung
+`SHA256SUMS` enthält sowohl die 35 Teile als auch das rekonstruierte Bundle;
+deshalb den SHA256-Prüfbefehl erst nach der Rekonstruktion ausführen. Die
+Skriptprüfung funktioniert auch ohne das externe Programm `sha256sum`.
 
-Cling ist durch jUPnP ersetzt. Maven, Node, Testwerkzeuge, Netty, gemeinsame
-Hilfsbibliotheken, Express und DNS-Abhängigkeiten wurden aktualisiert. HTTP- und
-Bildschirm-Routen sind nach Funktionen gegliedert und durch eingefrorene Verträge
-abgesichert. Die bestehende Java-11-Zielversion wurde auf Java 17 angehoben,
-passend zur Bookworm-Basis; CI enthält zusätzlich Prüfungen für die Ausführung mit JDK 25.
+## Vollständige Wiederherstellung aller Referenzen
 
-Die neue React-/TypeScript-Oberfläche auf `/next/` umfasst vierzehn Bereiche:
-Geräte, Schutz, HTTPS, Netzwerk, DNS, WireGuard, Zugangsschutz, System, Familie,
-VPN/Tor, Updates, Sicherung, Diagnose und Funktionskatalog. Der Katalog ordnet alle
-85 bestehenden Settings-Zustände genau zu. Statische Prüfungen sichern Links,
-Komponenten, Templates und die fünf bestehenden Webanwendungen; vollständige
-Laufzeitparität ist damit noch nicht nachgewiesen.
-[Bedienung und genaue Migrationsgrenzen](docs/development/console-migration.md).
+Ein Mirror-Clone übernimmt zusätzlich die ursprünglichen Remote-Referenzen.
+Diese sind für die vollständige Erhaltung aller 1.141 Commits erforderlich.
 
-Gezielte Schreiboperationen umfassen Geräte-, Netzwerk- und DNS-Einstellungen,
-Benutzer-/Familienprofilverwaltung, Gerätezuordnungen, bestehende OpenVPN-/Tor-
-Zuordnungen und Updateanforderungen. Sicherung unterstützt den vorhandenen
-Export-/Upload-/Prüf-/Wiederherstellungspfad; Diagnose erzeugt und lädt lokale
-Berichte. Netzwerkänderungen können die Verwaltungsverbindung unterbrechen.
+```sh
+git clone --mirror original-history.bundle ../eblocker-original.git
+git --git-dir=../eblocker-original.git symbolic-ref HEAD refs/heads/codex/modernize-architecture
+git --git-dir=../eblocker-original.git fsck --full
+git --git-dir=../eblocker-original.git rev-list --all --count
+git --git-dir=../eblocker-original.git rev-parse refs/heads/codex/modernize-architecture
+git --git-dir=../eblocker-original.git rev-parse 'refs/heads/codex/modernize-architecture^{tree}'
+```
 
-Die Konsole verwendet HTTPS-Cookie-Sitzungen mit HttpOnly, Secure, SameSite=Strict,
-Origin-/CSRF-Prüfung und serverseitigem Logout der aktuellen Sitzungsfamilie.
-HTTP-Entwicklung nutzt weiterhin ausschließlich im Speicher gehaltene Bearer-Tokens.
-Neue Passwörter und PINs verwenden Argon2id; erfolgreich geprüfte alte PINs werden
-mit einem atomaren Vergleich des gespeicherten Werts aktualisiert. Benutzer-CAS
-und versionierte Benutzer-/Gerätecache-Veröffentlichung verhindern konkrete
-veraltete Überschreibungen. Das ist keine umfassende Redis-/Netzwerktransaktion.
+Die drei letzten Ausgaben müssen `1141`,
+`b4124af67096fbdd8463fa531f6fa4824e42f5c0` und
+`c84b31b3084b27dee66f351e44f62459c46481c7` sein.
+`git for-each-ref` im Mirror zeigt die 76 benannten Referenzen; `HEAD` ist eine
+zusätzliche symbolische Referenz und steht daher nicht in dieser Zählung.
 
-Der [lesende Go-Netzwerkagent](apps/network-agent/README.md) behält seine getrennte
-Java-Brücke. Zusätzlich gibt es einen standardmäßig deaktivierten
-[Control-Dienst](apps/network-agent/internal/controlapi/README.md) für private
-Profilimporte, Status, Verbinden, Trennen, Abbruch und Löschen. Nur dieser eigene
-Dienst erhält nach ausdrücklicher Aktivierung CAP_NET_ADMIN; sein privater
-Unix-Socket prüft die Java-Prozessidentität über SO_PEERCRED. Die native CLI bleibt
-vorhanden. Split- und Full-Tunnel verwenden einen
-[journalisierten Lifecycle](libs/wireguard/manager/README.md); Full-Tunnel ergänzt
-Policy-Routing für beide IP-Familien und eine eigene atomare nftables-Firewall.
-Eine Schutzanzeige verlangt vollständiges natives Readback. DNS-Verwaltung und
-dynamische Endpoints bleiben abgewiesen; echte Tunnel-/Leak-/Appliance-Nachweise
-stehen aus. Bestehendes OpenVPN/Tor bleibt erhalten.
+Für einen separaten Arbeitsbaum:
 
-Die [SQLite-Migrationsbibliothek und CLI](libs/persistence/README.md) konvertiert
-inzwischen unveränderliche Offline-RDB-Dateien innerhalb eines ausdrücklich
-begrenzten Formats und importiert/exportiert versionierte logische Snapshots mit
-SQL-Transaktionen, Binärdaten, unveränderten Ablaufzeiten und Herkunftsdaten.
-Laufzeitumstellung, Pub/Sub-Ersatz, kontrollierter Rückweg und Redis-Abschaltung
-sind weiterhin offen.
+```sh
+git clone --branch codex/modernize-architecture ../eblocker-original.git ../eblocker-restored
+```
 
-AngularJS bleibt für noch nicht migrierte Funktionen erforderlich. Browser-,
-Installations-, Hardware- und Upgrade-Nachweise müssen vor einem produktiven
-Wechsel vorliegen. Bestehende Redis-/Ruby-/Squid-Pfade bleiben aktiv; die neue
-Updateoberfläche ist keine transaktionale Appliance-Upgrade-Lösung.
+Den Mirror und/oder das unveränderte Bundle als vollständiges Archiv behalten.
+Ein normaler Arbeitsbaum-Clone übernimmt standardmäßig nicht alle ursprünglichen
+Remote-Referenzen. Die Originalhistorie kann später mit regulärem Git-Zugang aus
+dem Mirror veröffentlicht werden. Bestehende Remote-Branches dabei zunächst
+vergleichen und keine fremden Änderungen überschreiben.
 
-## Herkunft und Lizenzen
+## Einordnung des Projektstands
 
-Die Lizenzdateien bleiben bei den jeweiligen Komponenten erhalten. `third_party`
-ist bewusst getrennt, damit eigene Produktlogik und benötigte Forks erkennbar sind.
-Importierte alte CI-Konfigurationen, Paket-Zugangsdaten, ein gemeinsamer privater
-Geräteschlüssel und vorgebaute Bootstrap-Pakete sind nicht Teil des neuen Builds.
-Historische Dokumentation steht unter `docs/upstream` und
-`docs/development/legacy-setup.md`; dort genannte alte Pfade/Befehle sind kein
-aktueller Build-Einstieg.
-
-Bootstrap gezielt bauen (ohne Installation auf dem Build-Host):
-`./mvnw -Pbootstrap,amd64-bookworm -pl packaging/bootstrap -am package`.
-Für Raspberry Pi das Profil `raspios-bookworm` verwenden.
+Das Archiv garantiert die Erhaltung des übergebenen Quellstands und seiner
+Historie. Es ist keine Behauptung, dass die gesamte Modernisierung abgeschlossen
+ist. Verbleibende Arbeiten sind im Quellstand unter `docs/refactor/PROGRESS.md`
+dokumentiert. Unter anderem wurden AngularJS, Redis, Ruby, RestExpress und Squid
+noch nicht vollständig abgelöst. Die Archivprüfung führt keine Hardware- oder
+Appliance-Tests durch.
